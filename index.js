@@ -1,17 +1,22 @@
-async function getAPIAnswer(){
+const data = {
+     'grant_type': 'client_credentials',
+     'client_id': 'EMscd6r9JnFiQ3bLoyjJY6eM78JrJceI',
+     'client_secret': 'PjLZkKBHEiLK3YsjtNrt3TGNG0ahs3kG'
+}
+
+async function getAPIAnswerFromCdek(){
      try {
-          let response = await fetch('URL', {
+          let response = await fetch('https://api.edu.cdek.ru/v2/oauth/token?parameters', {
                method:'POST',
                headers: {
-                    'Authorisation': 'Basic ' +btoa('EMscd6r9JnFiQ3bLoyjJY6eM78JrJceI:PjLZkKBHEiLK3YsjtNrt3TGNG0ahs3kG'),
-                    'Content-Type': 'application/x-www-form-urlencoded'
+                    'Content-Type': 'application/x-www-form-urlencoded',
                },
                body: JSON.stringify(data),
                mode:'cors',
                cache: 'default',
           })
-          let data = await response.json();
-          return data;
+          console.log(await response.json());
+          
           
      }    catch(err) {
           return err;
@@ -20,7 +25,9 @@ async function getAPIAnswer(){
 }
 
 async function main() {
-     let result = await getAPIAnswer();
+     console.log("hhh")
+     let result = await getAPIAnswerFromCdek();
+     console.log(result);
 }
 
 main()
