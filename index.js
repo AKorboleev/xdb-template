@@ -1,5 +1,4 @@
 const data = {
-     'grant_type': 'client_credentials',
      'client_id': 'EMscd6r9JnFiQ3bLoyjJY6eM78JrJceI',
      'client_secret': 'PjLZkKBHEiLK3YsjtNrt3TGNG0ahs3kG'
 }
@@ -12,11 +11,10 @@ async function getAPIAnswerFromCdek(){
                     'Content-Type': 'application/x-www-form-urlencoded',
                },
                body: JSON.stringify(data),
-               mode:'cors',
-               cache: 'default',
+               mode:'no-cors',
+               cache: 'no-cache',
           })
-          console.log(await response.json());
-          
+          return response.json();         
           
      }    catch(err) {
           return err;
@@ -24,9 +22,9 @@ async function getAPIAnswerFromCdek(){
 
 }
 
-async function main() {
-     console.log("hhh")
-     let result = await getAPIAnswerFromCdek();
+function main() {
+     console.log("hhh");
+     let result = getAPIAnswerFromCdek().then(r => console.log(r));
      console.log(result);
 }
 
