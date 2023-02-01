@@ -1,0 +1,107 @@
+body {
+     /*	background: #f2f2f2;*/
+     }
+     
+     
+     div#cart_page, div#checkout_page {
+          background: #f2f2f2;
+     }
+     
+     /* Р‘РѕРєРѕРІР°СЏ РїР°РЅРµР»СЊ РґР»СЏ РјРѕР±РёР»СЊРЅРѕРіРѕ */
+     div.offcanvas.offcanvas-start {
+          width: 280px;
+     }
+     
+     /* РЁР°РїРєР° РјРµРЅСЋ РґР»СЏ РјРѕР±РёР»СЊРЅРѕРіРѕ */
+     div.info {
+          margin-left: 1.5rem;
+     }
+     
+     /*
+     .image___l53PT {
+          height: 100%;
+          transform-origin: center;
+          transition: transform .3s ease-in-out;
+          width: 100%;
+     }
+     */
+     
+     
+     /*.item___h-yXa:hover .image___l53PT*/
+     .carousel-item:hover .image___l53PT {
+     /*.carousel-item:hover > img {*/
+     
+          transform: scale(1.06);
+     }
+     
+     /* Р—Р°РіРѕР»РѕРІРєРё РЅР° РіР»Р°РІРЅРѕР№ */
+     .header___1nlYC {
+          margin-top: 25px;
+     }
+     
+     /* РўРѕРІР°СЂС‹ СЃРїРµС†РёР°Р»СЊРЅРѕ РґР»СЏ РІР°СЃ РЅР° РіР»Р°РІРЅРѕР№ */
+     .products___2KY3c {
+          padding-left: 0px;
+          padding-right: 0px;
+     }
+     
+     /* Р›РѕРіРѕС‚РёРї */
+     img#logo {
+          width: 86px;
+     }
+     
+     /* Р¦РІРµС‚ СЃСЃС‹Р»РѕРє РІ С€Р°РїРєРµ */
+     a.nav-link {
+          color: black;
+     }
+     
+     
+     
+     /* РќРёСЃРїР°РґР°СЋС‰РµРµ РјРµРЅСЋ */
+     div.popover {
+          box-shadow: 0 9px 18px 0 rgb(0 0 0 / 6%), 0 -9px 18px 0 rgb(0 0 0 / 6%);
+     }
+     
+     /* РўРµР»Рѕ РЅРёСЃРїР°РґР°СЋС‰РµРіРѕ РјРµРЅСЋ */
+     .popover-body {
+          padding: 0;
+     }
+     
+     /* РџРѕР·РёС†РёРё РЅРёСЃРєР°РґР°СЋС‰РµРіРѕ РјРµРЅСЋ */
+     div.menu___diq_K > a.largeText___1jfAu {
+          font-size: 14px;
+     }
+     
+     
+     
+     /* RESPONSIVE CSS
+     -------------------------------------------------- */
+     
+     /* Small devices (landscape phones, 576px and up) */
+     @media (min-width: 576px) {
+     
+     }
+     
+     /* Medium devices (tablets, 768px and up) */
+     @media (min-width: 768px) {
+     
+          /* Р›РѕРіРѕС‚РёРї */
+          img#logo {
+               width: 190px;
+          }
+     }
+     
+     /* Large devices (desktops, 992px and up) */
+     @media (min-width: 992px) {
+     
+     }
+     
+     /* X-Large devices (large desktops, 1200px and up) */
+     @media (min-width: 1200px) {
+     
+     }
+     
+     /* XX-Large devices (larger desktops, 1400px and up) */
+     @media (min-width: 1400px) {
+     
+     }

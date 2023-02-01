@@ -1,6 +1,6 @@
 const data = {
-     'client_id': 'EMscd6r9JnFiQ3bLoyjJY6eM78JrJceI',
-     'client_secret': 'PjLZkKBHEiLK3YsjtNrt3TGNG0ahs3kG'
+     'client_id': '1',
+     'client_secret': '1'
 }
 
 async function getAPIAnswerFromCdek(){
