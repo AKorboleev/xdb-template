@@ -1,3 +1,12 @@
+.filter-container{
+     align-items: stretch;
+     display: -ms-flexbox;
+     display: flex;
+     -ms-flex-wrap: wrap;
+     flex-wrap: wrap;
+     margin: -16px 0 0 -16px;
+}
+
 
 /*search sorting buttons*/
 .btn:hover {
@@ -20,6 +29,15 @@
      background-color: #f2f3f7;
      color: #000;
 }
-
-				
+.btn-check:focus+.btn, .btn:focus{
+     box-shadow:none;
+     color:black;
+}
+.btn-check:active+.btn:focus, .btn-check:checked+.btn:focus, .btn.active:focus, .btn.show:focus, .btn:active:focus{
+     box-shadow:none
+}
+.input-group-text{
+     background-color: white; 
+     border: none;
+}
 			

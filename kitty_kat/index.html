@@ -568,7 +568,8 @@
 								<div class="">
 									<div class="products___1n7DI">
 										<div class="products___2KY3c maxFourCols narrow___1Ppfu revision___2JYNU">
-											<div class="inner___D2WNm" id="items">
+											
+											<div class="filter-container" id="items">
 												<div class="row___nkLSk noBottomMargin___19qYl">
 													<div class="mobileControls___2X2uI">
 														<div class="container___3Qp6W position-after___2KaXD">
@@ -600,44 +601,33 @@
 															</button>
 														</div>
 													</div>
-													<div class="parent___Dh6Mu narrow___ii5l0">
-														<div class="control___qPeGS light___1RO6W">
-															<div class="content___hjDIA" role="button" tabindex="0">
-																<div class="label___11qqs">
-																	<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-																		<span class="labelName___3U_tQ">Cортировка</span>
-																		<span class="labelValue___2hhmj">По умолчанию и еще как-то</span>											
-																	</button>
-																	<ul class="dropdown-menu">
-																		<li><a class="dropdown-item" href="#">по умолчанию</a></li>
-																		<li><a class="dropdown-item" href="#">по дате</a></li>
-																		<li><a class="dropdown-item" href="#">по стоимости</a></li>
-																		<li><a class="dropdown-item" href="#">как-то ещё</a></li>
-																	</ul>
-																</div>
-															</div>															
-															<div></div>
-														</div>
-														<div class="control___qPeGS light___1RO6W">
-															<div class="content___hjDIA" role="button" tabindex="0">
-																<div class="label___11qqs">
-																	<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-																		<span class="labelName___3U_tQ">Цена</span>
-																		<span class="labelValue___2hhmj">Любая</span>
-																	</button>
-																	<div class="dropdown-menu">
-																		 <span> 
-																		 <input type="text" class="form-control" placeholder="от" aria-label="Username" aria-describedby="basic-addon1">
-																		 </span>
-																		 <span> 
-																		 <input type="text" class="form-control" placeholder="до" aria-label="Username" aria-describedby="basic-addon1">
-																		 </span>
-																	</div>
-																</div>
-																
+													<div class="d-flex flex-wrap gap-2">												
+														<div class="">
+															<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+																<span class="labelName___3U_tQ">Cортировка</span>
+																<span class="labelValue___2hhmj">По умолчанию</span>											
+															</button>
+															<ul class="dropdown-menu">
+																<li><a class="dropdown-item" href="#">по умолчанию</a></li>
+																<li><a class="dropdown-item" href="#">по дате</a></li>
+																<li><a class="dropdown-item" href="#">по стоимости</a></li>
+																<li><a class="dropdown-item" href="#">как-то ещё</a></li>
+															</ul>
+														</div>	
+														<div class="">		
+															<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+																<span class="labelName___3U_tQ">Цена</span>
+																<span class="labelValue___2hhmj">Любая</span>
+															</button>
+															<div class="dropdown-menu">
+																	<span> 
+																	<input type="text" class="form-control" placeholder="от" aria-label="Username" aria-describedby="basic-addon1">
+																	</span>
+																	<span> 
+																	<input type="text" class="form-control" placeholder="до" aria-label="Username" aria-describedby="basic-addon1">
+																	</span>
 															</div>
-															<div></div>
-														</div>
+														</div>	
 														<div role="button" tabindex="0" class="categories___2qyZL">
 															<div class="content___3GKD4">Уточнить категорию
 																<svg class="menuArrow___2h3Yi" height="7px" viewBox="0 0 11 7" width="11px" xmlns="http://www.w3.org/2000/svg">
@@ -645,124 +635,103 @@
 																</svg>
 															</div>
 														</div>
-														<div class="control___qPeGS light___1RO6W">
-															<div class="content___hjDIA" role="button" tabindex="0">
-																<div class="label___11qqs">
-																	<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-																		<span class="labelName___3U_tQ">Цвет</span>
-																		<span class="labelValue___2hhmj">Все</span>
-																	</button>
-																	<ul class="dropdown-menu">
-																		<li>
-																			<div class="input-group-text">
-																				<input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">	
-																				
-																					<a class="dropdown-item" href="#">красный</a>
-																			</div>																		
-																		</li>
-																		<li>
-																			<div class="input-group-text">
-																				<input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">	
-																				
-																					<a class="dropdown-item" href="#">синий</a>
-																			</div>
-																		</li>
-																		<li>
-																			<div class="input-group-text">
-																				<input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">	
-																				
-																					<a class="dropdown-item" href="#">жёлтый</a>
-																			</div>
-																		</li>
-																	</ul>
-																</div>
-																
-															</div>
-															<div></div>
-														</div>
-														<div class="control___qPeGS light___1RO6W">
-															<div class="content___hjDIA" role="button" tabindex="0">
-																<div class="label___11qqs">
-																	<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-																		<span class="labelName___3U_tQ">Материал</span>
-																		<span class="labelValue___2hhmj">Все</span>
-																	</button>
-																	<ul class="dropdown-menu">
-																		<li>
-																			<div class="input-group-text">
-																				<input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">	
-																				
-																					<a class="dropdown-item" href="#">хлопок</a>
-																			</div>	
-																		</li>
-																		<li>
-																			<div class="input-group-text">
-																				<input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">	
-																				
-																					<a class="dropdown-item" href="#">синтетика</a>
-																			</div>	
-																		</li>
-																		<li>
-																			<div class="input-group-text">
-																				<input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">	
-																				
-																					<a class="dropdown-item" href="#">шерсть</a>
-																			</div>
-																		</li>
-																	</ul>
-																</div>																
-															</div>
-															<div></div>
-														</div>
-														<div class="control___qPeGS light___1RO6W">
-															<div class="content___hjDIA" role="button" tabindex="0">
-																<div class="label___11qqs">
-																	<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-																		<span class="labelName___3U_tQ">Бренд</span>
-																		<span class="labelValue___2hhmj">Все</span>
-																	</button>
-																	<ul class="dropdown-menu">
-																		<li>
-																			<div class="input-group-text">
-																				<input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">	
-																				
-																					<a class="dropdown-item" href="#">Gucci</a>
-																			</div>	
-																		</li>
-																		<li>
-																			<div class="input-group-text">
-																				<input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">	
-																				
-																					<a class="dropdown-item" href="#">Aiddas</a>
-																			</div>	
-																		</li>
-																		<li>
-																			<div class="input-group-text">
-																				<input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">	
-																				
-																					<a class="dropdown-item" href="#">Nike</a>
-																			</div>
-																		</li>
-																	</ul>
-																</div>																
-															</div>
-															<div></div>
-														</div>
-														<div class="control___qPeGS light___1RO6W">
-															<div class="content___hjDIA" role="button" tabindex="0">
-																<div class="label___11qqs">
-																	<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-																		<span class="labelName___3U_tQ">Страна продавца</span>
-																		<span class="labelValue___2hhmj">Все</span>
-																	</button>
-																	<div class="dropdown-menu">
-																		 <span> 
-																		 <input type="text" class="form-control" placeholder="от" aria-label="Username" aria-describedby="basic-addon1"> 
-																		 </span>
+														<div class="">													
+															<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+																<span class="labelName___3U_tQ">Цвет</span>
+																<span class="labelValue___2hhmj">Все</span>
+															</button>
+															<ul class="dropdown-menu">
+																<li>
+																	<div class="input-group-text">
+																		<input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">	
+																		
+																			<a class="dropdown-item" href="#">красный</a>
+																	</div>																		
+																</li>
+																<li>
+																	<div class="input-group-text">
+																		<input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">	
+																		
+																			<a class="dropdown-item" href="#">синий</a>
 																	</div>
-																</div>																
-															</div>
-															<div></div>
+																</li>
+																<li>
+																	<div class="input-group-text">
+																		<input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">	
+																		
+																			<a class="dropdown-item" href="#">жёлтый</a>
+																	</div>
+																</li>
+															</ul>
+														</div>
+														<div class="">															
+															<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+																<span class="labelName___3U_tQ">Материал</span>
+																<span class="labelValue___2hhmj">Все</span>
+															</button>
+															<ul class="dropdown-menu">
+																<li>
+																	<div class="input-group-text">
+																		<input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">	
+																		
+																			<a class="dropdown-item" href="#">хлопок</a>
+																	</div>	
+																</li>
+																<li>
+																	<div class="input-group-text">
+																		<input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">	
+																		
+																			<a class="dropdown-item" href="#">синтетика</a>
+																	</div>	
+																</li>
+																<li>
+																	<div class="input-group-text">
+																		<input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">	
+																		
+																			<a class="dropdown-item" href="#">шерсть</a>
+																	</div>
+																</li>
+															</ul>
+														</div>
+														<div class="">															
+															<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+																<span class="labelName___3U_tQ">Бренд</span>
+																<span class="labelValue___2hhmj">Все</span>
+															</button>
+															<ul class="dropdown-menu">
+																<li>
+																	<div class="input-group-text">
+																		<input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">	
+																		
+																			<a class="dropdown-item" href="#">Gucci</a>
+																	</div>	
+																</li>
+																<li>
+																	<div class="input-group-text">
+																		<input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">	
+																		
+																			<a class="dropdown-item" href="#">Aiddas</a>
+																	</div>	
+																</li>
+																<li>
+																	<div class="input-group-text">
+																		<input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">	
+																		
+																			<a class="dropdown-item" href="#">Nike</a>
+																	</div>
+																</li>
+															</ul>
+														</div>
+														<div class="">															
+															<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+																<span class="labelName___3U_tQ">Страна продавца</span>
+																<span class="labelValue___2hhmj">Все</span>
+															</button>
+															<div class="dropdown-menu">
+																	<span> 
+																	<input type="text" class="form-control" placeholder="от" aria-label="Username" aria-describedby="basic-addon1"> 
+																	</span>
+															</div>													
 														</div>
 														<div class="control___qPeGS light___1RO6W">
 															<div class="content___hjDIA" role="button" tabindex="0">
@@ -787,10 +756,11 @@
 																	<span class="labelValue___2hhmj">Все</span>
 																</div>																
 															</div>
-															<div></div>
+															
 														</div>
 													</div>
 												</div>
+
 												<div class="cell___3mYuq">
 	<div class="product___2miP_ product___1h68n">
 		<a class="content___1H7Wg" data-source="body" href="/?item=1193727">
