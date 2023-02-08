@@ -7,22 +7,22 @@
      flex-wrap: wrap;
      margin: -16px 0 0 -16px;
 }
-.label {
+.label{
      display: -ms-flexbox;
      display: flex;
      -ms-flex-positive: 1;
      flex-grow: 1;
      overflow: hidden;
 }
-.label-name {
+.label-name{
      color: #9697a1;
      padding-right: 8px;
 }
-.label-value {
+.label-value{
      font-size: .7779rem;
      height: calc(1.7779rem - 2px);
 }
-.control {
+.control{
      background-color: #f2f3f7;
      border-color: transparent;
 
@@ -37,7 +37,7 @@
      -ms-user-select: none;
      user-select: none;
 }
-.content {
+.content{
      align-items: center;
      box-sizing: border-box;
      cursor: pointer;
@@ -47,7 +47,7 @@
      padding: 0 0.5556rem;
      vertical-align: top;
 }
-.input {
+.input{
      left: -10000px;
      border: 0;
      font-size: 0;
@@ -56,7 +56,7 @@
      width: 0;
      position: absolute;
 }
-.checkbox {
+.checkbox{
      flex-shrink: 0;
      position: relative;
      height: 1em;
@@ -79,13 +79,13 @@
      width: 100%;
 }
 /*search sorting buttons bootstrap*/
-.btn:hover {
+.btn:hover{
      background-color: #f2f3f7
 }
 .btn-secondary {
      --bs-btn-bg: #f2f3f7;
 }
-.btn-secondary {
+.btn-secondary{
 --bs-btn-color: black;
 }
 .btn-secondary{
@@ -110,7 +110,7 @@
      background-color: white; 
      border: none;
 }
-.dropdown-menu {
+.dropdown-menu{
      transform: translate3d(190px, 58px, 0px);
 }	
 .form-control{
@@ -134,5 +134,8 @@
      border-color: none;
 }
 
-
+/*OffCanvas setup*/
+.offcanvas{
+     --bs-offcanvas-height: 80vh;
+}
 

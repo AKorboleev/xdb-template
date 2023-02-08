@@ -503,8 +503,7 @@
 							<span property="name">Каталог</span>
 						</a>
 						<meta property="position" content="2">
-					</span>
-					
+					</span>					
 				</div>
 			</div>
 		</div>
@@ -579,7 +578,7 @@
 																	<path d="M5.333.667V8.78L1.607 5.053.667 6 6 11.333 11.333 6l-.94-.94-3.726 3.72V.667H5.333z" fill="#2D2F43"></path>
 																</svg>																
 															</button>	
-															<div class="offcanvas offcanvas-start" tabindex="-1" id="sort" aria-labelledby="offcanvasExampleLabel">
+															<div class="offcanvas offcanvas-bottom" tabindex="-1" id="sort" aria-labelledby="offcanvasExampleLabel">
 																<div class="offcanvas-header">
 																  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Сортировка</h5>
 																  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -615,7 +614,7 @@
 																Фильтры
 															</button>	
 															
-															<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+															<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
 																<div class="offcanvas-header">
 																  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Фильтры</h5>
 																  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -628,7 +627,7 @@
 																				<span class="label-value">По умолчанию</span>											
 																			</button>
 																			<ul class="dropdown-menu">
-																				<li><a class="dropdown-item" href="#">по умолчанию</a></li>
+																				<li><a class="dropdown-item active" href="#">по умолчанию</a></li>
 																				<li><a class="dropdown-item" href="#">по дате</a></li>
 																				<li><a class="dropdown-item" href="#">по стоимости</a></li>
 																				<li><a class="dropdown-item" href="#">как-то ещё</a></li>
@@ -756,12 +755,8 @@
 																							<a class="dropdown-item" href="#">Беларусь</a>
 																					</div>
 																			</div>													
-																		</div>																																								
+																		</div>												
 																		
-																		<div class="input-group-text">
-																			<input class="form-check-input me-2" type="checkbox" value="" aria-label="Checkbox for following text input">
-																			<span>Быстрая доставка</span>
-																		</div>
 																	</div>
 																</div>
 															</div>													
@@ -775,7 +770,7 @@
 																<span class="label-value">По умолчанию</span>											
 															</button>
 															<ul class="dropdown-menu">
-																<li><a class="dropdown-item" href="#">по умолчанию</a></li>
+																<li><a class="dropdown-item active" href="#">по умолчанию</a></li>
 																<li><a class="dropdown-item" href="#">по дате</a></li>
 																<li><a class="dropdown-item" href="#">по стоимости</a></li>
 																<li><a class="dropdown-item" href="#">как-то ещё</a></li>
@@ -893,22 +888,18 @@
 																		<input type="text" class="form-control ms-2 mb-2" placeholder="Страна" aria-label="Username" aria-describedby="basic-addon1"> 
 																	</span>
 																	<div class="input-group-text">
-																		<input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">	
-																		
-																			<a class="dropdown-item" href="#">Россия</a>
+																		<input class="form-check-input mt-0" name="russia" id="russia" type="checkbox" value="" aria-label="Checkbox for following text input">	
+																		<label class="ms-2" for="russia">Россия</label>																	
 																	</div>
 																	<div class="input-group-text">
-																		<input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">	
+																		<input class="form-check-input mt-0" type="checkbox" name="Belarus" id="Belarus" value="" aria-label="Checkbox for following text input">	
 																		
-																			<a class="dropdown-item" href="#">Беларусь</a>
+																		<label class="ms-2" for="Belarus">Беларусь</label>
 																	</div>
 															</div>													
-														</div>																																								
+														</div>																					
 														
-														<div class="input-group-text">
-															<input class="form-check-input me-2" type="checkbox" value="" aria-label="Checkbox for following text input">
-															<span>Быстрая доставка</span>
-														</div>
+														
 													</div>
 												</div>
 
