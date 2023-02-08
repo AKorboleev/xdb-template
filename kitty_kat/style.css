@@ -1,0 +1,113 @@
+/*search sorting area main styles*/
+.filter-container{
+     align-items: stretch;
+     display: -ms-flexbox;
+     display: flex;
+     -ms-flex-wrap: wrap;
+     flex-wrap: wrap;
+     margin: -16px 0 0 -16px;
+}
+.label {
+     display: -ms-flexbox;
+    display: flex;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    overflow: hidden;
+}
+.label-name {
+     color: #9697a1;
+     padding-right: 8px;
+}
+.label-value {
+     font-size: .7779rem;
+     height: calc(1.7779rem - 2px);
+}
+.control {
+    background-color: #f2f3f7;
+    border-color: transparent;
+
+    border: 1px solid #eee;
+    border-radius: 0.1667rem;
+    line-height: 1rem;
+    margin-left: 0.6667rem;
+    margin-top: 0.6667rem;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.content {
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    font-size: .7222rem;
+    height: calc(1.6667rem - 2px);
+    padding: 0 0.5556rem;
+    vertical-align: top;
+}
+.input {
+    left: -10000px;
+    border: 0;
+    font-size: 0;
+    height: 0;
+    opacity: 0;
+    width: 0;
+    position: absolute;
+}
+.checkbox {
+    flex-shrink: 0;
+    position: relative;
+    height: 1em;
+    width: 1em;
+
+    font-size: .6667rem;
+}
+.border{
+    background-color: #fff;
+    border: solid #3d3f56;
+
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform-origin: center center;
+    transition: .2s ease-in-out;
+    width: 100%;
+}
+/*search sorting buttons bootstrap*/
+.btn:hover {
+     background-color: #f2f3f7
+}
+.btn-secondary {
+     --bs-btn-bg: #f2f3f7;
+}
+.btn-secondary {
+--bs-btn-color: black;
+}
+.btn-secondary{
+     --bs-btn-border-color: none;
+     --bs-btn-hover-bg: #f2f3f7;
+}
+.btn:hover{
+     color: black;
+}
+.btn-check:active+.btn, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:active{
+     background-color: #f2f3f7;
+     color: #000;
+}
+.btn-check:focus+.btn, .btn:focus{
+     box-shadow:none;
+     color:black;
+}
+.btn-check:active+.btn:focus, .btn-check:checked+.btn:focus, .btn.active:focus, .btn.show:focus, .btn:active:focus{
+     box-shadow:none
+}
+.input-group-text{
+     background-color: white; 
+     border: none;
+}
+			
