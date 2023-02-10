@@ -1,5 +1,5 @@
 /*filter sorting area main styles*/
-.filter-container{
+.search_page-filter-container{
      align-items: stretch;
      display: -ms-flexbox;
      display: flex;
@@ -8,41 +8,42 @@
      margin: -16px 0 0 -16px;
 }
 
-.filter-label-name{
-     color: #9697a1;
-     padding-right: 8px;
+.search_page_filter-label-name{
+     color: #ffffff;
+     /* padding-right: 8px; */
 }
-.filter-label-value{
-     font-size: .7779rem;
-     height: calc(1.7779rem - 2px);
+.search_page_filter-label-value{
+     /* font-size: .7779rem;
+     height: calc(1.7779rem - 2px); */
 }
 
 /*filter search sorting buttons bootstrap*/
- .btn:hover{
-     background-color: #f2f3f7
-}
-.btn-secondary {
+/* .country .btn-primary{
+     --bs-btn-bg:#f2f3f7;
+     --bs-btn-color:black;
+     --bs-btn-border-color:none;
+} */
+
+/* .country .btn-secondary{
      --bs-btn-bg: #f2f3f7;
 }
-.btn-secondary{
+.country .btn-secondary{
 --bs-btn-color: black;
 }
-.btn-secondary{
+.country .btn-secondary{
      --bs-btn-border-color: none;
      --bs-btn-hover-bg: #f2f3f7;
 }
-.btn:hover{
-     color: black;
-}
-.btn-check:active+.btn, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:active{
+
+.country .btn-check:active+.btn, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:active{
      background-color: #f2f3f7;
      color: #000;
 }
-.btn-check:focus+.btn, .btn:focus{
+.country .btn-check:focus+.btn, .btn:focus{
      box-shadow:none;
      color:black;
 }
-.btn-check:active+.btn:focus, .btn-check:checked+.btn:focus, .btn.active:focus, .btn.show:focus, .btn:active:focus{
+.country .btn-check:active+.btn:focus, .btn-check:checked+.btn:focus, .btn.active:focus, .btn.show:focus, .btn:active:focus{
      box-shadow:none
 }
 .dropdown-menu .input-group-text{
@@ -59,19 +60,15 @@
      background-color: #f2f3f7;
      border:none;
 }
-.btn-light{
+.country .btn-light{
      background-color: #f2f3f7;
 }
-.btn-primary{
-     --bs-btn-bg:#f2f3f7;
-     --bs-btn-color:black;
-     --bs-btn-border-color:none;
-}
-.btn-check:focus+.btn, .btn:focus{
+
+.country .btn-check:focus+.btn, .btn:focus{
      color: black;;
      background-color:  #f2f3f7;
      border-color: none;
-} 
+}  */
 
 /*OffCanvas setup*/
 .offcanvas{
