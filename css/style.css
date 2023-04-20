@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.home {
+  background: 0;
+}
+
+.about {
+  display: flex;
+}
+
+.contacts {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */

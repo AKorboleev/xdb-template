@@ -1,0 +1,16 @@
+$kurale: 'Kurale', serif;
+$os: 'Open Sans', sans-serif;
+$white:#fff;
+$yellow:#b39f08;
+$black:rgb(22, 22, 22);
+$text:18px;
+$container:1230px;
+$mc:0 auto;
+
+
+@mixin flex ($jc,$ai){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $jc;
+    align-items: $ai;    
+}
