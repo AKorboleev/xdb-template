@@ -1,0 +1,10 @@
+.parent {
+    margin-bottom: 1rem;
+    position: relative;
+
+    @media (max-width: 767.9px) {
+        .parent {
+            display: none;
+        }
+    }
+}
