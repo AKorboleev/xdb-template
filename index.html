@@ -96,13 +96,11 @@
 </head>
 
 <header class="header">
-
-	<!-- Верхняя шапка -->
 	<div class="container-xxl">
 	<div class="header__top">
 		<div class="navBar">
 			<div class="leftSection">
-				<div class="navBarItem">
+				<div class="navBarlanguage">
 					<div role="button" tabindex="0" class="selectWrapper">
 						<div class="selectButton">
 							<div class="icon">
@@ -114,7 +112,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="navBarItem">
+				<div class="navBarlanguage">
 					<div class="selectWrapper">
 						<div role="button" tabindex="0" class="button">RUB
 							<svg width="9" height="6" class="selectArrow">
@@ -125,7 +123,7 @@
 				</div>
 			</div>
 			<div class="rightSection">
-				<nav class="navBarLinks">
+				<nav>
 					<a href="/ru/faq">Поддержка</a>
 					<a href="/ru/faq">Доставка</a>
 					<a href="/ru/faq">Гарантия</a>
@@ -133,21 +131,17 @@
 			</div>
 		</div>
 	</div>
-	
-	<!-- Сделано -->
-
-
-
 		<!-- Дорабоать, некоторые классы не находятся в нужном файле  -->
 	<div class="header__button">
 		<!-- <div class="inner____spgD"> -->
 			<!-- <div class="reducer___1Stj6"> -->
-				<div class="table">
+				<div class="tables">
 					<!-- <div class="row___3FNiG"> -->
 						<!-- мобильная разарботка -->
-						<div class="side___1FJ5i">
-							<div class="burger___3nVVL" role="button" tabindex="0" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvas-navbar"></div>
-	
+						<!-- side___1FJ5i старый класс -->
+						<div class="side">
+							<div class="burger" role="button" tabindex="0" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvas-navbar"></div>
+							<!-- Не трогал, так как не знаю как работает  -->
 							<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-navbar">
 	
 								<div class="offcanvas-header justify-content-start bg-light">
@@ -312,72 +306,66 @@
 							</div>
 	
 	
-	
-	
-	
-	
 						</div>
-						<div class="side___1FJ5i">
-							<a class="logo___1AtfL" href="/">
+						<div class="logo__header_button">
+							<a class="logo" href="/">
 								<img id="logo" src="[MARKET_LOGO]" alt="[MARKET_NAME]" />
 							</a>
 						</div>
-						<div class="content___1Jfqb">
-							<div class="search___3sS1o">
-								<div class="">
-									<form class="search___DwC_t" name="web" method="get" action="/search/">
-										<div class="inner___1j3ZX">
-											<div class="left___11dTn">
-												<label class="label___3-E4_">
-													<input id="sought_text" name="text" class="input___3wRUz" placeholder="Поиск" value="[XDB_SOUGHT_TEXT]">
-												</label>
-												<button type="submit" class="submit___3XMCO">Найти</button>
-											</div>
-										</div>
-									</form>
-								</div>
+						<div class="content">
+							<div class="search">
+								<form name="web" method="get" action="/search/">
+									<div class="inner">
+										<!-- <div class="left___11dTn"> -->
+											<label class="label">
+												<input id="sought_text" name="text" placeholder="Поиск" value="[XDB_SOUGHT_TEXT]">
+											</label>
+											<button type="submit" class="submit" ">Найти</button>
+										<!-- </div> -->
+									</div>
+								</form>
 							</div>
 						</div>
-						<div class="side___1FJ5i">
-							<div class="buttons___3K03n">
-								<div class="container___3qF1Q">
-									<div class="button___1Naxi">
-										<div class="inner___68AzF" role="button" tabindex="0">
-											<div class="headerButtonIcon___30cc5">
+						<div class="right_panel">
+							<div class="items">
+								<div class="block">
+									<div class="block__inner">
+										<div class="inner" role="button" tabindex="0">
+											<div class="item_icon">
 												<svg width="26" height="26" viewBox="0 2 26 26">
 													<path d="M16.427 6.482c2.792 1.021 3.909 3.378 3.784 6.596-.04 1.022-.165 1.866-.445 3.341-.075.393-.094.497-.123.659-.268 1.522.048 3.037.975 4.584a1 1 0 01-1.032 1.498l-4.959-.874a3.5 3.5 0 01-6.824-1.203l-2.989-.527a1 1 0 01-.457-1.761c1.4-1.137 2.215-2.453 2.484-3.975.028-.161.045-.266.11-.66.24-1.483.412-2.319.724-3.293.983-3.066 2.84-4.899 5.812-4.903a1 1 0 011.173-.935l.985.174a1 1 0 01.782 1.28zM9.822 21.44a1.5 1.5 0 002.786.49l-2.786-.49zm7.852-4.709c.03-.174.05-.281.127-.684.263-1.382.377-2.153.412-3.046.11-2.824-.851-4.448-3.582-4.93-2.73-.48-4.189.717-5.051 3.408-.273.851-.43 1.614-.655 3.002-.066.406-.084.514-.115.688a8.031 8.031 0 01-1.746 3.753l10.967 1.934a8.031 8.031 0 01-.357-4.125zm.776-10.055a.875.875 0 11.907-1.497c3.116 1.887 3.984 5.077 3.482 9.4a.875.875 0 11-1.738-.201c.432-3.718-.259-6.254-2.65-7.702zM6.404 11.744a.875.875 0 11-1.701-.408c1.014-4.23 2.938-6.924 6.53-7.61a.875.875 0 11.328 1.72c-2.758.526-4.285 2.664-5.157 6.298z" fill="#3D3F56"></path>
 												</svg>
 												<!--span class="indicator___UIS2g">1</span-->
 											</div>
-											<div class="text___3YSy3">Уведомления</div>
+											<h6 class="name__inner">Уведомления</h6>
 										</div>
 									</div>
 								</div>
-								<div class="container___3qF1Q">
+								<div class="block">
 									[MARKET_ACCOUNT_MENU_ITEM]
 								</div>
-								<div class="container___3qF1Q">
-									<a class="link___RMIFj button___1Naxi" href="/orders/">
-										<div class="inner___68AzF">
-											<div class="headerButtonIcon___30cc5">
+								<div class="block">
+									<a class="block__inner" href="/orders/">
+										<div class="inner">
+											<div class="item_icon">
 												<svg width="26" height="26" viewBox="-3 -4 26 26">
 													<path d="M19 6.732V15a3 3 0 01-3 3H4a3 3 0 01-3-3V6.732A2 2 0 010 5V2a2 2 0 012-2h16a2 2 0 012 2v3a2 2 0 01-1 1.732zM17 7H3v8a1 1 0 001 1h12a1 1 0 001-1V7zM8 9h4a1 1 0 010 2H8a1 1 0 010-2zM2 2v3h16V2H2z" fill="#3D3F56"></path>
 												</svg>
 											</div>
-											<div class="text___3YSy3">Мои заказы</div>
+											<h6 class="name__inner">Мои заказы</h6>
 										</div>
 									</a>
 								</div>
-								<div class="container___3qF1Q">
-									<a class="link___RMIFj button___1Naxi" href="/cart/">
-										<div class="inner___68AzF">
-											<div class="headerButtonIcon___30cc5">
+								<div class="block">
+									<a class="block__inner" href="/cart/">
+										<div class="inner">
+											<div class="item_icon">
 												<svg width="26" height="26" viewBox="-3 -3 26 26">
 													<path d="M12.752 12.5H4.759a2.058 2.058 0 01-1.89-1.212l-2.202-5c-.448-1.015.036-2.191 1.08-2.626.255-.107.53-.162.81-.162h12.33l.344-1.45C15.446 1.143 16.277.5 17.234.5h1.238c.568 0 1.028.448 1.028 1s-.46 1-1.028 1h-1.238l-2.669 11.25c1.09.462 1.851 1.52 1.851 2.75 0 1.657-1.38 3-3.084 3-1.703 0-3.083-1.343-3.083-3 0-.35.062-.687.175-1H8.017c.114.313.176.65.176 1 0 1.657-1.38 3-3.084 3-1.703 0-3.084-1.343-3.084-3s1.381-3 3.084-3h7.406l.237-1zm-10.196-7l2.203 5h8.467l1.186-5H2.556zm2.553 12c.568 0 1.028-.448 1.028-1s-.46-1-1.028-1c-.568 0-1.028.448-1.028 1s.46 1 1.028 1zm8.223 0c.568 0 1.028-.448 1.028-1s-.46-1-1.028-1c-.567 0-1.027.448-1.027 1s.46 1 1.027 1z" fill="#3D3F56"></path>
 												</svg>
 												<span class="indicator___UIS2g[MARKET_CART_INDICATOR]">[MARKET_CART_QUANTITY]</span>
 											</div>
-											<div class="text___3YSy3">Корзина</div>
+											<h6 class="name__inner">Корзина</h6>
 										</div>
 									</a>
 								</div>
@@ -390,55 +378,51 @@
 	</div>
 </header>
 
-
-
 <div class="parent">
-	<div class="header___1OEjl">
-		<div class="inner___2RmPR">
-			<div class="categories___1pNPa">
-				<nav class="categoriesList___jUEge">
-					<div class="category___3141u" tabindex="0" role="button">
-						<svg width="16" height="10" class="menu___2YMAB">
+	<!-- <div class="header___1OEjl"> -->
+		<div class="container">
+			<div class="categories">
+				<nav class="categories__list">
+					<div class="category" tabindex="0" role="button">
+						<svg width="16" height="10" class="menu">
 							<path d="M.883 10C.396 10 0 9.552 0 9s.396-1 .883-1h14.234c.487 0 .883.448.883 1s-.396 1-.883 1H.883zm0-4C.396 6 0 5.552 0 5s.396-1 .883-1h14.234c.487 0 .883.448.883 1s-.396 1-.883 1H.883zm0-4C.396 2 0 1.552 0 1s.396-1 .883-1h14.234c.487 0 .883.448.883 1s-.396 1-.883 1H.883z"></path>
 						</svg>
 						<span><a style="color: #3d3f56; text-decoration: none;" href="/catalog/">Все категории</a></span>
 					</div>
-					<a class="category___3141u" href="/search/?type=1206">Красота</a> 
-					<a class="category___3141u" href="/search/?type=1206">Здоровье</a> 
-					<a class="category___3141u" href="/search/?type=2874">Одежда для девочек</a> 
-					<a class="category___3141u" href="/search/?type=1837">Товары для дома</a> 
-					<a class="category___3141u" href="/search/?type=5">Электроника</a> 
-					<a class="category___3141u" href="/search/?type=16">Товары для взрослых</a> 
-					<a class="category___3141u" href="/search/?type=2884">Одежда для мальчиков</a> 
-					<a class="category___3141u" href="/search/?type=244">Автомобили и мотоциклы</a> 
-					<a class="category___3141u" href="/search/?type=1276">Строительство и ремонт</a> 
-					<a class="category___3141u" href="/search/?type=1764">Спорт и отдых</a> 
-					<a class="category___3141u" href="/search/?type=2961">Детская обувь</a> 
-					<a class="category___3141u" href="/search/?type=6">Детские товары</a> 
-					<a class="category___3141u" href="/search/?type=2763">Чемоданы и сумки</a> 
-					<a class="category___3141u" href="/search/?type=151">Часы</a> 
-					<a class="category___3141u" href="/search/?type=4">Товары для животных</a> 
-					<a class="category___3141u" href="/search/?type=2934">Канцелярия</a> 
-					<a class="category___3141u" href="/search/?type=1837">Дача, сад и огород</a> 
-					<a class="category___3141u" href="/search/?type=276">Хобби и творчество</a> 
+					<a class="category" href="/search/?type=1206">Красота</a> 
+					<a class="category" href="/search/?type=1206">Здоровье</a> 
+					<a class="category" href="/search/?type=2874">Одежда для девочек</a> 
+					<a class="category" href="/search/?type=1837">Товары для дома</a> 
+					<a class="category" href="/search/?type=5">Электроника</a> 
+					<a class="category" href="/search/?type=16">Товары для взрослых</a> 
+					<a class="category" href="/search/?type=2884">Одежда для мальчиков</a> 
+					<a class="category" href="/search/?type=244">Автомобили и мотоциклы</a> 
+					<a class="category" href="/search/?type=1276">Строительство и ремонт</a> 
+					<a class="category" href="/search/?type=1764">Спорт и отдых</a> 
+					<a class="category" href="/search/?type=2961">Детская обувь</a> 
+					<a class="category" href="/search/?type=6">Детские товары</a> 
+					<a class="category" href="/search/?type=2763">Чемоданы и сумки</a> 
+					<a class="category" href="/search/?type=151">Часы</a> 
+					<a class="category" href="/search/?type=4">Товары для животных</a> 
+					<a class="category" href="/search/?type=2934">Канцелярия</a> 
+					<a class="category" href="/search/?type=1837">Дача, сад и огород</a> 
+					<a class="category" href="/search/?type=276">Хобби и творчество</a> 
 				</nav>
 			</div>
 		</div>
-	</div>
+	<!-- </div> -->
 </div>
 
-
-
-<div class="isMobile___1-_fh">
-	<form class="search___DwC_t" method="get" action="/search/">
-		<div class="inner___1j3ZX">
-			<div class="left___11dTn">
+<div class="mobaile__search">
+	<form class="search" method="get" action="/search/">
+		<div class="inner">
+			<!-- <div class="left___11dTn"> -->
 				<svg width="14" height="14" class="magnifier___ZgYXt">
 					<path d="M11.113 9.887a5.99 5.99 0 001.225-3.675C12.338 2.8 9.625 0 6.213 0S0 2.8 0 6.213c0 3.412 2.8 6.212 6.213 6.212 1.4 0 2.712-.438 3.675-1.225l2.624 2.625a.945.945 0 00.613.262.945.945 0 00.613-.262.846.846 0 000-1.225l-2.625-2.712zm-4.9.7c-2.45 0-4.463-1.925-4.463-4.375S3.763 1.75 6.213 1.75s4.462 2.013 4.462 4.463-2.013 4.375-4.463 4.375z" fill="#8e90a7"></path>
 				</svg>
 				<label class="label___3-E4_">
 				<input id="sought_text" name="text" class="input___3wRUz" placeholder="Поиск" value="[XDB_SOUGHT_TEXT]"></label>
-			</div>
+			<!-- </div> -->
 		</div>
 	</form>
 </div>
@@ -506,6 +490,6 @@
 			</div>
 		</div>
 	</div>
-
+	
 </body>
 </html>

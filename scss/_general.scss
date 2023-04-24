@@ -6,11 +6,24 @@ $black:rgb(22, 22, 22);
 $text:18px;
 $container:1230px;
 $mc:0 auto;
-
+$headerTop:#fff ;
 
 @mixin flex ($jc,$ai){
     display: flex;
     flex-wrap: wrap;
     justify-content: $jc;
     align-items: $ai;    
+}
+
+
+.name__inner {
+    color: #3d3f56;
+    // font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration: none;
+
+    @media (max-width: 991.9px) {
+            display: none;
+    }
 }
