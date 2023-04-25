@@ -1,4 +1,6 @@
-$kurale: 'Kurale', serif;
+// Файл для настрйоки повторяющихся элементов и переменнных 
+
+$fontFamaly: 'Kurale', serif;
 $os: 'Open Sans', sans-serif;
 $white:#fff;
 $yellow:#b39f08;
@@ -26,4 +28,122 @@ $headerTop:#fff ;
     @media (max-width: 991.9px) {
             display: none;
     }
+}
+
+
+// Изменяемая кнопка, стоит только подставить класс
+.button {
+    border-radius: 0.38rem;
+    box-sizing: border-box;
+    display: inline-block;
+    background: #c95252;
+    color: #fff;
+    border-radius: 6px;
+    border:none;
+    cursor: pointer;
+    text-decoration: none;
+    height: 44px;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    margin: 2px 2px 2px 0;
+    outline: none;
+    
+    
+    &:focus,
+    &:hover {
+        transition: 0.4s;
+        background: #095213;
+    }
+}
+
+
+// Форма запроса можно менять хоть как 
+// Вкладывать див, как тут
+.search {
+    display: none;
+    line-height: 1;
+    vertical-align: middle;
+    width: 100%;
+        // Адаптив
+        @media (min-width: 768px) {
+                display: inline-block;
+        }
+        // Форма поиска 
+        form {
+            position: relative;
+            //Внутренняя настройка
+            .inner {
+                display: -ms-flexbox;
+                display: flex;
+                height: 48px;
+                width: 100%;
+                -ms-flex-align: center;
+                align-items: center;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                vertical-align: middle;
+                width: auto;
+                border-radius: 8px;
+                background: #f5f6f9;
+                // Строка поиска
+                .label {
+                    flex-grow: 1;
+                    position: relative;
+                    display: inline-block;
+                    margin: 0;
+                    padding: 0;
+                    height: 48px;
+                    border: radius 8px;
+
+                    &::placeholder {
+                        .inner {
+                            color: #9697a1;
+                        }
+                    
+                    }
+
+                    input {
+                        // Подсвечивается что тут ошибка
+                        // webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        background: none;
+                        border: 0;
+                        border-radius: 8px;
+                        box-sizing: border-box;
+                        font-size: 16px;
+                        height: 48px;
+                        line-height: 18px;
+                        outline: none;
+                        padding: 0 32px 0 16px;
+                        transition: background .3s ease-in-out;
+                        width: 100%;
+                        padding-left: 8px;
+
+                        &:-ms-clear {
+                            display: none;
+                        }
+                        &:-moz-placeholder {
+                            color: #9697a1;
+                        }
+                        &:-ms-input-placeholder {
+                            color: #9697a1;
+                        }
+                        &:focus {
+                            background: #ededed;
+                        }
+                    }
+                }
+            }
+        }
+    
 }

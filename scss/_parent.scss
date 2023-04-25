@@ -1,45 +1,50 @@
+// Родительский элемент с категориями 
 .parent {
     margin-bottom: 1rem;
     position: relative;
 
     @media (max-width: 767.9px) {
-            display: none;
+        display: none;
     }
 
-    .categories {
+    // Лист с категориями
+    .categories__list {
+
         padding: 21px 0 32px;
+        height: 64px;
+        overflow: hidden;
+        display: contents;
 
-        .categories__list {
-            height: 64px;
-            overflow: hidden;
+        // Сами категории
+        .category {
+            color: #3d3f56;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 14px;
+            line-height: 18px;
+            margin: 8px 32px 8px 0;
+            text-decoration: none;
 
-            .category {
-                color: #3d3f56;
-                cursor: pointer;
-                display: inline-block;
-                font-size: 14px;
-                line-height: 18px;
-                margin: 8px 32px 8px 0;
-                text-decoration: none;
-
-                &:first-child {
-                    font-weight: 500;
-                }
-                &:focus,
-                &:hover {
-                    color: #ff7676;
-                    outline: none;
-                }
-
-                &:focus .menu,
-                &:hover .menu {
-                    fill: #ff7676;
-                }
+            &:first-child {
+                font-weight: 500;
             }
 
-            .menu {
-                margin-right: 7px;
+            &:focus,
+            &:hover {
+                color: #ff7676;
+                outline: none;
+            }
+
+            &:focus .menu,
+            &:hover .menu {
+                fill: #ff7676;
             }
         }
+
+        // Выпадающая менюшка
+        .menu {
+            margin-right: 7px;
+        }
     }
+
 }

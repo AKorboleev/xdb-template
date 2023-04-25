@@ -1,22 +1,13 @@
-// *,
-// *::before,
-// *::after {
-//     box-sizing: border-box;
-//     margin: 0;
-//     padding: 0;
-// }
-
-// ul {
-//     list-style: none;
-// }
-
-// a {
-//     text-decoration: none;
-// }
-// Меняет цвет на всем сайте 
-
-
 // Лучше не использовать , так как жрет много рессурсов, при большом проекте , будет долгая прогрузка
 * {
     box-sizing:border-box;
+    font-family: $fontFamaly;
+    &:hover {
+        transition: 0.4s;
+    }
+}
+
+a { 
+    text-decoration: none;
+    color:aliceblue;
 }

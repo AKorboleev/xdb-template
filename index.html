@@ -114,7 +114,7 @@
 				</div>
 				<div class="navBarlanguage">
 					<div class="selectWrapper">
-						<div role="button" tabindex="0" class="button">RUB
+						<div role="button" tabindex="0" class="button__lang">RUB
 							<svg width="9" height="6" class="selectArrow">
 								<path d="M1.414.536h6.243a1 1 0 01.707 1.707L5.243 5.364a1 1 0 01-1.415 0L.708 2.243A1 1 0 011.413.536z" fill="#8E90A7"></path>
 							</svg>
@@ -132,6 +132,7 @@
 		</div>
 	</div>
 		<!-- Дорабоать, некоторые классы не находятся в нужном файле  -->
+		<!-- Решить что делать с ненужными классами, позже подумаю нужно ли их удалять  -->
 	<div class="header__button">
 		<!-- <div class="inner____spgD"> -->
 			<!-- <div class="reducer___1Stj6"> -->
@@ -141,7 +142,7 @@
 						<!-- side___1FJ5i старый класс -->
 						<div class="side">
 							<div class="burger" role="button" tabindex="0" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvas-navbar"></div>
-							<!-- Не трогал, так как не знаю как работает  -->
+							<!-- выпадающая менюшка, стоит переделать под норм верстку, не думаю что предется выносить  -->
 							<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-navbar">
 	
 								<div class="offcanvas-header justify-content-start bg-light">
@@ -320,7 +321,7 @@
 											<label class="label">
 												<input id="sought_text" name="text" placeholder="Поиск" value="[XDB_SOUGHT_TEXT]">
 											</label>
-											<button type="submit" class="submit" ">Найти</button>
+											<button type="submit" class="button" ">Найти</button>
 										<!-- </div> -->
 									</div>
 								</form>
@@ -357,7 +358,7 @@
 									</a>
 								</div>
 								<div class="block">
-									<a class="block__inner" href="/cart/">
+									<a class="block__inner" href="cart.html">
 										<div class="inner">
 											<div class="item_icon">
 												<svg width="26" height="26" viewBox="-3 -3 26 26">
@@ -381,7 +382,6 @@
 <div class="parent">
 	<!-- <div class="header___1OEjl"> -->
 		<div class="container">
-			<div class="categories">
 				<nav class="categories__list">
 					<div class="category" tabindex="0" role="button">
 						<svg width="16" height="10" class="menu">
@@ -408,7 +408,6 @@
 					<a class="category" href="/search/?type=1837">Дача, сад и огород</a> 
 					<a class="category" href="/search/?type=276">Хобби и творчество</a> 
 				</nav>
-			</div>
 		</div>
 	<!-- </div> -->
 </div>
@@ -438,58 +437,55 @@
 			</div>
 		</section>
 	</main>
-
-	<div class="footer___3lFMC">
-		<div class="reducer___1JA85 noMarginBottom___2wOBf">
-			<div class="inner___1BAvS">
-				<div class="links___FiKB8">
-					<div class="wrapper___28FF5">
-						<a class="link___1nXfC" href="/catalog/">Каталог</a>
-					</div>
-					<div class="wrapper___28FF5">
-						<a class="link___1nXfC" href="/privacy/">Соглашение о конфиденциальности</a>
-					</div>
-					<div class="wrapper___28FF5">
-						<a class="link___1nXfC" href="/terms/">Условия использования</a>
-					</div>
-					<div class="wrapper___28FF5">
-						<a class="link___1nXfC" href="/ipr-protection">Правообладателям</a>
-					</div>
-					<div class="wrapper___28FF5">
-						<a class="link___1nXfC" href="/faq">Поддержка</a>
-					</div>
-					<div class="wrapper___28FF5">
-						<a class="link___1nXfC" href="/about">О компании</a>
-					</div>
-					<div class="wrapper___28FF5">
-						<a class="link___1nXfC" target="_blank" rel="noopener noreferrer" href="https://merchant.joom.com/">Стать продавцом</a>
-					</div>
+<footer class="footer">
+		<div class="container">
+			<div class="links">
+				<div class="wrapper">
+					<a class="link" href="/catalog/">Каталог</a>
 				</div>
-				<div class="copy___2fhTV">
-						<span><!--noindex--></span>© 2022 [MARKET_NAME]. Сделано на платформе <a class="link___1nXfC" href="//xdb.ru/">XDB</a>
-					<span><!--/noindex--></span>
-					<div class="badges___2otsb">
-						<span class="logoStyle___XLdSi">
-							<span class="inner___iWKcS">
-								<a class="link___1FICf" href="/" role="button" rel="noopener noreferrer">
-									<img lang="ru" class="badge___3PK_z" alt="Huawei" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjYxIDJDMy41MSAyIDIgMy41IDIgNy42MXY4Ljc4QzIgMjAuNDkgMy41IDIyIDcuNjEgMjJoOC43OGM0LjEgMCA1LjYxLTEuNSA1LjYxLTUuNjFWNy42QzIyIDMuNTEgMjAuNSAyIDE2LjM5IDJINy42em0zLjExIDExLjZoLjhsLS40LS45NC0uNC45NHptLS4yLjQ3bC0uMjMuNTVoLS41NEwxMC45IDEyaC40N2wxLjE1IDIuNjJoLS41NmwtLjI0LS41NWgtMS4yem04LjczLjU0aC41M1YxMmgtLjUzdjIuNjF6bS0yLjA4LTEuMTJoLjk2di0uNDhoLS45NnYtLjUzaDEuNFYxMmgtMS45M3YyLjYyaDEuOTh2LS40OGgtMS40NXYtLjY1em0tMi4wOS4zMUwxNC41IDEyaC0uNDNsLS42IDEuOC0uNTgtMS44aC0uNTZsLjkxIDIuNjJoLjQ0bC42LTEuNzIuNiAxLjcyaC40M2wuOTEtMi42MmgtLjU1bC0uNTggMS44em0tNi4xMy0uM2MwIC40Mi0uMjIuNjUtLjYuNjUtLjM5IDAtLjYtLjIzLS42LS42N1YxMmgtLjUzdjEuNWMwIC43NC40MSAxLjE2IDEuMTIgMS4xNi43MiAwIDEuMTQtLjQzIDEuMTQtMS4xOFYxMmgtLjUzdjEuNXptLTMtMS41aC41M3YyLjYyaC0uNTN2LTEuMDZoLTEuMnYxLjA2aC0uNTNWMTJoLjUzdjEuMDZoMS4yVjEyem0yLjcyLTYuNjdhMy4zNCAzLjM0IDAgMDA2LjY2IDBoLS40N2EyLjg3IDIuODcgMCAwMS01LjcyIDBoLS40N3oiIGZpbGw9IiNCMkIzQzIiLz48L3N2Zz4K">
-								</a>
-								<a class="link___1FICf" href="/" role="button" rel="noopener noreferrer">
-									<img lang="ru" class="badge___3PK_z" alt="App Store" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIwLjQ5IDE2LjU5Yy0uMy43LS42NiAxLjM0LTEuMDggMS45M2E5LjgyIDkuODIgMCAwMS0xLjM4IDEuNjdjLS41NS41MS0xLjE1Ljc3LTEuNzguNzktLjQ2IDAtMS0uMTMtMS42NC0uNGE0LjcyIDQuNzIgMCAwMC0xLjc3LS4zOWMtLjU3IDAtMS4xOC4xMy0xLjgyLjRhNC45IDQuOSAwIDAxLTEuNTguNGMtLjYuMDMtMS4yMS0uMjMtMS44Mi0uOGExMS45OSAxMS45OSAwIDAxLTIuOTgtNC43OEExMS4xNSAxMS4xNSAwIDAxNCAxMS44YzAtMS4zNC4yOS0yLjUuODctMy40NmE1LjEgNS4xIDAgMDE0LjI4LTIuNTRjLjQ5IDAgMS4xMi4xNSAxLjkuNDQuOC4zIDEuMy40NSAxLjUyLjQ1LjE2IDAgLjcyLS4xOCAxLjY3LS41My45LS4zMiAxLjY2LS40NiAyLjI4LS40IDEuNjguMTMgMi45NC44IDMuNzkgMmE0LjIxIDQuMjEgMCAwMC0yLjI0IDMuODIgNC41NSA0LjU1IDAgMDAyLjc3IDQuMDljLS4xLjMyLS4yMy42My0uMzUuOTN6TTE2LjYzIDEuNGMwIDEtLjM2IDEuOTMtMS4xIDIuOC0uODcgMS4wMy0xLjkzIDEuNjItMy4wOSAxLjUzYTQuMzggNC4zOCAwIDAxMS4xNC0zLjJjLjM3LS40NC44NC0uNzkgMS40MS0xLjA3czEuMTEtLjQzIDEuNjItLjQ2bC4wMi40eiIgZmlsbD0iI0IyQjNDMiIvPjwvc3ZnPgo=">
-								</a>
-								<a class="link___1FICf" href="/" role="button" rel="noopener noreferrer">
-									<img lang="ru" class="badge___3PK_z" alt="Google Play" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy4xNyAxMS45NmwtNy42NSA5LjRDNC4zOCAyMS4zMyAzLjYgMjAuNCAzLjYgMTlWNWMwLTEuNC43OC0yLjM1IDEuOTUtMi4zNWguMDNsLjA0LjAxIDcuNTUgOS4zem0zLjgxLTMuMWwyLjEgMS4yYy44NS41IDEuMzIgMS4xOCAxLjMyIDEuOTQgMCAuNzUtLjQ3IDEuNDQtMS4zMiAxLjkzbC0yLjA1IDEuMTgtMi41Ny0zLjE2IDIuNTItMy4xem0tLjg4LS41TDcuNSAzLjM3bDYuMzIgNy43OCAyLjI4LTIuOHpNNy4zMyAyMC43MWw2LjQ5LTcuOTcgMi4zMyAyLjg3LTguODIgNS4xeiIgZmlsbD0iI0IyQjNDMiIvPjwvc3ZnPg==">
-								</a>
-							</span>
-						</span>
-					</div>
+				<div class="wrapper">
+					<a class="link" href="/privacy/">Соглашение о конфиденциальности</a>
 				</div>
-				<div class="recaptcha___20ezv">Этот сайт защищен reCAPTCHA и Google<br>
-					<a class="recaptchaLink___2j2yI" target="_blank" rel="noopener noreferrer" href="https://policies.google.com/privacy">Политика конфиденциальности</a> и <a class="recaptchaLink___2j2yI" target="_blank" rel="noopener noreferrer" href="https://policies.google.com/terms">Условия использования</a>
+				<div class="wrapper">
+					<a class="link" href="/terms/">Условия использования</a>
+				</div>
+				<div class="wrapper">
+					<a class="link" href="/ipr-protection">Правообладателям</a>
+				</div>
+				<div class="wrapper">
+					<a class="link" href="/faq">Поддержка</a>
+				</div>
+				<div class="wrapper">
+					<a class="link" href="/about">О компании</a>
+				</div>
+				<div class="wrapper">
+					<a class="link" target="_blank" rel="noopener noreferrer" href="https://merchant.joom.com/">Стать продавцом</a>
 				</div>
 			</div>
+			<div class="xdb">
+					<span><!--noindex--></span>© 2022 [MARKET_NAME]. Сделано на платформе <a class="link___1nXfC" href="//xdb.ru/">XDB</a>
+				<span><!--/noindex--></span>
+				<div class="badges">
+					<!-- <span class="logo__market"> Пусть будет , а то фиг его занет что случится .При перепроверки , может уберу -->
+						<!-- <span class="inner___iWKcS"> Не знаю зачем это , но  пусть будет пока так , а то вдруг что-то сломается , и нужно будет поправить -->
+							<a  href="/" role="button" rel="noopener noreferrer">
+								<img lang="ru"  alt="Huawei" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjYxIDJDMy41MSAyIDIgMy41IDIgNy42MXY4Ljc4QzIgMjAuNDkgMy41IDIyIDcuNjEgMjJoOC43OGM0LjEgMCA1LjYxLTEuNSA1LjYxLTUuNjFWNy42QzIyIDMuNTEgMjAuNSAyIDE2LjM5IDJINy42em0zLjExIDExLjZoLjhsLS40LS45NC0uNC45NHptLS4yLjQ3bC0uMjMuNTVoLS41NEwxMC45IDEyaC40N2wxLjE1IDIuNjJoLS41NmwtLjI0LS41NWgtMS4yem04LjczLjU0aC41M1YxMmgtLjUzdjIuNjF6bS0yLjA4LTEuMTJoLjk2di0uNDhoLS45NnYtLjUzaDEuNFYxMmgtMS45M3YyLjYyaDEuOTh2LS40OGgtMS40NXYtLjY1em0tMi4wOS4zMUwxNC41IDEyaC0uNDNsLS42IDEuOC0uNTgtMS44aC0uNTZsLjkxIDIuNjJoLjQ0bC42LTEuNzIuNiAxLjcyaC40M2wuOTEtMi42MmgtLjU1bC0uNTggMS44em0tNi4xMy0uM2MwIC40Mi0uMjIuNjUtLjYuNjUtLjM5IDAtLjYtLjIzLS42LS42N1YxMmgtLjUzdjEuNWMwIC43NC40MSAxLjE2IDEuMTIgMS4xNi43MiAwIDEuMTQtLjQzIDEuMTQtMS4xOFYxMmgtLjUzdjEuNXptLTMtMS41aC41M3YyLjYyaC0uNTN2LTEuMDZoLTEuMnYxLjA2aC0uNTNWMTJoLjUzdjEuMDZoMS4yVjEyem0yLjcyLTYuNjdhMy4zNCAzLjM0IDAgMDA2LjY2IDBoLS40N2EyLjg3IDIuODcgMCAwMS01LjcyIDBoLS40N3oiIGZpbGw9IiNCMkIzQzIiLz48L3N2Zz4K">
+							</a>
+							<a  href="/" role="button" rel="noopener noreferrer">
+								<img lang="ru"  alt="App Store" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIwLjQ5IDE2LjU5Yy0uMy43LS42NiAxLjM0LTEuMDggMS45M2E5LjgyIDkuODIgMCAwMS0xLjM4IDEuNjdjLS41NS41MS0xLjE1Ljc3LTEuNzguNzktLjQ2IDAtMS0uMTMtMS42NC0uNGE0LjcyIDQuNzIgMCAwMC0xLjc3LS4zOWMtLjU3IDAtMS4xOC4xMy0xLjgyLjRhNC45IDQuOSAwIDAxLTEuNTguNGMtLjYuMDMtMS4yMS0uMjMtMS44Mi0uOGExMS45OSAxMS45OSAwIDAxLTIuOTgtNC43OEExMS4xNSAxMS4xNSAwIDAxNCAxMS44YzAtMS4zNC4yOS0yLjUuODctMy40NmE1LjEgNS4xIDAgMDE0LjI4LTIuNTRjLjQ5IDAgMS4xMi4xNSAxLjkuNDQuOC4zIDEuMy40NSAxLjUyLjQ1LjE2IDAgLjcyLS4xOCAxLjY3LS41My45LS4zMiAxLjY2LS40NiAyLjI4LS40IDEuNjguMTMgMi45NC44IDMuNzkgMmE0LjIxIDQuMjEgMCAwMC0yLjI0IDMuODIgNC41NSA0LjU1IDAgMDAyLjc3IDQuMDljLS4xLjMyLS4yMy42My0uMzUuOTN6TTE2LjYzIDEuNGMwIDEtLjM2IDEuOTMtMS4xIDIuOC0uODcgMS4wMy0xLjkzIDEuNjItMy4wOSAxLjUzYTQuMzggNC4zOCAwIDAxMS4xNC0zLjJjLjM3LS40NC44NC0uNzkgMS40MS0xLjA3czEuMTEtLjQzIDEuNjItLjQ2bC4wMi40eiIgZmlsbD0iI0IyQjNDMiIvPjwvc3ZnPgo=">
+							</a>
+							<a  href="/" role="button" rel="noopener noreferrer">
+								<img lang="ru" alt="Google Play" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy4xNyAxMS45NmwtNy42NSA5LjRDNC4zOCAyMS4zMyAzLjYgMjAuNCAzLjYgMTlWNWMwLTEuNC43OC0yLjM1IDEuOTUtMi4zNWguMDNsLjA0LjAxIDcuNTUgOS4zem0zLjgxLTMuMWwyLjEgMS4yYy44NS41IDEuMzIgMS4xOCAxLjMyIDEuOTQgMCAuNzUtLjQ3IDEuNDQtMS4zMiAxLjkzbC0yLjA1IDEuMTgtMi41Ny0zLjE2IDIuNTItMy4xem0tLjg4LS41TDcuNSAzLjM3bDYuMzIgNy43OCAyLjI4LTIuOHpNNy4zMyAyMC43MWw2LjQ5LTcuOTcgMi4zMyAyLjg3LTguODIgNS4xeiIgZmlsbD0iI0IyQjNDMiIvPjwvc3ZnPg==">
+							</a>
+						<!-- </span> -->
+					<!-- </span> -->
+				</div>
+			</div>
+			<div class="recaptcha">Этот сайт защищен reCAPTCHA и Google<br>
+				<a target="_blank" rel="noopener noreferrer" href="https://policies.google.com/privacy">Политика конфиденциальности</a> и <a class="recaptchaLink___2j2yI" target="_blank" rel="noopener noreferrer" href="https://policies.google.com/terms">Условия использования</a>
+			</div>
 		</div>
-	</div>
+</footer>
 	
 </body>
 </html>
