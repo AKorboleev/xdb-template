@@ -115,7 +115,7 @@ header.header {
                             font-size: 12px;
         
                             &:hover {
-                                color: #ff7676;
+                                color: $hoverColor;
                             }
                         }
                     }
@@ -146,7 +146,6 @@ header.header {
                         display: -ms-flexbox;
                         display: flex;
                         margin: 0 16px;
-    
                         -ms-flex-align: center;
                         align-items: center;
                         color: #8e90a7;
@@ -155,6 +154,9 @@ header.header {
                         line-height: 20px;
                         text-decoration: none;
                         white-space: nowrap;
+                        &:hover {
+                            color: $hoverColor;
+                        }
                     }
                 }
             }
@@ -297,6 +299,12 @@ header.header {
                             @media (max-width: 991.9px) {
                                     margin-bottom: 0;
                                     margin-top: 2px;
+                            }
+
+                            h6 {
+                                &:hover { 
+                                    color:$hoverColor;
+                                }
                             }
                         }
                     }

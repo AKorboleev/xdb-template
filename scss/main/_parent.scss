@@ -31,13 +31,13 @@
 
             &:focus,
             &:hover {
-                color: #ff7676;
+                color: $hoverColor;
                 outline: none;
             }
 
             &:focus .menu,
             &:hover .menu {
-                fill: #ff7676;
+                fill: $hoverColor;
             }
         }
 

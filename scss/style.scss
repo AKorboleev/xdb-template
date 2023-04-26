@@ -1,7 +1,9 @@
-@import "_cart";
 @import "general";
-@import "header";
-@import "parent";
-@import "footer";
+@import "main/header";
+@import "main/parent";
+@import "main/footer";
 @import "reset";
 @import "swiper";
+@import "cart";
+@import "orders";
+@import "catalog";

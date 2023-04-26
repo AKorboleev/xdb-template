@@ -2,6 +2,7 @@
 
 $fontFamaly: 'Kurale', serif;
 $os: 'Open Sans', sans-serif;
+$hoverColor: #47d499;
 $white:#fff;
 $yellow:#b39f08;
 $black:rgb(22, 22, 22);
@@ -16,7 +17,11 @@ $headerTop:#fff ;
     justify-content: $jc;
     align-items: $ai;    
 }
-
+// Использовать этот класс когда нет товара в корзине, если есть то убирать, для этого использовать js
+// Пока добавил в cart и orders. Можно убрать если нужно будет. Его стоит добавлять в main
+.grey {
+    background-color:rgb(219, 219, 219);
+}
 
 .name__inner {
     color: #3d3f56;
@@ -33,7 +38,6 @@ $headerTop:#fff ;
 
 // Изменяемая кнопка, стоит только подставить класс
 .button {
-    border-radius: 0.38rem;
     box-sizing: border-box;
     display: inline-block;
     background: #c95252;
@@ -146,4 +150,17 @@ $headerTop:#fff ;
             }
         }
     
+}
+
+.active {
+    &:before {
+        background: #ff7676;
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 4px
+    }
 }

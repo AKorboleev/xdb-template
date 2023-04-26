@@ -243,7 +243,7 @@
     background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3LjUgNy41Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgZD0iTTYuOCA2LjdsLTYtNm02IDBsLTYgNiIvPjwvc3ZnPg==) 50%/.5rem no-repeat;
     color: inherit;
     cursor: pointer;
-    display: block;
+    display: inline-block;
     height: 1.6667rem;
     position: relative;
     text-decoration: none;
