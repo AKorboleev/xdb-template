@@ -1,121 +1,110 @@
+// Основной контент
 .content {
     margin-top: 12px;
+    margin-left: 6px;
+    margin-right: 6px;
+    // Адаптив
     @media (min-width: 768px) {
         margin-top: 16px;
+        padding-left: 8px;
+        padding-right: 8px
     }
+    // Обертка основного контента, по категориям
+    .wrapper {
+        padding-bottom:50px;
+        border-bottom: 1px solid #9e9e9e;
+        -ms-flex-align: center;
+        align-items: center;
+        color: #2d2f43;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        position: relative;
+        text-decoration: none;
+        padding: 24px 12px;
 
-    .parent {
-        margin-left: 6px;
-        margin-right: 6px;
-
-        @media(min-width: 768) {
-            padding-left: 8px;
-            padding-right: 8px
+        h3 {
+            -webkit-font-smoothing: antialiased;
+            font-weight: 500;
+            margin-bottom: .8888rem;
+            margin-top: -6px;
+            // Адаптив
+            @media(min-width:768px) {
+                margin-top: -8px;
+            }
         }
-        .wrapper {
-            margin-top: 50px;
-            padding-bottom:50px;
-            border-bottom: 1px solid #9e9e9e;
-
-            h3 {
-                -webkit-font-smoothing: antialiased;
-                font-weight: 500;
+        // .cardInner {
+            // Заголловок Контента и Картинки
+            .subheader {
+                font-size: 1.3333rem;
                 margin-bottom: .8888rem;
-                margin-top: -6px;
-                @media(min-width:768px) {
-                    margin-top: -8px;
+                a {
+                    color: #2d2f43;
+                    font-weight: 400;
+                    text-decoration: none;
                 }
             }
-            
-            .item {
-                -ms-flex-align: center;
-                align-items: center;
-                color: #2d2f43;
-                display: -ms-flexbox;
-                display: flex;
-                -ms-flex-direction: row;
-                flex-direction: row;
-                position: relative;
-                text-decoration: none;
-                padding-bottom: 24px;
-                padding-left: 24px;
-
-                .cardInner {
-                    padding-bottom: 12px;
-                    padding-top: 12px;
-
-                    .subheader {
-                        font-size: 1.3333rem;
-                        margin-bottom: .8888rem;
-                        a {
-                            color: #2d2f43;
-                            font-weight: 400
-                        }
+            // Категории контента
+            .categories {
+                display: inline;
+                -moz-column-count: 4;
+                column-count: 4;
+                -moz-column-gap: 2em;
+                column-gap: 2em;
+                // Адаптив
+                @media(max-width:1299.9px) {
+                        -moz-column-count: 3;
+                        column-count: 3;
+                }
+                
+                @media(max-width:991.9px) {
+                        -moz-column-count: 2;
+                        column-count: 2;
+                }
+                
+                @media(max-width:767.9px) {
+                        -moz-column-count: 1;
+                        column-count: 1;
+                }
+                .list {
+                    margin-bottom: 20px; 
+                    break-inside: avoid-column;
+                    a.header__category {
+                        color: $headerA;
+                        font-weight: 600;
+                        text-decoration: none;
                     }
-
-                    .categories {
-                        -moz-column-count: 4;
-                        column-count: 4;
-                        -moz-column-gap: 2em;
-                        column-gap: 2em;
-
-                        @media(max-width:1299.9px) {
-                                -moz-column-count: 3;
-                                column-count: 3;
-                        }
-                        
-                        @media(max-width:991.9px) {
-                                -moz-column-count: 2;
-                                column-count: 2;
-                        }
-                        
-                        @media(max-width:767.9px) {
-                                -moz-column-count: 1;
-                                column-count: 1;
-                        }
-
-                        .list {
-                            break-inside: avoid-column;
-
-                            a.header__caregory {
-                                color: $headerA;
+                    ul{
+                        margin-top: 10px;
+                        li {                         
+                            list-style: none;
+                            // Сам контент
+                            a {
                                 font-weight: 400;
+                                color: #2d2f43;
                                 text-decoration: none;
-                            }
-
-                            ul{
-                                li {                         
-                                    list-style: none;
-                                    margin-top: .3333rem;
-                                    a {
-                                        font-weight: 500;
-                                        color: #2d2f43;
-                                        text-decoration: none;
-                                        &:hover {
-                                            text-decoration: underline;
-                                        }
-                                    }
+                                &:hover {
+                                    text-decoration: underline;
                                 }
                             }
                         }
                     }
                 }
-                
-                @media(min-width:768px) {
-                        padding-bottom: 16px;
-                        padding-top: 16px
-                }
-
-                @media(min-width:768px) {
-                        padding-bottom: 16px;
-                        padding-top: 16px;
-                }
-
-                @media(max-width:575.9px) {
-                        padding-bottom: 16px;
-                        padding-top: 16px;
-                }
             }
-        }
+        // }
     }
+        // Адаптив
+        @media(min-width:768px) {
+                padding-bottom: 16px;
+                padding-top: 16px
+        }
+
+        @media(min-width:768px) {
+                padding-bottom: 16px;
+                padding-top: 16px;
+        }
+
+        @media(max-width:575.9px) {
+                padding-bottom: 16px;
+                padding-top: 16px;
+        }
 }
