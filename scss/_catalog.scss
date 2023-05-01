@@ -32,7 +32,6 @@
                 margin-top: -8px;
             }
         }
-        // .cardInner {
             // Заголловок Контента и Картинки
             .subheader {
                 font-size: 1.3333rem;
@@ -65,9 +64,11 @@
                         -moz-column-count: 1;
                         column-count: 1;
                 }
+                // контейнер с названием категории и его возможными товарами
                 .list {
                     margin-bottom: 20px; 
                     break-inside: avoid-column;
+                    // Заголовок названия категории
                     a.header__category {
                         color: $headerA;
                         font-weight: 600;
@@ -77,7 +78,7 @@
                         margin-top: 10px;
                         li {                         
                             list-style: none;
-                            // Сам контент
+                            // Название категории
                             a {
                                 font-weight: 400;
                                 color: #2d2f43;
@@ -90,7 +91,6 @@
                     }
                 }
             }
-        // }
     }
         // Адаптив
         @media(min-width:768px) {

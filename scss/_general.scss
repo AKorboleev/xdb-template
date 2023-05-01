@@ -18,6 +18,9 @@ $headerTop:#fff ;
     justify-content: $jc;
     align-items: $ai;    
 }
+
+
+
 // Использовать этот класс когда нет товара в корзине, если есть то убирать, для этого использовать js
 // Пока добавил в cart и orders. Можно убрать если нужно будет. Его стоит добавлять в main
 .grey {
@@ -39,9 +42,9 @@ $headerTop:#fff ;
 
 // Изменяемая кнопка, стоит только подставить класс
 .button {
-    box-sizing: border-box;
+    // box-sizing: inline-flex;
     display: inline-block;
-    background: #c95252;
+    background: $headerA;
     color: #fff;
     border-radius: 6px;
     border:none;
@@ -50,6 +53,7 @@ $headerTop:#fff ;
     height: 44px;
     position: relative;
     text-align: center;
+    justify-content: center;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -59,6 +63,7 @@ $headerTop:#fff ;
     line-height: 18px;
     margin: 2px 2px 2px 0;
     outline: none;
+    flex-grow: 1;
     
     
     &:focus,
