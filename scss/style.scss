@@ -2,9 +2,13 @@
 @import "main/header";
 @import "main/parent";
 @import "main/footer";
+@import "topcategories/topcategories_wrap";
 @import "reset";
 @import "swiper";
 @import "cart/cart_empty_page.scss";
 @import "cart/cart_item_page.scss";
+@import "cart/cart_catalog_item_child";
+@import "sale/home_page";
+@import "carusel/carusel";
 @import "orders";
 @import "catalog";

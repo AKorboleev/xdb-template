@@ -1,0 +1,97 @@
+.wrapper {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0;
+    .banner {
+        border-radius: 8px;
+        display: block;
+        height: 50px;
+        overflow: hidden;
+        position: relative;
+        text-decoration: none;
+        cursor: pointer;
+        width: 100%;
+        background-color:rgb(255, 98, 98);
+        
+        .sale__block {
+            margin-left: 3%;
+            .sale {
+                display: inline-block;
+                margin-top: 3%;
+                margin-left: 1%;
+                color: white;
+            }
+        }
+
+        .discounts {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-content:center;
+            margin-top: 1%;
+            float: right;
+            
+        }
+
+        .text {
+            margin-top: 3%;
+            color:#fff;
+        }
+
+        .timer {
+            display: flex;
+            align-items: stretch;
+            align-content:center;
+            margin-top: 4%;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            height: 32px;
+
+            .digit {
+                display: flex;
+                align-items: center;
+                background-color: rgb(255, 145, 145);
+                border-radius: 2px;
+                justify-content: center;
+                min-width: 20px;
+                user-select: none;
+                margin-left: 2px;
+
+                &:first-child {
+                    border-bottom-left-radius: 4px;
+                    border-top-left-radius: 4px
+                }
+                
+                &:last-child {
+                    border-bottom-right-radius: 4px;
+                    border-top-right-radius: 4px
+                }
+                
+                &:only-child {
+                    padding: 0 6px
+                }
+            }
+
+            .separator {
+                -ms-flex-align: center;
+                align-items: center;
+                display: flex;
+                -ms-flex-pack: center;
+                justify-content: center;
+                width: 8px
+            }
+
+            .arrow {
+                display: block;
+                margin-top: 2%;
+                margin-left: 12px;
+                opacity: .5;
+                transition: opacity .3s ease
+            }
+        }
+    }
+}

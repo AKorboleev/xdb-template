@@ -3,7 +3,7 @@
 $fontFamaly: 'Kurale', serif;
 $os: 'Open Sans', sans-serif;
 $hoverColor: #47d499;
-$headerA:#ff7676;
+$button:#ff7676;
 $white:#fff;
 $yellow:#b39f08;
 $black:rgb(22, 22, 22);
@@ -12,6 +12,10 @@ $container:1230px;
 $mc:0 auto;
 $headerTop:#fff ;
 
+//icon__image цвет иконки в cart_item_page.scss
+$icon__image: #f76767;
+// catalog цвет зоголовка шрифта , который  находится в catalog.scss
+$catalog: #fa6767;
 @mixin flex ($jc,$ai){
     display: flex;
     flex-wrap: wrap;
@@ -43,8 +47,8 @@ $headerTop:#fff ;
 // Изменяемая кнопка, стоит только подставить класс
 .button {
     // box-sizing: inline-flex;
-    display: inline-block;
-    background: $headerA;
+    display: inline;
+    background-color: $button;
     color: #fff;
     border-radius: 6px;
     border:none;
@@ -66,10 +70,12 @@ $headerTop:#fff ;
     flex-grow: 1;
     
     
-    &:focus,
+    &:focus {
+        background-color: $hoverColor;
+    }
     &:hover {
         transition: 0.4s;
-        background: #095213;
+        background-color: $hoverColor;
     }
 }
 
@@ -160,7 +166,7 @@ $headerTop:#fff ;
 
 .active {
     &:before {
-        background: #ff7676;
+        background: $button;
         content: "";
         display: block;
         height: 100%;
@@ -170,4 +176,3 @@ $headerTop:#fff ;
         width: 4px
     }
 }
-

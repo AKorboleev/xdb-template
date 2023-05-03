@@ -179,9 +179,9 @@
                                 -moz-user-select: none;
                                 -ms-user-select: none;
                                 user-select: none;
-                                color: $headerA;
+                                color: $button;
                                 background: none;
-                                border: 1px solid $headerA;
+                                border: 1px solid $button;
     
                                 &:disabled {
                                     pointer-events: none;
@@ -196,7 +196,7 @@
                                 }
                                 &:active {
                                     filter: brightness(95%);
-                                    color: #ff5d5d;
+                                    color: $hoverColor;
                                 }
                             }
     
@@ -279,7 +279,7 @@
                                 &:active,
                                 &:focus,
                                 &:hover {
-                                    color: #2d2f43
+                                    color: $hoverColor;
                                 }
                                 &:before {
                                 content: "";
@@ -396,7 +396,7 @@
                                 .icon__image {
                                 background-repeat: no-repeat;
                                 display: inline-block;
-                                background: #ff7676;
+                                background: $icon__image;
                                 height: 1.3889rem;
                                 padding: .5rem;
                                 width: 1.3889rem;

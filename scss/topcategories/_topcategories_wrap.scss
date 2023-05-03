@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    align-items: baseline;
+    color: #2d2f43;
+    margin-bottom: 16px;
+    margin-top: 25px;
+    .title {
+        display: block;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        @media(min-width:600px) {
+                font-size: 20px;
+                line-height: 24px;
+        }
+        
+        @media(min-width:840px) {
+                font-size: 24px;
+                line-height: 28px;
+        }
+    }
+}

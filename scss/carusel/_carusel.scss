@@ -1,0 +1,157 @@
+
+// Полный лист
+.fullSheetLong {
+    position: relative;
+    overflow-y: hidden;
+    @media(max-width:839.9px) {
+            margin-left: -12px;
+            margin-right: -12px;
+    }
+    @media(max-width:839.9px)and (min-width:768px) {
+            margin-left: -16px;
+            margin-right: -16px;
+    }
+    // Обертка с контентом
+    .wrapper__content {
+        margin-bottom: -100px;
+        padding-bottom: 100px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        
+            &::-webkit-scrollbar {
+            display: none
+        }
+
+    }
+    // Элемент
+    .inner{
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        margin: -16px 0 0 -16px
+    }
+    
+
+}
+// скрол для  js
+.nativeScroll {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    overflow-x: hidden;
+}
+
+// Отдельные классы  другого шаблона, которые стоит потом вынести в отдельный scss
+// Ячейка
+.cell {
+    box-sizing: border-box;
+    -ms-flex-preferred-size: calc(100% - 16.1px);
+    flex-basis: calc(100% - 16.1px);
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin: 16px 0 0 16px;
+    max-width: calc(100% - 16.1px);
+    width: calc(100% - 16.1px);
+    scroll-snap-align: start;
+    // Обертка
+    a.wrapper {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        border-radius: 15px;
+        background-color: rgb(255, 185, 0);
+        // Элемент
+        .item {
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            color: #2d2f43;
+            // Контент
+            .content {
+                display: flex;
+                height: 352px;
+                overflow: hidden;
+                position: relative;
+                border-radius: 8px;
+                color: #2d2f43;
+                // Контейнер под текст
+                .textWrap {
+                    margin: 0 auto;
+                    max-width: 100%;
+                    -ms-flex-align: start;
+                    align-items: flex-start;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    -ms-flex-positive: 1;
+                    max-width: 544px;
+                    display: -ms-flexbox;
+                    display: flex;
+                    position: relative;
+                    color: #fff;
+
+                    h1 {
+                        font-weight: 600;
+                    }
+                    p {
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                }
+                // Сворачивать картинку 
+                .imageWrap {
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    -ms-flex-positive: 1;
+                    flex-grow: 1;
+                    max-width: 544px;
+                    padding: 32px 8px;
+                    width: 50%;
+                    // Блок под картинку
+                    .imagePlaceholder {
+                        max-width: 288px;
+                        width: 100%;
+                        padding-top: 100%;
+                        position: relative;
+                        // Контейнер под картинку
+                        .block {
+                            border-radius: inherit;
+                            bottom: 0;
+                            left: 0;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            // Сама кортинка
+                            .image {
+                                background-repeat: no-repeat;
+                                display: inline-block;
+                                transform-origin: center;
+                                transition: transform .3s ease-in-out;
+                                width: 100%;
+                                background-size: contain;
+                                -o-object-fit: contain;
+                                object-fit: contain;
+                            }
+                        }
+                        
+                    }
+                }
+
+            }
+        }
+        
+    }
+
+    // Может стоит занести внутрь класса wrapper
+    .clickable {
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
