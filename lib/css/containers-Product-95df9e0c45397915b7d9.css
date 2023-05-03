@@ -6818,7 +6818,7 @@ div:last-child>div:last-child>.select___1gv4G:last-child .item___3AzN7:last-chil
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    width: 40px
+    width: 40px;
 }
 
 .next___d3E5Z:after,
@@ -6842,7 +6842,7 @@ div:last-child>div:last-child>.select___1gv4G:last-child .item___3AzN7:last-chil
 
 .prev___35owH {
     left: 10px;
-    padding-left: 6px
+    padding-left: 6px;
 }
 
 .prev___35owH:after {

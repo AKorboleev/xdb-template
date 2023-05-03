@@ -3,11 +3,14 @@
 @import "main/parent";
 @import "main/footer";
 @import "topcategories/topcategories_wrap";
+@import "itemsslider/itemsslider_wrap";
+@import "itemsslider/itemsslider_item";
 @import "reset";
 @import "swiper";
 @import "cart/cart_empty_page.scss";
 @import "cart/cart_item_page.scss";
 @import "cart/cart_catalog_item_child";
+@import "oops/oops_page";
 @import "sale/home_page";
 @import "carusel/carusel";
 @import "orders";
