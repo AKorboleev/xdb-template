@@ -1,0 +1,66 @@
+
+.order_filteres {
+    margin-top:48px;
+    padding-bottom: 48px;
+
+    @media (min-width: 576px) {
+            padding-left: 6px;
+            padding-right: 6px;
+    }
+    @media (min-width: 768px) {
+            margin-top: 64px;
+            padding-left: 8px;
+            padding-right: 8px;
+    }
+    @media (min-width: 992px) {
+            padding-left: 8px;
+            padding-right: 8px;
+    }
+    @media (min-width: 1300px) {
+            padding-left: 8px;
+            padding-right: 8px;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        
+        box-sizing: border-box;
+        min-height: 1px;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+
+        @media (min-width: 576px) {
+                padding-left: 6px;
+                padding-right: 6px;
+        }
+        @media (min-width: 768px) {
+                padding-left: 8px;
+                padding-right: 8px;
+        }
+        @media (min-width: 992px) {
+                padding-left: 8px;
+                padding-right: 8px;
+        }
+        @media (min-width: 1300px) {
+                padding-left: 8px;
+                padding-right: 8px;
+        }
+        h1 {
+            
+            font-size: 1.3333rem;
+            font-weight: 500;
+            margin: 0 auto;
+            max-width: 80%;
+            position: relative;
+            width: 30rem;
+
+            @media (max-width: 767.9px) {
+                    font-size: 1.2rem;
+                    width: 20rem;
+            }
+        }
+    }
+}

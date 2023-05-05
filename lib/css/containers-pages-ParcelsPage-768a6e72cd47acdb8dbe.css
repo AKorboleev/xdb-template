@@ -322,7 +322,7 @@
 }
 
 .parcelPageCardInner___3gjFU {
-    padding: 1rem .8889rem
+    padding: 1rem .8889rem;
 }
 
 .parcelPageCardInner___3gjFU.fullWidth___NDM47 {
@@ -1597,7 +1597,7 @@ div:last-child>div:last-child>.select___1gv4G:last-child .item___3AzN7:last-chil
     font-size: .7778rem;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    line-height: 1.1111rem
+    line-height: 1.1111rem;
 }
 
 .headerText___2iNLG {
@@ -1751,7 +1751,7 @@ div:last-child>div:last-child>.select___1gv4G:last-child .item___3AzN7:last-chil
     display: flex;
     font-size: .7777rem;
     line-height: 1.1111rem;
-    padding: .8888rem
+    padding: .8888rem;
 }
 
 @media(max-width:575.9px) {
@@ -1791,7 +1791,7 @@ div:last-child>div:last-child>.select___1gv4G:last-child .item___3AzN7:last-chil
     margin: 0 .8888rem 0 0;
     overflow: hidden;
     position: relative;
-    width: 5.55555rem
+    width: 5.55555rem;
 }
 
 .image___3N4pp:after {

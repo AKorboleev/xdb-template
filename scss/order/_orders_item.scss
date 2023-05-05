@@ -1,0 +1,239 @@
+.parcelPageCard {
+    background: #fff;
+    border-radius: .5rem;
+
+    @media(max-width:575.9px) {
+        border-radius: 0;
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+
+    .parcelPageCardInner {
+        margin: 20px 10px;
+
+        .header {
+            -ms-flex-align: end;
+            align-items: end;
+            display: -ms-flexbox;
+            display: flex;
+            font-size: .7778rem;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            line-height: 1.1111rem;
+
+            .headerText {
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                margin-right: .8889rem;
+
+                .shippingLabel {
+                    color: #9697a1;
+                    margin-right: .4445rem;
+                    white-space: nowrap;
+                }
+            }
+
+            .badge {
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+                font-size: .7222rem;
+                line-height: .8333rem;
+                padding: .2222rem .6667rem .2778rem;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+
+                background-color: #abadc3;
+                border-radius: .1667rem;
+                color: #fff;
+                font-size: .7222rem;
+                line-height: .8333rem;                    margin-left: .8889rem;
+                padding: .2222rem .6667rem .2778rem;
+            }
+        }
+    }
+
+
+    .orderLayout {
+        display: -ms-flexbox;
+        display: flex;
+        font-size: .7777rem;
+        line-height: 1.1111rem;
+        padding: .8888rem;
+
+        .left {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-preferred-size: 35%;
+            flex-basis: 35%;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            margin-right: .4444rem;
+
+            @media(max-width:575.9px) {
+                .left___3Z4LR {
+                    -ms-flex-preferred-size: auto;
+                    flex-basis: auto;
+                }
+            }
+
+            a.image {
+                background: none;
+                border: none;
+                box-shadow: none;
+                padding: 0;
+                border-radius: .2222rem;
+                cursor: pointer;
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+                height: 5.55555rem;
+                margin: 0 .8888rem 0 0;
+                overflow: hidden;
+                position: relative;
+                width: 5.55555rem;
+
+                img.img {
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    background-size: contain;
+                    -o-object-fit: contain;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .order {
+            display: block;
+
+            .orderId {
+                display: block;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 22px;
+                text-decoration: underline;
+                white-space: nowrap;
+                text-decoration: none;
+                color: #ff7676;
+                &:hover  {
+                    color: $hoverColor;
+                }
+            }
+            .mobilePrice {
+                display: none;
+                font-size: 1rem;
+                font-weight: 600;
+                line-height: 1.3333rem;
+                margin-bottom: .5555rem;
+                margin-right: .4444rem;
+
+                @media(max-width:575.9px) {
+                    display: block;
+                }
+            }
+        }
+
+        .center {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -ms-flex-positive: 2;
+            flex-grow: 2;
+            -ms-flex-negative: 1;
+            flex-shrink: 1;
+            margin: 1.3889rem .4444rem 0;
+
+            @media(max-width:575.9px) {
+                    display: none;
+            }
+
+            .dateRow {
+                margin-bottom: 5px;
+                .dateLabel {
+                    color: #9697a1;
+                }
+
+                .dateValue {
+                    color: #2d2f43;
+                    margin-left: 4px;
+                }
+            }
+        }
+
+        .right {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: end;
+            justify-content: flex-end;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -ms-flex-positive: 0;
+            flex-grow: 0;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            -ms-flex-pack: center;
+            justify-content: center;
+            margin-left: .4444rem;
+            text-align: right;
+
+            @media(max-width:575.9px) {
+                margin-left: 0;
+                margin-top: .8888rem;
+            }
+
+            .price {
+                font-size: 1rem;
+                font-weight: 600;
+                line-height: 1.3333rem;
+                margin-bottom: .5555rem;
+                margin-right: .4444rem;
+
+                @media(max-width:575.9px) {
+                        display: none;
+                }
+
+                .button___fill-lightgrey {
+                    font-weight: 500;
+                    max-width: 14rem;
+
+                    @media(max-width:575.9px) {
+                        max-width: none;
+                    }
+
+                    a.button___fill {
+                        font-weight: 500;
+                        max-width: 14rem;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        box-sizing: border-box;
+                        cursor: pointer;
+                        display: inline-flex;
+                        font-size: inherit;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        line-height: 1.3em;
+                        position: relative;
+                        text-align: center;
+                        text-decoration: none;
+                        transition: .1s ease;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        background: #f3f3f5;
+                        border: 1px solid #f3f3f5;
+                        color: #2d2f43;
+                        padding: .735em 2em;
+                        width: 100%;
+                        border-radius: .38em;
+                    }
+                }
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+    }
+}
