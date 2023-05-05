@@ -17,7 +17,6 @@
 
     <!-- style.min.css -->
     <link rel="stylesheet" href="/css/style.min.css">
-
     <!-- XDB General Lib START -->
 
     <!-- jQuery 3.6.0 -->
@@ -107,32 +106,58 @@
 </head>
 <main>
     <div class="container-xxl">
-        <!-- itemsslider_item -->
-        <div class="content___oops">
-            <div class="breadcrumbs" itemscope="" vocab="http://schema.org/" typeof="BreadcrumbList">
-                <div class="inner">
-                        <span class="ListItem" typeof="ListItem" property="itemListElement">
-                            <a property="item" typeof="WebPage" lang="ru" class="link" href="/">
-                                <span property="name">Главная</span>
-                            </a>
-                            <meta property="position" content="1">
-                        </span>
-                        <span class="ListItem" typeof="ListItem" property="itemListElement">
-                            <a property="item" typeof="WebPage" lang="ru" class="link" href="/category/">
-                                <span property="name">Каталог</span>
-                            </a>
-                            <meta property="position" content="2">
-                        </span>
-                </div>
-            </div>
-            <div class="message">
-                <div class="content">
-                        <div class="image">
-                            <img src="/lib/img/svg/1c7ce0ba2b3f1fabe2ebc8814303b06c.svg">
+        <!-- showcase_wrap -->
+        <div class="design-twoLine">
+            <div class="bannerWrap">
+                <a class="wrapper___design__twoLine clickable" href="[URL]">
+                        <div class="imageWrap">
+                            <div class="contain">
+                                <!-- src="[Src]" -->
+                                <img class="image" alt="" src="img/plastic_house.png" sizes="img/plastic_house.png" srcset="img/plastic_house.png">
+                            </div>
                         </div>
-                        <h1 class="title">Ой! Что-то пошло не так.</h1>
-                        <p class="text">ID: j27d189d3c79fd856</p>
-                        <button class="button mt-3" href="/">Вернуться на главную страницу</button>
+                        <div class="sideContent">
+                            <div class="title">[Title]</div>
+                            <div class="subtitle">[Subtitle]</div>
+                        </div>
+                </a>
+            </div>
+            <div class="productsWrap">
+                <div class="header">
+                    <a class="title" href="[URL]">Самое интересное</a>
+                    <a class="action" href="[URL]">Все товары</a>
+                </div>
+                <div class="products">
+                    [Items]
+                    <!-- showcase_item -->
+                    <div class="design-twoLine__product">
+                        <a class="product" data-source="body" href="[URL]">
+                            <div class="square">
+                                <div class="squareContent">
+                                        <div class="imageWrap">
+                                            <!-- src="[Src] -->
+                                            <img alt="" class="image" src="img/case.jpg" sizes="img/case.jpg" srcset="img/case.jpg">
+                                        </div>
+                                    <div class="actions"></div>
+                                </div>
+                            </div>
+                            <div class="badges">
+                                <div class="badge discountBadge">-66&nbsp;%</div>
+                            </div>
+                            <div class="price">
+                                <span class="hidden">Цена </span>
+                                <span>[Price]</span>
+                                <span class="hidden"> руб.</span>
+                            </div>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <div class="starFill" style="width: 81.0588px;"></div>
+                                    </div>
+                                </div>
+                            <div class="item___name">[Item]</div>
+                        </a>
+                    </div>
+                    <!-- **** -->
                 </div>
             </div>
         </div>
