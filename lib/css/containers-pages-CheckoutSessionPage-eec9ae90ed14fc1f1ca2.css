@@ -319,7 +319,7 @@
 }
 
 .controls___snGIu {
-    margin-left: 24px
+    margin-left: 24px;
 }
 
 .centered___3hPLS .controls___snGIu {
@@ -616,7 +616,7 @@ div:last-child>div:last-child>.select___1gv4G:last-child .item___3AzN7:last-chil
 .address___2WhBF {
     display: -ms-flexbox;
     display: flex;
-    margin: 0
+    margin: 0;
 }
 
 .text___Adc84 {
@@ -805,7 +805,7 @@ div:last-child>div:last-child>.select___1gv4G:last-child .item___3AzN7:last-chil
     height: 48px;
     outline: none;
     padding: 13px 16px;
-    width: 100%
+    width: 100%;
 }
 
 .fieldLabel___3RrVq {

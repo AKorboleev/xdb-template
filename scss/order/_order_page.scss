@@ -192,42 +192,28 @@
                 @media(max-width:575.9px) {
                         display: none;
                 }
+            }
 
-                .button___fill-lightgrey {
-                    font-weight: 500;
-                    max-width: 14rem;
+            .button__fill-lightgrey {
+                font-weight: 500;
+                max-width: 14rem;
 
-                    @media(max-width:575.9px) {
-                        max-width: none;
-                    }
+                @media(max-width:575.9px) {
+                    max-width: none;
+                }
 
-                    a.button___fill {
-                        font-weight: 500;
-                        max-width: 14rem;
-                        -ms-flex-align: center;
-                        align-items: center;
-                        box-sizing: border-box;
-                        cursor: pointer;
-                        display: inline-flex;
-                        font-size: inherit;
-                        -ms-flex-pack: center;
-                        justify-content: center;
-                        line-height: 1.3em;
-                        position: relative;
-                        text-align: center;
-                        text-decoration: none;
-                        transition: .1s ease;
-                        -webkit-user-select: none;
-                        -moz-user-select: none;
-                        -ms-user-select: none;
-                        user-select: none;
-                        background: #f3f3f5;
-                        border: 1px solid #f3f3f5;
-                        color: #2d2f43;
-                        padding: .735em 2em;
-                        width: 100%;
-                        border-radius: .38em;
-                    }
+                a.button__fill {  
+                    width: 100%;
+                    display: flex;
+                    padding: 5px;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    user-select: none;
+
+                    background: #f3f3f5;
+                    border: 1px solid #f3f3f5;
+                    color: #000000;
                 }
             }
         }

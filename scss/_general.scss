@@ -79,6 +79,42 @@ $catalog: #fa6767;
     }
 }
 
+// Кнопка  button  находится в шаблоне address_page.html 
+ .button__address_page {
+    // box-sizing: inline-flex;
+    display: inline;
+    background-color: #2d2f43;
+    color: #fff;
+    border-radius: 6px;
+    border:none;
+    cursor: pointer;
+    text-decoration: none;
+    height: 44px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    margin: 2px 2px 2px 0;
+    outline: none;
+    flex-grow: 1;
+    
+    
+    &:focus {
+        background-color: #53556a;
+    }
+    &:hover {
+        transition: 0.4s;
+        background-color: #43455a;
+    }
+}
+
+
 
 // Форма запроса можно менять хоть как 
 // Вкладывать див, как тут
@@ -173,6 +209,6 @@ $catalog: #fa6767;
         left: 0;
         position: absolute;
         top: 0;
-        width: 4px
+        width: 4px;
     }
 }

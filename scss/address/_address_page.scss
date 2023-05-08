@@ -1,0 +1,195 @@
+.address__page {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 12px;
+    margin-bottom: 1rem;
+
+    @media(min-width:768px) {
+        padding: 16px;
+    }
+
+    .whiteList {
+        background: #fff;
+        padding-left: 24px;
+        padding-right: 24px;
+
+        @media(max-width:575.9px) {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .header {
+            -ms-flex-align: center;
+            align-items: center;
+            border-bottom: 1px solid rgba(0, 0, 0, .06);
+            color: #2d2f43;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            margin: 0 -24px;
+            padding: 20px 24px;
+
+            @media(max-width:575.9px) {
+                    margin: 0 -16px;
+                    padding: 14px 16px;
+            }
+
+            .content {
+                -ms-flex: 1;
+                flex: 1;
+                font-size: 18px;
+                font-weight: 500;
+                text-align: center;
+                padding: 0 8px;
+
+                .headerContainer {
+                    padding-left: 38px;
+                    text-align: center;
+                }
+            }
+
+            .controls {
+                margin-left: 24px;
+
+                @media(max-width:575.9px) {
+                    margin-left: 12px;
+                }
+
+                .button___controls {
+                    color: #ff7676;
+                    cursor: pointer;
+                    float: right;
+                    font-size: .8888rem;
+                    font-weight: 500;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .overlay {
+            border-radius: inherit;
+            position: relative;
+
+            .inner {
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                padding: 4px 24px 48px;
+
+                @media(max-width:991.9px) {
+                        padding: 0 12px 24px;
+                }
+                
+                @media(max-width:767.9px) {
+                        padding: 0 6px 18px;
+                }
+
+                .content {
+                    margin-bottom: 32px;
+                    margin-left: -8px;
+                    margin-right: -8px;
+                    min-height: 150px;
+
+                    &:after,
+                    &:before {
+                        content: " ";
+                        display: table
+                    }
+
+                    @media(max-width:991.9px) {
+                        margin-bottom: 16px;
+                    }
+                    
+                    @media(max-width:767.9px) {
+                        margin-bottom: 8px;
+                    }
+
+                    .row___page {
+                        margin: 12px 0;
+                        box-sizing: border-box;
+                        display: inline-block;
+                        padding: 0 8px;
+                        position: relative;
+                        width: 100%;
+                        @media(max-width:991.9px) {
+                            margin: 8px 0;
+                        }
+                        .field {
+                            border: 1px solid #dfdfe7;
+                            border-radius: 8px;
+                            box-sizing: border-box;
+                            min-width: 0;
+                            position: relative;
+
+                                .fieldLabelContainer {
+                                    font-size: 12px;
+                                    left: 12px;
+                                    line-height: 1.17;
+                                    overflow: hidden;
+                                    pointer-events: none;
+                                    position: absolute;
+                                    right: 12px;
+                                    text-overflow: ellipsis;
+                                    top: -8px;
+                                    white-space: nowrap;
+                                    .fieldLabel {
+                                        background: #fff;
+                                        color: #b2b3c2;
+                                        padding: 1px 3px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+                                    }
+                                }
+
+                            .fieldInput {
+                                overflow: hidden;
+                                position: relative;
+                                background: transparent;
+                                border: 0;
+                                border-radius: 4px;
+                                box-sizing: border-box;
+                                color: #2d2f43;
+                                display: block;
+                                font-size: 16px;
+                                height: 48px;
+                                outline: none;
+                                padding: 13px 16px;
+                                width: 100%;
+                            
+                                .element {
+                                    font-size: 16px;
+                                    height: 100%;
+                                    left: 0;
+                                    opacity: 0;
+                                    position: absolute;
+                                    top: 0;
+                                    width: 100%;
+                                }
+
+                                .button__element {
+                                    display: block;
+                                    overflow: hidden;
+                                    padding-right: .8rem;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+                                &::before {
+                                    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMSA3Ij48cGF0aCBmaWxsPSIjMmQyZjQzIiBkPSJNNS40IDdMMCAxLjYgMS40LjJsNCA0IDQtNCAxLjQgMS40eiIvPjwvc3ZnPg==) 50% 50%/100% no-repeat;
+                                    bottom: 0;
+                                    content: "";
+                                    pointer-events: none;
+                                    position: absolute;
+                                    right: 5px;
+                                    top: 0;
+                                    width: .5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

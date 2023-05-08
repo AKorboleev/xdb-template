@@ -525,7 +525,7 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none
+    user-select: none;
 }
 
 .button___3hmfW.disabled___1jigJ,
@@ -989,7 +989,7 @@
     top: 0;
     transform-origin: center center;
     transition: .2s ease-in-out;
-    width: 100%
+    width: 100%;
 }
 
 .checkIcon___2--6S {
@@ -1112,7 +1112,7 @@
     height: 0;
     opacity: 0;
     width: 0;
-    position: absolute
+    position: absolute;
 }
 
 .detailsContainer___1Z18Y {
