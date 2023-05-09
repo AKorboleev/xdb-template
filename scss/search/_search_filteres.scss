@@ -1,0 +1,114 @@
+.search_filteres {
+    box-sizing: border-box;
+    flex-basis: calc(100% - 16.1px);
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 0;
+    max-width: calc(100% - 16.1px);
+    width: calc(100% - 16.1px);
+
+    .mobileControls {
+        display: none;
+        @media (max-width: 767.9px) {
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        .container__mobile__controls {
+            flex-basis: calc(50% - 6px);
+            flex-grow: 1;
+            flex-shrink: 0;
+            margin-right: 12px;
+            max-width: calc(50% - 6px);
+
+            &:last-child {
+                margin-right: 0;
+            }
+            &:only-child {
+                max-width: none;
+            }
+
+            .button__filteres {
+                -ms-flex-align: center;
+                align-items: center;
+                box-sizing: border-box;
+                cursor: pointer;
+                display: -ms-inline-flexbox;
+                display: inline-flex;
+                font-size: inherit;
+                -ms-flex-pack: center;
+                justify-content: center;
+                line-height: 1.3em;
+                position: relative;
+                text-align: center;
+                text-decoration: none;
+                transition: .1s ease;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                width: 100%;
+
+                border-radius: .38em;
+
+                
+                background: #1010bb;
+                border: 1px solid #0000a8;
+                color: #2d2f43;
+
+                &:disabled {
+                    pointer-events: none;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+
+                &:hover {
+                    background: #2424bb;
+                    border-color: #eeeef0
+                }
+
+                &:disabled:active,
+                &:disabled:hover {
+                    color: #3540e0
+                }
+
+                .children {
+                    display: block;
+                    max-width: 100%;
+                    visibility: hidden;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+
+
+                    .buttonInner {
+                        -ms-flex-align: center;
+                        align-items: center;
+                        display: -ms-flexbox;
+                        display: flex;
+                        font-size: 14px;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        line-height: 18px;
+                        padding: 10px;
+
+                        .text__filtereses {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+
+                        .icon {
+                            display: -ms-flexbox;
+                            display: flex;
+                            -ms-flex-negative: 0;
+                            flex-shrink: 0;
+                            margin: 0 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

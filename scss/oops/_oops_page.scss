@@ -4,58 +4,6 @@
     @media (min-width: 768px) {
         margin: 16px 8px;
     }
-        // внутренняя часть
-        .inner {
-            padding-left: 6px;
-            padding-right: 6px;
-            box-sizing: border-box;
-            margin: 0 auto;
-            max-width: 1300px;
-
-            @media(min-width:576px) {
-                    padding-left: 6px;
-                    padding-right: 6px;
-            }
-
-            @media(min-width:768px) {
-                    padding-left: 8px;
-                    padding-right: 8px;
-            }
-
-            @media(min-width:992px) {
-                    padding-left: 8px;
-                    padding-right: 8px;
-            }
-
-            @media(min-width:1300px) {
-                    padding-left: 8px;
-                    padding-right: 8px;
-            }
-            // Элемент списка
-            .ListItem {
-                color: #9697a1;
-                margin-right: 1ex;
-                font-size: 12px;
-                &:before {
-                    content: "/";
-                    margin-right: 1ex;
-                }
-                &:first-child:before {
-                    display: none;
-                }
-                // Ссылка
-                a.link {
-                    color: #9697a1;
-                    text-decoration: none;
-
-                    &:focus:not([href=""]),
-                    &:hover:not([href=""]) {
-                        color: #ff7676;
-                        text-decoration: underline
-                    }
-                }
-            }
-        }
     
     // Сообщение
     .message {
