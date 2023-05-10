@@ -1,0 +1,31 @@
+.search__more {
+    font-size: 0.7777rem;
+    margin-top: 12px;
+    text-align: center;
+
+    a.button__search__more {
+        border-radius: 0.38rem;
+        box-sizing: border-box;
+        display: inline-block;
+        font-size: 1rem;
+        line-height: 1.3rem;
+        text-align: center;
+        text-decoration: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0.735em 2rem;
+        border: 1px solid #2d2f43;
+        color: #2d2f43;
+        font-size: 0.8888rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+            border-color: #ff7676;
+            color: #ff7676;
+        }
+    }
+}

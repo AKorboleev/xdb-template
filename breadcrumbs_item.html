@@ -107,43 +107,15 @@
 </head>
 <main>
     <div class="container-xxl">
-        <!-- order_often_item-->
-        <div class="restricted__block">
-            <a class="content" target="_blank" href="[URL]">
-                <div class="square">
-                    <div class="squareContent">
-                        <div class="imagePlace">
-                            <!-- imageWrap[ImageBlur] Было так, но я не знаю зачем  [ImageBlur] добавили , такой класс не найден -->
-                            <div class="imageWrap">
-                                <img alt="" class="image" src="img/bucket.jpg" sizes="7.44rem" srcset="img/bucket.jpg">
-                            </div>
-                        </div>
-                        <!-- compact___2kehl[RestrictedClass] б -->
-                        <!-- rowItem___3aCGZ в этом проблема  но почему-то его классы не работают -->
-                        <div class="restricteds rowItem">
-                            <div class="description">[RestrictedText]</div>
-                        </div>
-                        <!-- Не понятно зачем, может сюда что-то нужно будет добавить... -->
-                        <div class="actions"></div>
-                    </div>
-                </div>
-                <div class="badges">
-                    <div class="badge discountBadge">[Discount]</div>
-                </div>
-                <div class="price">
-                    <span class="hidden">Цена </span>
-                    <span>[Price]</span>
-                    <span class="hidden"> руб.</span>
-                </div>
-                <div class="rating">
-                        <div class="stars"></div>
-                        <span class="text">4,5</span>
-                </div>
-                <div class="name">[Item]</div>
-            </a>
-            
+        <!-- breadcrumbs -->
+        <div class="breadcrumbs">
+            <span class="item__list__category" typeof="ListItem" property="itemListElement">
+                <a property="item" typeof="WebPage" lang="ru" class="link" href="[URL]">
+                    <span property="name">[Category]</span>
+                </a>
+                <meta property="position" content="[Position]">
+            </span>
         </div>
-        
         <!-- **** -->
     </div>
 </main>

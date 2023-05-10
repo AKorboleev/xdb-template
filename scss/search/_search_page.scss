@@ -257,7 +257,165 @@
                                     }
                                 }
                             }
+
+
+
+                            .adBadgeT {
+                                background-color: rgba(0, 0, 0, .3);
+                                border-radius: 10px;
+                                color: #fff;
+                                font-size: 10px;
+                                font-weight: 500;
+                                height: 20px;
+                                left: 8px;
+                                line-height: 20px;
+                                position: absolute;
+                                text-align: center;
+                                text-transform: uppercase;
+                                top: 8px;
+                                -webkit-user-select: none;
+                                -moz-user-select: none;
+                                -ms-user-select: none;
+                                user-select: none;
+                                width: 26px
+                            }
                         }
+                    }
+
+
+                        //ограничение
+                    .restricteds {
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-backdrop-filter: blur(20px);
+                        backdrop-filter: blur(20px);
+                        background: rgba(0, 0, 0, .05);
+                        border-radius: 8px;
+                        bottom: 0;
+                        color: #fff;
+                        display: -ms-flexbox;
+                        display: flex;
+                        font-size: 14px;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        left: 0;
+                        line-height: 16px;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        // Картинка с описанием blur контента
+                        .description {
+                            background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMzUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE5Ljk5NSA3LjYwNmM1LjAxNyAwIDkuMDkgNC4wNzMgOS4wOSA5LjA5YTguOTYgOC45NiAwIDAxLS42NDYgMy4zMmw1LjMxNyA1LjMxN0EyMS41OTQgMjEuNTk0IDAgMDA0MCAxNi42OTdDMzYuODQ2IDguNzE1IDI5LjA5MyAzLjA2IDE5Ljk5NSAzLjA2Yy0yLjU0NCAwLTQuOTguNDU0LTcuMjQzIDEuMjcybDMuOTI2IDMuOTE4YTkuMTM0IDkuMTM0IDAgMDEzLjMxNy0uNjQ1ek0xLjgxOSAyLjY1MWw0LjE0NCA0LjE0Ni44MjcuODI3QTIxLjUzNCAyMS41MzQgMCAwMDAgMTYuNjk3YzMuMTQ1IDcuOTgyIDEwLjkwNyAxMy42MzYgMTkuOTk1IDEzLjYzNmEyMS4zMSAyMS4zMSAwIDAwNy45NzEtMS41MzZsLjc3My43NzMgNS4yOTkgNS4zMDkgMi4zMTctMi4zMUw0LjEzNS4zMzQgMS44MTggMi42NTF6TTExLjg3IDEyLjY5N2wyLjgwOSAyLjgwOWMtLjA4Mi4zOS0uMTM3Ljc4Mi0uMTM3IDEuMTlhNS40NTggNS40NTggMCAwMDUuNDU0IDUuNDU1Yy40MDkgMCAuOC0uMDU0IDEuMTgxLS4xMzZsMi44MDggMi44MWMtMS4yMDguNi0yLjU1My45NjMtMy45OS45NjMtNS4wMTcgMC05LjA4OC00LjA3My05LjA4OC05LjA5MSAwLTEuNDM2LjM2My0yLjc4Mi45NjMtNHptNy44MjUtMS40MjdsNS43MjcgNS43MjcuMDI3LS4zYTUuNDU4IDUuNDU4IDAgMDAtNS40NTQtNS40NTVsLS4zLjAyOHoiLz48L3N2Zz4=) no-repeat top/40px;
+                            padding: 48px 8px 0;
+                            text-align: center;
+                            white-space: normal;
+                            background-size: 24px;
+                            padding-top: 28px;
+                        }
+                    }
+                    // Действие
+                    .actions {
+                        bottom: 8px;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        position: absolute;
+                        right: 8px;
+                    }
+
+            
+                    // Значки
+                    .badges {
+                        -ms-flex-wrap: nowrap;
+                        flex-wrap: nowrap;
+                        height: 20px;
+                        margin-top: 8px;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                        overflow: hidden;
+                        //Значек
+                        .badge {
+                            border-radius: 2px;
+                            box-sizing: border-box;
+                            font-size: 12px;
+                            font-weight: 500;
+                            height: 20px;
+                            line-height: 20px;
+                            max-width: 100%;
+                            overflow: hidden;
+                            padding: 0 6px;
+                            text-overflow: ellipsis;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                            white-space: nowrap;
+                        }
+                        // Может предется перенести в  badge,  чтобы сделать меньше
+                        .discountBadge {
+                            background-color: #ff6262;
+                            color: #fff;
+                            -ms-flex-negative: 0;
+                            flex-shrink: 0;
+                            font-size: 12px;
+                        }
+                    }
+
+                    //ценна
+                    .price {
+                        font-size: 1.1111rem;
+                        font-weight: 500;
+                        line-height: 1.3333rem;
+                        margin-top: 8px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        .hidden {
+                            display: none;
+                        }
+                    }
+
+                    .rating {
+                        display: inline-flex;
+                        -ms-flex-wrap: nowrap;
+                        flex-wrap: nowrap;
+                        height: 16px;
+                        margin-top: 4px;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        font-size: 12px;
+                        line-height: 14px;
+
+                        .stars {
+                            background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNCI+PHBhdGggZmlsbD0iI2RmZGZlNyIgZD0iTTEzLjI2IDQuNDhMOS4zIDQuMTQgNy43NS41YS44Mi44MiAwIDAwLTEuNSAwTDQuNyA0LjE0bC0zLjk1LjM0YS44Mi44MiAwIDAwLS40NyAxLjQzbDMgMi42LS45IDMuODZhLjgyLjgyIDAgMDAxLjIyLjg5TDcgMTEuMmwzLjQgMi4wNWEuODIuODIgMCAwMDEuMjEtLjg4bC0uOS0zLjg3IDMtMi42Yy41NS0uNDcuMjctMS4zNy0uNDUtMS40M3oiLz48L3N2Zz4=) 0 0 repeat-x;
+                            height: 14px;
+                            width: 100px;
+                        }
+                        .text {
+                            color: #ff6262;
+                            font-weight: 500;
+                            margin-left: 7px
+                        }
+                    }
+
+                    .name {
+                        line-height: 1.2857em;
+                        max-height: 2.5714em;
+                        font-size: 12px;
+                        font-size: 12px;
+                        line-height: 16px;
+                        line-height: 16px;
+                        margin-top: 8px;
+                        max-height: 32px;
+                        -webkit-user-select: text;
+                        -moz-user-select: text;
+                        -ms-user-select: text;
+                        user-select: text;
                     }
                 }
             }
@@ -296,59 +454,65 @@
                 color: $hoverColor;
             }
 
-            .loader {
-                display: inline-block;
-                height: 1em;
-                position: relative;
-                vertical-align: middle;
-                width: 4em;
-                font-size: 0.3rem;
-                .dot {
-                    width: 1em;
-                    height: 1em;
-                    border-radius: .5em;
-                    position: absolute;
-                    animation-duration: .5s;
-                    animation-timing-function: ease;
-                    animation-iteration-count: infinite;
-                    background: #3d3f56;
-                }
+        }
+    }
 
-                .dot__one {
-                    left: 0;
-                    animation-name: reveal___cG1-a;
-                }
-                .dot__two,
-                .dot__three {
-                    animation-name: slide___3mIXH;
-                }
+    .resizeTriggers {
+        animation: resizeAnimation___1-4fc 1ms;
+        opacity: 0;
+        visibility: hidden;
 
-                .dot__four{
-                    animation-name: reveal___cG1-a;
-                    animation-direction: reverse
-                }
+        .contractTrigger {
+            &:before {
+                content: " ";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+                
+                height: 200%;
+                width: 200%;
             }
         }
     }
 
+    .reducer {
+        box-sizing: border-box;
+        max-width: 100%;
+        margin-bottom: 12px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 16px;
+        }
+
+        .inner {
+            box-sizing: border-box;
+            max-width: 1300px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 6px;
+            padding-right: 6px;
+            .bottomTrendingLinks {
+                display: none;
+                @media(max-width:767.9px) {
+                    display: block;
+                }
+            }
+        }
+    }
 }
 
 
 
-@keyframes reveal___cG1-a {
+@keyframes resizeAnimation___1-4fc {
     0% {
-        transform: scale(.001);
-        background: #e41da5;
+        opacity: 0
     }
 
     to {
-        transform: scale(1);
+        opacity: 0
     }
 }
-
-@keyframes slide___3mIXH {
-    to {
-        transform: translateX(1.5em);
-    }
-}
-

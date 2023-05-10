@@ -1,0 +1,30 @@
+.breadcrumbs {
+    .item__list__category {
+        color: #9697a1;
+        margin-right: 1ex;
+        &:before {
+            content: "/";
+            margin-right: 1ex;
+        }
+        
+        &:first-child:before {
+            display: none;
+        }
+
+        a.link {
+            color: #9697a1;
+            text-decoration: none;
+            
+            &:focus:not([href=""]),
+            &:hover:not([href=""]) {
+                color: #ff7676;
+                text-decoration: underline;
+            }
+            
+        }
+        .link[href=""] {
+            cursor: default;
+        }
+        
+    }
+}

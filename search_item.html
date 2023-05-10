@@ -107,43 +107,44 @@
 </head>
 <main>
     <div class="container-xxl">
-        <!-- order_often_item-->
-        <div class="restricted__block">
-            <a class="content" target="_blank" href="[URL]">
-                <div class="square">
-                    <div class="squareContent">
-                        <div class="imagePlace">
-                            <!-- imageWrap[ImageBlur] Было так, но я не знаю зачем  [ImageBlur] добавили , такой класс не найден -->
-                            <div class="imageWrap">
-                                <img alt="" class="image" src="img/bucket.jpg" sizes="7.44rem" srcset="img/bucket.jpg">
+        <!-- search_item-->
+        <div class="search_item">
+                <div class="restricted__block">
+                    <a class="content" data-source="body" href="[URL]">
+                        <div class="square">
+                            <div class="squareContent">
+                                <div class="imagePlace">
+                                    <div class="imageWrap">
+                                        <img alt="" class="image" src="[Src]" sizes="[Sizes]" srcset="[SrcSet]">
+                                    </div>
+                                </div>
+                                <!-- добавить класс -->
+                                <div class="adBadge___2HhXT">AD</div>
+                                <div class="restricteds rowItem">
+                                    <div class="description">[RestrictedText]</div>
+                                </div>
+                                <div class="actions"></div>
                             </div>
                         </div>
-                        <!-- compact___2kehl[RestrictedClass] б -->
-                        <!-- rowItem___3aCGZ в этом проблема  но почему-то его классы не работают -->
-                        <div class="restricteds rowItem">
-                            <div class="description">[RestrictedText]</div>
+                        <div class="badges">
+                            <div class="badge discountBadge">[Discount]</div>
+                            <!-- хз что это но поставлю свой класс   badge___164Qm brandBadge___MXUZw-->
+                            <!-- Узнать что это -->
+                            <div class="badge discountBadge" title="BRAND">BRAND</div>             
                         </div>
-                        <!-- Не понятно зачем, может сюда что-то нужно будет добавить... -->
-                        <div class="actions"></div>
-                    </div>
+                        <div class="price">
+                            <span class="hidden">Цена </span>
+                            <span>[Price]</span>
+                            <span class="hidden"> руб.</span>
+                        </div>
+                        <div class="rating">
+                            <div class="stars"></div>
+                            <span class="text">4,5</span>
+                        </div>
+                        <div class="name">[Item]</div>
+                    </a>
                 </div>
-                <div class="badges">
-                    <div class="badge discountBadge">[Discount]</div>
-                </div>
-                <div class="price">
-                    <span class="hidden">Цена </span>
-                    <span>[Price]</span>
-                    <span class="hidden"> руб.</span>
-                </div>
-                <div class="rating">
-                        <div class="stars"></div>
-                        <span class="text">4,5</span>
-                </div>
-                <div class="name">[Item]</div>
-            </a>
-            
         </div>
-        
         <!-- **** -->
     </div>
 </main>
