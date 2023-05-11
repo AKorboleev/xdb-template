@@ -1,0 +1,162 @@
+.review_wrap {
+    margin: 10px 24px;
+    align-items: center;
+    color: #2d2f43;
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    min-width: 0;
+    .reviews {
+        position: relative;
+
+        .stars {
+            font-size: 1.1666rem;
+            margin: .4rem 0 .3rem;
+            .rating {
+                -ms-flex-align: center;
+                align-items: center;
+                display: -ms-flexbox;
+                display: flex;
+                font-size: 1em;
+                line-height: 1em;
+
+                .label {
+                    font-size: .875em;
+                    -webkit-font-smoothing: antialiased;
+                    margin-left: 4px
+                }
+                .star{
+                    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI2RmZGZlNyIgZD0iTTEzLjk1OCA1Ljg5M2wtMy43Ny0uMzI3TDguNzE2IDIuMWMtLjI2NS0uNjMxLTEuMTY5LS42MzEtMS40MzQgMEw1LjgxIDUuNTc0bC0zLjc2Mi4zMmMtLjY4Ni4wNTQtLjk2Ni45MS0uNDQ0IDEuMzYzbDIuODU4IDIuNDc3LS44NTYgMy42NzZhLjc3Ny43NzcgMCAwMDEuMTYuODQyTDggMTIuMzA0bDMuMjMzIDEuOTU1YS43NzcuNzc3IDAgMDAxLjE2LS44NGwtLjg1Ny0zLjY4NSAyLjg2LTIuNDc3Yy41MjEtLjQ1Mi4yNDgtMS4zMDktLjQzNy0xLjM2NHoiLz48L3N2Zz4=) repeat-x 0 0/1em;
+                    box-sizing: border-box;
+                    height: 1em;
+                    width: 5em;
+
+                    &:after {
+                        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI2ZmNjI2MiIgZD0iTTEzLjk1OCA1Ljg5M2wtMy43Ny0uMzI3TDguNzE2IDIuMWMtLjI2NS0uNjMxLTEuMTY5LS42MzEtMS40MzQgMEw1LjgxIDUuNTc0bC0zLjc2Mi4zMmMtLjY4Ni4wNTQtLjk2Ni45MS0uNDQ0IDEuMzYzbDIuODU4IDIuNDc3LS44NTYgMy42NzZhLjc3Ny43NzcgMCAwMDEuMTYuODQyTDggMTIuMzA0bDMuMjMzIDEuOTU1YS43NzcuNzc3IDAgMDAxLjE2LS44NGwtLjg1Ny0zLjY4NSAyLjg2LTIuNDc3Yy41MjEtLjQ1Mi4yNDgtMS4zMDktLjQzNy0xLjM2NHoiLz48L3N2Zz4=) repeat-x 0 0/1em;
+                        content: "";
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .filteres {
+            .filter {
+                background: #eee;
+                border-radius: 2em;
+                color: #2d2f43;
+                display: inline-block;
+                font-size: .6111rem;
+                height: 2.2em;
+                line-height: 2.2;
+                margin: .44rem .44rem 0 0;
+                padding: 0 .44rem;
+                text-decoration: none;
+                white-space: nowrap;
+    
+                .filterName {
+                    position: absolute;
+                    overflow: hidden;
+                    clip: rect(0 0 0 0);
+                    height: 1px;
+                    width: 1px;
+                    margin: -1px;
+                    padding: 0;
+                    border: 0;
+    
+                }
+            }
+            .filter-fiveStars:before,
+            .filter-fourStars:before,
+            .filter-oneStar:before,
+            .filter-threeStars:before,
+            .filter-twoStars:before,
+            .filter-withPhoto:before,
+            .filter-withText:before {
+                background-repeat: no-repeat;
+                background-size: contain;
+                content: "";
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+                height: 1em;
+                width: 1em;
+            }
+
+            .filter-withPhoto {
+                &:before {
+                    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMCI+PHBhdGggZmlsbD0iIzJkMmY0MyIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTAuMzggOC44VjEuMmMwLS42LS41LTEuMDctMS4xLTEuMDdIMS43MkMxLjEuMTMuNjQuNi42NCAxLjJ2Ny42YzAgLjYuNDggMS4wNyAxLjA4IDEuMDdoNy42Yy42IDAgMS4wNy0uNDggMS4wNy0xLjA4em0tNi43OC0zbDEuMzYgMS42NEw2Ljg2IDVsMi40MyAzLjI1SDEuN0wzLjYgNS44eiIvPjwvc3ZnPg==)
+                }
+
+                &:focus:before,
+                &:hover:before {
+                    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMCI+PHBhdGggZmlsbD0iI2ZmNzY3NiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTAuMzggOC44VjEuMmMwLS42LS41LTEuMDctMS4xLTEuMDdIMS43MkMxLjEuMTMuNjQuNi42NCAxLjJ2Ny42YzAgLjYuNDggMS4wNyAxLjA4IDEuMDdoNy42Yy42IDAgMS4wNy0uNDggMS4wNy0xLjA4em0tNi43OC0zbDEuMzYgMS42NEw2Ljg2IDVsMi40MyAzLjI1SDEuN0wzLjYgNS44eiIvPjwvc3ZnPg==)
+                }
+            }
+
+            .filter-withText {
+                &:before {
+                    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMCI+PHBhdGggZmlsbD0iIzJkMmY0MyIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNOS4xLjQzSDEuNEMuOS40My40Ni44Ni40NiAxLjR2OC42NmwxLjkyLTEuOTNIOS4xYy41NCAwIC45Ny0uNDMuOTctLjk2VjEuNGMwLS41NC0uNDMtLjk3LS45Ni0uOTd6TTIuMzggMy44aDUuNzh2Ljk2SDIuMzdWMy44em0zLjg1IDIuNEgyLjM3di0uOTZoMy44NXYuOTZ6bTEuOTMtMi45SDIuMzd2LS45NWg1Ljc4di45NnoiLz48L3N2Zz4=)
+                }
+
+                &:focus:before,
+                &:hover:before {
+                    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMCI+PHBhdGggZmlsbD0iI2ZmNzY3NiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNOS4xLjQzSDEuNEMuOS40My40Ni44Ni40NiAxLjR2OC42NmwxLjkyLTEuOTNIOS4xYy41NCAwIC45Ny0uNDMuOTctLjk2VjEuNGMwLS41NC0uNDMtLjk3LS45Ni0uOTd6TTIuMzggMy44aDUuNzh2Ljk2SDIuMzdWMy44em0zLjg1IDIuNEgyLjM3di0uOTZoMy44NXYuOTZ6bTEuOTMtMi45SDIuMzd2LS45NWg1Ljc4di45NnoiLz48L3N2Zz4=)
+                }
+            }
+
+            .filter-fiveStars {
+                &:before {
+                    width: 5.95em;
+                    @include filterStar;
+                }
+            }
+
+            .filter-fourStars {
+                &:before {
+                    width: 4.95em;
+                    @include filterStar;
+                }
+            }
+
+            .filter-threeStars {
+                &:before {
+                    width: 3.95em;
+                    @include filterStar;
+                }
+            }
+
+            .filter-twoStars {
+                &:before {
+                    width: 2.2em;
+                    @include filterStar;
+                }
+            }
+
+            .filter-oneStar {
+                &:before {
+                    width: 1em;
+                   @include filterStar;
+                }
+            }
+        }
+
+
+        .content {
+            min-height: 3rem;
+            position: relative;
+            min-width: 1300px;
+            text-align: right;
+            
+            .next {
+                color: #ff7676;
+                display: inline-block;
+                font-size: .7777rem;
+                margin-left: 1em;
+                text-decoration: none;
+                text-decoration: underline;
+            }
+        }
+    }
+}

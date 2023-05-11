@@ -1768,7 +1768,7 @@ div:last-child>div:last-child>.select___1gv4G:last-child .item___3AzN7:last-chil
 .fullscreen___m1lWg,
 .fullscreen___m1lWg .child___eQkzZ,
 .fullscreen___m1lWg .inner___1-Ita {
-    height: 100%
+    height: 100%;
 }
 
 .popup___3qZvn {
@@ -1948,7 +1948,7 @@ div:last-child>div:last-child>.select___1gv4G:last-child .item___3AzN7:last-chil
     -ms-flex-positive: 1;
     flex-grow: 1;
     margin-left: 8px;
-    max-width: calc(100% - 2em - 8px)
+    max-width: calc(100% - 2em - 8px);
 }
 
 .header___26Oo7 {

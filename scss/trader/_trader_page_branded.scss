@@ -1,0 +1,268 @@
+.trader_page_branded {
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    max-width: 100%;
+    padding-left: 6px;
+    padding-right: 6px;
+
+    
+    border-right: 1px solid #eee;
+    padding-right: 0.6667rem;
+    margin-right: 6px;
+
+    @media (max-width: 767.9px) {
+            border-right: none;
+            margin-right: 0;
+            padding-right: 0;
+    }
+    @media (min-width: 768px) {
+        margin-top: 16px;
+        margin-right: 8px;
+    }
+
+    .inner__element { 
+        position: sticky;
+        top: 12px;
+        position: relative;
+
+        .leftColTop {
+            margin-bottom: 12px;
+    
+            @media (min-width: 768px) {
+                margin-bottom: 16px;
+            }
+            @media (max-width: 767.9px) {
+                margin-bottom: 0;
+            }
+    
+            .storeSummary {
+                box-shadow: 0 1px 0 0 rgba(0, 0, 0, .06);
+                overflow: hidden;
+                @media(max-width:767.9px) {
+                    margin-top: -30px;
+                    padding-top: 30px;
+                }
+                
+                @media(min-width:768px) {
+                    border: 1px solid #f2f3f7;
+                    border-radius: .444rem;
+                    box-shadow: none;
+                }
+                
+                @media(max-width:767.9px) {
+                    margin-bottom: 16px;
+                }
+                .main {
+                    background: #fff;
+                    text-align: center;
+                    padding: 24px;
+    
+                    .contextMenu {
+                        position: absolute;
+                        right: 32px;
+                        top: 32px;
+    
+                        button.contextMenuButton {
+                            background: none;
+                            border: none;
+                            box-shadow: none;
+                            margin: 0;
+                            padding: 0;
+                            cursor: pointer;
+                        }
+                    }
+    
+                    .logo {
+                        margin: 23px auto 42px;
+    
+                        @media(max-width:767.9px) {
+                            margin: 10px auto 25px;
+                        }
+    
+                        .logoWrap {
+                            align-items: center;
+                            display: inline-flex;
+                            background: #fff;
+                            border: 1px solid rgba(0, 0, 0, .1);
+                            border-radius: 6px;
+                            box-sizing: border-box;
+                            justify-content: center;
+                            overflow: hidden;
+                            text-align: center;
+                            height: 4rem;
+                            line-height: 4rem;
+                            width: 4rem;
+                            
+                            @media(max-width:767.9px) {
+                                left: 50%;
+                                position: absolute;
+                                top: 0;
+                                transform: translateX(-50%);
+                            }
+    
+                            .letters {
+                                font-size: 1.2222rem;
+                            }
+                        }
+                    }
+    
+                    h1.trader_name {
+                        font-size: 1.7778rem;
+                        font-weight: 500;
+                        overflow-wrap: break-word;
+                        word-wrap: break-word;
+                    }
+                    h2.TraderCountry {
+                        color: #9697a1;
+                        font-size: .7222rem;
+                        font-weight: 400;
+                        margin-top: .5rem;
+    
+                        svg.locationPin {
+                            padding-right: .25rem;
+                        }
+                    }
+                }
+                
+                .stats {
+                    background: #fff;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    margin-right: -1px;
+    
+                    .statItem {
+                        border-color: hsla(0, 0%, 80%, .2);
+                        border-style: solid;
+                        border-width: 1px 1px 0 0;
+                        color: #9697a1;
+                        -ms-flex: 1;
+                        flex: 1;
+                        font-size: 12px;
+                        text-align: center;
+                        padding: 12px;
+    
+                        .statValue {
+                            color: #2d2f43;
+                            font-size: 1rem
+                        }
+                    }
+                }
+            }
+            
+    
+            .categoriesButton {
+                background: none;
+                border: none;
+                box-shadow: none;
+                padding: 0;
+                -ms-flex-line-pack: center;
+                align-content: center;
+                -ms-flex-align: center;
+                align-items: center;
+                cursor: pointer;
+                display: none;
+                font-size: 16px;
+                -ms-flex-pack: center;
+                justify-content: center;
+                line-height: 20px;
+                margin: 4px auto;
+    
+                @media (max-width: 767.9px) {
+                    display: block;
+                }
+    
+                &:after {
+                    background-position: 50%;
+                    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIuMjk1IDEuNzA1bC0xLjQxLTEuNDEtNC41OSA0LjU4LTQuNTktNC41OC0xLjQxIDEuNDEgNiA2IDYtNnoiIGZpbGw9IiMyRDJGNDMiLz48L3N2Zz4=)
+                        no-repeat;
+                    bottom: 1px;
+                    content: "";
+                    display: inline-block;
+                    height: 8px;
+                    margin-left: 8px;
+                    position: relative;
+                    width: 14px;
+                }
+            }
+            
+        }
+
+
+        .catalog{
+            display: none;
+            padding: 0;
+
+            @media (min-width: 768px) {
+                display: block;
+            }
+
+            .catalog__type {
+                text-align: left;
+            }
+        }
+
+        .product__container__revision {
+                margin: 0 -6px;
+                padding-bottom: 40px;
+
+            @media (min-width: 768px) {
+                margin-left: -8px;
+                margin-right: -8px;
+            }
+
+            .inner {
+                -ms-flex-align: stretch;
+                align-items: stretch;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                margin: -16px 0 0 -16px;
+
+                .block_search_filteres {
+                    box-sizing: border-box;
+                    -ms-flex-preferred-size: calc(100% - 16.1px);
+                    flex-basis: calc(100% - 16.1px);
+                    -ms-flex-positive: 0;
+                    flex-grow: 0;
+                    -ms-flex-negative: 0;
+                    flex-shrink: 0;
+                    margin: 16px 0 0 16px;
+                    max-width: calc(100% - 16.1px);
+                    width: calc(100% - 16.1px)
+                }
+            }
+        }
+
+        .imageWrap {
+            border-radius: .444rem;
+            bottom: 0;
+            left: calc(25% + 4px);
+            overflow: hidden;
+            display: inline-flex;
+            // height: 300px;
+            @media(max-width:991.9px){
+                left: calc(33.33333% + 3px);
+            }
+            
+            @media(max-width:767.9px) {
+                position: static;
+            }
+            
+            img.image {
+                background-repeat: no-repeat;
+                display: inline-block;
+                opacity: .95;
+                border-radius: 20px;
+                background-size: cover;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+        }
+    }
+
+}

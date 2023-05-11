@@ -105,24 +105,53 @@
     <meta name="yandex-verification" content="f4da1d5effd254e9"/>
 
 </head>
-<main>
+<body>
     <div class="container-xxl">
-        <!-- image__item -->
-        <div class="image__item">
-            <div class="image__child[ImageBlur]" data-index="0" style="width: 100%; left: 0px; transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
-                <div class="square">
-                    <div class="content">
-                        <div class="imageWrap">
-                            <img itemprop="image" class="image" height="100%" width="100%" alt="" src="[Src]" sizes="(min-width: 1300px) 512px, (min-width: 768px) 50vw, 100vw" srcset="[SrcSet]" data-fancybox="gallery">
+        <!-- item_review_item -->
+        <!-- Отзыв пользователья , подставить переменные и готово автоматизация отзывов  -->
+        <div class="item__reviev" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+            <div class="avatar__img">
+                <img class="image avatar" alt="" src="https://avatars.joomcdn.net/72c60108a6c2b672592d4bc45996a1ffbcbf74ad_100_100.jpeg" sizes="(min-width: 768px) 5vw, 10vw" srcset="https://avatars.joomcdn.net/72c60108a6c2b672592d4bc45996a1ffbcbf74ad_100_100.jpeg 100w, https://avatars.joomcdn.net/72c60108a6c2b672592d4bc45996a1ffbcbf74ad_original.jpeg 200w">
+            </div>
+            <div class="content__item">
+                <div class="header">
+                    <div class="nameWrap">
+                        <div class="stars">
+                            <div class="rating" itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+                                <meta itemprop="worstRating" content="1">
+                                <meta itemprop="bestRating" content="5">
+                                <div>
+                                    <div class="star" style="padding-right: 1.66667%;"></div>
+                                </div>
+                                <meta itemprop="ratingValue" content="5">
+                            </div>
+                        </div>
+                        <div class="name" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+                            <span itemprop="name">Екатерина Кауркина</span>
                         </div>
                     </div>
+                    <div class="date">
+                        <meta itemprop="datePublished" content="2018-10-16T12:17:45.278Z">16 октября
+                    </div>
+                </div>
+                <div class="text">
+                    <p itemprop="description">Коробка помята но все целое все работает спасибо продавцу</p>
+                </div>
+                <div class="medias">
+                    <button class="media__button" type="button">
+                        <div class="square">
+                            <div class="content">
+                                <div class="imageWrap__item">
+                                    <img index="0" class="img" height="100%" width="100%" alt="" src="https://ugc.joomcdn.net/8870421a6cd3e60148f43d256b312d3cd40253d5_75_100.jpeg" sizes="(min-width: 768px) 64px, 72px" srcset="https://ugc.joomcdn.net/8870421a6cd3e60148f43d256b312d3cd40253d5_75_100.jpeg 75w, https://ugc.joomcdn.net/8870421a6cd3e60148f43d256b312d3cd40253d5_150_200.jpeg 150w, https://ugc.joomcdn.net/8870421a6cd3e60148f43d256b312d3cd40253d5_300_400.jpeg 300w, https://ugc.joomcdn.net/8870421a6cd3e60148f43d256b312d3cd40253d5_768_1024.jpeg 768w, https://ugc.joomcdn.net/8870421a6cd3e60148f43d256b312d3cd40253d5_1536_2048.jpeg 1536w, https://ugc.joomcdn.net/8870421a6cd3e60148f43d256b312d3cd40253d5_original.jpeg 3096w">
+                                </div>
+                            </div>
+                        </div>
+                    </button>
                 </div>
             </div>
         </div>
         <!-- **** -->
     </div>
-</main>
-
 </body>
 
 </html>
