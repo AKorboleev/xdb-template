@@ -1,0 +1,108 @@
+.payment_method {
+    .tab {
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 15px 15px 0;
+        background-color: #fff;
+        min-height: 100%;
+        position: relative;
+        @media(max-width:575.9px) {
+            display: block;
+            margin-bottom: 8px;
+            margin-right: 8px;
+        }
+
+        .block_1 {
+            -ms-flex-align: center;
+            align-items: center;
+            border: 1px solid rgba(0, 0, 0, .08);
+            border-radius: 4px;
+            box-sizing: border-box;
+            color: #2d2f43;
+            cursor: pointer;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            height: 100%;
+            -ms-flex-pack: center;
+            justify-content: center;
+            min-height: 67px;
+            min-width: 150px;
+            outline: none;
+            padding: 8px 20px;
+            text-align: center;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+            
+            -ms-flex-align: start;
+            align-items: flex-start;
+            padding-left: 60px;
+            text-align: left;
+
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+
+            &:focus,
+            &:hover {
+                border-color: #ff7676;
+                color: #fc6767;
+            }
+
+            .child {
+                margin-top: 3px;
+
+                @media(max-width:575.9px) {
+                    margin: 1px 0;
+                }
+            }
+
+            .icon {
+                -ms-flex-align: center;
+                align-items: center;
+                display: -ms-flexbox;
+                display: flex;
+                height: 23px;
+                -ms-flex-pack: center;
+                justify-content: center;
+
+                @media(max-width:575.9px) {
+                    left: 30px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .title {
+                font-size: 14px;
+                font-weight: 500;
+                white-space: nowrap;
+
+                @media(max-width:575.9px) {
+                    white-space: normal;
+                }
+            }
+
+            .notice {
+                margin-top: 5px;
+                color: #9697a1;
+                font-size: 12px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+
+                @media(max-width:575.9px) {
+                    white-space: normal;
+                }
+            }
+
+            .accent___1heRO {
+                color: #ff7676;
+            }
+        }
+    }
+}

@@ -2673,7 +2673,7 @@ div:last-child>div:last-child>.select___1gv4G:last-child .item___3AzN7:last-chil
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0 -15px 9px 0;
-    padding-top: 8px
+    padding-top: 8px;
 }
 
 @media(max-width:575.9px) {
@@ -2903,7 +2903,7 @@ div:last-child>div:last-child>.select___1gv4G:last-child .item___3AzN7:last-chil
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse
+    flex-direction: column-reverse;
 }
 
 @media(min-width:768px) {

@@ -29,6 +29,8 @@ $catalog: #fa6767;
     object-fit: contain;
 }
 
+
+// Масштабирование картинки под максимально закрытие блока , картинка не обрезается , а вписывается с сохранением пропорций 
 @mixin cover {
     background-size: cover;
     -o-object-fit: cover;

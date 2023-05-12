@@ -1,0 +1,193 @@
+.auth_registration {
+    margin: 60px 6px;
+    display: inline-block;
+    box-sizing:border-box;
+    position: relative;
+    width: 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+        
+    @media (min-width: 768px) {
+        margin-top: 16px;
+    }
+
+    @media (min-width: 576px) {
+        margin: 60px 6px;
+    }
+    @media (min-width: 992px) {
+        margin: 60px 8px;
+    }
+
+    .header {
+        display: block;
+        margin: 16px auto;
+        max-width: 340px;
+
+        .illustration {
+            margin-bottom: 0.5rem;
+
+            .image {
+                height: 7.444rem;
+            }
+        }
+
+        .text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.4;
+            margin: 8px auto 0;
+            max-width: 305px;
+        }
+    }
+
+
+    .block_1 {
+        display: block;
+        text-align: center;
+
+        .form_reg {
+            padding-left: 6px;
+            padding-right: 6px;
+            margin: 0.5rem auto 1rem;
+            max-width: 340px;
+
+            @media (min-width: 576px) { 
+                padding-left: 6px;
+                padding-right: 6px;
+            }
+            @media (min-width: 768px) { 
+                padding-left: 6px;
+                padding-right: 6px;
+            }
+            @media (min-width: 992px) { 
+                padding-left: 6px;
+                padding-right: 6px;
+            }
+            @media (min-width: 1300px) { 
+                padding-left: 6px;
+                padding-right: 6px;
+            }
+            .fieldsWrapper {
+                -ms-flex-positive: 0.75;
+                flex-grow: 0.75;
+                margin-right: 1rem;
+
+                @media (max-width: 991.9px) {
+                    -ms-flex-positive: 1;
+                    flex-grow: 1;  
+                }
+                @media (max-width: 575.9px) {
+                    margin-right: 0;  
+                }
+
+                .field {
+                    margin-top: 10px;
+                    border: 1px solid #dfdfe7;
+                    border-radius: 8px;
+                    box-sizing: border-box;
+                    min-width: 0;
+                    position: relative;
+                    color: #8e90a7;
+
+                    label {
+                        .input{
+                            background: transparent;
+                            border: 0;
+                            border-radius: 4px;
+                            box-sizing: border-box;
+                            color: #2d2f43;
+                            display: block;
+                            font-size: 16px;
+                            height: 48px;
+                            outline: none;
+                            padding: 13px 16px;
+                            width: 100%;
+                        }
+
+                        .fieldLabelContainer {
+                            font-size: 12px;
+                            left: 12px;
+                            line-height: 1.17;
+                            overflow: hidden;
+                            position: absolute;
+                            right: 12px;
+                            text-align: left;
+                            text-overflow: ellipsis;
+                            top: -8px;
+                            white-space: nowrap;
+
+                            .fieldLabel {
+                                background: #fff;
+                                border-radius: 4px;
+                                color: #b2b3c2;
+                                padding: 1px 3px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .submit {
+                margin: 24px 0 0;
+                background-color: #2d2f43;
+                border: 0;
+                border-radius: 8px;
+                box-sizing: border-box;
+                cursor: pointer;
+                display: block;
+                font-size: 16px;
+                outline: none;
+                padding: 15px 16px;
+                position: relative;
+                text-align: center;
+                width: 100%;
+
+                &:focus,
+                &:hover {
+                    background: #414462;
+                }
+                &.red___3UzDN {
+                    background: #ff7676;
+                }
+
+                .caption {
+                    color:#ffffff;
+                }
+            }
+        }
+
+        .footer {
+            color: #b2b3c2;
+            font-size: 0.7rem;
+            font-weight: 400;
+            line-height: 1.4;
+            margin: 0.8rem auto 0;
+            max-width: 340px;
+
+            .link {
+                color: #ff7676;
+                cursor: pointer;
+                text-decoration: underline;
+
+                &:hover {
+                    color: #fc6767;
+                }
+            }
+
+            .hyperText {
+                box-sizing: border-box;
+                -webkit-hyphens: auto;
+                -ms-hyphens: auto;
+                hyphens: auto;
+                line-height: 1.4;
+                overflow-wrap: break-word;
+                word-wrap: break-word;
+                .terms {
+                    color: #ff7676;
+                }
+            }
+        }
+    }
+}
