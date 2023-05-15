@@ -1,7 +1,7 @@
 .item__reviev {
     align-items: center;
     color: #2d2f43;
-    display: flex;
+    display: block;
     -ms-flex-direction: row;
     flex-direction: row;
     position: relative;
@@ -19,7 +19,7 @@
     .avatar__img {
         -ms-flex-negative: 0;
         flex-shrink: 0;
-        font-size: 2em;
+        font-size: 1em;
         text-decoration: none;
 
         .image {
@@ -116,7 +116,7 @@
                 cursor: pointer;
                 height: 80px;
                 margin: 8px 8px 0 0;
-                width: 80px;
+                width: 100px;
                 @media(max-width:991.9px) {
                     height: 64px;
                     width: 64px;

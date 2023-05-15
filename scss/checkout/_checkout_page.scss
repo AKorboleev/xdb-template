@@ -285,12 +285,12 @@
                         margin-top: 5px;
 
                         .edit {
-                            color: #ff7676;
+                            color: $mainColor;
                             cursor: pointer;
                             font-size: 14px;
                             font-weight: 500;
                             :hover {
-                                color: #fc6767;
+                                color: $mainColor;
                             }
                             .icon {
                                 display: inline-block;
@@ -400,8 +400,8 @@
                                     -moz-user-select: none;
                                     -ms-user-select: none;
                                     user-select: none;
-                                    background: #ff7676;
-                                    border: 1px solid #ff7676;
+                                    background: $mainColor;
+                                    border: 1px solid $mainColor;
                                     color: #fff;
                                     padding: .735em 1em;
                                     display: block;

@@ -114,7 +114,7 @@
                 text-decoration: underline;
                 white-space: nowrap;
                 text-decoration: none;
-                color: #ff7676;
+                color: $mainColor;
                 &:hover  {
                     color: $hoverColor;
                 }
@@ -211,9 +211,9 @@
                     text-decoration: none;
                     user-select: none;
 
-                    background: #f3f3f5;
+                    background-color: $mainColor;
                     border: 1px solid #f3f3f5;
-                    color: #000000;
+                    color: $white;
                 }
             }
         }

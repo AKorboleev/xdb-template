@@ -149,7 +149,7 @@
                     background: #414462;
                 }
                 &.red___3UzDN {
-                    background: #ff7676;
+                    background: $mainColor;
                 }
 
                 .caption {
@@ -167,12 +167,12 @@
             max-width: 340px;
 
             .link {
-                color: #ff7676;
+                color: $mainColor;
                 cursor: pointer;
                 text-decoration: underline;
 
                 &:hover {
-                    color: #fc6767;
+                    color: $mainColor;
                 }
             }
 
@@ -185,7 +185,7 @@
                 overflow-wrap: break-word;
                 word-wrap: break-word;
                 .terms {
-                    color: #ff7676;
+                    color: $mainColor;
                 }
             }
         }

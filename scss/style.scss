@@ -17,6 +17,7 @@
 @import "sale/home_page";
 @import "carusel/carusel";
 @import "order/order_page";
+@import "order/order_filteres";
 @import "order/orders_page";
 @import "order/order_often_item";
 @import "search/search_page";
@@ -41,4 +42,7 @@
 @import "checkout/checkout_sucess";
 @import "delivery_method/deliveryy_method_item";
 @import "payment_method/paymethod_item";
+
+@import "address/address_page";
+@import "addresses/addresses_item";
 @import "catalog";

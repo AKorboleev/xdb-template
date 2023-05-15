@@ -1,7 +1,8 @@
 //
-.wrapper {
+.cart_item_page {
     margin-top: 12px;
     padding: 0 10px;
+    padding-bottom: 10px;
     @media (min-width: 768px) {
         margin-top: 16px;
     }
@@ -40,148 +41,193 @@
                 margin-bottom: 16px;
                     
             }
-                .list__image {
-                    position: relative;
-                    -ms-flex-align: center;
-                    align-items: center;
-                    background-color:#fff;
-                    color: #2d2f43;
-                    display: -ms-flexbox;
-                    // Изменил display:flex; на display:inline-block; и все заработало.
+            .list__image {
+                position: relative;
+                -ms-flex-align: center;
+                align-items: center;
+                background-color:#fff;
+                color: #2d2f43;
+                display: -ms-flexbox;
+                // Изменил display:flex; на display:inline-block; и все заработало.
+            
+                -ms-flex-direction: row;
+                flex-direction: row;
+                position: relative;
+                text-decoration: none;
+                @media(max-width:575.9px) {
+                    padding: 16px 16px;
+                }
                 
-                    -ms-flex-direction: row;
+                @media(min-width:768px) {
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                }
+
+                .thumbs {
+                    display: -ms-flexbox;
+                    display: flex;
                     flex-direction: row;
+                    width: 100%;
+                }
+
+                .square {
+                    padding-top: 100%;
                     position: relative;
-                    text-decoration: none;
-                    @media(max-width:575.9px) {
-                        padding: 16px 16px;
-                    }
-                    
-                    @media(min-width:768px) {
-                            &:last-child {
-                                margin-bottom: 0;
-                            }
+
+                    .block_swipe {
+                        border-radius: inherit;
+                        bottom: 0;
+                        left: 0;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+
+                        .swipe {
+                            visibility: hidden;
+                            border-radius: 4px;
+                            transform: translateZ(0);
+                            box-sizing: border-box;
+                            height: 100%;
+                            width: 100%;
+                        }
                     }
                 }
-                // Информация о продукте
-                .info__product {
-                    background-color:#fff;
-                    padding: 0 16px;;
-                    border-radius: 6px;
-                    @media(max-width:575.9px) {
-                        padding-left: 16px;
-                        padding-right: 16px;
+
+                .block_counter {
+                    .counter {
+                        background: rgba(0, 0, 0, .3);
+                        border-radius: 2rem;
+                        bottom: 0;
+                        color: #fff;
+                        font-size: .6666rem;
+                        left: 0;
+                        line-height: 2;
+                        padding: 0 1em;
+                        position: absolute;
+                        margin: 14.4px;
+                        @media(min-width:768px) {
+                            margin: 19.2px;
+                        }
                     }
-                    //Основная информация продукта 
-                    .item {
-                        margin-top: 10px;
-                        // Верхний контейнер
-                        
+                }
+            }
+            // Информация о продукте
+            .info__product {
+                background-color:#fff;
+                padding: 0 16px;;
+                border-radius: 6px;
+                @media(max-width:575.9px) {
+                    padding-left: 16px;
+                    padding-right: 16px;
+                }
+                //Основная информация продукта 
+                .item {
+                    margin-top: 10px;
+                    // Верхний контейнер
+                    
+                    // Оценка
+                    .container_grade {
+                        display: flex;
+                        // Звезды оценки
+                        .stars {
+                            background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI2RmZGZlNyIgZD0iTTEzLjk1OCA1Ljg5M2wtMy43Ny0uMzI3TDguNzE2IDIuMWMtLjI2NS0uNjMxLTEuMTY5LS42MzEtMS40MzQgMEw1LjgxIDUuNTc0bC0zLjc2Mi4zMmMtLjY4Ni4wNTQtLjk2Ni45MS0uNDQ0IDEuMzYzbDIuODU4IDIuNDc3LS44NTYgMy42NzZhLjc3Ny43NzcgMCAwMDEuMTYuODQyTDggMTIuMzA0bDMuMjMzIDEuOTU1YS43NzcuNzc3IDAgMDAxLjE2LS44NGwtLjg1Ny0zLjY4NSAyLjg2LTIuNDc3Yy41MjEtLjQ1Mi4yNDgtMS4zMDktLjQzNy0xLjM2NHoiLz48L3N2Zz4=) repeat-x 0 0/1em;
+                            box-sizing: border-box;
+                            height: 1em;
+                            width: 5em;
+
+                            &:after {
+                                background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI2ZmNjI2MiIgZD0iTTEzLjk1OCA1Ljg5M2wtMy43Ny0uMzI3TDguNzE2IDIuMWMtLjI2NS0uNjMxLTEuMTY5LS42MzEtMS40MzQgMEw1LjgxIDUuNTc0bC0zLjc2Mi4zMmMtLjY4Ni4wNTQtLjk2Ni45MS0uNDQ0IDEuMzYzbDIuODU4IDIuNDc3LS44NTYgMy42NzZhLjc3Ny43NzcgMCAwMDEuMTYuODQyTDggMTIuMzA0bDMuMjMzIDEuOTU1YS43NzcuNzc3IDAgMDAxLjE2LS44NGwtLjg1Ny0zLjY4NSAyLjg2LTIuNDc3Yy41MjEtLjQ1Mi4yNDgtMS4zMDktLjQzNy0xLjM2NHoiLz48L3N2Zz4=) repeat-x 0 0/1em;
+                                content: "";
+                                display: block;
+                                height: 100%;
+                                width: 100%
+                            }
+                        }
                         // Оценка
-                        .container_grade {
-                            display: flex;
-                            // Звезды оценки
-                            .stars {
-                                background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI2RmZGZlNyIgZD0iTTEzLjk1OCA1Ljg5M2wtMy43Ny0uMzI3TDguNzE2IDIuMWMtLjI2NS0uNjMxLTEuMTY5LS42MzEtMS40MzQgMEw1LjgxIDUuNTc0bC0zLjc2Mi4zMmMtLjY4Ni4wNTQtLjk2Ni45MS0uNDQ0IDEuMzYzbDIuODU4IDIuNDc3LS44NTYgMy42NzZhLjc3Ny43NzcgMCAwMDEuMTYuODQyTDggMTIuMzA0bDMuMjMzIDEuOTU1YS43NzcuNzc3IDAgMDAxLjE2LS44NGwtLjg1Ny0zLjY4NSAyLjg2LTIuNDc3Yy41MjEtLjQ1Mi4yNDgtMS4zMDktLjQzNy0xLjM2NHoiLz48L3N2Zz4=) repeat-x 0 0/1em;
-                                box-sizing: border-box;
+                        .grade {
+                            font-size: .875em;
+                            -webkit-font-smoothing: antialiased;
+                            margin-left: 4px
+                        }
+                    }
+                    .top {
+                        position: relative;
+                        padding-right: 2rem;
+                            // Контейнер поделиться 
+                        .share {
+                        cursor: pointer;
+                        display: inline-block;
+                        font-size: 1.3333rem;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        vertical-align: middle;
+                            
+                            &:hover {
+                                color:$hoverColor;
+                            }
+                            // Иконка поделиться 
+                            .icon___share {
+                                background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzNkM2Y1NiIgZD0iTTE4IDE2LjA4Yy0uNzYgMC0xLjQ0LjMtMS45Ni43N0w4LjkxIDEyLjdjLjA1LS4yMy4wOS0uNDYuMDktLjdzLS4wNC0uNDctLjA5LS43bDcuMDUtNC4xMWMuNTQuNSAxLjI1LjgxIDIuMDQuODEgMS42NiAwIDMtMS4zNCAzLTNzLTEuMzQtMy0zLTMtMyAxLjM0LTMgM2MwIC4yNC4wNC40Ny4wOS43TDguMDQgOS44MUM3LjUgOS4zMSA2Ljc5IDkgNiA5Yy0xLjY2IDAtMyAxLjM0LTMgM3MxLjM0IDMgMyAzYy43OSAwIDEuNS0uMzEgMi4wNC0uODFsNy4xMiA0LjE2Yy0uMDUuMjEtLjA4LjQzLS4wOC42NSAwIDEuNjEgMS4zMSAyLjkyIDIuOTIgMi45MiAxLjYxIDAgMi45Mi0xLjMxIDIuOTItMi45MnMtMS4zMS0yLjkyLTIuOTItMi45MnoiLz48L3N2Zz4=) 50% 50% no-repeat;
+                                background-size: contain;
+                                display: inline-block;
                                 height: 1em;
-                                width: 5em;
-    
-                                &:after {
-                                    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI2ZmNjI2MiIgZD0iTTEzLjk1OCA1Ljg5M2wtMy43Ny0uMzI3TDguNzE2IDIuMWMtLjI2NS0uNjMxLTEuMTY5LS42MzEtMS40MzQgMEw1LjgxIDUuNTc0bC0zLjc2Mi4zMmMtLjY4Ni4wNTQtLjk2Ni45MS0uNDQ0IDEuMzYzbDIuODU4IDIuNDc3LS44NTYgMy42NzZhLjc3Ny43NzcgMCAwMDEuMTYuODQyTDggMTIuMzA0bDMuMjMzIDEuOTU1YS43NzcuNzc3IDAgMDAxLjE2LS44NGwtLjg1Ny0zLjY4NSAyLjg2LTIuNDc3Yy41MjEtLjQ1Mi4yNDgtMS4zMDktLjQzNy0xLjM2NHoiLz48L3N2Zz4=) repeat-x 0 0/1em;
-                                    content: "";
-                                    display: block;
-                                    height: 100%;
-                                    width: 100%
-                                }
-                            }
-                            // Оценка
-                            .grade {
-                                font-size: .875em;
-                                -webkit-font-smoothing: antialiased;
-                                margin-left: 4px
+                                width: 1em
                             }
                         }
-                        .top {
-                            position: relative;
-                            padding-right: 2rem;
-                                // Контейнер поделиться 
-                            .share {
-                            cursor: pointer;
-                            display: inline-block;
-                            font-size: 1.3333rem;
-                            position: absolute;
-                            right: 0;
-                            top: 0;
-                            vertical-align: middle;
-                                
-                                &:hover {
-                                    color:$hoverColor;
-                                }
-                                // Иконка поделиться 
-                                .icon___share {
-                                    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzNkM2Y1NiIgZD0iTTE4IDE2LjA4Yy0uNzYgMC0xLjQ0LjMtMS45Ni43N0w4LjkxIDEyLjdjLjA1LS4yMy4wOS0uNDYuMDktLjdzLS4wNC0uNDctLjA5LS43bDcuMDUtNC4xMWMuNTQuNSAxLjI1LjgxIDIuMDQuODEgMS42NiAwIDMtMS4zNCAzLTNzLTEuMzQtMy0zLTMtMyAxLjM0LTMgM2MwIC4yNC4wNC40Ny4wOS43TDguMDQgOS44MUM3LjUgOS4zMSA2Ljc5IDkgNiA5Yy0xLjY2IDAtMyAxLjM0LTMgM3MxLjM0IDMgMyAzYy43OSAwIDEuNS0uMzEgMi4wNC0uODFsNy4xMiA0LjE2Yy0uMDUuMjEtLjA4LjQzLS4wOC42NSAwIDEuNjEgMS4zMSAyLjkyIDIuOTIgMi45MiAxLjYxIDAgMi45Mi0xLjMxIDIuOTItMi45MnMtMS4zMS0yLjkyLTIuOTItMi45MnoiLz48L3N2Zz4=) 50% 50% no-repeat;
-                                    background-size: contain;
-                                    display: inline-block;
-                                    height: 1em;
-                                    width: 1em
-                                }
-                            }
-                        }
-                        // Старая цена
-                        .old__price {
-                            color: #9697a1;
-                            font-size: 1.1111rem;
-                            text-decoration: line-through;
-                            white-space: nowrap;
-                            // Нужен для добавления цены через php and js
-                            .hidden {
-                                display:none;
-                            }
-                        }
-                        .price {
-                            -ms-flex-align: center;
-                            align-items: center;
-                            display: -ms-flexbox;
-                            display: flex;
-                            -ms-flex-wrap: wrap;
-                            flex-wrap: wrap;
-                            font-size: 1.7777rem;
-                            font-weight: 500;
-                            white-space: nowrap;
-                        }
-    
+                    }
+                    // Старая цена
+                    .old__price {
+                        color: #9697a1;
+                        font-size: 1.1111rem;
+                        text-decoration: line-through;
+                        white-space: nowrap;
                         // Нужен для добавления цены через php and js
                         .hidden {
                             display:none;
                         }
+                    }
+                    .price {
+                        -ms-flex-align: center;
+                        align-items: center;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                        font-size: 1.7777rem;
+                        font-weight: 500;
+                        white-space: nowrap;
+                    }
+
+                    // Нужен для добавления цены через php and js
+                    .hidden {
+                        display:none;
+                    }
+                    
+
+                    .buttons {
+                        display: -ms-flexbox;
+                        display: flex;
+                        -ms-flex-direction: row;
+                        flex-direction: row;
+                        -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
                         
-    
-                        .buttons {
-                            display: -ms-flexbox;
-                            display: flex;
-                            -ms-flex-direction: row;
-                            flex-direction: row;
-                            -ms-flex-wrap: wrap;
-                            flex-wrap: wrap;
-                            
-                            max-width: 25rem;
-    
-                            &:last-child {
-                                margin-bottom: 0
-                            }
-    
+                        max-width: 25rem;
+
+                        &:last-child {
+                            margin-bottom: 0
+                        }
+
                             .button__basket {
                                 display: -ms-inline-flexbox;
                                 -ms-flex-pack: center;
                                 transition: 0.1s ease;
-                                -webkit-user-select: none;
-                                -moz-user-select: none;
-                                -ms-user-select: none;
                                 user-select: none;
-                                color: $button;
+                                color:$mainColor;
                                 background: none;
-                                border: 1px solid $button;
+                                border: 1px solid $mainColor;
     
                                 &:disabled {
                                     pointer-events: none;
@@ -199,7 +245,7 @@
                                     color: $hoverColor;
                                 }
                             }
-    
+
                             .children {
                                 display: block;
                                 max-width: 100%;
@@ -235,180 +281,304 @@
                                     top: 0
                                 }
                             }
-    
-                            .favorite {
-                                -ms-flex-item-align: center;
-                                -ms-grid-row-align: center;
-                                align-self: center;
-                                height: 1.8rem;
-                                margin: .3rem;
-                                width: 1.8rem;
-                                cursor: pointer;
+
+                        .favorite {
+                            -ms-flex-item-align: center;
+                            -ms-grid-row-align: center;
+                            align-self: center;
+                            height: 1.8rem;
+                            margin: .3rem;
+                            width: 1.8rem;
+                            cursor: pointer;
+
+                            svg {
+                                g {
+                                    .hoverable:hover .inner,
+                                    .hoverable:hover .inner {
+                                        fill: #fc6767;
+                                    }
+                                    .hoverable:hover .path,
+                                    .hoverable:hover .path {
+                                        stroke: #fc6767;
+                                    }
+                                }
                             }
-    
                         }
-    
-                        .shipping {
-                            font-size: 14px;
-                            line-height: 16px;
-                            margin-top: 16px;
-                            padding-left: 20px;
+
+                    }
+
+                    .shipping {
+                        font-size: 14px;
+                        line-height: 16px;
+                        margin-top: 16px;
+                        padding-left: 20px;
+                        position: relative;
+
+                        &:before {
+                            background: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTYgMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDJjLjE4NCAwIC4zMzMuMTUuMzMzLjMzM1YzLjVhLjUuNSAwIDAwMSAwVjEuMTY3YS41LjUgMCAwMTEgMHYuNWMwIC4xODQuMTUuMzMzLjMzNC4zMzNoMS42NjZhLjY2NS42NjUgMCAwMS42NjcuNjY3djEwYzAgLjczNi0uNTk3IDEuMzMzLTEuMzMzIDEuMzMzSDMuMzMzQTEuMzMzIDEuMzMzIDAgMDEyIDEyLjY2N3YtMTBBLjY2Ny42NjcgMCAwMTIuNjY3IDJoMS42NjZjLjE4NCAwIC4zMzQuMTUuMzM0LjMzM1YzLjVhLjUuNSAwIDEwMSAwVjEuMTY3YS41LjUgMCAxMTEgMHYuNWMwIC4xODQuMTQ5LjMzMy4zMzMuMzMzaDJ6bTMuNjY3IDRIMy4zMzN2NS42NjdhMSAxIDAgMDAxIDFoNy4zMzRhMSAxIDAgMDAxLTFWNnoiIGZpbGw9IiM4RTkwQTciLz48cGF0aCBkPSJNNC42NjcgNy4zMzNINnYxLjMzNEg0LjY2N1Y3LjMzM3ptMCAyLjY2N0g2djEuMzMzSDQuNjY3VjEwem0yLjY2Ni0yLjY2N2gxLjMzNHYxLjMzNEg3LjMzM1Y3LjMzM3ptMCAyLjY2N2gxLjMzNHYxLjMzM0g3LjMzM1YxMHpNMTAgNy4zMzNoMS4zMzN2MS4zMzRIMTBWNy4zMzN6TTEwIDEwaDEuMzMzdjEuMzMzSDEwVjEweiIgZmlsbD0iIzhFOTBBNyIvPjwvc3ZnPg==) no-repeat 50%/100%;
+                            content: "";
+                            display: block;
+                            height: 16px;
+                            left: 0;
+                            position: absolute;
+                            top: 0;
+                            width: 16px
+                        }
+                        
+                    }
+                    .item__shop {
+                        margin-top: 25px;
+                        padding-top: 25px;
+                        border-top:1px solid #9697a1;
+
+                        .inner {
+                            display: inline-block;
                             position: relative;
-    
+                            margin-left: 3.2;
+                            &:active,
+                            &:focus,
+                            &:hover {
+                                color: $hoverColor;
+                            }
                             &:before {
-                                background: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTYgMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDJjLjE4NCAwIC4zMzMuMTUuMzMzLjMzM1YzLjVhLjUuNSAwIDAwMSAwVjEuMTY3YS41LjUgMCAwMTEgMHYuNWMwIC4xODQuMTUuMzMzLjMzNC4zMzNoMS42NjZhLjY2NS42NjUgMCAwMS42NjcuNjY3djEwYzAgLjczNi0uNTk3IDEuMzMzLTEuMzMzIDEuMzMzSDMuMzMzQTEuMzMzIDEuMzMzIDAgMDEyIDEyLjY2N3YtMTBBLjY2Ny42NjcgMCAwMTIuNjY3IDJoMS42NjZjLjE4NCAwIC4zMzQuMTUuMzM0LjMzM1YzLjVhLjUuNSAwIDEwMSAwVjEuMTY3YS41LjUgMCAxMTEgMHYuNWMwIC4xODQuMTQ5LjMzMy4zMzMuMzMzaDJ6bTMuNjY3IDRIMy4zMzN2NS42NjdhMSAxIDAgMDAxIDFoNy4zMzRhMSAxIDAgMDAxLTFWNnoiIGZpbGw9IiM4RTkwQTciLz48cGF0aCBkPSJNNC42NjcgNy4zMzNINnYxLjMzNEg0LjY2N1Y3LjMzM3ptMCAyLjY2N0g2djEuMzMzSDQuNjY3VjEwem0yLjY2Ni0yLjY2N2gxLjMzNHYxLjMzNEg3LjMzM1Y3LjMzM3ptMCAyLjY2N2gxLjMzNHYxLjMzM0g3LjMzM1YxMHpNMTAgNy4zMzNoMS4zMzN2MS4zMzRIMTBWNy4zMzN6TTEwIDEwaDEuMzMzdjEuMzMzSDEwVjEweiIgZmlsbD0iIzhFOTBBNyIvPjwvc3ZnPg==) no-repeat 50%/100%;
-                                content: "";
-                                display: block;
-                                height: 16px;
-                                left: 0;
-                                position: absolute;
-                                top: 0;
-                                width: 16px
+                            content: "";
+                            display: inline-block;
+                            height: 2.4rem;
+                            vertical-align: middle;
                             }
                             
-                        }
-                        .item__shop {
-                            margin-top: 25px;
-                            padding-top: 25px;
-                            border-top:1px solid #9697a1;
-    
-                            .inner {
-                                display: inline-block;
-                                position: relative;
-                                margin-left: 3.2;
-                                &:active,
-                                &:focus,
-                                &:hover {
-                                    color: $hoverColor;
-                                }
-                                &:before {
-                                content: "";
-                                display: inline-block;
-                                height: 2.4rem;
-                                vertical-align: middle;
-                                }
-                                
-                                @media(max-width:767.9px) {
-                                    margin-left: 3.1rem;
-                                }
-    
-                                .icon {
-                                    display: block;
-                                    left: 0;
-                                    margin-top: -1.33rem;
-                                    position: absolute;
-                                    right: 100%;
-                                    top: 50%
-                                }
-    
-                                .floater___niH3S {
-                                    display: inline-block;
-                                    vertical-align: middle;
-                                    margin-left:50px;
-                                }
-                                
+                            @media(max-width:767.9px) {
+                                margin-left: 3.1rem;
                             }
-                        }
-                    }
-                }
-                // Описание товара 
-                .description {
-                    background-color: #fff;
-                    padding: 0 24px;
-                    border-radius: 6px;
-                    margin-top: 24px;
-                    padding: 20px 20px;
-                    // Блок с описанием 
-                    .description__block {
-                        max-height: 2rem;
-                        overflow: hidden;
-                        white-space: normal;
-                        display: inline;
-                        // Заголовок ОПИСАНИЕ 
-                        h1 {
-                            font-weight: 500;
-                            margin-bottom: .5rem
-                        }
-                        // Само описание 
-                        .text {
-                            font-size: .7777rem;
-                            -webkit-font-smoothing: antialiased;
-                            -webkit-hyphens: auto;
-                            -ms-hyphens: auto;
-                            hyphens: auto;
-                            line-height: 1.3;
-                            overflow: auto;
-                            text-align: left;
-                            white-space: pre-wrap;
-                            max-height: 2rem;
-                            overflow: hidden;
-                            white-space: normal;
-                            // блок для проверки описания, подумываю избавиться от него , так как считаю без него можйно обойтись
-                            .check__block {
-                                display: -ms-flexbox;
-                                display: flex;
-                                margin-top: .2em;
-                                font-size: .7777rem;
-                                -ms-flex-pack: justify;
-                                justify-content: space-between;
-                                line-height: 1.3;
-                                margin-top: .2em;
-                                // Решить почему нет подсветки шрифта!!!
-                                span.check {
-                                    color: #ff7676;
-                                    cursor: pointer;
-                                    text-decoration: none;
 
-                                    &:hover {
-                                        text-decoration: underline
+                            .icon {
+                                display: block;
+                                left: 0;
+                                margin-top: -1.33rem;
+                                position: absolute;
+                                right: 100%;
+                                top: 50%;
+
+                                .storeLogo {
+                                    -ms-flex-align: center;
+                                    align-items: center;
+                                    background-color:$white;
+                                    border: 1px solid rgba(0, 0, 0, .1);
+                                    border-radius: 6px;
+                                    box-sizing: border-box;
+                                    display: -ms-flexbox;
+                                    display: flex;
+                                    justify-content: center;
+                                    overflow: hidden;
+                                    text-align: center;
+                                    height: 2.75rem;
+                                    line-height: 4rem;
+                                    width: 2.75rem;
+                                    border-radius: 50%;
+                                    margin: -0.25rem 0;
+                                }
+                            }
+
+                            .floater {
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin-left:50px;
+
+                                h6 {
+                                    .infoIcon {
+                                        font-size: .8889rem;
+                                        margin-left: .5rem;
+                                        display: inline-block;
+                                        font-size: .75em;
+                                        height: 1.33335em;
+                                        line-height: 1.33335em;
+                                        position: relative;
+                                        vertical-align: middle;
+                                        width: 1.33335em;
+
+                                        .icon {
+                                            background: none;
+                                            border: none;
+                                            box-shadow: none;
+                                            margin: 0;
+                                            padding: 0;
+                                            background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTcgLjMzM0E2LjY3IDYuNjcgMCAwMC4zMzMgNyA2LjY3IDYuNjcgMCAwMDcgMTMuNjY3IDYuNjcgNi42NyAwIDAwMTMuNjY2IDcgNi42NjkgNi42NjkgMCAwMDcgLjMzM3ptMCAxMGEuNjY5LjY2OSAwIDAxLS42NjctLjY2NlY3YzAtLjM2Ny4zLS42NjcuNjY3LS42NjcuMzY2IDAgLjY2Ni4zLjY2Ni42Njd2Mi42NjdjMCAuMzY2LS4zLjY2Ni0uNjY2LjY2NnpNNy42NjYgNUg2LjMzM1YzLjY2N2gxLjMzM1Y1eiIgZmlsbD0iI0IyQjNDMiIvPjwvc3ZnPg==) #fff no-repeat 50%/contain;
+                                            border-radius: 50%;
+                                            display: block;
+                                            height: 100%;
+                                            position: relative;
+                                            -webkit-user-select: none;
+                                            -moz-user-select: none;
+                                            -ms-user-select: none;
+                                            user-select: none;
+                                            width: 100%;
+
+                                            @media(max-width:575.9px) {
+                                                &:after {
+                                                    border-radius: 10px;
+                                                    content: "";
+                                                    cursor: inherit;
+                                                    display: block;
+                                                    height: 20px;
+                                                    left: 50%;
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    transform: translate(-50%, -50%);
+                                                    width: 20px;
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
                             
                         }
                     }
-                    // Лис с гарантия 
-                    .list {
-                        -ms-flex-direction: column;
-                        flex-direction: column;
-                        // Гарантия
-                        .item {
-                            -ms-flex-align: center;
-                            align-items: center;
-                            overflow: hidden;
+                }
+            }
+            // Описание товара 
+            .description {
+                background-color: #fff;
+                padding: 0 24px;
+                border-radius: 6px;
+                margin-top: 24px;
+                padding: 20px 20px;
+                // Блок с описанием 
+                .description__block {
+                    max-height: 2rem;
+                    overflow: hidden;
+                    white-space: normal;
+                    display: inline;
+                    // Заголовок ОПИСАНИЕ 
+                    h1 {
+                        font-weight: 500;
+                        margin-bottom: .5rem
+                    }
+                    // Само описание 
+                    .text {
+                        font-size: .7777rem;
+                        -webkit-font-smoothing: antialiased;
+                        -webkit-hyphens: auto;
+                        -ms-hyphens: auto;
+                        hyphens: auto;
+                        line-height: 1.3;
+                        overflow: auto;
+                        text-align: left;
+                        white-space: pre-wrap;
+                        max-height: 2rem;
+                        overflow: hidden;
+                        white-space: normal;
+                        // блок для проверки описания, подумываю избавиться от него , так как считаю без него можйно обойтись
+                        .check__block {
                             display: -ms-flexbox;
                             display: flex;
-                            margin-bottom: .8889rem;
-                            :last-child {
-                                margin-bottom: 0;
-                            }
-                            // блок иконки
-                            .iconWrapper { 
-                                border-radius: 15rem;
-                                border: .1667rem solid #fff;
-                                -ms-flex-negative: 0;
-                                flex-shrink: 0;
-                                height: 2.3334rem;
-                                margin-right: .8889rem;
-                                width: 2.3334rem;
-                                overflow: hidden;
-                                // Сама иконка
-                                .icon__image {
-                                background-repeat: no-repeat;
-                                display: inline-block;
-                                background: $icon__image;
-                                height: 1.3889rem;
-                                padding: .5rem;
-                                width: 1.3889rem;
-                                background-size: contain;
-                                -o-object-fit: contain;
-                                object-fit: contain;
+                            margin-top: .2em;
+                            font-size: .7777rem;
+                            -ms-flex-pack: justify;
+                            justify-content: space-between;
+                            line-height: 1.3;
+                            margin-top: .2em;
+                            // Решить почему нет подсветки шрифта!!!
+                            span.check {
+                                color: #ff7676;
+                                cursor: pointer;
+                                text-decoration: none;
+
+                                &:hover {
+                                    text-decoration: underline
                                 }
+                            }
+                        }
+                        
+                    }
+                }
+                // Лис с гарантия 
+                .list {
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    // Гарантия
+                    .item {
+                        -ms-flex-align: center;
+                        align-items: center;
+                        overflow: hidden;
+                        display: -ms-flexbox;
+                        display: flex;
+                        margin-bottom: .8889rem;
+                        :last-child {
+                            margin-bottom: 0;
+                        }
+                        // блок иконки
+                        .iconWrapper { 
+                            border-radius: 15rem;
+                            border: .1667rem solid #fff;
+                            -ms-flex-negative: 0;
+                            flex-shrink: 0;
+                            height: 2.3334rem;
+                            margin-right: .8889rem;
+                            width: 2.3334rem;
+                            overflow: hidden;
+                            // Сама иконка
+                            .icon__image {
+                            background-repeat: no-repeat;
+                            display: inline-block;
+                            background: $icon__image;
+                            height: 1.3889rem;
+                            padding: .5rem;
+                            width: 1.3889rem;
+                            background-size: contain;
+                            -o-object-fit: contain;
+                            object-fit: contain;
                             }
                         }
                     }
                 }
+            }
             
+
+            .reviews {
+                margin-top: 12px;
+                display: none;
+                @media(min-width:768px) {
+                    margin-top: 16px;
+                }
+            }
+
+            .resizeTriggers {
+                animation: resizeAnimation 1ms;
+                opacity: 0;
+                visibility: hidden;
+                
+                .contractTrigger{
+                    &::before {
+                        content: " ";
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        overflow: hidden;
+                    }
+                }
+            }
+            
+
+            .item___reviews {
+                margin: 12px 0;
+
+                @media(min-width:768px) {
+                    margin: 16px 0;
+                }
+
+                
+                @media(max-width:767.9px) {
+                    display: block;
+                }
+
+                @media(max-width:767.9px) {
+                    display: none;
+                }
+            }
         }
     }
     // лист с будующим товаром

@@ -1,51 +1,6 @@
 // Контейнер с контентом 
 .content {
     // Контейнер ссылки
-    .home{
-        padding-left: 6px;
-        padding-right: 6px;
-        box-sizing: border-box;
-        margin: 16px auto;
-        max-width: 1300px;
-    
-        @media(min-width:576px) {
-                padding-left: 6px;
-                padding-right: 6px;
-        }
-        
-        @media(min-width:768px) {
-                padding-left: 8px;
-                padding-right: 8px;
-        }
-        
-        @media(min-width:992px) {
-                padding-left: 8px;
-                padding-right: 8px;
-            
-        }
-        // Коннтейннер для ссылки, может уберу , так как не думаю что он особа нужен 
-        span {
-                color: #868686;
-                margin-right: 1ex;
-
-            
-            before {
-                content: "/";
-                margin-right: 1ex;
-            }
-            
-            &:first-child:before {
-                display: none;
-            }
-            // Ссылка на главную страницу
-            a {
-                &:hover  {
-                    color: $hoverColor;
-                    text-decoration: solid;
-                }
-            }
-        }
-    }
     // Контейнер для основной информации
     .empty {
         margin-left: auto;

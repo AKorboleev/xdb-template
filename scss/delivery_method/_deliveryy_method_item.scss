@@ -48,8 +48,8 @@
 
             &:focus,
             &:hover {
-                border-color: #ff7676;
-                color: #fc6767;
+                border-color: $mainColor;
+                color: $mainColor;
             }
 
             .child {
@@ -101,7 +101,7 @@
             }
 
             .accent___1heRO {
-                color: #ff7676;
+                color: $mainColor;
             }
         }
     }

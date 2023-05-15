@@ -86,23 +86,23 @@
 
             .filter-withPhoto {
                 &:before {
-                    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMCI+PHBhdGggZmlsbD0iIzJkMmY0MyIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTAuMzggOC44VjEuMmMwLS42LS41LTEuMDctMS4xLTEuMDdIMS43MkMxLjEuMTMuNjQuNi42NCAxLjJ2Ny42YzAgLjYuNDggMS4wNyAxLjA4IDEuMDdoNy42Yy42IDAgMS4wNy0uNDggMS4wNy0xLjA4em0tNi43OC0zbDEuMzYgMS42NEw2Ljg2IDVsMi40MyAzLjI1SDEuN0wzLjYgNS44eiIvPjwvc3ZnPg==)
+                    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMCI+PHBhdGggZmlsbD0iIzJkMmY0MyIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTAuMzggOC44VjEuMmMwLS42LS41LTEuMDctMS4xLTEuMDdIMS43MkMxLjEuMTMuNjQuNi42NCAxLjJ2Ny42YzAgLjYuNDggMS4wNyAxLjA4IDEuMDdoNy42Yy42IDAgMS4wNy0uNDggMS4wNy0xLjA4em0tNi43OC0zbDEuMzYgMS42NEw2Ljg2IDVsMi40MyAzLjI1SDEuN0wzLjYgNS44eiIvPjwvc3ZnPg==);
                 }
 
                 &:focus:before,
                 &:hover:before {
-                    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMCI+PHBhdGggZmlsbD0iI2ZmNzY3NiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTAuMzggOC44VjEuMmMwLS42LS41LTEuMDctMS4xLTEuMDdIMS43MkMxLjEuMTMuNjQuNi42NCAxLjJ2Ny42YzAgLjYuNDggMS4wNyAxLjA4IDEuMDdoNy42Yy42IDAgMS4wNy0uNDggMS4wNy0xLjA4em0tNi43OC0zbDEuMzYgMS42NEw2Ljg2IDVsMi40MyAzLjI1SDEuN0wzLjYgNS44eiIvPjwvc3ZnPg==)
+                    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMCI+PHBhdGggZmlsbD0iI2ZmNzY3NiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTAuMzggOC44VjEuMmMwLS42LS41LTEuMDctMS4xLTEuMDdIMS43MkMxLjEuMTMuNjQuNi42NCAxLjJ2Ny42YzAgLjYuNDggMS4wNyAxLjA4IDEuMDdoNy42Yy42IDAgMS4wNy0uNDggMS4wNy0xLjA4em0tNi43OC0zbDEuMzYgMS42NEw2Ljg2IDVsMi40MyAzLjI1SDEuN0wzLjYgNS44eiIvPjwvc3ZnPg==);
                 }
             }
 
             .filter-withText {
                 &:before {
-                    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMCI+PHBhdGggZmlsbD0iIzJkMmY0MyIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNOS4xLjQzSDEuNEMuOS40My40Ni44Ni40NiAxLjR2OC42NmwxLjkyLTEuOTNIOS4xYy41NCAwIC45Ny0uNDMuOTctLjk2VjEuNGMwLS41NC0uNDMtLjk3LS45Ni0uOTd6TTIuMzggMy44aDUuNzh2Ljk2SDIuMzdWMy44em0zLjg1IDIuNEgyLjM3di0uOTZoMy44NXYuOTZ6bTEuOTMtMi45SDIuMzd2LS45NWg1Ljc4di45NnoiLz48L3N2Zz4=)
+                    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMCI+PHBhdGggZmlsbD0iIzJkMmY0MyIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNOS4xLjQzSDEuNEMuOS40My40Ni44Ni40NiAxLjR2OC42NmwxLjkyLTEuOTNIOS4xYy41NCAwIC45Ny0uNDMuOTctLjk2VjEuNGMwLS41NC0uNDMtLjk3LS45Ni0uOTd6TTIuMzggMy44aDUuNzh2Ljk2SDIuMzdWMy44em0zLjg1IDIuNEgyLjM3di0uOTZoMy44NXYuOTZ6bTEuOTMtMi45SDIuMzd2LS45NWg1Ljc4di45NnoiLz48L3N2Zz4=);
                 }
 
                 &:focus:before,
                 &:hover:before {
-                    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMCI+PHBhdGggZmlsbD0iI2ZmNzY3NiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNOS4xLjQzSDEuNEMuOS40My40Ni44Ni40NiAxLjR2OC42NmwxLjkyLTEuOTNIOS4xYy41NCAwIC45Ny0uNDMuOTctLjk2VjEuNGMwLS41NC0uNDMtLjk3LS45Ni0uOTd6TTIuMzggMy44aDUuNzh2Ljk2SDIuMzdWMy44em0zLjg1IDIuNEgyLjM3di0uOTZoMy44NXYuOTZ6bTEuOTMtMi45SDIuMzd2LS45NWg1Ljc4di45NnoiLz48L3N2Zz4=)
+                    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMCI+PHBhdGggZmlsbD0iI2ZmNzY3NiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNOS4xLjQzSDEuNEMuOS40My40Ni44Ni40NiAxLjR2OC42NmwxLjkyLTEuOTNIOS4xYy41NCAwIC45Ny0uNDMuOTctLjk2VjEuNGMwLS41NC0uNDMtLjk3LS45Ni0uOTd6TTIuMzggMy44aDUuNzh2Ljk2SDIuMzdWMy44em0zLjg1IDIuNEgyLjM3di0uOTZoMy44NXYuOTZ6bTEuOTMtMi45SDIuMzd2LS45NWg1Ljc4di45NnoiLz48L3N2Zz4=);
                 }
             }
 
@@ -150,7 +150,7 @@
             text-align: right;
             
             .next {
-                color: #ff7676;
+                color:$mainColor;
                 display: inline-block;
                 font-size: .7777rem;
                 margin-left: 1em;

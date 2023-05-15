@@ -111,15 +111,20 @@
             <div class="row">
                 <div class="col-12 pb-4">
                     <div class="content">
-                        <div class="home" itemscope="" vocab="http://schema.org/" typeof="BreadcrumbList">
-                            <span typeof="ListItem" property="itemListElement">
-                                <a property="item" typeof="WebPage" class="link___2DAus" href="/">Главная </a>
-                                <!-- Оставлю , но когда загрузим на хост, если все будет ок, то удалить  -->
-                                <!-- обращение хз к чему и где исепользуется -->
+                        <div class="page_path">
+                            <span class="ListItem" typeof="ListItem" property="itemListElement">
+                                <a property="item" typeof="WebPage" lang="ru" class="link" href="/">
+                                    <span property="name">Главная</span>
+                                </a>
+                                <meta property="position" content="1">
+                            </span>
+                            <span class="ListItem" typeof="ListItem" property="itemListElement">
+                                <a property="item" typeof="WebPage" lang="ru" class="link" href="/">
+                                    <span property="name">Каталог</span>
+                                </a>
                                 <meta property="position" content="1">
                             </span>
                         </div>
-
                         <h3>Каталог товаров</h3>
                         <div class="wrapper">
                             <div class="subheader">

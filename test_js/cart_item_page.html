@@ -108,7 +108,7 @@
 
 <main>
     <div class="container-xxl">
-        <div class="cart_item_page" style="background: #f2f2f2;">
+        <div class="wrapper" style="background: #f2f2f2;">
             <div class="home" itemscope="" vocab="http://schema.org/" typeof="BreadcrumbList">
                 <span typeof="ListItem" property="itemListElement">
                     <a property="item" typeof="WebPage" class="link___2DAus" href="/">
@@ -126,7 +126,6 @@
                 </span>
 
                 <!-- <div itemscope="" itemtype="http://schema.org/Product"> -->
-                
                 <div class="content">
                     <div class="row">
                         <div class="col-md-6">
@@ -134,17 +133,17 @@
                                 <div class="list__image" data-testid="">
                                     <div class="row">
                                         <div class="col-2">
-                                            <div class="thumbs">
+                                            <div class="thumbs___1fypC">
                                                 [Thumbs]
                                             </div>
                                         </div>
                                         <div class="col-10">
                                             <!-- Сюда не лезу , так как тут js  скрипт , если можно , то я поправлю классы -->
-                                            <!-- <div class="main___1VKwK"> -->
+                                            <div class="main___1VKwK">
                                                 <!--  Тут js скрипт для свайпа картинок , решить что делать с ним -->
-                                                <div class="square">
-                                                    <div class="block_swipe">
-                                                        <div class="swipe"
+                                                <div class="square___3TrTE">
+                                                    <div class="content___2Rk4e">
+                                                        <div class="swipe___3R79O  swipe___131_W rounded___Sv0_S"
                                                             style="visibility: visible;">
                                                             <!-- привязан  script  выше , не удалять класс!!! -->
                                                             <div class="item" style="width: 100%;">
@@ -154,13 +153,13 @@
                                                         [Sensitive]
                                                     </div>
                                                 </div>
-                                                <div class="block_counter">
+                                                <div>
                                                     <!-- Кнопки для свайпа, не трогаю, если можно то поправлю классы, хотя это нужно обязательно сделать  -->
-                                                    <div class="counter">1 из [ImagesCount]</div>
+                                                    <div class="counter___YROzc">1 из [ImagesCount]</div>
                                                     <div role="button" tabindex="-1" class="prev___2htiM"></div>
                                                     <div role="button" tabindex="-1" class="next___f3aJB"></div>
                                                 </div>
-                                            <!-- </div> -->
+                                            </div>
                                         </div>
 
                                         <script type="text/javascript">
@@ -224,14 +223,14 @@
                                     </div>
                                 </div>
 
-                                <div class="reviews">
+                                <div class="item___1CKW7 exceptSmall___1AOOR">
                                     [Reviews]
                                 </div>
-                                <div class="resizeTriggers">
+                                <div class="resizeTriggers___O7gyu">
                                     <div>
                                         <div style="width: 635px; height: 571px;"></div>
                                     </div>
-                                    <div class="contractTrigger"></div>
+                                    <div class="contractTrigger___2DSPP"></div>
                                 </div>
                                 <!-- </div> -->
                             </div>
@@ -273,34 +272,42 @@
                                         </div>
                                         <div class="buttons">
                                             <!-- если начну менять кнопки , то упадет js . Часть классов не переработал, так как  не знаю используются они в js или нет-->
-                                                <button class="button button__basket" role="button" tabindex="0"  data-testid="ProductButton-addToCart" data-item="[Item_ID]">
+                                            <div class="button___1WAua">
+                                                <button class="button button__basket" role="button" tabindex="0"
+                                                    data-testid="ProductButton-addToCart" data-item="[Item_ID]">
                                                     <span class="children">
                                                         <span class="captionLoaded">Добавлено</span>
                                                         <span class="caption">В корзину</span>
+                                                        <!-- d-none не обнаружен ни в одном css файле и в  js не обнаружен  -->
+                                                        <span class="loader d-none">
                                                             <!-- undefined есть в скрипте  js ,  но не понятно как он используется ,поэтому пусть будет  -->
-                                                            <span class="loader">
+                                                            <span class="loader___AOgfw undefined">
                                                                 <span
-                                                                    class="dot dot__one"></span>
+                                                                    class="dot___27mgG inherit___2sbjm dot1___zYQVX"></span>
                                                                 <span
-                                                                    class="dot dot__two"></span>
+                                                                    class="dot___27mgG inherit___2sbjm dot2___1Bd_A"></span>
                                                                 <span
-                                                                    class="dot dot__three"></span>
+                                                                    class="dot___27mgG inherit___2sbjm dot3___pGqeN"></span>
                                                                 <span
-                                                                    class="dot dot__four"></span>
+                                                                    class="dot___27mgG inherit___2sbjm dot4___1C96p"></span>
                                                             </span>
+                                                        </span>
                                                     </span>
                                                 </button>
-                                            <!-- <div class="block"> -->
-                                                <button class="button btn-main"
+                                            </div>
+                                            <div class="button___1WAua">
+                                                <button class="button___3hmfW button___2FsJR buyNow fill-brand___18fJk "
                                                     role="button" tabindex="0" data-testid="ProductButton-buyNow">
                                                     <span class="children">
-                                                        <span class="caption">Купить сейчас</span>
+                                                        <span class="caption___34T1D">Купить сейчас</span>
                                                     </span>
                                                 </button>
-                                            <!-- </div> -->
+                                            </div>
                                             <!-- Добавить в избранное. favorite___2jmct такой класс был  -->
-                                            <div class="favorite" data-item="[Item_ID]" role="button" tabindex="0" data-testid="FavoriteButton" data-test-favorite="false">
-                                                <svg class="" height="100%" viewBox="0 0 30 30" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                            <div class="favorite" data-item="[Item_ID]" role="button" tabindex="0"
+                                                data-testid="FavoriteButton" data-test-favorite="false">
+                                                <svg class="" height="100%" viewBox="0 0 30 30" width="100%"
+                                                    xmlns="http://www.w3.org/2000/svg">
                                                     <defs>
                                                         <path id="path"
                                                             d="M24.23 6.98a5.94 5.94 0 0 0-8.4-.09l-.06.06-.02.02-.02.03-.74.78-.73-.77-.03-.03a5.94 5.94 0 0 0-8.4-.08l-.08.08a6.05 6.05 0 0 0 0 8.53L15 24.79l9.24-9.28a6.05 6.05 0 0 0 0-8.53z">
@@ -309,10 +316,10 @@
                                                             <use xlink:href="#path" fill="#fff"></use>
                                                         </mask>
                                                     </defs>
-                                                    <g class="hoverable">
-                                                        <rect class="inner" x="0" y="30" width="30" height="30"
+                                                    <g class="hoverable___1NLjI">
+                                                        <rect class="inner___25Ou- " x="0" y="30" width="30" height="30"
                                                             fill="#ff7676" mask="url(#mask)"></rect>
-                                                        <use class="path" xlink:href="#path" fill="none"
+                                                        <use class="path___21rer" xlink:href="#path" fill="none"
                                                             stroke="#ff7676" stroke-width="2"></use>
                                                     </g>
                                                 </svg>
@@ -322,7 +329,7 @@
                                         <!-- </div> -->
                                     </div>
                                     <div class="item">
-                                        <!-- <div class="content_grade"> -->
+                                        <div class="content___26q-V">
                                             <!--div class="item___jF3um">
                                                                                 <div class="attributes___iJZOP ">
                                                                                     <div class="item___3x9Ra">
@@ -355,27 +362,32 @@
                                                 <h5>Магазин</h5>
                                                 <a class="inner" href="[TraderLink]">
                                                     <div class="icon">
-                                                        <div class="storeLogo">
-                                                            <img alt="" src="https://avatars.joomcdn.net/50f10b293bb9117264bd36cfb373c7e74be1afb9_100_100.jpeg"
+                                                        <div
+                                                            class="storeLogo___1oqiK size-small___2XHQi circle___1REsc">
+                                                            <img class="image___1yp2c image___WqobH cover___3Yshn"
+                                                                alt=""
+                                                                src="https://avatars.joomcdn.net/50f10b293bb9117264bd36cfb373c7e74be1afb9_100_100.jpeg"
                                                                 sizes="46px"
                                                                 srcset="https://avatars.joomcdn.net/50f10b293bb9117264bd36cfb373c7e74be1afb9_100_100.jpeg 100w, https://avatars.joomcdn.net/50f10b293bb9117264bd36cfb373c7e74be1afb9_200_200.jpeg 200w, https://avatars.joomcdn.net/50f10b293bb9117264bd36cfb373c7e74be1afb9_400_400.jpeg 400w, https://avatars.joomcdn.net/50f10b293bb9117264bd36cfb373c7e74be1afb9_original.jpeg 915w">
                                                         </div>
                                                     </div>
-                                                    <div class="floater">
+                                                    <div class="floater___niH3S">
                                                         <div class="container_grade">
                                                             <div class="stars" style="padding-right:8.836985774702043%">
                                                             </div>
                                                             <div class="grade">4,6</div>
                                                         </div>
-                                                        <h6 itemprop="brand">[TraderName]
-                                                            <span class="infoIcon">
-                                                                    <button class="icon" type="button"></button>
+                                                        <h3 itemprop="brand" class="name___1AuTD">[TraderName]
+                                                            <span class="infoIcon___2Zf-R">
+                                                                <div class="helpButton___1rJJ7">
+                                                                    <button class="icon___10c9t" type="button"></button>
+                                                                </div>
                                                             </span>
-                                                        </h6>
+                                                        </h3>
                                                     </div>
                                                 </a>
                                             </div>
-                                        <!-- </div> -->
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="description" data-testid="">
@@ -390,33 +402,36 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="item___reviews">
+                                <div class="item___1CKW7 onlySmall___3zY_n">
                                     [Reviews]
                                 </div>
                                 <div class="description" data-testid="">
-                                    <div class="item">
+                                    <div class="item ">
                                         <h4>Гарантия</h4>
                                         <div class="list">
                                             <div class="item">
                                                 <div class="iconWrapper">
-                                                    <img height="100%" class="icon__image" alt=""  src="https://resources.joomcdn.net/warranty/not_delivered.png">
+                                                    <img height="100%" class="icon__image" alt=""
+                                                        src="https://resources.joomcdn.net/warranty/not_delivered.png">
                                                 </div>
-                                                <span class="text">Мы вернем деньги, если товар не доставлен
+                                                <span class="text___1QLAN">Мы вернем деньги, если товар не доставлен
                                                     в течение 70 дней после оплаты. У вас есть 2 недели для подачи
                                                     заявки на возврат — до 84 дня.</span>
                                             </div>
                                             <div class="item">
                                                 <div class="iconWrapper">
-                                                    <img height="100%" class="icon__image" alt="" src="https://resources.joomcdn.net/warranty/warranty.png">
+                                                    <img height="100%" class="icon__image" alt=""
+                                                        src="https://resources.joomcdn.net/warranty/warranty.png">
                                                 </div>
-                                                <span class="text">Товар не соответствует описанию? Напишите
+                                                <span class="text___1QLAN">Товар не соответствует описанию? Напишите
                                                     нам в течение 30 дней после получения!</span>
                                             </div>
                                             <div class="item">
                                                 <div class="iconWrapper">
-                                                    <img height="100%" class="icon__image" alt="" src="https://resources.joomcdn.net/warranty/refund.png">
+                                                    <img height="100%" class="icon__image" alt=""
+                                                        src="https://resources.joomcdn.net/warranty/refund.png">
                                                 </div>
-                                                <span class="text">В случае отмены деньги поступят на счёт в
+                                                <span class="text___1QLAN">В случае отмены деньги поступят на счёт в
                                                     течение 14 дней.</span>
                                             </div>
                                         </div>

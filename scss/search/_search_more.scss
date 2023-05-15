@@ -24,8 +24,8 @@
         cursor: pointer;
 
         &:hover {
-            border-color: #ff7676;
-            color: #ff7676;
+            border-color: $mainColor;
+            color: $mainColor;
         }
     }
 }

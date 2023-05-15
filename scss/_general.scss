@@ -1,33 +1,75 @@
 // Файл для настрйоки повторяющихся элементов и переменнных 
 
+// Используемые шрифты
 $fontFamaly: 'Kurale', serif;
 $os: 'Open Sans', sans-serif;
-$hoverColor: #47d499;
-$button:#ff7676;
+// ****
+
+
+
+
+//Используемые цвета
+$mainColor:#ff7676;
+// $button:#ff7676;
 $white:#fff;
 $yellow:#b39f08;
 $black:rgb(22, 22, 22);
+$headerTop:#fff ;
+// ****
+
+
+
+
+//Используемы цвета в ховеер
+$hoverColor: #47d499;
+// ****
+
+
+
+
+// часто испльзуемые значения 
 $text:18px;
 $container:1230px;
 $mc:0 auto;
-$headerTop:#fff ;
+// ****
+
+
+
 
 //icon__image цвет иконки в cart_item_page.scss
-$icon__image: #f76767;
+$icon__image: $mainColor;
+// ****
+
+
+
+
 // catalog цвет зоголовка шрифта , который  находится в catalog.scss
-$catalog: #fa6767;
+$catalog:$mainColor;
+// ****
+
+
+
+
+//  В микисы вынесенны классы которые часто повторяются , их ну
 @mixin flex ($jc,$ai){
     display: flex;
     flex-wrap: wrap;
     justify-content: $jc;
     align-items: $ai;    
 }
+// ****
+
+
+
 
 @mixin contain {
     background-size: contain;
     -o-object-fit: contain;
     object-fit: contain;
 }
+// ****
+
+
 
 
 // Масштабирование картинки под максимально закрытие блока , картинка не обрезается , а вписывается с сохранением пропорций 
@@ -36,20 +78,34 @@ $catalog: #fa6767;
     -o-object-fit: cover;
     object-fit: cover;
 }
+// ****
 
 
+
+
+// Звезды
 @mixin filterStar {
     background-repeat: repeat-x;
     background-size: auto 100%;
     top: -.1em;
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNCIgaGVpZ2h0PSIxMSI+PHBhdGggZmlsbD0iIzJkMmY0MyIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNS4yMiA4LjQ4bDMuMjMgMS45NC0uODYtMy42NyAyLjg1LTIuNDctMy43Ni0uMzJMNS4yLjUgMy43NiAzLjk2IDAgNC4yOGwyLjg1IDIuNDdMMiAxMC40MiIvPjwvc3ZnPg==);
 }
+//****
+
+// ****
+
+
+
+
 
 // Использовать этот класс когда нет товара в корзине, если есть то убирать, для этого использовать js
 // Пока добавил в cart и orders. Можно убрать если нужно будет. Его стоит добавлять в main
 .grey {
     background-color:rgb(219, 219, 219);
 }
+// ****
+
+
 
 .name__inner {
     color: #3d3f56;
@@ -63,6 +119,9 @@ $catalog: #fa6767;
     }
 }
 
+
+
+
 // Аватарка в review wrap
 .avatar {
     background-size: cover;
@@ -73,8 +132,12 @@ $catalog: #fa6767;
     object-fit: cover;
     width: 3em;
 }
+//****
 
-// класс добавляет цвет о положиетльном заказе, можно сделать и о отрецательном , но с нужными классами
+
+
+
+// баннер сообщает о положительном оформлении доставке 
 //  checkout_sucess
 .background_successMessage {
     background: linear-gradient(96deg, #43e695, #27c278);
@@ -93,8 +156,12 @@ $catalog: #fa6767;
         width: 100%;
     }
 }
-// Градиент цвета 
+// ****
 
+
+
+
+// Градиент цвета 
 .bg-0 {
     background: linear-gradient(270deg, #8e62dc, #f06292);
     color: #fff
@@ -116,7 +183,8 @@ $catalog: #fa6767;
 }
 
 .bg-4 {
-    background: linear-gradient(270deg, #2b2349, #424770);
+    background: linear-gradient(270deg, #b47111, #bf9861
+    );
     color: #fff
 }
 
@@ -124,14 +192,15 @@ $catalog: #fa6767;
     background: linear-gradient(270deg, #ff7676, #f54ea2);
     color: #fff
 }
+//****
+
+
 
 
 // Изменяемая кнопка, стоит только подставить класс
 .button {
     // box-sizing: inline-flex;
     display: inline;
-    background-color: $button;
-    color: #fff;
     border-radius: 6px;
     border:none;
     cursor: pointer;
@@ -148,7 +217,18 @@ $catalog: #fa6767;
     outline: none;
     flex-grow: 1;
     
-    
+
+}
+//****
+
+
+
+
+// Основное сочитание кнопки
+.btn-main {
+    background-color: $mainColor;
+    color: #fff;
+
     &:focus {
         background-color: $hoverColor;
     }
@@ -157,33 +237,13 @@ $catalog: #fa6767;
         background-color: $hoverColor;
     }
 }
+//****
 
-// Кнопка  button  находится в шаблоне address_page.html 
- .button__address_page {
-    // box-sizing: inline-flex;
-    display: inline;
+// дополнительный сочитане кнопке 
+.btn-additional {
     background-color: #2d2f43;
     color: #fff;
-    border-radius: 6px;
-    border:none;
-    cursor: pointer;
-    text-decoration: none;
-    height: 44px;
-    position: relative;
-    text-align: center;
-    justify-content: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 18px;
-    margin: 2px 2px 2px 0;
-    outline: none;
-    flex-grow: 1;
-    
-    
+
     &:focus {
         background-color: #53556a;
     }
@@ -196,7 +256,7 @@ $catalog: #fa6767;
 
 // Переделать
 // находится в search_empty
-.button__mobile__controls {
+.btn-mobile {
     -ms-flex-align: center;
     align-items: center;
     box-sizing: border-box;
@@ -221,7 +281,6 @@ $catalog: #fa6767;
     border: 1px solid #f3f3f5;
     color: #2d2f43;
 
-    
     display: block;
     width: 100%;
 
@@ -233,7 +292,7 @@ $catalog: #fa6767;
 
 
 // Форма запроса можно менять хоть как 
-// Вкладывать див, как тут
+// Вкладывать структуру как тут
 .search {
     display: none;
     line-height: 1;
@@ -312,10 +371,13 @@ $catalog: #fa6767;
         }
     
 }
+// 
+
+
 
 .active {
     &:before {
-        background: $button;
+        background: $mainColor;
         content: "";
         display: block;
         height: 100%;
@@ -326,10 +388,12 @@ $catalog: #fa6767;
     }
 }
 
-// Шаблон Главная , выйти 
 
+
+
+// Шаблон Путь страниц
 // внутренняя часть
-.inner {
+.page_path {
     padding-left: 6px;
     padding-right: 6px;
     box-sizing: border-box;
@@ -356,7 +420,7 @@ $catalog: #fa6767;
             padding-right: 8px;
     }
     // Элемент списка
-    .ListItem {
+    span.ListItem {
         color: #9697a1;
         margin-right: 1ex;
         font-size: 12px;
@@ -374,14 +438,18 @@ $catalog: #fa6767;
 
             &:focus:not([href=""]),
             &:hover:not([href=""]) {
-                color: #ff7676;
-                text-decoration: underline
+                color: $mainColor;
+                text-decoration:underline
             }
         }
     }
 }
+//
 
-@keyframes resizeAnimation___1-4fc {
+
+
+// Анимации 
+@keyframes resizeAnimation {
     0% {
         opacity: 0
     }
@@ -391,7 +459,8 @@ $catalog: #fa6767;
     }
 }
 
-@keyframes reveal___cG1-a {
+// Не помню где использовал и найти не могу, если что удалить
+@keyframes reveal {
     0% {
         transform: scale(.001);
         background: #e41da5;
@@ -402,15 +471,30 @@ $catalog: #fa6767;
     }
 }
 
-@keyframes slide___3mIXH {
+// Не помню где использовал и найти не могу, если что удалить
+@keyframes slide {
     to {
         transform: translateX(1.5em);
     }
 }
 
+// изменить размер анимации
+@keyframes resizeAnimation {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 0
+    }
+}
+// ****
+
+
+
 
 //d-none если добавить его , то анимации не будет , но если его убрать будте анимация , все делается через js 
-
+// Загрузка, вращение кружочков  во круг оси
 .loader {
     display: inline-block;
     height: 1em;
@@ -431,18 +515,22 @@ $catalog: #fa6767;
 
     .dot__one {
         left: 0;
-        animation-name: reveal___cG1-a;
+        animation-name: reveal
     }
     .dot__two,
     .dot__three {
-        animation-name: slide___3mIXH;
+        animation-name: slide;
     }
 
     .dot__four{
-        animation-name: reveal___cG1-a;
-        animation-direction: reverse
+        animation-name: reveal;
+        animation-direction: reverse;
     }
 }
+//****
+
+
+
 
 //search_filteres используется в друх местах , поэтому вынес его сюда
 //trader_page
@@ -664,7 +752,8 @@ $catalog: #fa6767;
         margin-right: 0.6667rem;
         width: 0.5rem;
         &:hover .path {
-            fill: #ff7676
+            fill: $mainColor;
         }
     }
 }
+//****

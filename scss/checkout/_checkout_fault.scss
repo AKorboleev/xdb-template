@@ -35,7 +35,7 @@
                 padding: 14px 16px;
             }
 
-            .content__item {
+            .content_item {
                 -ms-flex: 1;
                 flex: 1;
                 font-size: 18px;
@@ -45,7 +45,7 @@
             }
         }
 
-        .item___content {
+        .item_content {
             -ms-flex-align: center;
             align-items: center;
             color: #2d2f43;
@@ -63,7 +63,7 @@
             }
 
             .illustration {
-                margin: 0 auto;
+                margin: $mc;
                 max-width: 150px;
                 text-align: center;
                 img{
@@ -84,16 +84,14 @@
         }
 
         .button_exit {
-            background: #ff7676;
             border: 0;
             box-sizing: border-box;
-            color: #fff;
             cursor: pointer;
-            display: block;
+            display: flex;
             font-size: 18px;
             font-weight: 500;
             outline: none;
-            padding: 20px 24px;
+            margin: 20px 0;
             text-align: center;
             text-decoration: none;
             user-select: none;
@@ -101,11 +99,6 @@
 
             @media(max-width:575.9px) {
                 padding: 14px 16px;
-            }
-
-            &:focus,
-            &:hover {
-                background-color: #fc6767;
             }
         }
     }
