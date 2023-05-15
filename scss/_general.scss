@@ -74,6 +74,57 @@ $catalog: #fa6767;
     width: 3em;
 }
 
+// класс добавляет цвет о положиетльном заказе, можно сделать и о отрецательном , но с нужными классами
+//  checkout_sucess
+.background_successMessage {
+    background: linear-gradient(96deg, #43e695, #27c278);
+    height: 136px;
+    position: relative;
+    width: 100%;
+
+    &:after {
+        //Картинка о положительном заказе
+        background: no-repeat url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxODYiIGhlaWdodD0iMTg2Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSIwJSIgeTE9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQzRTY5NSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzI3QzI3OCIvPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0iYiIgd2lkdGg9IjI1MCUiIGhlaWdodD0iMjUwJSIgeD0iLTc1JSIgeT0iLTc1JSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94Ij48ZmVHYXVzc2lhbkJsdXIgaW49IlNvdXJjZUdyYXBoaWMiIHN0ZERldmlhdGlvbj0iMjEiLz48L2ZpbHRlcj48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTQ0IDk2YTQyIDQyIDAgMTEwLTg0IDQyIDQyIDAgMDEwIDg0eiIgZmlsdGVyPSJ1cmwoI2IpIiBvcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDkgMzkpIi8+PHBhdGggZmlsbD0idXJsKCNhKSIgc3Ryb2tlPSIjRkZGIiBzdHJva2Utd2lkdGg9IjYiIGQ9Ik00NCA5MWE0NyA0NyAwIDExLjEtOTQuMUE0NyA0NyAwIDAxNDQgOTF6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0OSAzOSkiLz48cGF0aCBmaWxsPSIjRkZGIiBkPSJNODYuOCA5OS42TDcwIDgyLjhsNC40LTQuNEw4Ni44IDkxbDI0LjktMjUgNC40IDQuNHoiLz48L3N2Zz4=) 50%/contain;
+        bottom: -93px;
+        content: "";
+        display: block;
+        height: 186px;
+        position: absolute;
+        width: 100%;
+    }
+}
+// Градиент цвета 
+
+.bg-0 {
+    background: linear-gradient(270deg, #8e62dc, #f06292);
+    color: #fff
+}
+
+.bg-1 {
+    background: linear-gradient(270deg, #62dc6c, #00d8db);
+    color: #fff
+}
+
+.bg-2 {
+    background: linear-gradient(270deg, #ff7676, #f5a54e);
+    color: #fff
+}
+
+.bg-3 {
+    background: linear-gradient(270deg, #17c5ea, #7560ea);
+    color: #fff
+}
+
+.bg-4 {
+    background: linear-gradient(270deg, #2b2349, #424770);
+    color: #fff
+}
+
+.bg-5 {
+    background: linear-gradient(270deg, #ff7676, #f54ea2);
+    color: #fff
+}
+
 
 // Изменяемая кнопка, стоит только подставить класс
 .button {
@@ -89,9 +140,6 @@ $catalog: #fa6767;
     position: relative;
     text-align: center;
     justify-content: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     font-size: 14px;
     font-weight: 500;
@@ -179,6 +227,7 @@ $catalog: #fa6767;
 
     border-radius: .38em;
 }
+
 
 
 
