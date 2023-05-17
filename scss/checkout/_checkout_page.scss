@@ -1,14 +1,16 @@
+// Страница оформления заказа
 #checkout_page {
     margin-top: 10px;
+    // Шапка
     .form_header {
         box-sizing: border-box;
         max-width: 100%;
         margin-bottom: 12px;
-
+        // Адаптив
         @media (min-width: 768px) {
             margin-bottom: 16px;
         }
-
+        // Внутренняя часть
         .inner {
             box-sizing: border-box;
             max-width: 1300px;
@@ -25,7 +27,7 @@
             display: -ms-flexbox;
             display: flex;
             margin: 4px auto 8px;
-
+            // Адаптив
             @media (min-width: 576px) {
                 padding-left: 6px;
                 padding-right: 6px;
@@ -48,15 +50,15 @@
             }
         }
     }
-
-    .form_body {
+    // Контент
+    .body_content {
         box-sizing: border-box;
         max-width: 100%;
         padding-bottom: 22px;
         margin: 0 auto;
         padding-left: 6px;
         padding-right: 6px;
-
+        // Адаптив
         @media (min-width: 576px) {
             padding-left: 6px;
             padding-right: 6px;
@@ -79,18 +81,18 @@
             padding-left: 8px;
             padding-right: 8px;
         }
-
+        // контент
         .content {
             display: -ms-flexbox;
             display: flex;
             -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-
+            // Адаптив
             @media(min-width:768px) {
                 -ms-flex-direction: row-reverse;
                 flex-direction: row-reverse;
             }
-
+            // Товары
             .items {
                 display: -ms-flexbox;
                 display: flex;
@@ -100,7 +102,7 @@
                 flex-shrink: 0;
                 background: #fff;
                 border-radius: 6px;
-
+                // Адаптив
                 @media(max-width:767.9px) {
                     margin-top: 24px;
                     margin-bottom: 24px;
@@ -110,6 +112,7 @@
                     margin-top: 16px;
                     margin-bottom: 16px;
                 }
+                //Заголовок товара
                 .header {
                     -ms-flex-align: center;
                     align-items: center;
@@ -126,11 +129,12 @@
                     line-height: 22px;
                     padding: 24px;
                     margin: 0;
-
+                    // Адаптив
                     @media(max-width:575.9px) {
                         padding: 16px;
                     }
                 }
+                // Товар
                 .item {
                     padding-left: 24px;
                     padding-bottom: 24px;
@@ -138,17 +142,18 @@
                     overflow: auto;
                     -webkit-overflow-scrolling: touch;
                     -ms-overflow-style: -ms-autohiding-scrollbar;
-
+                    // Адаптив
                     @media(max-width:575.9px) {
                         padding-left: 16px;
                         padding-bottom: 16px;
                         padding-top: 16px;
                     }
                 }
+                //цена
                 .pricing {
                     border-top: 1px solid rgba(0, 0, 0, .06);
                     padding: 24px;
-
+                    // Адаптив
                     @media(max-width:575.9px) {
                         padding: 16px;
                     }
@@ -159,24 +164,26 @@
                         color: #2d2f43;
                         width: 100%;
                         tbody {
-                            .item {
+                            // Обертка
+                            .block_item {
                                 color: #2d2e44;
                                 font-size: 14px;
                                 letter-spacing: 0;
                                 line-height: 16px;
-
+                                // Заголовок до ставки
                                 .header_item {
                                     text-align: left;
                                     padding: 6px 0;
                                 }
-
+                                // Итог
                                 .strong {
+                                    // Адаптив
                                     @media(min-width:768px) {
                                         font-size: 18px;
                                         line-height: 22px;
                                     }
                                 }
-
+                                // Цена
                                 .value {
                                     font-size: 18px;
                                     font-weight: 500;
@@ -188,10 +195,10 @@
                 }
             }
 
-            .params__overley {
+            .params_overley {
                 border-radius: inherit;
                 position: relative;
-                
+                // Адаптив
                 @media(max-width:767.9px) {
                     padding-bottom: 24px;
                 }
@@ -199,6 +206,7 @@
                 @media(max-width:767.9px)and (max-width:575.9px) {
                     padding-bottom: 16px;
                 }
+
                 @media(min-width:768px) { 
                     box-sizing: border-box;
                     margin-right: 16px;
@@ -207,42 +215,46 @@
                     -ms-flex-positive: 1;
                     flex-grow: 1;
                 }
-
+                // Доставка
                 .delivery {
                     background: #fff;
                     border-radius: 6px;
                     padding: 24px;
+                    // Адаптив
                     @media(max-width:575.9px) {
                         padding: 16px;
                     }
+                    //Имя доставка 
                     .header_title {
                         font-size: 18px;
                         font-weight: 500;
                         line-height: 22px;
                         margin-bottom: 8px;
+                        // Адаптив
                         @media(max-width:575.9px) {
                             font-size: 14px;
                             line-height: 16px;
                         }
                     }
-
-                    .validationContainer {
+                    // Способ доставки 
+                    .delivery_method_items {
                         margin: 0 -24px;
                         padding: 0 24px;
                         transition: background-color .1s ease-in-out;
+                        // Адаптив
                         @media(max-width:575.9px) {
                             margin: 0 -16px;
                             padding: 0 16px;
                         }
-
-                        .tabs {
+                        // Блок элемента
+                        .block_item {
                             display: -ms-flexbox;
                             display: flex;
                             -ms-flex-wrap: wrap;
                             flex-wrap: wrap;
                             margin: 0 -15px 9px 0;
                             padding-top: 8px;
-
+                            // Адаптив
                             @media(max-width:575.9px) {
                                 -ms-flex-direction: column;
                                 flex-direction: column;
@@ -252,38 +264,40 @@
                                 margin-right: -8px;
                             }
                         }
-
+                        // Ошибка сообщения
                         .errorMessage {
                             font-size: 14px;
                             line-height: 16px; 
                             margin-top: 8px;
                             padding-bottom: 8px;
-
+                            // Адаптив
                             @media(min-width:576px) {
                                 margin-top: -16px;
                             }
                         }
                     }
-
+                    // Заголовок 
                     .title {
                         font-size: 18px;
                         font-weight: 500;
                         line-height: 22px;
                         margin-bottom: 16px;
                         margin-top: 16px;
+                        // Адаптив
                         @media(max-width:575.9px) {
                             font-size: 14px;
                             line-height: 16px;
                         }
                     }
+                    //Текст
                     .text {
                         color: #8e90a7;
                         font-size: 14px;
                     }
-
-                    .controls {
+                    // Блок редактирования
+                    .edit_controls {
                         margin-top: 5px;
-
+                        // редактирование 
                         .edit {
                             color: $mainColor;
                             cursor: pointer;
@@ -303,34 +317,38 @@
                         }
                     }
                 }
-
+                // Блок товара
                 .payment_item {
                     background: #fff;
                     border-radius: 6px;
                     padding: 24px;
+                    // Адаптив
                     @media(max-width:575.9px) {
                         padding: 16px;
                     }
+                    // Заголовок товара
                     .header_title {
                         font-size: 18px;
                         font-weight: 500;
                         line-height: 22px;
                         margin-bottom: 8px;
+                        // Адаптив
                         @media(max-width:575.9px) {
                             font-size: 14px;
                             line-height: 16px;
                         }
                     }
 
-                    .validationContainer {
+                    .validation_tabs {
                         margin: 0 -24px;
                         padding: 0 24px;
                         transition: background-color .1s ease-in-out;
+                        // Адаптив
                         @media(max-width:575.9px) {
                             margin: 0 -16px;
                             padding: 0 16px;
                         }
-
+                        // Тут будет товар
                         .tabs {
                             display: -ms-flexbox;
                             display: flex;
@@ -338,7 +356,7 @@
                             flex-wrap: wrap;
                             margin: 0 -15px 9px 0;
                             padding-top: 8px;
-
+                            // Адаптив
                             @media(max-width:575.9px) {
                                 -ms-flex-direction: column;
                                 flex-direction: column;
@@ -348,76 +366,42 @@
                                 margin-right: -8px;
                             }
                         }
-
+                        // сообщение с ошибкой
                         .errorMessage {
                             font-size: 14px;
                             line-height: 16px; 
                             margin-top: 8px;
                             padding-bottom: 8px;
-
+                            // Адаптив
                             @media(min-width:576px) {
                                 margin-top: -16px;
                             }
                         }
                     }
 
-                    .stickyOnMobile {
+                    .sticky_on_mobile {
+                        // Адаптив
                         @media(max-width:767.9px) {
                             position: sticky;
                             bottom: 24px;
                         }
-                        
+                        // Адаптив
                         @media(max-width:767.9px)and (max-width:575.9px) {
                             bottom: 16px;
                         }
-
+                        // Оверлей
                         .overlay{
                             border-radius: inherit;
                             position: relative;
                             border-radius: inherit;
                             transition: opacity .3s ease-out;
-
+                            // Контейнер кнопки 
                             .mainButton {
                                 font-size: 16px;
                                 margin-top: 16px;
-
-                                button.button_payment {
-                                    -ms-flex-align: center;
-                                    align-items: center;
-                                    box-sizing: border-box;
-                                    cursor: pointer;
-                                    display: -ms-inline-flexbox;
-                                    display: inline-flex;
-                                    font-size: inherit;
-                                    -ms-flex-pack: center;
-                                    justify-content: center;
-                                    line-height: 1.3em;
-                                    position: relative;
-                                    text-align: center;
-                                    text-decoration: none;
-                                    transition: .1s ease;
-                                    -webkit-user-select: none;
-                                    -moz-user-select: none;
-                                    -ms-user-select: none;
-                                    user-select: none;
-                                    background: $mainColor;
-                                    border: 1px solid $mainColor;
-                                    color: #fff;
-                                    padding: .735em 1em;
-                                    display: block;
-                                    width: 80%;
-                                    margin: 0 auto;
-                                    border-radius: .38em;
-
-                                    :focus {
-                                        outline: none;
-                                    }
-
-                                    .children {
-                                        display: block;
-                                        max-width: 100%;
-                                    }
-                                }
+                                display: flex;
+                                margin: 0 auto;
+                                width: 60%;
                             }
                         }
                     }

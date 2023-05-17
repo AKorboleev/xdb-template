@@ -1,5 +1,5 @@
 // Основной контент
-.content {
+.catalog {
     margin-top: 12px;
     margin-left: 6px;
     margin-right: 6px;
@@ -49,6 +49,7 @@
                 column-count: 4;
                 -moz-column-gap: 2em;
                 column-gap: 2em;
+
                 // Адаптив
                 @media(max-width:1299.9px) {
                         -moz-column-count: 3;
@@ -69,7 +70,7 @@
                     margin-bottom: 20px; 
                     break-inside: avoid-column;
                     // Заголовок названия категории
-                    a.header__category {
+                    a.header_category {
                         color: $catalog;
                         font-weight: 600;
                         text-decoration: none;
@@ -94,17 +95,17 @@
     }
         // Адаптив
         @media(min-width:768px) {
-                padding-bottom: 16px;
-                padding-top: 16px
+            padding-bottom: 16px;
+            padding-top: 16px
         }
 
         @media(min-width:768px) {
-                padding-bottom: 16px;
-                padding-top: 16px;
+            padding-bottom: 16px;
+            padding-top: 16px;
         }
 
         @media(max-width:575.9px) {
-                padding-bottom: 16px;
-                padding-top: 16px;
+            padding-bottom: 16px;
+            padding-top: 16px;
         }
 }

@@ -1,39 +1,18 @@
-.design-twoLine__product {
+// Обертка для продукта
+.block_product {
     -ms-flex-align: stretch;
     align-items: stretch;
     display: flex;
     width: 100%;
-
     color: #2d2f43;
-    -ms-flex-direction: column;
     flex-direction: column;
     font-size: 14px;
     text-align: left;
-
     box-sizing: border-box;
-    -ms-flex-preferred-size: calc(25% - 16.1px);
-    flex-basis: calc(25% - 16.1px);
-    -ms-flex-positive: 0;
-    flex-grow: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
     margin: 16px 0 0 16px;
     max-width: calc(25% - 16.1px);
     width: calc(25% - 16.1px);
-
-    &:nth-child(n),
-    &:nth-child(n) {
-        display: none;
-    }
-
-    &:nth-child(-n+4) {
-        display: flex;
-    }
-
-    &:nth-child(-n+8) {
-        display: flex;
-    }
-
+    // продукт
     a.product {
         color: inherit;
         cursor: pointer;
@@ -45,12 +24,12 @@
             transition: transform .3s ease-in-out;
             display: block;
         }
-
+        // Квадрат
         .square {
             padding-top: 100%;
             margin-top: 12px;
             position: relative;
-
+            // Контент в квадрате
             .squareContent {
                 bottom: 0;
                 left: 0;
@@ -63,14 +42,14 @@
                 overflow: hidden;
                 transform: translateZ(0);
                 width: 100%;
-
+                // Обертка для картинки
                 .imageWrap {
                     background-color: #f5f5f5;
                     height: inherit;
                     transform-origin: center center;
                     transition: transform .15s ease-in-out;
                     width: inherit;
-
+                    // картинка 
                     img.image {
                         background-repeat: no-repeat;
                         display: inline-block;
@@ -82,7 +61,7 @@
                         object-fit: contain;
                     }
                 }
-
+                // Действие 
                 .actions {
                     bottom: 8px;
                     display: -ms-flexbox;
@@ -100,7 +79,7 @@
             }
         }
 
-
+        // Значки 
         .badges {
             -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
@@ -111,7 +90,7 @@
             -ms-flex-wrap: wrap;
             flex-wrap: wrap;
             overflow: hidden;
-
+            // Значек
             .badge {
                 border-radius: 2px;
                 box-sizing: border-box;
@@ -127,6 +106,8 @@
                 white-space: nowrap;
             }
 
+
+            //Дисконтный значек
             .discountBadge {
                 background-color: #ff6262;
                 color: #fff;
@@ -136,6 +117,7 @@
             }
         }
 
+        // Цена 
         .price {
             font-size: 1.1111rem;
             font-weight: 500;
@@ -145,11 +127,12 @@
             text-overflow: ellipsis;
             white-space: nowrap;
 
+            // Скрытый 
             .hidden {
                 display: none;
             }
         }
-
+        // рейтинк
         .rating {
             -ms-flex-align: center;
             align-items: center;
@@ -162,30 +145,28 @@
             transform-origin: center center;
             transition: transform .15s ease-in-out;
             width: inherit;
+            // Звезды
             .stars {
                 display: inline-flex;
                 background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNCI+PHBhdGggZmlsbD0iI2RmZGZlNyIgZD0iTTEzLjI2IDQuNDhMOS4zIDQuMTQgNy43NS41YS44Mi44MiAwIDAwLTEuNSAwTDQuNyA0LjE0bC0zLjk1LjM0YS44Mi44MiAwIDAwLS40NyAxLjQzbDMgMi42LS45IDMuODZhLjgyLjgyIDAgMDAxLjIyLjg5TDcgMTEuMmwzLjQgMi4wNWEuODIuODIgMCAwMDEuMjEtLjg4bC0uOS0zLjg3IDMtMi42Yy41NS0uNDcuMjctMS4zNy0uNDUtMS40M3oiLz48L3N2Zz4=) 0 0 repeat-x;
                 height: 14px;
                 width: 86px;
 
+                // Цвет звезды
                 .starFill {
                     height: 14px;
                     background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNCI+PHBhdGggZmlsbD0iI2ZmNjI2MiIgZD0iTTEzLjI2IDQuNDhMOS4zIDQuMTQgNy43NS41YS44Mi44MiAwIDAwLTEuNSAwTDQuNyA0LjE0bC0zLjk1LjM0YS44Mi44MiAwIDAwLS40NyAxLjQzbDMgMi42LS45IDMuODZhLjgyLjgyIDAgMDAxLjIyLjg5TDcgMTEuMmwzLjQgMi4wNWEuODIuODIgMCAwMDEuMjEtLjg4bC0uOS0zLjg3IDMtMi42Yy41NS0uNDcuMjctMS4zNy0uNDUtMS40M3oiLz48L3N2Zz4=) 0 0 repeat-x;
                 }
             }
         }
-
-        .item___name {
+        // Имя товара
+        .item_name {
             line-height: 1.2857em;
             max-height: 2.5714em;
             font-size: 12px;
             line-height: 16px;
             margin-top: 8px;
             max-height: 32px;
-            -webkit-user-select: text;
-            -moz-user-select: text;
-            -ms-user-select: text;
-            user-select: text
         }
     }
 }

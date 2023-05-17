@@ -1,4 +1,5 @@
-.item__reviev {
+// Обзор товара
+.item_reviev {
     align-items: center;
     color: #2d2f43;
     display: block;
@@ -10,30 +11,32 @@
     padding-top: 24px;
     position: relative;
 
+    // Адаптив
     @media(max-width:575.9px) {
         padding-bottom: 16px;
         padding-top: 16px;
     }
 
-
-    .avatar__img {
+    // Аватарка картинки
+    .avatar_img {
         -ms-flex-negative: 0;
         flex-shrink: 0;
         font-size: 1em;
         text-decoration: none;
-
+        // картинка
         .image {
             background-repeat: no-repeat;
             display: inline-block;
         }
     }
-    .content__item {
+    // контент Элемента
+    .content_item {
         flex-basis: calc(100% - 2em - 8px);
         -ms-flex-positive: 1;
         flex-grow: 1;
         margin-left: 8px;
         max-width: 100%;
-        
+        // Заголовок
         .header {
             -ms-flex-align: start;
             align-items: flex-start;
@@ -41,17 +44,22 @@
             display: flex;
             position: relative;
 
-            .nameWrap {
+            // обертка
+            .name_wrap {
                 -ms-flex-positive: 1;
                 flex-grow: 1;
 
+                // Звезды
                 .stars {
                     font-size: 14px;
                     margin-bottom: 4px;
+
+                    // Адаптив
                     @media(max-width:991.9px) {
                         font-size: 12px;
                     }
 
+                    // рейтинг
                     .rating {
                         -ms-flex-align: center;
                         align-items: center;
@@ -60,6 +68,7 @@
                         font-size: 1em;
                         line-height: 1em;
 
+                        // Звезды
                         .star {
                             background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI2RmZGZlNyIgZD0iTTEzLjk1OCA1Ljg5M2wtMy43Ny0uMzI3TDguNzE2IDIuMWMtLjI2NS0uNjMxLTEuMTY5LS42MzEtMS40MzQgMEw1LjgxIDUuNTc0bC0zLjc2Mi4zMmMtLjY4Ni4wNTQtLjk2Ni45MS0uNDQ0IDEuMzYzbDIuODU4IDIuNDc3LS44NTYgMy42NzZhLjc3Ny43NzcgMCAwMDEuMTYuODQyTDggMTIuMzA0bDMuMjMzIDEuOTU1YS43NzcuNzc3IDAgMDAxLjE2LS44NGwtLjg1Ny0zLjY4NSAyLjg2LTIuNDc3Yy41MjEtLjQ1Mi4yNDgtMS4zMDktLjQzNy0xLjM2NHoiLz48L3N2Zz4=) repeat-x 0 0/1em;
                             box-sizing: border-box;
@@ -77,6 +86,7 @@
                     }
                 }
 
+                // Имя 
                 .name {
                     color: #2d2f43;
                     font-size: 14px;
@@ -85,7 +95,7 @@
                     line-height: 16px;
                 }
             }
-
+            // Дата доставки
             .date {
                 margin-top: 4px;
                 color: #b2b3c2;
@@ -93,6 +103,7 @@
                 line-height: 14px;
             }
         }
+        // Текст
         .text {
             font-size: 14px;
             -webkit-font-smoothing: antialiased;
@@ -103,11 +114,12 @@
             word-wrap: break-word;
         }
 
+        // Медиа
         .medias {
             display: flex;
             flex-wrap: wrap;
-
-            .media__button {
+            // кнопка медии
+            .media_button {
                 background: none;
                 border: none;
                 box-shadow: none;
@@ -117,16 +129,20 @@
                 height: 80px;
                 margin: 8px 8px 0 0;
                 width: 100px;
+
+                // Адаптив
                 @media(max-width:991.9px) {
                     height: 64px;
                     width: 64px;
                 }
-
+                // Квадрат
                 .square {
                     padding-top: 100%;
                     position: relative;
                     border-radius: inherit;
                     overflow: hidden;
+
+                    // Контент квадрата
                     .content {
                         border-radius: inherit;
                         bottom: 0;
@@ -134,7 +150,8 @@
                         position: absolute;
                         right: 0;
                         top: 0;
-                        .imageWrap__item {
+                        // Оберткакартинки
+                        .imageWrap_item {
                             height: 100%;
                             position: relative;
                             width: 100%;
@@ -142,6 +159,7 @@
                             overflow: hidden;
                             display: flex;
 
+                            // Картинка
                             img.img {
                                 background-repeat: no-repeat;
                                 display: inline-flex;

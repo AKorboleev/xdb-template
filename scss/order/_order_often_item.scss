@@ -145,8 +145,8 @@
             }
             // Может предется перенести в  badge,  чтобы сделать меньше
             .discountBadge {
-                background-color: #ff6262;
-                color: #fff;
+                background-color: $mainColor;
+                color: $white;
                 -ms-flex-negative: 0;
                 flex-shrink: 0;
                 font-size: 12px;
@@ -162,11 +162,12 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+            // Скрытый
             .hidden {
                 display: none;
             }
         }
-
+        // Рейтинк
         .rating {
             display: inline-flex;
             -ms-flex-wrap: nowrap;
@@ -178,30 +179,27 @@
             font-size: 12px;
             line-height: 14px;
 
+            //Звезды
             .stars {
                 background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNCI+PHBhdGggZmlsbD0iI2RmZGZlNyIgZD0iTTEzLjI2IDQuNDhMOS4zIDQuMTQgNy43NS41YS44Mi44MiAwIDAwLTEuNSAwTDQuNyA0LjE0bC0zLjk1LjM0YS44Mi44MiAwIDAwLS40NyAxLjQzbDMgMi42LS45IDMuODZhLjgyLjgyIDAgMDAxLjIyLjg5TDcgMTEuMmwzLjQgMi4wNWEuODIuODIgMCAwMDEuMjEtLjg4bC0uOS0zLjg3IDMtMi42Yy41NS0uNDcuMjctMS4zNy0uNDUtMS40M3oiLz48L3N2Zz4=) 0 0 repeat-x;
                 height: 14px;
                 width: 100px;
             }
+            // Текст
             .text {
                 color: #ff6262;
                 font-weight: 500;
                 margin-left: 7px
             }
         }
-
+        // Имя
         .name {
             line-height: 1.2857em;
             max-height: 2.5714em;
             font-size: 12px;
-            font-size: 12px;
-            line-height: 16px;
             line-height: 16px;
             margin-top: 8px;
             max-height: 32px;
-            -webkit-user-select: text;
-            -moz-user-select: text;
-            -ms-user-select: text;
             user-select: text;
         }
     }

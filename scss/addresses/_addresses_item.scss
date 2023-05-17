@@ -1,145 +1,135 @@
+// Обертка выбора одреса
 .addresses_item {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
     margin-top: 24px;
-
+    // Адаптив
     @media(max-width:575.9px) {
         margin-top: 16px;
     }
-
-    .parent {
-        cursor: pointer;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
+    // Контейнер с выбором адреса
+    .container {
+        align-items: center;
+        display: flex;
         -ms-flex-positive: 1;
         flex-grow: 1;
-        vertical-align: middle;
+        position: relative;
+        user-select: none;
 
-        .container {
-            -ms-flex-align: center;
-            align-items: center;
-            display: -ms-flexbox;
-            display: flex;
+        //Ввод данных
+        .input_address {
+            left: -10000px;
+            border: 0;
+            font-size: 0;
+            height: 0;
+            opacity: 0;
+            width: 0;
+            position: absolute;
+        }
+        // Флажок
+        .checkbox {
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            position: relative;
+            height: 1em;
+            width: 1em;
+            font-size: 1rem;
+            // Флажок
+            .border_checkbox {
+                background-color: #fff;
+                border:1px solid #3d3f56;
+                border-radius: 50%;
+                box-sizing: border-box;
+                display: block;
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                transform-origin: center center;
+                transition: .2s ease-in-out;
+                width: 100%;
+                &::hover {
+                    background-color: #881313;
+                }
+            }
+            // Сама стрелка
+            .check_icon {
+                box-sizing: border-box;
+                display: block;
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                transform-origin: center center;
+                transition: .2s ease-in-out;
+                width: 100%;
+                color: #000;
+                transform: scale(.8);
+                background-color: #fff;
+            }
+        }
+        // wrap
+        .label {
             -ms-flex-positive: 1;
             flex-grow: 1;
-            position: relative;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-
-            .input___address__radio {
-                left: -10000px;
-                border: 0;
-                font-size: 0;
-                height: 0;
-                opacity: 0;
-                width: 0;
-                position: absolute;
-            }
-
-            .checkbox {
-                -ms-flex-negative: 0;
-                flex-shrink: 0;
-                position: relative;
-                height: 1em;
-                width: 1em;
-                font-size: 1rem;
-
-                .border {
-                    background-color: #fff;
-                    border:1px solid #3d3f56;
-                    border-radius: 50%;
-                    box-sizing: border-box;
-                    display: block;
-                    height: 100%;
-                    left: 0;
-                    position: absolute;
-                    top: 0;
-                    transform-origin: center center;
-                    transition: .2s ease-in-out;
-                    width: 100%;
-                    &::hover {
-                        background-color: #881313;
+            margin-left: 10px;
+            overflow: hidden;
+            // Адресс
+            .address {
+                display: -ms-flexbox;
+                display: flex;
+                margin: 0;
+                // Текст 
+                .text {
+                    -ms-flex: 1;
+                    flex: 1;
+                    font-size: 14px;
+                    // Строка
+                    p.line {
+                        word-break: break-word;
                     }
                 }
-
-                .checkIcon {
-                    box-sizing: border-box;
-                    display: block;
-                    height: 100%;
-                    left: 0;
-                    position: absolute;
-                    top: 0;
-                    transform-origin: center center;
-                    transition: .2s ease-in-out;
-                    width: 100%;
-                    color: #000;
-                    transform: scale(.8);
-                    background-color: #fff;
-                }
-            }
-
-            .label {
-                -ms-flex-positive: 1;
-                flex-grow: 1;
-                margin-left: 10px;
-                overflow: hidden;
-
-                .address {
-                    display: -ms-flexbox;
-                    display: flex;
-                    margin: 0;
-
-                    .text {
-                        -ms-flex: 1;
-                        flex: 1;
+                /// Действия 
+                .actions {
+                    margin-left: 10px;
+                    text-align: right;
+                    // Кнопка 
+                    .button_address {
+                        border: 1px solid #e0e0e0;
+                        border-radius: 3rem;
+                        box-sizing: border-box;
+                        cursor: pointer;
+                        display: inline-block;
                         font-size: 14px;
+                        margin-bottom: 8px;
+                        min-width: 7em;
+                        padding: .7143em 1.1429em;
+                        text-align: center;
+                        transition: border .3s ease-in-out;
+                        white-space: nowrap;
 
-                        p.line {
-                            word-break: break-word;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        
+                        &:hover {
+                            border-color: $hoverColor;
+                        }
+                        
+                        // Удалить
+                        .remove {
+                            color: $mainColor;
+                        }
+
+                        // Адаптив
+                        @media(max-width:767.9px) {
+                            font-size: 12px;
                         }
                     }
-
-                    .actions {
-                        margin-left: 10px;
-                        text-align: right;
-
-                        .button__address {
-                            border: 1px solid #e0e0e0;
-                            border-radius: 3rem;
-                            box-sizing: border-box;
-                            cursor: pointer;
-                            display: inline-block;
-                            font-size: 14px;
-                            margin-bottom: 8px;
-                            min-width: 7em;
-                            padding: .7143em 1.1429em;
-                            text-align: center;
-                            transition: border .3s ease-in-out;
-                            white-space: nowrap;
-
-                            &:last-child {
-                                margin-bottom: 0;
-                            }
-                            
-                            &:hover {
-                                border-color: $hoverColor;
-                            }
-
-                            @media(max-width:767.9px) {
-                                font-size: 12px;
-                            }
-
-                            .remove {
-                                color: $mainColor;
-                            }
-                        }
-                    }
-                    
                 }
+                
             }
         }
     }

@@ -114,7 +114,7 @@
                     <h4>Оформление заказа</h4>
                 </div>
             </div>
-            <div class="form_body">
+            <div class="body_content">
                 <div class="content">
                     <!-- order-1  нужен для js  но это не точно ...-->
                     <div class="items order-1">
@@ -125,7 +125,7 @@
                         <div class="pricing">
                             <table>
                                 <tbody>
-                                    <tr class="item">
+                                    <tr class="block_item">
                                         <td class="header_item">
                                             <span>Стоимость товаров</span>
                                         </td>
@@ -134,13 +134,13 @@
                                             <meta itemprop="priceCurrency" content="RUB">
                                         </td>
                                     </tr>
-                                    <tr class="item">
+                                    <tr class="block_item">
                                         <td class="header_item">
                                             <span>Доставка</span>
                                         </td>
                                         <td class="value">бесплатно</td>
                                     </tr>
-                                    <tr class="item strong">
+                                    <tr class="block_item strong">
                                         <td class="header_item">
                                             <span>Итого</span>
                                         </td>
@@ -153,11 +153,11 @@
                             </table>
                         </div>
                     </div>
-                    <div class="params__overley order-sm-1">
+                    <div class="params_overley order-sm-1">
                         <div class="delivery">
                             <div class="header_title">Доставка</div>
-                            <div class="validationContainer">
-                                <div class="tabs">
+                            <div class="delivery_method_items">
+                                <div class="block_item">
                                     [DeliveryMethodItems]
                                 </div>
                                 <!-- d-node для js, но это не точно -->
@@ -169,7 +169,7 @@
                                     [DeliveryAddress]
                                 </div>
                             </div>
-                            <div class="controls">
+                            <div class="edit_controls">
                                 <span class="edit" role="button" tabindex="0" data-address-id="[Address_ID]">[Title] адрес
                                     <svg width="12" height="12" viewBox="0 0 12 12" class="icon">
                                         <path fill="currentColor" d="M0 9.5V12h2.5l7.4-7.4-2.5-2.5L0 9.5zm11.8-6.8c.3-.3.3-.7 0-1L10.2.3a.7.7 0 00-.9 0L8.1 1.4 10.6 4l1.2-1.2z"></path>
@@ -179,16 +179,16 @@
                         </div>
                         <div class="payment payment_item">
                             <div class="header_title">Способ оплаты</div>
-                            <div class="validationContainer">
+                            <div class="validation_tabs">
                                 <div class="tabs">
                                     [PaymentMethodItems]
                                 </div>
                                 <div class="errorMessage d-none">Способ оплаты не выбран</div>
                             </div>
-                            <div class="stickyOnMobile">
+                            <div class="sticky_on_mobile">
                                 <div class="overlay">
                                         <div class="mainButton">
-                                            <button class="button_payment" id="checkout">
+                                            <button class="button btn-main" id="checkout">
                                                 <span class="children">Продолжить</span>
                                             </button>
                                         </div>

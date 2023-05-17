@@ -1,24 +1,25 @@
+// Обертка всего шаблона 
 .address__page {
     max-width: 500px;
     margin: 0 auto;
     text-align: left;
     padding: 12px;
     margin-bottom: 1rem;
-
+    // Адаптив
     @media(min-width:768px) {
         padding: 16px;
     }
-
+    // Блок со списком 
     .whiteList {
         background: #fff;
         padding-left: 24px;
         padding-right: 24px;
-
+        // Адаптив
         @media(max-width:575.9px) {
             padding-left: 16px;
             padding-right: 16px;
         }
-
+        //Блок заголовка
         .header {
             -ms-flex-align: center;
             align-items: center;
@@ -30,54 +31,56 @@
             flex-direction: row;
             margin: 0 -24px;
             padding: 20px 24px;
-
+            // Адаптив
             @media(max-width:575.9px) {
                     margin: 0 -16px;
                     padding: 14px 16px;
             }
-
+            // Контент заголовка
             .content {
-                -ms-flex: 1;
                 flex: 1;
                 font-size: 18px;
-                font-weight: 500;
                 text-align: center;
                 padding: 0 8px;
-
-                .headerContainer {
-                    padding-left: 38px;
-                    text-align: center;
-                }
+                padding-left: 38px;
+                text-align: center;
             }
-
-            .controls {
+            // Выход
+            .exit {
                 margin-left: 24px;
-
+                // Адаптив
                 @media(max-width:575.9px) {
                     margin-left: 12px;
                 }
-
-                .button___controls {
+                // Кнопка выхода
+                .button_exit {
                     color: $mainColor;
                     cursor: pointer;
                     float: right;
                     font-size: .8888rem;
                     font-weight: 500;
                     text-decoration: none;
+
+                    .close_icon {
+                        color: #8e90a7;
+                        height: 14px;
+                        width: 14px
+                    }
                 }
             }
         }
-
-        .overlay {
+        // Блок доставки  
+        .delivery_block {
             border-radius: inherit;
             position: relative;
-
+            // Внутренняя часть блока доставки 
             .inner {
                 display: flex;
                 -ms-flex-direction: column;
                 flex-direction: column;
                 padding: 4px 24px 48px;
 
+                // Адаптив
                 @media(max-width:991.9px) {
                         padding: 0 12px 24px;
                 }
@@ -85,7 +88,7 @@
                 @media(max-width:767.9px) {
                         padding: 0 6px 18px;
                 }
-
+                // обертка для до ставки 
                 .content {
                     margin-bottom: 32px;
                     margin-left: -8px;
@@ -98,6 +101,7 @@
                         display: table
                     }
 
+                    // Адаптив
                     @media(max-width:991.9px) {
                         margin-bottom: 16px;
                     }
@@ -105,25 +109,27 @@
                     @media(max-width:767.9px) {
                         margin-bottom: 8px;
                     }
-
-                    .row___page {
+                    // обертка для ввода данных 
+                    .input_data {
                         margin: 12px 0;
                         box-sizing: border-box;
                         display: inline-block;
                         padding: 0 8px;
                         position: relative;
                         width: 100%;
+                        // Адаптив
                         @media(max-width:991.9px) {
                             margin: 8px 0;
                         }
+                        // Поле
                         .field {
                             border: 1px solid #dfdfe7;
                             border-radius: 8px;
                             box-sizing: border-box;
                             min-width: 0;
                             position: relative;
-
-                                .fieldLabelContainer {
+                                //Контейнер для метки поля 
+                                .field_label_container {
                                     font-size: 12px;
                                     left: 12px;
                                     line-height: 1.17;
@@ -134,14 +140,15 @@
                                     text-overflow: ellipsis;
                                     top: -8px;
                                     white-space: nowrap;
-                                    .fieldLabel {
+                                    // Метка поля
+                                    .field_label {
                                         background: #fff;
                                         color: #b2b3c2;
                                         padding: 1px 3px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
                                     }
                                 }
-
-                            .fieldInput {
+                            // Поле для ввода данных
+                            .field_input {
                                 overflow: hidden;
                                 position: relative;
                                 background: transparent;
@@ -155,7 +162,7 @@
                                 outline: none;
                                 padding: 13px 16px;
                                 width: 100%;
-                            
+                                // Выпадающие меню
                                 .element {
                                     font-size: 16px;
                                     height: 100%;
@@ -165,8 +172,8 @@
                                     top: 0;
                                     width: 100%;
                                 }
-
-                                .button__element {
+                                // Выбор элемента
+                                .button_element {
                                     display: block;
                                     overflow: hidden;
                                     padding-right: .8rem;
@@ -179,8 +186,8 @@
                                     content: "";
                                     pointer-events: none;
                                     position: absolute;
-                                    right: 5px;
-                                    top: 0;
+                                    right: 15px;
+                                    top: 5px;
                                     width: .5rem;
                                 }
                             }

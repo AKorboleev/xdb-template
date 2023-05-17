@@ -107,20 +107,6 @@ $catalog:$mainColor;
 
 
 
-.name__inner {
-    color: #3d3f56;
-    // font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    text-decoration: none;
-
-    @media (max-width: 991.9px) {
-            display: none;
-    }
-}
-
-
-
 
 // Аватарка в review wrap
 .avatar {
@@ -135,6 +121,41 @@ $catalog:$mainColor;
 //****
 
 
+// Не знаю что с этим делать
+// Часто где было
+.resizeTriggers {
+    animation: resizeAnimation 1ms;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.resizeTriggers>div {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+
+    .contractTrigger {
+        &:before {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            height: 200%;
+            width: 200%;
+        }
+    }
+}
+// ****
 
 
 // баннер сообщает о положительном оформлении доставке 
@@ -277,7 +298,7 @@ $catalog:$mainColor;
     user-select: none;
 
     
-    background: #f3f3f5;
+    background-color: #f3f3f5;
     border: 1px solid #f3f3f5;
     color: #2d2f43;
 
@@ -552,7 +573,7 @@ $catalog:$mainColor;
             display: flex;
         }
 
-        .container__mobile__controls {
+        .container_mobile_controls {
             flex-basis: calc(50% - 6px);
             flex-grow: 1;
             flex-shrink: 0;
@@ -566,7 +587,7 @@ $catalog:$mainColor;
                 max-width: none;
             }
 
-            .button__filteres {
+            .button_filteres {
                 -ms-flex-align: center;
                 align-items: center;
                 box-sizing: border-box;

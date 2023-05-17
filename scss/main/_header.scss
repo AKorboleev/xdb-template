@@ -1,6 +1,7 @@
+// Вердхний контейнер
 header.header {
     // Верняя шапка 
-    .header__top {
+    .header_top {
         background-color: $white;
         max-height: 32px;
         
@@ -9,7 +10,7 @@ header.header {
 
         }
         // Панель навигации 
-        .navBar {
+        .nav_bar {
             box-sizing: border-box;
             display: -ms-flexbox;
             display: flex;
@@ -42,12 +43,12 @@ header.header {
                     padding-right: 8px;
             }
             // Левая секция
-            .leftSection{
+            .left_section{
                 -ms-flex-align: center;
                 align-items: center;
                 display: flex;
                 // Панель навигации по языкам 
-                .navBarlanguage {
+                .navBar_language {
                     display: -ms-flexbox;
                     display: flex;
                     margin: 0 16px;
@@ -60,14 +61,11 @@ header.header {
                         margin-right: 0;
                     }
                     //обертка для языка 
-                    .selectWrapper {
+                    .wrapper {
                         cursor: pointer;
-                        -webkit-user-select: none;
-                        -moz-user-select: none;
-                        -ms-user-select: none;
                         user-select: none;
                         // Кнопка для выбора языка 
-                        .selectButton {
+                        .select_button {
                             -ms-flex-align: center;
                             align-items: center;
                             display: -ms-flexbox;
@@ -100,8 +98,7 @@ header.header {
                             }
                         }
                         // Кнопка при нажатии на нее , выпадает список с возможными языками
-                        .button__lang{
-                            -ms-flex-align: center;
+                        .button_lang{
                             align-items: center;
                             color: #3d3f56;
                             cursor: pointer;
@@ -122,7 +119,7 @@ header.header {
                 }
             }
             // Правая секция
-            .rightSection {
+            .right_section {
 
                 display: -ms-flexbox;
                 display: flex;
@@ -141,7 +138,7 @@ header.header {
                     -ms-flex-pack: end;
                     justify-content: flex-end;
                     overflow: hidden;
-    
+                    // Ссылка
                     a {
                         display: -ms-flexbox;
                         display: flex;
@@ -215,7 +212,7 @@ header.header {
                 }
             }
             // Контейнер для логотипа
-            .logo__header_button {
+            .logo_header_button {
                 display: table-cell;
                 vertical-align: middle;
                 // Сам логотим
@@ -267,26 +264,17 @@ header.header {
                         }
                     }
                     // Блок с данными 
-                    .block__inner {
+                    .block_inner {
                         align-items: center;
                         display: -ms-flexbox;
                         display: flex;
-                        -ms-flex-align: center;
                         cursor: pointer;
-                        -webkit-tap-highlight-color: transparent;
-                        -webkit-user-select: none;
-                        -moz-user-select: none;
-                        -ms-user-select: none;
                         user-select: none;
                         text-decoration: none;
 
                         .inner {
-                            -ms-flex-line-pack: center;
                             align-content: center;
-                            -ms-flex-align: center;
-                            -ms-flex-direction: column;
                             flex-direction: column;
-                            -ms-flex-pack: center;
                             justify-content: center;
                              // Иконки Элементов
                             .item_icon {
@@ -294,6 +282,29 @@ header.header {
                                 margin: 0 auto;
                                 position: relative;
                                 width: 26px;
+
+                                // Индификация 
+                                .indicator{
+                                    background: $mainColor;
+                                    border-radius: 20px;
+                                    color: #fff;
+                                    display: block;
+                                    font-size: 10px;
+                                    font-weight: 500;
+                                    height: 14px;
+                                    line-height: 14px;
+                                    margin-left: 0;
+                                    min-width: 14px;
+                                    padding: 1px;
+                                    position: absolute;
+                                    right: -8px;
+                                    text-align: center;
+                                    top: -8px;
+                                    -webkit-user-select: none;
+                                    -moz-user-select: none;
+                                    -ms-user-select: none;
+                                    user-select: none;
+                                }
                             }
                             // Адаптив
                             @media (max-width: 991.9px) {
@@ -306,6 +317,18 @@ header.header {
                                     color:$hoverColor;
                                 }
                             }
+                            // Имя Элемента
+                            .name_inner {
+                                color: #3d3f56;
+                                font-weight: 500;
+                                line-height: 20px;
+                                text-decoration: none;
+                                
+                                // Адаптив
+                                @media (max-width: 991.9px) {
+                                        display: none;
+                                }
+                            }
                         }
                     }
                 }
@@ -314,43 +337,30 @@ header.header {
     }
 }
 //  Адаптив поиска 
-.mobaile__search {
+.mobaile_search {
     display: none;
     background: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
     display: block;
     padding: 10px 12px 16px;
     
+    // Адаптив
     @media (min-width: 768px) {
             padding-left: 16px;
             padding-right: 16px;
             display: none;
     }
 
-    // form.search {
-    //         position: relative;
-
-    //     .inner{
-    //         display: -ms-flexbox;
-    //         display: flex;
-    //         height: 48px;
-    //         width: 100%;
-    //     }
-    // }
-
+    // Форма
     form {
         position: relative;
         //Внутренняя настройка
         .inner {
-            display: -ms-flexbox;
             display: flex;
             height: 48px;
             width: 100%;
-            -ms-flex-align: center;
             align-items: center;
-            display: -ms-flexbox;
             display: flex;
-            -ms-flex-positive: 1;
             flex-grow: 1;
             vertical-align: middle;
             width: auto;

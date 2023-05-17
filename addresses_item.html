@@ -109,37 +109,35 @@
     <div class="container-xxl">
         <!-- addresses_item-->
         <div class="addresses_item" data-address="[Address_ID]">
-            <label class="parent">
-                <div class="container">
-                    <input class="input___address__radio" name="address" type="radio" data-address="[Address_ID]" value=""[Сhecked]>
-                    <div class="checkbox">
-                        <!-- Использовать онкилк через js , чтобы работала галочка -->
-                        <div class="border"></div>
-                        <svg viewBox="0 0 28 20" class="checkIcon">
-                            <path d="M10 20L0 10.38l2.8-2.7 7.2 6.94L25.2 0 28 2.7" fill="currentColor" fill-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                    <div class="label">
-                        <div class="address">
-                            <div class="text">
-                                <p class="line">[FirstName] [LastName]</p>
-                                <p class="line">[Street], д. [House], кв. [Flat]</p>
-                                <p class="line">[City], [State], [ZIP]</p>
-                                <p class="line">&lrm;[Phone]</p>
-                            </div>
-                            <div class="actions">
-                                <!-- address_change не знаю что это -->
-                                <span class="button__address address_change" role="button" tabindex="0" data-address="[Address_ID]">Изменить</span>
-                                <br>
-                                <!-- address_delete что это такое  -->
-                                <span class="button__address address_delete" role="button" tabindex="0" data-address="[Address_ID]">
-                                    <span class="remove">Удалить</span>
-                                </span>
-                            </div>
+            <div class="container">
+                <input class="input_address" name="address" type="radio" data-address="[Address_ID]" value=""[Сhecked]>
+                <div class="checkbox">
+                    <!-- Использовать онкилк через js , чтобы работала галочка -->
+                    <div class="border"></div>
+                    <svg viewBox="0 0 28 20" class="check_icon">
+                        <path d="M10 20L0 10.38l2.8-2.7 7.2 6.94L25.2 0 28 2.7" fill="currentColor" fill-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <div class="label">
+                    <div class="address">
+                        <div class="text">
+                            <p class="line">[FirstName] [LastName]</p>
+                            <p class="line">[Street], д. [House], кв. [Flat]</p>
+                            <p class="line">[City], [State], [ZIP]</p>
+                            <p class="line">&lrm;[Phone]</p>
+                        </div>
+                        <div class="actions">
+                            <!-- address_change что это -->
+                            <span class="button_address address_change" role="button" tabindex="0" data-address="[Address_ID]">Изменить</span>
+                            <br>
+                            <!-- address_delete что это  -->
+                            <span class="button_address address_delete" role="button" tabindex="0" data-address="[Address_ID]">
+                                <span class="remove">Удалить</span>
+                            </span>
                         </div>
                     </div>
                 </div>
-            </label>
+            </div>
         </div>
         <!-- **** -->
     </div>

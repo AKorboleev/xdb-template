@@ -1,3 +1,4 @@
+// Обертка для обзора
 .review_wrap {
     margin: 10px 24px;
     align-items: center;
@@ -6,12 +7,16 @@
     position: relative;
     text-decoration: none;
     min-width: 0;
+    //Обзор
     .reviews {
         position: relative;
 
+        // Звезды
         .stars {
             font-size: 1.1666rem;
             margin: .4rem 0 .3rem;
+
+            // Рейтинг
             .rating {
                 -ms-flex-align: center;
                 align-items: center;
@@ -20,11 +25,14 @@
                 font-size: 1em;
                 line-height: 1em;
 
+                // Ярлык
                 .label {
                     font-size: .875em;
                     -webkit-font-smoothing: antialiased;
-                    margin-left: 4px
+                    margin-left: 4px;
                 }
+                
+                // Звезда
                 .star{
                     background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI2RmZGZlNyIgZD0iTTEzLjk1OCA1Ljg5M2wtMy43Ny0uMzI3TDguNzE2IDIuMWMtLjI2NS0uNjMxLTEuMTY5LS42MzEtMS40MzQgMEw1LjgxIDUuNTc0bC0zLjc2Mi4zMmMtLjY4Ni4wNTQtLjk2Ni45MS0uNDQ0IDEuMzYzbDIuODU4IDIuNDc3LS44NTYgMy42NzZhLjc3Ny43NzcgMCAwMDEuMTYuODQyTDggMTIuMzA0bDMuMjMzIDEuOTU1YS43NzcuNzc3IDAgMDAxLjE2LS44NGwtLjg1Ny0zLjY4NSAyLjg2LTIuNDc3Yy41MjEtLjQ1Mi4yNDgtMS4zMDktLjQzNy0xLjM2NHoiLz48L3N2Zz4=) repeat-x 0 0/1em;
                     box-sizing: border-box;
@@ -41,7 +49,10 @@
                 }
             }
         }
+
+        // Фильтры
         .filteres {
+            // Фильтр
             .filter {
                 background: #eee;
                 border-radius: 2em;
@@ -55,7 +66,8 @@
                 text-decoration: none;
                 white-space: nowrap;
     
-                .filterName {
+                // Название фильра
+                .filter_name {
                     position: absolute;
                     overflow: hidden;
                     clip: rect(0 0 0 0);
@@ -142,13 +154,14 @@
             }
         }
 
-
+        // Контент
         .content {
             min-height: 3rem;
             position: relative;
             min-width: 1300px;
             text-align: right;
             
+            //Следующий 
             .next {
                 color:$mainColor;
                 display: inline-block;

@@ -1,5 +1,7 @@
+// Обертка
 .breadcrumbs {
-    .item__list__category {
+    // Категория списка элементов
+    .item_list_category {
         color: #9697a1;
         margin-right: 1ex;
         &:before {
@@ -10,7 +12,7 @@
         &:first-child:before {
             display: none;
         }
-
+        // Ссылка
         a.link {
             color: #9697a1;
             text-decoration: none;

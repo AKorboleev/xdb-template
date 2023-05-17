@@ -1,11 +1,13 @@
+// Блок успешного оформление заказа
 .checkout_sucess {
     margin-top: 12px;
-
+    // Адаптив
     @media (min-width: 768px) {
         margin-top: 16px;
     }
 
-    .reducer_header {
+    // контент Хейдера
+    .order_header {
         box-sizing: border-box;
         max-width: 100%;
         margin-bottom: 12px;
@@ -22,7 +24,7 @@
         color: #2d2f43;
         display: inline-flex;
         margin: 4px auto 8px;
-
+        // Адаптив
         @media (min-width: 576px) {
             padding-left: 10px;
             padding-right: 6px;
@@ -44,8 +46,8 @@
             margin-bottom: 16px;
         }
     }
-
-    .reducer_content {
+    // Контент заказа
+    .order_content {
         box-sizing: border-box;
         max-width: 100%;
         margin-bottom: 12px;
@@ -56,7 +58,7 @@
         padding-left: 6px;
         padding-right: 6px;
 
-
+        // Адаптив
         @media (min-width: 768px) {
             margin-bottom: 16px;
         }
@@ -84,17 +86,17 @@
         @media (min-width: 768px) {
             padding-left: 20px;
         }
-
+        // Блок Таблицы
         .row_block {
             background-color: #fff;
             border-radius: 16px;
             overflow: hidden;
-
+            // Сообщение 
             .sucessMessage {
                 background-color: #fff;
                 color: #2d2f43;
-
-                .content_sucessMessage {
+                // Контент сообщения
+                .content_sucess_message {
                     -ms-flex-align: stretch;
                     align-items: stretch;
                     display: -ms-flexbox;
@@ -104,43 +106,47 @@
                     padding: 80px 40px 40px;
                     position: relative;
                     text-align: center;
-
+                    // Адаптив
                     @media(max-width:575.9px) {
                         padding: 32px 16px 40px;
                     }
-
-                    .title_sucessMessage {
+                    // Заголовок сообщения
+                    .title_sucess_message {
                         color: #3d3f56;
                         font-size: 30px;
                         font-weight: 700;
                         line-height: normal;
-
+                        // Адаптив
                         @media(max-width:575.9px) {
                             font-size: 24px;
                         }
                     }
-
-                    .text_sucessMessage {
+                    // Текстсообщения 
+                    .text_sucess_message {
                         font-size: 16px;
                         line-height: 1.44em;
                         margin-top: 16px;
-
+                        // Адаптив
                         @media(max-width:575.9px) {
                             font-size: 14px;
                         }
                     }
-
+                    // Действие
                     .actions {
                         margin-top: 16px;
+
+                        // ССылка
                         span.inner_link {
                             display: inline-block;
                             margin: -6px;
                             @media (min-width: 768px) {
                                 margin: -8px;
                             }
+                            // Ссылка кортинки
                             .link_img {
                                 display: inline-block;
                                 margin: 6px;
+                                // Адаптив
                                 @media (min-width: 768px) {
                                     margin: 8px;
                                 }
@@ -149,37 +155,39 @@
                     }
                 }
             }
-
-            .ordersInfo {
+            // Информация о заказе
+            .orders_info {
                 padding: 0 64px;
 
+                // Адаптив
                 @media(max-width:575.9px) {
                     padding: 0 16px;
-                }
-
-                .title_ordersInfo {
+                }  
+                // Заголовок ордера
+                .title_orders_info {
                     color: #2d2f43;
                     font-size: 20px;
                     font-weight: 700;
                     line-height: 24px;
                     text-align: center
                 }
-
-                .container_orderInfo {
+                // Информация заказа
+                .container_order_info {
                     padding: 10px 0 40px;
-                    
+                    // Таблица для разделения контента
                     .row_inner {
                         display: flex;
                         -ms-flex-pack: stretch;
                         justify-content: stretch;
 
+                        // Адаптив
                         @media(max-width:767.9px) {
                             -ms-flex-align: stretch;
                             align-items: stretch;
                             -ms-flex-direction: column;
                             flex-direction: column
                         }
-
+                        //Элемент
                         .item {
                             color: #2d2f43;
                             display: -ms-flexbox;
@@ -189,6 +197,7 @@
                             margin-top: 14px;
                             width: calc(50% - 16px);
 
+                            // Адаптив
                             @media(max-width:767.9px) {    
                                 width: auto;
                             }
@@ -196,8 +205,8 @@
                             @media(max-width:575.9px) {    
                                 font-size: 14px;
                             }
-
-                            .itemTitle {
+                            // Заголовок элемента
+                            .item_title {
                                 box-sizing: border-box;
                                 -ms-flex-negative: 0;
                                 flex-shrink: 0;
@@ -205,12 +214,13 @@
                                 padding-right: 16px;
                                 width: 160px;
     
+                                // Адаптив
                                 @media(max-width:575.9px) {
                                     width: 120px;
                                 }
                             }
-
-                            .itemText {
+                            // Текст элемента
+                            .item_text {
                                 color: #3d3f56;
                                 font-weight: 400;
                                 word-break: break-word
@@ -219,7 +229,7 @@
                     }
                 }
             }
-
+            // Контейнер кэшбека
             .cashback {
                 display: -ms-flexbox;
                 display: flex;
@@ -229,6 +239,7 @@
                 margin-bottom: 48px;
                 padding: 0 40px;
 
+                // Сообщение 
                 .message {
                     background-image: linear-gradient(278deg, $mainColor, #f5a54e);
                     border-radius: 6px;
@@ -242,18 +253,20 @@
                     text-align: center
                 }
             }
-
-            .favoriteCategoryPromo {
+            //Избранные категории
+            .favorite_category_promo {
                 background-color: #fff;
                 padding: 2.2222rem;
+
+                // Адаптив
                 @media(max-width:575.9px) {
                     padding: 1.1111rem;
                 }
-
+                // контейнер избранные категории
                 .container_favoriteCategoryPromo {
                     color: #3d3f56;
                     text-align: center;
-
+                    // Купон
                     .coupon{
                         -ms-flex-align: center;
                         align-items: center;
@@ -296,14 +309,15 @@
                             right: -.3333rem
                         }
                     }
-
+                    // Заголовок купона
                     .title{
                         font-size: 1.6667rem;
 
+                        // Адаптив
                         @media(max-width:575.9px) {
                             font-size: 1.3333rem;
                         }
-
+                        // Кнопка информирующая о купоне
                         .helpButton {
                             display: inline-block;
                             font-size: .75em;
@@ -312,7 +326,7 @@
                             position: relative;
                             vertical-align: middle;
                             width: 1.33335em;
-
+                            // Иконка купона
                             .icon {
                                 background: none;
                                 border: none;
@@ -327,6 +341,7 @@
                                 user-select: none;
                                 width: 100%;
 
+                                // Адаптив
                                 @media(max-width:575.9px) {
                                     border-radius: 10px;
                                     content: "";
@@ -343,6 +358,7 @@
                         }
                     }
                }
+                // Описание
                 .description {
                     color: #2d2f43;
                     font-size: .8889rem;
@@ -350,18 +366,20 @@
                     margin: 10px 0;
                     text-align: center;
 
+                    // Адаптив
                     @media(max-width:575.9px) {
                         font-size: 1rem;
                     }
                 }
-
+                // Контент опиисания
                 .content_description {
                     margin-top: 2.2222rem;
 
+                    // Адаптив
                     @media(max-width:575.9px) {
                         margin-top: 1rem;
                     }
-
+                    // Катигория описания 
                     .categories_description {
                         box-sizing: border-box;
                         display: -ms-flexbox;
@@ -372,6 +390,7 @@
                         margin-right: -4px;
                         margin-bottom: -8px;
 
+                        // Адаптив
                         @media(min-width:576px) {
                             margin-left: -10px;
                             margin-right: -10px;
@@ -400,8 +419,8 @@
                         @media(min-width:768px) {
                             margin-bottom: -40px
                         }
-
-                        .itemWrap {
+                        // Обертка элемента
+                        .item_wrap {
                             box-sizing: border-box;
                             min-height: 1px;
                             position: relative;
@@ -413,6 +432,7 @@
                             max-width: 33.3333333333%;
                             margin-bottom: 8px;
 
+                            // Адаптив
                             @media(min-width:576px) {
                                 padding-left: 10px;
                                 padding-right: 10px;
@@ -452,7 +472,7 @@
                                 flex: 0 0 100%;
                                 max-width: 100;
                             }
-
+                            // Элементы
                             .item {
                                 -ms-flex-align: center;
                                 align-items: center;
@@ -475,6 +495,7 @@
                                 -ms-user-select: none;
                                 user-select: none;
 
+                                // Адаптив
                                 @media(max-width:767.9px) {
                                     height: 8rem;
                                 }
@@ -488,7 +509,7 @@
                         }
                     }
                 } 
-                
+                // Действие
                 .actions {
                     background-color: inherit;
                     display: flex;

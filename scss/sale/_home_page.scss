@@ -1,3 +1,4 @@
+// Обертка
 .wrapper {
     display: block;
     overflow: hidden;
@@ -5,6 +6,7 @@
     cursor: pointer;
     text-decoration: none;
     padding: 0;
+    //Банер
     .banner {
         border-radius: 8px;
         display: block;
@@ -16,8 +18,10 @@
         width: 100%;
         background-color:rgb(255, 98, 98);
         
+        // Блок продажи
         .sale__block {
             margin-left: 3%;
+            //Продаже
             .sale {
                 display: inline-block;
                 margin-top: 3%;
@@ -26,6 +30,7 @@
             }
         }
 
+        // Скидки
         .discounts {
             display: flex;
             justify-content: space-between;
@@ -35,12 +40,13 @@
             float: right;
             
         }
-
+        // Текст
         .text {
             margin-top: 3%;
             color:#fff;
         }
 
+        // Время
         .timer {
             display: flex;
             align-items: stretch;
@@ -51,6 +57,7 @@
             font-weight: 500;
             height: 32px;
 
+            // Цифра
             .digit {
                 display: flex;
                 align-items: center;
@@ -76,15 +83,15 @@
                 }
             }
 
+            // Разделитель
             .separator {
-                -ms-flex-align: center;
                 align-items: center;
                 display: flex;
-                -ms-flex-pack: center;
                 justify-content: center;
                 width: 8px
             }
 
+            // стрелка
             .arrow {
                 display: block;
                 margin-top: 2%;

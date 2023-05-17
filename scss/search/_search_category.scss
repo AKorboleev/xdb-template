@@ -1,4 +1,6 @@
+// Поиск категории
 .search_category {
+    // Ссылка
     a.link {
         -ms-flex-align: center;
         align-items: center;
@@ -18,7 +20,7 @@
         &:hover {
             color: $hoverColor;
         }
-
+        // Картинки
         img.image {
             background-repeat: no-repeat;
             display: inline-block;
@@ -29,7 +31,7 @@
             -o-object-fit: contain;
             object-fit: contain;
         }
-
+        // Имя
         .name {
             display: inline-block;
             -ms-flex-positive: 1;

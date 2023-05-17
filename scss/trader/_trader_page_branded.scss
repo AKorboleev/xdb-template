@@ -1,45 +1,47 @@
+// шаблон трейдера брендированная
 .trader_page_branded {
-    margin-top: 12px;
-    margin-left: auto;
-    margin-right: auto;
     box-sizing: border-box;
     max-width: 100%;
     padding-left: 6px;
     padding-right: 6px;
-
-    
     border-right: 1px solid #eee;
     padding-right: 0.6667rem;
-    margin-right: 6px;
 
+    // Адаптив
     @media (max-width: 767.9px) {
-            border-right: none;
-            margin-right: 0;
-            padding-right: 0;
+        border-right: none;
+        margin-right: 0;
+        padding-right: 0;
     }
     @media (min-width: 768px) {
         margin-top: 16px;
         margin-right: 8px;
     }
 
-    .inner__element { 
+    // Элементр
+    .element { 
         position: sticky;
         top: 12px;
         position: relative;
 
+        // Левая часть
         .leftColTop {
             margin-bottom: 12px;
     
+            // Адаптив
             @media (min-width: 768px) {
                 margin-bottom: 16px;
             }
             @media (max-width: 767.9px) {
                 margin-bottom: 0;
             }
-    
+            
+            // Резюме
             .storeSummary {
                 box-shadow: 0 1px 0 0 rgba(0, 0, 0, .06);
                 overflow: hidden;
+
+                // Адаптив
                 @media(max-width:767.9px) {
                     margin-top: -30px;
                     padding-top: 30px;
@@ -54,16 +56,20 @@
                 @media(max-width:767.9px) {
                     margin-bottom: 16px;
                 }
+                
+                // Главное
                 .main {
                     background: #fff;
                     text-align: center;
                     padding: 24px;
     
-                    .contextMenu {
+                    // Контекст меню
+                    .context_menu {
                         position: absolute;
                         right: 32px;
                         top: 32px;
     
+                        // Кнопка 
                         button.contextMenuButton {
                             background: none;
                             border: none;
@@ -74,14 +80,17 @@
                         }
                     }
     
-                    .logo {
+                    // Обертка для лого
+                    .logo_wrap {
                         margin: 23px auto 42px;
     
+                        // Адаптив
                         @media(max-width:767.9px) {
                             margin: 10px auto 25px;
                         }
     
-                        .logoWrap {
+                        // Логотип
+                        .logo {
                             align-items: center;
                             display: inline-flex;
                             background: #fff;
@@ -95,37 +104,43 @@
                             line-height: 4rem;
                             width: 4rem;
                             
+                            // Адаптив
                             @media(max-width:767.9px) {
                                 left: 50%;
                                 position: absolute;
                                 top: 0;
                                 transform: translateX(-50%);
                             }
-    
+                            
+                            // Буквы
                             .letters {
                                 font-size: 1.2222rem;
                             }
                         }
                     }
     
+                    // Имя трейдера
                     h1.trader_name {
                         font-size: 1.7778rem;
                         font-weight: 500;
                         overflow-wrap: break-word;
                         word-wrap: break-word;
                     }
-                    h2.TraderCountry {
+                    // Комюнити
+                    h2.trader_country {
                         color: #9697a1;
                         font-size: .7222rem;
                         font-weight: 400;
                         margin-top: .5rem;
-    
+                        
+                        // Локация 
                         svg.locationPin {
                             padding-right: .25rem;
                         }
                     }
                 }
                 
+                // Статус всего акка
                 .stats {
                     background: #fff;
                     display: -ms-flexbox;
@@ -133,8 +148,9 @@
                     -ms-flex-wrap: wrap;
                     flex-wrap: wrap;
                     margin-right: -1px;
-    
-                    .statItem {
+                    
+                    // Отдельный статус
+                    .stat_item {
                         border-color: hsla(0, 0%, 80%, .2);
                         border-style: solid;
                         border-width: 1px 1px 0 0;
@@ -144,17 +160,18 @@
                         font-size: 12px;
                         text-align: center;
                         padding: 12px;
-    
-                        .statValue {
+                        
+                        // Значение
+                        .stat_value {
                             color: #2d2f43;
-                            font-size: 1rem
+                            font-size: 1rem;
                         }
                     }
                 }
             }
             
-    
-            .categoriesButton {
+            // кнопка категорий
+            .categories_button {
                 background: none;
                 border: none;
                 box-shadow: none;
@@ -171,6 +188,7 @@
                 line-height: 20px;
                 margin: 4px auto;
     
+                // Адаптив
                 @media (max-width: 767.9px) {
                     display: block;
                 }
@@ -191,29 +209,34 @@
             
         }
 
-
+        // Каталог
         .catalog{
             display: none;
             padding: 0;
 
+            // Адаптив
             @media (min-width: 768px) {
                 display: block;
             }
 
+            // Тип каталога
             .catalog__type {
                 text-align: left;
             }
         }
 
-        .product__container__revision {
+        // Контейнер продукта
+        .product_container_revision {
                 margin: 0 -6px;
                 padding-bottom: 40px;
 
+            // Адаптив
             @media (min-width: 768px) {
                 margin-left: -8px;
                 margin-right: -8px;
             }
 
+            // Элемент
             .inner {
                 -ms-flex-align: stretch;
                 align-items: stretch;
@@ -223,9 +246,9 @@
                 flex-wrap: wrap;
                 margin: -16px 0 0 -16px;
 
+                // Блокирование запроса фильтров
                 .block_search_filteres {
                     box-sizing: border-box;
-                    -ms-flex-preferred-size: calc(100% - 16.1px);
                     flex-basis: calc(100% - 16.1px);
                     -ms-flex-positive: 0;
                     flex-grow: 0;
@@ -238,13 +261,15 @@
             }
         }
 
+        // Обертка картины
         .imageWrap {
             border-radius: .444rem;
             bottom: 0;
             left: calc(25% + 4px);
             overflow: hidden;
             display: inline-flex;
-            // height: 300px;
+            
+            // Адаптив
             @media(max-width:991.9px){
                 left: calc(33.33333% + 3px);
             }
@@ -253,6 +278,7 @@
                 position: static;
             }
             
+            // Сама картинка
             img.image {
                 background-repeat: no-repeat;
                 display: inline-block;
@@ -264,5 +290,4 @@
             }
         }
     }
-
 }

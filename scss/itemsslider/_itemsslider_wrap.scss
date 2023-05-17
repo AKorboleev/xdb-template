@@ -1,12 +1,12 @@
+// Слайдер
 .itemsslider {
+    // Заголовок
     .header {
-        -ms-flex-align: baseline;
         align-items: baseline;
         color: #2d2f43;
-        display: -ms-flexbox;
         display: flex;
         margin-bottom: 16px;
-
+        // нейминование
         .title {
             font-size: 16px;
             line-height: 20px;
@@ -21,23 +21,23 @@
             white-space: nowrap;
             text-decoration: none;
 
+            // Адаптив
             @media(min-width:600px) {
-                    font-size: 20px;
-                    line-height: 24px;
+                font-size: 20px;
+                line-height: 24px;
             }
             
             @media(min-width:840px) {
-                    font-size: 24px;
-                    line-height: 28px;
+                font-size: 24px;
+                line-height: 28px;
             }
-        }
+        }   
 
+        // Действие
         .action {
             background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSIxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMSAxbDYgNi02IDYiIHN0cm9rZT0iI0IyQjNDMiIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+) no-repeat 100%;
             box-sizing: border-box;
             cursor: pointer;
-            -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
             font-size: 14px;
             line-height: 16px;
             margin-left: 24px;
@@ -50,48 +50,38 @@
             }
         }
     }
-
+    // Слайдер
     .slider {
         position: relative;
-        .contentWrap {
-            overflow-y: hidden;
-
-            .content {
-                margin-bottom: -100px;
-                overflow-x: hidden;
-                padding-bottom: 100px;
-                -ms-overflow-style: none;
-                scrollbar-width: none;
-                display: none;
-
-                .inner {
-                    -ms-flex-align: stretch;
-                    align-items: stretch;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -ms-flex-wrap: nowrap;
+        // Контент
+        .content {
+            margin-bottom: -100px;
+            overflow-x: hidden;
+            padding-bottom: 100px;
+            scrollbar-width: none;
+            display: none;
+            // Элемент
+            .inner {
+                align-items: stretch;
+                display: flex;
+                flex-wrap: nowrap;
+                margin: -16px 0 0 -16px;
+                flex-wrap: wrap;
+                // Адаптив
+                @media(min-width:840px) {
                     flex-wrap: nowrap;
-                    margin: -16px 0 0 -16px;
-                    -ms-flex-wrap: wrap;
-                    flex-wrap: wrap;
-
-                    @media(min-width:840px) {
-                            -ms-flex-wrap: nowrap;
-                            flex-wrap: nowrap;
-                    }
                 }
             }
         }
-
     }
 
+    // Предыдущий 
     .prev {
         background: none;
         border: none;
         box-shadow: none;
         margin: 0;
         padding: 0;
-        -ms-flex-align: center;
         align-items: center;
         background-color: #fff;
         border-radius: 50%;
@@ -99,18 +89,13 @@
         box-sizing: border-box;
         color: #2d2f43;
         cursor: pointer;
-        display: -ms-flexbox;
         display: flex;
         height: 40px;
-        -ms-flex-pack: center;
         justify-content: center;
         position: absolute;
         top: calc(50% - 20px);
         transform-origin: center;
         transition: .2s ease;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
         user-select: none;
         width: 40px;
         left: 10px;
@@ -133,13 +118,13 @@
             color: #ff6262;
             transform: scale(1.15)
         }
-
+        // Адаптив
         @media(max-width:839.9px) {
-                display: none;
+            display: none;
         }
     }
 
-
+    // Следующий 
     .next {
         
         background: none;
@@ -147,7 +132,6 @@
         box-shadow: none;
         margin: 0;
         padding: 0;
-        -ms-flex-align: center;
         align-items: center;
         background-color: #fff;
         border-radius: 50%;
@@ -155,18 +139,13 @@
         box-sizing: border-box;
         color: #2d2f43;
         cursor: pointer;
-        display: -ms-flexbox;
         display: flex;
         height: 40px;
-        -ms-flex-pack: center;
         justify-content: center;
         position: absolute;
         top: calc(50% - 20px);
         transform-origin: center;
         transition: .2s ease;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
         user-select: none;
         width: 40px;
         padding-right: 6px;
@@ -189,14 +168,14 @@
             color: $hoverColor;
             transform: scale(1.15)
         }
-
+        // Адаптив
         @media(max-width:839.9px) {
-                display: none;
+            display: none;
         }
     }
     
 }
-
+// Скрол 
 .nativeScroll {
     -webkit-overflow-scrolling: touch;
     overflow-x: auto;

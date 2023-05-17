@@ -1,4 +1,6 @@
+// Способы оплаты
 .payment_method {
+    // Вкладка
     .tab {
         display: -ms-flexbox;
         display: flex;
@@ -6,35 +8,29 @@
         background-color: #fff;
         min-height: 100%;
         position: relative;
+        // Адаптив
         @media(max-width:575.9px) {
             display: block;
             margin-bottom: 8px;
             margin-right: 8px;
         }
-
+        // Блок для обертки
         .block_1 {
-            -ms-flex-align: center;
             align-items: center;
             border: 1px solid rgba(0, 0, 0, .08);
             border-radius: 4px;
             box-sizing: border-box;
             color: #2d2f43;
             cursor: pointer;
-            display: -ms-flexbox;
             display: flex;
-            -ms-flex-direction: column;
             flex-direction: column;
             height: 100%;
-            -ms-flex-pack: center;
             justify-content: center;
             min-height: 67px;
             min-width: 150px;
             outline: none;
             padding: 8px 20px;
             text-align: center;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
             user-select: none;
 
             
@@ -51,15 +47,16 @@
                 border-color: $mainColor;
                 color: $mainColor;
             }
-
+            // Элементы
             .child {
                 margin-top: 3px;
 
+                // Адаптив
                 @media(max-width:575.9px) {
                     margin: 1px 0;
                 }
             }
-
+            // Иконка
             .icon {
                 -ms-flex-align: center;
                 align-items: center;
@@ -69,6 +66,7 @@
                 -ms-flex-pack: center;
                 justify-content: center;
 
+                // Адаптив
                 @media(max-width:575.9px) {
                     left: 30px;
                     position: absolute;
@@ -76,17 +74,18 @@
                     transform: translate(-50%, -50%);
                 }
             }
-
+            // Название
             .title {
                 font-size: 14px;
                 font-weight: 500;
                 white-space: nowrap;
 
+                // Адаптив
                 @media(max-width:575.9px) {
                     white-space: normal;
                 }
             }
-
+            // Увидомление
             .notice {
                 margin-top: 5px;
                 color: #9697a1;
@@ -95,12 +94,13 @@
                 text-overflow: ellipsis;
                 white-space: nowrap;
 
+                // Адаптив
                 @media(max-width:575.9px) {
                     white-space: normal;
                 }
             }
-
-            .accent___1heRO {
+            // Акцентирование
+            .accent {
                 color: $mainColor;
             }
         }

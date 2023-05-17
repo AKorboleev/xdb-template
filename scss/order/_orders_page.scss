@@ -1,3 +1,4 @@
+ // Меню
  .sidebarMenu {
     background: #fff;
     border-radius: .4444rem;
@@ -5,6 +6,7 @@
     line-height: .8333rem;
     padding: .4444rem 0;
 
+    // Адаптив
     @media(max-width:991.9px) {
             margin-bottom: 0;
     }
@@ -13,6 +15,7 @@
             padding: 0;
     }
 
+    // Элементы меню
     button.menuItem {
         background: transparent;
         border: none;
@@ -33,40 +36,46 @@
     }
     
  }
- 
+ // Уведомление
 .notification {
     background: #fff;
     border-radius: .5rem;
     margin-top: 20px;
     
+    // Адаптив
     @media(max-width:575.9px) {
             border-radius: 0;
             margin-left: -12px;
             margin-right: -12px;
     }
 
+    // банер
     .banner {
         background: #6280e5;
         background-image: linear-gradient(-135deg, #6280e5, #7953b7);
         border-radius: .3333rem;
         color: #fff;
 
+        // Адаптив
         @media(max-width:575.9px) {
                 border-radius: 0
         }
+        // Шаблон
         .pattern {
             padding: 12px;
             background-position: 50% 50%;
             background-size: 4.5rem;
 
+            // Адаптив
             @media(max-width:768px) {
                 padding: 16px
             }
-
-            .controls {
+            // блок для выхода
+            .block_close {
                 height: .9rem;
                 position: relative;
 
+                // Выход
                 .close {
                     bottom: .4em;
                     cursor: pointer;
@@ -82,14 +91,16 @@
             }
         }
 
+
+        // Контейнер
         .container {
             text-align: center;
-
+            // Подтекест 
             p {
                 font-size: 20px;
             }
-
-            .inner {
+            // Элементы месенджеров
+            .inner_message {
                 display: flex;
                 align-items:center;
                 background-color:rgb(0, 134, 196);
@@ -97,10 +108,11 @@
                 width: 90%;
                 margin: 0 auto;
                 border-radius: 6px;
+                // Иконка
                 img {
                     margin-left: 25px;
                 }
-                
+                // Параграф
                 p {
                     font-size: 30px;
                     margin: 0 5%;

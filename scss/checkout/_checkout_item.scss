@@ -1,3 +1,4 @@
+// Контейнер ошибки контента
 .checkout_item {
     margin-top: 10px;
     padding-right: 24px;
@@ -7,7 +8,7 @@
     display: -ms-flexbox;
     display: flex;
     position: relative;
-
+    // Адаптив
     @media(max-width:575.9px) {
         padding-right: 16px;
     }
@@ -15,7 +16,7 @@
     @media(max-width:575.9px) {
         margin-top: 16px;
     }
-
+    // Контейнер для фото
     .photo {
         background: rgba(0, 0, 0, .04);
         border-radius: 4px;
@@ -24,34 +25,35 @@
         position: relative;
         width: 95px;
     }
-
+        // Фото для контента 
         img.img_phono {
             background-repeat: no-repeat;
             display: inline-block;
             @include contain;
             mix-blend-mode: multiply;
         }
-
+        // Контента
         .content_item {
             -ms-flex-positive: 1;
             flex-grow: 1;
             margin-left: 12px;
-
+            //Имя контента
             .nameText {
                 font-size: 14px;
                 -webkit-line-clamp: 2;
                 max-height: 3em;
             }
-
-            .nobr {
+            // Количество
+            .quantity {
                 margin-top: 6px;
                 white-space: nowrap;
             }
-
+            // Контейнер с ценой 
             .price_formated {
                 margin-top: 6px;
                 font-size: 16px;
                 font-weight: 500;
+                // Скрытая часть
                 .hidden {
                     display: none;
                 }

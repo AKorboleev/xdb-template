@@ -110,28 +110,27 @@
     <div class="container-xxl">
         <div class="cart_item_page" style="background: #f2f2f2;">
             <div class="home" itemscope="" vocab="http://schema.org/" typeof="BreadcrumbList">
-                <span typeof="ListItem" property="itemListElement">
-                    <a property="item" typeof="WebPage" class="link___2DAus" href="/">
-                        Главная/
-                    </a>
-                    <a property="item" typeof="WebPage" class="link___2DAus" href="/">
-                        Каталог/
-                    </a>
-                    <a property="item" typeof="WebPage" class="link___2DAus" href="/">
-                        [BreadCrumbs]
-                    </a>
-                    <!-- Оставлю , но когда загрузим на хост, если все будет ок, то удалить  -->
-                    <!-- обращение хз к чему и где исепользуется -->
-                    <meta property="position" content="1">
-                </span>
-
+                <div class="page_path">
+                    <span class="ListItem" typeof="ListItem" property="itemListElement">
+                        <a property="item" typeof="WebPage" lang="ru" class="link" href="/">
+                            <span property="name">Главная/</span>
+                        </a>
+                        <a property="item" typeof="WebPage" lang="ru" class="link" href="/">
+                            <span property="name">Каталог/</span>
+                        </a>
+                        <a property="item" typeof="WebPage" lang="ru" class="link" href="/">
+                            <span property="name">[BreadCrumbs]</span>
+                        </a>
+                        <meta property="position" content="1">
+                    </span>
+                </div>
                 <!-- <div itemscope="" itemtype="http://schema.org/Product"> -->
                 
                 <div class="content">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="inner">
-                                <div class="list__image" data-testid="">
+                                <div class="list_image" data-testid="">
                                     <div class="row">
                                         <div class="col-2">
                                             <div class="thumbs">
@@ -240,11 +239,11 @@
 
                         <div class="col-md-6">
                             <div class="inner">
-                                <div class="info__product" data-testid="">
+                                <div class="info_product" data-testid="">
                                     <div class="item">
                                         <div class="top">
                                             <span class="share">
-                                                <span class="icon___share"></span>
+                                                <span class="icon_share"></span>
                                             </span>
                                             <div class="container_grade">
                                                 <div class="stars" style="padding-right:8.836985774702043%"></div>
@@ -252,7 +251,7 @@
                                             </div>
                                             <h4 itemprop="name" class="product">[Item]</h4>
                                         </div>
-                                        <div class="old__price">
+                                        <div class="old_price">
                                             <span class="hidden">Цена<!-- --> </span>
                                             <span>[PriceOld]</span>
                                             <span class="hidden"> <!-- -->руб.</span>
@@ -273,9 +272,9 @@
                                         </div>
                                         <div class="buttons">
                                             <!-- если начну менять кнопки , то упадет js . Часть классов не переработал, так как  не знаю используются они в js или нет-->
-                                                <button class="button button__basket" role="button" tabindex="0"  data-testid="ProductButton-addToCart" data-item="[Item_ID]">
-                                                    <span class="children">
-                                                        <span class="captionLoaded">Добавлено</span>
+                                                <button class="button button_basket" role="button" tabindex="0"  data-testid="ProductButton-addToCart" data-item="[Item_ID]">
+                                                    <span class="block_caption">
+                                                        <span class="caption_loaded">Добавлено</span>
                                                         <span class="caption">В корзину</span>
                                                             <!-- undefined есть в скрипте  js ,  но не понятно как он используется ,поэтому пусть будет  -->
                                                             <span class="loader">
@@ -290,14 +289,12 @@
                                                             </span>
                                                     </span>
                                                 </button>
-                                            <!-- <div class="block"> -->
                                                 <button class="button btn-main"
                                                     role="button" tabindex="0" data-testid="ProductButton-buyNow">
-                                                    <span class="children">
+                                                    <span class="block_caption">
                                                         <span class="caption">Купить сейчас</span>
                                                     </span>
                                                 </button>
-                                            <!-- </div> -->
                                             <!-- Добавить в избранное. favorite___2jmct такой класс был  -->
                                             <div class="favorite" data-item="[Item_ID]" role="button" tabindex="0" data-testid="FavoriteButton" data-test-favorite="false">
                                                 <svg class="" height="100%" viewBox="0 0 30 30" width="100%" xmlns="http://www.w3.org/2000/svg">
@@ -310,10 +307,8 @@
                                                         </mask>
                                                     </defs>
                                                     <g class="hoverable">
-                                                        <rect class="inner" x="0" y="30" width="30" height="30"
-                                                            fill="#ff7676" mask="url(#mask)"></rect>
-                                                        <use class="path" xlink:href="#path" fill="none"
-                                                            stroke="#ff7676" stroke-width="2"></use>
+                                                        <rect class="inner" x="0" y="30" width="30" height="30" fill="#ff7676" mask="url(#mask)"></rect>
+                                                        <use class="path" xlink:href="#path" fill="none" stroke="#ff7676" stroke-width="2"></use>
                                                     </g>
                                                 </svg>
                                             </div>
@@ -322,36 +317,8 @@
                                         <!-- </div> -->
                                     </div>
                                     <div class="item">
-                                        <!-- <div class="content_grade"> -->
-                                            <!--div class="item___jF3um">
-                                                                                <div class="attributes___iJZOP ">
-                                                                                    <div class="item___3x9Ra">
-                                                                                        <h2 class="header___2q1qM">Количество:
-                                                                                            <span class="quantity___19NI5">
-                                                                                                <div class="counter___3YosS">
-                                                                                                    <div class="decrease___OetXE disabled___3ejzi" role="button" tabindex="0"></div>
-                                                                                                    <div class="count___3LcYb">1</div>
-                                                                                                    <div class="increase___1y9tY" role="button" tabindex="0"></div>
-                                                                                                </div>
-                                                                                            </span>
-                                                                                        </h2>
-                                                                                    </div>
-                                                                                    <div class="item___3x9Ra">
-                                                                                        <div class="">
-                                                                                            <h2 class="header___2q1qM">Цвет:
-                                                                                                <span class="headerColor___XTkb3">Как на картинке</span>
-                                                                                            </h2>
-                                                                                            <div class="color___3-Bw4 " role="menuitem" tabindex="0">
-                                                                                                <div class="parent___1LbEu hoverable___3o0h0 selected___GvdwT">
-                                                                                                    <img class="image___1yp2c image___M99AB cover___3Yshn" px="60" alt="" src="https://img.joomcdn.net/d568140cca4999731cf63736ea6bc7a43417715e_100_100.jpeg" sizes="1em" srcset="https://img.joomcdn.net/d568140cca4999731cf63736ea6bc7a43417715e_100_100.jpeg 100w, https://img.joomcdn.net/d568140cca4999731cf63736ea6bc7a43417715e_200_200.jpeg 200w, https://img.joomcdn.net/d568140cca4999731cf63736ea6bc7a43417715e_400_400.jpeg 400w, https://img.joomcdn.net/d568140cca4999731cf63736ea6bc7a43417715e_1024_1024.jpeg 1024w, https://img.joomcdn.net/d568140cca4999731cf63736ea6bc7a43417715e_original.jpeg 1054w">
-                                                                                                </div>
-                                                                                                <span class="colorName___1lp0X">Как на картинке</span>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div-->
-                                            <div class="item__shop">
+                                        <div class="content_grade">
+                                            <div class="item_shop">
                                                 <h5>Магазин</h5>
                                                 <a class="inner" href="[TraderLink]">
                                                     <div class="icon">
@@ -368,29 +335,29 @@
                                                             <div class="grade">4,6</div>
                                                         </div>
                                                         <h6 itemprop="brand">[TraderName]
-                                                            <span class="infoIcon">
+                                                            <span class="info_icon">
                                                                     <button class="icon" type="button"></button>
                                                             </span>
                                                         </h6>
                                                     </div>
                                                 </a>
                                             </div>
-                                        <!-- </div> -->
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="description" data-testid="">
-                                    <div class="description__block">
+                                    <div class="description_block">
                                         <h4>Описание</h4>
                                         <div class="text" itemprop="description">
                                             [Description]
                                         </div>
-                                        <div class="check__block">
+                                        <div class="check_block">
                                             <span class="check" role="button" tabindex="0">Смотреть полное
                                                 описание</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="item___reviews">
+                                <div class="item_reviews">
                                     [Reviews]
                                 </div>
                                 <div class="description" data-testid="">
@@ -399,22 +366,22 @@
                                         <div class="list">
                                             <div class="item">
                                                 <div class="iconWrapper">
-                                                    <img height="100%" class="icon__image" alt=""  src="https://resources.joomcdn.net/warranty/not_delivered.png">
+                                                    <img height="100%" class="icon_image" alt=""  src="https://resources.joomcdn.net/warranty/not_delivered.png">
                                                 </div>
-                                                <span class="text">Мы вернем деньги, если товар не доставлен
+                                                <span class="text">Мы вернем деньги, если товар не доставлен 
                                                     в течение 70 дней после оплаты. У вас есть 2 недели для подачи
                                                     заявки на возврат — до 84 дня.</span>
                                             </div>
                                             <div class="item">
                                                 <div class="iconWrapper">
-                                                    <img height="100%" class="icon__image" alt="" src="https://resources.joomcdn.net/warranty/warranty.png">
+                                                    <img height="100%" class="icon_image" alt="" src="https://resources.joomcdn.net/warranty/warranty.png">
                                                 </div>
                                                 <span class="text">Товар не соответствует описанию? Напишите
                                                     нам в течение 30 дней после получения!</span>
                                             </div>
                                             <div class="item">
                                                 <div class="iconWrapper">
-                                                    <img height="100%" class="icon__image" alt="" src="https://resources.joomcdn.net/warranty/refund.png">
+                                                    <img height="100%" class="icon_image" alt="" src="https://resources.joomcdn.net/warranty/refund.png">
                                                 </div>
                                                 <span class="text">В случае отмены деньги поступят на счёт в
                                                     течение 14 дней.</span>
@@ -423,13 +390,13 @@
                                     </div>
                                 </div>
 
-                                <!-- Понять что это такое , а то в друше не чаю  -->
-                                <div class="resizeTriggers___O7gyu">
+                                <!-- Понять что это такое , а то в друше не чаю -->
+                                <!-- <div class="resizeTriggers">
                                     <div>
                                         <div style="width: 635px; height: 1029px;"></div>
                                     </div>
-                                    <div class="contractTrigger___2DSPP"></div>
-                                </div>
+                                    <div class="contractTrigger"></div>
+                                </div> --> 
                             </div>
                         </div>
                     </div>
@@ -437,9 +404,9 @@
                 <div class="content">
                     <div class="whiteList">
                         <div class="content">
-                            <h2 class="header__product">Похожие товары</h2>
+                            <h2 class="header_product">Похожие товары</h2>
                             <div class="products">
-                                <div class="product__item">
+                                <div class="product_item">
                                     <div class="item" id="items">
                                         [Items]
                                     </div>

@@ -10,6 +10,7 @@
         margin-top: 48px;
         padding-bottom: 48px;
         text-align: center;
+
         //Адаптив
         @media(min-width:576px) {
             padding-left: 6px;
@@ -44,16 +45,14 @@
             max-width: 90%;
             margin-bottom: 24px;
 
+            // Адаптив
             @media(min-width:768px) {
                 margin-bottom: 32px
             }
         }
     }
 
-
-
     // parent 
-
     .parent {
         background-color: #fff;
         border-radius: 0.3333rem;
@@ -66,10 +65,13 @@
         margin-left: -0.6667rem;
         padding: 0;
 
+
+        // Адаптив
         @media (max-width: 767.9px) {
                 display: none;
         }
 
+        //Котроль контента
         .control {
             border: 1px solid #eee;
             border-radius: 0.1667rem;
@@ -77,13 +79,11 @@
             margin-left: 0.6667rem;
             margin-top: 0.6667rem;
             position: relative;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
             user-select: none;
             background-color: #f2f3f7;
             border-color: transparent;
 
+            // Контент
             .content {
                 -ms-flex-align: center;
                 align-items: center;
@@ -98,18 +98,19 @@
                 height: calc(1.7779rem - 2px);
                 margin: 0;
 
+                // Ярлык
                 .label {
                     display: flex;
                     -ms-flex-positive: 1;
                     flex-grow: 1;
                     overflow: hidden;
 
-
+                    // Имя Ярлыка
                     .labelName {
                         color: #9697a1;
                         padding-right: 8px;
                     }
-
+                    // Значение Ярлыка
                     .labelValue {
                         color: #9697a1;
                         overflow: hidden;
@@ -118,6 +119,7 @@
                     }
                 }
 
+                // Стрелка меню
                 .menuArrow {
                     margin-left: 0.6667rem;
                     width: 0.5rem;
@@ -131,15 +133,16 @@
 
 
     // mobile filter
-
     .mobileControls {
         display: none;
 
+        // Адаптив
         @media (max-width: 767.9px) {
             display: -ms-flexbox;
             display: flex;
         }
 
+        // Контейнер
         .container {
             -ms-flex-preferred-size: calc(50% - 6px);
             flex-basis: calc(50% - 6px);
@@ -157,13 +160,15 @@
                 max-width: none;
             }
 
-            .children___nowrap {
+            // Дети
+            .children_nowrap {
                 display: block;
                 max-width: 100%;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
 
+                // Кнопка Элемента
                 .buttonInner {
                     -ms-flex-align: center;
                     align-items: center;
@@ -175,6 +180,7 @@
                     line-height: 18px;
                     padding: 10px;
 
+                    // Якон
                     .icon {
                         display: -ms-flexbox;
                         display: flex;
@@ -183,6 +189,7 @@
                         margin: 0 8px;
                     }
 
+                    // Текст
                     .text {
                         overflow: hidden;
                         text-overflow: ellipsis;
