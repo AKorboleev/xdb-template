@@ -1,0 +1,18 @@
+.catalog_item_child_link {
+  .li {
+    font-size: .7222rem;
+    list-style: none;
+    margin-top: .3333rem;
+
+    .link {
+      color: #ff7676;
+      font-weight: 500;
+      text-decoration: none;
+
+      &:hover {
+        color: #ff7676;
+        text-decoration: underline
+      }
+    }
+  }
+}

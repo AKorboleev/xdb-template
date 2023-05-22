@@ -9,6 +9,9 @@
 @import "showcase/showcase_item";
 @import "reset";
 @import "swiper";
+@import "catalog/catalog_item";
+@import "catalog/catalog_item_child";
+@import "catalog/catalog_item_child_link";
 @import "cart/cart_empty_page.scss";
 @import "cart/cart_item_page.scss";
 @import "oops/oops_page";
@@ -43,3 +46,4 @@
 @import "address/address_page";
 @import "addresses/addresses_item";
 @import "catalog";
+@import "promo/promo_page";

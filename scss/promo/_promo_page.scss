@@ -1,0 +1,42 @@
+.promo_page {
+    margin-top: 12px;
+  @media (min-width: 768px) {
+      margin-top: 16px;
+  }
+
+  .reducer {
+    background-color: #e262b7;
+    height: 350px;
+    max-width: 1240px;
+    border-radius: 8px;
+    display: flex;
+    margin-bottom: 20px;
+
+    .block_text {
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      padding: 25%;
+      color: $white;
+      @media (max-width: 768px) {
+          display: grid;
+          margin-top: 30px;
+          padding: 0;
+      }
+    }
+
+    .block_image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      img {
+        margin: 0 auto;
+        @media (max-width: 768px) {
+            height: 200px;
+        }
+      }
+    }
+  }
+}
