@@ -1,5 +1,6 @@
 // Контейнер особенности 
 .espaecially_wrap {
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 6px;
@@ -15,7 +16,6 @@
         //заголовок
         .title {
             display: block;
-            -ms-flex-positive: 1;
             flex-grow: 1;
             font-size: 24px;
             font-weight: 500;

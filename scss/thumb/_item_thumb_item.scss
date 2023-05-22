@@ -6,6 +6,7 @@
         margin: 0;
         padding: 0;
         cursor: pointer;
+        position: relative;
         border-radius: 4px;
         transform: translateZ(0);
 
@@ -50,14 +51,14 @@
                     width: 100%;
                     border-radius: inherit;
                     overflow: hidden;
-
+                     //Сама картинка
                     .image {
                         background-repeat: no-repeat;
                         display: inline-block;
                         border-radius: inherit;
                         mix-blend-mode: multiply;
                         background-size: contain;
-                        object-fit: contain;
+                        @include contain();
                     }
                 }
             }

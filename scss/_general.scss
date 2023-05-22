@@ -61,10 +61,9 @@ $catalog:$mainColor;
 
 
 
-
+// элемент и его содержимое,независимы от остальной части документа
 @mixin contain {
     background-size: contain;
-    -o-object-fit: contain;
     object-fit: contain;
 }
 // ****
@@ -75,7 +74,6 @@ $catalog:$mainColor;
 // Масштабирование картинки под максимально закрытие блока , картинка не обрезается , а вписывается с сохранением пропорций 
 @mixin cover {
     background-size: cover;
-    -o-object-fit: cover;
     object-fit: cover;
 }
 // ****
@@ -717,7 +715,7 @@ $catalog:$mainColor;
 
 
                     .labelName {
-                        color: #9697a1;
+                        color: #000000;
                         padding-right: 8px;
                     }
 

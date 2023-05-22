@@ -2,14 +2,12 @@
 .cell__product {
     max-width: calc(50% - 16.1px);
     box-sizing: border-box;
-    -ms-flex-preferred-size: calc(50% - 16.1px);
     flex-basis: calc(50% - 16.1px);
-    -ms-flex-positive: 0;
     flex-grow: 0;
-    -ms-flex-negative: 0;
     flex-shrink: 0;
     margin: 16px 0 0 16px;
-    width: calc(50% - 16.1px);
+    max-width: 12rem;
+    width: 12rem;
     display: none;
 
     // Адаптив
@@ -19,7 +17,7 @@
             max-width: calc(33.33333% - 16.1px);
             width: calc(33.33333% - 16.1px);
             display: none;
-    
+
         &:nth-child(-n+6) {
             display: -ms-flexbox;
             display: flex;
@@ -75,7 +73,7 @@
             }
 
             :hover .actionButton:before {
-                animation: favorite-animation___bpQml .3s ease both;
+                animation: favorite-animation .3s ease both;
             }
             // Квадрат
             .square {
@@ -131,9 +129,6 @@
                         text-align: center;
                         text-transform: uppercase;
                         top: 8px;
-                        -webkit-user-select: none;
-                        -moz-user-select: none;
-                        -ms-user-select: none;
                         user-select: none;
                         width: 26px
                     }
@@ -168,7 +163,7 @@
                             }
                             // Заголовок
                             .title {
-                                color: inheritж
+                                color: inherit;
                             }
                         }
                     }
@@ -194,15 +189,14 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
-                 // Скрытый 
+                 // Скрытый
                 .hidden {
                     display: none;
                 }
             }
-            // обертка для оценки 
+            // обертка для оценки
             .rating {
                 height: 16px;
-                margin-top: 4px;
                 margin-top: 4px;
                 font-size: 12px;
                 line-height: 14px;
@@ -219,7 +213,7 @@
                         height: 14px;
                     }
                 }
-                
+
             }
             // Именование товара
             .name {

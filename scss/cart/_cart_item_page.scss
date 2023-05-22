@@ -31,13 +31,12 @@
         // Ссылка
         .inner {
             -ms-flex-align: stretch;
-            align-items: stretch;
+            align-items: stretch; 
             box-sizing: border-box;
             display: -ms-flexbox;
             display: flex;
             -ms-flex-direction: column;
             flex-direction: column;
-            min-height: 100%;
             // Адаптив
             @media(max-width:768px) {
                 margin-bottom: 16px;
@@ -68,8 +67,7 @@
                 }
                 // Палец вверх
                 .thumbs {
-                    display: -ms-flexbox;
-                    display: flex;
+                    display: grid;
                     flex-direction: row;
                     width: 100%;
                 }
@@ -442,7 +440,23 @@
                                     }
                                 }
                             }
-                            
+                        }
+                    }
+                    // Блок  комментариев  к товару
+                    .item_reviews {
+                        margin: 12px 0;
+
+                        // Адаптив
+                        @media(min-width:768px) {
+                            margin: 16px 0;
+                        }
+
+                        @media(max-width:767.9px) {
+                            display: block;
+                        }
+
+                        @media(max-width:767.9px) {
+                            display: none;
                         }
                     }
                 }
@@ -573,24 +587,6 @@
                     }
                 }
             }
-            
-            // Обзор товара
-            .item_reviews {
-                margin: 12px 0;
-
-                // Адаптив
-                @media(min-width:768px) {
-                    margin: 16px 0;
-                }
-
-                @media(max-width:767.9px) {
-                    display: block;
-                }
-
-                @media(max-width:767.9px) {
-                    display: none;
-                }
-            }
         }
     }
     // лист с будующим товаром
@@ -650,7 +646,6 @@
                 display: flex;
                 -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
-                margin: -16px 0 0 -16px
             }
         }
     }

@@ -58,15 +58,12 @@
             margin-bottom: -100px;
             overflow-x: hidden;
             padding-bottom: 100px;
-            scrollbar-width: none;
-            display: none;
             // Элемент
             .inner {
                 align-items: stretch;
                 display: flex;
                 flex-wrap: nowrap;
                 margin: -16px 0 0 -16px;
-                flex-wrap: wrap;
                 // Адаптив
                 @media(min-width:840px) {
                     flex-wrap: nowrap;
@@ -85,7 +82,6 @@
         align-items: center;
         background-color: #fff;
         border-radius: 50%;
-        box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
         box-sizing: border-box;
         color: #2d2f43;
         cursor: pointer;
@@ -93,7 +89,7 @@
         height: 40px;
         justify-content: center;
         position: absolute;
-        top: calc(50% - 20px);
+        top: calc(35% - 20px);
         transform-origin: center;
         transition: .2s ease;
         user-select: none;
@@ -135,7 +131,6 @@
         align-items: center;
         background-color: #fff;
         border-radius: 50%;
-        box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
         box-sizing: border-box;
         color: #2d2f43;
         cursor: pointer;
@@ -143,7 +138,7 @@
         height: 40px;
         justify-content: center;
         position: absolute;
-        top: calc(50% - 20px);
+        top: calc(35% - 20px);
         transform-origin: center;
         transition: .2s ease;
         user-select: none;
@@ -179,7 +174,6 @@
 .nativeScroll {
     -webkit-overflow-scrolling: touch;
     overflow-x: auto;
-    -ms-scroll-snap-type: x mandatory;
     scroll-snap-type: x mandatory;
 }
 
