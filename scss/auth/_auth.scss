@@ -172,7 +172,7 @@
             .link {
                 color: $mainColor;
                 cursor: pointer;
-                text-decoration: underline;
+                text-decoration: none;
 
                 &:hover {
                     color: $mainColor;
@@ -192,6 +192,10 @@
                     color: $mainColor;
                 }
             }
+        }
+
+        .recovery {
+            display: inline-flex;
         }
     }
 }

@@ -7,7 +7,6 @@ $os: 'Open Sans', sans-serif;
 
 
 
-
 //Используемые цвета
 $mainColor:#ff7676;
 // $button:#ff7676;
@@ -19,11 +18,9 @@ $headerTop:#fff ;
 
 
 
-
 //Используемы цвета в ховеер
 $hoverColor: #47d499;
 // ****
-
 
 
 
@@ -35,18 +32,15 @@ $mc:0 auto;
 
 
 
-
 //icon__image цвет иконки в cart_item_page.scss
 $icon__image: $mainColor;
 // ****
 
 
 
-
 // catalog цвет зоголовка шрифта , который  находится в catalog.scss
 $catalog:$mainColor;
 // ****
-
 
 
 
@@ -70,14 +64,12 @@ $catalog:$mainColor;
 
 
 
-
 // Масштабирование картинки под максимально закрытие блока , картинка не обрезается , а вписывается с сохранением пропорций 
 @mixin cover {
     background-size: cover;
     object-fit: cover;
 }
 // ****
-
 
 
 
@@ -94,15 +86,12 @@ $catalog:$mainColor;
 
 
 
-
-
 // Использовать этот класс когда нет товара в корзине, если есть то убирать, для этого использовать js
 // Пока добавил в cart и orders. Можно убрать если нужно будет. Его стоит добавлять в main
 .grey {
     background-color:rgb(219, 219, 219);
 }
 // ****
-
 
 
 
@@ -117,6 +106,20 @@ $catalog:$mainColor;
     width: 3em;
 }
 //****
+
+
+
+// Линия
+// Мб пригодится 
+.line {
+    display: flex;
+    width: 100%;
+    height: 1px;
+    border-radius:1px;
+    background-color:#00d8db;
+}
+//****
+
 
 
 // Не знаю что с этим делать
@@ -153,6 +156,63 @@ $catalog:$mainColor;
         }
     }
 }
+// ****
+
+
+
+// Кастом checkbox
+
+    label.castom-chekbox {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* для элемента input c type="checkbox" */
+    .custom-checkbox>input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+      }
+      
+      /* для элемента label, связанного с .custom-checkbox */
+      .custom-checkbox>span {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+      }
+      
+      /* создание в label псевдоэлемента before со следующими стилями */
+      .custom-checkbox>span::before {
+        content: '';
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 2px solid #000000;
+        border-radius: 0.25em;
+        margin-right: 0.5em;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% 50%;
+      }
+
+      /* стили для чекбокса, находящегося в фокусе */
+      .custom-checkbox>input:focus+span::before {
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+      }
+      
+      /* стили для чекбокса, находящегося в состоянии checked */
+      .custom-checkbox>input:checked+span::before {
+        border-color: $mainColor;
+        background-color: $mainColor;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+      }
+      
+      /* стили для чекбокса, находящегося в состоянии disabled */
+      .custom-checkbox>input:disabled+span::before {
+        background-color: #e9ecef;
+    }
 // ****
 
 

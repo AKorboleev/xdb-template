@@ -11,14 +11,14 @@
 
     // Обертка банера
     .bannerWrap {
-        display: block;
+        display: inline-flex;
         background-color: #e262b7;
         min-height: 240px;
-        -ms-flex-align: stretch;
         align-items: stretch;
         border-radius: 8px;
         box-sizing: border-box;
         overflow: hidden;
+        max-height: 765px;
 
         // Адаптив
         @media(min-width:1280px) {
@@ -189,7 +189,7 @@
 
         // Продукт
         .products {
-            -ms-flex-wrap: wrap;
+            display: flex;
             flex-wrap: wrap;
             margin: -16px 0 0 -16px;
         }

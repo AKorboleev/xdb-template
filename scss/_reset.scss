@@ -1,7 +1,6 @@
 // Лучше не использовать , так как жрет много рессурсов, при большом проекте , будет долгая прогрузка
 * {
     box-sizing:border-box;
-    font-family: $fontFamaly;
     &:hover {
         transition: 0.4s;
     }

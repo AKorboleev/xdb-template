@@ -117,7 +117,7 @@
                 <p class="text">Это нужно, чтобы посомтреть историю покупке</p>
             </div>
             <div class="block_1">
-                <form novalidate="" class="form_reg" method="post" action="/registration/">
+                <form novalidate="" class="form_reg" method="post" action="/">
                     <div class="fieldsWrapper">
 
                         <!--  Все что в квадратных скобочках , не трогать , так как я хз что это, может относиться к php  -->
@@ -144,7 +144,11 @@
                         </button>
                     <!-- </div> -->
                 </form>
-                <div class="footer">У вас нет аккаунта? <a role="button" tabindex="0" target="" class="link" href="/login/">Создайте его сдесь здесь</a></div>
+                    <div class="recovery">
+                            <div class="footer"><a role="button" tabindex="0" target="" class="link" href="/forgot/">Востановить пароль?&nbsp;</a></div>
+                            <div class="footer"><a role="button" tabindex="0" target="" class="link" href="/registration/">&nbsp;Регистрация</a></div>
+                    </div>
+                <div class="footer">У вас нет аккаунта? <a role="button" tabindex="0" target="" class="link" href="/registration/">Создайте его сдесь здесь</a></div>
             </div>
             <!-- Нужно ли это делать -->
             <!--div class="block___1vueO">
@@ -185,7 +189,6 @@
                 </div>
             </div>
         </div>
-        
         <!-- **** -->
     </div>
 </main>
