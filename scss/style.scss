@@ -15,13 +15,14 @@
 @import "cart/cart_empty_page.scss";
 @import "cart/cart_item_page.scss";
 @import "cart/cart_page";
+@import "cart/cart_item";
 @import "oops/oops_page";
 @import "espaecially_wrap/espaecially_wrap.scss";
 @import "sale/home_page";
 @import "carusel/carusel";
 @import "order/order_page";
 @import "order/order_filteres";
-@import "order/orders_page";
+@import "order/1orders_page";
 @import "order/order_often_item";
 @import "search/search_page";
 @import "search/search_category";
@@ -38,6 +39,7 @@
 @import "adult/adult_page";
 @import "sensitive/item_sensitive";
 @import "auth/auth";
+@import "addresses/addresses_page";
 @import "checkout/checkout_page";
 @import "checkout/checkout_item";
 @import "checkout/checkout_fault";

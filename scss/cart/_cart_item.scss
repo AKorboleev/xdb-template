@@ -1,0 +1,76 @@
+// Контейнер ошибки контента
+.cart_item {
+    margin-top: 10px;
+    align-items: flex-start;
+    color: #2d2f43;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    // Адаптив
+    @media(max-width:575.9px) {
+        padding-right: 16px;
+    }
+
+    @media(max-width:575.9px) {
+        margin-top: 16px;
+    }
+    // Контейнер для фото
+    .photo {
+        background: rgba(0, 0, 0, .04);
+        border-radius: 4px;
+        height: 95px;
+        min-width: 95px;
+        position: relative;
+        width: 95px;
+    }
+        // Фото для контента 
+        img.img_phono {
+            background-repeat: no-repeat;
+            display: inline-block;
+            @include contain;
+            mix-blend-mode: multiply;
+        }
+        // Контента
+        .content_item {
+            flex-grow: 1;
+            margin-left: 12px;
+            //Имя контента
+            .nameText {
+                font-size: 14px;
+                max-height: 3em;
+            }
+            // Количество
+            .quantity {
+                margin-top: 6px;
+                white-space: nowrap;
+            }
+            // Контейнер с ниформацией о товара
+            .info_product {
+                margin-top: 6px;
+                font-size: 16px;
+                font-weight: 500;
+                display: grid;
+                // Скрытая часть
+                .hidden {
+                    display: none;
+                }
+
+                .none_product {
+                    display: none;
+                }
+            }
+
+
+        }
+    // Блок с ценам
+    .block_price {
+        display: grid;
+        // Старая цена
+        .old_price {
+            color:rgb(146, 146, 146);
+            text-decoration: line-through;
+            font-size: 12px;
+        }
+    }
+}
