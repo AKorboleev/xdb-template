@@ -1,220 +1,220 @@
+.my_order {
+    margin: 0 2%;
+    .top_order {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem .8889rem;
 
-.parcel_app_сard {
-    background: #fff;
-    border-radius: .5rem;
+        .text_order {
+            color: #9697a1;
+            margin-right: 0.4445rem;
+            font-size: 12px;
+        }
 
-    // Адаптив
-    @media(max-width:575.9px) {
-        border-radius: 0;
-        margin-left: -12px;
-        margin-right: -12px;
-    }
-
-    .parcel_app_сard_inner {
-        margin: 20px 10px;
-        // Заголовок
-        .header {
-            -ms-flex-align: end;
-            align-items: end;
-            display: -ms-flexbox;
+        .content_buttom {
             display: flex;
-            font-size: .7778rem;
-            -ms-flex-pack: justify;
-            justify-content: space-between;
-            line-height: 1.1111rem;
-            // Текст заголовок
-            .header_text {
-                -ms-flex-positive: 1;
-                flex-grow: 1;
-                margin-right: .8889rem;
-                // Доставка
-                .shipping_label {
-                    color: #9697a1;
-                    margin-right: .4445rem;
-                    white-space: nowrap;
-                }
-            }
-            // Значек
-            .badge {
-                font-size: .7222rem;
-                line-height: .8333rem;
-                padding: .2222rem .6667rem .2778rem;
-                user-select: none;
-                margin-left: .8889rem;
-                background-color: #abadc3;
-                border-radius: .1667rem;
-                color: #fff;
-                font-size: .7222rem;
-                line-height: .8333rem;                    
-                padding: .2222rem .6667rem .2778rem;
-            }
+            color: rgb(255, 255, 255);
+            background-color: rgb(178, 179, 194);
+            border-radius:3px;
+            font-size: 12px;
+            padding: 0.1222rem 0.8667rem 0.1778rem;
         }
     }
 
-    // Макет заказа
-    .order_layout {
-        display: -ms-flexbox;
+    .orderLayout {
         display: flex;
         font-size: .7777rem;
         line-height: 1.1111rem;
         padding: .8888rem;
-        // Левая часть
+
+        @media(max-width:575.9px) {
+            flex-direction: column;
+        }
+
         .left {
-            display: -ms-flexbox;
             display: flex;
-            -ms-flex-preferred-size: 35%;
             flex-basis: 35%;
-            -ms-flex-negative: 0;
             flex-shrink: 0;
             margin-right: .4444rem;
 
-            // Адаптив
             @media(max-width:575.9px) {
                 flex-basis: auto;
             }
-            // сслыка для картинки
-            a.image {
+
+            a.img {
                 background: none;
                 border: none;
                 box-shadow: none;
                 padding: 0;
                 border-radius: .2222rem;
                 cursor: pointer;
-                -ms-flex-negative: 0;
                 flex-shrink: 0;
                 height: 5.55555rem;
                 margin: 0 .8888rem 0 0;
                 overflow: hidden;
                 position: relative;
                 width: 5.55555rem;
-                // Картинка
-                img.img {
+
+                &:after {
+                    background-color: rgba(0, 0, 0, .04);
+                    content: "";
+                    display: block;
+                    height: 100%;
+                    left: 0;
+                    pointer-events: none;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                }
+
+                img.image_order {
                     background-repeat: no-repeat;
                     display: inline-block;
-                    background-size: contain;
-                    -o-object-fit: contain;
-                    object-fit: contain;
+                    @include contain;
                 }
             }
         }
-        // Заказ
-        .order {
-            display: block;
-            // id заказа
-            .orderId {
-                display: block;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 22px;
-                text-decoration: underline;
-                white-space: nowrap;
-                text-decoration: none;
+    }
+
+    .delivery_addresses {
+        margin: 2%;
+        .top_adresses {
+            display: flex;
+            justify-content: space-between;
+            font-size: .7777rem;
+
+            .button_adresses_edit {
                 color: $mainColor;
-                &:hover  {
-                    color: $hoverColor;
-                }
             }
+            
+        }
 
-            // Мобильная часть
-            .mobilePrice {
-                display: none;
-                font-size: 1rem;
-                font-weight: 600;
-                line-height: 1.3333rem;
-                margin-bottom: .5555rem;
-                margin-right: .4444rem;
+        .content_delivery_address {
+            font-size: 14px;
+            margin-top: 8px;
+        }
+    }
+    
+    .parcel_page_card_inner {
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 0.8888rem;
+        margin: 0 2%;
+        font-size: 14px;
+    }
 
-                // Адаптив
-                @media(max-width:575.9px) {
-                    display: block;
+    .parcel_page_card_inner {
+        font-size: .7778rem;
+        font-weight: 600;
+    }
+
+    .info_address_order {
+        align-items: center;
+        color: #2d2f43;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        text-decoration: none;
+        padding-bottom: 24px;
+        padding-top: 24px;
+
+        .empty {
+            margin: 1rem 0;
+            opacity: .5;
+            text-align: center;
+
+            .empty_text {
+                color: #9697a1;
+                font-size: .8333em;
+                line-height: 1.3;
+                margin: 1em auto;
+                max-width: 23em;
+                position: relative;
+            }
+        }
+    }
+
+    .cancel_order {
+        display: flex;
+        justify-content: center;
+        color:$mainColor;
+    }
+
+    .product_big {
+        margin: 0 2%;
+
+        .small_header {
+            font-weight: 500;
+            font-size: 12px;
+        }
+    }
+}
+
+.additional_info {
+    .support_header {
+        font-weight: 500;
+    }
+    
+    .support_service {
+        width: 100%;
+        padding: 0.735em 1em;
+        background: none;
+        border: 1px solid;
+        color: #ff7676;
+        border-radius: 10px;
+    }
+    
+    .follow_parcel {
+        font-size: .7778rem;
+        font-weight: 500;
+    
+    
+        .map {
+            position: relative;
+            height: 192px;
+            padding-top: 100%;
+            &:after {
+                background: rgba(0, 0, 0, .02);
+                content: "";
+                height: 100%;
+                left: 0;
+                pointer-events: none;
+                position: absolute;
+                top: 0;
+                user-select: none;
+                width: 100%;
+            }
+            
+            .square {
+                border-radius: inherit;
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+    
+                .iframe {
+                    background: #fff;
+                    border: none;
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                    width: 100%
                 }
             }
         }
-        // Информация в центре
-        .center {
-            display: flex;
-            flex-direction: column;
-            -ms-flex-positive: 2;
-            flex-grow: 2;
-            -ms-flex-negative: 1;
-            flex-shrink: 1;
-            margin: 1.3889rem .4444rem 0;
+    }
 
-            // Адаптив
-            @media(max-width:575.9px) {
-                display: none;
-            }
-
-            .date {
-                margin-bottom: 5px;
-                .date_label {
-                    color: #9697a1;
-                }
-
-                .date_value {
-                    color: #2d2f43;
-                    margin-left: 4px;
-                }
-            }
+    .info_address {
+        margin: 0 2%;
+        .info {
+            color:$grey;
+            margin-top: 1%;
         }
-        
-        // Правая часть
-        .right {
-            display: flex;
-            flex-direction: column;
-            flex-grow: 0;
-            flex-shrink: 0;
-            justify-content: center;
-            margin-left: .4444rem;
-            text-align: right;
 
-            // Адаптив
-            @media(max-width:575.9px) {
-                margin-left: 0;
-                margin-top: .8888rem;
-            }
-
-            // Цена
-            .price {
-                font-size: 1rem;
-                font-weight: 600;
-                line-height: 1.3333rem;
-                margin-bottom: .5555rem;
-                margin-right: .4444rem;
-                // Адаптив
-                @media(max-width:575.9px) {
-                        display: none;
-                }
-            }
-
-
-            // Контейнер под кнопку
-            .block_button {
-                font-weight: 500;
-                max-width: 14rem;
-                // Адаптив
-                @media(max-width:575.9px) {
-                    max-width: none;
-                }
-
-                a.info_price {  
-                    width: 100%;
-                    display: flex;
-                    padding: 5px;
-                    justify-content: center;
-                    align-items: center;
-                    text-decoration: none;
-                    user-select: none;
-
-                    background-color: $mainColor;
-                    border: 1px solid #f3f3f5;
-                    color: $white;
-                }
-            }
-        }
-        // Скрытый 
-        .hidden {
-            display: none;
+        .street {
+            margin-top: 1%;
+            font-weight: 600;
         }
     }
 }

@@ -243,13 +243,11 @@ header.header {
                 .items {
                     display: flex;
                     vertical-align: middle;
-                    -ms-flex-direction: row;
                     flex-direction: row;
                     height: 100%;
                     margin-left: 16px;
                     // Блоки
                     .block {
-                        display: -ms-flexbox;
                         display: flex;
                         margin: 0 16px;
                         // Адаптив
@@ -266,16 +264,12 @@ header.header {
                     // Блок с данными 
                     .block_inner {
                         align-items: center;
-                        display: -ms-flexbox;
                         display: flex;
                         cursor: pointer;
                         user-select: none;
                         text-decoration: none;
 
                         .inner {
-                            align-content: center;
-                            flex-direction: column;
-                            justify-content: center;
                              // Иконки Элементов
                             .item_icon {
                                 height: 26px;
@@ -300,9 +294,6 @@ header.header {
                                     right: -8px;
                                     text-align: center;
                                     top: -8px;
-                                    -webkit-user-select: none;
-                                    -moz-user-select: none;
-                                    -ms-user-select: none;
                                     user-select: none;
                                 }
                             }
@@ -321,12 +312,12 @@ header.header {
                             .name_inner {
                                 color: #3d3f56;
                                 font-weight: 500;
-                                line-height: 20px;
+                                font-size: 12px;
                                 text-decoration: none;
                                 
                                 // Адаптив
                                 @media (max-width: 991.9px) {
-                                        display: none;
+                                    display: none;
                                 }
                             }
                         }

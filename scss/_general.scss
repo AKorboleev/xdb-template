@@ -14,6 +14,7 @@ $white:#fff;
 $yellow:#b39f08;
 $black:rgb(22, 22, 22);
 $headerTop:#fff ;
+$grey:#9697a1;
 // ****
 
 
@@ -162,6 +163,47 @@ $catalog:$mainColor;
         }
     }
 }
+
+// Лис с гарантией 
+.list {
+    font-size: 12px;
+    flex-direction: column;
+    // Гарантия
+    .item {
+        -ms-flex-align: center;
+        align-items: center;
+        overflow: hidden;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: .8889rem;
+        :last-child {
+            margin-bottom: 0;
+        }
+        // блок иконки
+        .iconWrapper { 
+            border-radius: 15rem;
+            border: .1667rem solid #fff;
+            flex-shrink: 0;
+            height: 2.3334rem;
+            width: 2.3334rem;
+            overflow: hidden;
+            
+            // Сама иконка
+            .icon_image {
+            background-repeat: no-repeat;
+            display: inline-block;
+            background: $icon__image;
+            height: 1.3889rem;
+            padding: .5rem;
+            width: 1.3889rem;
+            background-size: contain;
+            object-fit: contain;
+            }
+        }
+    }
+}
+//****
+
 
 .prev {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAyNiI+PHBhdGggZD0iTS4zIDEyLjNsMTItMTJhMSAxIDAgMDExLjQgMCAxIDEgMCAwMTAgMS40TDIuNCAxM2wxMS4zIDExLjNhMSAxIDAgMDEtMS40IDEuNGwtMTItMTJhMSAxIDAgMDEwLTEuNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);

@@ -1,0 +1,59 @@
+.promoslider_wrap {
+    .top {
+        align-items: baseline;
+        color: #2d2f43;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 16px;
+
+        .title {
+            display: block;
+            flex-grow: 1;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 28px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    .three_in_row {
+        position: relative;
+        @media (max-width: 839.9px) {
+            margin-left: -12px;
+            margin-right: -12px;
+        }
+        @media (max-width: 839.9px) and (min-width: 768px) {
+            margin-left: -16px;
+            margin-right: -16px;
+        }
+
+        @media (max-width: 599.9px) {
+            margin-left: -12px;
+            margin-right: -12px;
+        }
+
+        @media (max-width: 599.9px) and (min-width: 768px) {
+            margin-left: -16px;
+            margin-right: -16px;
+        }
+
+        .contentWrap {
+            overflow-y: hidden;
+            overflow-x: hidden;
+            scrollbar-width: none;
+
+            .nativeScroll___2Cg7K {
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+            }
+
+            .items{
+                align-items: stretch;
+                display: flex;
+                flex-wrap: nowrap;
+            }
+        }
+    }
+}

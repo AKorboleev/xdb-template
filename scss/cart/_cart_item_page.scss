@@ -508,46 +508,7 @@
                         
                     }
                 }
-                // Лис с гарантия 
-                .list {
-                    -ms-flex-direction: column;
-                    flex-direction: column;
-                    // Гарантия
-                    .item {
-                        -ms-flex-align: center;
-                        align-items: center;
-                        overflow: hidden;
-                        display: -ms-flexbox;
-                        display: flex;
-                        margin-bottom: .8889rem;
-                        :last-child {
-                            margin-bottom: 0;
-                        }
-                        // блок иконки
-                        .iconWrapper { 
-                            border-radius: 15rem;
-                            border: .1667rem solid #fff;
-                            -ms-flex-negative: 0;
-                            flex-shrink: 0;
-                            height: 2.3334rem;
-                            margin-right: .8889rem;
-                            width: 2.3334rem;
-                            overflow: hidden;
-                            // Сама иконка
-                            .icon_image {
-                            background-repeat: no-repeat;
-                            display: inline-block;
-                            background: $icon__image;
-                            height: 1.3889rem;
-                            padding: .5rem;
-                            width: 1.3889rem;
-                            background-size: contain;
-                            -o-object-fit: contain;
-                            object-fit: contain;
-                            }
-                        }
-                    }
-                }
+                
             }
             
             // Обзоры
