@@ -1,60 +1,46 @@
-// Файл для настрйоки повторяющихся элементов и переменнных 
+// Файл для настрйоки повторяющихся элементов и переменнных
 
 // Используемые шрифты
-$fontFamaly: 'Kurale', serif;
-$os: 'Open Sans', sans-serif;
+$fontFamaly: "Kurale", serif;
+$os: "Open Sans", sans-serif;
 // ****
-
-
 
 //Используемые цвета
-$mainColor:#ff7676;
+$mainColor: #ff7676;
 // $button:#ff7676;
-$white:#fff;
-$yellow:#b39f08;
-$black:rgb(22, 22, 22);
-$headerTop:#fff ;
-$grey:#9697a1;
+$white: #fff;
+$yellow: #b39f08;
+$black: rgb(22, 22, 22);
+$headerTop: #fff;
+$grey: #9697a1;
 // ****
-
-
 
 //Используемы цвета в ховеер
 $hoverColor: #47d499;
 // ****
 
-
-
-// часто испльзуемые значения 
-$text:18px;
-$container:1230px;
-$mc:0 auto;
+// часто испльзуемые значения
+$text: 18px;
+$container: 1230px;
+$mc: 0 auto;
 // ****
-
-
 
 //icon__image цвет иконки в cart_item_page.scss
 $icon__image: $mainColor;
 // ****
 
-
-
 // catalog цвет зоголовка шрифта , который  находится в catalog.scss
-$catalog:$mainColor;
+$catalog: $mainColor;
 // ****
 
-
-
 //  В микисы вынесенны классы которые часто повторяются , их ну
-@mixin flex ($jc,$ai){
+@mixin flex($jc, $ai) {
     display: flex;
     flex-wrap: wrap;
     justify-content: $jc;
-    align-items: $ai;    
+    align-items: $ai;
 }
 // ****
-
-
 
 // элемент и его содержимое,независимы от остальной части документа
 @mixin contain {
@@ -63,38 +49,30 @@ $catalog:$mainColor;
 }
 // ****
 
-
-
-// Масштабирование картинки под максимально закрытие блока , картинка не обрезается , а вписывается с сохранением пропорций 
+// Масштабирование картинки под максимально закрытие блока , картинка не обрезается , а вписывается с сохранением пропорций
 @mixin cover {
     background-size: cover;
     object-fit: cover;
 }
 // ****
 
-
-
 // Звезды
 @mixin filterStar {
     background-repeat: repeat-x;
     background-size: auto 100%;
-    top: -.1em;
+    top: -0.1em;
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNCIgaGVpZ2h0PSIxMSI+PHBhdGggZmlsbD0iIzJkMmY0MyIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNS4yMiA4LjQ4bDMuMjMgMS45NC0uODYtMy42NyAyLjg1LTIuNDctMy43Ni0uMzJMNS4yLjUgMy43NiAzLjk2IDAgNC4yOGwyLjg1IDIuNDdMMiAxMC40MiIvPjwvc3ZnPg==);
 }
 //****
 
 // ****
 
-
-
 // Использовать этот класс когда нет товара в корзине, если есть то убирать, для этого использовать js
 // Пока добавил в cart и orders. Можно убрать если нужно будет. Его стоит добавлять в main
 .grey {
-    background-color:rgb(219, 219, 219);
+    background-color: rgb(219, 219, 219);
 }
 // ****
-
-
 
 // Аватарка в review wrap
 .avatar {
@@ -109,34 +87,62 @@ $catalog:$mainColor;
 //****
 
 // кнопка выхода
-.icon_exit {
-    display: block;
-    height: 14px;
-    width: 14px;
-}
-//****
+// .icon_exit {
+//     display: block;
+//     height: 14px;
+//     width: 14px;
+// }
+// //****
 
-// кнопка добавить
-.add_icon {
-    margin-right:.5556rem;
-    width: 18px;
-}
-//****
+// // кнопка добавить
+// .add_icon {
+//     margin-right: 0.5556rem;
+//     width: 18px;
+// }
+// //****
 
+// // класс для иконки ведра мусорки
+// .icon_basket {
+//     margin: 5px;
+//     display: inline-block;
+//     vertical-align: middle;
+//     opacity: 0.5;
+// }
+// //****
 
-// класс для иконки ведра мусорки 
-.icon_basket {
-    margin: 5px;
-    display: inline-block;
-    vertical-align: middle;
-    opacity: .5;
-}
-//****
+// Стрелочки, чтобы листать карусель, картинки
+// .next,
+// .prev {
+//     background: rgba(0, 0, 0, 0.4) no-repeat;
+//     background-size: 25%;
+//     border-radius: 2rem;
+//     cursor: pointer;
+//     height: 3.44rem;
+//     margin-top: -1.72rem;
+//     opacity: 0;
+//     position: absolute;
+//     top: 50%;
+//     transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+//     user-select: none;
+//     width: 3.44rem;
 
-// Стрелочки, чтобы листать карусели
+//     &:hover {
+//         background-color: rgba(0, 0, 0, 0.6);
+//     }
+
+//     @media (max-width: 767.9px) {
+//         .next,
+//         .prev {
+//             bottom: 12px;
+//             margin-top: 0;
+//             top: auto;
+//         }
+//     }
+// }
+
 .next,
 .prev {
-    background: rgba(0, 0, 0, .4) no-repeat;
+    background: rgba(0, 0, 0, 0.4) no-repeat;
     background-size: 25%;
     border-radius: 2rem;
     cursor: pointer;
@@ -145,26 +151,76 @@ $catalog:$mainColor;
     opacity: 0;
     position: absolute;
     top: 50%;
-    transition: background-color .3s ease-in-out, opacity .3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
     user-select: none;
     width: 3.44rem;
+}
 
-    &:hover {
-        
-    background-color: rgba(0, 0, 0, .6)
-    }
+.next:hover,
+.prev:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
 
-    @media(max-width:767.9px) {
-        .next,
-        .prev {
-            bottom: 12px;
-            margin-top: 0;
-            top: auto;
-        }
+@media(max-width:767.9px) {
+
+    .next,
+    .prev {
+        bottom: 12px;
+        margin-top: 0;
+        top: auto;
     }
 }
 
-// Лис с гарантией 
+
+.prev {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAyNiI+PHBhdGggZD0iTS4zIDEyLjNsMTItMTJhMSAxIDAgMDExLjQgMCAxIDEgMCAwMTAgMS40TDIuNCAxM2wxMS4zIDExLjNhMSAxIDAgMDEtMS40IDEuNGwtMTItMTJhMSAxIDAgMDEwLTEuNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
+    background-position: 45% 50%;
+    left: 16px;
+
+    &:after {
+        border-right: 2px solid;
+        border-top: 2px solid;
+        box-sizing: border-box;
+        content: "";
+        display: block;
+        height: 12px;
+        transform-origin: center;
+        width: 12px;
+    }
+}
+
+@media(max-width:767.9px) {
+    .prev {
+        display: none;
+    }
+}
+
+.next {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAyNiI+PHBhdGggZD0iTTEzLjcgMTMuN2wtMTIgMTJhLjkxLjkxIDAgMDEtLjcuMy45MS45MSAwIDAxLS43LS4zIDEgMSAwIDAxMC0xLjRMMTEuNiAxMyAuMyAxLjdBMSAxIDAgMDEuMy4zYTEgMSAwIDAxMS40IDBsMTIgMTJhMSAxIDAgMDEwIDEuNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
+    background-position: 55% 50%;
+    right: 16px;
+
+    &:after {
+        border-right: 2px solid;
+        border-top: 2px solid;
+        box-sizing: border-box;
+        content: "";
+        display: block;
+        height: 12px;
+        transform-origin: center;
+        width: 12px;
+    }
+}
+
+@media(max-width:767.9px) {
+    .next {
+        display: none;
+    }
+}
+
+
+
+// Лис с гарантией
 .list {
     font-size: 12px;
     flex-direction: column;
@@ -175,42 +231,41 @@ $catalog:$mainColor;
         overflow: hidden;
         display: -ms-flexbox;
         display: flex;
-        margin-bottom: .8889rem;
+        margin-bottom: 0.8889rem;
         :last-child {
             margin-bottom: 0;
         }
         // блок иконки
-        .iconWrapper { 
+        .iconWrapper {
             border-radius: 15rem;
-            border: .1667rem solid #fff;
+            border: 0.1667rem solid #fff;
             flex-shrink: 0;
             height: 2.3334rem;
             width: 2.3334rem;
             overflow: hidden;
-            
+
             // Сама иконка
             .icon_image {
-            background-repeat: no-repeat;
-            display: inline-block;
-            background: $icon__image;
-            height: 1.3889rem;
-            padding: .5rem;
-            width: 1.3889rem;
-            background-size: contain;
-            object-fit: contain;
+                background-repeat: no-repeat;
+                display: inline-block;
+                background: $icon__image;
+                height: 1.3889rem;
+                padding: 0.5rem;
+                width: 1.3889rem;
+                background-size: contain;
+                object-fit: contain;
             }
         }
     }
 }
 //****
 
-
 .prev {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAyNiI+PHBhdGggZD0iTS4zIDEyLjNsMTItMTJhMSAxIDAgMDExLjQgMCAxIDEgMCAwMTAgMS40TDIuNCAxM2wxMS4zIDExLjNhMSAxIDAgMDEtMS40IDEuNGwtMTItMTJhMSAxIDAgMDEwLTEuNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
     background-position: 45% 50%;
     left: 16px;
 
-    @media(max-width:767.9px) {
+    @media (max-width: 767.9px) {
         display: none;
     }
 }
@@ -220,24 +275,22 @@ $catalog:$mainColor;
     background-position: 55% 50%;
     right: 16px;
 
-    @media(max-width:767.9px) {
+    @media (max-width: 767.9px) {
         display: none;
     }
 }
 // ****
 
 // Линия
-// Мб пригодится 
+// Мб пригодится
 .line {
     display: flex;
     width: 100%;
     height: 1px;
-    border-radius:1px;
-    background-color:#00d8db;
+    border-radius: 1px;
+    background-color: #00d8db;
 }
 //****
-
-
 
 // Не знаю что с этим делать
 // Часто где было
@@ -247,7 +300,7 @@ $catalog:$mainColor;
     visibility: hidden;
 }
 
-.resizeTriggers>div {
+.resizeTriggers > div {
     content: " ";
     display: block;
     position: absolute;
@@ -256,7 +309,6 @@ $catalog:$mainColor;
     height: 100%;
     width: 100%;
     overflow: hidden;
-
 
     .contractTrigger {
         &:before {
@@ -275,65 +327,62 @@ $catalog:$mainColor;
 }
 // ****
 
-
-
 // Кастом checkbox
 
-    label.custom-checkbox {
-        display: flex;
-        justify-content: space-between;
-    }
+label.custom-checkbox {
+    display: flex;
+    justify-content: space-between;
+}
 
-    /* для элемента input c type="checkbox" */
-    .custom-checkbox>input {
-        position: absolute;
-        z-index: -1;
-        opacity: 0;
-      }
-      
-      /* для элемента label, связанного с .custom-checkbox */
-      .custom-checkbox>span {
-        display: inline-flex;
-        align-items: center;
-        user-select: none;
-      }
-      
-      /* создание в label псевдоэлемента before со следующими стилями */
-      .custom-checkbox>span::before {
-        content: '';
-        display: inline-block;
-        width: 1em;
-        height: 1em;
-        flex-shrink: 0;
-        flex-grow: 0;
-        border: 2px solid #000000;
-        border-radius: 0.25em;
-        margin-right: 0.5em;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 50% 50%;
-      }
+/* для элемента input c type="checkbox" */
+.custom-checkbox > input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
 
-      /* стили для чекбокса, находящегося в фокусе */
-      .custom-checkbox>input:focus+span::before {
-        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-      }
-      
-      /* стили для чекбокса, находящегося в состоянии checked */
-      .custom-checkbox>input:checked+span::before {
-        border-color: $mainColor;
-        background-color: $mainColor;
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
-      }
-      
-      /* стили для чекбокса, находящегося в состоянии disabled */
-      .custom-checkbox>input:disabled+span::before {
-        background-color: #e9ecef;
-    }
+/* для элемента label, связанного с .custom-checkbox */
+.custom-checkbox > span {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.custom-checkbox > span::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #000000;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox > input:focus + span::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.custom-checkbox > input:checked + span::before {
+    border-color: $mainColor;
+    background-color: $mainColor;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox > input:disabled + span::before {
+    background-color: #e9ecef;
+}
 // ****
 
-
-// баннер сообщает о положительном оформлении доставке 
+// баннер сообщает о положительном оформлении доставке
 //  checkout_sucess
 .background_successMessage {
     background: linear-gradient(96deg, #43e695, #27c278);
@@ -343,7 +392,9 @@ $catalog:$mainColor;
 
     &:after {
         //Картинка о положительном заказе
-        background: no-repeat url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxODYiIGhlaWdodD0iMTg2Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSIwJSIgeTE9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQzRTY5NSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzI3QzI3OCIvPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0iYiIgd2lkdGg9IjI1MCUiIGhlaWdodD0iMjUwJSIgeD0iLTc1JSIgeT0iLTc1JSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94Ij48ZmVHYXVzc2lhbkJsdXIgaW49IlNvdXJjZUdyYXBoaWMiIHN0ZERldmlhdGlvbj0iMjEiLz48L2ZpbHRlcj48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTQ0IDk2YTQyIDQyIDAgMTEwLTg0IDQyIDQyIDAgMDEwIDg0eiIgZmlsdGVyPSJ1cmwoI2IpIiBvcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDkgMzkpIi8+PHBhdGggZmlsbD0idXJsKCNhKSIgc3Ryb2tlPSIjRkZGIiBzdHJva2Utd2lkdGg9IjYiIGQ9Ik00NCA5MWE0NyA0NyAwIDExLjEtOTQuMUE0NyA0NyAwIDAxNDQgOTF6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0OSAzOSkiLz48cGF0aCBmaWxsPSIjRkZGIiBkPSJNODYuOCA5OS42TDcwIDgyLjhsNC40LTQuNEw4Ni44IDkxbDI0LjktMjUgNC40IDQuNHoiLz48L3N2Zz4=) 50%/contain;
+        background: no-repeat
+            url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxODYiIGhlaWdodD0iMTg2Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSIwJSIgeTE9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQzRTY5NSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzI3QzI3OCIvPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0iYiIgd2lkdGg9IjI1MCUiIGhlaWdodD0iMjUwJSIgeD0iLTc1JSIgeT0iLTc1JSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94Ij48ZmVHYXVzc2lhbkJsdXIgaW49IlNvdXJjZUdyYXBoaWMiIHN0ZERldmlhdGlvbj0iMjEiLz48L2ZpbHRlcj48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTQ0IDk2YTQyIDQyIDAgMTEwLTg0IDQyIDQyIDAgMDEwIDg0eiIgZmlsdGVyPSJ1cmwoI2IpIiBvcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDkgMzkpIi8+PHBhdGggZmlsbD0idXJsKCNhKSIgc3Ryb2tlPSIjRkZGIiBzdHJva2Utd2lkdGg9IjYiIGQ9Ik00NCA5MWE0NyA0NyAwIDExLjEtOTQuMUE0NyA0NyAwIDAxNDQgOTF6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0OSAzOSkiLz48cGF0aCBmaWxsPSIjRkZGIiBkPSJNODYuOCA5OS42TDcwIDgyLjhsNC40LTQuNEw4Ni44IDkxbDI0LjktMjUgNC40IDQuNHoiLz48L3N2Zz4=)
+            50% / contain;
         bottom: -93px;
         content: "";
         display: block;
@@ -354,51 +405,44 @@ $catalog:$mainColor;
 }
 // ****
 
-
-
-
-// Градиент цвета 
+// Градиент цвета
 .bg-0 {
     background: linear-gradient(270deg, #8e62dc, #f06292);
-    color: #fff
+    color: #fff;
 }
 
 .bg-1 {
     background: linear-gradient(270deg, #62dc6c, #00d8db);
-    color: #fff
+    color: #fff;
 }
 
 .bg-2 {
     background: linear-gradient(270deg, #ff7676, #f5a54e);
-    color: #fff
+    color: #fff;
 }
 
 .bg-3 {
     background: linear-gradient(270deg, #17c5ea, #7560ea);
-    color: #fff
+    color: #fff;
 }
 
 .bg-4 {
-    background: linear-gradient(270deg, #b47111, #bf9861
-    );
-    color: #fff
+    background: linear-gradient(270deg, #b47111, #bf9861);
+    color: #fff;
 }
 
 .bg-5 {
     background: linear-gradient(270deg, #ff7676, #f54ea2);
-    color: #fff
+    color: #fff;
 }
 //****
-
-
-
 
 // Изменяемая кнопка, стоит только подставить класс
 .button {
     // box-sizing: inline-flex;
     display: inline;
     border-radius: 6px;
-    border:none;
+    border: none;
     cursor: pointer;
     text-decoration: none;
     height: 44px;
@@ -412,13 +456,8 @@ $catalog:$mainColor;
     margin: 2px 2px 2px 0;
     outline: none;
     flex-grow: 1;
-    
-
 }
 //****
-
-
-
 
 // Основное сочитание кнопки
 .btn-main {
@@ -435,7 +474,7 @@ $catalog:$mainColor;
 }
 //****
 
-// дополнительный сочитане кнопке 
+// дополнительный сочитане кнопке
 .btn-additional {
     background-color: #2d2f43;
     color: #fff;
@@ -448,7 +487,6 @@ $catalog:$mainColor;
         background-color: #43455a;
     }
 }
-
 
 // Переделать
 // находится в search_empty
@@ -466,13 +504,12 @@ $catalog:$mainColor;
     position: relative;
     text-align: center;
     text-decoration: none;
-    transition: .1s ease;
+    transition: 0.1s ease;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 
-    
     background-color: #f3f3f5;
     border: 1px solid #f3f3f5;
     color: #2d2f43;
@@ -480,93 +517,85 @@ $catalog:$mainColor;
     display: block;
     width: 100%;
 
-    border-radius: .38em;
+    border-radius: 0.38em;
 }
 
-
-
-
-
-// Форма запроса можно менять хоть как 
+// Форма запроса можно менять хоть как
 // Вкладывать структуру как тут
 .search {
     display: none;
     line-height: 1;
     vertical-align: middle;
     width: 100%;
-        // Адаптив
-        @media (min-width: 768px) {
-                display: inline-block;
-        }
-        // Форма поиска 
-        form {
-            position: relative;
-            //Внутренняя настройка
-            .inner {
-                display: -ms-flexbox;
-                display: flex;
-                height: 48px;
-                width: 100%;
-                -ms-flex-align: center;
-                align-items: center;
-                display: -ms-flexbox;
-                display: flex;
-                -ms-flex-positive: 1;
+    // Адаптив
+    @media (min-width: 768px) {
+        display: inline-block;
+    }
+    // Форма поиска
+    form {
+        position: relative;
+        //Внутренняя настройка
+        .inner {
+            display: -ms-flexbox;
+            display: flex;
+            height: 48px;
+            width: 100%;
+            -ms-flex-align: center;
+            align-items: center;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            vertical-align: middle;
+            width: auto;
+            border-radius: 8px;
+            background: #f5f6f9;
+            // Строка поиска
+            .label {
                 flex-grow: 1;
-                vertical-align: middle;
-                width: auto;
+                position: relative;
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+                height: 48px;
                 border-radius: 8px;
-                background: #f5f6f9;
-                // Строка поиска
-                .label {
-                    flex-grow: 1;
-                    position: relative;
-                    display: inline-block;
-                    margin: 0;
-                    padding: 0;
-                    height: 48px;
-                    border-radius: 8px;
 
-                    &::placeholder {
-                        .inner {
-                            color: #9697a1;
-                        }
-                    
+                &::placeholder {
+                    .inner {
+                        color: #9697a1;
                     }
+                }
 
-                    input {
-                        appearance: none;
-                        background: none;
-                        border: 0;
-                        border-radius: 8px;
-                        box-sizing: border-box;
-                        font-size: 16px;
-                        height: 48px;
-                        line-height: 18px;
-                        outline: none;
-                        padding: 0 32px 0 16px;
-                        transition: background .3s ease-in-out;
-                        width: 100%;
-                        padding-left: 8px;
+                input {
+                    appearance: none;
+                    background: none;
+                    border: 0;
+                    border-radius: 8px;
+                    box-sizing: border-box;
+                    font-size: 16px;
+                    height: 48px;
+                    line-height: 18px;
+                    outline: none;
+                    padding: 0 32px 0 16px;
+                    transition: background 0.3s ease-in-out;
+                    width: 100%;
+                    padding-left: 8px;
 
-                        &:-moz-placeholder {
-                            color: #9697a1;
-                        }
-                        &:-ms-input-placeholder {
-                            color: #9697a1;
-                        }
-                        &:focus {
-                            background: #ededed;
-                        }
+                    &:-moz-placeholder {
+                        color: #9697a1;
+                    }
+                    &:-ms-input-placeholder {
+                        color: #9697a1;
+                    }
+                    &:focus {
+                        background: #ededed;
                     }
                 }
             }
         }
-    
+    }
 }
-// 
-
-
+//
 
 .active {
     &:before {
@@ -581,9 +610,6 @@ $catalog:$mainColor;
     }
 }
 
-
-
-
 // Шаблон Путь страниц
 // внутренняя часть
 .page_path {
@@ -593,24 +619,24 @@ $catalog:$mainColor;
     margin: 0 auto;
     max-width: 1300px;
 
-    @media(min-width:576px) {
-            padding-left: 6px;
-            padding-right: 6px;
+    @media (min-width: 576px) {
+        padding-left: 6px;
+        padding-right: 6px;
     }
 
-    @media(min-width:768px) {
-            padding-left: 8px;
-            padding-right: 8px;
+    @media (min-width: 768px) {
+        padding-left: 8px;
+        padding-right: 8px;
     }
 
-    @media(min-width:992px) {
-            padding-left: 8px;
-            padding-right: 8px;
+    @media (min-width: 992px) {
+        padding-left: 8px;
+        padding-right: 8px;
     }
 
-    @media(min-width:1300px) {
-            padding-left: 8px;
-            padding-right: 8px;
+    @media (min-width: 1300px) {
+        padding-left: 8px;
+        padding-right: 8px;
     }
     // Элемент списка
     span.ListItem {
@@ -632,30 +658,28 @@ $catalog:$mainColor;
             &:focus:not([href=""]),
             &:hover:not([href=""]) {
                 color: $mainColor;
-                text-decoration:underline
+                text-decoration: underline;
             }
         }
     }
 }
 //
 
-
-
-// Анимации 
+// Анимации
 @keyframes resizeAnimation {
     0% {
-        opacity: 0
+        opacity: 0;
     }
 
     to {
-        opacity: 0
+        opacity: 0;
     }
 }
 
 // Не помню где использовал и найти не могу, если что удалить
 @keyframes reveal {
     0% {
-        transform: scale(.001);
+        transform: scale(0.001);
         background: #e41da5;
     }
 
@@ -674,19 +698,16 @@ $catalog:$mainColor;
 // изменить размер анимации
 @keyframes resizeAnimation {
     0% {
-        opacity: 0
+        opacity: 0;
     }
 
     to {
-        opacity: 0
+        opacity: 0;
     }
 }
 // ****
 
-
-
-
-//d-none если добавить его , то анимации не будет , но если его убрать будте анимация , все делается через js 
+//d-none если добавить его , то анимации не будет , но если его убрать будте анимация , все делается через js
 // Загрузка, вращение кружочков  во круг оси
 .loader {
     display: inline-block;
@@ -698,9 +719,9 @@ $catalog:$mainColor;
     .dot {
         width: 1em;
         height: 1em;
-        border-radius: .5em;
+        border-radius: 0.5em;
         position: absolute;
-        animation-duration: .5s;
+        animation-duration: 0.5s;
         animation-timing-function: ease;
         animation-iteration-count: infinite;
         background: #3d3f56;
@@ -708,22 +729,19 @@ $catalog:$mainColor;
 
     .dot__one {
         left: 0;
-        animation-name: reveal
+        animation-name: reveal;
     }
     .dot__two,
     .dot__three {
         animation-name: slide;
     }
 
-    .dot__four{
+    .dot__four {
         animation-name: reveal;
         animation-direction: reverse;
     }
 }
 //****
-
-
-
 
 //search_filteres используется в друх местах , поэтому вынес его сюда
 //trader_page
@@ -772,14 +790,14 @@ $catalog:$mainColor;
                 position: relative;
                 text-align: center;
                 text-decoration: none;
-                transition: .1s ease;
+                transition: 0.1s ease;
                 -webkit-user-select: none;
                 -moz-user-select: none;
                 -ms-user-select: none;
                 user-select: none;
                 width: 100%;
 
-                border-radius: .38em;
+                border-radius: 0.38em;
                 border: 1px solid #ececec;
                 color: #050505;
 
@@ -802,7 +820,6 @@ $catalog:$mainColor;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
-
 
                     .buttonInner {
                         -ms-flex-align: center;
@@ -861,7 +878,6 @@ $catalog:$mainColor;
             -ms-user-select: none;
             user-select: none;
 
-            
             background-color: #f2f3f7;
             border-color: transparent;
 
@@ -890,7 +906,6 @@ $catalog:$mainColor;
                     flex-grow: 1;
                     overflow: hidden;
 
-
                     .labelName {
                         color: #000000;
                         padding-right: 8px;
@@ -903,7 +918,6 @@ $catalog:$mainColor;
                         text-overflow: ellipsis;
                     }
                 }
-
             }
         }
 
@@ -924,7 +938,7 @@ $catalog:$mainColor;
             user-select: none;
 
             @media (min-width: 768px) {
-                    display: none;
+                display: none;
             }
 
             .content {
@@ -939,7 +953,6 @@ $catalog:$mainColor;
             }
         }
     }
-
 
     .menuArrow {
         margin-right: 0.6667rem;

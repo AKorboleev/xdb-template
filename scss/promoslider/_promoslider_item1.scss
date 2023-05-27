@@ -1,4 +1,4 @@
-.promoslider_item_one {
+.promoslider_item_two {
     box-sizing: content-box;
     width: 100%;
     flex-basis: calc(33.33333% - 8.1px);
@@ -235,7 +235,6 @@
             transform: translateZ(0);
 
             .image_wrap {
-                height: 132px;
                 transition: transform 0.15s ease-in-out;
                 transform-origin: center;
                 width: 132px;

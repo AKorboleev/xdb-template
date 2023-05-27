@@ -45,7 +45,6 @@
             .list_image {
                 position: relative;
                 align-items: center;
-                background-color:#fff;
                 color: #2d2f43;
                 // Изменил display:flex; на display:inline-block; и все заработало.
             
@@ -64,11 +63,13 @@
                         margin-bottom: 0;
                     }
                 }
-                // Палец вверх
-                .thumbs {
-                    display: grid;
-                    flex-direction: row;
-                    width: 100%;
+                .thumbs_block {
+                    // Палец вверх
+                    .thumbs {
+                        display: grid;
+                        flex-direction: row;
+                        width: 100%;
+                    }
                 }
                 // Квадрат
                 .square {
@@ -196,11 +197,9 @@
                     }
                     // Цена
                     .price {
-                        -ms-flex-align: center;
                         align-items: center;
                         display: -ms-flexbox;
                         display: flex;
-                        -ms-flex-wrap: wrap;
                         flex-wrap: wrap;
                         font-size: 1.7777rem;
                         font-weight: 500;
@@ -285,8 +284,6 @@
                             }
                         // Фавориты 
                         .favorite {
-                            -ms-flex-item-align: center;
-                            -ms-grid-row-align: center;
                             align-self: center;
                             height: 1.8rem;
                             margin: .3rem;
@@ -363,7 +360,6 @@
                                 top: 50%;
                                 // Логотип магазина
                                 .storeLogo {
-                                    -ms-flex-align: center;
                                     align-items: center;
                                     background-color:$white;
                                     border: 1px solid rgba(0, 0, 0, .1);
@@ -411,9 +407,6 @@
                                             display: block;
                                             height: 100%;
                                             position: initial;
-                                            -webkit-user-select: none;
-                                            -moz-user-select: none;
-                                            -ms-user-select: none;
                                             user-select: none;
                                             width: 100%;
                                             // Адаптив
@@ -592,11 +585,8 @@
             }
             // Товар
             .item {
-                -ms-flex-align: stretch;
                 align-items: stretch;
-                display: -ms-flexbox;
-                display: flex;
-                -ms-flex-wrap: wrap;
+                justify-content: center;
                 flex-wrap: wrap;
             }
         }

@@ -1,57 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-	<title>KittyKat - категория: Детские товары</title>
+	<title>[MARKET_PAGE_TITLE]</title>
 	<meta charset="utf-8">
 	<meta name="robots" content="index,follow" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:title" content="KittyKat" />
+	<meta property="og:title" content="[MARKET_NAME]" />
 	<meta property="og:image" content="" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https:kittykat.ru" />
-	<meta name="keywords" content="KittyKat маркетплейс">
-	<meta name="description" content="KittyKat маркетплейс">
+	<meta property="og:url" content="https:[MARKET_URL]" />
+	<meta name="keywords" content="[MARKET_NAME] маркетплейс">
+	<meta name="description" content="[MARKET_NAME] маркетплейс">
 
-<link rel="icon" type="image/x-icon" href="/lib/img/ico/ki.ico">
+[MARKET_ICO]
 
-<!-- XDB General Lib START -->
-
-<!-- jQuery 3.6.0 -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-<!-- Bootstrap 5.2.0 -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
-<!-- Bootstrap Icons 1.8.3 -->
-<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-
-<!-- jQuery UI v1.13.1 -->
-<script type="text/javascript" src="//lib.xdb.ru/js/jquery-ui-1.13.1/jquery-ui.min.js"></script>
-<link type="text/css" rel="stylesheet" href="//lib.xdb.ru/js/jquery-ui-1.13.1/jquery-ui.min.css">
-
-<!-- Fancybox 4.0 -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
-
-<!-- Market Functionality -->
-<script type="text/javascript" src="//lib.xdb.ru/js/market.js?1675235799"></script>
-
-<!-- General Styles -->
-<link type="text/css" rel="stylesheet" href="//lib.xdb.ru/css/xdb_general.css?1675235799">
-
-<!-- XDB General Lib FINISH -->
-<script type="text/javascript">
-					var autocity = 1,
-					autocity_id = 3728,
-					autocityname = "Лондон",
-					city_id = 3728,
-					cityname = "Лондон",
-					other_city_offers_show = 1,
-					currency_id = 643,
-					items_on_page = 36,
-					item_image_size = 150;
-				</script>
+[XDB_GENERAL_LIB]
 
 	<!-- Navigation -->
 	<link rel="stylesheet" href="/lib/css/components-Burger-b23d.css">
@@ -80,21 +43,18 @@
 	<link rel="stylesheet" href="/lib/css/containers-pages-StorePage-e9a1032c242e48ea7699.css">
 	<!-- Theme settings -->
 	<link rel="stylesheet" href="/lib/css/theme.css">
-	<!-- MAIN CSS -->
-	<link rel="stylesheet" href="/kitty_kat/style.css">
-	<!-- style.min.css -->
-	<link rel="stylesheet" href="/css/style.min.css">
+	
+	<link rel="stylesheet" href="/lib/css/style.min.css">
 
-<!-- XDB Specific Lib START -->
 
-<link type="text/css" rel="stylesheet" href="//kittykat.ru/lib/css/xdb_specific.css?1675235799">
+[XDB_SPECIFIC_LIB]
 
-<!-- XDB Specific Lib FINISH -->
-
-<meta name="yandex-verification" content="f4da1d5effd254e9" />
+[MARKET_STATISTICS]
 
 </head>
 
+<body class="">
+	<div class="container-xxl">	
 <header class="header">
 	<div class="container-xxl">
 	<div class="header_top">
@@ -309,7 +269,7 @@
 								<input id="sought_text" name="text" placeholder="Поиск" value="[XDB_SOUGHT_TEXT]">
 							</label>
 							<div class="button_search">
-								<button type="submit" class="button bt-main">Найти</button>
+								<button type="submit" class="button btn-main">Найти</button>
 							</div>
 						</div>
 					</form>
@@ -360,6 +320,7 @@
 				</div>
 			</div>
 		</div>
+		</div>
 	</div>
 </header>
 
@@ -393,7 +354,7 @@
 			<a class="category" href="/search/?type=1837">Дача, сад и огород</a> 
 			<a class="category" href="/search/?type=276">Хобби и творчество</a> 
 		</nav>
-	</div>
+</div>
 </div>
 
 <div class="mobaile_search">
@@ -463,5 +424,6 @@
 		</div>
 	</div>
 </footer>
+	</div>
 </body>
 </html>

@@ -19,7 +19,6 @@
             display: none;
 
         &:nth-child(-n+6) {
-            display: -ms-flexbox;
             display: flex;
         }
     }
@@ -27,11 +26,8 @@
     // Адаптив
     @media(min-width:840px) {
         box-sizing: border-box;
-        -ms-flex-preferred-size: calc(25% - 16.1px);
         flex-basis: calc(25% - 16.1px);
-        -ms-flex-positive: 0;
         flex-grow: 0;
-        -ms-flex-negative: 0;
         flex-shrink: 0;
         margin: 16px 0 0 16px;
         max-width: calc(25% - 16.1px);
@@ -70,11 +66,12 @@
 
             &:hover .actionButton {
                 display: block;
+
+                &:before {
+                    animation: favorite-animation .3s ease both;
+                }
             }
 
-            :hover .actionButton:before {
-                animation: favorite-animation .3s ease both;
-            }
             // Квадрат
             .square {
                 padding-top: 100%;
@@ -110,7 +107,6 @@
                                 mix-blend-mode: multiply;
                                 width: inherit;
                                 background-size: contain;
-                                -o-object-fit: contain;
                                 object-fit: contain;
                             }
                         }
@@ -172,7 +168,6 @@
                         bottom: 8px;
                         display: -ms-flexbox;
                         display: flex;
-                        -ms-flex-direction: column;
                         flex-direction: column;
                         position: absolute;
                         right: 8px;
@@ -223,7 +218,7 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
                 max-height: 2.6666em;
-                font-size: 12px;
+                font-size: 14px;
                 line-height: 1.3333em;
                 margin-top:8px;
             }

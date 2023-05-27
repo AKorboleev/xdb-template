@@ -7,7 +7,6 @@
     padding-right: 6px;
     // Верхний контейнер
     .header {
-        -ms-flex-align: baseline;
         align-items: baseline;
         color: #2d2f43;
         display: -ms-flexbox;
@@ -27,10 +26,7 @@
     }
     // Элементы
     .inners {
-        -ms-flex-align: stretch;
-        align-items: stretch;
-        display: flex;
-        -ms-flex-wrap: wrap;
+        display: inline-block;
         flex-wrap: wrap;
         margin: -16px 0 0 -16px
     }
