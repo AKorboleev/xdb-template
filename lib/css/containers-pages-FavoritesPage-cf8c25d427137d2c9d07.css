@@ -1498,7 +1498,6 @@
     margin-bottom: -100px;
     overflow-x: hidden;
     padding-bottom: 100px;
-    -ms-overflow-style: none;
     scrollbar-width: none;
 }
 .content___14fC9::-webkit-scrollbar {
@@ -1520,7 +1519,6 @@
     box-shadow: none;
     margin: 0;
     padding: 0;
-    -ms-flex-align: center;
     align-items: center;
     background-color: #fff;
     border-radius: 50%;
@@ -1531,15 +1529,11 @@
     display: -ms-flexbox;
     display: flex;
     height: 40px;
-    -ms-flex-pack: center;
     justify-content: center;
     position: absolute;
     top: calc(50% - 20px);
     transform-origin: center;
     transition: 0.2s ease;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     width: 40px;
 }
@@ -1581,21 +1575,16 @@
     }
 }
 .inner___2o1xk {
-    -ms-flex-align: stretch;
     align-items: stretch;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     margin: -16px 0 0 -16px;
 }
 .cell___cfSDy {
     box-sizing: border-box;
-    -ms-flex-preferred-size: calc(100% - 16.1px);
     flex-basis: calc(100% - 16.1px);
-    -ms-flex-positive: 0;
     flex-grow: 0;
-    -ms-flex-negative: 0;
     flex-shrink: 0;
     margin: 16px 0 0 16px;
     max-width: calc(100% - 16.1px);

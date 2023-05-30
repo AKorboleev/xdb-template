@@ -7,6 +7,22 @@
     margin: 20px 0 0 16px;
     display: inline-flex;
     width: 15%;
+    max-width: 15%;
+    @media (min-height:968px) {
+        width: 18%;
+    }
+
+    @media (min-height:868px) {
+        width: 22%;
+    }
+
+    @media (min-height:768px) {
+        width: 22%;
+    }
+
+    @media (min-height:554px) {
+        width: 45%;
+    }
 
     // Продукт
     .product {

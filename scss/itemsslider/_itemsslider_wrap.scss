@@ -170,11 +170,3 @@
     }
     
 }
-// Скрол 
-.nativeScroll {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-}
-
-

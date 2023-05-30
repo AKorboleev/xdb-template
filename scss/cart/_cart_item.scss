@@ -47,7 +47,6 @@
             }
             // Контейнер с ниформацией о товара
             .info_product {
-                margin-top: 6px;
                 font-size: 16px;
                 font-weight: 500;
                 display: grid;
@@ -59,6 +58,18 @@
                 .none_product {
                     display: none;
                 }
+
+                .trash {
+                    margin: 2px 5px;
+                    cursor: pointer;
+                    display: flex;
+
+                    &:hover {
+                        background:$mainColor;
+                    }
+                }
+
+                
             }
 
 

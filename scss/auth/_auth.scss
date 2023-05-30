@@ -1,11 +1,10 @@
-// Блок регистрации, авторизации 
+// Блок регистрации, авторизации
 .auth_registration {
     margin: 60px 6px;
     display: inline-block;
     box-sizing: border-box;
     position: relative;
     width: 100%;
-    -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
     text-align: center;
@@ -81,13 +80,10 @@
             }
 
             .fieldsWrapper {
-                -ms-flex-positive: 0.75;
                 flex-grow: 0.75;
-                margin-right: 1rem;
 
                 // Адаптив
                 @media (max-width: 991.9px) {
-                    -ms-flex-positive: 1;
                     flex-grow: 1;
                 }
 
@@ -106,7 +102,6 @@
                     color: #8e90a7;
 
                     label {
-
                         //Ввод
                         .input {
                             background: transparent;
@@ -206,7 +201,7 @@
                 overflow-wrap: break-word;
                 word-wrap: break-word;
 
-                // Условия 
+                // Условия
                 .terms {
                     color: $mainColor;
                 }

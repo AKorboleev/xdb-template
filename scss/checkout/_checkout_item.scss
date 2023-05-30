@@ -34,13 +34,11 @@
         }
         // Контента
         .content_item {
-            -ms-flex-positive: 1;
             flex-grow: 1;
             margin-left: 12px;
             //Имя контента
             .nameText {
                 font-size: 14px;
-                -webkit-line-clamp: 2;
                 max-height: 3em;
             }
             // Количество

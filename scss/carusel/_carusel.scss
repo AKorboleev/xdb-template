@@ -112,12 +112,6 @@
         }
     }
 }
-// скрол для  js
-.nativeScroll {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    overflow-x: hidden;
-}
 
 // Отдельные классы  другого шаблона, которые стоит потом вынести в отдельный scss
 // Ячейка

@@ -1,11 +1,9 @@
 // обертка ветрины
 .showcase_wrap {
     padding-top: 25px;
-    -ms-flex-align: stretch;
     align-items: stretch;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: -16px 0 0 -16px;
 
@@ -21,36 +19,26 @@
         max-height: 765px;
 
         // Адаптив
-        @media(min-width:1280px) {
-            -ms-flex-preferred-size: calc(33.33333% - 16.1px);
+        @media (min-width: 1280px) {
             flex-basis: calc(33.33333% - 16.1px);
-            -ms-flex-positive: 0;
             flex-grow: 0;
-            -ms-flex-negative: 0;
             flex-shrink: 0;
             max-width: calc(33.33333% - 16.1px);
             width: calc(33.33333% - 16.1px);
             min-height: auto;
-
         }
 
-        @media(min-width:840px) {
+        @media (min-width: 840px) {
             min-height: auto;
         }
-        @media(min-width:600px) {
-            -ms-flex-preferred-size: calc(66.66667% - 16.1px);
-            flex-basis: calc(66.66667% - 16.1px);
-            -ms-flex-positive: 0;
+        @media (min-width: 600px) {
+            flex-basis: calc(50% - 17%);
             flex-grow: 0;
-            -ms-flex-negative: 0;
             flex-shrink: 0;
-            //  Не знаю пригодится или нет
-            // max-width: calc(66.66667% - 16.1px);
-            // width: calc(66.66667% - 16.1px);
             min-height: auto;
-
         }
-
+        
+        // Обертка контента
         a.wrapper_content {
             display: flex;
             overflow: hidden;
@@ -65,8 +53,8 @@
                 justify-content: center;
                 padding-top: 100%;
                 position: relative;
-                
-                
+
+                // Блок с картинкой
                 .block_contain {
                     bottom: 0;
                     left: 0;
@@ -75,12 +63,12 @@
                     top: 0;
 
                     // картинка
-                    img.image{
+                    img.image {
                         background-repeat: no-repeat;
                         display: inline-block;
                         height: 100%;
                         transform-origin: center center;
-                        transition: transform .3s ease-in-out;
+                        transition: transform 0.3s ease-in-out;
                         width: 100%;
                         padding: 50px;
                     }
@@ -100,16 +88,14 @@
                     line-height: 48px;
                 }
 
-                // Дополнение 
+                // Дополнение
                 .subtitle,
                 .title {
                     display: block;
                     display: -webkit-box;
-                    -webkit-box-orient: vertical;
                     position: relative;
                     overflow: hidden;
                     text-overflow: ellipsis;
-                    -webkit-line-clamp: 2;
                     margin-bottom: -2px;
                     padding-bottom: 2px;
                     padding-bottom: 2px;
@@ -131,7 +117,6 @@
     }
     // Обертка для продуркта с правой стороны
     .productsWrap {
-        flex-basis: calc(66.66667% - 16.1px);
         flex-grow: 0;
         flex-shrink: 0;
         max-width: calc(66.66667% - 16.1px);
@@ -140,9 +125,13 @@
         margin: 16px 0 0 16px;
         padding-left: 20px;
 
+        // Адапти
+        @media (max-width: 1300px) {
+            margin: 0;
+        }
+
         // Заголовок
         .header {
-            -ms-flex-align: baseline;
             align-items: baseline;
             display: -ms-flexbox;
             display: flex;
@@ -151,7 +140,6 @@
             // Титульная часть
             a.title {
                 display: block;
-                -ms-flex-positive: 1;
                 flex-grow: 1;
                 font-size: 24px;
                 font-weight: 500;
@@ -169,10 +157,10 @@
 
             // Действие
             a.action {
-                background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSIxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMSAxbDYgNi02IDYiIHN0cm9rZT0iI0IyQjNDMiIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+) no-repeat 100%;
+                background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSIxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMSAxbDYgNi02IDYiIHN0cm9rZT0iI0IyQjNDMiIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+)
+                    no-repeat 100%;
                 box-sizing: border-box;
                 cursor: pointer;
-                -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
                 font-size: 14px;
                 line-height: 16px;
