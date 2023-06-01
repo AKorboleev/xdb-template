@@ -12,23 +12,23 @@ footer.footer {
     right: 0;
     // Адаптив
     @media (max-width: 767.9px) {
-            font-size: 12px;
-            line-height: 1.2;
+        font-size: 12px;
+        line-height: 1.2;
     }
     @media (min-width: 768px) {
-            margin-bottom: 16px;
-            padding-left: 6px;
-            padding-right: 6px;
+        margin-bottom: 16px;
+        padding-left: 6px;
+        padding-right: 6px;
     }
     @media (min-width: 768px) {
-            padding-left: 8px;
+        padding-left: 8px;
     }
     @media (min-width: 768px) {
-            padding-right: 8px;
+        padding-right: 8px;
     }
     @media (max-width: 991.9px) {
-            padding-left: 5%;
-            padding-right: 0;
+        padding-left: 5%;
+        padding-right: 0;
     }
     // Ссылки
     .links {
@@ -39,14 +39,14 @@ footer.footer {
         .wrapper {
             display: inline-block;
             margin-right: 1.5rem;
-            // Сами ссылки 
-            // спросить нужно ли обвертывать тег а или нет. По факту как я сделал так можно , но мне кажется можно и не обвертывать 
+            // Сами ссылки
+            // спросить нужно ли обвертывать тег а или нет. По факту как я сделал так можно , но мне кажется можно и не обвертывать
             .link {
                 color: #9697a1;
                 text-decoration: none;
                 &:hover {
                     text-decoration: underline;
-                    color:$hoverColor;
+                    color: $hoverColor;
                 }
                 &:hover {
                     text-decoration: none;
@@ -55,22 +55,22 @@ footer.footer {
         }
         // Адаптив
         @media (max-width: 767.9px) {
-                display: block;
+            display: block;
         }
         @media (max-width: 767.9px) {
-                padding-bottom: 0;
-            }
+            padding-bottom: 0;
         }
+    }
     // кто сделал
     .xdb {
         box-sizing: border-box;
         line-height: 1.46rem;
         padding: 0.7rem 0;
         @media (max-width: 767.9px) {
-                border-top: none;
-                margin-top: 0.4rem;
+            border-top: none;
+            margin-top: 0.4rem;
         }
-        /// Значки магазинов 
+        /// Значки магазинов
         .badges {
             display: flex;
             float: right;
@@ -80,14 +80,14 @@ footer.footer {
                 margin: 5px;
                 // Адаптив
                 @media (min-width: 768px) {
-                        margin: 8px;
+                    margin: 8px;
                 }
             }
         }
         // Адаптив
         @media (max-width: 767.9px) {
-                float: none;
-                margin-top: 5px;
+            float: none;
+            margin-top: 5px;
         }
     }
     // Капча
@@ -98,11 +98,11 @@ footer.footer {
         padding-bottom: 12px;
         // Адаптив
         @media (min-width: 768px) {
-                padding-bottom: 16px;
+            padding-bottom: 16px;
         }
         // Адаптив
         @media (max-width: 767.9px) {
-                text-align: left;
+            text-align: left;
         }
         a {
             color: #9697a1;

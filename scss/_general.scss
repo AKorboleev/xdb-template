@@ -80,11 +80,52 @@ $catalog: $mainColor;
     border-radius: 100%;
     display: block;
     height: 3em;
-    -o-object-fit: cover;
     object-fit: cover;
     width: 3em;
 }
 //****
+
+//Нужно для скрола карусели
+.nativeScroll {
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+}
+//****
+
+
+
+// shake
+@keyframes shake-animation {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0)
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0)
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0)
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0)
+    }
+}
+
+.shake {
+    animation: shake-animation .82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translateZ(0)
+}
+//****
+
+
 
 // кнопка выхода
 // .icon_exit {
@@ -110,7 +151,7 @@ $catalog: $mainColor;
 // }
 // //****
 
-// Стрелочки, чтобы листать карусель, картинки
+
 // .next,
 // .prev {
 //     background: rgba(0, 0, 0, 0.4) no-repeat;
@@ -125,95 +166,133 @@ $catalog: $mainColor;
 //     transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
 //     user-select: none;
 //     width: 3.44rem;
+// }
 
-//     &:hover {
-//         background-color: rgba(0, 0, 0, 0.6);
+// .next:hover,
+// .prev:hover {
+//     background-color: rgba(0, 0, 0, 0.6);
+// }
+
+// @media(max-width:767.9px) {
+
+//     .next,
+//     .prev {
+//         bottom: 12px;
+//         margin-top: 0;
+//         top: auto;
 //     }
+// }
 
-//     @media (max-width: 767.9px) {
-//         .next,
-//         .prev {
-//             bottom: 12px;
-//             margin-top: 0;
-//             top: auto;
-//         }
+
+// .prev {
+//     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAyNiI+PHBhdGggZD0iTS4zIDEyLjNsMTItMTJhMSAxIDAgMDExLjQgMCAxIDEgMCAwMTAgMS40TDIuNCAxM2wxMS4zIDExLjNhMSAxIDAgMDEtMS40IDEuNGwtMTItMTJhMSAxIDAgMDEwLTEuNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
+//     background-position: 45% 50%;
+//     left: 16px;
+
+//     &:after {
+//         border-right: 2px solid;
+//         border-top: 2px solid;
+//         box-sizing: border-box;
+//         content: "";
+//         display: block;
+//         height: 12px;
+//         transform-origin: center;
+//         width: 12px;
+//     }
+// }
+
+// @media(max-width:767.9px) {
+//     .prev {
+//         display: none;
+//     }
+// }
+
+// .next {
+//     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAyNiI+PHBhdGggZD0iTTEzLjcgMTMuN2wtMTIgMTJhLjkxLjkxIDAgMDEtLjcuMy45MS45MSAwIDAxLS43LS4zIDEgMSAwIDAxMC0xLjRMMTEuNiAxMyAuMyAxLjdBMSAxIDAgMDEuMy4zYTEgMSAwIDAxMS40IDBsMTIgMTJhMSAxIDAgMDEwIDEuNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
+//     background-position: 55% 50%;
+//     right: 16px;
+
+//     &:after {
+//         border-right: 2px solid;
+//         border-top: 2px solid;
+//         box-sizing: border-box;
+//         content: "";
+//         display: block;
+//         height: 12px;
+//         transform-origin: center;
+//         width: 12px;
+//     }
+// }
+
+// @media(max-width:767.9px) {
+//     .next {
+//         display: none;
 //     }
 // }
 
 .next,
 .prev {
-    background: rgba(0, 0, 0, 0.4) no-repeat;
-    background-size: 25%;
-    border-radius: 2rem;
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    color: #2d2f43;
     cursor: pointer;
-    height: 3.44rem;
-    margin-top: -1.72rem;
-    opacity: 0;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40px;
+    -ms-flex-pack: center;
+    justify-content: center;
     position: absolute;
-    top: 50%;
-    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    top: calc(50% - 20px);
+    transform-origin: center;
+    transition: 0.2s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
-    width: 3.44rem;
+    width: 40px;
 }
-
+.next:after,
+.prev:after {
+    border-right: 2px solid;
+    border-top: 2px solid;
+    box-sizing: border-box;
+    content: "";
+    display: block;
+    height: 12px;
+    transform-origin: center;
+    width: 12px;
+}
 .next:hover,
 .prev:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    color: #ff6262;
+    transform: scale(1.15);
 }
-
-@media(max-width:767.9px) {
-
+.prev {
+    left: 10px;
+    padding-left: 6px;
+}
+.prev:after {
+    transform: rotate(-135deg);
+}
+.next {
+    padding-right: 6px;
+    right: 10px;
+}
+.next:after {
+    transform: rotate(45deg);
+}
+@media (max-width: 839.9px) {
     .next,
     .prev {
-        bottom: 12px;
-        margin-top: 0;
-        top: auto;
-    }
-}
-
-
-.prev {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAyNiI+PHBhdGggZD0iTS4zIDEyLjNsMTItMTJhMSAxIDAgMDExLjQgMCAxIDEgMCAwMTAgMS40TDIuNCAxM2wxMS4zIDExLjNhMSAxIDAgMDEtMS40IDEuNGwtMTItMTJhMSAxIDAgMDEwLTEuNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
-    background-position: 45% 50%;
-    left: 16px;
-
-    &:after {
-        border-right: 2px solid;
-        border-top: 2px solid;
-        box-sizing: border-box;
-        content: "";
-        display: block;
-        height: 12px;
-        transform-origin: center;
-        width: 12px;
-    }
-}
-
-@media(max-width:767.9px) {
-    .prev {
-        display: none;
-    }
-}
-
-.next {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAyNiI+PHBhdGggZD0iTTEzLjcgMTMuN2wtMTIgMTJhLjkxLjkxIDAgMDEtLjcuMy45MS45MSAwIDAxLS43LS4zIDEgMSAwIDAxMC0xLjRMMTEuNiAxMyAuMyAxLjdBMSAxIDAgMDEuMy4zYTEgMSAwIDAxMS40IDBsMTIgMTJhMSAxIDAgMDEwIDEuNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
-    background-position: 55% 50%;
-    right: 16px;
-
-    &:after {
-        border-right: 2px solid;
-        border-top: 2px solid;
-        box-sizing: border-box;
-        content: "";
-        display: block;
-        height: 12px;
-        transform-origin: center;
-        width: 12px;
-    }
-}
-
-@media(max-width:767.9px) {
-    .next {
         display: none;
     }
 }
@@ -618,6 +697,7 @@ label.custom-checkbox {
     box-sizing: border-box;
     margin: 0 auto;
     max-width: 1300px;
+    display: flex;
 
     @media (min-width: 576px) {
         padding-left: 6px;
@@ -643,6 +723,7 @@ label.custom-checkbox {
         color: #9697a1;
         margin-right: 1ex;
         font-size: 12px;
+        display: flex;
         &:before {
             content: "/";
             margin-right: 1ex;
@@ -710,12 +791,11 @@ label.custom-checkbox {
 //d-none если добавить его , то анимации не будет , но если его убрать будте анимация , все делается через js
 // Загрузка, вращение кружочков  во круг оси
 .loader {
-    display: inline-block;
-    height: 1em;
+    display: inline;
+    top: 22px;
+    left: -55px;
     position: relative;
-    vertical-align: middle;
-    width: 4em;
-    font-size: 0.3rem;
+    font-size: 0.4rem;
     .dot {
         width: 1em;
         height: 1em;

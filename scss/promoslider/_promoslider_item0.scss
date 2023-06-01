@@ -138,10 +138,6 @@
         max-width: calc(50% - 32.1px);
         margin-left: -16px;
         padding: 0 16px;
-
-        .cell___3Oi8v:first-child {
-            margin-left: 0;
-        }
     }
 
     @media (max-width: 599.9px) {
@@ -257,17 +253,18 @@
                     padding: 10px;
                     text-align: center;
                     width: 100%;
-
-                    // Пробел
-                    .spacer {
-                        flex-grow: 1;
-                    }
                     // Заголовок
                     .title {
                         font-size: 20px;
                         line-height: 24px;
                     }
 
+                    // Пробел
+                    .spacer {
+                        flex-grow: 1;
+                    }
+                    
+                    // Подзаголовок
                     .subtitle {
                         font-size: 14px;
                         line-height: 16px;

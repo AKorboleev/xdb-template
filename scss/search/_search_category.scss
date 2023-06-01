@@ -2,7 +2,6 @@
 .search_category {
     // Ссылка
     a.link {
-        -ms-flex-align: center;
         align-items: center;
         box-sizing: border-box;
         color: #2d2f43;
@@ -10,7 +9,6 @@
         display: -ms-flexbox;
         display: flex;
         font-size: 14px;
-        -webkit-font-smoothing: antialiased;
         height: 38px;
         line-height: 20px;
         padding: 0 16px;
@@ -28,13 +26,11 @@
             margin-right: 8px;
             width: 20px;
             background-size: contain;
-            -o-object-fit: contain;
             object-fit: contain;
         }
         // Имя
         .name {
             display: inline-block;
-            -ms-flex-positive: 1;
             flex-grow: 1;
             overflow: hidden;
             text-overflow: ellipsis;

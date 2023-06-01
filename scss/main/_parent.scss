@@ -1,4 +1,4 @@
-// Родительский элемент с категориями 
+// Родительский элемент с категориями
 .parent {
     margin-bottom: 1rem;
     position: relative;
@@ -9,7 +9,6 @@
 
     // Лист с категориями
     .categories_list {
-
         padding: 21px 0 32px;
         height: 64px;
         overflow: hidden;
@@ -46,5 +45,4 @@
             margin-right: 7px;
         }
     }
-
 }

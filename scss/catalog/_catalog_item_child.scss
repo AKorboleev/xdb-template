@@ -1,13 +1,13 @@
+// Каталог элемента наследуемого
 .catalog_item_child {
   font-size: .8333rem;
   margin-bottom: .8888rem;
   break-inside: avoid-column;
-  -webkit-column-break-inside: avoid;
   display: table;
   page-break-inside: avoid;
-
+  // Ссылка наследуемуего 
   .link_child {
-    color: #ff7676;
+    color: $mainColor;
     font-weight: 500;
     text-decoration: none
   }

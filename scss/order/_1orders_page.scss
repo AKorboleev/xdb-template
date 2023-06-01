@@ -1,18 +1,18 @@
- // Меню
- .sidebarMenu {
+// Меню
+.sidebarMenu {
     background: #fff;
-    border-radius: .4444rem;
-    font-size: .7222rem;
-    line-height: .8333rem;
-    padding: .4444rem 0;
+    border-radius: 0.4444rem;
+    font-size: 0.7222rem;
+    line-height: 0.8333rem;
+    padding: 0.4444rem 0;
 
     // Адаптив
-    @media(max-width:991.9px) {
-            margin-bottom: 0;
+    @media (max-width: 991.9px) {
+        margin-bottom: 0;
     }
 
-    @media(max-width:575.9px) {
-            padding: 0;
+    @media (max-width: 575.9px) {
+        padding: 0;
     }
 
     // Элементы меню
@@ -31,34 +31,33 @@
         &:focus,
         &:hover {
             color: $hoverColor;
-            cursor: pointer
+            cursor: pointer;
         }
     }
-    
- }
- // Уведомление
+}
+// Уведомление
 .notification {
     background: #fff;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     margin-top: 20px;
-    
+
     // Адаптив
-    @media(max-width:575.9px) {
-            border-radius: 0;
-            margin-left: -12px;
-            margin-right: -12px;
+    @media (max-width: 575.9px) {
+        border-radius: 0;
+        margin-left: -12px;
+        margin-right: -12px;
     }
 
     // банер
     .banner {
         background: #6280e5;
         background-image: linear-gradient(-135deg, #6280e5, #7953b7);
-        border-radius: .3333rem;
+        border-radius: 0.3333rem;
         color: #fff;
 
         // Адаптив
-        @media(max-width:575.9px) {
-                border-radius: 0
+        @media (max-width: 575.9px) {
+            border-radius: 0;
         }
         // Шаблон
         .pattern {
@@ -67,43 +66,42 @@
             background-size: 4.5rem;
 
             // Адаптив
-            @media(max-width:768px) {
-                padding: 16px
+            @media (max-width: 768px) {
+                padding: 16px;
             }
             // блок для выхода
             .block_close {
-                height: .9rem;
+                height: 0.9rem;
                 position: relative;
 
                 // Выход
                 .close {
-                    bottom: .4em;
+                    bottom: 0.4em;
                     cursor: pointer;
                     position: absolute;
-                    right: -.2em;
+                    right: -0.2em;
                     background-image: url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ic3ZnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMSAyMS4wMSI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE4LjQ1LjQ1bC04IDgtOC04YTEuNDUgMS40NSAwIDAwLTIuMSAwIDEuNDUgMS40NSAwIDAwMCAyLjFsNy45NSA4LTcuOTUgOGExLjQ1IDEuNDUgMCAwMDAgMi4xIDEuMzYgMS4zNiAwIDAwMSAuNDUgMS4zNiAxLjM2IDAgMDAxLS40NWw4LTggOCA4YTEuNDUgMS40NSAwIDAwMi4xIDAgMS40NSAxLjQ1IDAgMDAwLTIuMWwtOC04IDgtOGExLjQ1IDEuNDUgMCAwMDAtMi4xIDEuNDUgMS40NSAwIDAwLTIgMHoiLz48L3N2Zz4=);
                     background-position: 50% 50%;
                     background-repeat: no-repeat;
-                    height: .66rem;
-                    width: .66rem;
+                    height: 0.66rem;
+                    width: 0.66rem;
                     background-size: contain;
                 }
             }
         }
 
-
         // Контейнер
         .container {
             text-align: center;
-            // Подтекест 
+            // Подтекест
             p {
                 font-size: 20px;
             }
             // Элементы месенджеров
             .inner_message {
                 display: flex;
-                align-items:center;
-                background-color:rgb(0, 134, 196);
+                align-items: center;
+                background-color: rgb(0, 134, 196);
                 height: 50px;
                 width: 90%;
                 margin: 0 auto;
@@ -112,13 +110,12 @@
                 img {
                     margin-left: 25px;
                 }
-                // Параграф
+                // Подтекст
                 p {
                     font-size: 30px;
                     margin: 0 5%;
                 }
-             }
+            }
         }
     }
-
 }

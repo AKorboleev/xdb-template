@@ -4,7 +4,7 @@
     .header__logo__product {
         font-weight: 500;
         line-height: 28px;
-        @media(max-width:767.9px) {
+        @media (max-width: 767.9px) {
             font-size: 20px;
             font-weight: 400;
             line-height: 24px;
@@ -26,10 +26,10 @@
         line-height: 20px;
         margin: 4px auto;
 
-
         &:after {
             background-position: 50%;
-            background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIuMjk1IDEuNzA1bC0xLjQxLTEuNDEtNC41OSA0LjU4LTQuNTktNC41OC0xLjQxIDEuNDEgNiA2IDYtNnoiIGZpbGw9IiMyRDJGNDMiLz48L3N2Zz4=) no-repeat;
+            background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIuMjk1IDEuNzA1bC0xLjQxLTEuNDEtNC41OSA0LjU4LTQuNTktNC41OC0xLjQxIDEuNDEgNiA2IDYtNnoiIGZpbGw9IiMyRDJGNDMiLz48L3N2Zz4=)
+                no-repeat;
             bottom: 1px;
             content: "";
             display: inline-block;
@@ -40,11 +40,10 @@
         }
 
         // Адаптив
-        @media(max-width:767.9px) {
-                display: block;
+        @media (max-width: 767.9px) {
+            display: block;
         }
     }
-
 
     // .inner__element {
     //     position: relative;
@@ -69,7 +68,7 @@
         position: relative;
         text-decoration: none;
         padding-right: 32px;
-    
+
         // Адаптив
         @media (max-width: 886px) {
             font-size: 14px;
@@ -77,25 +76,25 @@
             margin: 0 -10px;
             height: 45px;
         }
-    
-        @media  (max-width: 1160px) {
+
+        @media (max-width: 1160px) {
             font-size: 16px;
         }
-    
+
         &:hover:after {
             background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSIxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMiAybDQgNC00IDQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmNzY3NiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+PC9zdmc+);
         }
-    
+
         // Адаптив
         @media (hover: none) {
             &:hover:after {
                 background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSIxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMiAybDQgNC00IDQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2M3YzdjYyIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+PC9zdmc+);
             }
         }
-    
+
         &:after {
             background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSIxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMiAybDQgNC00IDQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2M3YzdjYyIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+PC9zdmc+)
-            no-repeat 50%;
+                no-repeat 50%;
             content: "";
             height: 100%;
             position: absolute;
@@ -103,8 +102,8 @@
             top: 0;
             width: 8px;
         }
-    
-        // Каритнка 
+
+        // Каритнка
         img.image_icon_contain {
             background-repeat: no-repeat;
             display: inline-block;
@@ -114,8 +113,8 @@
             background-size: contain;
             -o-object-fit: contain;
             object-fit: contain;
-    
-            // Имя 
+
+            // Имя
             .name {
                 display: block;
                 -ms-flex-positive: 1;
@@ -125,21 +124,16 @@
                 white-space: nowrap;
             }
         }
-
-    
     }
 
     //Левая часть кнопки
     .leftColBottom {
-        margin-top: .8889rem;
-        @media(max-width:767.9px) {
+        margin-top: 0.8889rem;
+        @media (max-width: 767.9px) {
             display: none;
         }
     }
-
-    //***
-
-
+    
     // контроль
     .controls {
         font-size: 0.7777rem;
@@ -173,11 +167,10 @@
                 border-color: $hoverColor;
                 color: $hoverColor;
             }
-
         }
     }
 
-    // Не знаю где использовать 
+    // Не знаю где использовать
     .resizeTriggers {
         animation: resizeAnimation 1ms;
         opacity: 0;
@@ -193,7 +186,7 @@
                 height: 100%;
                 width: 100%;
                 overflow: hidden;
-                
+
                 height: 200%;
                 width: 200%;
             }
@@ -225,7 +218,7 @@
                 display: none;
 
                 // Адаптив
-                @media(max-width:767.9px) {
+                @media (max-width: 767.9px) {
                     display: block;
                 }
             }

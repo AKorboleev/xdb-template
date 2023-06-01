@@ -13,17 +13,14 @@
     .wrapper {
         padding-bottom:50px;
         border-bottom: 1px solid #9e9e9e;
-        -ms-flex-align: center;
         align-items: center;
         color: #2d2f43;
-        -ms-flex-direction: row;
         flex-direction: row;
         position: relative;
         text-decoration: none;
         padding: 24px 12px;
 
         h3 {
-            -webkit-font-smoothing: antialiased;
             font-weight: 500;
             margin-bottom: .8888rem;
             margin-top: -6px;
@@ -45,24 +42,19 @@
             // Категории контента
             .categories {
                 display: inline;
-                -moz-column-count: 4;
                 column-count: 4;
-                -moz-column-gap: 2em;
                 column-gap: 2em;
 
                 // Адаптив
                 @media(max-width:1299.9px) {
-                        -moz-column-count: 3;
                         column-count: 3;
                 }
                 
                 @media(max-width:991.9px) {
-                        -moz-column-count: 2;
                         column-count: 2;
                 }
                 
                 @media(max-width:767.9px) {
-                        -moz-column-count: 1;
                         column-count: 1;
                 }
                 // контейнер с названием категории и его возможными товарами
@@ -92,7 +84,7 @@
                     }
                 }
             }
-    }
+    
         // Адаптив
         @media(min-width:768px) {
             padding-bottom: 16px;
@@ -108,4 +100,5 @@
             padding-bottom: 16px;
             padding-top: 16px;
         }
+    }
 }

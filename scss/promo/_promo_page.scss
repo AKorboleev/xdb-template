@@ -1,40 +1,61 @@
+// Обертка промостраницы
 .promo_page {
     margin-top: 12px;
-  @media (min-width: 768px) {
-      margin-top: 16px;
-  }
 
+    //Адаптив
+    @media (min-width: 768px) {
+        margin-top: 16px;
+    }
+  // Переходная часть
   .reducer {
-    background-color: #e262b7;
     height: 350px;
     max-width: 1240px;
     border-radius: 8px;
-    display: flex;
     margin-bottom: 20px;
 
-    .block_text {
-      display: inline-block;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      padding: 25%;
-      color: $white;
-      @media (max-width: 768px) {
-          display: grid;
-          margin-top: 30px;
-          padding: 0;
-      }
-    }
-
-    .block_image {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .wrapper {
+      display: block;
+      overflow: hidden;
+      position: relative;
       
-      img {
-        margin: 0 auto;
+      // Текст блока
+      .text_wrap {
+        color: #2d2f43;
+        text-align: center;
+        margin: 22% auto;
+        width: 100%;
+        
+        //Адаптив
         @media (max-width: 768px) {
-            height: 200px;
+            display: grid;
+            margin: 0 auto;
+            padding: 0;
+        }
+      }
+
+      // Пробел
+      .spacer {
+        flex-grow: 1;
+      }
+      
+      // Блок картинка
+      // Обертка картинки
+      .image_wrap {
+        transition: transform .15s ease-in-out;
+        transform-origin: center;
+        width: 50%;
+        margin: 4% auto;
+
+        @media (max-width: 768px) {
+          margin: 0 auto;
+        }
+        // Сама картинка
+        img.img {
+          background-repeat: no-repeat;
+          display: inline-block;
+          height: 100%;
+          width: 100%;
+          @include contain;
         }
       }
     }

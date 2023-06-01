@@ -1,3 +1,4 @@
+// Каталок элементка ссылки
 .catalog_item_child_link {
   .li {
     font-size: .7222rem;
@@ -5,12 +6,12 @@
     margin-top: .3333rem;
 
     .link {
-      color: #ff7676;
+      color: #000000;
       font-weight: 500;
       text-decoration: none;
 
       &:hover {
-        color: #ff7676;
+        // color: #ff7676;
         text-decoration: underline
       }
     }

@@ -9,7 +9,7 @@
         min-height: 100%;
         position: relative;
         // Адптив
-        @media(max-width:575.9px) {
+        @media (max-width: 575.9px) {
             display: block;
             margin-bottom: 8px;
             margin-right: 8px;
@@ -17,7 +17,7 @@
         // Блок
         .block_1 {
             align-items: center;
-            border: 1px solid rgba(0, 0, 0, .08);
+            border: 1px solid rgba(0, 0, 0, 0.08);
             border-radius: 4px;
             box-sizing: border-box;
             color: #2d2f43;
@@ -47,7 +47,7 @@
             .child {
                 margin-top: 3px;
                 // Адптив
-                @media(max-width:575.9px) {
+                @media (max-width: 575.9px) {
                     margin: 1px 0;
                 }
             }
@@ -60,7 +60,7 @@
                 justify-content: center;
 
                 // Адптив
-                @media(max-width:575.9px) {
+                @media (max-width: 575.9px) {
                     left: 30px;
                     position: absolute;
                     top: 50%;
@@ -74,7 +74,7 @@
                 white-space: nowrap;
 
                 // Адптив
-                @media(max-width:575.9px) {
+                @media (max-width: 575.9px) {
                     white-space: normal;
                 }
             }
@@ -88,7 +88,7 @@
                 white-space: nowrap;
 
                 // Адптив
-                @media(max-width:575.9px) {
+                @media (max-width: 575.9px) {
                     white-space: normal;
                 }
             }

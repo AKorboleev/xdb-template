@@ -1,18 +1,13 @@
 // ограниченный блок
 .restricted_block {
     color: #2d2f43;
-    display: -ms-flexbox;
     display: inline-block;
-    // flex-direction: column;
     font-size: 14px;
     text-align: left;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     white-space: normal;
 
-    margin-left: .8rem;
+    margin-left: 0.8rem;
     min-width: 12rem;
     width: 8rem;
 
@@ -27,32 +22,32 @@
         text-decoration: none;
         &:hover {
             transform: scale(1.05);
-            transition: transform .3s ease-in-out;
+            transition: transform 0.3s ease-in-out;
         }
-        // Квадрат 
+        // Квадрат
         .square {
             padding-top: 100%;
             position: relative;
-            // контент квадрата 
+            // контент квадрата
             .squareContent {
                 bottom: 0;
                 left: 0;
                 position: absolute;
                 right: 0;
                 top: 0;
-                // Место изображения 
+                // Место изображения
                 .imagePlace {
                     border-radius: 8px;
                     height: 100%;
                     overflow: hidden;
                     transform: translateZ(0);
                     width: 100%;
-                    // обертка изображения 
+                    // обертка изображения
                     .imageWrap {
                         background-color: #f5f5f5;
                         height: inherit;
                         transform-origin: center center;
-                        transition: transform .15s ease-in-out;
+                        transition: transform 0.15s ease-in-out;
                         width: inherit;
                         backdrop-filter: blur(20px);
                         // Изображение
@@ -64,25 +59,22 @@
                             mix-blend-mode: multiply;
                             width: inherit;
                             background-size: contain;
-                            -o-object-fit: contain;
                             object-fit: contain;
                         }
                     }
                 }
                 //ограничение
                 .restricteds {
-                    -ms-flex-align: center;
                     align-items: center;
                     -webkit-backdrop-filter: blur(20px);
                     backdrop-filter: blur(20px);
-                    background: rgba(0, 0, 0, .05);
+                    background: rgba(0, 0, 0, 0.05);
                     border-radius: 8px;
                     bottom: 0;
                     color: #fff;
                     display: -ms-flexbox;
                     display: flex;
                     font-size: 14px;
-                    -ms-flex-pack: center;
                     justify-content: center;
                     left: 0;
                     line-height: 16px;
@@ -91,7 +83,8 @@
                     top: 0;
                     // Картинка с описанием blur контента
                     .description {
-                        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMzUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE5Ljk5NSA3LjYwNmM1LjAxNyAwIDkuMDkgNC4wNzMgOS4wOSA5LjA5YTguOTYgOC45NiAwIDAxLS42NDYgMy4zMmw1LjMxNyA1LjMxN0EyMS41OTQgMjEuNTk0IDAgMDA0MCAxNi42OTdDMzYuODQ2IDguNzE1IDI5LjA5MyAzLjA2IDE5Ljk5NSAzLjA2Yy0yLjU0NCAwLTQuOTguNDU0LTcuMjQzIDEuMjcybDMuOTI2IDMuOTE4YTkuMTM0IDkuMTM0IDAgMDEzLjMxNy0uNjQ1ek0xLjgxOSAyLjY1MWw0LjE0NCA0LjE0Ni44MjcuODI3QTIxLjUzNCAyMS41MzQgMCAwMDAgMTYuNjk3YzMuMTQ1IDcuOTgyIDEwLjkwNyAxMy42MzYgMTkuOTk1IDEzLjYzNmEyMS4zMSAyMS4zMSAwIDAwNy45NzEtMS41MzZsLjc3My43NzMgNS4yOTkgNS4zMDkgMi4zMTctMi4zMUw0LjEzNS4zMzQgMS44MTggMi42NTF6TTExLjg3IDEyLjY5N2wyLjgwOSAyLjgwOWMtLjA4Mi4zOS0uMTM3Ljc4Mi0uMTM3IDEuMTlhNS40NTggNS40NTggMCAwMDUuNDU0IDUuNDU1Yy40MDkgMCAuOC0uMDU0IDEuMTgxLS4xMzZsMi44MDggMi44MWMtMS4yMDguNi0yLjU1My45NjMtMy45OS45NjMtNS4wMTcgMC05LjA4OC00LjA3My05LjA4OC05LjA5MSAwLTEuNDM2LjM2My0yLjc4Mi45NjMtNHptNy44MjUtMS40MjdsNS43MjcgNS43MjcuMDI3LS4zYTUuNDU4IDUuNDU4IDAgMDAtNS40NTQtNS40NTVsLS4zLjAyOHoiLz48L3N2Zz4=) no-repeat top/40px;
+                        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMzUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE5Ljk5NSA3LjYwNmM1LjAxNyAwIDkuMDkgNC4wNzMgOS4wOSA5LjA5YTguOTYgOC45NiAwIDAxLS42NDYgMy4zMmw1LjMxNyA1LjMxN0EyMS41OTQgMjEuNTk0IDAgMDA0MCAxNi42OTdDMzYuODQ2IDguNzE1IDI5LjA5MyAzLjA2IDE5Ljk5NSAzLjA2Yy0yLjU0NCAwLTQuOTguNDU0LTcuMjQzIDEuMjcybDMuOTI2IDMuOTE4YTkuMTM0IDkuMTM0IDAgMDEzLjMxNy0uNjQ1ek0xLjgxOSAyLjY1MWw0LjE0NCA0LjE0Ni44MjcuODI3QTIxLjUzNCAyMS41MzQgMCAwMDAgMTYuNjk3YzMuMTQ1IDcuOTgyIDEwLjkwNyAxMy42MzYgMTkuOTk1IDEzLjYzNmEyMS4zMSAyMS4zMSAwIDAwNy45NzEtMS41MzZsLjc3My43NzMgNS4yOTkgNS4zMDkgMi4zMTctMi4zMUw0LjEzNS4zMzQgMS44MTggMi42NTF6TTExLjg3IDEyLjY5N2wyLjgwOSAyLjgwOWMtLjA4Mi4zOS0uMTM3Ljc4Mi0uMTM3IDEuMTlhNS40NTggNS40NTggMCAwMDUuNDU0IDUuNDU1Yy40MDkgMCAuOC0uMDU0IDEuMTgxLS4xMzZsMi44MDggMi44MWMtMS4yMDguNi0yLjU1My45NjMtMy45OS45NjMtNS4wMTcgMC05LjA4OC00LjA3My05LjA4OC05LjA5MSAwLTEuNDM2LjM2My0yLjc4Mi45NjMtNHptNy44MjUtMS40MjdsNS43MjcgNS43MjcuMDI3LS4zYTUuNDU4IDUuNDU4IDAgMDAtNS40NTQtNS40NTVsLS4zLjAyOHoiLz48L3N2Zz4=)
+                            no-repeat top/40px;
                         padding: 48px 8px 0;
                         text-align: center;
                         white-space: normal;
@@ -107,7 +100,6 @@
                     position: absolute;
                     right: 8px;
                 }
-
             }
         }
         // Значки
@@ -161,18 +153,17 @@
         // Рейтинк
         .rating {
             display: inline-flex;
-            -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
             height: 16px;
             margin-top: 4px;
-            -ms-flex-align: center;
             align-items: center;
             font-size: 12px;
             line-height: 14px;
 
             //Звезды
             .stars {
-                background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNCI+PHBhdGggZmlsbD0iI2RmZGZlNyIgZD0iTTEzLjI2IDQuNDhMOS4zIDQuMTQgNy43NS41YS44Mi44MiAwIDAwLTEuNSAwTDQuNyA0LjE0bC0zLjk1LjM0YS44Mi44MiAwIDAwLS40NyAxLjQzbDMgMi42LS45IDMuODZhLjgyLjgyIDAgMDAxLjIyLjg5TDcgMTEuMmwzLjQgMi4wNWEuODIuODIgMCAwMDEuMjEtLjg4bC0uOS0zLjg3IDMtMi42Yy41NS0uNDcuMjctMS4zNy0uNDUtMS40M3oiLz48L3N2Zz4=) 0 0 repeat-x;
+                background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNCI+PHBhdGggZmlsbD0iI2RmZGZlNyIgZD0iTTEzLjI2IDQuNDhMOS4zIDQuMTQgNy43NS41YS44Mi44MiAwIDAwLTEuNSAwTDQuNyA0LjE0bC0zLjk1LjM0YS44Mi44MiAwIDAwLS40NyAxLjQzbDMgMi42LS45IDMuODZhLjgyLjgyIDAgMDAxLjIyLjg5TDcgMTEuMmwzLjQgMi4wNWEuODIuODIgMCAwMDEuMjEtLjg4bC0uOS0zLjg3IDMtMi42Yy41NS0uNDcuMjctMS4zNy0uNDUtMS40M3oiLz48L3N2Zz4=)
+                    0 0 repeat-x;
                 height: 14px;
                 width: 100px;
             }
@@ -180,7 +171,7 @@
             .text {
                 color: #ff6262;
                 font-weight: 500;
-                margin-left: 7px
+                margin-left: 7px;
             }
         }
         // Имя

@@ -1,10 +1,9 @@
-
 .parcel_app_сard {
     background: #fff;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
 
     // Адаптив
-    @media(max-width:575.9px) {
+    @media (max-width: 575.9px) {
         border-radius: 0;
         margin-left: -12px;
         margin-right: -12px;
@@ -14,62 +13,55 @@
         margin: 20px 10px;
         // Заголовок
         .header {
-            -ms-flex-align: end;
             align-items: end;
-            display: -ms-flexbox;
             display: flex;
-            font-size: .7778rem;
-            -ms-flex-pack: justify;
+            font-size: 0.7778rem;
             justify-content: space-between;
             line-height: 1.1111rem;
             // Текст заголовок
             .header_text {
-                -ms-flex-positive: 1;
                 flex-grow: 1;
-                margin-right: .8889rem;
+                margin-right: 0.8889rem;
                 // Доставка
                 .shipping_label {
                     color: #9697a1;
-                    margin-right: .4445rem;
+                    margin-right: 0.4445rem;
                     white-space: nowrap;
                 }
             }
             // Значек
             .badge {
-                font-size: .7222rem;
-                line-height: .8333rem;
-                padding: .2222rem .6667rem .2778rem;
+                font-size: 0.7222rem;
+                line-height: 0.8333rem;
+                padding: 0.2222rem 0.6667rem 0.2778rem;
                 user-select: none;
-                margin-left: .8889rem;
+                margin-left: 0.8889rem;
                 background-color: #abadc3;
-                border-radius: .1667rem;
+                border-radius: 0.1667rem;
                 color: #fff;
-                font-size: .7222rem;
-                line-height: .8333rem;                    
-                padding: .2222rem .6667rem .2778rem;
+                font-size: 0.7222rem;
+                line-height: 0.8333rem;
+                padding: 0.2222rem 0.6667rem 0.2778rem;
             }
         }
     }
 
     // Макет заказа
     .order_layout {
-        display: -ms-flexbox;
         display: flex;
-        font-size: .7777rem;
+        font-size: 0.7777rem;
         line-height: 1.1111rem;
-        padding: .8888rem;
+        padding: 0.8888rem;
         // Левая часть
         .left {
             display: -ms-flexbox;
             display: flex;
-            -ms-flex-preferred-size: 35%;
             flex-basis: 35%;
-            -ms-flex-negative: 0;
             flex-shrink: 0;
-            margin-right: .4444rem;
+            margin-right: 0.4444rem;
 
             // Адаптив
-            @media(max-width:575.9px) {
+            @media (max-width: 575.9px) {
                 flex-basis: auto;
             }
             // сслыка для картинки
@@ -78,12 +70,11 @@
                 border: none;
                 box-shadow: none;
                 padding: 0;
-                border-radius: .2222rem;
+                border-radius: 0.2222rem;
                 cursor: pointer;
-                -ms-flex-negative: 0;
                 flex-shrink: 0;
                 height: 5.55555rem;
-                margin: 0 .8888rem 0 0;
+                margin: 0 0.8888rem 0 0;
                 overflow: hidden;
                 position: relative;
                 width: 5.55555rem;
@@ -92,7 +83,6 @@
                     background-repeat: no-repeat;
                     display: inline-block;
                     background-size: contain;
-                    -o-object-fit: contain;
                     object-fit: contain;
                 }
             }
@@ -110,7 +100,7 @@
                 white-space: nowrap;
                 text-decoration: none;
                 color: $mainColor;
-                &:hover  {
+                &:hover {
                     color: $hoverColor;
                 }
             }
@@ -121,11 +111,11 @@
                 font-size: 1rem;
                 font-weight: 600;
                 line-height: 1.3333rem;
-                margin-bottom: .5555rem;
-                margin-right: .4444rem;
+                margin-bottom: 0.5555rem;
+                margin-right: 0.4444rem;
 
                 // Адаптив
-                @media(max-width:575.9px) {
+                @media (max-width: 575.9px) {
                     display: block;
                 }
             }
@@ -134,14 +124,12 @@
         .center {
             display: flex;
             flex-direction: column;
-            -ms-flex-positive: 2;
             flex-grow: 2;
-            -ms-flex-negative: 1;
             flex-shrink: 1;
-            margin: 1.3889rem .4444rem 0;
+            margin: 1.3889rem 0.4444rem 0;
 
             // Адаптив
-            @media(max-width:575.9px) {
+            @media (max-width: 575.9px) {
                 display: none;
             }
 
@@ -157,7 +145,7 @@
                 }
             }
         }
-        
+
         // Правая часть
         .right {
             display: flex;
@@ -165,13 +153,13 @@
             flex-grow: 0;
             flex-shrink: 0;
             justify-content: center;
-            margin-left: .4444rem;
+            margin-left: 0.4444rem;
             text-align: right;
 
             // Адаптив
-            @media(max-width:575.9px) {
+            @media (max-width: 575.9px) {
                 margin-left: 0;
-                margin-top: .8888rem;
+                margin-top: 0.8888rem;
             }
 
             // Цена
@@ -179,25 +167,24 @@
                 font-size: 1rem;
                 font-weight: 600;
                 line-height: 1.3333rem;
-                margin-bottom: .5555rem;
-                margin-right: .4444rem;
+                margin-bottom: 0.5555rem;
+                margin-right: 0.4444rem;
                 // Адаптив
-                @media(max-width:575.9px) {
-                        display: none;
+                @media (max-width: 575.9px) {
+                    display: none;
                 }
             }
-
 
             // Контейнер под кнопку
             .block_button {
                 font-weight: 500;
                 max-width: 14rem;
                 // Адаптив
-                @media(max-width:575.9px) {
+                @media (max-width: 575.9px) {
                     max-width: none;
                 }
 
-                a.info_price {  
+                a.info_price {
                     width: 100%;
                     display: flex;
                     padding: 5px;
@@ -212,7 +199,7 @@
                 }
             }
         }
-        // Скрытый 
+        // Скрытый
         .hidden {
             display: none;
         }

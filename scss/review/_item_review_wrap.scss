@@ -3,14 +3,11 @@
     margin: 10px 24px;
     align-items: center;
     color: #2d2f43;
-    display: flex;
+    display: inline-block;
     position: relative;
     text-decoration: none;
     min-width: 0;
-    //Обзор
-    .reviews {
-        position: relative;
-
+    position: relative;
         // Звезды
         .stars {
             font-size: 1.1666rem;
@@ -18,7 +15,6 @@
 
             // Рейтинг
             .rating {
-                -ms-flex-align: center;
                 align-items: center;
                 display: -ms-flexbox;
                 display: flex;
@@ -28,7 +24,6 @@
                 // Ярлык
                 .label {
                     font-size: .875em;
-                    -webkit-font-smoothing: antialiased;
                     margin-left: 4px;
                 }
                 
@@ -155,10 +150,9 @@
         }
 
         // Контент
-        .content {
+        .content_review {
             min-height: 3rem;
             position: relative;
-            min-width: 1300px;
             text-align: right;
             
             //Следующий контент
@@ -171,5 +165,4 @@
                 text-decoration: underline;
             }
         }
-    }
 }

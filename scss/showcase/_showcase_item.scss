@@ -35,7 +35,6 @@
                 position: absolute;
                 right: 0;
                 top: 0;
-
                 border-radius: 8px;
                 height: 100%;
                 overflow: hidden;
@@ -63,9 +62,7 @@
                 // Действие 
                 .actions {
                     bottom: 8px;
-                    display: -ms-flexbox;
                     display: flex;
-                    -ms-flex-direction: column;
                     flex-direction: column;
                     position: absolute;
                     right: 8px;
@@ -80,13 +77,11 @@
 
         // Значки 
         .badges {
-            -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
             height: 20px;
             margin-top: 8px;
             align-items: center;
             display: flex;
-            -ms-flex-wrap: wrap;
             flex-wrap: wrap;
             overflow: hidden;
             // Значек
@@ -110,7 +105,6 @@
             .discountBadge {
                 background-color: #ff6262;
                 color: #fff;
-                -ms-flex-negative: 0;
                 flex-shrink: 0;
                 font-size: 12px;
             }
@@ -133,7 +127,6 @@
         }
         // рейтинк
         .rating {
-            -ms-flex-align: center;
             align-items: center;
             font-size: 12px;
             line-height: 14px;

@@ -41,13 +41,13 @@
 
         // Адаптив
         @media(max-width:839.9px) {
-                margin-left: -12px;
-                margin-right: -12px;
+            margin-left: -12px;
+            margin-right: -12px;
         }
         
         @media(max-width:839.9px)and (min-width:768px) {
-                margin-left: -16px;
-                margin-right: -16px;
+            margin-left: -16px;
+            margin-right: -16px;
         }
         
         // контент
@@ -56,30 +56,24 @@
             margin-bottom: -100px;
             overflow-x: hidden;
             padding-bottom: 100px;
-            -ms-overflow-style: none;
             scrollbar-width: none;
-            -ms-flex-direction: column;
             flex-direction: column;
 
             // Адаптив
             @media(max-width:599.9px) {
-                    -ms-flex-direction: row;
                     flex-direction: row;
             }
 
             // Деление на несколько блоков
             .block {
                 display:flex;
-                -ms-flex-align: start;
                 align-items: flex-start;
-                -ms-flex-negative: 0;
                 flex-shrink: 0;
                 justify-content: space-between;
                 margin-top: 32px;
 
                 // Адаптив
                 @media(max-width:599.9px) {
-                        -ms-flex-direction: row;
                         flex-direction: row;
                         margin-top: 0;
                         margin-left: -12px;
@@ -91,7 +85,7 @@
                 }
 
                 // Подгружаемый одъект
-                .cell_block {
+                a.cell_block {
                     flex-basis: 160px;
                     width: 100px;
                     padding-left: 12px;
@@ -105,27 +99,22 @@
                     }
 
                     @media(max-width:839.9px) {
-                        -ms-flex-preferred-size: 100px;
-                        flex-basis: 100px;
                         width: 100px;
                         padding-left: 12px;
                         padding-right: 12px;
                     }
+
                     @media(max-width:839.9px)and (min-width:768px) {
-                            padding-left: 16px;
-                            padding-right: 16px;
-                        
+                        padding-left: 16px;
+                        padding-right: 16px;
                     }
 
                     @media(max-width:839.9px) {
-                            margin-left: -12px;
-                        
-                        
+                        margin-left: -12px;
                     }
 
                     @media(max-width:839.9px)and (min-width:768px) {
-                            margin-left: -16px;
-                        
+                        margin-left: -16px;
                     }
 
                     // Элемент
@@ -147,8 +136,8 @@
                             position: relative;
                             transform: translateZ(0);
                             width: 100%;
-                                background-color: #fff;
-                                border: 1px solid #eff0f4;
+                            background-color: #fff;
+                            border: 1px solid #eff0f4;
 
                                 // Изображение
                                 .image {
@@ -173,6 +162,7 @@
                                 }
                         }
 
+                        // Заголовок
                         .title {
                             display: block;
                             position: relative;
@@ -186,6 +176,7 @@
                             margin-top: 16px;
                             text-align: center;
 
+                            // Адаптив
                             @media (max-width: 767.9px) {
                                 font-size: 12px;
                                 line-height: 14px;

@@ -1,15 +1,18 @@
 // Страница оформления заказа
 #checkout_page {
     margin-top: 10px;
+
     // Шапка
     .form_header {
         box-sizing: border-box;
         max-width: 100%;
         margin-bottom: 12px;
+
         // Адаптив
         @media (min-width: 768px) {
             margin-bottom: 16px;
         }
+
         // Внутренняя часть
         .inner {
             box-sizing: border-box;
@@ -18,38 +21,40 @@
             margin-right: auto;
             padding-left: 6px;
             padding-right: 6px;
-
-            
-            -ms-flex-align: center;
             align-items: center;
             box-sizing: border-box;
             color: #2d2f43;
-            display: -ms-flexbox;
             display: flex;
             margin: 4px auto 8px;
+
             // Адаптив
             @media (min-width: 576px) {
                 padding-left: 6px;
                 padding-right: 6px;
             }
+
             @media (min-width: 768px) {
                 padding-left: 8px;
                 padding-right: 8px;
             }
+
             @media (min-width: 992px) {
                 padding-left: 8px;
                 padding-right: 8px;
             }
+
             @media (min-width: 1300px) {
                 padding-left: 8px;
                 padding-right: 8px;
             }
+
             @media (min-width: 768px) {
                 padding-left: 8px;
                 padding-right: 8px;
             }
         }
     }
+
     // Контент
     .body_content {
         box-sizing: border-box;
@@ -58,6 +63,7 @@
         margin: 0 auto;
         padding-left: 6px;
         padding-right: 6px;
+
         // Адаптив
         @media (min-width: 576px) {
             padding-left: 6px;
@@ -69,71 +75,72 @@
             padding-left: 8px;
             padding-right: 8px;
         }
+
         @media (min-width: 992px) {
             padding-left: 8px;
             padding-right: 8px;
         }
+
         @media (min-width: 1300px) {
             padding-left: 8px;
             padding-right: 8px;
         }
+
         @media (min-width: 768px) {
             padding-left: 8px;
             padding-right: 8px;
         }
+
         // контент
         .content {
-            display: -ms-flexbox;
             display: flex;
-            -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+
             // Адаптив
-            @media(min-width:768px) {
-                -ms-flex-direction: row-reverse;
+            @media (min-width: 768px) {
                 flex-direction: row-reverse;
             }
+
             // Товары
             .items {
-                display: -ms-flexbox;
                 display: flex;
-                -ms-flex-direction: column;
                 flex-direction: column;
-                -ms-flex-negative: 0;
                 flex-shrink: 0;
                 background: #fff;
                 border-radius: 6px;
+
                 // Адаптив
-                @media(max-width:767.9px) {
+                @media (max-width: 767.9px) {
                     margin-top: 24px;
                     margin-bottom: 24px;
                 }
 
-                @media(max-width:767.9px)and (max-width:575.9px) {
+                @media (max-width: 767.9px) and (max-width: 575.9px) {
                     margin-top: 16px;
                     margin-bottom: 16px;
                 }
+
                 //Заголовок товара
                 .header {
-                    -ms-flex-align: center;
                     align-items: center;
                     border-bottom: 1px solid #f2f3f7;
                     color: #2d2f43;
                     display: -ms-flexbox;
                     display: flex;
-                    -ms-flex-direction: row;
                     flex-direction: row;
                     font-size: 18px;
                     font-weight: 500;
-                    -ms-flex-pack: justify;
                     justify-content: space-between;
                     line-height: 22px;
                     padding: 24px;
                     margin: 0;
+
                     // Адаптив
-                    @media(max-width:575.9px) {
+                    @media (max-width: 575.9px) {
                         padding: 16px;
                     }
                 }
+
                 // Товар
                 .item {
                     padding-left: 24px;
@@ -142,19 +149,22 @@
                     overflow: auto;
                     -webkit-overflow-scrolling: touch;
                     -ms-overflow-style: -ms-autohiding-scrollbar;
+
                     // Адаптив
-                    @media(max-width:575.9px) {
+                    @media (max-width: 575.9px) {
                         padding-left: 16px;
                         padding-bottom: 16px;
                         padding-top: 16px;
                     }
                 }
+
                 //цена
                 .pricing {
-                    border-top: 1px solid rgba(0, 0, 0, .06);
+                    border-top: 1px solid rgba(0, 0, 0, 0.06);
                     padding: 24px;
+
                     // Адаптив
-                    @media(max-width:575.9px) {
+                    @media (max-width: 575.9px) {
                         padding: 16px;
                     }
 
@@ -163,6 +173,7 @@
                         border-collapse: collapse;
                         color: #2d2f43;
                         width: 100%;
+
                         tbody {
                             // Обертка
                             .block_item {
@@ -170,19 +181,22 @@
                                 font-size: 14px;
                                 letter-spacing: 0;
                                 line-height: 16px;
+
                                 // Заголовок до ставки
                                 .header_item {
                                     text-align: left;
                                     padding: 6px 0;
                                 }
+
                                 // Итог
                                 .strong {
                                     // Адаптив
-                                    @media(min-width:768px) {
+                                    @media (min-width: 768px) {
                                         font-size: 18px;
                                         line-height: 22px;
                                     }
                                 }
+
                                 // Цена
                                 .value {
                                     font-size: 18px;
@@ -198,16 +212,17 @@
             .params_overley {
                 border-radius: inherit;
                 position: relative;
+
                 // Адаптив
-                @media(max-width:767.9px) {
+                @media (max-width: 767.9px) {
                     padding-bottom: 24px;
                 }
 
-                @media(max-width:767.9px)and (max-width:575.9px) {
+                @media (max-width: 767.9px) and (max-width: 575.9px) {
                     padding-bottom: 16px;
                 }
 
-                @media(min-width:768px) { 
+                @media (min-width: 768px) {
                     box-sizing: border-box;
                     margin-right: 16px;
                     -ms-flex-preferred-size: 100%;
@@ -215,125 +230,143 @@
                     -ms-flex-positive: 1;
                     flex-grow: 1;
                 }
+
                 // Доставка
                 .delivery {
                     background: #fff;
                     border-radius: 6px;
                     padding: 24px;
+
                     // Адаптив
-                    @media(max-width:575.9px) {
+                    @media (max-width: 575.9px) {
                         padding: 16px;
                     }
-                    //Имя доставка 
+
+                    //Имя доставка
                     .header_title {
                         font-size: 18px;
                         font-weight: 500;
                         line-height: 22px;
                         margin-bottom: 8px;
+
                         // Адаптив
-                        @media(max-width:575.9px) {
+                        @media (max-width: 575.9px) {
                             font-size: 14px;
                             line-height: 16px;
                         }
                     }
-                    // Способ доставки 
+
+                    // Способ доставки
                     .delivery_method_items {
                         margin: 0 -24px;
                         padding: 0 24px;
-                        transition: background-color .1s ease-in-out;
+                        transition: background-color 0.1s ease-in-out;
+
                         // Адаптив
-                        @media(max-width:575.9px) {
+                        @media (max-width: 575.9px) {
                             margin: 0 -16px;
                             padding: 0 16px;
                         }
+
                         // Блок элемента
                         .block_item {
                             display: -ms-flexbox;
                             display: flex;
-                            -ms-flex-wrap: wrap;
                             flex-wrap: wrap;
                             margin: 0 -15px 9px 0;
                             padding-top: 8px;
+
                             // Адаптив
-                            @media(max-width:575.9px) {
-                                -ms-flex-direction: column;
+                            @media (max-width: 575.9px) {
                                 flex-direction: column;
-                                -ms-flex-pack: stretch;
                                 justify-content: stretch;
                                 margin-bottom: 1px;
                                 margin-right: -8px;
                             }
                         }
+
                         // Ошибка сообщения
                         .errorMessage {
                             font-size: 14px;
-                            line-height: 16px; 
+                            line-height: 16px;
                             margin-top: 8px;
                             padding-bottom: 8px;
+
                             // Адаптив
-                            @media(min-width:576px) {
+                            @media (min-width: 576px) {
                                 margin-top: -16px;
                             }
                         }
                     }
-                    // Заголовок 
+
+                    // Заголовок
                     .title {
                         font-size: 18px;
                         font-weight: 500;
                         line-height: 22px;
                         margin-bottom: 16px;
                         margin-top: 16px;
+
                         // Адаптив
-                        @media(max-width:575.9px) {
+                        @media (max-width: 575.9px) {
                             font-size: 14px;
                             line-height: 16px;
                         }
                     }
+
                     //Текст
                     .text {
                         color: #8e90a7;
                         font-size: 14px;
                     }
+
                     // Блок редактирования
                     .edit_controls {
                         margin-top: 5px;
-                        // редактирование 
+
+                        // редактирование
                         .edit {
                             color: $mainColor;
                             cursor: pointer;
                             font-size: 14px;
                             font-weight: 500;
+
                             :hover {
                                 color: $mainColor;
                             }
+
                             .icon {
                                 display: inline-block;
-                                height: .8em;
-                                margin-left: .8ex;
+                                height: 0.8em;
+                                margin-left: 0.8ex;
                                 position: relative;
-                                top: -.1em;
+                                top: -0.1em;
                                 vertical-align: middle;
                             }
                         }
                     }
                 }
+
                 // Блок товара
                 .payment_item {
                     background: #fff;
                     border-radius: 6px;
                     padding: 24px;
+
                     // Адаптив
-                    @media(max-width:575.9px) {
+                    @media (max-width: 575.9px) {
                         padding: 16px;
                     }
+
                     // Заголовок товара
                     .header_title {
                         font-size: 18px;
                         font-weight: 500;
                         line-height: 22px;
                         margin-bottom: 8px;
+
                         // Адаптив
-                        @media(max-width:575.9px) {
+                        @media (max-width: 575.9px) {
                             font-size: 14px;
                             line-height: 16px;
                         }
@@ -342,38 +375,39 @@
                     .validation_tabs {
                         margin: 0 -24px;
                         padding: 0 24px;
-                        transition: background-color .1s ease-in-out;
+                        transition: background-color 0.1s ease-in-out;
+
                         // Адаптив
-                        @media(max-width:575.9px) {
+                        @media (max-width: 575.9px) {
                             margin: 0 -16px;
                             padding: 0 16px;
                         }
+
                         // Тут будет товар
                         .tabs {
-                            display: -ms-flexbox;
                             display: flex;
-                            -ms-flex-wrap: wrap;
                             flex-wrap: wrap;
                             margin: 0 -15px 9px 0;
                             padding-top: 8px;
+
                             // Адаптив
-                            @media(max-width:575.9px) {
-                                -ms-flex-direction: column;
+                            @media (max-width: 575.9px) {
                                 flex-direction: column;
-                                -ms-flex-pack: stretch;
                                 justify-content: stretch;
                                 margin-bottom: 1px;
                                 margin-right: -8px;
                             }
                         }
+
                         // сообщение с ошибкой
                         .errorMessage {
                             font-size: 14px;
-                            line-height: 16px; 
+                            line-height: 16px;
                             margin-top: 8px;
                             padding-bottom: 8px;
+
                             // Адаптив
-                            @media(min-width:576px) {
+                            @media (min-width: 576px) {
                                 margin-top: -16px;
                             }
                         }
@@ -381,21 +415,24 @@
 
                     .sticky_on_mobile {
                         // Адаптив
-                        @media(max-width:767.9px) {
+                        @media (max-width: 767.9px) {
                             position: sticky;
                             bottom: 24px;
                         }
+
                         // Адаптив
-                        @media(max-width:767.9px)and (max-width:575.9px) {
+                        @media (max-width: 767.9px) and (max-width: 575.9px) {
                             bottom: 16px;
                         }
+
                         // Оверлей
-                        .overlay{
+                        .overlay {
                             border-radius: inherit;
                             position: relative;
                             border-radius: inherit;
-                            transition: opacity .3s ease-out;
-                            // Контейнер кнопки 
+                            transition: opacity 0.3s ease-out;
+
+                            // Контейнер кнопки
                             .mainButton {
                                 font-size: 16px;
                                 margin-top: 16px;
@@ -408,6 +445,5 @@
                 }
             }
         }
-
     }
 }

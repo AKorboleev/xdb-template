@@ -21,20 +21,18 @@
         }
         //Блок заголовка
         .header {
-            -ms-flex-align: center;
             align-items: center;
             border-bottom: 1px solid rgba(0, 0, 0, .06);
             color: #2d2f43;
             display: -ms-flexbox;
             display: flex;
-            -ms-flex-direction: row;
             flex-direction: row;
             margin: 0 -24px;
             padding: 20px 24px;
             // Адаптив
             @media(max-width:575.9px) {
-                    margin: 0 -16px;
-                    padding: 14px 16px;
+                margin: 0 -16px;
+                padding: 14px 16px;
             }
             // Контент заголовка
             .content {
@@ -60,7 +58,7 @@
                     font-size: .8888rem;
                     font-weight: 500;
                     text-decoration: none;
-
+                    // Иконка для закрытия 
                     .close_icon {
                         color: #8e90a7;
                         height: 14px;

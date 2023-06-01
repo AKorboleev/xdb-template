@@ -1,115 +1,30 @@
-
 // Полный лист
 .fullSheetLong {
     position: relative;
     overflow-y: hidden;
 
     // Адаптив
-    @media(max-width:839.9px) {
-            margin-left: -12px;
-            margin-right: -12px;
+    @media (max-width: 839.9px) {
+        margin-left: -12px;
+        margin-right: -12px;
     }
-    @media(max-width:839.9px)and (min-width:768px) {
-            margin-left: -16px;
-            margin-right: -16px;
+    @media (max-width: 839.9px) and (min-width: 768px) {
+        margin-left: -16px;
+        margin-right: -16px;
     }
     // Обертка с контентом
     .wrapper_content {
-        scrollbar-width: none;
-        
-            &:-webkit-scrollbar {
-            display: none
-        }
 
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
     // Элемент
-    .inner{
+    .inner {
         align-items: stretch;
         display: flex;
         flex-wrap: nowrap;
-        margin: -16px 0 0 -16px
-    }
-    
-    .next,
-    .prev {
-        background: none;
-        border: none;
-        box-shadow: none;
-        margin: 0;
-        padding: 0;
-        align-items: center;
-        background-color: $white;
-        border-radius: 50%;
-        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
-        box-sizing: border-box;
-        color: #2d2f43;
-        cursor: pointer;
-        display: -ms-flexbox;
-        display: flex;
-        height: 40px;
-        justify-content: center;
-        position: absolute;
-        top: calc(50% - 20px);
-        transform-origin: center;
-        transition: 0.2s ease;
-        user-select: none;
-        width: 40px;
-
-        @media (max-width: 839.9px) {
-            display: none;
-        }
-        &:after {
-            border-right: 2px solid;
-            border-top: 2px solid;
-            box-sizing: border-box;
-            content: "";
-            display: block;
-            height: 12px;
-            transform-origin: center;
-            width: 12px;
-        }
-    }
-
-    .prev {
-        left: 10px;
-        padding-left: 6px;
-
-        @media (max-width: 839.9px) {
-            display: none;
-        }
-
-        &:after {
-            transform: rotate(-135deg);
-        }
-        &:hover {
-            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-            color: $mainColor;
-            transform: scale(1.15);
-        }
-        &:hover {
-            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-            color: $mainColor;
-            transform: scale(1.15);
-        }
-    }
-
-    .next {
-        padding-right: 6px;
-        right: 10px;
-
-        @media (max-width: 839.9px) {
-            display: none;
-        }
-
-        &:after {
-            transform: rotate(45deg);
-        }
-
-        &:hover {
-            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-            color: $mainColor;
-            transform: scale(1.15);
-        }
+        margin: -16px 0 0 -16px;
     }
 }
 
@@ -166,7 +81,7 @@
                         font-weight: 600;
                     }
                 }
-                // Сворачивать картинку 
+                // Сворачивать картинку
                 .imageWrap {
                     flex-direction: column;
                     flex-grow: 1;
@@ -192,18 +107,15 @@
                                 background-repeat: no-repeat;
                                 display: inline-block;
                                 transform-origin: center;
-                                transition: transform .3s ease-in-out;
+                                transition: transform 0.3s ease-in-out;
                                 width: 100%;
                                 @include contain;
                             }
                         }
-                        
                     }
                 }
-
             }
         }
-        
     }
 
     // Может стоит занести внутрь класса wrapper

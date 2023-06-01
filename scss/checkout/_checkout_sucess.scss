@@ -1,6 +1,7 @@
 // Блок успешного оформление заказа
 .checkout_sucess {
     margin-top: 12px;
+
     // Адаптив
     @media (min-width: 768px) {
         margin-top: 16px;
@@ -24,28 +25,34 @@
         color: #2d2f43;
         display: inline-flex;
         margin: 4px auto 8px;
+
         // Адаптив
         @media (min-width: 576px) {
             padding-left: 10px;
             padding-right: 6px;
         }
+
         @media (min-width: 768px) {
             padding-left: 20px;
             padding-right: 8px;
         }
+
         @media (min-width: 992px) {
             padding-left: 20px;
             padding-right: 8px;
         }
+
         @media (min-width: 1300px) {
             padding-left: 20px;
             padding-right: 8px;
         }
+
         @media (min-width: 768px) {
             padding-left: 20px;
             margin-bottom: 16px;
         }
     }
+
     // Контент заказа
     .order_content {
         box-sizing: border-box;
@@ -71,30 +78,37 @@
             padding-left: 10px;
             padding-right: 6px;
         }
+
         @media (min-width: 768px) {
             padding-left: 20px;
             padding-right: 8px;
         }
+
         @media (min-width: 992px) {
             padding-left: 20px;
             padding-right: 8px;
         }
+
         @media (min-width: 1300px) {
             padding-left: 20px;
             padding-right: 8px;
         }
+
         @media (min-width: 768px) {
             padding-left: 20px;
         }
+
         // Блок Таблицы
         .row_block {
             background-color: #fff;
             border-radius: 16px;
             overflow: hidden;
-            // Сообщение 
+
+            // Сообщение
             .sucessMessage {
                 background-color: #fff;
                 color: #2d2f43;
+
                 // Контент сообщения
                 .content_sucess_message {
                     -ms-flex-align: stretch;
@@ -106,31 +120,37 @@
                     padding: 80px 40px 40px;
                     position: relative;
                     text-align: center;
+
                     // Адаптив
-                    @media(max-width:575.9px) {
+                    @media (max-width: 575.9px) {
                         padding: 32px 16px 40px;
                     }
+
                     // Заголовок сообщения
                     .title_sucess_message {
                         color: #3d3f56;
                         font-size: 30px;
                         font-weight: 700;
                         line-height: normal;
+
                         // Адаптив
-                        @media(max-width:575.9px) {
+                        @media (max-width: 575.9px) {
                             font-size: 24px;
                         }
                     }
-                    // Текстсообщения 
+
+                    // Текстсообщения
                     .text_sucess_message {
                         font-size: 16px;
                         line-height: 1.44em;
                         margin-top: 16px;
+
                         // Адаптив
-                        @media(max-width:575.9px) {
+                        @media (max-width: 575.9px) {
                             font-size: 14px;
                         }
                     }
+
                     // Действие
                     .actions {
                         margin-top: 16px;
@@ -139,13 +159,16 @@
                         span.inner_link {
                             display: inline-block;
                             margin: -6px;
+
                             @media (min-width: 768px) {
                                 margin: -8px;
                             }
+
                             // Ссылка кортинки
                             .link_img {
                                 display: inline-block;
                                 margin: 6px;
+
                                 // Адаптив
                                 @media (min-width: 768px) {
                                     margin: 8px;
@@ -155,38 +178,40 @@
                     }
                 }
             }
+
             // Информация о заказе
             .orders_info {
                 padding: 0 64px;
 
                 // Адаптив
-                @media(max-width:575.9px) {
+                @media (max-width: 575.9px) {
                     padding: 0 16px;
-                }  
+                }
+
                 // Заголовок ордера
                 .title_orders_info {
                     color: #2d2f43;
                     font-size: 20px;
                     font-weight: 700;
                     line-height: 24px;
-                    text-align: center
+                    text-align: center;
                 }
+
                 // Информация заказа
                 .container_order_info {
                     padding: 10px 0 40px;
+
                     // Таблица для разделения контента
                     .row_inner {
                         display: flex;
-                        -ms-flex-pack: stretch;
                         justify-content: stretch;
 
                         // Адаптив
-                        @media(max-width:767.9px) {
-                            -ms-flex-align: stretch;
+                        @media (max-width: 767.9px) {
                             align-items: stretch;
-                            -ms-flex-direction: column;
-                            flex-direction: column
+                            flex-direction: column;
                         }
+
                         //Элемент
                         .item {
                             color: #2d2f43;
@@ -198,80 +223,84 @@
                             width: calc(50% - 16px);
 
                             // Адаптив
-                            @media(max-width:767.9px) {    
+                            @media (max-width: 767.9px) {
                                 width: auto;
                             }
-                            
-                            @media(max-width:575.9px) {    
+
+                            @media (max-width: 575.9px) {
                                 font-size: 14px;
                             }
+
                             // Заголовок элемента
                             .item_title {
                                 box-sizing: border-box;
-                                -ms-flex-negative: 0;
                                 flex-shrink: 0;
                                 font-weight: 500;
                                 padding-right: 16px;
                                 width: 160px;
-    
+
                                 // Адаптив
-                                @media(max-width:575.9px) {
+                                @media (max-width: 575.9px) {
                                     width: 120px;
                                 }
                             }
+
                             // Текст элемента
                             .item_text {
                                 color: #3d3f56;
                                 font-weight: 400;
-                                word-break: break-word
+                                word-break: break-word;
                             }
                         }
                     }
                 }
             }
+
             // Контейнер кэшбека
             .cashback {
                 display: -ms-flexbox;
                 display: flex;
                 font-size: 16px;
-                -ms-flex-pack: center;
                 justify-content: center;
                 margin-bottom: 48px;
                 padding: 0 40px;
 
-                // Сообщение 
+                // Сообщение
                 .message {
                     background-image: linear-gradient(278deg, $mainColor, #f5a54e);
                     border-radius: 6px;
-                    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+                    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
                     box-sizing: border-box;
                     color: #fff;
                     font-weight: 700;
                     line-height: 1.46em;
                     max-width: 480px;
                     padding: 12px 16px;
-                    text-align: center
+                    text-align: center;
                 }
             }
+
             //Избранные категории
             .favorite_category_promo {
                 background-color: #fff;
                 padding: 2.2222rem;
 
                 // Адаптив
-                @media(max-width:575.9px) {
+                @media (max-width: 575.9px) {
                     padding: 1.1111rem;
                 }
+
                 // контейнер избранные категории
                 .container_favoriteCategoryPromo {
                     color: #3d3f56;
                     text-align: center;
+
                     // Купон
-                    .coupon{
+                    .coupon {
                         -ms-flex-align: center;
                         align-items: center;
                         background: linear-gradient(270deg, #8e62dc, #f06292);
-                        border-radius: .1667rem;
+                        border-radius: 0.1667rem;
                         box-sizing: border-box;
                         color: #fff;
                         display: -ms-inline-flexbox;
@@ -284,9 +313,8 @@
                         margin-right: 1rem;
                         overflow: hidden;
                         position: relative;
-                        vertical-align: .1333rem;
+                        vertical-align: 0.1333rem;
                         width: 2.7778rem;
-
 
                         &:after,
                         &:before {
@@ -294,38 +322,41 @@
                             border-radius: 50%;
                             content: "";
                             display: block;
-                            height: .6667rem;
+                            height: 0.6667rem;
                             position: absolute;
                             top: 50%;
                             transform: translateY(-50%);
-                            width: .6667rem
+                            width: 0.6667rem;
                         }
 
                         &:after {
-                            left: -.3333rem
+                            left: -0.3333rem;
                         }
 
                         &:before {
-                            right: -.3333rem
+                            right: -0.3333rem;
                         }
                     }
+
                     // Заголовок купона
-                    .title{
+                    .title {
                         font-size: 1.6667rem;
 
                         // Адаптив
-                        @media(max-width:575.9px) {
+                        @media (max-width: 575.9px) {
                             font-size: 1.3333rem;
                         }
+
                         // Кнопка информирующая о купоне
                         .helpButton {
                             display: inline-block;
-                            font-size: .75em;
+                            font-size: 0.75em;
                             height: 1.33335em;
                             line-height: 1.33335em;
                             position: relative;
                             vertical-align: middle;
                             width: 1.33335em;
+
                             // Иконка купона
                             .icon {
                                 background: none;
@@ -333,7 +364,8 @@
                                 box-shadow: none;
                                 margin: 0;
                                 padding: 0;
-                                background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTcgLjMzM0E2LjY3IDYuNjcgMCAwMC4zMzMgNyA2LjY3IDYuNjcgMCAwMDcgMTMuNjY3IDYuNjcgNi42NyAwIDAwMTMuNjY2IDcgNi42NjkgNi42NjkgMCAwMDcgLjMzM3ptMCAxMGEuNjY5LjY2OSAwIDAxLS42NjctLjY2NlY3YzAtLjM2Ny4zLS42NjcuNjY3LS42NjcuMzY2IDAgLjY2Ni4zLjY2Ni42Njd2Mi42NjdjMCAuMzY2LS4zLjY2Ni0uNjY2LjY2NnpNNy42NjYgNUg2LjMzM1YzLjY2N2gxLjMzM1Y1eiIgZmlsbD0iI0IyQjNDMiIvPjwvc3ZnPg==) #fff no-repeat 50%/contain;
+                                background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTcgLjMzM0E2LjY3IDYuNjcgMCAwMC4zMzMgNyA2LjY3IDYuNjcgMCAwMDcgMTMuNjY3IDYuNjcgNi42NyAwIDAwMTMuNjY2IDcgNi42NjkgNi42NjkgMCAwMDcgLjMzM3ptMCAxMGEuNjY5LjY2OSAwIDAxLS42NjctLjY2NlY3YzAtLjM2Ny4zLS42NjcuNjY3LS42NjcuMzY2IDAgLjY2Ni4zLjY2Ni42Njd2Mi42NjdjMCAuMzY2LS4zLjY2Ni0uNjY2LjY2NnpNNy42NjYgNUg2LjMzM1YzLjY2N2gxLjMzM1Y1eiIgZmlsbD0iI0IyQjNDMiIvPjwvc3ZnPg==)
+                                    #fff no-repeat 50% / contain;
                                 border-radius: 50%;
                                 display: block;
                                 height: 100%;
@@ -342,7 +374,7 @@
                                 width: 100%;
 
                                 // Адаптив
-                                @media(max-width:575.9px) {
+                                @media (max-width: 575.9px) {
                                     border-radius: 10px;
                                     content: "";
                                     cursor: inherit;
@@ -357,29 +389,32 @@
                             }
                         }
                     }
-               }
+                }
+
                 // Описание
                 .description {
                     color: #2d2f43;
-                    font-size: .8889rem;
+                    font-size: 0.8889rem;
                     line-height: 1.44em;
                     margin: 10px 0;
                     text-align: center;
 
                     // Адаптив
-                    @media(max-width:575.9px) {
+                    @media (max-width: 575.9px) {
                         font-size: 1rem;
                     }
                 }
+
                 // Контент опиисания
                 .content_description {
                     margin-top: 2.2222rem;
 
                     // Адаптив
-                    @media(max-width:575.9px) {
+                    @media (max-width: 575.9px) {
                         margin-top: 1rem;
                     }
-                    // Катигория описания 
+
+                    // Катигория описания
                     .categories_description {
                         box-sizing: border-box;
                         display: -ms-flexbox;
@@ -391,34 +426,34 @@
                         margin-bottom: -8px;
 
                         // Адаптив
-                        @media(min-width:576px) {
+                        @media (min-width: 576px) {
                             margin-left: -10px;
                             margin-right: -10px;
                         }
-                        
-                        @media(min-width:768px) {
+
+                        @media (min-width: 768px) {
                             margin-left: -20px;
-                            margin-right: -20px
+                            margin-right: -20px;
                         }
-                        
-                        @media(min-width:992px) {
+
+                        @media (min-width: 992px) {
                             margin-left: -20px;
-                            margin-right: -20px
+                            margin-right: -20px;
                         }
-                        
-                        @media(min-width:1300px) {
+
+                        @media (min-width: 1300px) {
                             margin-left: -20px;
-                            margin-right: -20px
-                            
+                            margin-right: -20px;
                         }
-                        
-                        @media(min-width:576px) {
-                            margin-bottom: -20px
+
+                        @media (min-width: 576px) {
+                            margin-bottom: -20px;
                         }
-                        
-                        @media(min-width:768px) {
-                            margin-bottom: -40px
+
+                        @media (min-width: 768px) {
+                            margin-bottom: -40px;
                         }
+
                         // Обертка элемента
                         .item_wrap {
                             box-sizing: border-box;
@@ -427,57 +462,54 @@
                             width: 100%;
                             padding-left: 4px;
                             padding-right: 4px;
-                            -ms-flex: 0 0 33.3333333333%;
                             flex: 0 0 33.3333333333%;
                             max-width: 33.3333333333%;
                             margin-bottom: 8px;
 
                             // Адаптив
-                            @media(min-width:576px) {
+                            @media (min-width: 576px) {
                                 padding-left: 10px;
                                 padding-right: 10px;
                             }
-                            
-                            @media(min-width:768px) {
+
+                            @media (min-width: 768px) {
                                 padding-left: 20px;
                                 padding-right: 20px;
                             }
-                            
-                            @media(min-width:992px) {
+
+                            @media (min-width: 992px) {
                                 padding-left: 20px;
                                 padding-right: 20px;
                             }
-                            
-                            @media(min-width:1300px) {
+
+                            @media (min-width: 1300px) {
                                 padding-left: 20px;
                                 padding-right: 20px;
                             }
-                            
-                            @media(min-width:576px) {
+
+                            @media (min-width: 576px) {
                                 margin-bottom: 20px;
                             }
-                            
-                            @media(min-width:768px) {
+
+                            @media (min-width: 768px) {
                                 margin-bottom: 40px;
                             }
-                            
-                            @media(max-width:767.9px) {
-                                -ms-flex: 0 0 50%;
+
+                            @media (max-width: 767.9px) {
                                 flex: 0 0 50%;
                                 max-width: 50%;
                             }
-                            
-                            @media(max-width:575.9px) {
-                                -ms-flex: 0 0 100%;
+
+                            @media (max-width: 575.9px) {
                                 flex: 0 0 100%;
                                 max-width: 100;
                             }
+
                             // Элементы
                             .item {
-                                -ms-flex-align: center;
                                 align-items: center;
                                 background-color: #e9e9eb;
-                                border-radius: .3333rem;
+                                border-radius: 0.3333rem;
                                 box-sizing: border-box;
                                 color: #2d2f43;
                                 cursor: pointer;
@@ -485,40 +517,35 @@
                                 display: flex;
                                 font-size: 1.3333rem;
                                 height: 11rem;
-                                -ms-flex-pack: center;
                                 justify-content: center;
                                 padding: 1rem 2rem;
                                 position: relative;
                                 text-align: center;
-                                -webkit-user-select: none;
-                                -moz-user-select: none;
-                                -ms-user-select: none;
                                 user-select: none;
 
                                 // Адаптив
-                                @media(max-width:767.9px) {
+                                @media (max-width: 767.9px) {
                                     height: 8rem;
                                 }
-                                
-                                @media(max-width:575.9px) {
+
+                                @media (max-width: 575.9px) {
                                     font-size: 1.1111rem;
                                     height: 5.3334rem;
                                 }
                             }
-                            
                         }
                     }
-                } 
+                }
+
                 // Действие
                 .actions {
                     background-color: inherit;
                     display: flex;
-                    -ms-flex-pack: center;
                     justify-content: center;
                     margin: 10px auto;
                     width: 25%;
                 }
             }
-        } 
+        }
     }
 }

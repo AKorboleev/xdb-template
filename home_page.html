@@ -154,7 +154,7 @@
                 }
                 //---------------------------------------------------------------------------
                 // Предыдущий
-                $('button.prev___35owH').click(function()
+                $('button.prev').click(function()
                 {
                     // К первому слева невидимому или видимому не полностью
                     // Всегда переходим к левому от полностью видимого слайда
@@ -166,9 +166,9 @@
         //			var value = $('div#week-actions').scrollLeft() - slide;
         
                     // Берем размер слайда, cfSDy - большой слайдер, 3Oi8v - промоакция, 1LYLC - предложение
-                    var slide = $(this).parent().find('div.cell___cfSDy, div.cell___3Oi8v, div.cell___1LYLC').last().outerWidth(true);
+                    var slide = $(this).parent().find('div.cell_big, div.cell_promo, div.cell___1LYLC').last().outerWidth(true);
                     // Прибавляем к текущему положению размер слайда
-                    var value = $(this).parent().find('div.content___14fC9.nativeScroll___2Cg7K').scrollLeft() - slide;
+                    var value = $(this).parent().find('div.content_swap.nativeScroll').scrollLeft() - slide;
         
         
                     // Убираем фокус с кнопки
@@ -177,11 +177,11 @@
         
                     // Анимируем сдвиг полосы прокрутки
         //			$(this).parent().find('div.content___14fC9.nativeScroll___2Cg7K').scrollLeft(value);
-                    $(this).parent().find('div.content___14fC9.nativeScroll___2Cg7K').stop().animate({scrollLeft:value});
+                    $(this).parent().find('div.content_swap.nativeScroll').stop().animate({scrollLeft:value});
                 });
                 //---------------------------------------------------------------------------
                 // Следующий
-                $('button.next___d3E5Z').click(function()
+                $('button.next').click(function()
                 {
                     // Всегда переходим ко второму видимому элементу
                     // Всегда переходим к правому от частично или полностью видимого слайда
@@ -195,17 +195,17 @@
         //			var value = $('div#test').offset().left - 16 - 10.7667;
         
                     // Берем размер слайда, cfSDy - большой слайдер, 3Oi8v - промоакция, 1LYLC - предложение
-                    var slide = $(this).parent().find('div.cell___cfSDy, div.cell___3Oi8v, div.cell___1LYLC').last().outerWidth(true);
+                    var slide = $(this).parent().find('div.cell_big, div.cell_promo, div.cell___1LYLC').last().outerWidth(true);
                     // Прибавляем к текущему положению размер слайда
-                    var value = $(this).parent().find('div.content___14fC9.nativeScroll___2Cg7K').scrollLeft() + slide;
+                    var value = $(this).parent().find('div.content_swap.nativeScroll').scrollLeft() + slide;
         
                     // Убираем фокус с кнопки
         //			$('button.next___d3E5Z').blur();
                     $(this).blur();
         
-                    // Анимируем сдвиг полосы прокрутки
+                    // Анимируем сдвиг полосы прокрутки   
         //			$(this).parent().find('div.content___14fC9.nativeScroll___2Cg7K').scrollLeft(value);
-                    $(this).parent().find('div.content___14fC9.nativeScroll___2Cg7K').stop().animate({scrollLeft:value});
+                    $(this).parent().find('div.content_swap.nativeScroll').stop().animate({scrollLeft:value});
                 });
                 //---------------------------------------------------------------------------
         
@@ -216,4 +216,4 @@
 </main>
 
 </body>
-</html>
+</html> 

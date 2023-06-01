@@ -9,7 +9,7 @@
         min-height: 100%;
         position: relative;
         // Адаптив
-        @media(max-width:575.9px) {
+        @media (max-width: 575.9px) {
             display: block;
             margin-bottom: 8px;
             margin-right: 8px;
@@ -17,7 +17,7 @@
         // Блок для обертки
         .block_1 {
             align-items: center;
-            border: 1px solid rgba(0, 0, 0, .08);
+            border: 1px solid rgba(0, 0, 0, 0.08);
             border-radius: 4px;
             box-sizing: border-box;
             color: #2d2f43;
@@ -32,14 +32,9 @@
             padding: 8px 20px;
             text-align: center;
             user-select: none;
-
-            
-            -ms-flex-align: start;
             align-items: flex-start;
             padding-left: 60px;
             text-align: left;
-
-            -ms-flex-pack: start;
             justify-content: flex-start;
 
             &:focus,
@@ -52,22 +47,20 @@
                 margin-top: 3px;
 
                 // Адаптив
-                @media(max-width:575.9px) {
+                @media (max-width: 575.9px) {
                     margin: 1px 0;
                 }
             }
             // Иконка
             .icon {
-                -ms-flex-align: center;
                 align-items: center;
                 display: -ms-flexbox;
                 display: flex;
                 height: 23px;
-                -ms-flex-pack: center;
                 justify-content: center;
 
                 // Адаптив
-                @media(max-width:575.9px) {
+                @media (max-width: 575.9px) {
                     left: 30px;
                     position: absolute;
                     top: 50%;
@@ -81,7 +74,7 @@
                 white-space: nowrap;
 
                 // Адаптив
-                @media(max-width:575.9px) {
+                @media (max-width: 575.9px) {
                     white-space: normal;
                 }
             }
@@ -95,7 +88,7 @@
                 white-space: nowrap;
 
                 // Адаптив
-                @media(max-width:575.9px) {
+                @media (max-width: 575.9px) {
                     white-space: normal;
                 }
             }

@@ -1,62 +1,68 @@
+// Мой заказ
 .my_order {
     margin: 0 2%;
+    // Вверхняя часть заказа
     .top_order {
         display: flex;
         justify-content: space-between;
-        padding: 1rem .8889rem;
-
+        padding: 1rem 0.8889rem;
+        // Текст заказа
         .text_order {
             color: #9697a1;
             margin-right: 0.4445rem;
             font-size: 12px;
         }
-
+        // Обертка контента обертки
         .content_buttom {
             display: flex;
             color: rgb(255, 255, 255);
             background-color: rgb(178, 179, 194);
-            border-radius:3px;
+            border-radius: 3px;
             font-size: 12px;
             padding: 0.1222rem 0.8667rem 0.1778rem;
         }
     }
-
+    // Граница заказа
     .orderLayout {
         display: flex;
-        font-size: .7777rem;
+        font-size: 0.7777rem;
         line-height: 1.1111rem;
-        padding: .8888rem;
+        padding: 0.8888rem;
 
-        @media(max-width:575.9px) {
+        // Адаптива
+        @media (max-width: 575.9px) {
             flex-direction: column;
         }
 
+        // Левая часть
         .left {
             display: flex;
             flex-basis: 35%;
             flex-shrink: 0;
-            margin-right: .4444rem;
+            margin-right: 0.4444rem;
 
-            @media(max-width:575.9px) {
+            // адаптив
+            @media (max-width: 575.9px) {
                 flex-basis: auto;
             }
 
+            // Сылка картинки
             a.img {
                 background: none;
                 border: none;
                 box-shadow: none;
                 padding: 0;
-                border-radius: .2222rem;
+                border-radius: 0.2222rem;
                 cursor: pointer;
                 flex-shrink: 0;
                 height: 5.55555rem;
-                margin: 0 .8888rem 0 0;
+                margin: 0 0.8888rem 0 0;
                 overflow: hidden;
                 position: relative;
                 width: 5.55555rem;
 
                 &:after {
-                    background-color: rgba(0, 0, 0, .04);
+                    background-color: rgba(0, 0, 0, 0.04);
                     content: "";
                     display: block;
                     height: 100%;
@@ -66,7 +72,7 @@
                     top: 0;
                     width: 100%;
                 }
-
+                // Картинка
                 img.image_order {
                     background-repeat: no-repeat;
                     display: inline-block;
@@ -76,41 +82,41 @@
         }
     }
 
+    // аддрес доставки
     .delivery_addresses {
         margin: 2%;
+        // Верхняя часть доставки
         .top_adresses {
             display: flex;
             justify-content: space-between;
-            font-size: .7777rem;
+            font-size: 0.7777rem;
 
+            // изменение кнопки адресса
             .button_adresses_edit {
                 color: $mainColor;
             }
-            
         }
-
+        // Контент адреса доставки
         .content_delivery_address {
             font-size: 14px;
             margin-top: 8px;
         }
     }
-    
+
+    // Карточка страницы посылки внутри
     .parcel_page_card_inner {
         border-bottom: 1px solid #e0e0e0;
         padding-bottom: 0.8888rem;
         margin: 0 2%;
         font-size: 14px;
-    }
-
-    .parcel_page_card_inner {
-        font-size: .7778rem;
+        font-size: 0.7778rem;
         font-weight: 600;
     }
 
+    // Информация адреса заказа
     .info_address_order {
         align-items: center;
         color: #2d2f43;
-        display: -ms-flexbox;
         display: flex;
         flex-direction: row;
         position: relative;
@@ -118,14 +124,16 @@
         padding-bottom: 24px;
         padding-top: 24px;
 
+        // Пустая часть
         .empty {
             margin: 1rem 0;
-            opacity: .5;
+            opacity: 0.5;
             text-align: center;
 
+            // Текст
             .empty_text {
                 color: #9697a1;
-                font-size: .8333em;
+                font-size: 0.8333em;
                 line-height: 1.3;
                 margin: 1em auto;
                 max-width: 23em;
@@ -134,27 +142,31 @@
         }
     }
 
+    // Отменить заказ
     .cancel_order {
         display: flex;
         justify-content: center;
-        color:$mainColor;
+        color: $mainColor;
     }
-
+    // Размер продукта
     .product_big {
         margin: 0 2%;
 
+        // Заголовок продукта
         .small_header {
             font-weight: 500;
             font-size: 12px;
         }
     }
 }
-
+// Дополнительная информация
 .additional_info {
+    // Заголовок
     .support_header {
         font-weight: 500;
     }
-    
+
+    // Сервис поддержки
     .support_service {
         width: 100%;
         padding: 0.735em 1em;
@@ -163,18 +175,19 @@
         color: #ff7676;
         border-radius: 10px;
     }
-    
+
+    // Слежка за посылкой
     .follow_parcel {
-        font-size: .7778rem;
+        font-size: 0.7778rem;
         font-weight: 500;
-    
-    
+
+        // Картинка
         .map {
             position: relative;
             height: 192px;
             padding-top: 100%;
             &:after {
-                background: rgba(0, 0, 0, .02);
+                background: rgba(0, 0, 0, 0.02);
                 content: "";
                 height: 100%;
                 left: 0;
@@ -184,7 +197,7 @@
                 user-select: none;
                 width: 100%;
             }
-            
+            // Квадрат
             .square {
                 border-radius: inherit;
                 bottom: 0;
@@ -192,26 +205,29 @@
                 position: absolute;
                 right: 0;
                 top: 0;
-    
+
                 .iframe {
                     background: #fff;
                     border: none;
                     height: 100%;
                     margin: 0;
                     padding: 0;
-                    width: 100%
+                    width: 100%;
                 }
             }
         }
     }
 
+    // Обертка информации адреса
     .info_address {
         margin: 0 2%;
+        // Информация
         .info {
-            color:$grey;
+            color: $grey;
             margin-top: 1%;
         }
 
+        // Улица
         .street {
             margin-top: 1%;
             font-weight: 600;

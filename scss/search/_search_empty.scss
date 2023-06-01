@@ -58,13 +58,11 @@
         border-radius: 0.3333rem;
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         line-height: 1em;
         padding: 0 0.6667rem 0.6667rem 0;
         margin-left: -0.6667rem;
         padding: 0;
-
 
         // Адаптив
         @media (max-width: 767.9px) {
