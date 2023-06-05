@@ -46,6 +46,9 @@
 	
 	<link rel="stylesheet" href="/css/style.min.css">
 
+	<!-- scroll ls -->
+	<script src="/js/scroll.js"></script>
+
 
 [XDB_SPECIFIC_LIB]
 
@@ -55,375 +58,375 @@
 
 <body class="">
 	<div class="container-xxl">	
-<header class="header">
-	<div class="container-xxl">
-	<div class="header_top">
-		<div class="nav_bar">
-			<div class="left_section">
-				<div class="navBar_language">
-					<div role="button" tabindex="0" class="wrapper">
-						<div class="select_button">
-							<div class="icon">
-								<img alt="RU" class="image" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDIxIDE1Ij48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0wIDBoMjF2MTVIMHoiLz48cGF0aCBmaWxsPSIjMkU1QkIzIiBkPSJNMCA1aDIxdjVIMHoiLz48cGF0aCBmaWxsPSIjQ0YyMzM4IiBkPSJNMCAxMGgyMXY1SDB6Ii8+PC9nPjwvc3ZnPg==">
-							</div><span class="countries">Русский</span>	
-							<svg width="9" height="6" class="selectArrow">
-								<path d="M1.414.536h6.243a1 1 0 01.707 1.707L5.243 5.364a1 1 0 01-1.415 0L.708 2.243A1 1 0 011.413.536z" fill="#8E90A7"></path>
-							</svg>
-						</div>
-					</div>
-				</div>
-				<div class="navBar_language">
-					<div class="wrapper">
-						<div role="button" tabindex="0" class="button_lang">RUB
-							<svg width="9" height="6" class="selectArrow">
-								<path d="M1.414.536h6.243a1 1 0 01.707 1.707L5.243 5.364a1 1 0 01-1.415 0L.708 2.243A1 1 0 011.413.536z" fill="#8E90A7"></path>
-							</svg>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="right_section">
-				<nav>
-					<a href="/ru/faq">Поддержка</a>
-					<a href="/ru/faq">Доставка</a>
-					<a href="/ru/faq">Гарантия</a>
-				</nav>
-			</div>
-		</div>
-	</div>
-		<!-- Дорабоать, некоторые классы не находятся в нужном файле  -->
-		<!-- Решить что делать с ненужными классами, позже подумаю нужно ли их удалять  -->
-	<div class="header__button">
-		<div class="tables">
-			<!-- мобильная разарботка -->
-			<div class="side">
-				<div class="burger" role="button" tabindex="0" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvas-navbar"></div>
-				<!-- выпадающая менюшка, стоит переделать под норм верстку, не думаю что предется выносить  -->
-				<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-navbar">
-					<div class="offcanvas-header justify-content-start bg-light">
-						<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-						<div class="info">
-							<img src="[MARKET_LOGO]" border="0" style="height: 20px;">
-						</div>
-					</div>
-					<div class="offcanvas-body">
-						<nav class_="list-unstyled">
-							<a class="child___1-Ce8" href="/search/?type=1206">
-								<span class="icon___1dOOe">
-									<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/beauty/icn_beauty_mdpi.png" srcset="https://resources.joomcdn.net/categories/beauty/icn_beauty_mdpi.png 26w, https://resources.joomcdn.net/categories/beauty/icn_beauty_hdpi.png 39w, https://resources.joomcdn.net/categories/beauty/icn_beauty_xhdpi.png 52w, https://resources.joomcdn.net/categories/beauty/icn_beauty_xxhdpi.png 78w, https://resources.joomcdn.net/categories/beauty/icn_beauty_xxxhdpi.png 104w" sizes="1.5em">
-								</span>
-								<span class="text___1wQYt">Красота</span>
-							</a>
-							<a class="child___1-Ce8" href="/search/?type=1206">
-								<span class="icon___1dOOe">
-									<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/health/icn_health_mdpi.png" srcset="https://resources.joomcdn.net/categories/health/icn_health_mdpi.png 48w, https://resources.joomcdn.net/categories/health/icn_health_hdpi.png 72w, https://resources.joomcdn.net/categories/health/icn_health_xhdpi.png 96w, https://resources.joomcdn.net/categories/health/icn_health_xxhdpi.png 144w, https://resources.joomcdn.net/categories/health/icn_health_xxxhdpi.png 192w" sizes="1.5em">
-								</span>
-								<span class="text___1wQYt">Здоровье</span>
-							</a>
-							<a class="child___1-Ce8" href="/search/?type=2874">
-								<span class="icon___1dOOe">
-									<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/womens_clothing/icn_womens_clothing_mdpi.png" srcset="https://resources.joomcdn.net/categories/womens_clothing/icn_womens_clothing_mdpi.png 42w, https://resources.joomcdn.net/categories/womens_clothing/icn_womens_clothing_hdpi.png 63w, https://resources.joomcdn.net/categories/womens_clothing/icn_womens_clothing_xhdpi.png 84w, https://resources.joomcdn.net/categories/womens_clothing/icn_womens_clothing_xxhdpi.png 126w, https://resources.joomcdn.net/categories/womens_clothing/icn_womens_clothing_xxxhdpi.png 168w" sizes="1.5em">
-								</span>
-								<span class="text___1wQYt">Одежда для девочек</span>
-							</a>
-							<a class="child___1-Ce8" href="/search/?type=1837">
-								<span class="icon___1dOOe">
-									<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/homeliness/icn_homeliness_mdpi.png" srcset="https://resources.joomcdn.net/categories/homeliness/icn_homeliness_mdpi.png 46w, https://resources.joomcdn.net/categories/homeliness/icn_homeliness_hdpi.png 69w, https://resources.joomcdn.net/categories/homeliness/icn_homeliness_xhdpi.png 92w, https://resources.joomcdn.net/categories/homeliness/icn_homeliness_xxhdpi.png 138w, https://resources.joomcdn.net/categories/homeliness/icn_homeliness_xxxhdpi.png 184w" sizes="1.5em">
-								</span>
-								<span class="text___1wQYt">Товары для дома</span>
-							</a>
-							<a class="child___1-Ce8" href="/search/?type=5">
-								<span class="icon___1dOOe">
-									<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/electronics/icn_electronics_mdpi.png" srcset="https://resources.joomcdn.net/categories/electronics/icn_electronics_mdpi.png 46w, https://resources.joomcdn.net/categories/electronics/icn_electronics_hdpi.png 69w, https://resources.joomcdn.net/categories/electronics/icn_electronics_xhdpi.png 92w, https://resources.joomcdn.net/categories/electronics/icn_electronics_xxhdpi.png 138w, https://resources.joomcdn.net/categories/electronics/icn_electronics_xxxhdpi.png 184w" sizes="1.5em">
-								</span>
-								<span class="text___1wQYt">Электроника</span>
-							</a>
-							<a class="child___1-Ce8" href="/search/?type=16">
-								<span class="icon___1dOOe">
-									<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/sex/icn_sex_mdpi.png" srcset="https://resources.joomcdn.net/categories/sex/icn_sex_mdpi.png 46w, https://resources.joomcdn.net/categories/sex/icn_sex_hdpi.png 69w, https://resources.joomcdn.net/categories/sex/icn_sex_xhdpi.png 92w, https://resources.joomcdn.net/categories/sex/icn_sex_xxhdpi.png 138w, https://resources.joomcdn.net/categories/sex/icn_sex_xxxhdpi.png 184w" sizes="1.5em">
-								</span>
-								<span class="text___1wQYt">Товары для взрослых</span>
-							</a>
-							<a class="child___1-Ce8" href="/search/?type=2884">
-								<span class="icon___1dOOe">
-									<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/mans_clothing/icn_mans_clothing_mdpi.png" srcset="https://resources.joomcdn.net/categories/mans_clothing/icn_mans_clothing_mdpi.png 46w, https://resources.joomcdn.net/categories/mans_clothing/icn_mans_clothing_hdpi.png 69w, https://resources.joomcdn.net/categories/mans_clothing/icn_mans_clothing_xhdpi.png 92w, https://resources.joomcdn.net/categories/mans_clothing/icn_mans_clothing_xxhdpi.png 138w, https://resources.joomcdn.net/categories/mans_clothing/icn_mans_clothing_xxxhdpi.png 184w" sizes="1.5em">
-								</span>
-								<span class="text___1wQYt">Одежда для мальчиков</span>
-							</a>
-							<a class="child___1-Ce8" href="/search/?type=244">
-								<span class="icon___1dOOe">
-									<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/auto/icn_auto_mdpi.png" srcset="https://resources.joomcdn.net/categories/auto/icn_auto_mdpi.png 46w, https://resources.joomcdn.net/categories/auto/icn_auto_hdpi.png 69w, https://resources.joomcdn.net/categories/auto/icn_auto_xhdpi.png 92w, https://resources.joomcdn.net/categories/auto/icn_auto_xxhdpi.png 138w, https://resources.joomcdn.net/categories/auto/icn_auto_xxxhdpi.png 184w" sizes="1.5em">
-								</span>
-								<span class="text___1wQYt">Автомобили и мотоциклы</span>
-							</a>
-							<a class="child___1-Ce8" href="/search/?type=1276">
-								<span class="icon___1dOOe">
-									<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/building/icn_building_mdpi.png" srcset="https://resources.joomcdn.net/categories/building/icn_building_mdpi.png 48w, https://resources.joomcdn.net/categories/building/icn_building_hdpi.png 72w, https://resources.joomcdn.net/categories/building/icn_building_xhdpi.png 96w, https://resources.joomcdn.net/categories/building/icn_building_xxhdpi.png 144w, https://resources.joomcdn.net/categories/building/icn_building_xxxhdpi.png 192w" sizes="1.5em">
-								</span>
-								<span class="text___1wQYt">Строительство и ремонт</span>
-							</a>
-							<a class="child___1-Ce8" href="/search/?type=1764">
-								<span class="icon___1dOOe">
-									<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/hobbies/icn_hobbies_mdpi.png" srcset="https://resources.joomcdn.net/categories/hobbies/icn_hobbies_mdpi.png 67w, https://resources.joomcdn.net/categories/hobbies/icn_hobbies_hdpi.png 101w, https://resources.joomcdn.net/categories/hobbies/icn_hobbies_xhdpi.png 134w, https://resources.joomcdn.net/categories/hobbies/icn_hobbies_xxhdpi.png 201w, https://resources.joomcdn.net/categories/hobbies/icn_hobbies_xxxhdpi.png 268w" sizes="1.5em">
-								</span>
-								<span class="text___1wQYt">Спорт и отдых</span>
-							</a>
-							<a class="child___1-Ce8" href="/search/?type=2961">
-								<span class="icon___1dOOe">
-									<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/shoes/icn_shoes_mdpi.png" srcset="https://resources.joomcdn.net/categories/shoes/icn_shoes_mdpi.png 46w, https://resources.joomcdn.net/categories/shoes/icn_shoes_hdpi.png 69w, https://resources.joomcdn.net/categories/shoes/icn_shoes_xhdpi.png 92w, https://resources.joomcdn.net/categories/shoes/icn_shoes_xxhdpi.png 138w, https://resources.joomcdn.net/categories/shoes/icn_shoes_xxxhdpi.png 184w" sizes="1.5em">
-								</span>
-								<span class="text___1wQYt">Детская обувь</span>
-							</a>
-							<a class="child___1-Ce8" href="/search/?type=6">
-								<span class="icon___1dOOe">
-									<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/child/icn_child_mdpi.png" srcset="https://resources.joomcdn.net/categories/child/icn_child_mdpi.png 30w, https://resources.joomcdn.net/categories/child/icn_child_hdpi.png 45w, https://resources.joomcdn.net/categories/child/icn_child_xhdpi.png 60w, https://resources.joomcdn.net/categories/child/icn_child_xxhdpi.png 90w, https://resources.joomcdn.net/categories/child/icn_child_xxxhdpi.png 120w" sizes="1.5em">
-								</span>
-								<span class="text___1wQYt">Детские товары</span>
-							</a>
-							<a class="child___1-Ce8" href="/search/?type=2763">
-								<span class="icon___1dOOe">
-									<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/bag/icn_bag_mdpi.png" srcset="https://resources.joomcdn.net/categories/bag/icn_bag_mdpi.png 34w, https://resources.joomcdn.net/categories/bag/icn_bag_hdpi.png 51w, https://resources.joomcdn.net/categories/bag/icn_bag_xhdpi.png 68w, https://resources.joomcdn.net/categories/bag/icn_bag_xxhdpi.png 102w, https://resources.joomcdn.net/categories/bag/icn_bag_xxxhdpi.png 136w" sizes="1.5em">
-								</span>
-								<span class="text___1wQYt">Чемоданы и сумки</span>
-							</a>
-							<a class="child___1-Ce8" href="/search/?type=151">
-								<span class="icon___1dOOe">
-									<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/watches/icn_watches_mdpi.png" srcset="https://resources.joomcdn.net/categories/watches/icn_watches_mdpi.png 33w, https://resources.joomcdn.net/categories/watches/icn_watches_hdpi.png 50w, https://resources.joomcdn.net/categories/watches/icn_watches_xhdpi.png 66w, https://resources.joomcdn.net/categories/watches/icn_watches_xxhdpi.png 99w, https://resources.joomcdn.net/categories/watches/icn_watches_xxxhdpi.png 132w" sizes="1.5em">
-								</span>
-								<span class="text___1wQYt">Часы</span>
-							</a>
-							<a class="child___1-Ce8" href="/search/?type=4">
-								<span class="icon___1dOOe">
-									<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/pets/icn_pets_mdpi.png" srcset="https://resources.joomcdn.net/categories/pets/icn_pets_mdpi.png 46w, https://resources.joomcdn.net/categories/pets/icn_pets_hdpi.png 69w, https://resources.joomcdn.net/categories/pets/icn_pets_xhdpi.png 92w, https://resources.joomcdn.net/categories/pets/icn_pets_xxhdpi.png 138w, https://resources.joomcdn.net/categories/pets/icn_pets_xxxhdpi.png 184w" sizes="1.5em">
-								</span>
-								<span class="text___1wQYt">Товары для животных</span>
-							</a>
-							<a class="child___1-Ce8" href="/search/?type=2934">
-								<span class="icon___1dOOe">
-									<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/office/icn_office_mdpi.png" srcset="https://resources.joomcdn.net/categories/office/icn_office_mdpi.png 44w, https://resources.joomcdn.net/categories/office/icn_office_hdpi.png 66w, https://resources.joomcdn.net/categories/office/icn_office_xhdpi.png 88w, https://resources.joomcdn.net/categories/office/icn_office_xxhdpi.png 132w, https://resources.joomcdn.net/categories/office/icn_office_xxxhdpi.png 176w" sizes="1.5em">
-								</span>
-								<span class="text___1wQYt">Канцелярия</span>
-							</a>
-							<a class="child___1-Ce8" href="/search/?type=1837">
-								<span class="icon___1dOOe">
-									<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/garden/icn_garden_mdpi.png" srcset="https://resources.joomcdn.net/categories/garden/icn_garden_mdpi.png 45w, https://resources.joomcdn.net/categories/garden/icn_garden_hdpi.png 68w, https://resources.joomcdn.net/categories/garden/icn_garden_xhdpi.png 90w, https://resources.joomcdn.net/categories/garden/icn_garden_xxhdpi.png 135w, https://resources.joomcdn.net/categories/garden/icn_garden_xxxhdpi.png 180w" sizes="1.5em">
-								</span>
-								<span class="text___1wQYt">Дача, сад и огород</span>
-							</a>
-							<a class="child___1-Ce8" href="/search/?type=276">
-								<span class="icon___1dOOe">
-									<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/hobby/icn_hobby_mdpi.png" srcset="https://resources.joomcdn.net/categories/hobby/icn_hobby_mdpi.png 48w, https://resources.joomcdn.net/categories/hobby/icn_hobby_hdpi.png 72w, https://resources.joomcdn.net/categories/hobby/icn_hobby_xhdpi.png 96w, https://resources.joomcdn.net/categories/hobby/icn_hobby_xxhdpi.png 144w, https://resources.joomcdn.net/categories/hobby/icn_hobby_xxxhdpi.png 192w" sizes="1.5em">
-								</span>
-								<span class="text___1wQYt">Хобби и творчество</span>
-							</a>
-
-							<div class="separator___2lly7"></div>
-
-							<a class="burgerFooterLink___2C_r6" href="/">
-								<div class="text___341Mk">Поддержка</div>
-							</a>
-							<a class="burgerFooterLink___2C_r6" href="/">
-								<div class="text___341Mk">Доставка</div>
-							</a>
-							<a class="burgerFooterLink___2C_r6" href="/">
-								<div class="text___341Mk">Гарантия</div>
-							</a>
-							<button type="button" class="burgerFooterLink___2C_r6">Специальные возможности</button>
-							<div class="burgerFooterButtons___22Tzz">
-								<div class="burgerFooterButton___vj_T2">
-									<div class="visuallyHidden___tMl_D">Выберите язык</div>
-									<div class="buttonWrapper___20IL7">
-										<button type="button" class="button___3hmfW fill-lightgrey___1_RNO padding-normal___2ctfV block___2aWbQ rounded___1J8B1" tabindex="0" role="button" aria-haspopup="true" aria-expanded="false">
-											<span class="children___1pivU">
-												<div class="language___I4PVy">
-													<div class="icon___1Cegs">
-														<img alt="RU" class="image___1qeww" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDIxIDE1Ij48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0wIDBoMjF2MTVIMHoiLz48cGF0aCBmaWxsPSIjMkU1QkIzIiBkPSJNMCA1aDIxdjVIMHoiLz48cGF0aCBmaWxsPSIjQ0YyMzM4IiBkPSJNMCAxMGgyMXY1SDB6Ii8+PC9nPjwvc3ZnPg==">
-													</div>Русский
-												</div>
-											</span>
-										</button>
-									</div>
-								</div>
-								<div class="burgerFooterButton___vj_T2">
-									<div class="parent___1HgYm">
-										<button type="button" class="button___3hmfW fill-lightgrey___1_RNO padding-normal___2ctfV block___2aWbQ rounded___1J8B1" tabindex="0" role="button" aria-haspopup="true" aria-expanded="false">
-											<span class="children___1pivU">RUB</span>
-										</button>
-									</div>
+		<header class="header">
+			<div class="header_top">
+				<div class="nav_bar">
+					<div class="left_section">
+						<div class="navBar_language">
+							<div role="button" tabindex="0" class="wrapper">
+								<div class="select_button">
+									<div class="icon">
+										<img alt="RU" class="image" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDIxIDE1Ij48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0wIDBoMjF2MTVIMHoiLz48cGF0aCBmaWxsPSIjMkU1QkIzIiBkPSJNMCA1aDIxdjVIMHoiLz48cGF0aCBmaWxsPSIjQ0YyMzM4IiBkPSJNMCAxMGgyMXY1SDB6Ii8+PC9nPjwvc3ZnPg==">
+									</div><span class="countries">Русский</span>
+									<svg width="9" height="6" class="selectArrow">
+										<path d="M1.414.536h6.243a1 1 0 01.707 1.707L5.243 5.364a1 1 0 01-1.415 0L.708 2.243A1 1 0 011.413.536z" fill="#8E90A7"></path>
+									</svg>
 								</div>
 							</div>
+						</div>
+						<div class="navBar_language">
+							<div class="wrapper">
+								<div role="button" tabindex="0" class="button_lang">RUB
+									<svg width="9" height="6" class="selectArrow">
+										<path d="M1.414.536h6.243a1 1 0 01.707 1.707L5.243 5.364a1 1 0 01-1.415 0L.708 2.243A1 1 0 011.413.536z" fill="#8E90A7"></path>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="right_section">
+						<nav>
+							<a href="/ru/faq">Поддержка</a>
+							<a href="/ru/faq">Доставка</a>
+							<a href="/ru/faq">Гарантия</a>
 						</nav>
 					</div>
 				</div>
 			</div>
-			<div class="logo_header_button">
-				<a class="logo" href="/">
-					<img id="logo" src="[MARKET_LOGO]" alt="[MARKET_NAME]" />
-				</a>
-			</div>
-			<div class="content">
-				<div class="search">
-					<form name="web" method="get" action="/search/">
-						<div class="inner">
-							<label class="label">
-								<input id="sought_text" name="text" placeholder="Поиск" value="[XDB_SOUGHT_TEXT]">
-							</label>
-							<div class="button_search">
-								<button type="submit" class="button btn-main">Найти</button>
+				<!-- Дорабоать, некоторые классы не находятся в нужном файле  -->
+				<!-- Решить что делать с ненужными классами, позже подумаю нужно ли их удалять  -->
+			<div class="header__button">
+				<div class="tables">
+					<!-- мобильная разарботка -->
+					<div class="side">
+						<div class="burger" role="button" tabindex="0" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvas-navbar"></div>
+						<!-- выпадающая менюшка, стоит переделать под норм верстку, не думаю что предется выносить  -->
+						<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-navbar">
+							<div class="offcanvas-header justify-content-start bg-light">
+								<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+								<div class="info">
+									<img src="[MARKET_LOGO]" border="0" style="height: 20px;">
+								</div>
+							</div>
+							<div class="offcanvas-body">
+								<nav class="list-unstyled">
+									<a class="child___1-Ce8" href="/search/?type=1206">
+										<span class="icon___1dOOe">
+											<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/beauty/icn_beauty_mdpi.png" srcset="https://resources.joomcdn.net/categories/beauty/icn_beauty_mdpi.png 26w, https://resources.joomcdn.net/categories/beauty/icn_beauty_hdpi.png 39w, https://resources.joomcdn.net/categories/beauty/icn_beauty_xhdpi.png 52w, https://resources.joomcdn.net/categories/beauty/icn_beauty_xxhdpi.png 78w, https://resources.joomcdn.net/categories/beauty/icn_beauty_xxxhdpi.png 104w" sizes="1.5em">
+										</span>
+										<span class="text___1wQYt">Красота</span>
+									</a>
+									<a class="child___1-Ce8" href="/search/?type=1206">
+										<span class="icon___1dOOe">
+											<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/health/icn_health_mdpi.png" srcset="https://resources.joomcdn.net/categories/health/icn_health_mdpi.png 48w, https://resources.joomcdn.net/categories/health/icn_health_hdpi.png 72w, https://resources.joomcdn.net/categories/health/icn_health_xhdpi.png 96w, https://resources.joomcdn.net/categories/health/icn_health_xxhdpi.png 144w, https://resources.joomcdn.net/categories/health/icn_health_xxxhdpi.png 192w" sizes="1.5em">
+										</span>
+										<span class="text___1wQYt">Здоровье</span>
+									</a>
+									<a class="child___1-Ce8" href="/search/?type=2874">
+										<span class="icon___1dOOe">
+											<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/womens_clothing/icn_womens_clothing_mdpi.png" srcset="https://resources.joomcdn.net/categories/womens_clothing/icn_womens_clothing_mdpi.png 42w, https://resources.joomcdn.net/categories/womens_clothing/icn_womens_clothing_hdpi.png 63w, https://resources.joomcdn.net/categories/womens_clothing/icn_womens_clothing_xhdpi.png 84w, https://resources.joomcdn.net/categories/womens_clothing/icn_womens_clothing_xxhdpi.png 126w, https://resources.joomcdn.net/categories/womens_clothing/icn_womens_clothing_xxxhdpi.png 168w" sizes="1.5em">
+										</span>
+										<span class="text___1wQYt">Одежда для девочек</span>
+									</a>
+									<a class="child___1-Ce8" href="/search/?type=1837">
+										<span class="icon___1dOOe">
+											<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/homeliness/icn_homeliness_mdpi.png" srcset="https://resources.joomcdn.net/categories/homeliness/icn_homeliness_mdpi.png 46w, https://resources.joomcdn.net/categories/homeliness/icn_homeliness_hdpi.png 69w, https://resources.joomcdn.net/categories/homeliness/icn_homeliness_xhdpi.png 92w, https://resources.joomcdn.net/categories/homeliness/icn_homeliness_xxhdpi.png 138w, https://resources.joomcdn.net/categories/homeliness/icn_homeliness_xxxhdpi.png 184w" sizes="1.5em">
+										</span>
+										<span class="text___1wQYt">Товары для дома</span>
+									</a>
+									<a class="child___1-Ce8" href="/search/?type=5">
+										<span class="icon___1dOOe">
+											<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/electronics/icn_electronics_mdpi.png" srcset="https://resources.joomcdn.net/categories/electronics/icn_electronics_mdpi.png 46w, https://resources.joomcdn.net/categories/electronics/icn_electronics_hdpi.png 69w, https://resources.joomcdn.net/categories/electronics/icn_electronics_xhdpi.png 92w, https://resources.joomcdn.net/categories/electronics/icn_electronics_xxhdpi.png 138w, https://resources.joomcdn.net/categories/electronics/icn_electronics_xxxhdpi.png 184w" sizes="1.5em">
+										</span>
+										<span class="text___1wQYt">Электроника</span>
+									</a>
+									<a class="child___1-Ce8" href="/search/?type=16">
+										<span class="icon___1dOOe">
+											<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/sex/icn_sex_mdpi.png" srcset="https://resources.joomcdn.net/categories/sex/icn_sex_mdpi.png 46w, https://resources.joomcdn.net/categories/sex/icn_sex_hdpi.png 69w, https://resources.joomcdn.net/categories/sex/icn_sex_xhdpi.png 92w, https://resources.joomcdn.net/categories/sex/icn_sex_xxhdpi.png 138w, https://resources.joomcdn.net/categories/sex/icn_sex_xxxhdpi.png 184w" sizes="1.5em">
+										</span>
+										<span class="text___1wQYt">Товары для взрослых</span>
+									</a>
+									<a class="child___1-Ce8" href="/search/?type=2884">
+										<span class="icon___1dOOe">
+											<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/mans_clothing/icn_mans_clothing_mdpi.png" srcset="https://resources.joomcdn.net/categories/mans_clothing/icn_mans_clothing_mdpi.png 46w, https://resources.joomcdn.net/categories/mans_clothing/icn_mans_clothing_hdpi.png 69w, https://resources.joomcdn.net/categories/mans_clothing/icn_mans_clothing_xhdpi.png 92w, https://resources.joomcdn.net/categories/mans_clothing/icn_mans_clothing_xxhdpi.png 138w, https://resources.joomcdn.net/categories/mans_clothing/icn_mans_clothing_xxxhdpi.png 184w" sizes="1.5em">
+										</span>
+										<span class="text___1wQYt">Одежда для мальчиков</span>
+									</a>
+									<a class="child___1-Ce8" href="/search/?type=244">
+										<span class="icon___1dOOe">
+											<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/auto/icn_auto_mdpi.png" srcset="https://resources.joomcdn.net/categories/auto/icn_auto_mdpi.png 46w, https://resources.joomcdn.net/categories/auto/icn_auto_hdpi.png 69w, https://resources.joomcdn.net/categories/auto/icn_auto_xhdpi.png 92w, https://resources.joomcdn.net/categories/auto/icn_auto_xxhdpi.png 138w, https://resources.joomcdn.net/categories/auto/icn_auto_xxxhdpi.png 184w" sizes="1.5em">
+										</span>
+										<span class="text___1wQYt">Автомобили и мотоциклы</span>
+									</a>
+									<a class="child___1-Ce8" href="/search/?type=1276">
+										<span class="icon___1dOOe">
+											<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/building/icn_building_mdpi.png" srcset="https://resources.joomcdn.net/categories/building/icn_building_mdpi.png 48w, https://resources.joomcdn.net/categories/building/icn_building_hdpi.png 72w, https://resources.joomcdn.net/categories/building/icn_building_xhdpi.png 96w, https://resources.joomcdn.net/categories/building/icn_building_xxhdpi.png 144w, https://resources.joomcdn.net/categories/building/icn_building_xxxhdpi.png 192w" sizes="1.5em">
+										</span>
+										<span class="text___1wQYt">Строительство и ремонт</span>
+									</a>
+									<a class="child___1-Ce8" href="/search/?type=1764">
+										<span class="icon___1dOOe">
+											<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/hobbies/icn_hobbies_mdpi.png" srcset="https://resources.joomcdn.net/categories/hobbies/icn_hobbies_mdpi.png 67w, https://resources.joomcdn.net/categories/hobbies/icn_hobbies_hdpi.png 101w, https://resources.joomcdn.net/categories/hobbies/icn_hobbies_xhdpi.png 134w, https://resources.joomcdn.net/categories/hobbies/icn_hobbies_xxhdpi.png 201w, https://resources.joomcdn.net/categories/hobbies/icn_hobbies_xxxhdpi.png 268w" sizes="1.5em">
+										</span>
+										<span class="text___1wQYt">Спорт и отдых</span>
+									</a>
+									<a class="child___1-Ce8" href="/search/?type=2961">
+										<span class="icon___1dOOe">
+											<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/shoes/icn_shoes_mdpi.png" srcset="https://resources.joomcdn.net/categories/shoes/icn_shoes_mdpi.png 46w, https://resources.joomcdn.net/categories/shoes/icn_shoes_hdpi.png 69w, https://resources.joomcdn.net/categories/shoes/icn_shoes_xhdpi.png 92w, https://resources.joomcdn.net/categories/shoes/icn_shoes_xxhdpi.png 138w, https://resources.joomcdn.net/categories/shoes/icn_shoes_xxxhdpi.png 184w" sizes="1.5em">
+										</span>
+										<span class="text___1wQYt">Детская обувь</span>
+									</a>
+									<a class="child___1-Ce8" href="/search/?type=6">
+										<span class="icon___1dOOe">
+											<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/child/icn_child_mdpi.png" srcset="https://resources.joomcdn.net/categories/child/icn_child_mdpi.png 30w, https://resources.joomcdn.net/categories/child/icn_child_hdpi.png 45w, https://resources.joomcdn.net/categories/child/icn_child_xhdpi.png 60w, https://resources.joomcdn.net/categories/child/icn_child_xxhdpi.png 90w, https://resources.joomcdn.net/categories/child/icn_child_xxxhdpi.png 120w" sizes="1.5em">
+										</span>
+										<span class="text___1wQYt">Детские товары</span>
+									</a>
+									<a class="child___1-Ce8" href="/search/?type=2763">
+										<span class="icon___1dOOe">
+											<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/bag/icn_bag_mdpi.png" srcset="https://resources.joomcdn.net/categories/bag/icn_bag_mdpi.png 34w, https://resources.joomcdn.net/categories/bag/icn_bag_hdpi.png 51w, https://resources.joomcdn.net/categories/bag/icn_bag_xhdpi.png 68w, https://resources.joomcdn.net/categories/bag/icn_bag_xxhdpi.png 102w, https://resources.joomcdn.net/categories/bag/icn_bag_xxxhdpi.png 136w" sizes="1.5em">
+										</span>
+										<span class="text___1wQYt">Чемоданы и сумки</span>
+									</a>
+									<a class="child___1-Ce8" href="/search/?type=151">
+										<span class="icon___1dOOe">
+											<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/watches/icn_watches_mdpi.png" srcset="https://resources.joomcdn.net/categories/watches/icn_watches_mdpi.png 33w, https://resources.joomcdn.net/categories/watches/icn_watches_hdpi.png 50w, https://resources.joomcdn.net/categories/watches/icn_watches_xhdpi.png 66w, https://resources.joomcdn.net/categories/watches/icn_watches_xxhdpi.png 99w, https://resources.joomcdn.net/categories/watches/icn_watches_xxxhdpi.png 132w" sizes="1.5em">
+										</span>
+										<span class="text___1wQYt">Часы</span>
+									</a>
+									<a class="child___1-Ce8" href="/search/?type=4">
+										<span class="icon___1dOOe">
+											<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/pets/icn_pets_mdpi.png" srcset="https://resources.joomcdn.net/categories/pets/icn_pets_mdpi.png 46w, https://resources.joomcdn.net/categories/pets/icn_pets_hdpi.png 69w, https://resources.joomcdn.net/categories/pets/icn_pets_xhdpi.png 92w, https://resources.joomcdn.net/categories/pets/icn_pets_xxhdpi.png 138w, https://resources.joomcdn.net/categories/pets/icn_pets_xxxhdpi.png 184w" sizes="1.5em">
+										</span>
+										<span class="text___1wQYt">Товары для животных</span>
+									</a>
+									<a class="child___1-Ce8" href="/search/?type=2934">
+										<span class="icon___1dOOe">
+											<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/office/icn_office_mdpi.png" srcset="https://resources.joomcdn.net/categories/office/icn_office_mdpi.png 44w, https://resources.joomcdn.net/categories/office/icn_office_hdpi.png 66w, https://resources.joomcdn.net/categories/office/icn_office_xhdpi.png 88w, https://resources.joomcdn.net/categories/office/icn_office_xxhdpi.png 132w, https://resources.joomcdn.net/categories/office/icn_office_xxxhdpi.png 176w" sizes="1.5em">
+										</span>
+										<span class="text___1wQYt">Канцелярия</span>
+									</a>
+									<a class="child___1-Ce8" href="/search/?type=1837">
+										<span class="icon___1dOOe">
+											<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/garden/icn_garden_mdpi.png" srcset="https://resources.joomcdn.net/categories/garden/icn_garden_mdpi.png 45w, https://resources.joomcdn.net/categories/garden/icn_garden_hdpi.png 68w, https://resources.joomcdn.net/categories/garden/icn_garden_xhdpi.png 90w, https://resources.joomcdn.net/categories/garden/icn_garden_xxhdpi.png 135w, https://resources.joomcdn.net/categories/garden/icn_garden_xxxhdpi.png 180w" sizes="1.5em">
+										</span>
+										<span class="text___1wQYt">Дача, сад и огород</span>
+									</a>
+									<a class="child___1-Ce8" href="/search/?type=276">
+										<span class="icon___1dOOe">
+											<img loading="eager" alt="" class="image___1yp2c  image___1Tlpl contain___K2Ner" src="https://resources.joomcdn.net/categories/hobby/icn_hobby_mdpi.png" srcset="https://resources.joomcdn.net/categories/hobby/icn_hobby_mdpi.png 48w, https://resources.joomcdn.net/categories/hobby/icn_hobby_hdpi.png 72w, https://resources.joomcdn.net/categories/hobby/icn_hobby_xhdpi.png 96w, https://resources.joomcdn.net/categories/hobby/icn_hobby_xxhdpi.png 144w, https://resources.joomcdn.net/categories/hobby/icn_hobby_xxxhdpi.png 192w" sizes="1.5em">
+										</span>
+										<span class="text___1wQYt">Хобби и творчество</span>
+									</a>
+
+									<div class="separator___2lly7"></div>
+
+									<a class="burgerFooterLink___2C_r6" href="/">
+										<div class="text___341Mk">Поддержка</div>
+									</a>
+									<a class="burgerFooterLink___2C_r6" href="/">
+										<div class="text___341Mk">Доставка</div>
+									</a>
+									<a class="burgerFooterLink___2C_r6" href="/">
+										<div class="text___341Mk">Гарантия</div>
+									</a>
+									<button type="button" class="burgerFooterLink___2C_r6">Специальные возможности</button>
+									<div class="burgerFooterButtons___22Tzz">
+										<div class="burgerFooterButton___vj_T2">
+											<div class="visuallyHidden___tMl_D">Выберите язык</div>
+											<div class="buttonWrapper___20IL7">
+												<button type="button" class="button___3hmfW fill-lightgrey___1_RNO padding-normal___2ctfV block___2aWbQ rounded___1J8B1" tabindex="0" role="button" aria-haspopup="true" aria-expanded="false">
+													<span class="children___1pivU">
+														<div class="language___I4PVy">
+															<div class="icon___1Cegs">
+																<img alt="RU" class="image___1qeww" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDIxIDE1Ij48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0wIDBoMjF2MTVIMHoiLz48cGF0aCBmaWxsPSIjMkU1QkIzIiBkPSJNMCA1aDIxdjVIMHoiLz48cGF0aCBmaWxsPSIjQ0YyMzM4IiBkPSJNMCAxMGgyMXY1SDB6Ii8+PC9nPjwvc3ZnPg==">
+															</div>Русский
+														</div>
+													</span>
+												</button>
+											</div>
+										</div>
+										<div class="burgerFooterButton___vj_T2">
+											<div class="parent___1HgYm">
+												<button type="button" class="button___3hmfW fill-lightgrey___1_RNO padding-normal___2ctfV block___2aWbQ rounded___1J8B1" tabindex="0" role="button" aria-haspopup="true" aria-expanded="false">
+													<span class="children___1pivU">RUB</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</nav>
 							</div>
 						</div>
-					</form>
-				</div>
-			</div>
-			<div class="right_panel">
-				<div class="items">
-					<div class="block">
-						<div class="block_inner">
-							<div class="inner" role="button" tabindex="0">
-								<div class="item_icon">
-									<svg width="26" height="26" viewBox="0 2 26 26">
-										<path d="M16.427 6.482c2.792 1.021 3.909 3.378 3.784 6.596-.04 1.022-.165 1.866-.445 3.341-.075.393-.094.497-.123.659-.268 1.522.048 3.037.975 4.584a1 1 0 01-1.032 1.498l-4.959-.874a3.5 3.5 0 01-6.824-1.203l-2.989-.527a1 1 0 01-.457-1.761c1.4-1.137 2.215-2.453 2.484-3.975.028-.161.045-.266.11-.66.24-1.483.412-2.319.724-3.293.983-3.066 2.84-4.899 5.812-4.903a1 1 0 011.173-.935l.985.174a1 1 0 01.782 1.28zM9.822 21.44a1.5 1.5 0 002.786.49l-2.786-.49zm7.852-4.709c.03-.174.05-.281.127-.684.263-1.382.377-2.153.412-3.046.11-2.824-.851-4.448-3.582-4.93-2.73-.48-4.189.717-5.051 3.408-.273.851-.43 1.614-.655 3.002-.066.406-.084.514-.115.688a8.031 8.031 0 01-1.746 3.753l10.967 1.934a8.031 8.031 0 01-.357-4.125zm.776-10.055a.875.875 0 11.907-1.497c3.116 1.887 3.984 5.077 3.482 9.4a.875.875 0 11-1.738-.201c.432-3.718-.259-6.254-2.65-7.702zM6.404 11.744a.875.875 0 11-1.701-.408c1.014-4.23 2.938-6.924 6.53-7.61a.875.875 0 11.328 1.72c-2.758.526-4.285 2.664-5.157 6.298z" fill="#3D3F56"></path>
-									</svg>
+					</div>
+					<div class="logo_header_button">
+						<a class="logo" href="/">
+							<img id="logo" src="[MARKET_LOGO]" alt="[MARKET_NAME]" />
+						</a>
+					</div>
+					<div class="content">
+						<div class="search">
+							<form name="web" method="get" action="/search/">
+								<div class="inner">
+									<label class="label">
+										<input id="sought_text" name="text" placeholder="Поиск" value="[XDB_SOUGHT_TEXT]">
+									</label>
+									<div class="button_search">
+										<button type="submit" class="button btn-main">Найти</button>
+									</div>
 								</div>
-								<h6 class="name_inner">Уведомления</h6>
+							</form>
+						</div>
+					</div>
+					<div class="right_panel">
+						<div class="items">
+							<div class="block">
+								<div class="block_inner">
+									<div class="inner" role="button" tabindex="0">
+										<div class="item_icon">
+											<svg width="26" height="26" viewBox="0 2 26 26">
+												<path d="M16.427 6.482c2.792 1.021 3.909 3.378 3.784 6.596-.04 1.022-.165 1.866-.445 3.341-.075.393-.094.497-.123.659-.268 1.522.048 3.037.975 4.584a1 1 0 01-1.032 1.498l-4.959-.874a3.5 3.5 0 01-6.824-1.203l-2.989-.527a1 1 0 01-.457-1.761c1.4-1.137 2.215-2.453 2.484-3.975.028-.161.045-.266.11-.66.24-1.483.412-2.319.724-3.293.983-3.066 2.84-4.899 5.812-4.903a1 1 0 011.173-.935l.985.174a1 1 0 01.782 1.28zM9.822 21.44a1.5 1.5 0 002.786.49l-2.786-.49zm7.852-4.709c.03-.174.05-.281.127-.684.263-1.382.377-2.153.412-3.046.11-2.824-.851-4.448-3.582-4.93-2.73-.48-4.189.717-5.051 3.408-.273.851-.43 1.614-.655 3.002-.066.406-.084.514-.115.688a8.031 8.031 0 01-1.746 3.753l10.967 1.934a8.031 8.031 0 01-.357-4.125zm.776-10.055a.875.875 0 11.907-1.497c3.116 1.887 3.984 5.077 3.482 9.4a.875.875 0 11-1.738-.201c.432-3.718-.259-6.254-2.65-7.702zM6.404 11.744a.875.875 0 11-1.701-.408c1.014-4.23 2.938-6.924 6.53-7.61a.875.875 0 11.328 1.72c-2.758.526-4.285 2.664-5.157 6.298z" fill="#3D3F56"></path>
+											</svg>
+										</div>
+										<h6 class="name_inner">Уведомления</h6>
+									</div>
+								</div>
+							</div>
+							<div class="block">
+								[MARKET_ACCOUNT_MENU_ITEM]
+							</div>
+							<div class="block">
+								<a class="block_inner" href="/orders/">
+									<div class="inner">
+										<div class="item_icon">
+											<svg width="26" height="26" viewBox="-3 -4 26 26">
+												<path d="M19 6.732V15a3 3 0 01-3 3H4a3 3 0 01-3-3V6.732A2 2 0 010 5V2a2 2 0 012-2h16a2 2 0 012 2v3a2 2 0 01-1 1.732zM17 7H3v8a1 1 0 001 1h12a1 1 0 001-1V7zM8 9h4a1 1 0 010 2H8a1 1 0 010-2zM2 2v3h16V2H2z" fill="#3D3F56"></path>
+											</svg>
+										</div>
+										<h6 class="name_inner">Мои заказы</h6>
+									</div>
+								</a>
+							</div>
+							<div class="block">
+								<a class="block_inner" href="/cart/">
+									<div class="inner">
+										<div class="item_icon">
+											<svg width="26" height="26" viewBox="-3 -3 26 26">
+												<path d="M12.752 12.5H4.759a2.058 2.058 0 01-1.89-1.212l-2.202-5c-.448-1.015.036-2.191 1.08-2.626.255-.107.53-.162.81-.162h12.33l.344-1.45C15.446 1.143 16.277.5 17.234.5h1.238c.568 0 1.028.448 1.028 1s-.46 1-1.028 1h-1.238l-2.669 11.25c1.09.462 1.851 1.52 1.851 2.75 0 1.657-1.38 3-3.084 3-1.703 0-3.083-1.343-3.083-3 0-.35.062-.687.175-1H8.017c.114.313.176.65.176 1 0 1.657-1.38 3-3.084 3-1.703 0-3.084-1.343-3.084-3s1.381-3 3.084-3h7.406l.237-1zm-10.196-7l2.203 5h8.467l1.186-5H2.556zm2.553 12c.568 0 1.028-.448 1.028-1s-.46-1-1.028-1c-.568 0-1.028.448-1.028 1s.46 1 1.028 1zm8.223 0c.568 0 1.028-.448 1.028-1s-.46-1-1.028-1c-.567 0-1.027.448-1.027 1s.46 1 1.027 1z" fill="#3D3F56"></path>
+											</svg>
+											<span class="indicator indicator___UIS2g[MARKET_CART_INDICATOR]">[MARKET_CART_QUANTITY]</span>
+										</div>
+										<h6 class="name_inner">Корзина</h6>
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>
-					<div class="block">
-						[MARKET_ACCOUNT_MENU_ITEM]
+				</div>
+				</div>
+		</header>
+
+		<div class="parent">
+			<div class="container">
+				<nav class="categories_list">
+					<div class="category" tabindex="0" role="button">
+						<svg width="16" height="10" class="menu">
+							<path d="M.883 10C.396 10 0 9.552 0 9s.396-1 .883-1h14.234c.487 0 .883.448.883 1s-.396 1-.883 1H.883zm0-4C.396 6 0 5.552 0 5s.396-1 .883-1h14.234c.487 0 .883.448.883 1s-.396 1-.883 1H.883zm0-4C.396 2 0 1.552 0 1s.396-1 .883-1h14.234c.487 0 .883.448.883 1s-.396 1-.883 1H.883z"></path>
+						</svg>
+						<span>
+							<a style="color: #3d3f56; text-decoration: none;" href="/catalog/">Все категории</a>
+						</span>
 					</div>
-					<div class="block">
-						<a class="block_inner" href="/orders/">
-							<div class="inner">
-								<div class="item_icon">
-									<svg width="26" height="26" viewBox="-3 -4 26 26">
-										<path d="M19 6.732V15a3 3 0 01-3 3H4a3 3 0 01-3-3V6.732A2 2 0 010 5V2a2 2 0 012-2h16a2 2 0 012 2v3a2 2 0 01-1 1.732zM17 7H3v8a1 1 0 001 1h12a1 1 0 001-1V7zM8 9h4a1 1 0 010 2H8a1 1 0 010-2zM2 2v3h16V2H2z" fill="#3D3F56"></path>
-									</svg>
-								</div>
-								<h6 class="name_inner">Мои заказы</h6>
-							</div>
+					<a class="category" href="/search/?type=1206">Красота</a>
+					<a class="category" href="/search/?type=1206">Здоровье</a>
+					<a class="category" href="/search/?type=2874">Одежда для девочек</a>
+					<a class="category" href="/search/?type=1837">Товары для дома</a>
+					<a class="category" href="/search/?type=5">Электроника</a>
+					<a class="category" href="/search/?type=16">Товары для взрослых</a>
+					<a class="category" href="/search/?type=2884">Одежда для мальчиков</a>
+					<a class="category" href="/search/?type=244">Автомобили и мотоциклы</a>
+					<a class="category" href="/search/?type=1276">Строительство и ремонт</a>
+					<a class="category" href="/search/?type=1764">Спорт и отдых</a>
+					<a class="category" href="/search/?type=2961">Детская обувь</a>
+					<a class="category" href="/search/?type=6">Детские товары</a>
+					<a class="category" href="/search/?type=2763">Чемоданы и сумки</a>
+					<a class="category" href="/search/?type=151">Часы</a>
+					<a class="category" href="/search/?type=4">Товары для животных</a>
+					<a class="category" href="/search/?type=2934">Канцелярия</a>
+					<a class="category" href="/search/?type=1837">Дача, сад и огород</a>
+					<a class="category" href="/search/?type=276">Хобби и творчество</a>
+				</nav>
+			</div>
+		</div>
+
+		<div class="mobaile_search">
+			<form class="search" method="get" action="/search/">
+				<div class="inner">
+					<svg width="14" height="14" class="magnifier___ZgYXt">
+						<path d="M11.113 9.887a5.99 5.99 0 001.225-3.675C12.338 2.8 9.625 0 6.213 0S0 2.8 0 6.213c0 3.412 2.8 6.212 6.213 6.212 1.4 0 2.712-.438 3.675-1.225l2.624 2.625a.945.945 0 00.613.262.945.945 0 00.613-.262.846.846 0 000-1.225l-2.625-2.712zm-4.9.7c-2.45 0-4.463-1.925-4.463-4.375S3.763 1.75 6.213 1.75s4.462 2.013 4.462 4.463-2.013 4.375-4.463 4.375z" fill="#8e90a7"></path>
+					</svg>
+					<label class="label">
+					<input id="sought_text" name="text" placeholder="Поиск" value="[XDB_SOUGHT_TEXT]">
+					</label>
+				</div>
+			</form>
+		</div>
+		<main>
+			<section>
+				<div class="container-xxl">
+					<div class="row">
+						<div class="col-12 pb-4">
+							[XDB_CONTENT_LEFT]
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="links">
+					<div class="wrapper">
+						<a class="link" href="/catalog/">Каталог</a>
+					</div>
+					<div class="wrapper">
+						<a class="link" href="/privacy/">Соглашение о конфиденциальности</a>
+					</div>
+					<div class="wrapper">
+						<a class="link" href="/terms/">Условия использования</a>
+					</div>
+					<div class="wrapper">
+						<a class="link" href="/ipr-protection">Правообладателям</a>
+					</div>
+					<div class="wrapper">
+						<a class="link" href="/faq">Поддержка</a>
+					</div>
+					<div class="wrapper">
+						<a class="link" href="/about">О компании</a>
+					</div>
+					<div class="wrapper">
+						<a class="link" target="_blank" rel="noopener noreferrer" href="https://merchant.joom.com/">Стать продавцом</a>
+					</div>
+				</div>
+				<div class="xdb">
+					<span><!--noindex--></span>© 2022 [MARKET_NAME]. Сделано на платформе <a class="link___1nXfC" href="//xdb.ru/">XDB</a>
+					<span><!--/noindex--></span>
+					<div class="badges">
+						<a  href="/" role="button" rel="noopener noreferrer">
+							<img lang="ru"  alt="Huawei" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjYxIDJDMy41MSAyIDIgMy41IDIgNy42MXY4Ljc4QzIgMjAuNDkgMy41IDIyIDcuNjEgMjJoOC43OGM0LjEgMCA1LjYxLTEuNSA1LjYxLTUuNjFWNy42QzIyIDMuNTEgMjAuNSAyIDE2LjM5IDJINy42em0zLjExIDExLjZoLjhsLS40LS45NC0uNC45NHptLS4yLjQ3bC0uMjMuNTVoLS41NEwxMC45IDEyaC40N2wxLjE1IDIuNjJoLS41NmwtLjI0LS41NWgtMS4yem04LjczLjU0aC41M1YxMmgtLjUzdjIuNjF6bS0yLjA4LTEuMTJoLjk2di0uNDhoLS45NnYtLjUzaDEuNFYxMmgtMS45M3YyLjYyaDEuOTh2LS40OGgtMS40NXYtLjY1em0tMi4wOS4zMUwxNC41IDEyaC0uNDNsLS42IDEuOC0uNTgtMS44aC0uNTZsLjkxIDIuNjJoLjQ0bC42LTEuNzIuNiAxLjcyaC40M2wuOTEtMi42MmgtLjU1bC0uNTggMS44em0tNi4xMy0uM2MwIC40Mi0uMjIuNjUtLjYuNjUtLjM5IDAtLjYtLjIzLS42LS42N1YxMmgtLjUzdjEuNWMwIC43NC40MSAxLjE2IDEuMTIgMS4xNi43MiAwIDEuMTQtLjQzIDEuMTQtMS4xOFYxMmgtLjUzdjEuNXptLTMtMS41aC41M3YyLjYyaC0uNTN2LTEuMDZoLTEuMnYxLjA2aC0uNTNWMTJoLjUzdjEuMDZoMS4yVjEyem0yLjcyLTYuNjdhMy4zNCAzLjM0IDAgMDA2LjY2IDBoLS40N2EyLjg3IDIuODcgMCAwMS01LjcyIDBoLS40N3oiIGZpbGw9IiNCMkIzQzIiLz48L3N2Zz4K">
 						</a>
-					</div>
-					<div class="block">
-						<a class="block_inner" href="/cart/">
-							<div class="inner">
-								<div class="item_icon">
-									<svg width="26" height="26" viewBox="-3 -3 26 26">
-										<path d="M12.752 12.5H4.759a2.058 2.058 0 01-1.89-1.212l-2.202-5c-.448-1.015.036-2.191 1.08-2.626.255-.107.53-.162.81-.162h12.33l.344-1.45C15.446 1.143 16.277.5 17.234.5h1.238c.568 0 1.028.448 1.028 1s-.46 1-1.028 1h-1.238l-2.669 11.25c1.09.462 1.851 1.52 1.851 2.75 0 1.657-1.38 3-3.084 3-1.703 0-3.083-1.343-3.083-3 0-.35.062-.687.175-1H8.017c.114.313.176.65.176 1 0 1.657-1.38 3-3.084 3-1.703 0-3.084-1.343-3.084-3s1.381-3 3.084-3h7.406l.237-1zm-10.196-7l2.203 5h8.467l1.186-5H2.556zm2.553 12c.568 0 1.028-.448 1.028-1s-.46-1-1.028-1c-.568 0-1.028.448-1.028 1s.46 1 1.028 1zm8.223 0c.568 0 1.028-.448 1.028-1s-.46-1-1.028-1c-.567 0-1.027.448-1.027 1s.46 1 1.027 1z" fill="#3D3F56"></path>
-									</svg>
-									<span class="indicator indicator___UIS2g[MARKET_CART_INDICATOR]">[MARKET_CART_QUANTITY]</span>
-								</div>
-								<h6 class="name_inner">Корзина</h6>
-							</div>
+						<a  href="/" role="button" rel="noopener noreferrer">
+							<img lang="ru"  alt="App Store" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIwLjQ5IDE2LjU5Yy0uMy43LS42NiAxLjM0LTEuMDggMS45M2E5LjgyIDkuODIgMCAwMS0xLjM4IDEuNjdjLS41NS41MS0xLjE1Ljc3LTEuNzguNzktLjQ2IDAtMS0uMTMtMS42NC0uNGE0LjcyIDQuNzIgMCAwMC0xLjc3LS4zOWMtLjU3IDAtMS4xOC4xMy0xLjgyLjRhNC45IDQuOSAwIDAxLTEuNTguNGMtLjYuMDMtMS4yMS0uMjMtMS44Mi0uOGExMS45OSAxMS45OSAwIDAxLTIuOTgtNC43OEExMS4xNSAxMS4xNSAwIDAxNCAxMS44YzAtMS4zNC4yOS0yLjUuODctMy40NmE1LjEgNS4xIDAgMDE0LjI4LTIuNTRjLjQ5IDAgMS4xMi4xNSAxLjkuNDQuOC4zIDEuMy40NSAxLjUyLjQ1LjE2IDAgLjcyLS4xOCAxLjY3LS41My45LS4zMiAxLjY2LS40NiAyLjI4LS40IDEuNjguMTMgMi45NC44IDMuNzkgMmE0LjIxIDQuMjEgMCAwMC0yLjI0IDMuODIgNC41NSA0LjU1IDAgMDAyLjc3IDQuMDljLS4xLjMyLS4yMy42My0uMzUuOTN6TTE2LjYzIDEuNGMwIDEtLjM2IDEuOTMtMS4xIDIuOC0uODcgMS4wMy0xLjkzIDEuNjItMy4wOSAxLjUzYTQuMzggNC4zOCAwIDAxMS4xNC0zLjJjLjM3LS40NC44NC0uNzkgMS40MS0xLjA3czEuMTEtLjQzIDEuNjItLjQ2bC4wMi40eiIgZmlsbD0iI0IyQjNDMiIvPjwvc3ZnPgo=">
+						</a>
+						<a  href="/" role="button" rel="noopener noreferrer">
+							<img lang="ru" alt="Google Play" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy4xNyAxMS45NmwtNy42NSA5LjRDNC4zOCAyMS4zMyAzLjYgMjAuNCAzLjYgMTlWNWMwLTEuNC43OC0yLjM1IDEuOTUtMi4zNWguMDNsLjA0LjAxIDcuNTUgOS4zem0zLjgxLTMuMWwyLjEgMS4yYy44NS41IDEuMzIgMS4xOCAxLjMyIDEuOTQgMCAuNzUtLjQ3IDEuNDQtMS4zMiAxLjkzbC0yLjA1IDEuMTgtMi41Ny0zLjE2IDIuNTItMy4xem0tLjg4LS41TDcuNSAzLjM3bDYuMzIgNy43OCAyLjI4LTIuOHpNNy4zMyAyMC43MWw2LjQ5LTcuOTcgMi4zMyAyLjg3LTguODIgNS4xeiIgZmlsbD0iI0IyQjNDMiIvPjwvc3ZnPg==">
 						</a>
 					</div>
 				</div>
-			</div>
-		</div>
-		</div>
-	</div>
-</header>
-
-<div class="parent">
-	<div class="container">
-		<nav class="categories_list">
-			<div class="category" tabindex="0" role="button">
-				<svg width="16" height="10" class="menu">
-					<path d="M.883 10C.396 10 0 9.552 0 9s.396-1 .883-1h14.234c.487 0 .883.448.883 1s-.396 1-.883 1H.883zm0-4C.396 6 0 5.552 0 5s.396-1 .883-1h14.234c.487 0 .883.448.883 1s-.396 1-.883 1H.883zm0-4C.396 2 0 1.552 0 1s.396-1 .883-1h14.234c.487 0 .883.448.883 1s-.396 1-.883 1H.883z"></path>
-				</svg>
-				<span>
-					<a style="color: #3d3f56; text-decoration: none;" href="/catalog/">Все категории</a>
-				</span>
-			</div>
-			<a class="category" href="/search/?type=1206">Красота</a> 
-			<a class="category" href="/search/?type=1206">Здоровье</a> 
-			<a class="category" href="/search/?type=2874">Одежда для девочек</a> 
-			<a class="category" href="/search/?type=1837">Товары для дома</a> 
-			<a class="category" href="/search/?type=5">Электроника</a> 
-			<a class="category" href="/search/?type=16">Товары для взрослых</a> 
-			<a class="category" href="/search/?type=2884">Одежда для мальчиков</a> 
-			<a class="category" href="/search/?type=244">Автомобили и мотоциклы</a> 
-			<a class="category" href="/search/?type=1276">Строительство и ремонт</a> 
-			<a class="category" href="/search/?type=1764">Спорт и отдых</a> 
-			<a class="category" href="/search/?type=2961">Детская обувь</a> 
-			<a class="category" href="/search/?type=6">Детские товары</a> 
-			<a class="category" href="/search/?type=2763">Чемоданы и сумки</a> 
-			<a class="category" href="/search/?type=151">Часы</a> 
-			<a class="category" href="/search/?type=4">Товары для животных</a> 
-			<a class="category" href="/search/?type=2934">Канцелярия</a> 
-			<a class="category" href="/search/?type=1837">Дача, сад и огород</a> 
-			<a class="category" href="/search/?type=276">Хобби и творчество</a> 
-		</nav>
-</div>
-</div>
-
-<div class="mobaile_search">
-	<form class="search" method="get" action="/search/">
-		<div class="inner">
-			<svg width="14" height="14" class="magnifier___ZgYXt">
-				<path d="M11.113 9.887a5.99 5.99 0 001.225-3.675C12.338 2.8 9.625 0 6.213 0S0 2.8 0 6.213c0 3.412 2.8 6.212 6.213 6.212 1.4 0 2.712-.438 3.675-1.225l2.624 2.625a.945.945 0 00.613.262.945.945 0 00.613-.262.846.846 0 000-1.225l-2.625-2.712zm-4.9.7c-2.45 0-4.463-1.925-4.463-4.375S3.763 1.75 6.213 1.75s4.462 2.013 4.462 4.463-2.013 4.375-4.463 4.375z" fill="#8e90a7"></path>
-			</svg>
-			<label class="label">
-			<input id="sought_text" name="text" placeholder="Поиск" value="[XDB_SOUGHT_TEXT]"></label>
-		</div>
-	</form>
-</div>
-<main>
-	<section>
-		<div class="container-xxl">
-			<div class="row" style_="background-color: cadetblue;">
-				<div class="col-12 pb-4">
-					[XDB_CONTENT_LEFT]
+				<div class="recaptcha">Этот сайт защищен reCAPTCHA и Google<br>
+					<a target="_blank" rel="noopener noreferrer" href="https://policies.google.com/privacy">Политика конфиденциальности</a> и <a class="recaptchaLink___2j2yI" target="_blank" rel="noopener noreferrer" href="https://policies.google.com/terms">Условия использования</a>
 				</div>
 			</div>
-		</div>
-	</section>
-</main>
-<footer class="footer">
-	<div class="container">
-		<div class="links">
-			<div class="wrapper">
-				<a class="link" href="/catalog/">Каталог</a>
-			</div>
-			<div class="wrapper">
-				<a class="link" href="/privacy/">Соглашение о конфиденциальности</a>
-			</div>
-			<div class="wrapper">
-				<a class="link" href="/terms/">Условия использования</a>
-			</div>
-			<div class="wrapper">
-				<a class="link" href="/ipr-protection">Правообладателям</a>
-			</div>
-			<div class="wrapper">
-				<a class="link" href="/faq">Поддержка</a>
-			</div>
-			<div class="wrapper">
-				<a class="link" href="/about">О компании</a>
-			</div>
-			<div class="wrapper">
-				<a class="link" target="_blank" rel="noopener noreferrer" href="https://merchant.joom.com/">Стать продавцом</a>
-			</div>
-		</div>
-		<div class="xdb">
-			<span><!--noindex--></span>© 2022 [MARKET_NAME]. Сделано на платформе <a class="link___1nXfC" href="//xdb.ru/">XDB</a>
-			<span><!--/noindex--></span>
-			<div class="badges">
-				<a  href="/" role="button" rel="noopener noreferrer">
-					<img lang="ru"  alt="Huawei" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjYxIDJDMy41MSAyIDIgMy41IDIgNy42MXY4Ljc4QzIgMjAuNDkgMy41IDIyIDcuNjEgMjJoOC43OGM0LjEgMCA1LjYxLTEuNSA1LjYxLTUuNjFWNy42QzIyIDMuNTEgMjAuNSAyIDE2LjM5IDJINy42em0zLjExIDExLjZoLjhsLS40LS45NC0uNC45NHptLS4yLjQ3bC0uMjMuNTVoLS41NEwxMC45IDEyaC40N2wxLjE1IDIuNjJoLS41NmwtLjI0LS41NWgtMS4yem04LjczLjU0aC41M1YxMmgtLjUzdjIuNjF6bS0yLjA4LTEuMTJoLjk2di0uNDhoLS45NnYtLjUzaDEuNFYxMmgtMS45M3YyLjYyaDEuOTh2LS40OGgtMS40NXYtLjY1em0tMi4wOS4zMUwxNC41IDEyaC0uNDNsLS42IDEuOC0uNTgtMS44aC0uNTZsLjkxIDIuNjJoLjQ0bC42LTEuNzIuNiAxLjcyaC40M2wuOTEtMi42MmgtLjU1bC0uNTggMS44em0tNi4xMy0uM2MwIC40Mi0uMjIuNjUtLjYuNjUtLjM5IDAtLjYtLjIzLS42LS42N1YxMmgtLjUzdjEuNWMwIC43NC40MSAxLjE2IDEuMTIgMS4xNi43MiAwIDEuMTQtLjQzIDEuMTQtMS4xOFYxMmgtLjUzdjEuNXptLTMtMS41aC41M3YyLjYyaC0uNTN2LTEuMDZoLTEuMnYxLjA2aC0uNTNWMTJoLjUzdjEuMDZoMS4yVjEyem0yLjcyLTYuNjdhMy4zNCAzLjM0IDAgMDA2LjY2IDBoLS40N2EyLjg3IDIuODcgMCAwMS01LjcyIDBoLS40N3oiIGZpbGw9IiNCMkIzQzIiLz48L3N2Zz4K">
-				</a>
-				<a  href="/" role="button" rel="noopener noreferrer">
-					<img lang="ru"  alt="App Store" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIwLjQ5IDE2LjU5Yy0uMy43LS42NiAxLjM0LTEuMDggMS45M2E5LjgyIDkuODIgMCAwMS0xLjM4IDEuNjdjLS41NS41MS0xLjE1Ljc3LTEuNzguNzktLjQ2IDAtMS0uMTMtMS42NC0uNGE0LjcyIDQuNzIgMCAwMC0xLjc3LS4zOWMtLjU3IDAtMS4xOC4xMy0xLjgyLjRhNC45IDQuOSAwIDAxLTEuNTguNGMtLjYuMDMtMS4yMS0uMjMtMS44Mi0uOGExMS45OSAxMS45OSAwIDAxLTIuOTgtNC43OEExMS4xNSAxMS4xNSAwIDAxNCAxMS44YzAtMS4zNC4yOS0yLjUuODctMy40NmE1LjEgNS4xIDAgMDE0LjI4LTIuNTRjLjQ5IDAgMS4xMi4xNSAxLjkuNDQuOC4zIDEuMy40NSAxLjUyLjQ1LjE2IDAgLjcyLS4xOCAxLjY3LS41My45LS4zMiAxLjY2LS40NiAyLjI4LS40IDEuNjguMTMgMi45NC44IDMuNzkgMmE0LjIxIDQuMjEgMCAwMC0yLjI0IDMuODIgNC41NSA0LjU1IDAgMDAyLjc3IDQuMDljLS4xLjMyLS4yMy42My0uMzUuOTN6TTE2LjYzIDEuNGMwIDEtLjM2IDEuOTMtMS4xIDIuOC0uODcgMS4wMy0xLjkzIDEuNjItMy4wOSAxLjUzYTQuMzggNC4zOCAwIDAxMS4xNC0zLjJjLjM3LS40NC44NC0uNzkgMS40MS0xLjA3czEuMTEtLjQzIDEuNjItLjQ2bC4wMi40eiIgZmlsbD0iI0IyQjNDMiIvPjwvc3ZnPgo=">
-				</a>
-				<a  href="/" role="button" rel="noopener noreferrer">
-					<img lang="ru" alt="Google Play" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy4xNyAxMS45NmwtNy42NSA5LjRDNC4zOCAyMS4zMyAzLjYgMjAuNCAzLjYgMTlWNWMwLTEuNC43OC0yLjM1IDEuOTUtMi4zNWguMDNsLjA0LjAxIDcuNTUgOS4zem0zLjgxLTMuMWwyLjEgMS4yYy44NS41IDEuMzIgMS4xOCAxLjMyIDEuOTQgMCAuNzUtLjQ3IDEuNDQtMS4zMiAxLjkzbC0yLjA1IDEuMTgtMi41Ny0zLjE2IDIuNTItMy4xem0tLjg4LS41TDcuNSAzLjM3bDYuMzIgNy43OCAyLjI4LTIuOHpNNy4zMyAyMC43MWw2LjQ5LTcuOTcgMi4zMyAyLjg3LTguODIgNS4xeiIgZmlsbD0iI0IyQjNDMiIvPjwvc3ZnPg==">
-				</a>
-			</div>
-		</div>
-		<div class="recaptcha">Этот сайт защищен reCAPTCHA и Google<br>
-			<a target="_blank" rel="noopener noreferrer" href="https://policies.google.com/privacy">Политика конфиденциальности</a> и <a class="recaptchaLink___2j2yI" target="_blank" rel="noopener noreferrer" href="https://policies.google.com/terms">Условия использования</a>
-		</div>
-	</div>
-</footer>
+		</footer>
 	</div>
 </body>
+
 </html>

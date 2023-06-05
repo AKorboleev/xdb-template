@@ -106,323 +106,242 @@
 
 </head>
 
-<main>
-    <div class="container-xxl">
-        <div class="cart_item_page" style="background: #f2f2f2;">
-            <div class="home" itemscope="" vocab="http://schema.org/" typeof="BreadcrumbList">
-                <div class="page_path">
-                    <span class="ListItem" typeof="ListItem" property="itemListElement">
-                        <a property="item" typeof="WebPage" lang="ru" class="link" href="/">
-                            <span property="name">Главная/</span>
-                        </a>
-                        <a property="item" typeof="WebPage" lang="ru" class="link" href="/">
-                            <span property="name">Каталог/</span>
-                        </a>
-                        <a property="item" typeof="WebPage" lang="ru" class="link" href="/">
-                            <span property="name/">[BreadCrumbs]</span>
-                        </a>
-                        <meta property="position" content="1">
-                    </span>
-                </div>
-                <!-- <div itemscope="" itemtype="http://schema.org/Product"> -->
-                
-                <div class="content">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="inner inner___1-Ita">
-                                <div class="list_image" data-testid="">
-                                    <div class="row">
-                                        <div class="col-2">
-                                            <div class="thumbs_block thumb___1midQ">
-                                                <div class="thumbs">
-                                                    [Thumbs]
-                                                </div>
+<body>
+<div class="container-xxl">
+    <div class="cart_item_page" style="background: #f2f2f2;">
+        <div class="home" itemscope="" vocab="http://schema.org/" typeof="BreadcrumbList">
+            <div class="page_path">
+                <span class="ListItem" typeof="ListItem" property="itemListElement">
+                    <a property="item" typeof="WebPage" lang="ru" class="link" href="/">
+                        <span property="name">Главная/</span>
+                    </a>
+                    <a property="item" typeof="WebPage" lang="ru" class="link" href="/">
+                        <span property="name">Каталог/</span>
+                    </a>
+                    <a property="item" typeof="WebPage" lang="ru" class="link" href="/">
+                        <span property="name">[BreadCrumbs]</span>
+                    </a>
+                    <meta property="position" content="1">
+                </span>
+            </div>
+            <!-- <div itemscope="" itemtype="http://schema.org/Product"> -->
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="inner">
+                            <div class="list_image" data-testid="">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="thumbs_block thumb_mid">
+                                            <div class="thumbs">
+                                                [Thumbs]
                                             </div>
                                         </div>
-                                        <div class="col-10">
-                                            <!-- Сюда не лезу, так как тут js скрипт, если можно, то я поправлю классы -->
-                                                <!--  Тут js скрипт для свайпа картинок, решить что делать с ним -->
-                                                <div class="square">
-                                                    <div class="block_swipe">
-                                                        <div class="swipe"
-                                                            style="visibility: visible;">
-                                                            <!-- привязан script выше , не удалять класс!!! -->
-                                                            <div class="item" style="width: 100%;">
-                                                                [Images]
-                                                            </div>
-                                                        </div>
-                                                        [Sensitive]
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="square">
+                                            <div class="block_swipe">
+                                                <div class="swipe" style="visibility: visible;">
+                                                    <div class="item img_wrap" style="width: 100%;">
+                                                        [Images]
                                                     </div>
                                                 </div>
-                                                <div class="block_counter">
-                                                    <!-- Кнопки для свайпа, не трогаю, если можно то поправлю классы, хотя это нужно обязательно сделать  -->
-                                                    <div class="counter">1 из [ImagesCount]</div>
-                                                    <div role="button" tabindex="-1" class="prev prev___2htiM"></div>
-                                                    <div role="button" tabindex="-1" class="next next___f3aJB"></div>
-                                                </div>
+                                                [Sensitive]
+                                            </div>
                                         </div>
-
-                                        <script type="text/javascript">
-    
-                                            $(document).ready(function()
-                                            {
-                                                //---------------------------------------------------------------------------
-                                                // Не используется
-                                                function isScrolledIntoView(elem)
-                                                {
-                                                    var docViewTop = $('div#inner').scrollLeft();
-                                                    var docViewBottom = docViewTop + $('div#inner').width();
-                                        
-                                                    var elemTop = $(elem).offset().left;
-                                                    var elemBottom = elemTop + $(elem).width();
-                                        
-                                                    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-                                                }
-                                                //---------------------------------------------------------------------------
-                                                // Клик на миниатюре
-                                                $('button.thumb___1midQ').on('click', function() {
-                                        
-                                                    // Берем размер слайда
-                                                    let slide = $('div.inner___1-Ita').last().outerWidth(true);
-                                                    // Берем позицию слайда
-                                                    let value = $(this).data('position') * slide;
-                                        
-                                        
-                                                    // Анимируем сдвиг полосы прокрутки
-                                                    $('div.inner___1-Ita').stop().animate({scrollLeft:value});
-                                                });
-                                                //---------------------------------------------------------------------------
-                                                // Предыдущий
-                                                $('div.prev___2htiM').on('click', function() {
-                                        
-                                                    // Берем размер слайда
-                                                    let slide = $('div.inner___1-Ita').last().outerWidth(true);
-                                                    // Прибавляем к текущему положению размер слайда
-                                                    let value = $('div.inner___1-Ita').scrollLeft() - slide;
-                                        
-                                        
-                                                    // Анимируем сдвиг полосы прокрутки
-                                                    $('div.inner___1-Ita').stop().animate({scrollLeft:value});
-                                                });
-                                                //---------------------------------------------------------------------------
-                                                // Следующий
-                                                $('div.next___f3aJB').on('click', function() {
-                                        
-                                                    // Берем размер слайда
-                                                    let slide = $('div.inner___1-Ita').last().outerWidth(true);
-                                                    // Прибавляем к текущему положению размер слайда
-                                                    let value = $('div.inner___1-Ita').scrollLeft() + slide;
-                                        
-                                        
-                                                    // Анимируем сдвиг полосы прокрутки
-                                                    $('div.inner___1-Ita').stop().animate({scrollLeft:value});
-                                                });
-                                                //---------------------------------------------------------------------------
-                                        
-                                            });
-                                        
-                                        </script>	
+                                        <div class="block_counter">
+                                            <div class="counter">1 из [ImagesCount]</div>
+                                            <div class="wrap_counter_prev">
+                                                <div role="button" tabindex="-1" class="next"></div>
+                                            </div>
+                                            <div class="wrap_counter_next">
+                                                <div role="button" tabindex="-1" class="prev"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-
-                                <div class="reviews">
-                                    [Reviews]
-                                </div>
-                                <div class="resizeTriggers">
-                                    <div>
-                                        <div style="width: 635px; height: 571px;"></div>
-                                    </div>
-                                    <div class="contractTrigger"></div>
-                                </div>
-                                <!-- </div> -->
                             </div>
-                            <div class="item_reviews mt-3">
+
+                            <div class="reviews">
                                 [Reviews]
                             </div>
-                            <!-- </div> -->
+                            <div class="resizeTriggers">
+                                <div>
+                                    <div style="width: 635px; height: 571px;"></div>
+                                </div>
+                                <div class="contractTrigger"></div>
+                            </div>
                         </div>
+                        <div class="item_reviews mt-3">
+                            [Reviews]
+                        </div>
+                    </div>
 
-                        <div class="col-md-6">
-                            <div class="inner">
-                                <div class="info_product" data-testid="">
-                                    <div class="item">
-                                        <div class="top">
-                                            <span class="share">
-                                                <span class="icon_share"></span>
-                                            </span>
-                                            <div class="container_grade">
-                                                <div class="stars" style="padding-right:8.836985774702043%"></div>
-                                                <div class="grade">4,6</div>
-                                            </div>
-                                            <h4 itemprop="name" class="product">[Item]</h4>
+                    <div class="col-md-6">
+                        <div class="inner">
+                            <div class="info_product" data-testid="">
+                                <div class="item">
+                                    <div class="top">
+                                        <span class="share">
+                                            <span class="icon_share"></span>
+                                        </span>
+                                        <div class="container_grade">
+                                            <div class="stars" style="padding-right:8.836985774702043%"></div>
+                                            <div class="grade">4,6</div>
                                         </div>
-                                        <div class="old_price">
+                                        <h4 itemprop="name" class="product">[Item]</h4>
+                                    </div>
+                                    <div class="old_price">
+                                        <span class="hidden">Цена<!-- --> </span>
+                                        <span>[PriceOld]</span>
+                                        <span class="hidden"> <!-- -->руб.</span>
+                                    </div>
+                                    <div itemtype="http://schema.org/Offer" itemprop="offers" itemscope="">
+                                        <div class="price">
                                             <span class="hidden">Цена<!-- --> </span>
-                                            <span>[PriceOld]</span>
+                                            <span itemprop="price" content="[Price]">[Price]</span>
+                                            <meta itemprop="priceCurrency" content="RUB">
                                             <span class="hidden"> <!-- -->руб.</span>
                                         </div>
-                                        <div itemtype="http://schema.org/Offer" itemprop="offers" itemscope="">
-                                            <div class="price">
-                                                <span class="hidden">Цена<!-- --> </span>
-                                                <span itemprop="price" content="[Price]">[Price]</span>
-                                                <meta itemprop="priceCurrency" content="RUB">
-                                                <span class="hidden"> <!-- -->руб.</span>
-                                            </div>
-                                            <link itemprop="availability" href="http://schema.org/InStock">
-                                            <meta itemprop="itemCondition"
-                                                itemtype="http://schema.org/OfferItemCondition"
-                                                content="http://schema.org/NewCondition">
-                                            <meta itemprop="url"
-                                                content="https://www.joom.com/ru/products/1497003361844276050-2-1-709-2997510882">
-                                        </div>
-                                        <div class="buttons">
-                                            <!-- если начну менять кнопки , то упадет js . Часть классов не переработал, так как  не знаю используются они в js или нет-->
-                                                <button class="button button_basket addToCart____J2SG" role="button" tabindex="0"  data-testid="ProductButton-addToCart" data-item="[Item_ID]">
-                                                    <span class="block_caption">
+                                        <link itemprop="availability" href="http://schema.org/InStock">
+                                        <meta itemprop="itemCondition" itemtype="http://schema.org/OfferItemCondition" content="http://schema.org/NewCondition">
+                                        <meta itemprop="url" content="https://www.joom.com/ru/products/1497003361844276050-2-1-709-2997510882">
+                                    </div>
+                                    <div class="buttons">
+                                        <!-- если начну менять кнопки , то упадет js . Часть классов не переработал, так как  не знаю используются они в js или нет-->
+                                        <button class="button button_basket addToCart____J2SG" role="button" tabindex="0"  data-testid="ProductButton-addToCart" data-item="[Item_ID]">
+                                            <span class="block_caption">
                                                         <span class="caption_loaded">Добавлено</span>
                                                         <span class="caption">В корзину</span>
-                                                            <!-- undefined есть в скрипте  js ,  но не понятно как он используется ,поэтому пусть будет  -->
                                                             <span class="loader undefined d-none">
-                                                                <span
-                                                                    class="dot dot__one"></span>
-                                                                <span
-                                                                    class="dot dot__two"></span>
-                                                                <span
-                                                                    class="dot dot__three"></span>
-                                                                <span
-                                                                    class="dot dot__four"></span>
+                                                                <span class="dot dot__one"></span>
+                                                                <span class="dot dot__two"></span>
+                                                                <span class="dot dot__three"></span>
+                                                                <span class="dot dot__four"></span>
                                                             </span>
                                                     </span>
-                                                </button>
-                                                <button class="button btn-main buyNow"
-                                                    role="button" tabindex="0" data-testid="ProductButton-buyNow">
-                                                    <span class="block_caption">
-                                                        <span class="caption">Купить сейчас</span>
-                                                    </span>
-                                                </button>
-                                            <!-- Добавить в избранное. favorite___2jmct такой класс был  -->
-                                            <div class="favorite" data-item="[Item_ID]" role="button" tabindex="0" data-testid="FavoriteButton" data-test-favorite="false">
-                                                <svg class="" height="100%" viewBox="0 0 30 30" width="100%" xmlns="http://www.w3.org/2000/svg">
-                                                    <defs>
-                                                        <path id="path"
-                                                            d="M24.23 6.98a5.94 5.94 0 0 0-8.4-.09l-.06.06-.02.02-.02.03-.74.78-.73-.77-.03-.03a5.94 5.94 0 0 0-8.4-.08l-.08.08a6.05 6.05 0 0 0 0 8.53L15 24.79l9.24-9.28a6.05 6.05 0 0 0 0-8.53z">
-                                                        </path>
-                                                        <mask id="mask">
-                                                            <use xlink:href="#path" fill="#fff"></use>
-                                                        </mask>
-                                                    </defs>
-                                                    <g class="hoverable">
-                                                        <rect class="inner" x="0" y="30" width="30" height="30" fill="#ff7676" mask="url(#mask)"></rect>
-                                                        <use class="path" xlink:href="#path" fill="none" stroke="#ff7676" stroke-width="2"></use>
-                                                    </g>
-                                                </svg>
-                                            </div>
+                                        </button>
+                                        <button class="button btn-main buyNow" role="button" tabindex="0" data-testid="ProductButton-buyNow">
+                                            <span class="block_caption">
+                                                <span class="caption">Купить сейчас</span>
+                                            </span>
+                                        </button>
+                                        <!-- Добавить в избранное. favorite___2jmct такой класс был  -->
+                                        <div class="favorite" data-item="[Item_ID]" role="button" tabindex="0" data-testid="FavoriteButton" data-test-favorite="false">
+                                            <svg class="" height="100%" viewBox="0 0 30 30" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                                <defs>
+                                                    <path id="path"
+                                                          d="M24.23 6.98a5.94 5.94 0 0 0-8.4-.09l-.06.06-.02.02-.02.03-.74.78-.73-.77-.03-.03a5.94 5.94 0 0 0-8.4-.08l-.08.08a6.05 6.05 0 0 0 0 8.53L15 24.79l9.24-9.28a6.05 6.05 0 0 0 0-8.53z">
+                                                    </path>
+                                                    <mask id="mask">
+                                                        <use xlink:href="#path" fill="#fff"></use>
+                                                    </mask>
+                                                </defs>
+                                                <g class="hoverable">
+                                                    <rect class="inner" x="0" y="30" width="30" height="30" fill="#ff7676" mask="url(#mask)"></rect>
+                                                    <use class="path" xlink:href="#path" fill="none" stroke="#ff7676" stroke-width="2"></use>
+                                                </g>
+                                            </svg>
                                         </div>
-                                        <div class="shipping">Бесплатная доставка, <!-- -->19 – 45 дней</div>
-                                        <!-- </div> -->
                                     </div>
-                                    <div class="item">
-                                        <div class="content_grade">
-                                            <div class="item_shop">
-                                                <h5>Магазин</h5>
-                                                <a class="inner" href="[TraderLink]">
-                                                    <div class="icon">
-                                                        <div class="storeLogo">
-                                                            <img alt="" src="https://avatars.joomcdn.net/50f10b293bb9117264bd36cfb373c7e74be1afb9_100_100.jpeg"
-                                                                sizes="46px"
-                                                                srcset="https://avatars.joomcdn.net/50f10b293bb9117264bd36cfb373c7e74be1afb9_100_100.jpeg 100w, https://avatars.joomcdn.net/50f10b293bb9117264bd36cfb373c7e74be1afb9_200_200.jpeg 200w, https://avatars.joomcdn.net/50f10b293bb9117264bd36cfb373c7e74be1afb9_400_400.jpeg 400w, https://avatars.joomcdn.net/50f10b293bb9117264bd36cfb373c7e74be1afb9_original.jpeg 915w">
-                                                        </div>
+                                    <div class="shipping">Бесплатная доставка, <!-- -->19 – 45 дней</div>
+                                    <!-- </div> -->
+                                </div>
+                                <div class="item">
+                                    <div class="content_grade">
+                                        <div class="item_shop">
+                                            <h5>Магазин</h5>
+                                            <a class="inner" href="[TraderLink]">
+                                                <div class="icon">
+                                                    <div class="storeLogo">
+                                                        <img alt="" src="https://avatars.joomcdn.net/50f10b293bb9117264bd36cfb373c7e74be1afb9_100_100.jpeg"
+                                                             sizes="46px"
+                                                             srcset="https://avatars.joomcdn.net/50f10b293bb9117264bd36cfb373c7e74be1afb9_100_100.jpeg 100w, https://avatars.joomcdn.net/50f10b293bb9117264bd36cfb373c7e74be1afb9_200_200.jpeg 200w, https://avatars.joomcdn.net/50f10b293bb9117264bd36cfb373c7e74be1afb9_400_400.jpeg 400w, https://avatars.joomcdn.net/50f10b293bb9117264bd36cfb373c7e74be1afb9_original.jpeg 915w">
                                                     </div>
-                                                    <div class="floater">
-                                                        <div class="container_grade">
-                                                            <div class="stars" style="padding-right:8.836985774702043%">
-                                                            </div>
-                                                            <div class="grade">4,6</div>
+                                                </div>
+                                                <div class="floater">
+                                                    <div class="container_grade">
+                                                        <div class="stars" style="padding-right:8.836985774702043%">
                                                         </div>
-                                                        <h6 itemprop="brand">[TraderName]
-                                                            <span class="info_icon">
-                                                                    <button class="icon" type="button"></button>
-                                                            </span>
-                                                        </h6>
+                                                        <div class="grade">4,6</div>
                                                     </div>
-                                                </a>
-                                            </div>
+                                                    <h6 itemprop="brand">[TraderName]
+                                                        <span class="info_icon">
+                                                            <button class="icon" type="button"></button>
+                                                        </span>
+                                                    </h6>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="description" data-testid="">
-                                    <div class="description_block">
-                                        <h4>Описание</h4>
-                                        <div class="text" itemprop="description">
-                                            [Description]
-                                        </div>
-                                        <div class="check_block">
-                                            <span class="check" role="button" tabindex="0">Смотреть полное
-                                                описание</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="description" data-testid="">
-                                    <div class="item">
-                                        <h5>Гарантия</h5>
-                                        <div class="list">
-                                            <div class="item">
-                                                <div class="iconWrapper">
-                                                    <img height="100%" class="icon_image" alt=""  src="https://resources.joomcdn.net/warranty/not_delivered.png">
-                                                </div>
-                                                <span class="text">Мы вернем деньги, если товар не доставлен 
-                                                    в течение 70 дней после оплаты. У вас есть 2 недели для подачи
-                                                    заявки на возврат — до 84 дня.</span>
-                                            </div>
-                                            <div class="item">
-                                                <div class="iconWrapper">
-                                                    <img height="100%" class="icon_image" alt="" src="https://resources.joomcdn.net/warranty/warranty.png">
-                                                </div>
-                                                <span class="text">Товар не соответствует описанию? Напишите
-                                                    нам в течение 30 дней после получения!</span>
-                                            </div>
-                                            <div class="item">
-                                                <div class="iconWrapper">
-                                                    <img height="100%" class="icon_image" alt="" src="https://resources.joomcdn.net/warranty/refund.png">
-                                                </div>
-                                                <span class="text">В случае отмены деньги поступят на счёт в
-                                                    течение 14 дней.</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Понять что это такое , а то в друше не чаю -->
-                                <!-- <div class="resizeTriggers">
-                                    <div>
-                                        <div style="width: 635px; height: 1029px;"></div>
-                                    </div>
-                                    <div class="contractTrigger"></div>
-                                </div> --> 
                             </div>
+                            <div class="description" data-testid="">
+                                <div class="description_block">
+                                    <h4>Описание</h4>
+                                    <div class="text" itemprop="description">
+                                        [Description]
+                                    </div>
+                                    <div class="check_block">
+                                        <span class="check" role="button" tabindex="0">Смотреть полное описание</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="description" data-testid="">
+                                <div class="item">
+                                    <h5>Гарантия</h5>
+                                    <div class="list">
+                                        <div class="item">
+                                            <div class="iconWrapper">
+                                                <img height="100%" class="icon_image" alt=""  src="https://resources.joomcdn.net/warranty/not_delivered.png">
+                                            </div>
+                                            <span class="text">Мы вернем деньги, если товар не доставлен в течение 70 дней после оплаты. У вас есть 2 недели для подачи заявки на возврат — до 84 дня.</span>
+                                        </div>
+                                        <div class="item">
+                                            <div class="iconWrapper">
+                                                <img height="100%" class="icon_image" alt="" src="https://resources.joomcdn.net/warranty/warranty.png">
+                                            </div>
+                                            <span class="text">Товар не соответствует описанию? Напишите нам в течение 30 дней после получения!</span>
+                                        </div>
+                                        <div class="item">
+                                            <div class="iconWrapper">
+                                                <img height="100%" class="icon_image" alt="" src="https://resources.joomcdn.net/warranty/refund.png">
+                                            </div>
+                                            <span class="text">В случае отмены деньги поступят на счёт в течение 14 дней.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Понять что это такое , а то в друше не чаю -->
+                            <!-- <div class="resizeTriggers">
+                                <div>
+                                    <div style="width: 635px; height: 1029px;"></div>
+                                </div>
+                                <div class="contractTrigger"></div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
-                <div class="content">
-                    <div class="whiteList">
-                        <div class="content">
-                            <h2 class="header_product">Похожие товары</h2>
-                            <div class="products">
-                                <div class="product_item">
-                                    <div class="item" id="items">
-                                        [Items]
-                                    </div>
+            </div>
+            <div class="content">
+                <div class="whiteList">
+                    <div class="content">
+                        <h2 class="header_product">Похожие товары</h2>
+                        <div class="products">
+                            <div class="product_item">
+                                <div class="item" id="items">
+                                    [Items]
                                 </div>
-                                [SearchMore]
                             </div>
+                            [SearchMore]
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</main>
-
+</div>
 </body>
 
 </html>

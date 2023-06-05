@@ -106,103 +106,94 @@
 
 </head>
 
+<body>
 <main>
-    <div class="container-xxl">
-        <!-- cart_page -->
-        <div id="cart_page" class="cart_page"> 
-            <div class="content_oops">
-                <div class="page_path">
-                    <span class="ListItem" typeof="ListItem" property="itemListElement">
-                        <a property="item" typeof="WebPage" lang="ru" class="link" href="/">
-                            <span property="name">Главная</span>
-                        </a>
-                        <meta property="position" content="1">
-                    </span>
-                </div>
-                <div class="container mt-3">
-                    <h5>Моя корзина</h5>
-                </div>
+<div class="container">
+    <!-- cart_page -->
+    <div id="cart_page" class="cart_page">
+        <div class="content_oops">
+            <div class="page_path">
+                <span class="ListItem" typeof="ListItem" property="itemListElement">
+                    <a property="item" typeof="WebPage" lang="ru" class="link" href="/">
+                        <span property="name">Главная</span>
+                    </a>
+                    <meta property="position" content="1">
+                </span>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="block_page">
-                            <label class="custom-checkbox">
-                                <input type="checkbox" value="value-1">
-                                <span class="checkbox_text">
-                                    выбрать все
-                                </span>
-                                <div class="delete_block">
-                                    <svg width="1em" height="1.2em" viewBox="0 0 18 18" class="icon_basket">
-                                        <path fill="currentColor" fill-rule="evenodd" d="M2 6v10c0 1.1.9 2 2 2h10a2 2 0 002-2V6H2zm11-3V1c0-.6-.4-1-1-1H6c-.6 0-1 .4-1 1v2H0v2h18V3h-5zm-2 0H7V2h4v1z"></path>
-                                    </svg>
-                                    &nbsp;
-                                    <span>
-                                        [DeleteText]
-                                    </span>
-                                </div>
-                            </label>
+            <div class="container mt-3">
+                <h5>Моя корзина</h5>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="block_page">
+                        <label class="custom-checkbox">
+                            <input type="checkbox input___3M6Ji cart_item_radio" name="" type="checkbox" id="all_checked" value=""[AllChecked]>
+                            <span class="checkbox_text">выбрать все</span>
+                            <div class="delete_block  trash___3IVXn color-link___3UBBR[DeleteDisabled]" >
+                                <svg width="1em" height="1.2em" viewBox="0 0 18 18" class="icon_basket">
+                                    <path fill="currentColor" fill-rule="evenodd" d="M2 6v10c0 1.1.9 2 2 2h10a2 2 0 002-2V6H2zm11-3V1c0-.6-.4-1-1-1H6c-.6 0-1 .4-1 1v2H0v2h18V3h-5zm-2 0H7V2h4v1z"></path>
+                                </svg>
+                                &nbsp;
+                                <span>[DeleteText]</span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="block_page">
+                        <div>
+                            [Items]
                         </div>
-                        <div class="block_page">
-                            <div>
-                                [Items]
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="block_page">
+                        <div class="block_delivery_logo">
+                            <h5 class="delivery">Оформление заказа</h5>
+                        </div>
+                        <div class="discount_block">
+                            <div class="discount_text">Есть промокод? Введите здесь:</div>
+                            <div class="container mt-3">
+                                <input type="text" class="input_discount" placeholder="Промокод на скидку">
+                                <button class="button btn-main text-light btn_discount">
+                                    <span class="apply">Применить</span>
+                                </button>
+                                <button  id="buy" class="button btn-main mt-3 text-light button___3hmfW" style="width: 100%;"[BuyDisabled]>
+                                    <span class="children___1pivU">[BuyText]</span>
+                                </button>
+                                <div class="hyper_text mt-3">
+                                    Продолжая, я соглашаюсь с
+                                    <a href="/terms/"  class="blanck" target="_blank">Условиями использования</a> и
+                                    <a href="/privacy/"  class="blanck" target="_blank">Политикой конфиденциальности</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="block_page">
-                            <div class="block_delivery_logo">
-                                <h5 class="delivery">Оформление заказа</h5>
-                            </div>
-                            <div class="discount_block">
-                                <div class="discount_text">
-                                    Есть промокод? Введите здесь:
-                                </div>
-                                <div class="container mt-3">
-                                    <input type="text" class="input_discount" placeholder="Промокод на скидку">
-                                    <button class="button btn-main text-light btn_discount">
-                                        <span class="apply">Применить</span>
-                                    </button>
-                                    <button class="button btn-main mt-3 text-light button___3hmfW" style="width: 100%;" id="buy">
-                                        <span class="children___1pivU">[BuyText]</span>
-                                    </button>
-                                    <div class="hyper_text mt-3">
-                                        Продолжая, я соглашаюсь с 
-                                            <a href="/terms/"  class="blanck" target="_blank">Условиями использования</a> и 
-                                            <a href="/privacy/"  class="blanck" target="_blank">Политикой конфиденциальности</a>
-                                    </div>
-                                </div>
+                    <div class="container mt-3">
+                        <div class="block_payment">
+                            <div class="subheader">Мы принимаем:</div>
+                            <div class="money">
+                                <img class="item_money" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj4KICA8Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIyMCIgZmlsbD0iI0Y1RjVGNSIvPgogIDxwYXRoIGZpbGw9IiMxNjIxNkEiIGQ9Ik0xNS40MiAyMy4zM2wyLjItNy4wOGgxLjk2bC0yLjIgNy4wOHpNMTQuMyAxNi4yNWwtMS43IDNjLS40My43OS0uNjggMS4xOS0uOCAxLjY4aC0uMDJjLjAzLS42My0uMDYtMS40LS4wNy0xLjg0bC0uMTktMi44NEg4LjM3bC0uMDQuMmMuODEgMCAxLjMuNCAxLjQzIDEuMjZsLjYxIDUuNjJoMS45NWwzLjkzLTcuMDhoLTEuOTZ6TTI5LjY4IDIzLjMzbC0uMDUtMS4wNUgyNy4ybC0uNSAxLjA1aC0yLjEybDMuODQtNy4wOGgyLjZsLjY1IDcuMDhoLTEuOTl6bS0uMjItNC4xOGMtLjAyLS41My0uMDQtMS4yNCAwLTEuNjdoLS4wM2MtLjEyLjM1LS42MyAxLjQxLS44NSAxLjkzbC0uNzMgMS41NmgxLjcxbC0uMS0xLjgyek0yMS42MSAyMy4zM2E1LjI0IDUuMjQgMCAwMS0yLjg2LS44MmwuOS0xLjRjLjU3LjMyIDEuMDIuNyAyLjA1LjcuMzMgMCAuNjUtLjA5LjgzLS40LjI2LS40Ny0uMDYtLjcyLS44LTEuMTVsLS4zNy0uMjRjLTEuMS0uNzctMS41Ny0xLjUtMS4wNS0yLjc2LjMzLS44MSAxLjItMS40MyAyLjY0LTEuNDMgMSAwIDEuOTIuNDQgMi40Ny44N2wtMS4wNCAxLjI0Yy0uNTMtLjQ0LS45Ny0uNjYtMS40Ny0uNjYtLjQgMC0uNy4xNi0uODEuMzctLjIuNC4wNi42Ny42NCAxLjA0bC40My4yOGMxLjM0Ljg2IDEuNjYgMS43NSAxLjMyIDIuNi0uNTcgMS40NC0xLjcgMS43Ni0yLjg4IDEuNzZ6Ii8+Cjwvc3ZnPgo=" alt="Visa">
+                                <img class="item_money" src="/lib/img/svg/2849d2563094f18b208bc19f3683f272.svg" alt="Mastercard">
+                                <img class="item_money" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj4KICA8Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIyMCIgZmlsbD0iI0Y1RjVGNSIvPgogIDxwYXRoIGZpbGw9IiNGQjhDMjUiIGQ9Ik0yMy41NCAyMy43MWMtLjE2IDAtLjMuMDYtLjM4LjE2LS4yMi4yNy0uMTIuNzQuMiAxLjAyLjE1LjEzLjM2LjIuNTYuMi4yMSAwIC4zOC0uMDcuNS0uMjEuMTgtLjI2LjA3LS42My0uMy0uOTNhLjkzLjkzIDAgMCAwLS41OC0uMjRtMS44MS0xLjMzYy0uMTYtLjA1LS4yOC0uMDEtLjM0LjEtLjA5LjE2LS4wMi40OC4xNi43Ni4xOC4yOS4zNC40My40Ni40My4wNCAwIC4wOC0uMDEuMTEtLjA1LjA3LS4wOC4xLS4yNC4wNi0uNDUtLjAzLS4yMi0uMTYtLjY2LS40NS0uOG0zLjU4IDYuNDljLjE3LjItLjA5LjQxLS4yNy4yNS0xLjg4LTEuNjctMy40Ni0yLjE0LTUuMDItMi4yLS44My0uMDQtMS42NS4wNC0yLjUxLjEyYTU4LjU4IDU4LjU4IDAgMCAxLTEuNjguMTEgOC4zMiA4LjMyIDAgMCAxLTQuMTItMS4wNyA4LjEgOC4xIDAgMCAxLTQuMDgtNy4wNSA4LjIgOC4yIDAgMCAxIDQuMDUtNy4xIDguNDIgOC40MiAwIDAgMSA4LjIyLS4wMSA4LjEgOC4xIDAgMCAxIDMuODggOS4wMmwtLjA4LjI2YTkuMzcgOS4zNyAwIDAgMS0uOTIgMS45NmMtLjA2LjEtLjA5LjAyLS4xLS4wM2EzLjc0IDMuNzQgMCAwIDAtMS42OC0yLjhsLS4wNS0uMDJhNC4yIDQuMiAwIDAgMC0xLjI0LS41M2MtLjE3LS4wNC0uNTMtLjAyLS40LS4xNWE3LjY2IDcuNjYgMCAwIDEgMS44LS4wMSA1LjIgNS4yIDAgMCAwLTEuNTUtNC40NSA1LjEzIDUuMTMgMCAwIDAtMy43OC0xLjU3Yy0xLjUyIDAtMi43NS41Mi0zLjc3IDEuNTdBNS4yNyA1LjI3IDAgMCAwIDE0LjEgMTljMCAxLjUyLjUxIDIuNzcgMS41NiAzLjgyYTUuMDUgNS4wNSAwIDAgMCAzLjczIDEuNTZoLjIxdi0uMDZjLS4wOS0xLjA3LS4xLTEuOTYuMTItMS42YTEwLjg1IDEwLjg1IDAgMCAwIDEuMDkgMS40NGMwIC4wMi4wMi4wMy4wNC4wNGE1LjggNS44IDAgMCAwIDMuMjEgMS42bC41NC4xNGMxLjMuMzQgMi42OS45IDQuMzIgMi45MiIvPgo8L3N2Zz4K" alt="Qiwi">
+                                <img class="item_money" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj4KICA8Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIyMCIgZmlsbD0iI0Y1RjVGNSIvPgogIDxwYXRoIGZpbGw9IiMwMDlERTIiIGQ9Ik0xOS41MyAxNC43aDUuNjRjMy4wMyAwIDQuMTcgMS41NCAzLjk5IDMuOC0uMjkgMy43Mi0yLjU0IDUuNzctNS41MiA1Ljc3aC0xLjVjLS40MiAwLS43LjI3LS44IDFsLS42NSA0LjI3Yy0uMDQuMjgtLjE5LjQ0LS40LjQ2aC0zLjU0Yy0uMzQgMC0uNDUtLjI1LS4zNy0uOGwyLjE2LTEzLjY4Yy4wOS0uNTUuMzktLjgxLjk5LS44MXoiLz4KICA8cGF0aCBmaWxsPSIjMTEzOTg0IiBkPSJNMTYgMTBoNS42NWMxLjU5IDAgMy40Ny4wNSA0LjczIDEuMTZhMy44MiAzLjgyIDAgMCAxIDEuMTkgMy4yYy0uMzUgNC4zMi0yLjkzIDYuNzMtNi4zOSA2LjczSDE4LjRjLS40OCAwLS43OS4zMi0uOTIgMS4xN2wtLjc4IDQuOTRjLS4wNS4zMi0uMi41MS0uNDQuNTNoLTMuNDhjLS4zOSAwLS41My0uMy0uNDMtLjkzbDIuNTEtMTUuODZjLjEtLjY0LjQ1LS45NCAxLjE0LS45NHoiLz4KICA8cGF0aCBmaWxsPSIjMTcyQzcwIiBkPSJNMTcuNTYgMjEuNzZsLjk4LTYuMjRjLjA5LS41NS4zOS0uODEuOTktLjgxaDUuNjRjLjkzIDAgMS42OS4xNCAyLjI4LjQxLS41NyAzLjg0LTMuMDUgNS45Ny02LjMgNS45N2gtMi43OWMtLjM2IDAtLjY0LjE5LS44LjY3eiIvPgo8L3N2Zz4K" alt="PayPal">
+                                <img class="item_money" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCI+CiAgPGRlZnM+CiAgICA8cGF0aCBpZD0iYSIgZD0iTTAgMTguMTNWLjA2aDEzLjI3djE4LjA3eiIvPgogIDwvZGVmcz4KICA8Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIyMCIgZmlsbD0iI0Y1RjVGNSIvPgogIDxtYXNrIGlkPSJiIiBmaWxsPSIjZmZmIj4KICAgIDx1c2UgeGxpbms6aHJlZj0iI2EiLz4KICA8L21hc2s+CiAgPHBhdGggZmlsbD0iI0ZDMCIgZD0iTTIuMTEgNS44YzEuNjgtMS4zIDctNS43NCA3LTUuNzR2Ny40aDQuMTZ2MTAuNjdoLTEyYy0uNyAwLTEuMjctLjYtMS4yNy0xLjMyVjkuMDJDMCA4LjAxLjA4IDcuMzYgMi4xMSA1Ljh6IiBtYXNrPSJ1cmwoI2IpIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi44NyAxMC42MykiLz4KICA8cGF0aCBmaWxsPSIjQ0FBMjAyIiBkPSJNMjEuOTkgMjIuMjdsLTcuNiA1LjMzIDkuNS0zLjIydi02LjQzaC0xLjl6bS0zLjQ1LTQuNWMuNDEtLjU1IDEuMDEtLjc1IDEuMzQtLjQ0LjMzLjMyLjI2IDEuMDItLjE1IDEuNTgtLjQuNTYtMSAuNzUtMS4zMy40NC0uMzMtLjMyLS4yNi0xLjAyLjE0LTEuNTgiLz4KPC9zdmc+Cg==" alt="Yandex.Money">
                             </div>
                         </div>
-                        <div class="container mt-3">
-                            <div class="block_payment">
-                                <div class="subheader">
-                                    Мы принимаем:
-                                </div>
-                                <div class="money">
-                                    <img class="item_money" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj4KICA8Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIyMCIgZmlsbD0iI0Y1RjVGNSIvPgogIDxwYXRoIGZpbGw9IiMxNjIxNkEiIGQ9Ik0xNS40MiAyMy4zM2wyLjItNy4wOGgxLjk2bC0yLjIgNy4wOHpNMTQuMyAxNi4yNWwtMS43IDNjLS40My43OS0uNjggMS4xOS0uOCAxLjY4aC0uMDJjLjAzLS42My0uMDYtMS40LS4wNy0xLjg0bC0uMTktMi44NEg4LjM3bC0uMDQuMmMuODEgMCAxLjMuNCAxLjQzIDEuMjZsLjYxIDUuNjJoMS45NWwzLjkzLTcuMDhoLTEuOTZ6TTI5LjY4IDIzLjMzbC0uMDUtMS4wNUgyNy4ybC0uNSAxLjA1aC0yLjEybDMuODQtNy4wOGgyLjZsLjY1IDcuMDhoLTEuOTl6bS0uMjItNC4xOGMtLjAyLS41My0uMDQtMS4yNCAwLTEuNjdoLS4wM2MtLjEyLjM1LS42MyAxLjQxLS44NSAxLjkzbC0uNzMgMS41NmgxLjcxbC0uMS0xLjgyek0yMS42MSAyMy4zM2E1LjI0IDUuMjQgMCAwMS0yLjg2LS44MmwuOS0xLjRjLjU3LjMyIDEuMDIuNyAyLjA1LjcuMzMgMCAuNjUtLjA5LjgzLS40LjI2LS40Ny0uMDYtLjcyLS44LTEuMTVsLS4zNy0uMjRjLTEuMS0uNzctMS41Ny0xLjUtMS4wNS0yLjc2LjMzLS44MSAxLjItMS40MyAyLjY0LTEuNDMgMSAwIDEuOTIuNDQgMi40Ny44N2wtMS4wNCAxLjI0Yy0uNTMtLjQ0LS45Ny0uNjYtMS40Ny0uNjYtLjQgMC0uNy4xNi0uODEuMzctLjIuNC4wNi42Ny42NCAxLjA0bC40My4yOGMxLjM0Ljg2IDEuNjYgMS43NSAxLjMyIDIuNi0uNTcgMS40NC0xLjcgMS43Ni0yLjg4IDEuNzZ6Ii8+Cjwvc3ZnPgo=" alt="Visa">
-                                    <img class="item_money" src="/lib/img/svg/2849d2563094f18b208bc19f3683f272.svg" alt="Mastercard">
-                                    <img class="item_money" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj4KICA8Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIyMCIgZmlsbD0iI0Y1RjVGNSIvPgogIDxwYXRoIGZpbGw9IiNGQjhDMjUiIGQ9Ik0yMy41NCAyMy43MWMtLjE2IDAtLjMuMDYtLjM4LjE2LS4yMi4yNy0uMTIuNzQuMiAxLjAyLjE1LjEzLjM2LjIuNTYuMi4yMSAwIC4zOC0uMDcuNS0uMjEuMTgtLjI2LjA3LS42My0uMy0uOTNhLjkzLjkzIDAgMCAwLS41OC0uMjRtMS44MS0xLjMzYy0uMTYtLjA1LS4yOC0uMDEtLjM0LjEtLjA5LjE2LS4wMi40OC4xNi43Ni4xOC4yOS4zNC40My40Ni40My4wNCAwIC4wOC0uMDEuMTEtLjA1LjA3LS4wOC4xLS4yNC4wNi0uNDUtLjAzLS4yMi0uMTYtLjY2LS40NS0uOG0zLjU4IDYuNDljLjE3LjItLjA5LjQxLS4yNy4yNS0xLjg4LTEuNjctMy40Ni0yLjE0LTUuMDItMi4yLS44My0uMDQtMS42NS4wNC0yLjUxLjEyYTU4LjU4IDU4LjU4IDAgMCAxLTEuNjguMTEgOC4zMiA4LjMyIDAgMCAxLTQuMTItMS4wNyA4LjEgOC4xIDAgMCAxLTQuMDgtNy4wNSA4LjIgOC4yIDAgMCAxIDQuMDUtNy4xIDguNDIgOC40MiAwIDAgMSA4LjIyLS4wMSA4LjEgOC4xIDAgMCAxIDMuODggOS4wMmwtLjA4LjI2YTkuMzcgOS4zNyAwIDAgMS0uOTIgMS45NmMtLjA2LjEtLjA5LjAyLS4xLS4wM2EzLjc0IDMuNzQgMCAwIDAtMS42OC0yLjhsLS4wNS0uMDJhNC4yIDQuMiAwIDAgMC0xLjI0LS41M2MtLjE3LS4wNC0uNTMtLjAyLS40LS4xNWE3LjY2IDcuNjYgMCAwIDEgMS44LS4wMSA1LjIgNS4yIDAgMCAwLTEuNTUtNC40NSA1LjEzIDUuMTMgMCAwIDAtMy43OC0xLjU3Yy0xLjUyIDAtMi43NS41Mi0zLjc3IDEuNTdBNS4yNyA1LjI3IDAgMCAwIDE0LjEgMTljMCAxLjUyLjUxIDIuNzcgMS41NiAzLjgyYTUuMDUgNS4wNSAwIDAgMCAzLjczIDEuNTZoLjIxdi0uMDZjLS4wOS0xLjA3LS4xLTEuOTYuMTItMS42YTEwLjg1IDEwLjg1IDAgMCAwIDEuMDkgMS40NGMwIC4wMi4wMi4wMy4wNC4wNGE1LjggNS44IDAgMCAwIDMuMjEgMS42bC41NC4xNGMxLjMuMzQgMi42OS45IDQuMzIgMi45MiIvPgo8L3N2Zz4K" alt="Qiwi">
-                                    <img class="item_money" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj4KICA8Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIyMCIgZmlsbD0iI0Y1RjVGNSIvPgogIDxwYXRoIGZpbGw9IiMwMDlERTIiIGQ9Ik0xOS41MyAxNC43aDUuNjRjMy4wMyAwIDQuMTcgMS41NCAzLjk5IDMuOC0uMjkgMy43Mi0yLjU0IDUuNzctNS41MiA1Ljc3aC0xLjVjLS40MiAwLS43LjI3LS44IDFsLS42NSA0LjI3Yy0uMDQuMjgtLjE5LjQ0LS40LjQ2aC0zLjU0Yy0uMzQgMC0uNDUtLjI1LS4zNy0uOGwyLjE2LTEzLjY4Yy4wOS0uNTUuMzktLjgxLjk5LS44MXoiLz4KICA8cGF0aCBmaWxsPSIjMTEzOTg0IiBkPSJNMTYgMTBoNS42NWMxLjU5IDAgMy40Ny4wNSA0LjczIDEuMTZhMy44MiAzLjgyIDAgMCAxIDEuMTkgMy4yYy0uMzUgNC4zMi0yLjkzIDYuNzMtNi4zOSA2LjczSDE4LjRjLS40OCAwLS43OS4zMi0uOTIgMS4xN2wtLjc4IDQuOTRjLS4wNS4zMi0uMi41MS0uNDQuNTNoLTMuNDhjLS4zOSAwLS41My0uMy0uNDMtLjkzbDIuNTEtMTUuODZjLjEtLjY0LjQ1LS45NCAxLjE0LS45NHoiLz4KICA8cGF0aCBmaWxsPSIjMTcyQzcwIiBkPSJNMTcuNTYgMjEuNzZsLjk4LTYuMjRjLjA5LS41NS4zOS0uODEuOTktLjgxaDUuNjRjLjkzIDAgMS42OS4xNCAyLjI4LjQxLS41NyAzLjg0LTMuMDUgNS45Ny02LjMgNS45N2gtMi43OWMtLjM2IDAtLjY0LjE5LS44LjY3eiIvPgo8L3N2Zz4K" alt="PayPal">
-                                    <img class="item_money" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCI+CiAgPGRlZnM+CiAgICA8cGF0aCBpZD0iYSIgZD0iTTAgMTguMTNWLjA2aDEzLjI3djE4LjA3eiIvPgogIDwvZGVmcz4KICA8Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIyMCIgZmlsbD0iI0Y1RjVGNSIvPgogIDxtYXNrIGlkPSJiIiBmaWxsPSIjZmZmIj4KICAgIDx1c2UgeGxpbms6aHJlZj0iI2EiLz4KICA8L21hc2s+CiAgPHBhdGggZmlsbD0iI0ZDMCIgZD0iTTIuMTEgNS44YzEuNjgtMS4zIDctNS43NCA3LTUuNzR2Ny40aDQuMTZ2MTAuNjdoLTEyYy0uNyAwLTEuMjctLjYtMS4yNy0xLjMyVjkuMDJDMCA4LjAxLjA4IDcuMzYgMi4xMSA1Ljh6IiBtYXNrPSJ1cmwoI2IpIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi44NyAxMC42MykiLz4KICA8cGF0aCBmaWxsPSIjQ0FBMjAyIiBkPSJNMjEuOTkgMjIuMjdsLTcuNiA1LjMzIDkuNS0zLjIydi02LjQzaC0xLjl6bS0zLjQ1LTQuNWMuNDEtLjU1IDEuMDEtLjc1IDEuMzQtLjQ0LjMzLjMyLjI2IDEuMDItLjE1IDEuNTgtLjQuNTYtMSAuNzUtMS4zMy40NC0uMzMtLjMyLS4yNi0xLjAyLjE0LTEuNTgiLz4KPC9zdmc+Cg==" alt="Yandex.Money">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container mt-3">
-                            <div >Покупать на&nbsp;сайте [MARKET_URL] безопасно&nbsp;
-                                <svg width="8" height="11" viewBox="0 0 8 11">
-                                    <path fill="currentColor" d="M7 4h-.5V3a2.5 2.5 0 00-5 0v1H1a1 1 0 00-1 1v5a1 1 0 001 1h6a1 1 0 001-1V5a1 1 0 00-1-1zM4 8.5a1 1 0 01-1-1 1 1 0 011-1 1 1 0 011 1 1 1 0 01-1 1zM5.55 4h-3.1V3a1.55 1.55 0 013.1 0v1z"></path>
-                                </svg>
-                            </div>
+                    </div>
+                    <div class="container mt-3">
+                        <div >Покупать на&nbsp;сайте [MARKET_URL] безопасно&nbsp;
+                            <svg width="8" height="11" viewBox="0 0 8 11">
+                                <path fill="currentColor" d="M7 4h-.5V3a2.5 2.5 0 00-5 0v1H1a1 1 0 00-1 1v5a1 1 0 001 1h6a1 1 0 001-1V5a1 1 0 00-1-1zM4 8.5a1 1 0 01-1-1 1 1 0 011-1 1 1 0 011 1 1 1 0 01-1 1zM5.55 4h-3.1V3a1.55 1.55 0 013.1 0v1z"></path>
+                            </svg>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- **** -->
     </div>
+    <!-- **** -->
+</div>
 </main>
-
 </body>
-
 </html>

@@ -8,6 +8,7 @@
     max-width: calc(33.33333% - 8.1px);
     margin-left: 12px;
     pointer-events: none;
+    scroll-snap-align: start;
 
     &:first-child {
         margin-left: 0;

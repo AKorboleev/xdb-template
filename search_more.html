@@ -95,36 +95,32 @@
 
 </head>
 
-<main>
-    <div class="container-xxl">
-        <!-- search_more -->
-            <div class="search_more">
-                <form id="more">
-                    <input type="hidden" name="action" value="1">
-                    <input type="hidden" name="promo" value="[Promo_ID]">
-                    <input type="hidden" name="trader" value="[Trader_ID]">
-                    <input type="hidden" name="producer" value="[Producer_ID]">
-                    <input type="hidden" name="category" value="[Category_ID]">
-                    <input type="hidden" name="asis" value="[AsIs]">
-                    <input type="hidden" name="text" value="[Text]">
-                    <input type="hidden" name="pricefrom" value="[PriceFrom]">
-                    <input type="hidden" name="priceto" value="[PriceTo]">
-                    <input type="hidden" name="sort" value="[Sort]">
-                    <input type="hidden" name="page" value="[Page]">
-                </form>
-                <a class="button_search_more search_more" href="">Показать ещё
-                    <!-- d-none если добавить его , то анимации не будет , но если его убрать будте анимация , все делается через js  -->
-                    <span class="loader">
-                        <span class="dot dot_one"></span>
-                        <span class="dot dot__two"></span>
-                        <span class="dot dot__three"></span>
-                        <span class="dot dot__four"></span>
-                    </span>
-                </a>
-            </div>
-        <!-- **** -->
-    </div>
-</main>
-
+<body>
+<!-- search_more -->
+<div class="search_more mt-2">
+    <form id="more">
+        <input type="hidden" name="action" value="1">
+        <input type="hidden" name="promo" value="[Promo_ID]">
+        <input type="hidden" name="trader" value="[Trader_ID]">
+        <input type="hidden" name="producer" value="[Producer_ID]">
+        <input type="hidden" name="category" value="[Category_ID]">
+        <input type="hidden" name="asis" value="[AsIs]">
+        <input type="hidden" name="text" value="[Text]">
+        <input type="hidden" name="pricefrom" value="[PriceFrom]">
+        <input type="hidden" name="priceto" value="[PriceTo]">
+        <input type="hidden" name="sort" value="[Sort]">
+        <input type="hidden" name="page" value="[Page]">
+    </form>
+    <a class="button_search_more search_more" href="">Показать ещё
+        <!-- d-none если добавить его , то анимации не будет , но если его убрать будте анимация , все делается через js  -->
+        <span class="loader loader___AOgfw d-none mb-3">
+            <span class="dot dot_one"></span>
+            <span class="dot dot__two"></span>
+            <span class="dot dot__three"></span>
+            <span class="dot dot__four"></span>
+        </span>
+    </a>
+</div>
+<!-- **** -->
 </body>
 </html>

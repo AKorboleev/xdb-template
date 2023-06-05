@@ -94,6 +94,94 @@ $catalog: $mainColor;
 
 
 
+// Промоакция
+.cell_promo {
+    box-sizing: content-box;
+    width: 100%;
+    -ms-flex-preferred-size: calc(33.33333% - 8.1px);
+    flex-basis: calc(33.33333% - 8.1px);
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    max-width: calc(33.33333% - 8.1px);
+    margin-left: 12px;
+    pointer-events: none;
+}
+.cell_promo:first-child {
+    margin-left: 0;
+}
+@media (min-width: 576px) {
+    .cell_promo {
+        box-sizing: content-box;
+        width: 100%;
+        -ms-flex-preferred-size: calc(33.33333% - 8.1px);
+        flex-basis: calc(33.33333% - 8.1px);
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        max-width: calc(33.33333% - 8.1px);
+        margin-left: 12px;
+    }
+    .cell_promo:first-child {
+        margin-left: 0;
+    }
+}
+@media (min-width: 768px) {
+    .cell_promo {
+        box-sizing: content-box;
+        width: 100%;
+        -ms-flex-preferred-size: calc(33.33333% - 10.76667px);
+        flex-basis: calc(33.33333% - 10.76667px);
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        max-width: calc(33.33333% - 10.76667px);
+        margin-left: 16px;
+    }
+    .cell_promo:first-child {
+        margin-left: 0;
+    }
+}
+@media (min-width: 992px) {
+    .cell_promo {
+        box-sizing: content-box;
+        width: 100%;
+        -ms-flex-preferred-size: calc(33.33333% - 10.76667px);
+        flex-basis: calc(33.33333% - 10.76667px);
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        max-width: calc(33.33333% - 10.76667px);
+        margin-left: 16px;
+    }
+    .cell_promo:first-child {
+        margin-left: 0;
+    }
+}
+@media (min-width: 1300px) {
+    .cell_promo {
+        box-sizing: content-box;
+        width: 100%;
+        -ms-flex-preferred-size: calc(33.33333% - 10.76667px);
+        flex-basis: calc(33.33333% - 10.76667px);
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        max-width: calc(33.33333% - 10.76667px);
+        margin-left: 16px;
+    }
+    .cell_promo:first-child {
+        margin-left: 0;
+    }
+}
+//****
+
+
 // shake
 @keyframes shake-animation {
 

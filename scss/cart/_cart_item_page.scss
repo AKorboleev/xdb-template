@@ -113,6 +113,21 @@
                             margin: 19.2px;
                         }
                     }
+
+                    .wrap_counter_prev,
+                    .wrap_counter_next {
+                        position: absolute;
+                        top: 50%;
+                        width: 82%;
+                        display: block;
+                        &:hover {
+                            display: block;
+                        }
+
+                        &::after {
+                            display: contents;
+                        }
+                    }
                 }
             }
             // Информация о продукте
@@ -128,7 +143,6 @@
                 }
                 //Основная информация продукта
                 .item {
-                    // Верхний контейнер
 
                     // Оценка
                     .container_grade {
@@ -584,5 +598,14 @@
                 flex-wrap: wrap;
             }
         }
+    }
+
+    
+    // Верхний контейнер
+    .img_wrap {
+        scroll-snap-type: x mandatory;
+        height: 100%;
+        overflow-x: hidden;
+        display: flex;
     }
 }
