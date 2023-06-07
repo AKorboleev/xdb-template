@@ -6,7 +6,7 @@ $os: "Open Sans", sans-serif;
 // ****
 
 //Используемые цвета
-$mainColor: #ff7676;
+$mainColor: #2bf264;
 $white: #fff;
 $yellow: #b39f08;
 $black: rgb(22, 22, 22);
@@ -15,7 +15,7 @@ $grey: #9697a1;
 // ****
 
 //Используемы цвета в ховеер
-$hoverColor: #47d499;
+$hoverColor: #2f1cd5;
 // ****
 
 // часто испльзуемые значения
@@ -88,6 +88,15 @@ $catalog: $mainColor;
     scroll-snap-type: x mandatory;
 }
 //****
+
+// Кнопка в изранное
+.button_favorite {
+    align-self: center;
+    height: 1.8rem;
+    margin: .3rem;
+    width: 1.8rem
+}
+// ****
 
 // Промоакция
 .cell_promo {
@@ -437,8 +446,6 @@ label.custom-checkbox {
 .custom-checkbox > input:disabled + span::before {
     background-color: #e9ecef;
 }
-
-
 // ****
 
 // баннер сообщает о положительном оформлении доставке
@@ -763,6 +770,126 @@ label.custom-checkbox {
 
 //d-none если добавить его , то анимации не будет , но если его убрать будте анимация , все делается через js
 // Загрузка, вращение кружочков  во круг оси
+
+.load_to_cart {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    font-size: .5em;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.input_all {
+    left: -10000px;
+    border: 0;
+    font-size: 0;
+    height: 0;
+    opacity: 0;
+    width: 0;
+    position: absolute;
+}
+
+.increase,
+.decrease {
+    background: rgba(0, 0, 0, .04);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+    content: "";
+    height: 1px;
+    left: 8px;
+    position: absolute;
+    top: 12px;
+    width: 8px;
+
+    &:focus,
+    &:hover {
+    background: rgba(0, 0, 0, .08);
+    }
+
+    &:after,
+    &:before {
+        background: #2d2f43;
+        content: "";
+        height: 1px;
+        left: 8px;
+        position: absolute;
+        top: 12px;
+        width: 8px
+    }
+}
+
+@media(max-width:575.9px) {
+    .word_deleted {
+        display: none;
+    }
+}
+
+.trash_dell {
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: flex;
+    &:hover {
+        color: #ff7676
+    } 
+}
+
+.color-link {
+    color: #ff7676;
+}
+
+.disabled_dell {
+    cursor: default;
+    opacity: .5
+}
+
+.button_edit {
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: inherit;
+    justify-content: center;
+    line-height: 1.3em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: .1s ease;
+    user-select: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:disabled {
+        pointer-events: none
+    }
+}
+
+.children_cell {
+    display: block;
+    max-width: 100%;
+}
+
+.disabled {
+    &:focus,
+    &:hover {
+        background: rgba(0, 0, 0, .02);
+        cursor: default;
+    }
+
+    &:after,
+    &:before {
+    background: #9697a1;
+    }
+}
+
+
+
 .loader {
     display: inline;
     top: 22px;

@@ -69,6 +69,18 @@
                     }
                 }
 
+                .counter {
+                    color: #9697a1;
+                    height: 24px;
+                    display: -ms-flexbox;
+                    display: flex;
+                    margin: -1px;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    white-space: nowrap
+                }
                 
             }
 
