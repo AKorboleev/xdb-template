@@ -9,28 +9,7 @@
     max-width: 18%;
     padding-bottom: 2%;
 
-
     // Адаптив
-
-    // @media (max-height:1058px) {
-    //     width: 40%;
-    //     min-width: 45%;
-    // }
-
-    // @media (max-height:768px) {
-    //     width: 45%;
-    //     min-width: 45%;
-    // }
-
-    // @media (max-height:648px) {
-    //     width: 30%;
-    //     min-width: 30%;
-    // }
-
-    // @media (max-height:445px) {
-    //     width: 17%;
-    //     min-width: 17%;
-    // }
 
     @media (min-width:375px) {
         width: 44%;
@@ -130,17 +109,14 @@
 
                             // Продукт изображения
                             .image_produt {
-                                background-repeat: no-repeat;
-                                display: inline-block;
+                                display: block;
+                                height: inherit;
+                                mix-blend-mode: multiply;
                                 width: inherit;
-                                background-size: contain;
-                                object-fit: contain;
+                                @include contain;
                                 background-color: #fff;
-                                background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNyIgaGVpZ2h0PSIyNyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBmaWxsPSIjMDAwIiBkPSJNMjcgMjRWM2MwLTEuNjUtMS4zNS0zLTMtM0gzQzEuMzUgMCAwIDEuMzUgMCAzdjIxYzAgMS42NSAxLjM1IDMgMyAzaDIxYzEuNjUgMCAzLTEuMzUgMy0zek03Ljc1IDE1LjI1bDMuNzUgNC41MkwxNi43NSAxM2w2Ljc1IDloLTIxbDUuMjUtNi43NXoiIG9wYWNpdHk9Ii4xNSIvPjxwYXRoIGQ9Ik0tNS00aDM2djM2SC01Ii8+PC9nPjwvc3ZnPg==);
                                 background-position: 50% 50%;
                                 background-repeat: no-repeat;
-                                background-size: 36% 36%;
-                                cursor: default;
                             }
                         }
                     }
@@ -227,6 +203,13 @@
                     text-overflow: ellipsis;
                     user-select: none;
                     white-space: nowrap;
+
+                    .brand {
+                        color:$black;
+                        background-color: #f2f3f7;
+                        flex-shrink: 5;
+                        text-transform: uppercase;
+                    }
                 }
                 // Может предется перенести в  badge,  чтобы сделать меньше
                 .discountBadge {

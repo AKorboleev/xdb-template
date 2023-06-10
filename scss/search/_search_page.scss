@@ -170,28 +170,6 @@
         }
     }
 
-    // Не знаю где использовать
-    .resizeTriggers {
-        animation: resizeAnimation 1ms;
-        opacity: 0;
-        visibility: hidden;
-
-        .contractTrigger {
-            &:before {
-                content: " ";
-                display: block;
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                overflow: hidden;
-
-                height: 200%;
-                width: 200%;
-            }
-        }
-    }
 
     // Редуктор
     .reducer {

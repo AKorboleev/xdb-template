@@ -53,7 +53,7 @@
     }
 
     // parent 
-    .parent {
+    .parent_wrap {
         background-color: #fff;
         border-radius: 0.3333rem;
         display: -ms-flexbox;
@@ -70,7 +70,7 @@
         }
 
         //Котроль контента
-        .control {
+        .parent {
             border: 1px solid #eee;
             border-radius: 0.1667rem;
             line-height: 1rem;

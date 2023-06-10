@@ -632,10 +632,6 @@ $.ajax({
 
 });
 
-
-
-
-
 /*
 
 show_more
@@ -655,7 +651,7 @@ addresses open
 addresses close
 address add
 address select
-	address check
+address check
 address change
 address delete
 address choose
@@ -664,6 +660,4 @@ address save
 - delivery choose
 - pay method choose
 - pay
-
-
 */

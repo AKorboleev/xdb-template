@@ -21,7 +21,9 @@
                 color: $mainColor;
                 text-decoration: underline;
             }
-            
+            span {
+                margin-right: 2px;
+            }
         }
         .link[href=""] {
             cursor: default;

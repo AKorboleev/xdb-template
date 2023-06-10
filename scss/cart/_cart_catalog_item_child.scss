@@ -1,0 +1,13 @@
+.catalog_itme_child {
+    font-size: .8333rem;
+    margin-bottom: .8888rem;
+    break-inside: avoid-column;
+    display: table;
+    page-break-inside: avoid;
+
+    .link {
+        color: $mainColor;
+        font-weight: 500;
+        text-decoration: none
+    }
+}

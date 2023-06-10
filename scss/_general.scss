@@ -841,6 +841,9 @@ label.custom-checkbox {
                 color: $mainColor;
                 text-decoration: underline;
             }
+            span {
+                margin-right: 2px;
+            }
         }
     }
 }
@@ -1171,8 +1174,8 @@ label.custom-checkbox {
         }
     }
 
-    // Родительская часть
-    .parent__narrow {
+    // обертка родительской части
+    .parent__narrow_wrap {
         background-color: #fff;
         border-radius: 0.3333rem;
         display: -ms-flexbox;
@@ -1188,8 +1191,8 @@ label.custom-checkbox {
             display: none;
         }
 
-        //Контроллер
-        .control {
+        // Родительская часть
+        .parent_narrow {
             border: 1px solid #eee;
             border-radius: 0.1667rem;
             line-height: 1rem;

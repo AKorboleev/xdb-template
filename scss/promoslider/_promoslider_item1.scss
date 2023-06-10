@@ -235,64 +235,66 @@
             overflow: hidden;
             pointer-events: auto;
             position: relative;
+            height: 240px;
             transform: translateZ(0);
             
             // Оберктаа картинки
             .image_wrap {
+                height: 132px;
                 transition: transform 0.15s ease-in-out;
                 transform-origin: center;
-                width: 132px;
-                // Картинка
+                // Сама картинка
                 img.img {
                     background-repeat: no-repeat;
                     display: inline-block;
                     height: 100%;
                     width: 100%;
+                    bottom: 0;
+                    display: block;
+                    left: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
                     @include contain;
+                    @include cover;
                 }
-            }
-            // Оберктка контента
-            .content_wrap {
-                align-items: center;
-                box-sizing: border-box;
-                display: -ms-flexbox;
-                display: flex;
-                flex-direction: column;
-                height: 240px;
-                padding: 12px 12px 24px;
-                position: relative;
-                
-                // Обертка текста
-                .text_wrap {
-                    box-sizing: border-box;
-                    color: #2d2f43;
-                    padding: 10px;
-                    text-align: center;
-                    width: 100%;
 
-                    .subtitle,
-                    .title {
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        margin-bottom: -2px;
-                        padding-bottom: 2px;
-                    }
-                    // Заголовог
-                    .title {
-                        font-size: 20px;
-                        line-height: 24px;
-                    }
+                // Оберктка контента
+                .content_wrap {
+                    padding: 15px 12px 0;
+                    position: relative;
+                    
+                    // Обертка текста
+                    .text_wrap {
+                        box-sizing: border-box;
+                        color: #2d2f43;
+                        padding: 10px;
+                        text-align: center;
+                        width: 100%;
 
-                    // Подзаголовок
-                    .subtitle {
-                        font-size: 14px;
-                        line-height: 16px;
-                        margin-top: 6px;
+                        .subtitle,
+                        .title {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            margin-bottom: -2px;
+                            padding-bottom: 2px;
+                        }
+                        // Заголовог
+                        .title {
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+
+                        // Подзаголовок
+                        .subtitle {
+                            font-size: 14px;
+                            line-height: 16px;
+                            margin-top: 6px;
+                        }
                     }
                 }
             }
         }
     }
-
 }
