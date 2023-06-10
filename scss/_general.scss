@@ -6,6 +6,7 @@ $os: "Open Sans", sans-serif;
 // ****
 
 //Используемые цвета
+$whiteGrey:#f2f2f2;
 $mainColor: #2bf264;
 $white: #fff;
 $yellow: #b39f08;
@@ -70,6 +71,128 @@ $catalog: $mainColor;
     background-color: rgb(219, 219, 219);
 }
 // ****
+
+// Ошибка
+.error-error {
+    background-color: rgba(250, 156, 0, .1)
+}
+//****
+
+.selected_dleivery {
+
+    &:focus,
+    &:hover {
+        background: rgba(255, 118, 118, .1);
+        border-color: rgba(255, 118, 118, .1);
+        color: #ff7676;
+        cursor: default;
+    }
+}
+
+// Контент валидации
+.validationContainer {
+    margin: 0 -24px;
+    padding: 0 24px;
+    transition: background-color .1s ease-in-out;
+
+    @media(max-width:575.9px) {
+        margin: 0 -16px;
+        padding: 0 16px;
+    }
+}
+//****
+
+
+.selected_delivery {
+
+    &:focus,
+    &:hover {
+    background: rgba(255, 118, 118, .1);
+    border-color: rgba(255, 118, 118, .1);
+    color: #ff7676;
+    cursor: default
+    }
+}
+
+// Класс трясучки
+.item_cell {
+    background: #fff;
+    border-radius: 6px;
+    padding: 24px
+}
+//****
+
+.shakingJ {
+    animation: checkout-item-shake___1pXKx .82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translateZ(0)
+}
+
+.menuItem {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    display: block;
+    padding: 11px 12px 12px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+
+    &:active,
+    &:focus,
+    &:hover {
+        color: #ff7676;
+        cursor: pointer;
+    }
+}
+
+// Ошибка сообщения 
+.errorMessage {
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 8px;
+    padding-bottom: 8px;
+
+    // Адаптив
+    @media (min-width: 576px) {
+        margin-top: -16px;
+    }
+}
+//****
+
+// Контейнер валидации
+.validationContainer {
+    margin: 0 -24px;
+    padding: 0 24px;
+    transition: background-color .1s ease-in-out
+}
+//****
+
+// Используется в js. Событие при клике на способ доставки
+.content_delivery {
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, .08);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #2d2f43;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    min-height: 67px;
+    min-width: 150px;
+    outline: none;
+    padding: 8px 20px;
+    text-align: center;
+    user-select: none;
+
+    &:focus,
+    &:hover {
+        border-color: $mainColor;
+        color: $mainColor;
+    }
+    
+}
 
 // Аватарка в review wrap
 .avatar {
@@ -771,6 +894,7 @@ label.custom-checkbox {
 //d-none если добавить его , то анимации не будет , но если его убрать будте анимация , все делается через js
 // Загрузка, вращение кружочков  во круг оси
 
+// Загрузка в карзину
 .load_to_cart {
     align-items: center;
     bottom: 0;
@@ -800,11 +924,12 @@ label.custom-checkbox {
     cursor: pointer;
     transition: background .3s ease-in-out;
     content: "";
-    height: 1px;
-    left: 8px;
     position: absolute;
-    top: 12px;
     width: 8px;
+    margin: 0 5px;
+    width: 24px;
+    line-height: 24px;
+    position: relative;
 
     &:focus,
     &:hover {
@@ -822,6 +947,18 @@ label.custom-checkbox {
         width: 8px
     }
 }
+
+.increase:after {
+    transform-origin: 50% 50%;
+    transform: rotate(90deg)
+}
+
+.count {
+    color: #2d2f43;
+    font-size: 13px;
+    text-align: center
+}
+
 
 @media(max-width:575.9px) {
     .word_deleted {
@@ -842,6 +979,7 @@ label.custom-checkbox {
     color: #ff7676;
 }
 
+// Не полноценная часть, не знаю что это и для чего
 .disabled_dell {
     cursor: default;
     opacity: .5

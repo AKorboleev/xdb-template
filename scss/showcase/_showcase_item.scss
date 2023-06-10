@@ -11,6 +11,16 @@
     margin: 16px 0 0 16px;
     max-width: calc(25% - 16.1px);
     width: calc(25% - 16.1px);
+
+    @media (max-width:768px) {
+        
+    }
+
+    @media (max-width:500px) {
+        max-width: calc(50% - 16.1px);
+        width: calc(50% - 16.1px);
+    }
+    
     // продукт
     a.product {
         color: inherit;
@@ -153,6 +163,7 @@
         }
         // Имя товара
         .item_name {
+            display: inline-block;
             font-size: 14px;
             line-height: 16px;
             margin-top: 8px;

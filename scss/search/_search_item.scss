@@ -6,23 +6,68 @@
     flex-shrink: 0;
     margin: 20px 0 0 16px;
     display: inline-flex;
-    width: 15%;
-    max-width: 15%;
-    @media (min-height:968px) {
-        width: 18%;
+    max-width: 18%;
+    padding-bottom: 2%;
+
+
+    // Адаптив
+
+    // @media (max-height:1058px) {
+    //     width: 40%;
+    //     min-width: 45%;
+    // }
+
+    // @media (max-height:768px) {
+    //     width: 45%;
+    //     min-width: 45%;
+    // }
+
+    // @media (max-height:648px) {
+    //     width: 30%;
+    //     min-width: 30%;
+    // }
+
+    // @media (max-height:445px) {
+    //     width: 17%;
+    //     min-width: 17%;
+    // }
+
+    @media (min-width:375px) {
+        width: 44%;
+        min-width: 44%;
     }
 
-    @media (min-height:868px) {
-        width: 22%;
+    @media (min-width:390px) {
+        width: 42%;
+        min-width: 42%;
     }
 
-    @media (min-height:768px) {
-        width: 22%;
+    @media (min-width:445px) {
+        width: 40%;
+        min-width: 45%;
     }
 
-    @media (min-height:554px) {
+    @media (min-width:445px) {
         width: 45%;
+        min-width: 45%;
     }
+
+    @media (min-width:648px) {
+        width: 30%;
+        min-width: 30%;
+    }
+
+    @media (min-width:768px) {
+        width: 17%;
+        min-width: 17%;
+        
+    }
+
+    @media (min-width:1058px) {
+        width: 18%;
+        min-width: 18%;
+    }
+
 
     // Продукт
     .product {

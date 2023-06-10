@@ -37,6 +37,14 @@
             flex-shrink: 0;
             min-height: auto;
         }
+
+        @media (max-width:849px) {
+            font-size: 14px;
+        }
+
+        @media (max-width:768px) {
+            display: none;
+        }
         
         // Обертка контента
         a.wrapper_content {
@@ -128,6 +136,16 @@
         // Адапти
         @media (max-width: 1300px) {
             margin: 0;
+        }
+
+        @media (max-width:768px) {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        @media (max-width:390px) {
+            width: 100%;
+            min-width: 100%;
         }
 
         // Заголовок

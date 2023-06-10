@@ -587,12 +587,12 @@ $.ajax({
 				$('div.errorMessage___6FseR').removeClass('d-none');
 
 				// Добавляем к блоку оплаты класс трясучки
-				$('div.payment.item___2awx9').addClass('shaking___2tWeJ');
+				$('div.payment.item___2awx9').addClass('shaking');
 				// Таймаут
 				setTimeout(function() {
 
 					// Убираем класс трясучки
-					$('div.payment.item___2awx9').removeClass('shaking___2tWeJ');
+					$('div.payment.item___2awx9').removeClass('shaking');
 				}, delayInMilliseconds);
 			}
 		}
@@ -631,8 +631,6 @@ $.ajax({
 	//---------------------------------------------------------------------------
 
 });
-
-
 
 
 

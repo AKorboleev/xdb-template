@@ -45,6 +45,12 @@
                 &:hover {
                     color: #fc6767;
                 }
+
+                span {
+                    margin-left: 2%;
+                    width: 100%;
+                    position: absolute;
+                }
             }
         }
         // обертка кнопки для добавления адресса
