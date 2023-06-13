@@ -17,6 +17,7 @@
         box-sizing: border-box;
         overflow: hidden;
         max-height: 765px;
+        margin-left: 1%;
 
         // Адаптив
         @media (min-width: 1280px) {
@@ -31,12 +32,6 @@
         @media (min-width: 840px) {
             min-height: auto;
         }
-        @media (min-width: 600px) {
-            flex-basis: calc(50% - 17%);
-            flex-grow: 0;
-            flex-shrink: 0;
-            min-height: auto;
-        }
 
         @media (max-width:849px) {
             font-size: 14px;
@@ -44,6 +39,13 @@
 
         @media (max-width:768px) {
             display: none;
+        }
+        @media (min-width: 600px) {
+            flex-basis: calc(50% - 17%);
+            flex-grow: 0;
+            flex-shrink: 0;
+            min-height: auto;
+            margin-left: 1%;
         }
         
         // Обертка контента

@@ -80,10 +80,8 @@ header.header {
                                 margin-right: 6px;
                                 // Сама картинка
                                 img.image {
-                                    // selectImage___1gRYp
                                     height: 9px;
                                     width: 12px;
-                                    //image___1qeww
                                     border-radius: 0.1111rem;
                                     box-shadow: 0 0 0 1px hsla(0, 0%, 80%, 0.48);
                                     height: 0.7925rem;
@@ -200,6 +198,202 @@ header.header {
                         display: none;
                     }
                 }
+
+                .offcanvas-body {
+                    width: 280px;
+                    nav.list-unstyled {
+
+                        .child_1 {
+                            align-items: center;
+                            color: #2d2f43;
+                            cursor: pointer;
+                            display: -ms-flexbox;
+                            display: flex;
+                            font-size: 14px;
+                            line-height: 16px;
+                            overflow: hidden;
+                            padding: 14px 36px 14px 52px;
+                            position: relative;
+                            text-decoration: none;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+
+                            &:hover {
+                                color: $mainColor;
+                                &:after {
+                                    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4Ljk3IDE0Ljk3Ij48cGF0aCBmaWxsPSIjZmY3Njc2IiBkPSJNMS40NiAxNC45NkwwIDEzLjZsNi4xNC02LjFMMCAxLjM2IDEuNDYgMGw3LjUgNy40OC03LjUgNy40OCIvPjwvc3ZnPg==);
+                                }
+                            }
+
+                            &::after {
+                                background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4Ljk3IDE0Ljk3Ij48cGF0aCBmaWxsPSIjYzdjN2NjIiBkPSJNMS40NiAxNC45NkwwIDEzLjZsNi4xNC02LjFMMCAxLjM2IDEuNDYgMGw3LjUgNy40OC03LjUgNy40OCIvPjwvc3ZnPg==)
+                                    50% 50% no-repeat;
+                                background-size: contain;
+                                content: "";
+                                height: 12px;
+                                margin-top: -6px;
+                                position: absolute;
+                                right: 16px;
+                                top: 50%;
+                                width: 12px;
+                            }
+
+                            .icon {
+                                height: 20px;
+                                left: 1em;
+                                line-height: 1;
+                                margin-top: -1px;
+                                padding: 2px;
+                                position: absolute;
+                                text-align: center;
+                                vertical-align: middle;
+                                width: 20px;
+
+                                .img {
+                                    background-repeat: no-repeat;
+                                    display: inline-block;
+                                    height: 100%;
+                                    width: 100%;
+                                    @include contain;
+                                }
+                            }
+                            
+                            .text {
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                        }
+
+                        .separator{
+                            background: #f5f6f9;
+                            height: 1px;
+                            margin: 8px 16px;
+                        }
+
+                        .burger_footer_buttons_wrap {
+                            display: flex;
+                            margin: 8px;
+
+                            .burger_footer_buttons {
+                                align-items: stretch;
+                                color: #9697a1;
+                                display: -ms-flexbox;
+                                display: flex;
+                                font-size: 14px;
+                                line-height: 16px;
+                                margin: 0 8px;
+                                text-decoration: none;
+                                width: 50%;
+
+                                .visually_hidden {
+                                    position: absolute;
+                                    overflow: hidden;
+                                    clip: rect(0 0 0 0);
+                                    height: 1px;
+                                    width: 1px;
+                                    margin: -1px;
+                                    padding: 0;
+                                    border: 0
+                                }
+
+                                .button_wrapper {
+                                    width: 100%;
+
+                                    .button_language {
+                                        display: block;
+                                        width: 100%;
+                                        background: #f3f3f5;
+                                        border: 1px solid #f3f3f5;
+                                        color: #2d2f43;
+                                        padding: .735em 1em;
+                                        border-radius: .38em;
+
+                                        &:hover {
+                                            background: #eeeef0;
+                                            border-color: #eeeef0
+                                        }
+
+                                        .language {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            position: relative;
+
+                                            .icon {
+                                                cursor: pointer;
+                                                margin-right: 6px;
+
+                                                img.image {
+                                                    height: 9px;
+                                                    width: 12px;
+                                                    border-radius: 0.1111rem;
+                                                    box-shadow: 0 0 0 1px hsla(0, 0%, 80%, 0.48);
+                                                    height: 0.7925rem;
+                                                    width: 1.1111rem;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .parent{
+                                display: flex;
+                                flex-grow: 1;
+                                white-space: nowrap;
+
+                                .button_cell {
+                                    background: #f3f3f5;
+                                    border: 1px solid #f3f3f5;
+                                    color: #2d2f43;
+                                    padding: .735em 1em;
+                                    display: block;
+                                    width: 100%;
+                                    border-radius: .38em;
+
+                                    &:hover {
+                                        background: #eeeef0;
+                                        border-color: #eeeef0;
+                                    }
+
+                                    &:active {
+                                        background: #e3e3e6;
+                                        border-color: #e3e3e6;
+                                    }
+
+                                    &:disabled {
+                                        &:active,
+                                        &:hover {
+                                            color: #91929f;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .burger_footer_link {
+                            color: #9697a1;
+                            display: -ms-flexbox;
+                            display: flex;
+                            font-size: 14px;
+                            line-height: 16px;
+                            padding: 14px 16px;
+                            text-decoration: none;
+
+                            &:focus,
+                            &:hover {
+                                text-decoration: underline;
+                            }
+
+                            .text {
+                                -ms-flex-align: center;
+                                align-items: center;
+                                display: -ms-flexbox;
+                                display: flex;
+                            }
+                        }
+                    }
+               }
             }
             // Контейнер для логотипа
             .logo_header_button {

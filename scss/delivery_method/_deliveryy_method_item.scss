@@ -4,7 +4,6 @@
     .tab {
         display: flex;
         margin: 0 15px 15px 0;
-        background-color: #fff;
         min-height: 100%;
         position: relative;
         // Адптив
@@ -16,6 +15,8 @@
         // Блок
         .block_1 {
             border: 1px solid rgba(0, 0, 0, 0.08);
+            background-color: $mainColor;
+            background-color: $white;
             border-radius: 5px;
             box-sizing: border-box;
             color: #2d2f43;

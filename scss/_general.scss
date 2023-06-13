@@ -8,6 +8,7 @@ $os: "Open Sans", sans-serif;
 //Используемые цвета
 $whiteGrey:#f2f2f2;
 $mainColor: #2bf264;
+$whiteRight:#ff7676;
 $white: #fff;
 $yellow: #b39f08;
 $black: rgb(22, 22, 22);
@@ -84,7 +85,7 @@ $catalog: $mainColor;
     &:hover {
         background: rgba(255, 118, 118, .1);
         border-color: rgba(255, 118, 118, .1);
-        color: #ff7676;
+        color: $mainColor;
         cursor: default;
     }
 }
@@ -103,15 +104,33 @@ $catalog: $mainColor;
 //****
 
 
-.selected_delivery {
+.selected_payment {
 
     &:focus,
     &:hover {
-    background: rgba(255, 118, 118, .1);
-    border-color: rgba(255, 118, 118, .1);
-    color: #ff7676;
+    background: rgba(0, 184, 15, 0.1);
+    border-color:rgba(0, 184, 15, 0.1);
+    color: $mainColor;
     cursor: default
     }
+}
+
+// выход в верхней части
+.header_clouse {
+    color: rgba(45, 47, 67, .5);
+    cursor: pointer;
+    margin: -8px;
+    padding: 8px;
+
+    &:hover {
+        color: #2d2f43
+    }
+}
+
+//  Трясучка
+.shaking {
+    animation: shake-animation .82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translateZ(0)
 }
 
 // Класс трясучки
@@ -122,11 +141,7 @@ $catalog: $mainColor;
 }
 //****
 
-.shakingJ {
-    animation: checkout-item-shake___1pXKx .82s cubic-bezier(.36, .07, .19, .97) both;
-    transform: translateZ(0)
-}
-
+// Меню элемента
 .menuItem {
     background: transparent;
     border: none;
@@ -140,7 +155,7 @@ $catalog: $mainColor;
     &:active,
     &:focus,
     &:hover {
-        color: #ff7676;
+        color: $whiteRight;
         cursor: pointer;
     }
 }
@@ -149,13 +164,16 @@ $catalog: $mainColor;
 .errorMessage {
     font-size: 14px;
     line-height: 16px;
-    margin-top: 8px;
+    margin-top: 30px;
     padding-bottom: 8px;
+    color: #fa9c00;
+    font-size: 20px;
 
     // Адаптив
-    @media (min-width: 576px) {
-        margin-top: -16px;
-    }
+
+    // @media (min-width: 576px) {
+    //     margin-top: -16px;
+    // }
 }
 //****
 
@@ -168,7 +186,7 @@ $catalog: $mainColor;
 //****
 
 // Используется в js. Событие при клике на способ доставки
-.content_delivery {
+.content_payment {
     align-items: center;
     border: 1px solid rgba(0, 0, 0, .08);
     border-radius: 4px;
@@ -225,11 +243,8 @@ $catalog: $mainColor;
 .cell_promo {
     box-sizing: content-box;
     width: 100%;
-    -ms-flex-preferred-size: calc(33.33333% - 8.1px);
     flex-basis: calc(33.33333% - 8.1px);
-    -ms-flex-positive: 0;
     flex-grow: 0;
-    -ms-flex-negative: 0;
     flex-shrink: 0;
     max-width: calc(33.33333% - 8.1px);
     margin-left: 12px;
@@ -243,7 +258,6 @@ $catalog: $mainColor;
     @media (min-width: 576px) {
             box-sizing: content-box;
             width: 100%;
-            -ms-flex-preferred-size: calc(33.33333% - 8.1px);
             flex-basis: calc(33.33333% - 8.1px);
             flex-grow: 0;
             flex-shrink: 0;
@@ -606,7 +620,7 @@ label.custom-checkbox {
 }
 
 .bg-2 {
-    background: linear-gradient(270deg, #ff7676, #f5a54e);
+    background: linear-gradient(270deg, $whiteRight, #f5a54e);
     color: #fff;
 }
 
@@ -621,7 +635,7 @@ label.custom-checkbox {
 }
 
 .bg-5 {
-    background: linear-gradient(270deg, #ff7676, #f54ea2);
+    background: linear-gradient(270deg, $whiteRight, #f54ea2);
     color: #fff;
 }
 //****
@@ -974,12 +988,12 @@ label.custom-checkbox {
     display: -ms-flexbox;
     display: flex;
     &:hover {
-        color: #ff7676
+        color: $whiteRight;
     } 
 }
 
 .color-link {
-    color: #ff7676;
+    color: $whiteRight;
 }
 
 // Не полноценная часть, не знаю что это и для чего

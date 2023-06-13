@@ -84,6 +84,10 @@
                     position: absolute;
                     right: 0;
                     top: 0;
+
+                     &:hover {
+                        padding: 10px;
+                     }
                     // Движение картинки
                     .image_place {
                         border-radius: 8px;

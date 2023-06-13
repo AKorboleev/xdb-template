@@ -11,6 +11,11 @@
 
     // Адаптив
 
+    @media (min-width:300px) {
+        width: 90%;
+        min-width: 100%;
+    }
+
     @media (min-width:375px) {
         width: 44%;
         min-width: 44%;
@@ -23,7 +28,7 @@
 
     @media (min-width:445px) {
         width: 40%;
-        min-width: 45%;
+        min-width: 40%;
     }
 
     @media (min-width:445px) {
@@ -43,8 +48,8 @@
     }
 
     @media (min-width:1058px) {
-        width: 18%;
-        min-width: 18%;
+        width: 17%;
+        min-width: 17%;
     }
 
 

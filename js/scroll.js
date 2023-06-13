@@ -269,7 +269,7 @@ $(document).ready(function () {
                 $('div.trash_dell.color-link').removeClass('disabled_dell');
 
             // Устанавливаем активность кнопки Купить
-            $('button.button').prop('disabled', data.buy_disabled);
+            $('button.button_cell').prop('disabled', data.buy_disabled);
             // Устанавливаем текст кнопки Купить
             $('span.children_cell').html(data.buy_text);
 
@@ -430,7 +430,7 @@ $(document).ready(function () {
 	//---------------------------------------------------------------------------
 	// Кнопка закрытия окна выбора адресов доставки
 	// addresses_close
-	$('div.headerClose___1_a5A').on('click', function() {
+	$('div.header_clouse').on('click', function() {
 		// Simulate a mouse click:
 		window.location.href = '/checkout/';
 	});
@@ -444,7 +444,7 @@ $(document).ready(function () {
 	//---------------------------------------------------------------------------
 	// Событие изменения чекбокса адреса доставки
 	// address_select
-//	$('input.input___3M6Ji').on('change', function() {
+    //	$('input.input___3M6Ji').on('change', function() {
 	$('input.address_radio').on('change', function() {
 
 		// Берем идентификатор адреса доставки
@@ -487,32 +487,36 @@ $(document).ready(function () {
 		return false;
 	});
 	//---------------------------------------------------------------------------
-	// Событие при клике на способ доставки
-	$('div.delivery.content_delivery').on('click', function() {
-
-		// Удаляем класс подсветки у блока способов доставки
-		$('div.validationContainer').removeClass('error-error');
-		// Добавляем скрывающий класс к тексту ошибки блока способов доставки
-		$('div.errorMessage').addClass('d-none');
-
-		// У всех способов доставки удаляем класс выбора
-		$('div.delivery.content_delivery').removeClass('selected_dleivery');
-		// Выбираем способ доставки на который кликнули
-		$(this).addClass('selected_dleivery');
-	});
-	//---------------------------------------------------------------------------
 	// Событие при клике на способ оплаты
-	$('div.payment.content_delivery').on('click', function() {
+    // content_delivery
+	$('div.content_payment').on('click', function() {
 
 		// Удаляем класс подсветки у блока способов оплаты
 		$('div.validationContainer').removeClass('error-error');
 		// Добавляем скрывающий класс к тексту ошибки блока способов оплаты
-		$('div.errorMessage___6FseR').addClass('d-none');
+		$('div.errorMessage').addClass('d-none');
 
 		// У всех способов доставки удаляем класс выбора
-		$('div.payment.content_delivery').removeClass('selected_dleivery');
+		$('div.content_payment').removeClass('selected_payment');
 		// Выбираем способ доставки на который кликнули
-		$(this).addClass('selected_dleivery');
+        // selected_delivery
+		$(this).addClass('selected_payment');
+	});
+
+    //---------------------------------------------------------------------------
+	// Событие при клике на способ оплаты
+	$('div.content_payment').on('click', function() {
+
+		// Удаляем класс подсветки у блока способов оплаты
+		$('div.validationContainer').removeClass('error-error');
+		// Добавляем скрывающий класс к тексту ошибки блока способов оплаты
+		$('div.errorMessage').addClass('d-none');
+
+		// У всех способов доставки удаляем класс выбора
+		$('div.content_payment').removeClass('selected_payment');
+		// Выбираем способ доставки на который кликнули
+        // selected_delivery
+		$(this).addClass('selected_payment');
 	});
 	//---------------------------------------------------------------------------
 	// Кнопка Продолжить в Оформлении заказа
@@ -525,7 +529,7 @@ $(document).ready(function () {
 
 		// Получение вариантов доставки
 
-alert('aaa');
+console.log('aaa');
 
 //
 
@@ -590,9 +594,9 @@ $.ajax({
 		// Задержка на 1,5 секунды
 		let delayInMilliseconds = 1500;
 		// Берем идентификатор способа доставки
-		let delivery_method_id = $('div.delivery.selected_dleivery').data('delivery-method');
+		let delivery_method_id = $('div.selected_dleivery').data('delivery-method');
 		// Берем идентификатор способа оплаты
-		let payment_method_id = $('div.payment.selected_dleivery').data('payment-method');
+		let payment_method_id = $('div.selected_dleivery').data('payment-method');
 
 
 		// Если способ доставки выбран
@@ -619,12 +623,12 @@ $.ajax({
 				$('div.errorMessage').removeClass('d-none');
 
 				// Добавляем к блоку оплаты класс трясучки
-				$('div.payment.item_cell').addClass('shaking');
+				$('div.payment').addClass('shaking');
 				// Таймаут
 				setTimeout(function() {
 
 					// Убираем класс трясучки
-					$('div.payment.item_cell').removeClass('shaking');
+					$('div.payment').removeClass('shaking');
 				}, delayInMilliseconds);
 			}
 		}
@@ -637,12 +641,12 @@ $.ajax({
 			$('div.errorMessage').removeClass('d-none');
 
 			// Добавляем к блоку доставки класс трясучки
-			$('div.delivery.item_cell').addClass('shaking');
+			$('div.delivery').addClass('shaking');
 			// Таймаут
 			setTimeout(function() {
 
 				// Убираем класс трясучки
-				$('div.delivery.item_cell').removeClass('shaking');
+				$('div.delivery').removeClass('shaking');
 			}, delayInMilliseconds);
 		}
 	});
@@ -663,3 +667,32 @@ $.ajax({
 //		return false;
 	});
 });
+
+
+/*
+
+show_more
+adult
+underage
+sensitive
+-item add to favorites
+item add to cart
+-buy now
+cart item select
+	cart item check
+cart item decrease
+cart item increase
+cart item delete
+ordering open (checkout)
+addresses open
+addresses close
+address add
+address select
+address check
+address change
+address delete
+address choose
+address close
+address save
+- delivery choose
+- pay method choose
