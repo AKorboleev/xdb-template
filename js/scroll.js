@@ -487,9 +487,9 @@ $(document).ready(function () {
 		return false;
 	});
 	//---------------------------------------------------------------------------
-	// Событие при клике на способ оплаты
+	// Событие при клике на способ доставки
     // content_delivery
-	$('div.content_payment').on('click', function() {
+	$('div.block_delivery').on('click', function() {
 
 		// Удаляем класс подсветки у блока способов оплаты
 		$('div.validationContainer').removeClass('error-error');
@@ -497,15 +497,15 @@ $(document).ready(function () {
 		$('div.errorMessage').addClass('d-none');
 
 		// У всех способов доставки удаляем класс выбора
-		$('div.content_payment').removeClass('selected_payment');
+		$('div.block_delivery').removeClass('selected_delivery');
 		// Выбираем способ доставки на который кликнули
         // selected_delivery
-		$(this).addClass('selected_payment');
+		$(this).addClass('selected_delivery');
 	});
 
     //---------------------------------------------------------------------------
 	// Событие при клике на способ оплаты
-	$('div.content_payment').on('click', function() {
+	$('div.block_payment').on('click', function() {
 
 		// Удаляем класс подсветки у блока способов оплаты
 		$('div.validationContainer').removeClass('error-error');
@@ -513,7 +513,7 @@ $(document).ready(function () {
 		$('div.errorMessage').addClass('d-none');
 
 		// У всех способов доставки удаляем класс выбора
-		$('div.content_payment').removeClass('selected_payment');
+		$('div.block_payment').removeClass('selected_payment');
 		// Выбираем способ доставки на который кликнули
         // selected_delivery
 		$(this).addClass('selected_payment');
@@ -594,9 +594,9 @@ $.ajax({
 		// Задержка на 1,5 секунды
 		let delayInMilliseconds = 1500;
 		// Берем идентификатор способа доставки
-		let delivery_method_id = $('div.selected_dleivery').data('delivery-method');
+		let delivery_method_id = $('div.block_delivery.selected_delivery').data('delivery-method');
 		// Берем идентификатор способа оплаты
-		let payment_method_id = $('div.selected_dleivery').data('payment-method');
+		let payment_method_id = $('div.block_payment.selected_payment').data('payment-method');
 
 
 		// Если способ доставки выбран
@@ -652,9 +652,9 @@ $.ajax({
 	});
 	//---------------------------------------------------------------------------
 
-    // Нет такой странички, предется самим делать
+
 	// Клик на позиции списка меню страницы Мои заказы
-	$('button.menuItem___2NnCg').on('click', function() {
+	$('button.menu_delivery').on('click', function() {
 
 		// Берем идентификатор статуса заказа
 		let status_id = $(this).data('status');
@@ -696,3 +696,5 @@ address close
 address save
 - delivery choose
 - pay method choose
+
+*/

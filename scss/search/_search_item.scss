@@ -12,8 +12,9 @@
     // Адаптив
 
     @media (min-width:300px) {
-        width: 90%;
-        min-width: 100%;
+        width: 100%;
+        min-width: 42%;
+        padding-bottom: 20px;
     }
 
     @media (min-width:375px) {
@@ -42,14 +43,15 @@
     }
 
     @media (min-width:768px) {
-        width: 17%;
-        min-width: 17%;
+        width: 21%;
+        min-width: 21%;
+        padding-bottom: 30px;
         
     }
 
-    @media (min-width:1058px) {
-        width: 17%;
-        min-width: 17%;
+    @media (min-width: 932px) {
+        width: 22%;
+        min-width: 22%;
     }
 
 

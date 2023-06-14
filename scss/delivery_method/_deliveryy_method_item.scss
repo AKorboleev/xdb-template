@@ -13,10 +13,8 @@
             margin-right: 8px;
         }
         // Блок
-        .block_1 {
+        .block_delivery {
             border: 1px solid rgba(0, 0, 0, 0.08);
-            background-color: $mainColor;
-            background-color: $white;
             border-radius: 5px;
             box-sizing: border-box;
             color: #2d2f43;
@@ -31,11 +29,11 @@
             text-align: left;
             justify-content: flex-start;
 
-            &:focus,
-            &:hover {
-                border-color: $mainColor;
-                color: $mainColor;
-            }
+            // &:focus,
+            // &:hover {
+            //     border-color: $mainColor;
+            //     color: $mainColor;
+            // }
             /// Родительский старт
             .child {
                 margin: 3px auto;

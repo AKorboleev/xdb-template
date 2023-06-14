@@ -79,15 +79,14 @@ $catalog: $mainColor;
 }
 //****
 
-.selected_dleivery {
 
-    &:focus,
-    &:hover {
-        background: rgba(255, 118, 118, .1);
-        border-color: rgba(255, 118, 118, .1);
-        color: $mainColor;
-        cursor: default;
-    }
+.selected_dleivery,
+.selected_payment {
+
+    background-color: rgba(0, 184, 15, 0.1);
+    border-color:rgba(0, 184, 15, 0.1);
+    color: $mainColor;
+    cursor: default;
 }
 
 // Контент валидации
@@ -104,16 +103,6 @@ $catalog: $mainColor;
 //****
 
 
-.selected_payment {
-
-    &:focus,
-    &:hover {
-    background: rgba(0, 184, 15, 0.1);
-    border-color:rgba(0, 184, 15, 0.1);
-    color: $mainColor;
-    cursor: default
-    }
-}
 
 // выход в верхней части
 .header_clouse {
@@ -174,14 +163,6 @@ $catalog: $mainColor;
     // @media (min-width: 576px) {
     //     margin-top: -16px;
     // }
-}
-//****
-
-// Контейнер валидации
-.validationContainer {
-    margin: 0 -24px;
-    padding: 0 24px;
-    transition: background-color .1s ease-in-out
 }
 //****
 
