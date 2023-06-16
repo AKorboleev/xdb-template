@@ -58,6 +58,7 @@ $(document).ready(function () {
     });
 
 
+
     //---------------------------------------------------------------------------
     // Используется в home_page
     $(document).ready(function () {
@@ -91,9 +92,7 @@ $(document).ready(function () {
             // Прибавляем к текущему положению размер слайда
             var value = $(this).parent().find('div.content_swap.nativeScroll').scrollLeft() - slide;
 
-
             // Убираем фокус с кнопки
-            //			$('button.prev___35owH').blur();
             $(this).blur();
 
             // Анимируем сдвиг полосы прокрутки
@@ -130,8 +129,67 @@ $(document).ready(function () {
             $(this).parent().find('div.content_swap.nativeScroll').stop().animate({ scrollLeft: value });
         });
         //---------------------------------------------------------------------------
+    });
+
+    //---------------------------------------------------------------------------
+    // Используется в order_often
+    $(document).ready(function () {
+        //---------------------------------------------------------------------------
+        // Не используется
+        function isScrolledIntoView(elem) {
+            var docViewTop = $('div#inner').scrollLeft();
+            var docViewBottom = docViewTop + $('div#inner').width();
+
+            var elemTop = $(elem).offset().left;
+            var elemBottom = elemTop + $(elem).width();
+
+            return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+        }
+        //---------------------------------------------------------------------------
+        // Предыдущий
+        $('button.prev_often').click(function () {
+            // К первому слева невидимому или видимому не полностью
+            // Всегда переходим к левому от полностью видимого слайда
+            // Если находимся на первом, пролистываем через все слайды к последнему
+
+            //  cell_big буду использовать везде и не буду использовать другие классы , так как они попросту не работают
+            var slide = $(this).parent().find('div.cell_big, div.cell_promo, div.cell___1LYLC').last().outerWidth(true);
+            // Прибавляем к текущему положению размер слайда
+            var value = $(this).parent().find('div.content_swap.nativeScroll').scrollLeft() - slide;
+
+
+            // Убираем фокус с кнопки
+            //			$('button.prev___35owH').blur();
+            $(this).blur();
+
+            // Анимируем сдвиг полосы прокрутки
+            //			$(this).parent().find('div.content___14fC9.nativeScroll___2Cg7K').scrollLeft(value);
+            $(this).parent().find('div.content_swap.nativeScroll').stop().animate({ scrollLeft: value });
+        });
+        //---------------------------------------------------------------------------
+        // Следующий
+        $('button.next_often').click(function () {
+            // Всегда переходим ко второму видимому элементу
+            // Всегда переходим к правому от частично или полностью видимого слайда
+            // Если дошли до последнего, пролистываем через все слайды к первому
+
+            //  cell_big буду использовать везде и не буду использовать другие классы , так как они попросту не работают
+            var slide = $(this).parent().find('div.cell_big, div.cell_promo, div.cell___1LYLC').last().outerWidth(true);
+            // Прибавляем к текущему положению размер слайда
+            var value = $(this).parent().find('div.content_swap.nativeScroll').scrollLeft() + slide;
+
+            // Убираем фокус с кнопки
+            //			$('button.next___d3E5Z').blur();
+            $(this).blur();
+
+            // Анимируем сдвиг полосы прокрутки   
+            //			$(this).parent().find('div.content___14fC9.nativeScroll___2Cg7K').scrollLeft(value);
+            $(this).parent().find('div.content_swap.nativeScroll').stop().animate({ scrollLeft: value });
+        });
+        //---------------------------------------------------------------------------
 
     });
+
 
     //---------------------------------------------------------------------------
     // Кнопка Посмотреть фотографии

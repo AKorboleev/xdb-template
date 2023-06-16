@@ -53,18 +53,13 @@
         background: #6280e5;
         background-image: linear-gradient(-135deg, #6280e5, #7953b7);
         border-radius: 0.3333rem;
+        padding: 10px 0;
         color: #fff;
 
         // Адаптив
         @media (max-width: 575.9px) {
             border-radius: 0;
         }
-        // Шаблон
-        .pattern {
-            padding: 12px;
-            background-position: 50% 50%;
-            background-size: 4.5rem;
-
             // Адаптив
             @media (max-width: 768px) {
                 padding: 16px;
@@ -79,7 +74,7 @@
                     bottom: 0.4em;
                     cursor: pointer;
                     position: absolute;
-                    right: -0.2em;
+                    right: 0.8em;
                     background-image: url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ic3ZnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMSAyMS4wMSI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE4LjQ1LjQ1bC04IDgtOC04YTEuNDUgMS40NSAwIDAwLTIuMSAwIDEuNDUgMS40NSAwIDAwMCAyLjFsNy45NSA4LTcuOTUgOGExLjQ1IDEuNDUgMCAwMDAgMi4xIDEuMzYgMS4zNiAwIDAwMSAuNDUgMS4zNiAxLjM2IDAgMDAxLS40NWw4LTggOCA4YTEuNDUgMS40NSAwIDAwMi4xIDAgMS40NSAxLjQ1IDAgMDAwLTIuMWwtOC04IDgtOGExLjQ1IDEuNDUgMCAwMDAtMi4xIDEuNDUgMS40NSAwIDAwLTIgMHoiLz48L3N2Zz4=);
                     background-position: 50% 50%;
                     background-repeat: no-repeat;
@@ -88,14 +83,20 @@
                     background-size: contain;
                 }
             }
-        }
+        
 
         // Контейнер
         .container {
             text-align: center;
+
+            // Заголовок банера
+            h4 {
+                font-size: calc(1.1rem + 0.3vw);
+            }
             // Подтекест
+            
             p {
-                font-size: 20px;
+                font-size: 18px;
             }
             // Элементы месенджеров
             .inner_message {

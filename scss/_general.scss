@@ -80,7 +80,7 @@ $catalog: $mainColor;
 //****
 
 
-.selected_dleivery,
+.selected_delivery,
 .selected_payment {
 
     background-color: rgba(0, 184, 15, 0.1);
@@ -207,6 +207,7 @@ $catalog: $mainColor;
 //Нужно для скрола карусели
 .nativeScroll {
     overflow-x: hidden;
+    overflow-y: hidden;
     scroll-snap-type: x mandatory;
 }
 //****
@@ -421,7 +422,83 @@ $catalog: $mainColor;
 }
 //****
 
+// Кнопка назад
+.next_often,
+.prev_often {
+    top: 50%;
+    background: rgba(0, 0, 0, .4) no-repeat;
+    border: none;
+    background-size: 25%;
+    border-radius: 2em;
+    margin-top: -1.72em;
+    position: absolute;
+    user-select: none; 
+    transition: background-color .3s ease-in-out, opacity .3s ease-in-out
+}
 
+.next_often:hover,
+.prev_often:hover {
+    background-color: rgba(0, 0, 0, .6)
+}
+
+.next_often,
+.prev_often {
+    height: 2.22rem;
+    font-size: 1rem;
+    width: 2.22rem;
+}
+
+.next_often,
+.prev_often {
+    height: 3.55rem;
+    font-size: 1.5rem;
+    width: 3.5rem
+}
+
+.prev_often {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAyNiI+PHBhdGggZD0iTS4zIDEyLjNsMTItMTJhMSAxIDAgMDExLjQgMCAxIDEgMCAwMTAgMS40TDIuNCAxM2wxMS4zIDExLjNhMSAxIDAgMDEtMS40IDEuNGwtMTItMTJhMSAxIDAgMDEwLTEuNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
+    background-position: 45% 50%;
+    left: 6px
+}
+
+@media(min-width:768px) {
+    .prev_often {
+        left: 15px;
+    }
+}
+
+.next_often {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAyNiI+PHBhdGggZD0iTTEzLjcgMTMuN2wtMTIgMTJhLjkxLjkxIDAgMDEtLjcuMy45MS45MSAwIDAxLS43LS4zIDEgMSAwIDAxMC0xLjRMMTEuNiAxMyAuMyAxLjdBMSAxIDAgMDEuMy4zYTEgMSAwIDAxMS40IDBsMTIgMTJhMSAxIDAgMDEwIDEuNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
+    background-position: 55% 50%;
+
+    @media(min-width:1000px) {
+            left: 86%;
+    }
+
+    @media(min-width:1100px) {
+        left: 88%;
+    }
+
+    @media(min-width:1200px) {
+        left: 90%;
+    }
+}
+
+@media(min-width:768px) {
+    .next_often {
+        right: none;
+    }
+}
+//****
+
+// Адаптив
+@media (max-width: 839.9px) {
+    .next_often,
+    .prev_often {
+        display: none;
+    }
+}
+//****
 
 // Лис с гарантией
 .list {

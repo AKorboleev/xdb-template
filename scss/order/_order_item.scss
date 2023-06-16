@@ -52,6 +52,10 @@
         font-size: 0.7777rem;
         line-height: 1.1111rem;
         padding: 0.8888rem;
+
+        @media screen and (max-width: 575.56px) {
+            display: block;
+        }
         // Левая часть
         .left {
             display: -ms-flexbox;
@@ -187,7 +191,8 @@
                 a.info_price {
                     width: 100%;
                     display: flex;
-                    padding: 5px;
+                    border-radius: 5px;
+                    padding: 10px;
                     justify-content: center;
                     align-items: center;
                     text-decoration: none;

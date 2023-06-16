@@ -197,9 +197,12 @@
                         <div class="cancel_order">Отменить заказ</div>
                         <div class="product_big">
                             <div class="small_header">Часто с этим заказом покупают</div>
-                            <div class="pane mt-3">[Items]</div>
-                            <span role="button" tabindex="-1">
-                                    <div class="next___371I_"></div>
+                            <div class="cell_big content_swap nativeScroll">
+                                <div class="pane mt-3">[Items]</div>
+                            </div>
+                            <span class="buttom_often nativeScroll" role="button" tabindex="-1">
+                                    <div class="Scroll next_often"></div>
+                                    <div class="Scroll prev_often"></div>
                             </span>
                         </div>
                     </div>
@@ -261,3 +264,19 @@
 </main>
 </body>
 </html>
+
+<!-- Не удалять , заменил рабочим вариантом из itemsliuder_wrap -->
+<!-- 
+<div class="product_big">
+    <div class="small_header">Часто с этим заказом покупают</div>
+    <div class="cell_big content_swap nativeScroll">
+        <div class=" inner pane mt-3">
+            [Items]
+        </div>
+    </div>
+        <span class="buttom_often" role="button" tabindex="-1">
+             <button aria-label="Scroll left" class="prev_often" tabindex="0" type="button"></button>
+            <button aria-label="Scroll right" class="next_often" tabindex="0" type="button"></button>
+        </span>
+</div>
+ -->

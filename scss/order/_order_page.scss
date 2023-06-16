@@ -157,6 +157,20 @@
             font-weight: 500;
             font-size: 12px;
         }
+        
+        .pane {
+            display: flex;        
+            overflow-x: hidden;
+            overflow-y: hidden;
+            max-height: 350px;
+        }
+
+        .buttom_often {
+            position: relative;
+            background-color: cadetblue;
+            display: flex;
+            width: 100%;
+        }
     }
 }
 // Дополнительная информация
