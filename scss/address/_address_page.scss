@@ -1,7 +1,7 @@
 // Обертка всего шаблона 
 .address__page {
     max-width: 500px;
-    margin: 0 auto;
+    margin: $mc;
     text-align: left;
     padding: 12px;
     margin-bottom: 1rem;
@@ -37,7 +37,7 @@
             // Контент заголовка
             .content {
                 flex: 1;
-                font-size: 18px;
+                font-size: $text;
                 text-align: center;
                 padding: 0 8px;
                 padding-left: 38px;
@@ -84,7 +84,7 @@
                 }
                 
                 @media(max-width:767.9px) {
-                        padding: 0 6px 18px;
+                        padding: 0 6px $text;
                 }
                 // обертка для до ставки 
                 .content {

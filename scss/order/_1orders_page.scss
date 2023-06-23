@@ -15,7 +15,7 @@
         padding: 0;
     }
 
-    // Элементы меню
+    // Элемент сайдбара
     button.menuItem {
         background: transparent;
         border: none;
@@ -96,7 +96,7 @@
             // Подтекест
             
             p {
-                font-size: 18px;
+                font-size: $text;
             }
             // Элементы месенджеров
             .inner_message {
@@ -105,7 +105,7 @@
                 background-color: rgb(0, 134, 196);
                 height: 50px;
                 width: 90%;
-                margin: 0 auto;
+                margin: $mc;
                 border-radius: 6px;
                 // Иконка
                 img {

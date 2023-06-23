@@ -28,7 +28,7 @@
         //Адаптив
         @media (max-width: 768px) {
             display: grid;
-            margin: 0 auto;
+            margin: $mc;
             padding: 0;
         }
       }
@@ -47,7 +47,7 @@
         margin: 4% auto;
 
         @media (max-width: 768px) {
-          margin: 0 auto;
+          margin: $mc;
         }
         // Сама картинка
         img.img {

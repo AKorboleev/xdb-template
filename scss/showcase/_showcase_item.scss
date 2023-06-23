@@ -64,9 +64,7 @@
                         height: inherit;
                         mix-blend-mode: multiply;
                         width: inherit;
-                        background-size: contain;
-                        -o-object-fit: contain;
-                        object-fit: contain;
+                        @include contain;
                     }
                 }
                 // Действие 

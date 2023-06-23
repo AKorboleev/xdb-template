@@ -1,6 +1,6 @@
 // Контейнер при продаже на кассе
 .checkout_fault {
-    margin: 0 auto;
+    margin: $mc;
     text-align: left;
     padding: 12px;
     max-width: 300px;
@@ -37,7 +37,7 @@
             .header {
                 -ms-flex: 1;
                 flex: 1;
-                font-size: 18px;
+                font-size: $text;
                 font-weight: 500;
                 padding: 0 8px;
                 text-align: center;
@@ -86,7 +86,7 @@
             box-sizing: border-box;
             cursor: pointer;
             display: flex;
-            font-size: 18px;
+            font-size: $text;
             font-weight: 500;
             outline: none;
             margin: 20px 0;

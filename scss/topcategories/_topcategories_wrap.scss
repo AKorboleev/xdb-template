@@ -151,9 +151,7 @@
                                     transition: transform .15s ease-in-out;
                                     transform-origin: center;
                                     width: 100%;
-                                    background-size: contain;
-                                    -o-object-fit: contain;
-                                    object-fit: contain;
+                                    @include contain;
 
                                     // Адаптив
                                     @media (max-width: 840px) {

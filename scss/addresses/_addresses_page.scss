@@ -2,11 +2,11 @@
 .addresses_page {
     display: block;
     width: 100%;
-    margin: 0 auto;
+    margin:$mc;
     // Адреса 
     .addresses {
         width: 500px;
-        margin: 0 auto;
+        margin: $mc;
         // Верхняя часть
         .top {
             font-size: 19px;

@@ -79,7 +79,7 @@
             .image {
                 max-width: 90%;
                 position: relative;
-                margin: 0 auto 24px;
+                margin: $mc 24px;
                 @media (min-width: 768px) {
                     margin-bottom: 32px;
                 }
@@ -91,7 +91,7 @@
                 h1.title {
                     font-size: 1.3333rem;
                     font-weight: 500;
-                    margin: 0 auto;
+                    margin: $mc;
                     max-width: 80%;
                     position: relative;
                     width: 30rem;

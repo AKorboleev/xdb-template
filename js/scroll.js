@@ -552,7 +552,7 @@ $(document).ready(function () {
 		// Удаляем класс подсветки у блока способов оплаты
 		$('div.validationContainer').removeClass('error-error');
 		// Добавляем скрывающий класс к тексту ошибки блока способов оплаты
-		$('div.errorMessage').addClass('d-none');
+		$('div.delivery_errorMessage').addClass('d-none');
 
 		// У всех способов доставки удаляем класс выбора
 		$('div.block_delivery').removeClass('selected_delivery');
@@ -568,7 +568,7 @@ $(document).ready(function () {
 		// Удаляем класс подсветки у блока способов оплаты
 		$('div.validationContainer').removeClass('error-error');
 		// Добавляем скрывающий класс к тексту ошибки блока способов оплаты
-		$('div.errorMessage').addClass('d-none');
+		$('div.payment_errorMessage').addClass('d-none');
 
 		// У всех способов доставки удаляем класс выбора
 		$('div.block_payment').removeClass('selected_payment');
@@ -659,7 +659,7 @@ $.ajax({
 
 		// Если способ доставки выбран
 		if (delivery_method_id)
-		{
+        {
 			// Если способ оплаты выбран
 			if (payment_method_id)
 			{
@@ -678,25 +678,30 @@ $.ajax({
 				// Добавляем к блоку способов оплаты подсветку
 				$('div.validationContainer').addClass('error-error');
 				// Удаляем скрывающий класс у текста ошибки блока способов оплаты
-				$('div.errorMessage').removeClass('d-none');
-
+				$('div.payment_errorMessage').removeClass('d-none');
 				// Добавляем к блоку оплаты класс трясучки
 				$('div.payment').addClass('shaking');
+
 				// Таймаут
 				setTimeout(function() {
-
 					// Убираем класс трясучки
 					$('div.payment').removeClass('shaking');
+
 				}, delayInMilliseconds);
 			}
+
+             // Добавляем к блоку способов оплаты подсветку
+			$('div.delivery_method_items').removeClass('error-error');
+                
+			$('div.delivery_errorMessage').addClass('d-none');
 		}
-		// Иначе ни один способ доставки не выбран
+		// Если ни один способ доставки не выбран
 		else
 		{
 			// Добавляем к блоку способов доставки подсветку
 			$('div.validationContainer').addClass('error-error');
 			// Удаляем скрывающий класс у текста ошибки блока способов доставки
-			$('div.errorMessage').removeClass('d-none');
+			$('div.delivery_errorMessage').removeClass('d-none');
 
 			// Добавляем к блоку доставки класс трясучки
 			$('div.delivery').addClass('shaking');

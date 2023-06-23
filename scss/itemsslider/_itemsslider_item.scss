@@ -110,8 +110,7 @@
                                 height: inherit;
                                 mix-blend-mode: multiply;
                                 width: inherit;
-                                background-size: contain;
-                                object-fit: contain;
+                                @include contain;
                             }
                         }
                     }
@@ -146,7 +145,7 @@
                             display: inline-block;
                             font-size: 12px;
                             font-weight: 500;
-                            line-height: 18px;
+                            line-height: $text;
                             max-width: 70%;
                             overflow: hidden;
                             padding: 4px 8px;

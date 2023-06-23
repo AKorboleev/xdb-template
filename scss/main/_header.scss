@@ -190,7 +190,7 @@ header.header {
                     cursor: pointer;
                     display: block;
                     height: 14px;
-                    width: 18px;
+                    width: $text;
                     margin-right: 12px;
                     // Адаптив
                     @media (min-width: 768px) {
@@ -455,7 +455,7 @@ header.header {
                             // Иконки Элементов
                             .item_icon {
                                 height: 26px;
-                                margin: 0 auto;
+                                margin: $mc;
                                 position: relative;
                                 width: 26px;
 
@@ -565,7 +565,7 @@ header.header {
                     box-sizing: border-box;
                     font-size: 16px;
                     height: 48px;
-                    line-height: 18px;
+                    line-height: $text;
                     outline: none;
                     padding: 0 32px 0 16px;
                     transition: background 0.3s ease-in-out;

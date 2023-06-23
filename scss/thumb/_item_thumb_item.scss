@@ -57,7 +57,6 @@
                         display: inline-block;
                         border-radius: inherit;
                         mix-blend-mode: multiply;
-                        background-size: contain;
                         @include contain();
                     }
                 }

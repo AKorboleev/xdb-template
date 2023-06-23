@@ -55,7 +55,7 @@
             cursor: pointer;
             display: -ms-flexbox;
             display: flex;
-            font-size: 18px;
+            font-size: $text;
             height: 48px;
             line-height: 20px;
             position: relative;
@@ -103,9 +103,7 @@
                 height: 20px;
                 margin-right: 8px;
                 width: 20px;
-                background-size: contain;
-                -o-object-fit: contain;
-                object-fit: contain;
+                @include contain;
 
                 // Имя
                 .name {

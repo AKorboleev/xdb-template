@@ -60,7 +60,7 @@
         box-sizing: border-box;
         max-width: 100%;
         padding-bottom: 22px;
-        margin: 0 auto;
+        margin: $mc;
         padding-left: 6px;
         padding-right: 6px;
 
@@ -123,7 +123,7 @@
                     display: -ms-flexbox;
                     display: flex;
                     flex-direction: row;
-                    font-size: 18px;
+                    font-size: $text;
                     font-weight: 500;
                     justify-content: space-between;
                     line-height: 22px;
@@ -185,14 +185,14 @@
                                 .strong {
                                     // Адаптив
                                     @media (min-width: 768px) {
-                                        font-size: 18px;
+                                        font-size: $text;
                                         line-height: 22px;
                                     }
                                 }
 
                                 // Цена
                                 .value {
-                                    font-size: 18px;
+                                    font-size: $text;
                                     font-weight: 500;
                                     line-height: 22px;
                                 }
@@ -236,7 +236,7 @@
 
                     //Имя доставка
                     .header_title {
-                        font-size: 18px;
+                        font-size: $text;
                         font-weight: 500;
                         line-height: 22px;
                         margin-bottom: 8px;
@@ -280,7 +280,7 @@
 
                     // Заголовок
                     .title {
-                        font-size: 18px;
+                        font-size: $text;
                         font-weight: 500;
                         line-height: 22px;
 
@@ -337,7 +337,7 @@
 
                     // Заголовок товара
                     .header_title {
-                        font-size: 18px;
+                        font-size: $text;
                         font-weight: 500;
                         line-height: 22px;
                         margin-bottom: 8px;
@@ -401,7 +401,7 @@
                                 font-size: 16px;
                                 margin-top: 16px;
                                 display: flex;
-                                margin: 0 auto;
+                                margin: $mc;
                                 width: 60%;
                             }
                         }

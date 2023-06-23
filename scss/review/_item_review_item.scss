@@ -100,7 +100,7 @@
         // Текст
         .text {
             font-size: 14px;
-            line-height: 18px;
+            line-height: $text;
             margin-top: 8px;
             white-space: pre-line;
             word-break: break-word;

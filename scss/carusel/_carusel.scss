@@ -67,7 +67,7 @@
                 color: #2d2f43;
                 // Контейнер под текст
                 .textWrap {
-                    margin: 0 auto;
+                    margin: $mc;
                     max-width: 100%;
                     align-items: flex-start;
                     justify-content: center;
