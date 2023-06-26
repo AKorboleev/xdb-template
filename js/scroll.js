@@ -729,8 +729,14 @@ $.ajax({
 		// Предотвращаем дальнейшее выполнение
 //		return false;
 	});
-});
 
+    $(document).ready(function ()
+	{
+		let popover = new bootstrap.Popover(document.querySelector('.example-popover'), {
+			container: 'body'
+		})
+	});
+});
 
 /*
 

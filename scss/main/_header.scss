@@ -451,6 +451,10 @@ header.header {
                         user-select: none;
                         text-decoration: none;
 
+                        @media (max-width: 991.9px) {
+                            width: 100%;
+                        }
+
                         .inner {
                             // Иконки Элементов
                             .item_icon {
@@ -496,6 +500,8 @@ header.header {
                                 font-weight: 500;
                                 font-size: 12px;
                                 text-decoration: none;
+                                width: 70px;
+                                position: inherit;
 
                                 // Адаптив
                                 @media (max-width: 991.9px) {

@@ -1,20 +1,21 @@
 // Файл для настрйоки повторяющихся элементов, классов и переменнных
 
 // Используемые шрифты
-$fontFamaly: "Kurale", serif;
-$os: "Open Sans", sans-serif;
+// $fontFamaly: "Kurale", serif;
+// $os: "Open Sans", sans-serif;
 // ****
 
 //Используемые цвета
 $whiteGrey:#f2f2f2;
-$mainColor: #2bf264;
+$mainColor: #cef22b;
 $whiteRight:#ff7676;
 $white: #fff;
 $yellow: #b39f08;
 $black: rgb(22, 22, 22);
 $headerTop: #fff;
 $grey: #9697a1;
-// ****
+// ****   stroke: dashoffset 12px; ;
+
 
 //Используемы цвет в ховеер
 $hoverColor: #2f1cd5;
@@ -22,6 +23,7 @@ $hoverColor: #2f1cd5;
 
 // часто испльзуемые значения
 $text: 18px;
+$textItem: 14px;
 $mc: 0 auto;
 // ****
 
@@ -753,7 +755,7 @@ label.custom-checkbox {
 }
 
 // Форма запроса можно менять хоть как
-// Вкладывать структуру как тут
+// Вкладывать html структуру как тут css
 .search {
     display: none;
     line-height: 1;
@@ -841,9 +843,8 @@ label.custom-checkbox {
 }
 //****
 
-// Шаблон Путь страниц
 // внутренняя часть
-.page_path {
+.bread_crumbs {
     padding-left: 6px;
     padding-right: 6px;
     box-sizing: border-box;
@@ -1078,7 +1079,7 @@ label.custom-checkbox {
 }
 //****
 
-//search_filteres используется в друх местах , поэтому вынес его сюда
+//search_filteres используется в друх местах 
 //trader_page
 
 // Поисковые фильтры
@@ -1294,3 +1295,13 @@ label.custom-checkbox {
     }
 }
 //****
+
+
+// Находится в базе или я что-то не понимаю
+.menu_logged_in {
+    background: #fff;
+    border-radius: 10px;
+    max-width: 14rem;
+    padding: 8px 0;
+    width: 80vw;
+}
