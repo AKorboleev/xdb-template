@@ -738,6 +738,14 @@ $.ajax({
 	});
 });
 
+function formfiltres() {
+    let minPrice = document.getElementById("minPrice").value;
+    let maxPrice = document.getElementById("maxPrice").value;
+    document.getElementById('formPriceFiltrsButton').addEventListener('click', () => window.open(`https://market.axnata24.ru/search/?pricefrom=${minPrice}&priceto=${minPrice}`, 'windowName'));
+}
+
+
+
 /*
 
 show_more

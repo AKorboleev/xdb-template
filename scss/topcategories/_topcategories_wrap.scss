@@ -88,29 +88,26 @@
                 a.cell_block {
                     flex-basis: 160px;
                     width: 100px;
-                    padding-left: 12px;
-                    padding-right: 12px;
+                    padding: 0 12px;
                     overflow: hidden;
                     position: relative;
 
                     // Адаптив
                     @media(min-width:768px) {
-                            margin-left: 16px;
+                        margin-left: 12px;
                     }
 
                     @media(max-width:839.9px) {
                         width: 100px;
-                        padding-left: 12px;
-                        padding-right: 12px;
+                        padding: 0 12px;
                     }
 
                     @media(max-width:839.9px)and (min-width:768px) {
-                        padding-left: 16px;
-                        padding-right: 16px;
+                        padding: 0 16px;
                     }
 
                     @media(max-width:839.9px) {
-                        margin-left: -12px;
+                        margin-left: 0px;
                     }
 
                     @media(max-width:839.9px)and (min-width:768px) {

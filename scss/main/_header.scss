@@ -531,7 +531,7 @@ header.header {
     }
 
     // Форма
-    form {
+    form.search {
         position: relative;
         //Внутренняя настройка
         .inner {
@@ -545,6 +545,7 @@ header.header {
             width: auto;
             border-radius: 8px;
             background: #f5f6f9;
+            padding-left: 10px;
             // Строка поиска
             .label {
                 flex-grow: 1;

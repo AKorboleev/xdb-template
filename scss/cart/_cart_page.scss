@@ -21,6 +21,10 @@
         .checkbox_text {
             display: flex;
 
+            @media (min-height:375px){
+                font-size: 13px;
+            }
+
             .icon_basket {
                 margin: 5px;
                 display: inline-block;
@@ -42,6 +46,10 @@
         .delete_block {
             span {
                 color:$mainColor;
+                
+                @media screen and (max-height:375px){
+                    font-size: 15px;
+                }
             }
         }
 
@@ -81,6 +89,7 @@
                 width: 100%;
                 @media (max-width:1400px) {
                     max-width: 34%;
+                    padding: 0 3px;
                 }
 
                 @media (max-width:1200px) {
@@ -94,7 +103,7 @@
                 // }
 
                 @media (max-width:460px) {
-                    max-width: 37%;
+                    max-width: 100%;
                 }
 
                 .apply {
