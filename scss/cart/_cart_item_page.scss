@@ -1,10 +1,10 @@
 // Обертка нужного контента
 .cart_item_page {
     margin-top: 12px;
-    padding: 0 10px;
+    padding: 10px 10px;
     padding-bottom: 10px;
     // Адаптив
-    @media (min-width: 768px) {
+    @media (min-width: $md) {
         margin-top: 16px;
     }
     // Контент
@@ -12,16 +12,13 @@
         max-width: 100%;
         margin: 16px auto;
         // Адаптив
-        @media (min-width: 768px) {
+        @media (min-width: $md) {
             margin-bottom: 16px;
-        }
-        // Адаптив
-        @media (min-width: 576px) {
-            padding: 0 6px;
-        }
-        // Адаптив
-        @media (min-width: 768px) {
             padding: 0 12px;
+        }
+        // Адаптив
+        @media (min-width: $sm) {
+            padding: 0 6px;
         }
         // Адаптив
         @media (max-width: 991.9px) {
@@ -37,7 +34,7 @@
             -ms-flex-direction: column;
             flex-direction: column;
             // Адаптив
-            @media (max-width: 768px) {
+            @media (max-width: $md) {
                 margin-bottom: 16px;
             }
             // Лист с картинками
@@ -53,11 +50,11 @@
                 text-decoration: none;
 
                 // Адаптив
-                @media (max-width: 575.9px) {
+                @media (max-width: $sm) {
                     padding: 16px 16px;
                 }
                 // Адаптив
-                @media (min-width: 768px) {
+                @media (min-width: $md) {
                     &:last-child {
                         margin-bottom: 0;
                     }
@@ -109,7 +106,7 @@
                         margin: 14.4px;
 
                         // Адаптив
-                        @media (min-width: 768px) {
+                        @media (min-width: $md) {
                             margin: 19.2px;
                         }
                     }
@@ -133,13 +130,12 @@
             // Информация о продукте
             .info_product {
                 background-color: #fff;
-                padding: 0 16px;
+                padding: 10px 16px;
                 border-radius: 6px;
 
                 // Адаптив
-                @media (max-width: 575.9px) {
-                    padding-left: 16px;
-                    padding-right: 16px;
+                @media (max-width: $sm) {
+                    padding: 0 16px;
                 }
                 //Основная информация продукта
                 .item {
@@ -356,7 +352,7 @@
                                 vertical-align: middle;
                             }
 
-                            @media (max-width: 767.9px) {
+                            @media (max-width: $md) {
                                 margin-left: 3.1rem;
                             }
                             // Картинка
@@ -420,7 +416,7 @@
                                             user-select: none;
                                             width: 100%;
                                             // Адаптив
-                                            @media (max-width: 575.9px) {
+                                            @media (max-width: $sm) {
                                                 &:after {
                                                     border-radius: 10px;
                                                     content: "";
@@ -445,15 +441,15 @@
                         margin-top: 20px;
 
                         // Адаптив
-                        @media (min-width: 768px) {
+                        @media (min-width: $md) {
                             margin: 16px 0;
                         }
 
-                        @media (max-width: 767.9px) {
+                        @media (max-width: $md) {
                             display: block;
                         }
 
-                        @media (max-width: 767.9px) {
+                        @media (max-width: $md) {
                             display: none;
                         }
                     }
@@ -462,7 +458,7 @@
             // Описание товара
             .description {
                 background-color: #fff;
-                padding: 0 24px;
+                padding: 5px 24px;
                 border-radius: 6px;
                 margin-top: 20px;
                 // Блок с описанием
@@ -559,6 +555,10 @@
             font-weight: 500;
             text-align: center;
             margin-bottom: 12px;
+
+            @media (max-width: $sm) {
+                padding-top: 20px;
+            }
         }
 
         // Оретка товара, не могу проверить , так как нет его

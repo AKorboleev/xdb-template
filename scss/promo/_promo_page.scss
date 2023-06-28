@@ -17,16 +17,16 @@
       display: block;
       overflow: hidden;
       position: relative;
+      cursor: auto;
       
       // Текст блока
       .text_wrap {
-        color: #2d2f43;
         text-align: center;
         margin: 22% auto;
         width: 100%;
         
         //Адаптив
-        @media (max-width: 768px) {
+        @media (max-width: $md) {
             display: grid;
             margin: $mc;
             padding: 0;
@@ -46,7 +46,7 @@
         width: 50%;
         margin: 4% auto;
 
-        @media (max-width: 768px) {
+        @media (max-width: $md) {
           margin: $mc;
         }
         // Сама картинка

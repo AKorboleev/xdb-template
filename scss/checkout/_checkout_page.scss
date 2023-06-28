@@ -19,39 +19,52 @@
             max-width: 1300px;
             margin-left: auto;
             margin-right: auto;
-            padding-left: 6px;
-            padding-right: 6px;
+            padding: 0 6px;
             align-items: center;
             box-sizing: border-box;
             color: #2d2f43;
             display: flex;
             margin: 4px auto 8px;
 
-            // Адаптив
-            @media (min-width: 576px) {
-                padding-left: 6px;
-                padding-right: 6px;
+            // // Адаптив
+            // @media (min-width: 576px) {
+            //     padding: 0 6px;
+            // }
+
+            // @media (min-width: 768px) {
+            //     padding: 0 8px;
+            // } 
+            
+
+            // @media (min-width: 992px) {
+            //     padding: 0 10px;
+            // }
+
+            // @media (min-width: 1300px) {
+            //     padding:  12px;
+            // }
+
+            // Small devices (sm)
+            @media (min-width: $sm) {}
+
+            // Medium devices (md)
+            @media (min-width: $md) {
+                margin-bottom: 16px;
+                padding: 0 15px;
             }
 
-            @media (min-width: 768px) {
+            // Large devices (lg)
+            @media (min-width: $lg) {
                 padding-left: 8px;
                 padding-right: 8px;
             }
 
-            @media (min-width: 992px) {
-                padding-left: 8px;
-                padding-right: 8px;
-            }
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
 
-            @media (min-width: 1300px) {
-                padding-left: 8px;
-                padding-right: 8px;
-            }
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
 
-            @media (min-width: 768px) {
-                padding-left: 8px;
-                padding-right: 8px;
-            }
         }
     }
 
@@ -61,29 +74,24 @@
         max-width: 100%;
         padding-bottom: 22px;
         margin: $mc;
-        padding-left: 6px;
-        padding-right: 6px;
+        padding: 0 6px;
 
         // Адаптив
-        @media (min-width: 576px) {
-            padding-left: 6px;
-            padding-right: 6px;
+        @media (min-width: $sm) {
+            padding: 0 6px;
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: $md) {
             margin-bottom: 16px;
-            padding-left: 15px;
-            padding-right: 15px;
+            padding: 0 15px;
         }
 
-        @media (min-width: 992px) {
-            padding-left: 8px;
-            padding-right: 8px;
+        @media (min-width: $lg) {
+            padding: 0 8px;
         }
 
-        @media (min-width: 1300px) {
-            padding-left: 8px;
-            padding-right: 8px;
+        @media (min-width: $xxl) {
+            padding: 0 8px;
         }
 
         // контент
@@ -92,7 +100,7 @@
             flex-direction: column-reverse;
 
             // Адаптив
-            @media (min-width: 768px) {
+            @media (min-width: $lg) {
                 flex-direction: row-reverse;
             }
 
@@ -105,12 +113,11 @@
                 border-radius: 6px;
 
                 // Адаптив
-                @media (max-width: 767.9px) {
-                    margin-top: 24px;
-                    margin-bottom: 24px;
+                @media (max-width: $md) {
+                    margin: 0 24px;
                 }
 
-                @media (max-width: 767.9px) and (max-width: 575.9px) {
+                @media (max-width: $md) and (max-width:$sm) {
                     margin-top: 16px;
                     margin-bottom: 16px;
                 }
@@ -131,7 +138,7 @@
                     margin: 0;
 
                     // Адаптив
-                    @media (max-width: 575.9px) {
+                    @media (max-width: $sm) {
                         padding: 16px;
                     }
                 }
@@ -144,10 +151,8 @@
                     overflow: auto;
 
                     // Адаптив
-                    @media (max-width: 575.9px) {
-                        padding-left: 16px;
-                        padding-bottom: 16px;
-                        padding-top: 16px;
+                    @media (max-width: $sm) {
+                        padding: 16px 16px 16px;
                     }
                 }
 
@@ -184,7 +189,7 @@
                                 // Итог
                                 .strong {
                                     // Адаптив
-                                    @media (min-width: 768px) {
+                                    @media (min-width: $md) {
                                         font-size: $text;
                                         line-height: 22px;
                                     }
@@ -207,15 +212,15 @@
                 position: relative;
 
                 // Адаптив
-                @media (max-width: 767.9px) {
+                @media (max-width: $md) {
                     padding-bottom: 24px;
                 }
 
-                @media (max-width: 767.9px) and (max-width: 575.9px) {
+                @media (max-width: $md) and (max-width: $sm) {
                     padding-bottom: 16px;
                 }
 
-                @media (min-width: 768px) {
+                @media (min-width: $md) {
                     box-sizing: border-box;
                     margin-right: 16px;
                     flex-basis: 100%;
@@ -230,7 +235,7 @@
                     margin-bottom: 20px;
 
                     // Адаптив
-                    @media (max-width: 575.9px) {
+                    @media (max-width: $sm) {
                         padding: 16px;
                     }
 
@@ -242,7 +247,7 @@
                         margin-bottom: 8px;
 
                         // Адаптив
-                        @media (max-width: 575.9px) {
+                        @media (max-width: $sm) {
                             font-size: 14px;
                             line-height: 16px;
                         }
@@ -255,21 +260,20 @@
                         transition: background-color 0.1s ease-in-out;
 
                         // Адаптив
-                        @media (max-width: 575.9px) {
+                        @media (max-width: $sm) {
                             margin: 0 -16px;
                             padding: 0 16px;
                         }
 
                         // Блок элемента
                         .block_item {
-                            display: -ms-flexbox;
                             display: flex;
                             flex-wrap: wrap;
                             margin: 0 -15px 9px 0;
                             padding-top: 8px;
 
                             // Адаптив
-                            @media (max-width: 575.9px) {
+                            @media (max-width: $sm) {
                                 flex-direction: column;
                                 justify-content: stretch;
                                 margin-bottom: 1px;
@@ -285,7 +289,7 @@
                         line-height: 22px;
 
                         // Адаптив
-                        @media (max-width: 575.9px) {
+                        @media (max-width: $sm) {
                             font-size: 14px;
                             line-height: 16px;
                         }
@@ -331,7 +335,7 @@
                     padding: 24px;
 
                     // Адаптив
-                    @media (max-width: 575.9px) {
+                    @media (max-width: $sm) {
                         padding: 16px;
                     }
 
@@ -343,7 +347,7 @@
                         margin-bottom: 8px;
 
                         // Адаптив
-                        @media (max-width: 575.9px) {
+                        @media (max-width: $sm) {
                             font-size: 14px;
                             line-height: 16px;
                         }
@@ -355,7 +359,7 @@
                         transition: background-color 0.1s ease-in-out;
 
                         // Адаптив
-                        @media (max-width: 575.9px) {
+                        @media (max-width: $sm) {
                             margin: 0 -16px;
                             padding: 0 16px;
                         }
@@ -368,7 +372,7 @@
                             padding-top: 8px;
 
                             // Адаптив
-                            @media (max-width: 575.9px) {
+                            @media (max-width: $sm) {
                                 flex-direction: column;
                                 justify-content: stretch;
                                 margin-bottom: 1px;
@@ -379,13 +383,13 @@
 
                     .sticky_on_mobile {
                         // Адаптив
-                        @media (max-width: 767.9px) {
+                        @media (max-width: $md) {
                             position: sticky;
                             bottom: 24px;
                         }
 
                         // Адаптив
-                        @media (max-width: 767.9px) and (max-width: 575.9px) {
+                        @media (max-width: $md) and (max-width: $sm) {
                             bottom: 16px;
                         }
 

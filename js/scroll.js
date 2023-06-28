@@ -739,9 +739,9 @@ $.ajax({
 });
 
 function formfiltres() {
-    let minPrice = document.getElementById("minPrice").value;
-    let maxPrice = document.getElementById("maxPrice").value;
-    document.getElementById('formPriceFiltrsButton').addEventListener('click', () => window.open(`https://market.axnata24.ru/search/?pricefrom=${minPrice}&priceto=${minPrice}`, 'windowName'));
+    let min_price = document.getElementById("minPrice").value;
+    let max_price = document.getElementById("maxPrice").value;
+    document.getElementById('formPriceFiltrsButton').addEventListener('click', () => window.open(`https://market.axnata24.ru/search/?pricefrom=${min_price}&priceto=${max_price}`, 'windowName'));
 }
 
 

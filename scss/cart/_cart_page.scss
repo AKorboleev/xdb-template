@@ -69,12 +69,12 @@
                 max-width: 62%;
                 width: 100%;
 
-                @media (max-width:1400px) {
+                @media (max-width:$xxl) {
                     max-width: 63%;
                     font-size: 14px;
                 }
 
-                @media (max-width:1200px) {
+                @media (max-width:$xl) {
                     max-width: 100%;
                     font-size: 11px;
                 }
@@ -87,12 +87,12 @@
             .btn_discount {
                 max-width: 35%;
                 width: 100%;
-                @media (max-width:1400px) {
+                @media (max-width:$xxl) {
                     max-width: 34%;
                     padding: 0 3px;
                 }
 
-                @media (max-width:1200px) {
+                @media (max-width:$xl) {
                     margin-top: 20px;
                     max-width: 100%;
                     font-size: 11px;

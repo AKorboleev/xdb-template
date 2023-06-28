@@ -7,11 +7,11 @@
     display: flex;
     position: relative;
     // Адаптив
-    @media (max-width: 575.9px) {
+    @media (max-width: $sm) {
         padding-right: 16px;
     }
 
-    @media (max-width: 575.9px) {
+    @media (max-width: $sm) {
         margin-top: 16px;
     }
     // Контейнер для фото

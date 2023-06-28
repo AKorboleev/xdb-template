@@ -8,11 +8,8 @@
     position: relative;
     justify-content: space-between;
     // Адаптив
-    @media(max-width:575.9px) {
+    @media(max-width:$sm) {
         padding-right: 16px;
-    }
-
-    @media(max-width:575.9px) {
         margin-top: 16px;
     }
     // Контейнер для фото
@@ -39,6 +36,12 @@
             .nameText {
                 font-size: 14px;
                 max-height: 3em;
+                
+                @media (max-width: 375px) {
+                    position: fixed;
+                    top: 148px;
+                    left: 70px;
+                }
             }
             // Количество
             .quantity {

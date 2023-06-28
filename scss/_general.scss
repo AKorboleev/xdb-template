@@ -27,8 +27,16 @@ $textItem: 14px;
 $mc: 0 auto;
 // ****
 
-//icon__image цвет иконки в cart_item_page.scss
-$icon__image: $mainColor;
+// breakpoint
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+//icon_image цвет иконки в cart_item_page.scss
+$icon_image: $mainColor;
 // ****
 
 // catalog цвет зоголовка шрифта , который  находится в catalog.scss
@@ -535,24 +543,20 @@ $catalog: $mainColor;
             margin-bottom: 0;
         }
         // блок иконки
-        .iconWrapper {
+        .icon_wrapper {
             border-radius: 15rem;
             border: 0.1667rem solid #fff;
             flex-shrink: 0;
-            height: 2.3334rem;
-            width: 2.3334rem;
+            height: 2.5rem;
+            width: 2.5rem;
             overflow: hidden;
+            margin-right: 10px;
 
             // Сама иконка
             .icon_image {
-                background-repeat: no-repeat;
                 display: inline-block;
-                background: $icon__image;
-                height: 1.3889rem;
-                padding: 0.5rem;
-                width: 1.3889rem;
+                background: $icon_image;
                 background-size: contain;
-                object-fit: contain;
             }
         }
     }
@@ -785,6 +789,16 @@ label.custom-checkbox {
             border-radius: 8px;
             background: #f5f6f9;
             padding-left: 10px;
+
+            &:-moz-placeholder {
+                color: #9697a1;
+            }
+            &:-ms-input-placeholder {
+                color: #9697a1;
+            }
+            &:focus {
+                background: #dedede;
+            }
             // Строка поиска
             .label {
                 flex-grow: 1;
@@ -794,12 +808,6 @@ label.custom-checkbox {
                 padding: 0;
                 height: 48px;
                 border-radius: 8px;
-
-                &::placeholder {
-                    .inner {
-                        color: #9697a1;
-                    }
-                }
 
                 input {
                     appearance: none;
@@ -815,16 +823,6 @@ label.custom-checkbox {
                     transition: background 0.3s ease-in-out;
                     width: 100%;
                     padding-left: 8px;
-
-                    &:-moz-placeholder {
-                        color: #9697a1;
-                    }
-                    &:-ms-input-placeholder {
-                        color: #9697a1;
-                    }
-                    &:focus {
-                        background: #ededed;
-                    }
                 }
             }
         }

@@ -1,15 +1,16 @@
 // Обертка для обзора
 .review_wrap {
-    margin: 10px 24px;
+    margin: 10px 0;
+    padding: 5px 10px;
     align-items: center;
-    color: #2d2f43;
     display: inline-block;
     position: relative;
+    background:white;
+    color: #2d2f43;
     text-decoration: none;
     min-width: 0;
-    position: relative;
-        // Звезды
-        .stars {
+    // Звезды
+    .stars {
             font-size: 1.1666rem;
             margin: .4rem 0 .3rem;
 
@@ -43,10 +44,10 @@
                     }
                 }
             }
-        }
+    }
 
-        // Фильтры
-        .filteres {
+    // Фильтры
+    .filteres {
             // Фильтр
             .filter {
                 background: #eee;
@@ -147,16 +148,16 @@
                    @include filterStar;
                 }
             }
-        }
+    }
 
-        // Контент
-        .content_review {
+    // Контент
+    .content_review {
             min-height: 3rem;
             position: relative;
             text-align: right;
             
-            //Следующий контент
-            .next {
+            //Следующий комментарий
+            .next_item {
                 color:$mainColor;
                 display: inline-block;
                 font-size: .7777rem;
@@ -164,5 +165,5 @@
                 text-decoration: none;
                 text-decoration: underline;
             }
-        }
+    }
 }

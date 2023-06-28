@@ -130,7 +130,7 @@
         }
     }
 
-    @media (max-width: 839.9px) and (min-width: 1300px) {
+    @media (max-width: 839.9px) and (min-width: $xxl) {
         box-sizing: content-box;
         width: 100%;
         flex-basis: calc(50% - 32.1px);
@@ -201,7 +201,7 @@
         }
     }
 
-    @media (max-width: 599.9px) and (min-width: 1300px) {
+    @media (max-width: 599.9px) and (min-width: $xxl) {
         box-sizing: content-box;
         width: 100%;
         flex-basis: calc(100% - 48.1px);
