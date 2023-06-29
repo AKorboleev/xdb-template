@@ -416,6 +416,10 @@ header.header {
                 display: table-cell;
                 vertical-align: middle;
                 width: 100%;
+
+                @media (max-width: 375px) {
+                    display: none;
+                }
             }
             //правая часть header_button . Переписать заново , так как не нравится старая  структура , так как не нравится вложеность
             .right_panel {
@@ -516,22 +520,22 @@ header.header {
     }
 }
 //  Адаптив поиска
-.mobaile_search {
-    display: none;
+.mobile_search {
+    display: block;
     background: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
     display: block;
     padding: 10px 12px 16px;
 
-    // Адаптив
-    @media (min-width: 768px) {
+    // Medium devices (md)
+    @media (min-width: $md) {
         padding-left: 16px;
         padding-right: 16px;
-        display: none;
+        // display: none;
     }
 
     // Форма
-    form.search {
+    form.mobile {
         position: relative;
         //Внутренняя настройка
         .inner {

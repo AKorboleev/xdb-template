@@ -618,36 +618,6 @@ $.ajax({
 
 
 
-/*
-
-		$.post('https://api.edu.cdek.ru/v2/oauth/token?grant_type=client_credentials&client_id=EMscd6r9JnFiQ3bLoyjJY6eM78JrJceI&client_secret=PjLZkKBHEiLK3YsjtNrt3TGNG0ahs3kG', {
-			headers: {'Content-Type': 'application/x-www-form-urlencoded',},
-//				parameters : {
-//					grant_type: 'client_credentials',
-//					client_id: 'EMscd6r9JnFiQ3bLoyjJY6eM78JrJceI',
-//					client_secret: 'PjLZkKBHEiLK3YsjtNrt3TGNG0ahs3kG'
-//				},
-
-			}, function(response) {
-
-				alert('bbb');
-
-			// Формируем форму по методу POST
-///			$('div#insert_form').html('<form action="/success/" name="success" method="post"><input type="hidden" name="order" value="' + response + '" /></form>');
-			// Отправляем форму
-	//		document.forms['success'].submit();
-		});
-
-
-*/
-
-
-
-
-
-
-
-
 
 		// Задержка на 1,5 секунды
 		let delayInMilliseconds = 1500;
@@ -703,6 +673,8 @@ $.ajax({
 			// Удаляем скрывающий класс у текста ошибки блока способов доставки
 			$('div.delivery_errorMessage').removeClass('d-none');
 
+            $('div.validation_tabs.validationContainer').removeClass('error-error');
+            
 			// Добавляем к блоку доставки класс трясучки
 			$('div.delivery').addClass('shaking');
 			// Таймаут
@@ -715,7 +687,7 @@ $.ajax({
 	});
 	//---------------------------------------------------------------------------
 
-
+    //---------------------------------------------------------------------------
 	// Клик на позиции списка меню страницы Мои заказы
 	$('button.menu_delivery').on('click', function() {
 
@@ -737,16 +709,37 @@ $.ajax({
 		})
 	});
 });
-
+//---------------------------------------------------------------------------
+// Вывод товара от минимальной цены , до максимальной. Стоит сделать еще только по минимальной , до максимальной 
 function formfiltres() {
+    // Минимальная цена
     let min_price = document.getElementById("minPrice").value;
+    // Максимальная
     let max_price = document.getElementById("maxPrice").value;
+    // Передача переменных в ссылку и вывод товара по указанной цене 
     document.getElementById('formPriceFiltrsButton').addEventListener('click', () => window.open(`https://market.axnata24.ru/search/?pricefrom=${min_price}&priceto=${max_price}`, 'windowName'));
 }
 
 
 
+// $(document).ready(function(){
+//   $('.your-class').slick({
+//     setting-name: setting-value
+//   });
+// });
+
+
+// $('.single-item').slick();
+
+// $('.multiple-items').slick({
+//     infinite: true,
+//     slidesToShow: 3,
+//     slidesToScroll: 3
+// });
+
 /*
+
+
 
 show_more
 adult

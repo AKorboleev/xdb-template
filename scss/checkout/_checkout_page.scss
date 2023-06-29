@@ -8,10 +8,6 @@
         max-width: 100%;
         margin-bottom: 12px;
 
-        // Адаптив
-        @media (min-width: 768px) {
-            margin-bottom: 16px;
-        }
 
         // Внутренняя часть
         .inner {
@@ -25,24 +21,6 @@
             color: #2d2f43;
             display: flex;
             margin: 4px auto 8px;
-
-            // // Адаптив
-            // @media (min-width: 576px) {
-            //     padding: 0 6px;
-            // }
-
-            // @media (min-width: 768px) {
-            //     padding: 0 8px;
-            // } 
-            
-
-            // @media (min-width: 992px) {
-            //     padding: 0 10px;
-            // }
-
-            // @media (min-width: 1300px) {
-            //     padding:  12px;
-            // }
 
             // Small devices (sm)
             @media (min-width: $sm) {}
@@ -74,24 +52,24 @@
         max-width: 100%;
         padding-bottom: 22px;
         margin: $mc;
-        padding: 0 6px;
+        padding: 10px 6px;
 
         // Адаптив
         @media (min-width: $sm) {
-            padding: 0 6px;
+            padding: 10px 6px;
         }
 
         @media (min-width: $md) {
             margin-bottom: 16px;
-            padding: 0 15px;
+            padding: 10px 15px;
         }
 
         @media (min-width: $lg) {
-            padding: 0 8px;
+            padding: 10px 8px;
         }
 
         @media (min-width: $xxl) {
-            padding: 0 8px;
+            padding: 10px 8px;
         }
 
         // контент
@@ -401,7 +379,7 @@
                             transition: opacity 0.3s ease-out;
 
                             // Контейнер кнопки
-                            .mainButton {
+                            .main_button {
                                 font-size: 16px;
                                 margin-top: 16px;
                                 display: flex;

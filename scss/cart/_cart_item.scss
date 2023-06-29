@@ -38,9 +38,9 @@
                 max-height: 3em;
                 
                 @media (max-width: 375px) {
-                    position: fixed;
-                    top: 148px;
-                    left: 70px;
+                    position: absolute;
+                    top: -30px;
+                    left: 30px;
                 }
             }
             // Количество
@@ -85,13 +85,19 @@
                     white-space: nowrap
                 }
                 
+                .quantity {
+                    
+                }
             }
 
 
         }
     // Блок с ценам
     .block_price {
-        display: grid;
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: 130px;
         // Старая цена
         .old_price {
             color:rgb(146, 146, 146);

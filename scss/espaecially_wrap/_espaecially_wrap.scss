@@ -22,7 +22,7 @@
     }
     // Элементы
     .inners {
-        display: inline-block;
+        display: flex;
         flex-wrap: wrap;
     }
 }

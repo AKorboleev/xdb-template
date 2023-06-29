@@ -761,17 +761,15 @@ label.custom-checkbox {
 // Форма запроса можно менять хоть как
 // Вкладывать html структуру как тут css
 .search {
-    display: none;
     line-height: 1;
     vertical-align: middle;
     width: 100%;
-    // Адаптив
-    @media (min-width: 768px) {
-        display: inline-block;
-    }
-    @media (max-width: 768px) {
-        display: none;
-    }
+    display: none;
+
+    // Medium devices (md)
+    // @media (max-width: $md) {
+    //     display: none;
+    // }
     // Форма поиска
     form {
         position: relative;
@@ -1448,4 +1446,15 @@ ul.dropdown_menu {
             }
         }
     }
+}
+
+//
+.delivery_badge {
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 14px;
+    margin: -3px 0;
+    padding: 3px 6px;
+    white-space: nowrap
 }
