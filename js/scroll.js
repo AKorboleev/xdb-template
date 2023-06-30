@@ -90,13 +90,14 @@ $(document).ready(function () {
             //  cell_big буду использовать везде и не буду использовать другие классы , так как они попросту не работают
             var slide = $(this).parent().find('div.cell_big, div.cell_promo, div.cell___1LYLC').last().outerWidth(true);
             // Прибавляем к текущему положению размер слайда
-            var value = $(this).parent().find('div.content_swap.nativeScroll').scrollLeft() - slide;
+            // var value = $(this).parent().find('div.content_swap.nativeScroll').scrollLeft() - slide;
 
             // Убираем фокус с кнопки
             $(this).blur();
 
             // Анимируем сдвиг полосы прокрутки
-            //			$(this).parent().find('div.content___14fC9.nativeScroll___2Cg7K').scrollLeft(value);
+            //nativeScroll___2Cg7K
+            // $(this).parent().find('div.content_swap.nativeScroll').scrollLeft(value);
             $(this).parent().find('div.content_swap.nativeScroll').stop().animate({ scrollLeft: value });
         });
         //---------------------------------------------------------------------------
@@ -125,7 +126,7 @@ $(document).ready(function () {
             $(this).blur();
 
             // Анимируем сдвиг полосы прокрутки   
-            //			$(this).parent().find('div.content___14fC9.nativeScroll___2Cg7K').scrollLeft(value);
+            $(this).parent().find('div.content_swap.nativeScroll').scrollLeft(value);
             $(this).parent().find('div.content_swap.nativeScroll').stop().animate({ scrollLeft: value });
         });
         //---------------------------------------------------------------------------

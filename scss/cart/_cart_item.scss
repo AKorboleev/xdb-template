@@ -12,6 +12,16 @@
         padding-right: 16px;
         margin-top: 16px;
     }
+
+    @media(max-width:390px) {
+        width: 80%;
+    }
+
+    // ipgone xr
+    @media (max-width: 414px) {
+        padding-right: 17px;
+        font-size: 14px;
+    }
     // Контейнер для фото
     .photo {
         background: rgba(0, 0, 0, .04);
@@ -32,6 +42,13 @@
         .content_item {
             flex-grow: 1;
             margin-left: 12px;
+
+            // iphone xr
+            @media (max-width: 414px) {
+                width: 90%;
+                margin-left: 10px
+            }
+
             //Имя контента
             .nameText {
                 font-size: 14px;
@@ -41,6 +58,16 @@
                     position: absolute;
                     top: -30px;
                     left: 30px;
+                }
+
+                // iphone 12 pro
+                @media (max-width: 390px) {
+                    font-size: 13px;
+                }
+
+                // iphone xr
+                @media (max-width: 414px) {
+                    font-size: 13px;
                 }
             }
             // Количество
@@ -53,6 +80,12 @@
                 font-size: 16px;
                 font-weight: 500;
                 display: grid;
+
+                // iphone 12 pro
+                @media (max-width: 390px) {
+                    font-size: 15px;
+                }
+
                 // Скрытая часть
                 .hidden {
                     display: none;
@@ -88,6 +121,10 @@
                 .quantity {
                     
                 }
+
+                .delivery_product {
+                    font-style: 14px;
+                }
             }
 
 
@@ -95,9 +132,13 @@
     // Блок с ценам
     .block_price {
         display: block;
-        position: absolute;
-        top: 70px;
-        left: 130px;
+
+        @media (max-width: 375px) {
+            position: absolute;
+            margin-top: 4px;
+            top: 70px;
+            left: 130px;
+        }
         // Старая цена
         .old_price {
             color:rgb(146, 146, 146);

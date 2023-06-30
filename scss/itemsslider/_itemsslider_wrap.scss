@@ -55,18 +55,22 @@
         position: relative;
         // Контент
         .content {
-            overflow-x: hidden;
-            // Элемент
-            .inner {
-                align-items: stretch;
-                display: flex;
-                flex-wrap: nowrap;
-                margin: -16px 0 0 -16px;
-                // Адаптив
-                @media (min-width: 840px) {
-                    flex-wrap: nowrap;
-                }
+
+            &::-webkit-scrollbar {
+                display: none;
             }
+        }
+
+        // Элемент
+        .inner {
+            align-items: stretch;
+            display: flex;
+            flex-wrap: nowrap;
+            margin: -16px 0 0 -16px;
+            // Адаптив
+            // @media (min-width: 840px) {
+            //     flex-wrap: nowrap;
+            // }
         }
     }
 

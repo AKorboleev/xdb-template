@@ -93,7 +93,13 @@
                     position: relative;
 
                     // Адаптив
-                    @media(min-width:768px) {
+
+                    @media(max-width: 375) {
+                        height: 37px;
+                        width: 90%;
+                    }
+
+                    @media(min-width: $md) {
                         margin-left: 12px;
                     }
 

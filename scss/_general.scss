@@ -264,7 +264,7 @@ $catalog: $mainColor;
 
 //Нужно для скрола карусели
 .nativeScroll {
-    overflow-x: hidden;
+    overflow-x: auto;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
 }

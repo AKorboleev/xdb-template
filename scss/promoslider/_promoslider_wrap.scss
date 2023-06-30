@@ -45,15 +45,16 @@
         }
         // Оберка контента
         .content_wrap {
-            overflow-y: hidden;
-            overflow-x: hidden;
-            scrollbar-width: none;
-            // Элемент
-            .items {
-                align-items: stretch;
-                display: flex;
-                flex-wrap: nowrap;
+            &::-webkit-scrollbar {
+                display: none;
             }
+        }
+
+        // Элемент
+        .items {
+            align-items: stretch;
+            display: flex;
+            flex-wrap: nowrap;
         }
     }
 }
