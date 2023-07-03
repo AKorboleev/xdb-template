@@ -3,10 +3,19 @@
     margin-top: 12px;
 
     // Адаптив
-    @media (min-width: 768px) {
+
+    // Small devices (sm)
+    @media (min-width: $sm) {}
+    // Medium devices (md)
+    @media (min-width: $md) {
         margin-top: 16px;
     }
-
+    // Large devices (lg)
+    @media (min-width: $lg) {}
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {}
     // контент Хейдера
     .order_header {
         box-sizing: border-box;
@@ -14,12 +23,8 @@
         margin-bottom: 12px;
         box-sizing: border-box;
         max-width: 1300px;
-        margin-left: auto;
-        margin-right: auto;
         padding-left: 20px;
         padding-right: 6px;
-
-        -ms-flex-align: center;
         align-items: center;
         box-sizing: border-box;
         color: #2d2f43;
@@ -27,24 +32,27 @@
         margin: 4px auto 8px;
 
         // Адаптив
+
+        // Small devices (sm)
         @media (min-width: $sm) {
             padding-left: 10px;
             padding-right: 6px;
         }
-
+        // Medium devices (md)
         @media (min-width: $md) {
             padding-left: 20px;
             padding-right: 8px;
-            padding-left: 20px;
             margin-bottom: 16px;
         }
-
+        // Large devices (lg)
         @media (min-width: $lg) {
             padding-left: 20px;
             padding-right: 8px;
         }
-
-        @media (min-width: 1300px) {
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {
             padding-left: 20px;
             padding-right: 8px;
         }
@@ -65,29 +73,28 @@
 
         // Адаптив
 
+        // Small devices (sm)
         @media (min-width: $sm) {
             padding-left: 10px;
             padding-right: 6px;
         }
-
+        // Medium devices (md)
         @media (min-width: $md) {
             margin-bottom: 16px;
             padding-left: 20px;
             padding-right: 8px;
         }
-
+        // Large devices (lg)
         @media (min-width: $lg) {
             padding-left: 20px;
             padding-right: 8px;
         }
-
-        @media (min-width: 1300px) {
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {
             padding-left: 20px;
             padding-right: 8px;
-        }
-
-        @media (min-width: $md) {
-            padding-left: 20px;
         }
 
         // Блок Таблицы
@@ -109,52 +116,93 @@
                     display: flex;
                     -ms-flex-direction: column;
                     flex-direction: column;
-                    padding: 80px 40px 40px;
+                    padding: 32px 16px 40px;
                     position: relative;
                     text-align: center;
 
                     // Адаптив
-                    @media (max-width: $sm) {
-                        padding: 32px 16px 40px;
+                    // Small devices (sm)
+                    @media (min-width: $sm) {
+                        padding: 80px 40px 40px;
                     }
+                    // Medium devices (md)
+                    @media (min-width: $md) {}
+                    // Large devices (lg)
+                    @media (min-width: $lg) {}
+                    // X-Large devices (xl)
+                    @media (min-width: $xl) {}
+                    // XX-Large devices (xxl)
+                    @media (min-width: $xxl) {}
 
                     // Заголовок сообщения
                     .title_sucess_message {
                         color: #3d3f56;
+                        font-size: 24px;
                         font-size: 30px;
                         font-weight: 700;
                         line-height: normal;
 
                         // Адаптив
-                        @media (max-width: $sm) {
-                            font-size: 24px;
+                        // Small devices (sm)
+                        @media (min-width: $sm) {
+                            font-size: 30px;
                         }
+                        // Medium devices (md)
+                        @media (min-width: $md) {}
+                        // Large devices (lg)
+                        @media (min-width: $lg) {}
+                        // X-Large devices (xl)
+                        @media (min-width: $xl) {}
+                        // XX-Large devices (xxl)
+                        @media (min-width: $xxl) {}
                     }
 
                     // Текстсообщения
                     .text_sucess_message {
+                        font-size: 14px;
                         font-size: 16px;
                         line-height: 1.44em;
                         margin-top: 16px;
 
                         // Адаптив
-                        @media (max-width: $sm) {
-                            font-size: 14px;
+                        // Small devices (sm)
+                        @media (min-width: $sm) {
+                            font-size: 16px;
                         }
+                        // Medium devices (md)
+                        @media (min-width: $md) {}
+                        // Large devices (lg)
+                        @media (min-width: $lg) {}
+                        // X-Large devices (xl)
+                        @media (min-width: $xl) {}
+                        // XX-Large devices (xxl)
+                        @media (min-width: $xxl) {}
+                        
                     }
 
                     // Действие
                     .actions {
                         margin-top: 16px;
 
-                        // ССылка
+                        // Ссылка
                         span.inner_link {
                             display: inline-block;
                             margin: -6px;
-
+                            
+                            // Адаптив
+                            
+                            // Small devices (sm)
+                            @media (min-width: $sm) {}
+                            // Medium devices (md)
                             @media (min-width: $md) {
                                 margin: -8px;
                             }
+                            // Large devices (lg)
+                            @media (min-width: $lg) {}
+                            // X-Large devices (xl)
+                            @media (min-width: $xl) {}
+                            // XX-Large devices (xxl)
+                            @media (min-width: $xxl) {}
 
                             // Ссылка кортинки
                             .link_img {
@@ -173,12 +221,22 @@
 
             // Информация о заказе
             .orders_info {
+                padding: 0 16px;
                 padding: 0 64px;
 
                 // Адаптив
-                @media (max-width: $sm) {
-                    padding: 0 16px;
+                // Small devices (sm)
+                @media (min-width: $sm) {
+                    padding: 0 64px;
                 }
+                // Medium devices (md)
+                @media (min-width: $md) {}
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
 
                 // Заголовок ордера
                 .title_orders_info {
@@ -197,12 +255,23 @@
                     .row_inner {
                         display: flex;
                         justify-content: stretch;
+                        align-items: stretch;
+                        flex-direction: column;
 
                         // Адаптив
-                        @media (max-width: $md) {
-                            align-items: stretch;
-                            flex-direction: column;
+                        // Small devices (sm)
+                        @media (min-width: $sm) {}
+                        // Medium devices (md)
+                        @media (min-width: $md) {
+                            align-items: none;
+                            flex-direction: none;
                         }
+                        // Large devices (lg)
+                        @media (min-width: $lg) {}
+                        // X-Large devices (xl)
+                        @media (min-width: $xl) {}
+                        // XX-Large devices (xxl)
+                        @media (min-width: $xxl) {}
 
                         //Элемент
                         .item {
@@ -212,16 +281,23 @@
                             font-size: 16px;
                             line-height: 1.44em;
                             margin-top: 14px;
+                            width: auto;
                             width: calc(50% - 16px);
 
                             // Адаптив
-                            @media (max-width: $md) {
-                                width: auto;
-                            }
-
-                            @media (max-width: $sm) {
+                            // Small devices (sm)
+                            @media (min-width: $sm) {
                                 font-size: 14px;
                             }
+                            // Medium devices (md)
+                            @media (min-width: $md) {
+                                width: calc(50% - 16px);
+                            }
+                            // Large devices (lg)
+                            @media (min-width: $lg) {}
+                            // X-Large devices (xl)
+                            @media (min-width: $xl) {}
+                            // XX-Large devices (xxl)
 
                             // Заголовок элемента
                             .item_title {
@@ -229,12 +305,22 @@
                                 flex-shrink: 0;
                                 font-weight: 500;
                                 padding-right: 16px;
+                                width: 120px;
                                 width: 160px;
 
                                 // Адаптив
-                                @media (max-width: $sm) {
-                                    width: 120px;
+                                // Small devices (sm)
+                                @media (min-width: $sm) {
+                                    width: 160px;
                                 }
+                                // Medium devices (md)
+                                @media (min-width: $md) {}
+                                // Large devices (lg)
+                                @media (min-width: $lg) {}
+                                // X-Large devices (xl)
+                                @media (min-width: $xl) {}
+                                // XX-Large devices (xxl)
+                                @media (min-width: $xxl) {}
                             }
 
                             // Текст элемента
@@ -275,12 +361,22 @@
             //Избранные категории
             .favorite_category_promo {
                 background-color: #fff;
+                padding: 1.1111rem;
                 padding: 2.2222rem;
 
                 // Адаптив
-                @media (max-width: $sm) {
-                    padding: 1.1111rem;
+                // Small devices (sm)
+                @media (min-width: $sm) {
+                    padding: 2.2222rem;
                 }
+                // Medium devices (md)
+                @media (min-width: $md) {}
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
 
                 // контейнер избранные категории
                 .container_favoriteCategoryPromo {
@@ -332,12 +428,23 @@
 
                     // Заголовок купона
                     .title {
+                        font-size: 1.3333rem;
                         font-size: 1.6667rem;
 
                         // Адаптив
-                        @media (max-width: $sm) {
-                            font-size: 1.3333rem;
+
+                        // Small devices (sm)
+                        @media (min-width: $sm) {
+                            font-size: 1.6667rem;
                         }
+                        // Medium devices (md)
+                        @media (min-width: $md) {}
+                        // Large devices (lg)
+                        @media (min-width: $lg) {}
+                        // X-Large devices (xl)
+                        @media (min-width: $xl) {}
+                        // XX-Large devices (xxl)
+                        @media (min-width: $xxl) {}
 
                         // Кнопка информирующая о купоне
                         .helpButton {
@@ -365,12 +472,24 @@
                                 user-select: none;
                                 width: 100%;
 
+                                border-radius: 10px;
+                                content: "";
+                                cursor: inherit;
+                                height: 20px;
+                                left: 50%;
+                                position: absolute;
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                                width: 20px;
+
                                 // Адаптив
-                                @media (max-width: $sm) {
+
+                                // Small devices (sm)
+                                @media (min-width: $sm) {
                                     border-radius: 10px;
                                     content: "";
                                     cursor: inherit;
-                                    display: block;
+                                    display: none;
                                     height: 20px;
                                     left: 50%;
                                     position: absolute;
@@ -378,6 +497,14 @@
                                     transform: translate(-50%, -50%);
                                     width: 20px;
                                 }
+                                // Medium devices (md)
+                                @media (min-width: $md) {}
+                                // Large devices (lg)
+                                @media (min-width: $lg) {}
+                                // X-Large devices (xl)
+                                @media (min-width: $xl) {}
+                                // XX-Large devices (xxl)
+                                @media (min-width: $xxl) {}
                             }
                         }
                     }
@@ -387,24 +514,44 @@
                 .description {
                     color: #2d2f43;
                     font-size: 0.8889rem;
+                    font-size: 1rem;
                     line-height: 1.44em;
                     margin: 10px 0;
                     text-align: center;
 
                     // Адаптив
-                    @media (max-width: $sm) {
-                        font-size: 1rem;
+                    @media (min-width: $sm) {
+                        line-height: 1.44em;
                     }
+                    // Medium devices (md)
+                    @media (min-width: $md) {}
+                    // Large devices (lg)
+                    @media (min-width: $lg) {}
+                    // X-Large devices (xl)
+                    @media (min-width: $xl) {}
+                    // XX-Large devices (xxl)
+                    @media (min-width: $xxl) {}
                 }
 
                 // Контент опиисания
                 .content_description {
+                    margin-top: 1rem;
                     margin-top: 2.2222rem;
 
                     // Адаптив
-                    @media (max-width: $sm) {
-                        margin-top: 1rem;
+                    // Small devices (sm)
+                    @media (min-width: $sm) {
+                        margin-top: 2.2222rem;
                     }
+                    // Medium devices (md)
+                    @media (min-width: $md) {}
+                    // Large devices (lg)
+                    @media (min-width: $lg) {}
+                    // X-Large devices (xl)
+                    @media (min-width: $xl) {}
+                    // XX-Large devices (xxl)
+                    @media (min-width: $xxl) {}
+                    
 
                     // Катигория описания
                     .categories_description {
@@ -418,21 +565,25 @@
                         margin-bottom: -8px;
 
                         // Адаптив
+
+                        // Small devices (sm)
                         @media (min-width: $sm) {
                             margin: 0 -10px;
                             margin-bottom: -20px;
                         }
-
+                        // Medium devices (md)
                         @media (min-width: $md) {
                             margin: 0 -20px;
                             margin-bottom: -40px;
                         }
-
+                        // Large devices (lg)
                         @media (min-width: $lg) {
                             margin: 0 -20px;
                         }
-
-                        @media (min-width: 1300px) {
+                        // X-Large devices (xl)
+                        @media (min-width: $xl) {}
+                        // XX-Large devices (xxl)
+                        @media (min-width: $xxl) {
                             margin: 0 -20px;
                         }
 
@@ -449,32 +600,38 @@
                             margin-bottom: 8px;
 
                             // Адаптив
+
+                            // Small devices (sm)
                             @media (min-width: $sm) {
                                 padding: 0 10px;
                                 margin-bottom: 20px;
                                 flex: 0 0 100%;
                                 max-width: 100;
                             }
-
+                            // Medium devices (md)
                             @media (min-width: $md) {
                                 padding: 0 20px;
                                 margin-bottom: 40px;
                                 flex: 0 0 50%;
                                 max-width: 50%;
                             }
-
+                            // Large devices (lg)
                             @media (min-width: $lg) {
                                 padding: 0 20px;
                             }
-
-                            @media (min-width: 1300px) {
-                                padding-left: 20px;
-                                padding-right: 20px;
+                            // X-Large devices (xl)
+                            @media (min-width: $xl) {}
+                            // XX-Large devices (xxl)
+                            @media (min-width: $xxl) {
+                                padding: 0 20px;
                                 max-width: 100;
                             }
 
                             // Элементы
                             .item {
+                                font-size: 1.1111rem;
+                                height: 5.3334rem;
+
                                 align-items: center;
                                 background-color: #e9e9eb;
                                 border-radius: 0.3333rem;
@@ -492,14 +649,22 @@
                                 user-select: none;
 
                                 // Адаптив
-                                @media (max-width: $md) {
+                                
+                                // Small devices (sm)
+                                @media (min-width: $sm) {
+                                    font-size: 1.3333rem;
                                     height: 8rem;
                                 }
-
-                                @media (max-width: $sm) {
-                                    font-size: 1.1111rem;
-                                    height: 5.3334rem;
+                                // Medium devices (md)
+                                @media (min-width: $md){
+                                    height:11rem;
                                 }
+                                // Large devices (lg)
+                                @media (min-width: $lg) {}
+                                // X-Large devices (xl)
+                                @media (min-width: $xl) {}
+                                // XX-Large devices (xxl)
+                                @media (min-width: $xxl) {}
                             }
                         }
                     }

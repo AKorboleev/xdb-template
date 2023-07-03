@@ -6,15 +6,25 @@
     flex-direction: row;
     position: relative;
     text-decoration: none;
-    padding-bottom: 24px;
-    padding-top: 24px;
+    padding-bottom: 16px;
+    padding-top: 16px;
     position: relative;
 
     // Адаптив
-    @media(max-width:575.9px) {
-        padding-bottom: 16px;
-        padding-top: 16px;
+    
+    // Small devices (sm)
+    @media (min-width: $sm) {
+        padding-bottom: 24px;
+        padding-top: 24px;
     }
+    // Medium devices (md)
+    @media (min-width: $md) {}
+    // Large devices (lg)
+    @media (min-width: $lg) {}
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {}
 
     // Аватарка картинки
     .avatar_img {
@@ -47,13 +57,21 @@
 
                 // Звезды
                 .stars {
-                    font-size: 14px;
                     margin-bottom: 4px;
 
                     // Адаптив
-                    @media(max-width:991.9px) {
-                        font-size: 12px;
+                    // Small devices (sm)
+                    @media (min-width: $sm) {}
+                    // Medium devices (md)
+                    @media (min-width: $md) {}
+                    // Large devices (lg)
+                    @media (min-width: $lg) {
+                        font-size: 14px;
                     }
+                    // X-Large devices (xl)
+                    @media (min-width: $xl) {}
+                    // XX-Large devices (xxl)
+                    @media (min-width: $xxl) {}
 
                     // рейтинг
                     .rating {
@@ -119,15 +137,25 @@
                 padding: 0;
                 border-radius: 4px;
                 cursor: pointer;
-                height: 80px;
+                height: 64px;
+                width: 64px;
                 margin: 8px 8px 0 0;
-                width: 100px;
 
                 // Адаптив
-                @media(max-width:991.9px) {
-                    height: 64px;
-                    width: 64px;
+                
+                // Small devices (sm)
+                @media (min-width: $sm) {}
+                // Medium devices (md)
+                @media (min-width: $md) {}
+                // Large devices (lg)
+                @media (min-width: $lg) {
+                    width: 100px;
+                    height: 80px;
                 }
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
                 // Квадрат
                 .square {
                     padding-top: 100%;

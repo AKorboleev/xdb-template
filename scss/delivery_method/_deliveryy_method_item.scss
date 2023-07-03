@@ -2,17 +2,28 @@
 .checkout_item {
     // Вклад
     .tab {
-        display: flex;
-        margin: 0 15px 15px 0;
+        display: block;
+        margin-bottom: 8px;
+        margin-right: 8px;
         min-height: 100%;
         position: relative;
         // Адптив
-        @media (max-width: 575.9px) {
-            display: block;
-            margin-bottom: 8px;
-            margin-right: 8px;
+
+        // Small devices (sm)
+        @media (min-width: $sm) {
+            display: flex;
+            margin: 0 15px 15px 0;
         }
-        // Блок
+        // Medium devices (md)
+        @media (min-width: $md) {}
+        // Large devices (lg)
+        @media (min-width: $lg) {}
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {}
+
+        // Блок доставки
         .block_delivery {
             border: 1px solid rgba(0, 0, 0, 0.08);
             border-radius: 5px;
@@ -29,47 +40,72 @@
             text-align: left;
             justify-content: flex-start;
 
-            // &:focus,
-            // &:hover {
-            //     border-color: $mainColor;
-            //     color: $mainColor;
-            // }
-            /// Родительский старт
+            /// Родительский класс
             .child {
+                margin: 1px 0;
                 margin: 3px auto;
                 // Адптив
-                @media (max-width: 575.9px) {
-                    margin: 1px 0;
+                // Small devices (sm)
+                @media (min-width: $sm) {}
+                // Medium devices (md)
+                @media (min-width:$md) {
+                    margin: 3px auto;
                 }
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
             }
             // Иконка
             .icon {
                 align-items: center;
-                display: -ms-flexbox;
                 display: flex;
                 height: 23px;
                 justify-content: center;
+                left: 30px;
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -50%);
 
                 // Адптив
-                @media (max-width: 575.9px) {
-                    left: 30px;
-                    position: absolute;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
+
+                // Small devices (sm)}
+                @media (min-width: $sm) {
+                    position: static;
                 }
+                // Medium devices (md)
+                @media (min-width: $md) {}
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
             }
             //Заголовок
             .title {
                 font-size: 14px;
                 font-weight: 500;
-                white-space: nowrap;
+                white-space: normal;
 
-                // Адптив
-                @media (max-width: 575.9px) {
-                    white-space: normal;
+                // Адаптив
+                
+                // Small devices (sm)
+                @media (min-width: $sm) {
+                    white-space: nowrap;
                 }
+                // Medium devices (md)
+                @media (min-width: $md) {}
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
             }
-            // Увидомление
+            // Уведомление
             .notice {
                 margin-top: 5px;
                 color: #9697a1;
@@ -79,9 +115,18 @@
                 white-space: nowrap;
 
                 // Адптив
-                @media (max-width: 575.9px) {
+                // Small devices (sm)
+                @media (min-width: $sm) {
                     white-space: normal;
                 }
+                // Medium devices (md)
+                @media (min-width: $md) {}
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
             }
 
             // Акцент

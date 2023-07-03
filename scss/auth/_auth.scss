@@ -9,17 +9,22 @@
     max-width: 100%;
     text-align: center;
 
-    @media (min-width: 768px) {
-        margin-top: 16px;
-    }
-
-    @media (min-width: 576px) {
+    // Адпаптив
+    // Small devices (sm)
+    @media (min-width: $sm) {
         margin: 60px 6px;
     }
-
-    @media (min-width: 992px) {
+    // Medium devices (md)
+    @media (min-width: $md) {
+        margin-top: 16px;
+    }
+    // Large devices (lg)
+    @media (min-width: $lg) {
         margin: 60px 8px;
     }
+    @media (min-width: $xl) {}
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {}
 
     // Шапка
     .header {
@@ -59,22 +64,25 @@
             max-width: 340px;
 
             // Адаптив
-            @media (min-width: 576px) {
+            // Small devices (sm)
+            @media (min-width: $sm) {
                 padding-left: 6px;
                 padding-right: 6px;
             }
-
-            @media (min-width: 768px) {
+            // Medium devices (md)
+            @media (min-width: $md) {
                 padding-left: 6px;
                 padding-right: 6px;
             }
-
-            @media (min-width: 992px) {
+            // Large devices (lg)
+            @media (min-width: $lg) {
                 padding-left: 6px;
                 padding-right: 6px;
             }
-
-            @media (min-width: 1300px) {
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {
                 padding-left: 6px;
                 padding-right: 6px;
             }
@@ -83,13 +91,19 @@
                 flex-grow: 0.75;
 
                 // Адаптив
-                @media (max-width: 991.9px) {
-                    flex-grow: 1;
-                }
-
-                @media (max-width: 575.9px) {
+                
+                // Small devices (sm)
+                @media (min-width: $sm) {
                     margin-right: 0;
                 }
+                // Large devices (lg)
+                @media (min-width: $lg) {
+                    flex-grow: 1;
+                }
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
 
                 //Облать
                 .field {

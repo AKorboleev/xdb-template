@@ -13,11 +13,20 @@
   .cardInner {
     padding-bottom: 12px;
     padding-top: 12px;
-
-    @media(min-width:768px) {
-        padding-bottom: 16px;
-        padding-top: 16px;
+    // Адаптив
+    
+    // Small devices (sm)
+    @media (min-width: $sm) {}
+    // Medium devices (md)
+    @media (min-width: $md) {
+      padding: 16px 0;
     }
+    // Large devices (lg)
+    @media (min-width: $lg) {}
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {}
     // Текст
     h4 {
       // Картинка
@@ -39,7 +48,26 @@
     // Наследуемый объект в него вложен catalog_item
     .children {
       column-count: 4;
-      column-gap: 2em;
+      column-gap: 4em;
+      display: flex;
+
+      //  Адаптив
+      
+      // Small devices (sm)
+      @media (min-width: $sm) {}
+      // Medium devices (md)
+      @media (min-width: $md) {
+        column-count: 1;
+        column-gap: 0;
+      }
+      // Large devices (lg)
+      @media (min-width: $lg) {}
+      // X-Large devices (xl)
+      @media (min-width: $xl) {}
+
+      // XX-Large devices (xxl)
+      @media (min-width: $xxl) {}
+
     }
   }
 }

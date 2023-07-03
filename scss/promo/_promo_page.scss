@@ -2,10 +2,20 @@
 .promo_page {
     margin-top: 12px;
 
-    //Адаптив
-    @media (min-width: 768px) {
-        margin-top: 16px;
+    // Адаптив
+    
+    // Small devices (sm)
+    @media (min-width: $sm) {}
+    // Medium devices (md)
+    @media (min-width: $md) {
+      margin-top: 16px;
     }
+    // Large devices (lg)
+    @media (min-width: $lg) {}
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {}
   // Переходная часть
   .reducer {
     height: 350px;
@@ -24,13 +34,24 @@
         text-align: center;
         margin: 22% auto;
         width: 100%;
+        display: grid;
+        margin: $mc;
+        padding: 0;
         
-        //Адаптив
-        @media (max-width: $md) {
-            display: grid;
-            margin: $mc;
-            padding: 0;
+        // Адаптив
+
+        // Small devices (sm)
+        @media (min-width: $sm) {}
+        // Medium devices (md)
+        @media (min-width: $md) {
+          display: block;
         }
+        // Large devices (lg)
+        @media (min-width: $lg) {}
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {}
       }
 
       // Пробел
@@ -44,11 +65,23 @@
         transition: transform .15s ease-in-out;
         transform-origin: center;
         width: 50%;
-        margin: 4% auto;
+        margin: $mc;
 
-        @media (max-width: $md) {
-          margin: $mc;
+        // Адаптив
+    
+        // Small devices (sm)
+        @media (min-width: $sm) {}
+        // Medium devices (md)
+        @media (min-width: $md) {
+          margin: 4% auto;
         }
+        // Large devices (lg)
+        @media (min-width: $lg) {}
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {}
+
         // Сама картинка
         img.img {
           background-repeat: no-repeat;

@@ -1,14 +1,25 @@
 .parcel_app_сard {
     background: #fff;
-    border-radius: 0.5rem;
+    border-radius: 0;
+    margin: 0 -12px;
 
     // Адаптив
-    @media (max-width: 575.9px) {
-        border-radius: 0;
-        margin-left: -12px;
-        margin-right: -12px;
+    
+    // Small devices (sm)
+    @media (min-width: $sm) {
+        border-radius: 0.5rem;
+        margin: 0;
     }
+    // Medium devices (md)
+    @media (min-width: $md) {}
+    // Large devices (lg)
+    @media (min-width: $lg) {}
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {}
 
+    // карта приложения
     .parcel_app_сard_inner {
         margin: 20px 10px;
         // Заголовок
@@ -48,26 +59,48 @@
 
     // Макет заказа
     .order_layout {
-        display: flex;
         font-size: 0.7777rem;
         line-height: 1.1111rem;
         padding: 0.8888rem;
+        display: block;
 
-        @media screen and (max-width: 575.56px) {
-            display: block;
+        // Адаптив
+
+        // Small devices (sm)
+        @media (min-width: $sm) {
+            display: flex;
         }
+        // Medium devices (md)
+        @media (min-width: $md) {}
+        // Large devices (lg)
+        @media (min-width: $lg) {}
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {}
         // Левая часть
         .left {
-            display: -ms-flexbox;
             display: flex;
             flex-basis: 35%;
             flex-shrink: 0;
             margin-right: 0.4444rem;
+            flex-basis: auto;
 
             // Адаптив
-            @media (max-width: 575.9px) {
-                flex-basis: auto;
+
+            // Small devices (sm)
+            @media (min-width: $sm) {
+                flex-basis: 35%;
             }
+            // Medium devices (md)
+            @media (min-width: $md) {}
+            // Large devices (lg)
+            @media (min-width: $lg) {}
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
+
             // сслыка для картинки
             a.image {
                 background: none;
@@ -111,32 +144,53 @@
 
             // Мобильная часть
             .mobilePrice {
-                display: none;
                 font-size: 1rem;
                 font-weight: 600;
                 line-height: 1.3333rem;
                 margin-bottom: 0.5555rem;
                 margin-right: 0.4444rem;
+                display: block;
 
                 // Адаптив
-                @media (max-width: 575.9px) {
-                    display: block;
+
+                // Small devices (sm)
+                @media (min-width: $sm) {
+                    display: none;
                 }
+                // Medium devices (md)
+                @media (min-width: $md) {}
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
             }
         }
         // Информация в центре
         .center {
-            display: flex;
+            display: none;
             flex-direction: column;
             flex-grow: 2;
             flex-shrink: 1;
             margin: 1.3889rem 0.4444rem 0;
 
             // Адаптив
-            @media (max-width: 575.9px) {
-                display: none;
-            }
 
+            // Small devices (sm)
+            @media (min-width: $sm) {
+                display: block;
+            }
+            // Medium devices (md)
+            @media (min-width: $md) {}
+            // Large devices (lg)
+            @media (min-width: $lg) {}
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
+
+            // Дата
             .date {
                 margin-bottom: 5px;
                 .date_label {
@@ -157,14 +211,27 @@
             flex-grow: 0;
             flex-shrink: 0;
             justify-content: center;
-            margin-left: 0.4444rem;
             text-align: right;
+            margin-left: 0;
+            margin-top: 0.8888rem;
+            
 
             // Адаптив
-            @media (max-width: 575.9px) {
-                margin-left: 0;
-                margin-top: 0.8888rem;
+            
+            // Small devices (sm)
+            @media (min-width: $sm) {
+                margin-left: 0.4444rem;
+                margin-top: 0;
             }
+            // Medium devices (md)
+            @media (min-width: $md) {}
+            // Large devices (lg)
+            @media (min-width: $lg) {}
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
+            
 
             // Цена
             .price {
@@ -173,20 +240,41 @@
                 line-height: 1.3333rem;
                 margin-bottom: 0.5555rem;
                 margin-right: 0.4444rem;
+                display: none;
                 // Адаптив
-                @media (max-width: 575.9px) {
-                    display: none;
+                
+                // Small devices (sm)
+                @media (min-width: $sm) {
+                    display: block;
                 }
+                // Medium devices (md)
+                @media (min-width: $md) {}
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
             }
 
             // Контейнер под кнопку
             .block_button {
                 font-weight: 500;
-                max-width: 14rem;
+                max-width: none;
                 // Адаптив
-                @media (max-width: 575.9px) {
-                    max-width: none;
+                
+                // Small devices (sm)
+                @media (min-width: $sm) {
+                    max-width: 14rem;
                 }
+                // Medium devices (md)
+                @media (min-width: $md) {}
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
 
                 a.info_price {
                     width: 100%;

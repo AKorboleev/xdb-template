@@ -7,17 +7,24 @@
     // Белый лист
     .whiteList {
         background: #fff;
-        padding-left: 24px;
-        padding-right: 24px;
         margin-top: 12px;
+        padding: 0 16px;
         // Адаптив
-        @media (max-width: $sm) {
-            padding: 0 16px;
-        }
 
-        @media (min-width: $md) {
-            margin-top: 16px;
+        // Small devices (sm)
+        @media (min-width: $sm) {
+            padding-left: 24px;
+            padding-right: 24px;
         }
+        // Medium devices (md)
+        @media (min-width: $md) {
+            margin-top: 16px;}
+        // Large devices (lg)
+        @media (min-width: $lg) {}
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {}
         // Заголовок ошибок
         .header_oops {
             align-items: center;
@@ -27,11 +34,23 @@
             flex-direction: row;
             margin: 0 -24px;
             padding: 20px 24px;
+            margin: 0 -16px;
+            padding: 14px 16px;
             // Адаптив
-            @media (max-width: $sm) {
-                margin: 0 -16px;
-                padding: 14px 16px;
+            // Small devices (sm)
+            @media (min-width: $sm) {
+                margin: 0 -24px;
+                padding: 20px 24px;
             }
+            // Medium devices (md)
+            @media (min-width: $md) {}
+            // Large devices (lg)
+            @media (min-width: $lg) {}
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
+            
             // Заголовок
             .header {
                 -ms-flex: 1;
@@ -51,12 +70,21 @@
             flex-direction: row;
             position: relative;
             text-decoration: none;
-            padding-bottom: 24px;
-            padding-top: 24px;
+            padding: 16px 0;
             // Адаптив
-            @media (max-width: $sm) {
-                padding: 16px 0;
-            }
+            // Small devices (sm)
+            @media (min-width: $sm) {
+                padding-bottom: 24px;
+                padding-top: 24px;}
+            // Medium devices (md)
+            @media (min-width: $md) {}
+            // Large devices (lg)
+            @media (min-width: $lg) {}
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
+            
             // Картинка ошибки
             .illustration {
                 margin: $mc;
@@ -92,10 +120,21 @@
             text-decoration: none;
             user-select: none;
             width: 100%;
+            padding: 14px 16px;
             // Адаптив
-            @media (max-width: $sm) {
-                padding: 14px 16px;
+            // Small devices (sm)
+            @media (min-width: $sm) {
+                padding: none;
             }
+            // Medium devices (md)
+            @media (min-width: $md) {}
+            // Large devices (lg)
+            @media (min-width: $lg) {}
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
+            
         }
     }
 }

@@ -2,10 +2,22 @@
 .parent {
     margin-bottom: 1rem;
     position: relative;
+    display: none;
 
-    @media (max-width: 767.9px) {
-        display: none;
+    // Адаптив
+    
+    // Small devices (sm)
+    @media (min-width: $sm) {}
+    // Medium devices (md)
+    @media (min-width: $md) {
+        display: block;
     }
+    // Large devices (lg)
+    @media (min-width: $lg) {}
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {}
 
     // Лист с категориями
     .categories_list {

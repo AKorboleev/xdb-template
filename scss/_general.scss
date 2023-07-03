@@ -1,8 +1,8 @@
 // Файл для настрйоки повторяющихся элементов, классов и переменнных
 
 // Используемые шрифты
-// $fontFamaly: "Kurale", serif;
-// $os: "Open Sans", sans-serif;
+$fontFamaly: "Kurale", serif;
+$os: "Open Sans", sans-serif;
 // ****
 
 //Используемые цвета
@@ -29,11 +29,28 @@ $mc: 0 auto;
 
 // breakpoint
 
+// Small devices (sm)
 $sm: 576px;
+// Medium devices (md)
 $md: 768px;
+// Large devices (lg)
 $lg: 992px;
+// X-Large devices (xl)
 $xl: 1200px;
+// XX-Large devices (xxl)
 $xxl: 1400px;
+
+// Small devices (sm)
+@media (min-width: $sm) {}
+// Medium devices (md)
+@media (min-width: $md) {}
+// Large devices (lg)
+@media (min-width: $lg) {}
+// X-Large devices (xl)
+@media (min-width: $xl) {}
+// XX-Large devices (xxl)
+@media (min-width: $xxl) {}
+
 
 //icon_image цвет иконки в cart_item_page.scss
 $icon_image: $mainColor;
@@ -172,14 +189,23 @@ $catalog: $mainColor;
 
 // Контент валидации
 .validationContainer {
-    margin: 0 -24px;
-    padding: 0 24px;
+    margin: 0 -16px;
+    padding: 0 16px;
     transition: background-color .1s ease-in-out;
 
-    @media(max-width:575.9px) {
-        margin: 0 -16px;
-        padding: 0 16px;
+    // Адаптив
+    // Medium devices (md)
+    @media (min-width: $md) {
+        margin: 0 -24px;
+        padding: 0 24px;
     }
+    // Large devices (lg)
+    @media (min-width: $lg) {}
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {}
 }
 //****
 
@@ -296,20 +322,8 @@ $catalog: $mainColor;
     }
 
     // Адаптив
-    @media (min-width: 576px) {
-            box-sizing: content-box;
-            width: 100%;
-            flex-basis: calc(33.33333% - 8.1px);
-            flex-grow: 0;
-            flex-shrink: 0;
-            max-width: calc(33.33333% - 8.1px);
-            margin-left: 12px;
-        &:first-child {
-            margin-left: 0;
-        }
-    }
-
-    @media (min-width: 768px) {
+    // Medium devices (md)
+    @media (min-width: $md) {
         box-sizing: content-box;
         width: 100%;
         flex-basis: calc(33.33333% - 10.76667px);
@@ -322,8 +336,8 @@ $catalog: $mainColor;
             margin-left: 0;
         }
     }
-
-    @media (min-width: 992px) {
+    // XX-Large devices (xxl)
+    @media (min-width: $lg) {
         box-sizing: content-box;
         width: 100%;
         flex-basis: calc(33.33333% - 10.76667px);
@@ -336,8 +350,10 @@ $catalog: $mainColor;
             margin-left: 0;
         }
     }
-
-    @media (min-width: 1300px) {
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {
         box-sizing: content-box;
         width: 100%;
         flex-basis: calc(33.33333% - 10.76667px);
@@ -358,7 +374,6 @@ $catalog: $mainColor;
     background: none;
     border: none;
     box-shadow: none;
-    margin: 0;
     padding: 0;
     align-items: center;
     background-color: #fff;
@@ -388,6 +403,7 @@ $catalog: $mainColor;
     height: 12px;
     transform-origin: center;
     width: 12px;
+    margin-left: 10px;
 }
 .next:hover,
 .prev:hover {
@@ -421,10 +437,21 @@ $catalog: $mainColor;
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAyNiI+PHBhdGggZD0iTS4zIDEyLjNsMTItMTJhMSAxIDAgMDExLjQgMCAxIDEgMCAwMTAgMS40TDIuNCAxM2wxMS4zIDExLjNhMSAxIDAgMDEtMS40IDEuNGwtMTItMTJhMSAxIDAgMDEwLTEuNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
     background-position: 45% 50%;
     left: 16px;
+    display: none;
 
-    @media (max-width: 767.9px) {
-        display: none;
+    // Адаптив
+    // Small devices (sm)
+    @media (min-width: $sm) {}
+    // Medium devices (md)
+    @media (min-width: $md) {
+        display: block;
     }
+    // Large devices (lg)
+    @media (min-width: $lg) {}
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {}
 }
 //****
 
@@ -433,25 +460,30 @@ $catalog: $mainColor;
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAyNiI+PHBhdGggZD0iTTEzLjcgMTMuN2wtMTIgMTJhLjkxLjkxIDAgMDEtLjcuMy45MS45MSAwIDAxLS43LS4zIDEgMSAwIDAxMC0xLjRMMTEuNiAxMyAuMyAxLjdBMSAxIDAgMDEuMy4zYTEgMSAwIDAxMS40IDBsMTIgMTJhMSAxIDAgMDEwIDEuNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
     background-position: 55% 50%;
     right: 16px;
+    display: none;
 
-    @media (max-width: 767.9px) {
-        display: none;
+    // Адаптив
+    // Small devices (sm)
+    @media (min-width: $sm) {}
+    // Medium devices (md)
+    @media (min-width: $md) {
+        display: block;
     }
+    // Large devices (lg)
+    @media (min-width: $lg) {}
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {}
 }
 // ****
-
-// Адаптив
-@media (max-width: 839.9px) {
-    .next,
-    .prev {
-        display: none;
-    }
-}
-//****
 
 // Кнопка назад
 .next_often,
 .prev_often {
+    height: 2.22rem;
+    font-size: 1rem;
+    width: 2.22rem;
     top: 50%;
     background: rgba(0, 0, 0, .4) no-repeat;
     border: none;
@@ -460,35 +492,29 @@ $catalog: $mainColor;
     margin-top: -1.72em;
     position: absolute;
     user-select: none; 
-    transition: background-color .3s ease-in-out, opacity .3s ease-in-out
+    transition: background-color .3s ease-in-out, opacity .3s ease-in-out;
+
+   &:hover {
+        background-color: rgba(0, 0, 0, .6)
+    }
 }
 
-.next_often:hover,
-.prev_often:hover {
-    background-color: rgba(0, 0, 0, .6)
-}
-
-.next_often,
-.prev_often {
-    height: 2.22rem;
-    font-size: 1rem;
-    width: 2.22rem;
-}
 
 .next_often,
 .prev_often {
     height: 3.55rem;
     font-size: 1.5rem;
-    width: 3.5rem
+    width: 3.5rem;
 }
 
 .prev_often {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAyNiI+PHBhdGggZD0iTS4zIDEyLjNsMTItMTJhMSAxIDAgMDExLjQgMCAxIDEgMCAwMTAgMS40TDIuNCAxM2wxMS4zIDExLjNhMSAxIDAgMDEtMS40IDEuNGwtMTItMTJhMSAxIDAgMDEwLTEuNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
     background-position: 45% 50%;
-    left: 6px
+    display: none;
+    left: 6px;
 }
 
-@media(min-width:768px) {
+@media (min-width: $md) {
     .prev_often {
         left: 15px;
     }
@@ -497,21 +523,22 @@ $catalog: $mainColor;
 .next_often {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAyNiI+PHBhdGggZD0iTTEzLjcgMTMuN2wtMTIgMTJhLjkxLjkxIDAgMDEtLjcuMy45MS45MSAwIDAxLS43LS4zIDEgMSAwIDAxMC0xLjRMMTEuNiAxMyAuMyAxLjdBMSAxIDAgMDEuMy4zYTEgMSAwIDAxMS40IDBsMTIgMTJhMSAxIDAgMDEwIDEuNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
     background-position: 55% 50%;
+    display: none;
 
-    @media(min-width:1000px) {
+    @media (min-width:1000px) {
             left: 86%;
     }
 
-    @media(min-width:1100px) {
+    @media (min-width:1100px) {
         left: 88%;
     }
 
-    @media(min-width:1200px) {
+    @media (min-width: $xl) {
         left: 90%;
     }
 }
 
-@media(min-width:768px) {
+@media (min-width: $md) {
     .next_often {
         right: none;
     }
@@ -519,10 +546,10 @@ $catalog: $mainColor;
 //****
 
 // Адаптив
-@media (max-width: 839.9px) {
+@media (min-width: 839.9px) {
     .next_often,
     .prev_often {
-        display: none;
+        display: block;
     }
 }
 //****
@@ -765,11 +792,6 @@ label.custom-checkbox {
     vertical-align: middle;
     width: 100%;
     display: none;
-
-    // Medium devices (md)
-    // @media (max-width: $md) {
-    //     display: none;
-    // }
     // Форма поиска
     form {
         position: relative;
@@ -853,22 +875,25 @@ label.custom-checkbox {
     display: flex;
 
     // Адаптив
-    @media (min-width: 576px) {
+    // Small devices (sm)
+    @media (min-width: $sm) {
         padding-left: 6px;
         padding-right: 6px;
     }
-
-    @media (min-width: 768px) {
+    // Medium devices (md)
+    @media (min-width: $md) {
         padding-left: 8px;
         padding-right: 8px;
     }
-
-    @media (min-width: 992px) {
+    // Large devices (lg)
+    @media (min-width: $lg) {
         padding-left: 8px;
         padding-right: 8px;
     }
-
-    @media (min-width: 1300px) {
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {
         padding-left: 8px;
         padding-right: 8px;
     }
@@ -971,23 +996,13 @@ label.custom-checkbox {
     text-align: center
 }
 
-
-@media(max-width:575.9px) {
-    .word_deleted {
-        display: none;
-    }
-}
-
 .trash_dell {
+    font-size: 13px;
     cursor: pointer;
     display: -ms-flexbox;
     display: flex;
     &:hover {
         color: $whiteRight;
-    } 
-
-    @media (min-width: 375px) {
-        font-size: 13px;
     }
 }
 
@@ -1098,11 +1113,22 @@ label.custom-checkbox {
 
     // Мобильная часть
     .mobileControls {
-        display: none;
-        @media (max-width: 767.9px) {
-            display: -ms-flexbox;
-            display: flex;
+        display: flex;
+
+        // Адаптив
+
+        // Small devices (sm)
+        @media (min-width: $sm) {}
+        // Medium devices (md)
+        @media (min-width: $md) {
+            display: none;
         }
+        // Large devices (lg)
+        @media (min-width: $lg) {}
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {}
 
         // Контейнер
         .container_mobile_controls {
@@ -1192,7 +1218,7 @@ label.custom-checkbox {
         background-color: #fff;
         border-radius: 0.3333rem;
         display: -ms-flexbox;
-        display: flex;
+        display: none;
         flex-wrap: wrap;
         line-height: 1em;
         padding: 0 0.6667rem 0.6667rem 0;
@@ -1200,9 +1226,18 @@ label.custom-checkbox {
         margin-top: -0.6667rem;
 
         // Адаптив
-        @media (max-width: 767.9px) {
-            display: none;
+        // Small devices (sm)
+        @media (min-width: $sm) {}
+        // Medium devices (md)
+        @media (min-width: $md) {
+            display: flex;
         }
+        // Large devices (lg)
+        @media (min-width: $lg) {}
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {}
 
         // Родительская часть
         .parent_narrow {
@@ -1272,9 +1307,18 @@ label.custom-checkbox {
             user-select: none;
 
             // Адаптив
-            @media (min-width: 768px) {
+            // Small devices (sm)
+            @media (min-width: $sm) {}
+            // Medium devices (md)
+            @media (min-width: $md) {
                 display: none;
             }
+            // Large devices (lg)
+            @media (min-width: $lg) {}
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
 
             // Контент
             .content {

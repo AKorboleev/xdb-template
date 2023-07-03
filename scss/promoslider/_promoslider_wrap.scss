@@ -23,26 +23,22 @@
     // Три элементка
     .three_in_row {
         position: relative;
-
+        
+        margin:0 -12px;
         // Адаптив
-        @media (max-width: 839.9px) {
-            margin-left: -12px;
-            margin-right: -12px;
+        // Small devices (sm)
+        @media (min-width: $sm) {}
+        // Medium devices (md)
+        @media (min-width: $md) {
+            margin:0 -16px;
         }
-        @media (max-width: 839.9px) and (min-width: 768px) {
-            margin-left: -16px;
-            margin-right: -16px;
-        }
-
-        @media (max-width: 599.9px) {
-            margin-left: -12px;
-            margin-right: -12px;
-        }
-
-        @media (max-width: 599.9px) and (min-width: 768px) {
-            margin-left: -16px;
-            margin-right: -16px;
-        }
+        // Large devices (lg)
+        @media (min-width: $lg) {}
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {}
+        
         // Оберка контента
         .content_wrap {
             &::-webkit-scrollbar {

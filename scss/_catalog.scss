@@ -4,11 +4,21 @@
     margin-left: 6px;
     margin-right: 6px;
     // Адаптив
-    @media (min-width: 768px) {
+    @media (min-width: $sm) {}
+    // Medium devices (md)
+    @media (min-width: $md) {
         margin-top: 16px;
         padding-left: 8px;
         padding-right: 8px
     }
+    // Large devices (lg)
+    @media (min-width: $lg) {}
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {}
+    
     // Обертка основного контента, по категориям
     .wrapper {
         padding-bottom:50px;
@@ -18,16 +28,28 @@
         flex-direction: row;
         position: relative;
         text-decoration: none;
-        padding: 24px 12px;
+        padding-bottom: 16px;
+        padding-top: 16px;
 
         h3 {
             font-weight: 500;
             margin-bottom: .8888rem;
             margin-top: -6px;
             // Адаптив
-            @media(min-width:768px) {
+            // Small devices (sm)
+            @media (min-width: $sm) {}
+            // Medium devices (md)
+            @media (min-width: $md) {
                 margin-top: -8px;
             }
+            // Large devices (lg)
+            @media (min-width: $lg) {}
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
+            
         }
             // Заголловок Контента и Картинки
             .subheader {
@@ -46,16 +68,17 @@
                 column-gap: 2em;
 
                 // Адаптив
-                @media(max-width:1299.9px) {
-                        column-count: 3;
+                // Small devices (sm)
+                @media (min-width: $sm) {}
+                // Medium devices (md)
+                @media(min-width: $md) {
+                    column-count: 1;
                 }
-                
-                @media(max-width:991.9px) {
-                        column-count: 2;
-                }
-                
-                @media(max-width:767.9px) {
-                        column-count: 1;
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {
+                    column-count: 3;
                 }
                 // контейнер с названием категории и его возможными товарами
                 .list {
@@ -86,19 +109,23 @@
             }
     
         // Адаптив
-        @media(min-width:768px) {
+        // Small devices (sm)
+        @media (min-width: $sm) {
+            padding: 24px 12px;
+        }
+        // Medium devices (md)
+        @media (min-width: $md) {
             padding-bottom: 16px;
             padding-top: 16px
         }
+        // Large devices (lg)
+        @media (min-width: $lg) {}
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
+        
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {}
 
-        @media(min-width:768px) {
-            padding-bottom: 16px;
-            padding-top: 16px;
-        }
-
-        @media(max-width:575.9px) {
-            padding-bottom: 16px;
-            padding-top: 16px;
-        }
+        
     }
 }

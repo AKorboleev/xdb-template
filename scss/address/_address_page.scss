@@ -6,34 +6,64 @@
     padding: 12px;
     margin-bottom: 1rem;
     // Адаптив
-    @media(min-width:768px) {
+    // Small devices (sm)
+    @media (min-width: $sm) {}
+    // Medium devices (md)
+    @media (min-width:$md) {
         padding: 16px;
     }
+    // Large devices (lg)
+    @media (min-width: $lg) {}
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {}
+    
     // Блок со списком 
     .whiteList {
+        padding-left: 16px;
+        padding-right: 16px;
         background: #fff;
-        padding-left: 24px;
-        padding-right: 24px;
         // Адаптив
-        @media(max-width:575.9px) {
-            padding-left: 16px;
-            padding-right: 16px;
+        // Small devices (sm)
+        @media (min-width:$sm) {
+            padding-left: 24px;
+            padding-right: 24px;
         }
+        // Large devices (lg)
+        @media (min-width: $lg) {}
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
+        
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {}
+
         //Блок заголовка
         .header {
             align-items: center;
             border-bottom: 1px solid rgba(0, 0, 0, .06);
             color: #2d2f43;
-            display: -ms-flexbox;
             display: flex;
             flex-direction: row;
-            margin: 0 -24px;
-            padding: 20px 24px;
+            margin: 0 -16px;
+            padding: 14px 16px;
             // Адаптив
-            @media(max-width:575.9px) {
-                margin: 0 -16px;
-                padding: 14px 16px;
+            // Small devices (sm)
+            @media(min-width:$sm) {
+                margin: 0 -24px;
+                padding: 20px 24px;
             }
+            // Medium devices (md)
+            @media (min-width: $md) {}
+            // Large devices (lg)
+            @media (min-width: $lg) {}
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
+            
             // Контент заголовка
             .content {
                 flex: 1;
@@ -45,11 +75,21 @@
             }
             // Выход
             .exit {
-                margin-left: 24px;
+                margin-left: 12px;
                 // Адаптив
-                @media(max-width:575.9px) {
-                    margin-left: 12px;
+                // Small devices (sm)
+                @media(min-width:$sm) {
+                    margin-left: 24px;
                 }
+                // Medium devices (md)
+                @media (min-width: $md) {}
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
+
                 // Кнопка выхода
                 .button_exit {
                     color: $mainColor;
@@ -78,19 +118,11 @@
                 flex-direction: column;
                 padding: 4px 24px 48px;
 
-                // Адаптив
-                @media(max-width:991.9px) {
-                        padding: 0 12px 24px;
-                }
-                
-                @media(max-width:767.9px) {
-                        padding: 0 6px $text;
-                }
                 // обертка для до ставки 
                 .content {
-                    margin-bottom: 32px;
                     margin-left: -8px;
                     margin-right: -8px;
+                    margin-bottom: 8px;
                     min-height: 150px;
 
                     &:after,
@@ -100,25 +132,42 @@
                     }
 
                     // Адаптив
-                    @media(max-width:991.9px) {
+                    // Small devices (sm)
+                    @media (min-width: $sm) {
                         margin-bottom: 16px;
                     }
-                    
-                    @media(max-width:767.9px) {
-                        margin-bottom: 8px;
+                    // Medium devices (md)
+                    @media (min-width: $md) {}
+                    // Large devices (lg)
+                    @media (min-width: $lg) {
+                        margin-bottom: 32px;
                     }
+                    // X-Large devices (xl)
+                    @media (min-width: $xl) {}
+
+                    // XX-Large devices (xxl)
+                    @media (min-width: $xxl) {}
                     // обертка для ввода данных 
                     .input_data {
-                        margin: 12px 0;
                         box-sizing: border-box;
                         display: inline-block;
                         padding: 0 8px;
+                        margin: 8px 0;
                         position: relative;
                         width: 100%;
                         // Адаптив
-                        @media(max-width:991.9px) {
-                            margin: 8px 0;
+                        // Small devices (sm)
+                        @media (min-width: $sm) {
+                            margin: 12px 0;
                         }
+                        // Medium devices (md)
+                        @media (min-width: $md) {}
+                        // Large devices (lg)
+                        @media (min-width: $lg) {}
+                        // X-Large devices (xl)
+                        @media (min-width: $xl) {}
+                        // XX-Large devices (xxl)
+                        @media (min-width: $xxl) {}
                         // Поле
                         .field {
                             border: 1px solid #dfdfe7;

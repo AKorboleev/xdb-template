@@ -21,15 +21,21 @@
             text-decoration: none;
 
             // Адаптив
-            @media (min-width: 600px) {
+
+            // Small devices (sm)
+            @media (min-width: $sm) {
                 font-size: 20px;
                 line-height: 24px;
             }
-
-            @media (min-width: 840px) {
+            // Large devices (lg)
+            @media (min-width: $lg) {
                 font-size: 24px;
                 line-height: 28px;
             }
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
         }
 
         // Действие
@@ -67,106 +73,6 @@
             display: flex;
             flex-wrap: nowrap;
             margin: -16px 0 0 -16px;
-            // Адаптив
-            // @media (min-width: 840px) {
-            //     flex-wrap: nowrap;
-            // }
-        }
-    }
-
-    // Предыдущий
-    .prev {
-        background: none;
-        border: none;
-        box-shadow: none;
-        margin: 0;
-        padding: 0;
-        align-items: center;
-        background-color: #fff;
-        border-radius: 50%;
-        box-sizing: border-box;
-        color: #2d2f43;
-        cursor: pointer;
-        display: flex;
-        height: 40px;
-        justify-content: center;
-        position: absolute;
-        top: calc(35% - 20px);
-        transform-origin: center;
-        transition: 0.2s ease;
-        user-select: none;
-        width: 40px;
-        left: 10px;
-        padding-left: 6px;
-
-        &:after {
-            border-right: 2px solid;
-            border-top: 2px solid;
-            box-sizing: border-box;
-            content: "";
-            display: block;
-            height: 12px;
-            transform-origin: center;
-            width: 12px;
-            transform: rotate(-135deg);
-        }
-
-        &:hover {
-            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-            color: #ff6262;
-            transform: scale(1.15);
-        }
-        // Адаптив
-        @media (max-width: 839.9px) {
-            display: none;
-        }
-    }
-
-    // Следующий
-    .next {
-        background: none;
-        border: none;
-        box-shadow: none;
-        margin: 0;
-        padding: 0;
-        align-items: center;
-        background-color: #fff;
-        border-radius: 50%;
-        box-sizing: border-box;
-        color: #2d2f43;
-        cursor: pointer;
-        display: flex;
-        height: 40px;
-        justify-content: center;
-        position: absolute;
-        top: calc(35% - 20px);
-        transform-origin: center;
-        transition: 0.2s ease;
-        user-select: none;
-        width: 40px;
-        padding-right: 6px;
-        right: 10px;
-
-        &:after {
-            border-right: 2px solid;
-            border-top: 2px solid;
-            box-sizing: border-box;
-            content: "";
-            display: block;
-            height: 12px;
-            transform-origin: center;
-            width: 12px;
-            transform: rotate(45deg);
-        }
-
-        &:hover {
-            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-            color: $hoverColor;
-            transform: scale(1.15);
-        }
-        // Адаптив
-        @media (max-width: 839.9px) {
-            display: none;
         }
     }
 }

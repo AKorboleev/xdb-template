@@ -1,19 +1,25 @@
 // Контейнер ошибки контента
 .checkout_item {
-    margin-top: 10px;
-    padding-right: 24px;
     align-items: flex-start;
     color: #2d2f43;
     display: flex;
     position: relative;
+    margin-top: 16px;
+    padding-right: 16px;
     // Адаптив
-    @media (max-width: $sm) {
-        padding-right: 16px;
-    }
-
-    @media (max-width: $sm) {
-        margin-top: 16px;
-    }
+    // Small devices (sm)
+    @media (min-width: $sm) {
+        margin-top: 10px;
+        padding-right: 24px;}
+    // Medium devices (md)
+    @media (min-width: $md) {}
+    // Large devices (lg)
+    @media (min-width: $lg) {}
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {}
+    
     // Контейнер для фото
     .photo {
         background: rgba(0, 0, 0, 0.04);

@@ -14,7 +14,9 @@
         margin-left: 0;
     }
     // Адаптив
-    @media (min-width: 576px) {
+    
+    // Small devices (sm)
+    @media (min-width: $sm) {
         box-sizing: content-box;
         width: 100%;
         flex-basis: calc(33.33333% - 8.1px);
@@ -27,8 +29,8 @@
             margin-left: 0;
         }
     }
-
-    @media (min-width: 768px) {
+    // Medium devices (md)
+    @media (min-width: $md) {
         box-sizing: content-box;
         width: 100%;
         flex-basis: calc(33.33333% - 10.76667px);
@@ -41,36 +43,8 @@
             margin-left: 0;
         }
     }
-
-    @media (min-width: 992px) {
-        box-sizing: content-box;
-        width: 100%;
-        flex-basis: calc(33.33333% - 10.76667px);
-        flex-grow: 0;
-        flex-shrink: 0;
-        max-width: calc(33.33333% - 10.76667px);
-        margin-left: 16px;
-
-        &:first-child {
-            margin-left: 0;
-        }
-    }
-
-    @media (min-width: 1300px) {
-        box-sizing: content-box;
-        width: 100%;
-        flex-basis: calc(33.33333% - 10.76667px);
-        flex-grow: 0;
-        flex-shrink: 0;
-        max-width: calc(33.33333% - 10.76667px);
-        margin-left: 16px;
-
-        &:first-child {
-            margin-left: 0;
-        }
-    }
-
-    @media (max-width: 839.9px) {
+    // Small devices (sm)
+    @media (min-width: $sm) {
         box-sizing: content-box;
         width: 100%;
         flex-basis: calc(50% - 24.1px);
@@ -84,132 +58,29 @@
             margin-left: 0;
         }
     }
-
-    @media (max-width: 839.9px) and (min-width: 576px) {
+    // Large devices (lg)
+    @media (min-width: $lg) {
         box-sizing: content-box;
         width: 100%;
-        flex-basis: calc(50% - 24.1px);
+        flex-basis: calc(33.33333% - 10.76667px);
         flex-grow: 0;
         flex-shrink: 0;
-        max-width: calc(50% - 24.1px);
-        margin-left: -12px;
-        padding: 0 12px;
+        max-width: calc(33.33333% - 10.76667px);
+        margin-left: 16px;
 
         &:first-child {
             margin-left: 0;
         }
     }
-
-    @media (max-width: 839.9px) and (min-width: 768px) {
+    // X-Large devices (xl)
+    @media (min-width: $xl) {
         box-sizing: content-box;
         width: 100%;
-        flex-basis: calc(50% - 32.1px);
+        flex-basis: calc(33.33333% - 10.76667px);
         flex-grow: 0;
         flex-shrink: 0;
-        max-width: calc(50% - 32.1px);
-        margin-left: -16px;
-        padding: 0 16px;
-
-        &:first-child {
-            margin-left: 0;
-        }
-    }
-
-    @media (max-width: 839.9px) and (min-width: 992px) {
-        box-sizing: content-box;
-        width: 100%;
-        flex-basis: calc(50% - 32.1px);
-        flex-grow: 0;
-        flex-shrink: 0;
-        max-width: calc(50% - 32.1px);
-        margin-left: -16px;
-        padding: 0 16px;
-
-        &:first-child {
-            margin-left: 0;
-        }
-    }
-
-    @media (max-width: 839.9px) and (min-width: $xxl) {
-        box-sizing: content-box;
-        width: 100%;
-        flex-basis: calc(50% - 32.1px);
-        flex-grow: 0;
-        flex-shrink: 0;
-        max-width: calc(50% - 32.1px);
-        margin-left: -16px;
-        padding: 0 16px;
-    }
-
-    @media (max-width: 599.9px) {
-        box-sizing: content-box;
-        width: 100%;
-        flex-basis: calc(100% - 36.1px);
-        flex-grow: 0;
-        flex-shrink: 0;
-        max-width: calc(100% - 36.1px);
-        margin-left: -12px;
-        padding: 0 12px;
-
-        &:first-child {
-            margin-left: 0;
-        }
-    }
-
-    @media (max-width: 599.9px) and (min-width: 576px) {
-        box-sizing: content-box;
-        width: 100%;
-        flex-basis: calc(100% - 36.1px);
-        flex-grow: 0;
-        flex-shrink: 0;
-        max-width: calc(100% - 36.1px);
-        margin-left: -12px;
-        padding: 0 12px;
-
-        &:first-child {
-            margin-left: 0;
-        }
-    }
-
-    @media (max-width: 599.9px) and (min-width: 768px) {
-        box-sizing: content-box;
-        width: 100%;
-        flex-basis: calc(100% - 48.1px);
-        flex-grow: 0;
-        flex-shrink: 0;
-        max-width: calc(100% - 48.1px);
-        margin-left: -16px;
-        padding: 0 16px;
-
-        &:first-child {
-            margin-left: 0;
-        }
-    }
-
-    @media (max-width: 599.9px) and (min-width: 992px) {
-        box-sizing: content-box;
-        width: 100%;
-        flex-basis: calc(100% - 48.1px);
-        flex-grow: 0;
-        flex-shrink: 0;
-        max-width: calc(100% - 48.1px);
-        margin-left: -16px;
-        padding: 0 16px;
-
-        &:first-child {
-            margin-left: 0;
-        }
-    }
-
-    @media (max-width: 599.9px) and (min-width: $xxl) {
-        box-sizing: content-box;
-        width: 100%;
-        flex-basis: calc(100% - 48.1px);
-        flex-grow: 0;
-        flex-shrink: 0;
-        max-width: calc(100% - 48.1px);
-        margin-left: -16px;
-        padding: 0 16px;
+        max-width: calc(33.33333% - 10.76667px);
+        margin-left: 16px;
 
         &:first-child {
             margin-left: 0;

@@ -11,19 +11,23 @@
     .content {
         max-width: 100%;
         margin: 16px auto;
-        // Адаптив
+        padding: 0;
+        // Аддаптив
+        // Small devices (sm)
+        @media (min-width: $sm) {
+            padding: 0 6px;
+        }
+        // Medium devices (md)
         @media (min-width: $md) {
             margin-bottom: 16px;
             padding: 0 12px;
         }
-        // Адаптив
-        @media (min-width: $sm) {
-            padding: 0 6px;
-        }
-        // Адаптив
-        @media (max-width: 991.9px) {
-            padding: 0;
-        }
+        // Large devices (lg)
+        @media (min-width: $lg) {}
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {}
         // Ссылка
         .inner {
             -ms-flex-align: stretch;
@@ -33,10 +37,23 @@
             display: flex;
             -ms-flex-direction: column;
             flex-direction: column;
+            
+            margin-bottom: 16px;
             // Адаптив
-            @media (max-width: $md) {
-                margin-bottom: 16px;
+            // Small devices (sm)
+            @media (min-width: $sm) {
+                padding: 0 6px;
             }
+            // Medium devices (md)
+            @media (min-width: $md) {
+                margin-bottom: 12px;
+            }
+            // Large devices (lg)
+            @media (min-width: $lg) {}
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
             // Лист с картинками
             .list_image {
                 position: relative;
@@ -48,11 +65,22 @@
                 flex-direction: row;
                 position: relative;
                 text-decoration: none;
+                padding: 16px 16px;
 
                 // Адаптив
-                @media (max-width: $sm) {
-                    padding: 16px 16px;
+                // Small devices (sm)
+                @media (min-width: $sm) {
                 }
+                // Medium devices (md)
+                @media (min-width: $md) {
+                    padding: 12px 12px;
+                }
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
                 // Адаптив
                 @media (min-width: $md) {
                     &:last-child {
@@ -130,13 +158,21 @@
             // Информация о продукте
             .info_product {
                 background-color: #fff;
-                padding: 10px 16px;
+                padding: 0 16px;
                 border-radius: 6px;
 
                 // Адаптив
-                @media (max-width: $sm) {
-                    padding: 0 16px;
-                }
+                // Small devices (sm)
+                @media (min-width: $sm) {
+                    padding: 10px 16px;}
+                // Medium devices (md)
+                @media (min-width: $md) {}
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
                 //Основная информация продукта
                 .item {
 
@@ -339,7 +375,6 @@
                         .inner {
                             display: inline-block;
                             position: relative;
-                            margin-left: 3.2;
                             &:active,
                             &:focus,
                             &:hover {
@@ -351,10 +386,19 @@
                                 height: 2.4rem;
                                 vertical-align: middle;
                             }
-
-                            @media (max-width: $md) {
-                                margin-left: 3.1rem;
+                            // Адаптив
+                            // Small devices (sm)
+                            @media (min-width: $sm) {}
+                            // Medium devices (md)
+                            @media (min-width: $md) {
+                                margin-left: 3.2rem;
                             }
+                            // Large devices (lg)
+                            @media (min-width: $lg) {}
+                            // X-Large devices (xl)
+                            @media (min-width: $xl) {}
+                            // XX-Large devices (xxl)
+                            @media (min-width: $xxl) {}
                             // Картинка
                             .icon {
                                 display: block;
@@ -415,21 +459,34 @@
                                             position: initial;
                                             user-select: none;
                                             width: 100%;
+                                            &:after {
+                                                border-radius: 10px;
+                                                content: "";
+                                                cursor: inherit;
+                                                display: block;
+                                                height: 20px;
+                                                left: 50%;
+                                                position: absolute;
+                                                top: 50%;
+                                                transform: translate(-50%, -50%);
+                                                width: 20px;
+                                            }
                                             // Адаптив
-                                            @media (max-width: $sm) {
+                                            // Small devices (sm)
+                                            @media (min-width: $sm) {
                                                 &:after {
-                                                    border-radius: 10px;
-                                                    content: "";
-                                                    cursor: inherit;
-                                                    display: block;
-                                                    height: 20px;
-                                                    left: 50%;
-                                                    position: absolute;
-                                                    top: 50%;
-                                                    transform: translate(-50%, -50%);
-                                                    width: 20px;
+                                                    display: none;
                                                 }
                                             }
+                                            // Medium devices (md)
+                                            @media (min-width: $md) {}
+                                            // Large devices (lg)
+                                            @media (min-width: $lg) {}
+                                            // X-Large devices (xl)
+                                            @media (min-width: $xl) {}
+                                            // XX-Large devices (xxl)
+                                            @media (min-width: $xxl) {}
+                                            
                                         }
                                     }
                                 }
@@ -439,19 +496,23 @@
                     // Блок  комментариев  к товару
                     .item_reviews {
                         margin-top: 20px;
+                        display: none;
 
                         // Адаптив
+
+                        // Small devices (sm)
+                        @media (min-width: $sm) {}
+                        // Medium devices (md)
                         @media (min-width: $md) {
                             margin: 16px 0;
-                        }
-
-                        @media (max-width: $md) {
                             display: block;
                         }
-
-                        @media (max-width: $md) {
-                            display: none;
-                        }
+                        // Large devices (lg)
+                        @media (min-width: $lg) {}
+                        // X-Large devices (xl)
+                        @media (min-width: $xl) {}
+                        // XX-Large devices (xxl)
+                        @media (min-width: $xxl) {}
                     }
                 }
             }
@@ -512,10 +573,19 @@
             .reviews {
                 margin-top: 12px;
                 display: none;
-                //
-                @media (min-width: 768px) {
+                
+                // Small devices (sm)
+                @media (min-width: $sm) {}
+                // Medium devices (md)
+                @media (min-width: $md) {
                     margin-top: 16px;
                 }
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
             }
             // Изменения размера
             .resizeTriggers {
@@ -541,56 +611,66 @@
     // лист с будующим товаром
     .whiteList {
         background: #fff;
-        padding-left: 24px;
-        padding-right: 24px;
-        padding-top: 12px;
+        padding: 0;
         flex: 1;
         // Адаптив
-        @media (max-width: 575.9px) {
-            padding: 0;
+        // Small devices (sm)
+        @media (min-width: $sm) {
+            padding-left: 24px;
+            padding-right: 24px;
+            padding-top: 12px;    
         }
+        // Medium devices (md)
+        @media (min-width: $md) {}
+        // Large devices (lg)
+        @media (min-width: $lg) {}
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {}
+        
+        
         //Заголовок будующего товара, нужно переделать
         .header_product {
             font-size: 1rem;
             font-weight: 500;
             text-align: center;
             margin-bottom: 12px;
-
-            @media (max-width: $sm) {
-                padding-top: 20px;
-            }
+            padding-top: 20px;
+            // Ааптив
+            // Small devices (sm)
+            @media (min-width: $sm) {
+                padding-top: 0;}
+            // Medium devices (md)
+            @media (min-width: $md) {}
+            // Large devices (lg)
+            @media (min-width: $lg) {}
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
         }
 
         // Оретка товара, не могу проверить , так как нет его
         .product_item {
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0;
             // Адаптив
-            @media (min-width: 375px) {
-                margin: 0;
-            }
-            @media (min-width: 768px) {
-                margin-left: -8px;
-                margin-right: -8px;
-            }
-            @media (min-width: 576px) {
-                padding-left: 6px;
-                padding-right: 6px;
-            }
 
-            @media (min-width: 768px) {
-                padding-left: 8px;
-                padding-right: 8px;
+            // Small devices (sm)
+            @media (min-width: $sm) {
+                padding: 0 6px;
+                margin-left: auto;
+                margin-right: auto;
             }
-
-            @media (min-width: 992px) {
-                padding-left: 8px;
-                padding-right: 8px;
+            // Large devices (lg)
+            @media (min-width: $lg) {
+                padding: 0 8px;
             }
-
-            @media (min-width: 1300px) {
-                padding-left: 8px;
-                padding-right: 8px;
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {
+                padding: 0 8px;
             }
             // Товар
             .item {

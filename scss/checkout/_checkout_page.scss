@@ -8,7 +8,6 @@
         max-width: 100%;
         margin-bottom: 12px;
 
-
         // Внутренняя часть
         .inner {
             box-sizing: border-box;
@@ -55,19 +54,24 @@
         padding: 10px 6px;
 
         // Адаптив
+
+        // Small devices (sm)
         @media (min-width: $sm) {
             padding: 10px 6px;
         }
-
+        // Medium devices (md)
         @media (min-width: $md) {
             margin-bottom: 16px;
             padding: 10px 15px;
         }
-
+        // Large devices (lg)
         @media (min-width: $lg) {
             padding: 10px 8px;
         }
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
 
+        // XX-Large devices (xxl)
         @media (min-width: $xxl) {
             padding: 10px 8px;
         }
@@ -78,9 +82,21 @@
             flex-direction: column-reverse;
 
             // Адаптив
-            @media (min-width: $lg) {
-                flex-direction: row-reverse;
-            }
+
+            
+        // Small devices (sm)
+        @media (min-width: $sm) {}
+        // Medium devices (md)
+        @media (min-width: $md) {}
+        // Large devices (lg)
+        @media (min-width: $lg) {
+            flex-direction: row-reverse;
+        }
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
+
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {}
 
             // Товары
             .items {
@@ -89,15 +105,18 @@
                 flex-shrink: 0;
                 background: #fff;
                 border-radius: 6px;
+                margin-left: 16px;
+                margin-top: 0;
 
                 // Адаптив
-                @media (max-width: $md) {
-                    margin: 0 24px;
-                }
-
-                @media (max-width: $md) and (max-width:$sm) {
-                    margin-top: 16px;
-                    margin-bottom: 16px;
+                
+                // Small devices (sm)
+                @media (min-width: $sm) {}
+                // Medium devices (md)
+                @media (min-width: $md) {}
+                // Large devices (lg)
+                @media (min-width: $lg) {
+                    margin-top: 0;
                 }
 
                 //Заголовок товара
@@ -116,8 +135,8 @@
                     margin: 0;
 
                     // Адаптив
-                    @media (max-width: $sm) {
-                        padding: 16px;
+                    @media (min-width: $sm) {
+                        // padding: 16px;
                     }
                 }
 
@@ -129,9 +148,18 @@
                     overflow: auto;
 
                     // Адаптив
-                    @media (max-width: $sm) {
+                    @media (min-width: $sm) {
                         padding: 16px 16px 16px;
                     }
+                    // Medium devices (md)
+                    @media (min-width: $md) {}
+                    // Large devices (lg)
+                    @media (min-width: $lg) {}
+                    // X-Large devices (xl)
+                    @media (min-width: $xl) {}
+
+                    // XX-Large devices (xxl)
+                    @media (min-width: $xxl) {}
                 }
 
                 //цена
@@ -140,9 +168,19 @@
                     padding: 24px;
 
                     // Адаптив
-                    @media (max-width: 575.9px) {
+                    // Small devices (sm)
+                    @media (min-width: $sm) {
                         padding: 16px;
                     }
+                    // Medium devices (md)
+                    @media (min-width: $md) {}
+                    // Large devices (lg)
+                    @media (min-width: $lg) {}
+                    // X-Large devices (xl)
+                    @media (min-width: $xl) {}
+
+                    // XX-Large devices (xxl)
+                    @media (min-width: $xxl) {}
 
                     table {
                         border: 0;
@@ -167,10 +205,22 @@
                                 // Итог
                                 .strong {
                                     // Адаптив
+                                    // Small devices (sm)
+                                    @media (min-width: $sm) {}
+                                    // Medium devices (md)
                                     @media (min-width: $md) {
                                         font-size: $text;
                                         line-height: 22px;
                                     }
+                                    // Medium devices (md)
+                                    @media (min-width: $md) {}
+                                    // Large devices (lg)
+                                    @media (min-width: $lg) {}
+                                    // X-Large devices (xl)
+                                    @media (min-width: $xl) {}
+                                    
+                                    // XX-Large devices (xxl)
+                                    @media (min-width: $xxl) {}
                                 }
 
                                 // Цена
@@ -190,45 +240,69 @@
                 position: relative;
 
                 // Адаптив
-                @media (max-width: $md) {
-                    padding-bottom: 24px;
-                }
-
-                @media (max-width: $md) and (max-width: $sm) {
-                    padding-bottom: 16px;
-                }
-
+                // Small devices (sm)
+                @media (min-width: $sm) {}
+                // Medium devices (md)
                 @media (min-width: $md) {
                     box-sizing: border-box;
-                    margin-right: 16px;
                     flex-basis: 100%;
                     flex-grow: 1;
                 }
+                // Large devices (lg)
+                @media (min-width: $lg) {
+                    margin-right: 0;
+                }
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
 
                 // Доставка
                 .delivery {
                     background-color: #fff;
                     border-radius: 6px;
-                    padding: 24px;
                     margin-bottom: 20px;
+                    padding: 16px;
 
                     // Адаптив
-                    @media (max-width: $sm) {
-                        padding: 16px;
+                    // Medium devices ($sm)
+                    @media (min-width: $sm) {
+                        padding: 24px;
                     }
+                    // Medium devices (md)
+                    @media (min-width: $md) {}
+                    // Large devices (lg)
+                    @media (min-width: $lg) {}
+                    // X-Large devices (xl)
+                    @media (min-width: $xl) {}
+                    
+                    // XX-Large devices (xxl)
+                    @media (min-width: $xxl) {}
 
                     //Имя доставка
                     .header_title {
-                        font-size: $text;
+                        font-size: 14px;
+                        line-height: 16px;
                         font-weight: 500;
                         line-height: 22px;
                         margin-bottom: 8px;
 
                         // Адаптив
-                        @media (max-width: $sm) {
-                            font-size: 14px;
-                            line-height: 16px;
+                        // Medium devices ($sm)
+                        @media (min-width: $sm) {
+                            font-size: $text;
+                            line-height: 22px;
                         }
+                        // Medium devices (md)
+                        @media (min-width: $md) {}
+                        // Large devices (lg)
+                        @media (min-width: $lg) {}
+                        // X-Large devices (xl)
+                        @media (min-width: $xl) {}
+                        
+                        // XX-Large devices (xxl)
+                        @media (min-width: $xxl) {}
                     }
 
                     // Способ доставки
@@ -238,10 +312,20 @@
                         transition: background-color 0.1s ease-in-out;
 
                         // Адаптив
-                        @media (max-width: $sm) {
+                        // Medium devices ($sm)
+                        @media (min-width: $sm) {
                             margin: 0 -16px;
                             padding: 0 16px;
                         }
+                        // Medium devices (md)
+                        @media (min-width: $md) {}
+                        // Large devices (lg)
+                        @media (min-width: $lg) {}
+                        // X-Large devices (xl)
+                        @media (min-width: $xl) {}
+                        
+                        // XX-Large devices (xxl)
+                        @media (min-width: $xxl) {}
 
                         // Блок элемента
                         .block_item {
@@ -251,12 +335,22 @@
                             padding-top: 8px;
 
                             // Адаптив
-                            @media (max-width: $sm) {
+                            // Medium devices ($sm)
+                            @media (min-width: $sm) {
                                 flex-direction: column;
                                 justify-content: stretch;
                                 margin-bottom: 1px;
                                 margin-right: -8px;
                             }
+                            // Medium devices (md)
+                            @media (min-width: $md) {}
+                            // Large devices (lg)
+                            @media (min-width: $lg) {}
+                            // X-Large devices (xl)
+                            @media (min-width: $xl) {}
+                            
+                            // XX-Large devices (xxl)
+                            @media (min-width: $xxl) {}
                         }
                     }
 
@@ -267,10 +361,20 @@
                         line-height: 22px;
 
                         // Адаптив
-                        @media (max-width: $sm) {
+                        // Medium devices ($sm)
+                        @media (min-width: $sm) {
                             font-size: 14px;
                             line-height: 16px;
                         }
+                        // Medium devices (md)
+                        @media (min-width: $md) {}
+                        // Large devices (lg)
+                        @media (min-width: $lg) {}
+                        // X-Large devices (xl)
+                        @media (min-width: $xl) {}
+                        
+                        // XX-Large devices (xxl)
+                        @media (min-width: $xxl) {}
                     }
 
                     //Текст
@@ -293,7 +397,7 @@
                             :hover {
                                 color: $mainColor;
                             }
-
+                            // Картинка
                             .icon {
                                 display: inline-block;
                                 height: 0.8em;
@@ -310,25 +414,47 @@
                 .payment_item {
                     background: #fff;
                     border-radius: 6px;
-                    padding: 24px;
+                    padding: 16px;
 
                     // Адаптив
-                    @media (max-width: $sm) {
-                        padding: 16px;
+                    // Medium devices ($sm)
+                    @media (min-width: $sm) {
+                        padding: 24px;
                     }
+                    // Medium devices (md)
+                    @media (min-width: $md) {}
+                    // Large devices (lg)
+                    @media (min-width: $lg) {}
+                    // X-Large devices (xl)
+                    @media (min-width: $xl) {}
+                    
+                    // XX-Large devices (xxl)
+                    @media (min-width: $xxl) {}
 
                     // Заголовок товара
                     .header_title {
+                        font-size: 14px;
+                        line-height: 16px;
                         font-size: $text;
                         font-weight: 500;
                         line-height: 22px;
                         margin-bottom: 8px;
 
                         // Адаптив
-                        @media (max-width: $sm) {
-                            font-size: 14px;
-                            line-height: 16px;
+                        // Medium devices ($sm)
+                        @media (min-width: $sm) {
+                            font-size: $text;
+                            line-height: 22px;
                         }
+                        // Medium devices (md)
+                        @media (min-width: $md) {}
+                        // Large devices (lg)
+                        @media (min-width: $lg) {}
+                        // X-Large devices (xl)
+                        @media (min-width: $xl) {}
+                        
+                        // XX-Large devices (xxl)
+                        @media (min-width: $xxl) {}
                     }
 
                     .validation_tabs {
@@ -337,10 +463,6 @@
                         transition: background-color 0.1s ease-in-out;
 
                         // Адаптив
-                        @media (max-width: $sm) {
-                            margin: 0 -16px;
-                            padding: 0 16px;
-                        }
 
                         // Тут будет товар
                         .tabs {
@@ -350,26 +472,42 @@
                             padding-top: 8px;
 
                             // Адаптив
-                            @media (max-width: $sm) {
-                                flex-direction: column;
+                            @media (min-width: $sm) {
                                 justify-content: stretch;
                                 margin-bottom: 1px;
                                 margin-right: -8px;
                             }
+                            // Medium devices (md)
+                            @media (min-width: $md) {}
+                            // Large devices (lg)
+                            @media (min-width: $lg) {}
+                            // X-Large devices (xl)
+                            @media (min-width: $xl) {}
+                            
+                            // XX-Large devices (xxl)
+                            @media (min-width: $xxl) {}
+                            
                         }
                     }
 
                     .sticky_on_mobile {
+                        position: sticky;
+                        bottom: 16px;
                         // Адаптив
-                        @media (max-width: $md) {
-                            position: sticky;
-                            bottom: 24px;
+                        // Small devices (sm)
+                        @media (min-width: $sm) {
                         }
-
-                        // Адаптив
-                        @media (max-width: $md) and (max-width: $sm) {
-                            bottom: 16px;
+                        @media (min-width: $md) {
+                            position: static;
+                            bottom: 0;
                         }
+                        // Large devices (lg)
+                        @media (min-width: $lg) {}
+                        // X-Large devices (xl)
+                        @media (min-width: $xl) {}
+                        
+                        // XX-Large devices (xxl)
+                        @media (min-width: $xxl) {}
 
                         // Оверлей
                         .overlay {

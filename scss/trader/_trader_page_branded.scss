@@ -1,22 +1,29 @@
 // шаблон трейдера брендированная
 .trader_page_branded {
-    box-sizing: border-box;
     max-width: 100%;
     padding-left: 6px;
-    padding-right: 6px;
     border-right: 1px solid #eee;
     padding-right: 0.6667rem;
+    border-right: none;
+    margin-right: 0;
+    padding-right: 0;
 
     // Адаптив
-    @media (max-width: 767.9px) {
-        border-right: none;
-        margin-right: 0;
-        padding-right: 0;
-    }
-    @media (min-width: 768px) {
+    // Small devices (sm)
+    @media (min-width: $sm) {}
+    // Medium devices (md)
+    @media (min-width: $md) {
         margin-top: 16px;
         margin-right: 8px;
+        box-sizing: border-box;
     }
+    // Large devices (lg)
+    @media (min-width: $lg) {}
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {}
+    
 
     // Элементр
     .element { 
@@ -26,36 +33,49 @@
 
         // Левая часть
         .leftColTop {
-            margin-bottom: 12px;
+            margin-bottom: 0;
     
             // Адаптив
-            @media (min-width: 768px) {
+            // Small devices (sm)
+            @media (min-width: $sm) {}
+            // Medium devices (md)
+            @media (min-width: $md) {
                 margin-bottom: 16px;
             }
-            @media (max-width: 767.9px) {
-                margin-bottom: 0;
-            }
+            // Large devices (lg)
+            @media (min-width: $lg) {}
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
+            
             
             // Резюме
             .storeSummary {
                 box-shadow: 0 1px 0 0 rgba(0, 0, 0, .06);
                 overflow: hidden;
+                margin-top: -30px;
+                padding-top: 30px;
+                margin-bottom: 16px;
 
                 // Адаптив
-                @media(max-width:767.9px) {
-                    margin-top: -30px;
-                    padding-top: 30px;
-                }
-                
-                @media(min-width:768px) {
+                // Small devices (sm)
+                @media (min-width: $sm) {}
+                // Medium devices (md)
+                @media (min-width: $md) {
                     border: 1px solid #f2f3f7;
                     border-radius: .444rem;
                     box-shadow: none;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    padding-top: 0;
                 }
-                
-                @media(max-width:767.9px) {
-                    margin-bottom: 16px;
-                }
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
                 
                 // Главное
                 .main {
@@ -83,11 +103,20 @@
                     // Обертка для лого
                     .logo_wrap {
                         margin: 23px auto 42px;
+                        margin: 10px auto 25px;
     
                         // Адаптив
-                        @media(max-width:767.9px) {
-                            margin: 10px auto 25px;
+                        @media (min-width: $sm) {}
+                        // Medium devices (md)
+                        @media (min-width: $md) {
+                            margin: 23px auto 42px;
                         }
+                        // Large devices (lg)
+                        @media (min-width: $lg) {}
+                        // X-Large devices (xl)
+                        @media (min-width: $xl) {}
+                        // XX-Large devices (xxl)
+                        @media (min-width: $xxl) {}
     
                         // Логотип
                         .logo {
@@ -103,14 +132,25 @@
                             height: 4rem;
                             line-height: 4rem;
                             width: 4rem;
+
+                            left: 50%;
+                            position: absolute;
+                            top: 0;
+                            transform: translateX(-50%);
                             
                             // Адаптив
-                            @media(max-width:767.9px) {
-                                left: 50%;
-                                position: absolute;
-                                top: 0;
-                                transform: translateX(-50%);
+                            // Small devices (sm)
+                            @media (min-width: $sm) {}
+                            // Medium devices (md)
+                            @media (min-width: $md) {
+                                position: relative;
                             }
+                            // Large devices (lg)
+                            @media (min-width: $lg) {}
+                            // X-Large devices (xl)
+                            @media (min-width: $xl) {}
+                            // XX-Large devices (xxl)
+                            @media (min-width: $xxl) {}
                             
                             // Буквы
                             .letters {
@@ -181,17 +221,25 @@
                 -ms-flex-align: center;
                 align-items: center;
                 cursor: pointer;
-                display: none;
+                display: block;
                 font-size: 16px;
                 -ms-flex-pack: center;
                 justify-content: center;
                 line-height: 20px;
                 margin: 4px auto;
-    
                 // Адаптив
-                @media (max-width: 767.9px) {
-                    display: block;
+                // Small devices (sm)
+                @media (min-width: $sm) {}
+                // Medium devices (md)
+                @media (min-width: $md) {
+                    display: none;
                 }
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
     
                 &:after {
                     background-position: 50%;
@@ -215,9 +263,19 @@
             padding: 0;
 
             // Адаптив
-            @media (min-width: 768px) {
+            // Small devices (sm)
+            @media (min-width: $sm) {}
+            // Medium devices (md)
+            @media (min-width: $md) {
                 display: block;
             }
+            // Large devices (lg)
+            @media (min-width: $lg) {}
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
+
 
             // Тип каталога
             .catalog__type {
@@ -231,10 +289,18 @@
                 padding-bottom: 40px;
 
             // Адаптив
-            @media (min-width: 768px) {
-                margin-left: -8px;
-                margin-right: -8px;
+            // Small devices (sm)
+            @media (min-width: $sm) {}
+            // Medium devices (md)
+            @media (min-width: $md) {
+                margin: 0 -8px;
             }
+            // Large devices (lg)
+            @media (min-width: $lg) {}
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
 
             // Элемент
             .inner {
@@ -265,18 +331,25 @@
         .image_wrap {
             border-radius: .444rem;
             bottom: 0;
-            left: calc(25% + 4px);
             overflow: hidden;
             display: inline-flex;
+            left: calc(33.33333% + 3px);
+            position: static;
             
             // Адаптив
-            @media(max-width:991.9px){
-                left: calc(33.33333% + 3px);
+            // Small devices (sm)
+            @media (min-width: $sm) {}
+            // Medium devices (md)
+            @media (min-width: $md) {
             }
-            
-            @media(max-width:767.9px) {
-                position: static;
+            // Large devices (lg)
+            @media (min-width: $lg) {
+                left: calc(25% + 4px);
             }
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
             
             // Сама картинка
             img.image {

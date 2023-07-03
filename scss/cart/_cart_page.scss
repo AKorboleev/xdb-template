@@ -7,9 +7,20 @@
     overflow: hidden;
     background-color: #f2f2f2;
 
-    @media (max-width:992px) {
+    // Адаптив
+    
+    // Small devices (sm)
+    @media (min-width: $sm) {}
+    // Medium devices (md)
+    @media (min-width: $md) {}
+    // Large devices (lg)
+    @media (min-width: $lg) {
         height: 800px;
     }
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {}
 
     .block_page {
         margin-top: 20px;
@@ -20,7 +31,7 @@
         
         .checkbox_text {
             display: flex;
-
+            // ipgone 12 se
             @media (min-height:375px){
                 font-size: 13px;
             }
@@ -60,6 +71,7 @@
             }
 
             .input_discount {
+                max-width: 63%;
                 background: #fff;
                 border-color: rgba(0, 0, 0, .08);
                 color: #2d2f43;
@@ -69,42 +81,45 @@
                 max-width: 62%;
                 width: 100%;
 
-                @media (max-width:$xxl) {
-                    max-width: 63%;
-                    font-size: 14px;
-                }
-
-                @media (max-width:$xl) {
+                // Адаптив
+                // Small devices (sm)
+                @media (min-width: $sm) {
                     max-width: 100%;
                     font-size: 11px;
                 }
-
-                @media (max-width:1000px) {
-                    // max-width: 60;
+                // Medium devices (md)
+                @media (min-width: $md) {}
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {
+                    font-size: 14px;
+                }
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {
+                    max-width: 62%;
                 }
             }
             
             .btn_discount {
+                margin-top: 20px;
+                max-width: 100%;
+                font-size: 11px;
+                padding: 0 3px;
                 max-width: 35%;
                 width: 100%;
-                @media (max-width:$xxl) {
-                    max-width: 34%;
-                    padding: 0 3px;
-                }
 
-                @media (max-width:$xl) {
-                    margin-top: 20px;
-                    max-width: 100%;
-                    font-size: 11px;
-                }
-
-                // @media (max-width:1000px) {
-                //     max-width: 38%;
-                // }
-
-                @media (max-width:460px) {
-                    max-width: 100%;
-                }
+                // Адпаптив
+                // Small devices (sm)
+                @media (min-width: $sm) {}
+                // Medium devices (md)
+                @media (min-width: $md) {}
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
 
                 .apply {
                     font-size: 16px;

@@ -8,31 +8,27 @@
         margin-top: 48px;
         padding-bottom: 48px;
         text-align: center;
-        //Адаптив
-        @media(min-width:576px) {
-            padding-left: 6px;
-            padding-right: 6px;
-        }
-    
-        @media(min-width:768px) {
-        padding-left: 8px;
-        padding-right: 8px;
-        }
+        // Адаптив
         
-        @media(min-width:992px) {
-        padding-left: 8px;
-        padding-right: 8px;
+        // Small devices (sm)
+        @media(min-width:$sm) {
+            padding: 0 6px;
         }
-        
-        @media(min-width:1300px) {
-        padding-left: 8px;
-        padding-right: 8px;
+        // Medium devices (md)
+        @media (min-width: $md) {
+            padding: 0 8px;
+            margin-top: 64px;
+            padding-bottom: 64px;
         }
-        
-        @media(min-width:768px) {
-        margin-top: 64px;
-        padding-bottom: 64px;
+        // Large devices (lg)
+        @media (min-width: $lg) {
+            padding: 0 8px;
         }
+        // XX-Large devices (xxl)
+        @media(min-width: $xxl) {
+            padding: 0 8px;
+        }
+
         a {
             font-size: 20px;
             text-decoration: none;
@@ -42,8 +38,8 @@
         .image {
             max-width: 90%;
             margin-bottom: 24px;
-
-            @media(min-width:768px) {
+            // Medium devices (md)
+            @media (min-width: $md) {
                 margin-bottom: 32px
             }
         }

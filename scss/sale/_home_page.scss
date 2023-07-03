@@ -38,7 +38,7 @@
             // Другой текст
             .other_text {
                 align-items: center;
-                display: flex;
+                display: none;
                 flex-grow: 1;
                 flex-shrink: 1;
                 flex-wrap: wrap;
@@ -47,8 +47,8 @@
                 width: 1px;
 
                 // Адаптив
-                @media (max-width: 600px) {
-                    display: none;
+                @media (min-width: 600px) {
+                    display: flex;
                 }
                 // Ценник Скидки распродажи
                 .sale_discount {

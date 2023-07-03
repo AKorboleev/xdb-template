@@ -3,9 +3,18 @@
     margin: 16px 8px;
 
     // Адаптив
-    @media (min-width: 768px) {
+    // Small devices (sm)
+    @media (min-width: $sm) {}
+    // Medium devices (md)
+    @media (min-width: $md) {
         margin: 16px 8px;
     }
+    // Large devices (lg)
+    @media (min-width: $lg) {}
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {}
     
     // Сообщение
     .message {
@@ -16,23 +25,29 @@
         padding-right: 6px;
         padding-bottom: 48px;
         // Адаптив
-        @media (min-width: 576px) {
-                padding-left: 6px;
-                padding-right: 6px;
+        // Small devices (sm)
+        @media (min-width: $sm) {
+            padding-left: 6px;
+            padding-right: 6px;
         }
-        @media (min-width: 768px) {
-                padding-left: 8px;
-                padding-right: 8px;
-                margin-top: 64px;
-                padding-bottom: 64px;
+        // Medium devices (md)
+        @media (min-width: $md) {
+            padding-left: 8px;
+            padding-right: 8px;
+            margin-top: 64px;
+            padding-bottom: 64px;
         }
-        @media (min-width: 992px) {
-                padding-left: 8px;
-                padding-right: 8px;
+        // Large devices (lg)
+        @media (min-width: $lg) {
+            padding-left: 8px;
+            padding-right: 8px;
         }
-        @media (min-width: 1300px) {
-                padding-left: 8px;
-                padding-right: 8px;
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {
+            padding-left: 8px;
+            padding-right: 8px;
         }
         // Контент сообщения
         .content {
@@ -50,55 +65,80 @@
             max-width: 100%;
             text-align: center;
             // Адаптив
-            @media (min-width: 576px) {
-                    margin-left: -6px;
-                    margin-right: -6px;
-                    padding-left: 6px;
-                    padding-right: 6px;
+            // very small ($ms)
+            @media (min-width: $sm) {
+                margin-left: -6px;
+                margin-right: -6px;
+                padding-left: 6px;
+                padding-right: 6px;
             }
-            @media (min-width: 768px) {
-                    margin-left: -8px;
-                    margin-right: -8px;
-                    padding-left: 8px;
-                    padding-right: 8px;
+            // Medium devices (md)
+            @media (min-width: $md) {
+                margin-left: -8px;
+                margin-right: -8px;
+                padding-left: 8px;
+                padding-right: 8px;
             }
-            @media (min-width: 992px) {
-                    margin-left: -8px;
-                    margin-right: -8px;
-                    padding-left: 8px;
-                    padding-right: 8px;
+            // Large devices (lg)
+            @media (min-width: $lg) {
+                margin-left: -8px;
+                margin-right: -8px;
+                padding-left: 8px;
+                padding-right: 8px;
             }
-            @media (min-width: 1300px) {
-                    margin-left: -8px;
-                    margin-right: -8px;
-                    padding-left: 8px;
-                    padding-right: 8px;
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {
+                margin-left: -8px;
+                margin-right: -8px;
+                padding-left: 8px;
+                padding-right: 8px;
             }
             // Картинка
             .image {
                 max-width: 90%;
                 position: relative;
                 margin: $mc 24px;
-                @media (min-width: 768px) {
+                // Адаптив
+                // Small devices (sm)
+                @media (min-width: $sm) {}
+                // Medium devices (md)
+                @media (min-width: $md) {
                     margin-bottom: 32px;
                 }
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
+                
 
                 img {
                     max-width: 100%;
                 }
                 // Предупреждение
                 h1.title {
-                    font-size: 1.3333rem;
+                    font-size: 1.2rem;
+                    width: 20rem;
                     font-weight: 500;
                     margin: $mc;
                     max-width: 80%;
                     position: relative;
                     width: 30rem;
                     // Адаптив
-                    @media (max-width: 767.9px) {
-                        font-size: 1.2rem;
-                        width: 20rem;
+                    // Small devices (sm)
+                    @media (min-width: $sm) {}
+                    // Medium devices (md)
+                    @media (min-width: $md) {
+                        font-size: 1.3333rem;
+                        width: 30rem;
                     }
+                    // Large devices (lg)
+                    @media (min-width: $lg) {}
+                    // X-Large devices (xl)
+                    @media (min-width: $xl) {}
+                    // XX-Large devices (xxl)
+                    @media (min-width: $xxl) {}
                 }
                 // Текст предупреждения
                 p.text {
@@ -112,10 +152,19 @@
                     font-family: monospace;
                     opacity: .5;
                     // Адаптив
-                    @media (max-width: 767.9px) {
+                    // Small devices (sm)
+                    @media (min-width: $sm) {}
+                    // Medium devices (md)
+                    @media (min-width:$md) {
                         font-size: 1rem;
                         width: 20rem;
                     }
+                    // Large devices (lg)
+                    @media (min-width: $lg) {}
+                    // X-Large devices (xl)
+                    @media (min-width: $xl) {}
+                    // XX-Large devices (xxl)
+                    @media (min-width: $xxl) {}
 
                 }
             }

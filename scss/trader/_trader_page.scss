@@ -1,27 +1,28 @@
 .trader_page {
+    max-width: 100%;
     margin-top: 12px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
-    max-width: 100%;
-    padding-left: 6px;
-    padding-right: 6px;
-
-    
+    padding: 0 12px;
     border-right: 1px solid #eee;
     padding-right: 0.6667rem;
-    margin-right: 6px;
 
-    //Адаптив
-    @media (max-width: 767.9px) {
-            border-right: none;
-            margin-right: 0;
-            padding-right: 0;
-    }
-    @media (min-width: 768px) {
+    // Адаптив
+    // Small devices (sm)
+    @media (min-width: $sm) {}
+    // Medium devices (md)
+    @media (min-width: $md) {
         margin-top: 16px;
         margin-right: 8px;
     }
+    // Large devices (lg)
+    @media (min-width: $lg) {}
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {}
+    
 
     .trade_element { 
         position: sticky;
@@ -32,34 +33,45 @@
         .leftColTop {
             margin-bottom: 12px;
     
-            //Адаптив
-            @media (min-width: 768px) {
+            // Адаптив
+            // Small devices (sm)
+            @media (min-width: $sm) {}
+            // Medium devices (md)
+            @media (min-width: $md) {
                 margin-bottom: 16px;
             }
-            @media (max-width: 767.9px) {
-                margin-bottom: 0;
-            }
+            // Large devices (lg)
+            @media (min-width: $lg) {}
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
     
             // Резюме магазина
             .store_summary {
                 box-shadow: 0 1px 0 0 rgba(0, 0, 0, .06);
                 overflow: hidden;
 
-                //Адаптив
-                @media(max-width:767.9px) {
+                // Адаптив
+                
+                // Small devices (sm)
+                @media (min-width: $sm) {}
+                // Medium devices (md)
+                @media (min-width: $md) {
+                    margin-bottom: 16px;
                     margin-top: -30px;
                     padding-top: 30px;
-                }
-                
-                @media(min-width:768px) {
                     border: 1px solid #f2f3f7;
                     border-radius: .444rem;
                     box-shadow: none;
                 }
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
                 
-                @media(max-width:767.9px) {
-                    margin-bottom: 16px;
-                }
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
                 
                 // Главная
                 .main {
@@ -73,7 +85,7 @@
                         right: 32px;
                         top: 32px;
                         
-                        //Адаптив
+                        // Адаптив
                         button.contextMenuButton {
                             background: none;
                             border: none;
@@ -86,12 +98,25 @@
     
                     // Лого
                     .logoWrap {
+                        margin: 10px auto 25px;
                         margin: 23px auto 42px;
     
-                        //Адаптив
-                        @media(max-width:767.9px) {
-                            margin: 10px auto 25px;
+                        // Адаптив
+                        
+                        // Small devices (sm)
+                        @media (min-width: $sm) {}
+                        // Medium devices (md)
+                        @media (min-width: $md) {
+                            margin: 23px auto 42px;
                         }
+                        // Large devices (lg)
+                        @media (min-width: $lg) {}
+                        // X-Large devices (xl)
+                        @media (min-width: $xl) {}
+                        
+                        // XX-Large devices (xxl)
+                        @media (min-width: $xxl) {}
+                        
                         // Лого
                         .logo {
                             align-items: center;
@@ -106,14 +131,26 @@
                             height: 4rem;
                             line-height: 4rem;
                             width: 4rem;
+                            left: 50%;
+                            position: absolute;
+                            top: 0;
+                            transform: translateX(-50%);
                             
-                            //Адаптив
-                            @media(max-width:767.9px) {
-                                left: 50%;
-                                position: absolute;
-                                top: 0;
-                                transform: translateX(-50%);
+                            // Адаптив
+                            
+                            // Small devices (sm)
+                            @media (min-width: $sm) {}
+                            // Medium devices (md)
+                            @media (min-width: $md) {
+                                position: static;
                             }
+                            // Large devices (lg)
+                            @media (min-width: $lg) {}
+                            // X-Large devices (xl)
+                            @media (min-width: $xl) {}
+                
+                            // XX-Large devices (xxl)
+                            @media (min-width: $xxl) {}
     
                             // Буквы
                             .letters {
@@ -185,17 +222,26 @@
                 -ms-flex-align: center;
                 align-items: center;
                 cursor: pointer;
-                display: none;
+                display: block;
                 font-size: 16px;
                 -ms-flex-pack: center;
                 justify-content: center;
                 line-height: 20px;
                 margin: 4px auto;
     
-                //Адаптив
-                @media (max-width: 767.9px) {
-                    display: block;
+                // Адаптив
+                // Small devices (sm)
+                @media (min-width: $sm) {}
+                // Medium devices (md)
+                @media (min-width: $md) {
+                    display: none;
                 }
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
     
                 &:after {
                     background-position: 50%;
@@ -219,9 +265,20 @@
             padding: 0;
 
             // Адаптив
-            @media (min-width: 768px) {
+            
+            // Small devices (sm)
+            @media (min-width: $sm) {}
+            // Medium devices (md)
+            @media (min-width: $md) {
                 display: block;
             }
+            // Large devices (lg)
+            @media (min-width: $lg) {}
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
 
             // Тип каталога
             .catalog_type {
@@ -235,10 +292,21 @@
                 padding-bottom: 40px;
 
             // Адаптив
-            @media (min-width: 768px) {
+            
+            // Small devices (sm)
+            @media (min-width: $sm) {}
+            // Medium devices (md)
+            @media (min-width: $md) {
                 margin-left: -8px;
                 margin-right: -8px;
             }
+            // Large devices (lg)
+            @media (min-width: $lg) {}
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
 
             // Элемент
             .inner {

@@ -8,23 +8,13 @@
     margin: 16px 0 0 16px;
     max-width: 12rem;
     width: 12rem;
-    display: none;
-
+    
     // Адаптив
-    @media (min-width: 600px) {
-        box-sizing: border-box;
-        margin: 16px 0 0 16px;
-        max-width: calc(33.33333% - 16.1px);
-        width: calc(33.33333% - 16.1px);
-        display: none;
-
-        &:nth-child(-n + 6) {
-            display: flex;
-        }
-    }
-
-    // Адаптив
-    @media (min-width: 840px) {
+    
+    // Small devices (sm)
+    @media (min-width: $sm) {}
+    // Medium devices (md)
+    @media (min-width: $md) {
         box-sizing: border-box;
         flex-basis: calc(25% - 16.1px);
         flex-grow: 0;
@@ -35,8 +25,12 @@
         display: -ms-flexbox;
         display: flex;
     }
-
-    @media (min-width: 1280px) {
+    // Large devices (lg)
+    @media (min-width: $lg) {}
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {
         box-sizing: border-box;
         margin: 16px 0 0 16px;
         max-width: calc(16.66667% - 16.1px);
@@ -58,10 +52,15 @@
             cursor: pointer;
             position: relative;
             text-decoration: none;
-
+            &:hover {
+                transform: scale(1.05);
+                transition: transform .3s ease-in-out;
+                display: block;
+            }
             &:hover .image_wrap {
                 transform: scale(1.05);
-                transition: transform 0.3s ease-in-out;
+                transition: transform .3s ease-in-out;
+                display: block;
             }
 
             &:hover .actionButton {
@@ -84,10 +83,6 @@
                     position: absolute;
                     right: 0;
                     top: 0;
-
-                     &:hover {
-                        padding: 10px;
-                     }
                     // Движение картинки
                     .image_place {
                         border-radius: 8px;
@@ -131,7 +126,7 @@
                         user-select: none;
                         width: 26px;
                     }
-                    // Увидомление
+                    // Уведомление
                     .block_one {
                         bottom: 0;
                         left: 0;
@@ -229,8 +224,3 @@
     }
 }
 
-//  не нашел этот класс , хз для чего он
-// Сам написал, как душа велела
-.none {
-    display: none;
-}

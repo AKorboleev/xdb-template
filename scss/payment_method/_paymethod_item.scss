@@ -2,16 +2,27 @@
 .payment_method {
     // Вкладка
     .tab {
-        display: flex;
-        margin: 0 15px 15px 0;
         min-height: 100%;
         position: relative;
+        display: block;
+        margin-bottom: 8px;
+        margin-right: 8px;
         // Адаптив
-        @media (max-width: 575.9px) {
-            display: block;
-            margin-bottom: 8px;
-            margin-right: 8px;
+
+        // Small devices (sm)
+        @media (min-width: $sm) {
+            display: flex;
+            margin: 0 15px 15px 0;
         }
+        // Medium devices (md)
+        @media (min-width: $md) {}
+        // Large devices (lg)
+        @media (min-width: $lg) {}
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {}
+        
         // Блок для обертки
         .block_payment {
             align-items: center;
@@ -38,53 +49,93 @@
             // }
             // Элементы
             .child {
-                margin: 3px auto;
-                margin-top: 3px;
+                margin: 1px 0;
 
                 // Адаптив
-                @media (max-width: 575.9px) {
-                    margin: 1px 0;
+
+                // Small devices (sm)
+                @media (min-width: $sm) {
+                    margin: 3px auto;
+                    margin-top: 3px;
                 }
+                // Medium devices (md)
+                @media (min-width: $md) {}
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
             }
             // Иконка
             .icon {
-                align-items: center;
-                display: flex;
-                height: 23px;
-                justify-content: center;
+                left: 30px;
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -50%);
 
                 // Адаптив
-                @media (max-width: 575.9px) {
-                    left: 30px;
-                    position: absolute;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
+                
+                // Small devices (sm)
+                @media (min-width: $sm) {  
+                    align-items: center;
+                    display: flex;
+                    height: 23px;
+                    justify-content: center;
                 }
+                // Medium devices (md)
+                @media (min-width: $md) {}
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
             }
             // Название
             .title {
                 font-size: 14px;
                 font-weight: 500;
-                white-space: nowrap;
+                white-space: normal;
 
                 // Адаптив
-                @media (max-width: 575.9px) {
-                    white-space: normal;
+                
+                // Small devices (sm)
+                @media (min-width: $sm) {
+                    white-space: nowrap;
                 }
+                // Medium devices (md)
+                @media (min-width: $md) {}
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
             }
-            // Увидомление
+            // Уведомление
             .notice {
                 margin-top: 5px;
                 color: #9697a1;
                 font-size: 12px;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                white-space: nowrap;
+                white-space: normal;
 
                 // Адаптив
-                @media (max-width: 575.9px) {
-                    white-space: normal;
+                
+                // Small devices (sm)
+                @media (min-width: $sm) {
+                    white-space: nowrap;
                 }
+                // Medium devices (md)
+                @media (min-width: $md) {}
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
             }
             // Акцентирование
             .accent {

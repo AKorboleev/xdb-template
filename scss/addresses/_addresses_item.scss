@@ -1,12 +1,21 @@
 // Обертка выбора одреса
 .addresses_item {
+    margin-top: 16px;
     display: flex;
     flex-direction: column;
-    margin-top: 24px;
     // Адаптив
-    @media(max-width:575.9px) {
-        margin-top: 16px;
+    // Small devices (sm)
+    @media (min-width: $sm) {}
+    // Medium devices (md)
+    @media (min-width: $md) { 
+        margin-top: 24px;
     }
+    // Large devices (lg)
+    @media (min-width: $lg) {}
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {}
     // Контейнер с выбором адреса
     .container {
         align-items: center;
@@ -92,12 +101,12 @@
                     text-align: right;
                     // Кнопка 
                     .button_address {
+                        font-size: 12px;
                         border: 1px solid #e0e0e0;
                         border-radius: 3rem;
                         box-sizing: border-box;
                         cursor: pointer;
                         display: inline-block;
-                        font-size: 14px;
                         margin-bottom: 8px;
                         min-width: 7em;
                         padding: .7143em 1.1429em;
@@ -119,9 +128,18 @@
                         }
 
                         // Адаптив
-                        @media(max-width:767.9px) {
-                            font-size: 12px;
+                        // Small devices (sm)
+                        @media (min-width: $sm) {}
+                        // Medium devices (md)
+                        @media (min-width: $md) {  
+                            font-size: 14px;
                         }
+                        // Large devices (lg)
+                        @media (min-width: $lg) {}
+                        // X-Large devices (xl)
+                        @media (min-width: $xl) {}
+                        // XX-Large devices (xxl)
+                        @media (min-width: $xxl) {}
                     }
                 }
                 

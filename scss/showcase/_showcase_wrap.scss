@@ -9,7 +9,6 @@
 
     // Обертка банера
     .bannerWrap {
-        display: inline-flex;
         background-color: #e262b7;
         min-height: 240px;
         align-items: stretch;
@@ -18,9 +17,27 @@
         overflow: hidden;
         max-height: 765px;
         margin-left: 1%;
+        font-size: 14px;
+        display: none;
 
         // Адаптив
-        @media (min-width: 1280px) {
+        
+        // Small devices (sm)
+        @media (min-width: $sm) {
+            flex-basis: calc(50% - 17%);
+            flex-grow: 0;
+            flex-shrink: 0;
+            min-height: auto;
+            margin-left: 1%;
+        }
+        // Medium devices (md)
+        @media (min-width: $md) {
+            display: inline-flex;
+        }
+        // Large devices (lg)
+        @media (min-width: $lg) {}
+        // X-Large devices (xl)
+        @media (min-width: $xl) {
             flex-basis: calc(33.33333% - 16.1px);
             flex-grow: 0;
             flex-shrink: 0;
@@ -28,26 +45,9 @@
             width: calc(33.33333% - 16.1px);
             min-height: auto;
         }
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {}
 
-        @media (min-width: 840px) {
-            min-height: auto;
-        }
-
-        @media (max-width:849px) {
-            font-size: 14px;
-        }
-
-        @media (max-width:768px) {
-            display: none;
-        }
-        @media (min-width: 600px) {
-            flex-basis: calc(50% - 17%);
-            flex-grow: 0;
-            flex-shrink: 0;
-            min-height: auto;
-            margin-left: 1%;
-        }
-        
         // Обертка контента
         a.wrapper_content {
             display: flex;
@@ -127,28 +127,31 @@
     }
     // Обертка для продуркта с правой стороны
     .productsWrap {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
         flex-grow: 0;
         flex-shrink: 0;
-        max-width: calc(66.66667% - 16.1px);
-        width: calc(66.66667% - 16.1px);
         box-sizing: border-box;
         margin: 16px 0 0 16px;
         padding-left: 20px;
 
-        // Адапти
-        @media (max-width: 1300px) {
-            margin: 0;
+        // Адаптив
+        
+        // Small devices (sm)
+        @media (min-width: $sm) {}
+        // Medium devices (md)
+        @media (min-width: $md) {
+            max-width: calc(65.66667% - 16.1px);
+            width: calc(65.66667% - 16.1px);}
+        // Large devices (lg)
+        @media (min-width: $lg) {
+            margin: 16px 0 0 16px;
         }
-
-        @media (max-width:768px) {
-            max-width: 100%;
-            width: 100%;
-        }
-
-        @media (max-width:390px) {
-            width: 100%;
-            min-width: 100%;
-        }
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {}
 
         // Заголовок
         .header {

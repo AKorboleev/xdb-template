@@ -4,23 +4,23 @@
     padding-bottom: 48px;
 
     // Адаптив
-    @media (min-width: 576px) {
-        padding-left: 6px;
-        padding-right: 6px;
+    
+    // Small devices (sm)
+    @media (min-width: $sm) {
+        padding: 0 6px;
     }
-    @media (min-width: 768px) {
+    // Medium devices (md)
+    @media (min-width: $md) {
         margin-top: 64px;
-        padding-left: 8px;
-        padding-right: 8px;
+        padding: 0 8px;
     }
-    @media (min-width: 992px) {
-        padding-left: 8px;
-        padding-right: 8px;
-    }
-    @media (min-width: 1300px) {
-        padding-left: 8px;
-        padding-right: 8px;
-    }
+    // Large devices (lg)
+    @media (min-width: $lg) {}
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {}
+
     // Контент
     .content {
         display: flex;
@@ -32,35 +32,49 @@
         max-width: 100%;
         text-align: center;
         // Адаптив
-        @media (min-width: 576px) {
-            padding-left: 6px;
-            padding-right: 6px;
+        
+        // Small devices (sm)
+        @media (min-width: $sm) {
+            padding: 0 6px;
         }
-        @media (min-width: 768px) {
-            padding-left: 8px;
-            padding-right: 8px;
+        // Medium devices (md)
+        @media (min-width: $md) {
+            padding: 0 8px;
         }
-        @media (min-width: 992px) {
-            padding-left: 8px;
-            padding-right: 8px;
+        // Large devices (lg)
+        @media (min-width: $lg) {
         }
-        @media (min-width: 1300px) {
-            padding-left: 8px;
-            padding-right: 8px;
+        // X-Large devices (xl)
+        @media (min-width: $xl) {
         }
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {}
+
         // Вывод
         h1 {
-            font-size: 1.3333rem;
             font-weight: 500;
             margin: $mc;
             max-width: 80%;
             position: relative;
             width: 30rem;
+            font-size: 1.2rem;
+            width: 20rem;
+
             // Адаптив
-            @media (max-width: 767.9px) {
-                font-size: 1.2rem;
-                width: 20rem;
+            
+            // Small devices (sm)
+            @media (min-width: $sm) {}
+            // Medium devices (md)
+            @media (min-width: $md) {
+                width: 30rem;
+                font-size: 1.3333rem;
             }
+            // Large devices (lg)
+            @media (min-width: $lg) {}
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
         }
     }
 }

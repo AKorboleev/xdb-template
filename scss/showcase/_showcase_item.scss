@@ -9,17 +9,24 @@
     text-align: left;
     box-sizing: border-box;
     margin: 16px 0 0 16px;
-    max-width: calc(25% - 16.1px);
-    width: calc(25% - 16.1px);
-
-    @media (max-width:768px) {
-        
+    max-width: calc(50% - 16.1px);
+    width: calc(50% - 16.1px);
+    
+    // Адаптив
+    
+    // Small devices (sm)
+    @media (min-width: $sm) {
+        max-width: calc(25% - 16.1px);
+        width: calc(25% - 16.1px);
     }
-
-    @media (max-width:500px) {
-        max-width: calc(50% - 16.1px);
-        width: calc(50% - 16.1px);
-    }
+    // Medium devices (md)
+    @media (min-width: $md) {}
+    // Large devices (lg)
+    @media (min-width: $lg) {}
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {}
     
     // продукт
     a.product {

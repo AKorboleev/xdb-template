@@ -9,32 +9,34 @@ footer.footer {
     left: 0;
     position: relative;
     right: 0;
+    font-size: 12px;
+    line-height: 1.2;
+    padding-left: 5%;
+    padding-right: 0;
 
     // Адаптив
-    @media (max-width: 767.9px) {
-        font-size: 12px;
-        line-height: 1.2;
+    // Small devices (sm)
+    @media (min-width: $sm) {
+        font-size: 14px;
+        line-height: normal;
     }
-    @media (min-width: 768px) {
+    @media (min-width: $md) {
         margin-bottom: 16px;
-        padding-left: 6px;
-        padding-right: 6px;
+        padding: 0 12px;
     }
-    @media (min-width: 768px) {
-        padding-left: 8px;
+    @media (min-width: $lg) {
+        padding-left: 2%;
     }
-    @media (min-width: 768px) {
-        padding-right: 8px;
-    }
-    @media (max-width: 991.9px) {
-        padding-left: 5%;
-        padding-right: 0;
-    }
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {}
     // Ссылки
     .links {
         box-sizing: border-box;
         line-height: 1.46rem;
         padding: 0.7rem 0;
+        display: block;
         // обертка ссылкок
         .wrapper {
             display: inline-block;
@@ -54,22 +56,27 @@ footer.footer {
             }
         }
         // Адаптив
-        @media (max-width: 767.9px) {
-            display: block;
-        }
-        @media (max-width: 767.9px) {
-            padding-bottom: 0;
-        }
+
+        // Small devices (sm)
+        @media (min-width: $sm) {}
+        // Medium devices (md)
+        @media (min-width: $md) {}
+        // Large devices (lg)
+        @media (min-width: $lg) {}
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {}
     }
     // кто сделал
     .xdb {
         box-sizing: border-box;
         line-height: 1.46rem;
         padding: 0.7rem 0;
-        @media (max-width: 767.9px) {
-            border-top: none;
-            margin-top: 0.4rem;
-        }
+        float: none;
+        margin-top: 5px;
+        border-top: none;
+        margin-top: 0.4rem;
         /// Значки магазинов
         .badges {
             display: flex;
@@ -79,31 +86,43 @@ footer.footer {
                 display: inline-block;
                 margin: 5px;
                 // Адаптив
-                @media (min-width: 768px) {
+
+                // Small devices (sm)
+                @media (min-width: $sm) {}
+                // Medium devices (md)
+                @media (min-width: $md) {
                     margin: 8px;
                 }
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
             }
-        }
-        // Адаптив
-        @media (max-width: 767.9px) {
-            float: none;
-            margin-top: 5px;
         }
     }
     // Капча
     .recaptcha {
         color: #9697a1;
         font-size: 10px;
-        text-align: right;
+        text-align: left;
         padding-bottom: 12px;
         // Адаптив
-        @media (min-width: 768px) {
+        // Small devices (sm)
+        @media (min-width: $sm) {
+            text-align: right;
+        }
+        // Medium devices (md)
+        @media (min-width: $md) {
             padding-bottom: 16px;
         }
-        // Адаптив
-        @media (max-width: 767.9px) {
-            text-align: left;
-        }
+        // Large devices (lg)
+        @media (min-width: $lg) {}
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {}
         a {
             color: #9697a1;
         }

@@ -28,23 +28,44 @@
         font-size: 0.7777rem;
         line-height: 1.1111rem;
         padding: 0.8888rem;
+        flex-direction: column;
 
         // Адаптива
-        @media (max-width: 575.9px) {
-            flex-direction: column;
+        
+        // Small devices (sm)
+        @media (min-width: $sm) {
+            flex-direction: row;
         }
+        // Medium devices (md)
+        @media (min-width: $md) {}
+        // Large devices (lg)
+        @media (min-width: $lg) {}
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {}        
 
         // Левая часть
         .left {
             display: flex;
-            flex-basis: 35%;
             flex-shrink: 0;
             margin-right: 0.4444rem;
+            flex-basis: auto;
 
-            // адаптив
-            @media (max-width: 575.9px) {
-                flex-basis: auto;
+            // Адаптив
+            
+            // Small devices (sm)
+            @media (min-width: $sm) {
+                flex-basis: 35%;
             }
+            // Medium devices (md)
+            @media (min-width: $md) {}
+            // Large devices (lg)
+            @media (min-width: $lg) {}
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
 
             // Сылка картинки
             a.img {
