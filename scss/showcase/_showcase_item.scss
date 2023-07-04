@@ -34,8 +34,8 @@
         cursor: pointer;
         position: relative;
         text-decoration: none;
-
-        &:hover {
+        // При наведении на картинку увеличивается  в размерах 
+        &:hover .image_wrap{
             transform: scale(1.05);
             transition: transform .3s ease-in-out;
             display: block;

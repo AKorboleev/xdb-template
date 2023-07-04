@@ -1,9 +1,24 @@
 // После загрузки DOM
 $(document).ready(function () {
+
+    //---------------------------------------------------------------------------
+	// Клик на позиции списка меню страницы Мои заказы
+	$('button.menu_item').on('click', function() {
+
+		// Берем идентификатор статуса заказа
+		let status_id = $(this).data('status');
+
+
+		// Simulate a mouse click:
+		window.location.href = '?status=' + status_id;
+
+		// Предотвращаем дальнейшее выполнение
+    //		return false;
+	});
+	//---------------------------------------------------------------------------
+
     //---------------------------------------------------------------------------
     // Используется в item_page
-
-    $(document).ready(function () {
         //---------------------------------------------------------------------------
         // Не используется
         function isScrolledIntoView(elem) {
@@ -55,7 +70,6 @@ $(document).ready(function () {
             $('div.img_wrap').stop().animate({ scrollLeft: value });
         });
         //---------------------------------------------------------------------------
-    });
 
 
 
@@ -345,7 +359,6 @@ $(document).ready(function () {
     // Кнопка минус
     // cart_item_decrease
     $('div.decrease').on('click', function () {
-
         // Берем идентификатор позиции
         let item_id = $(this).data('item');
 
@@ -703,24 +716,10 @@ $.ajax({
 //		return false;
 	});
 
-    $(document).ready(function ()
-	{
 		let popover = new bootstrap.Popover(document.querySelector('.example-popover'), {
 			container: 'body'
 		})
-	});
 });
-//---------------------------------------------------------------------------
-// Вывод товара от минимальной цены , до максимальной. Стоит сделать еще только по минимальной , до максимальной 
-function formfiltres() {
-    // Минимальная цена
-    let min_price = document.getElementById("minPrice").value;
-    // Максимальная
-    let max_price = document.getElementById("maxPrice").value;
-    // Передача переменных в ссылку и вывод товара по указанной цене 
-    document.getElementById('formPriceFiltrsButton').addEventListener('click', () => window.open(`https://market.axnata24.ru/search/?pricefrom=${min_price}&priceto=${max_price}`, 'windowName'));
-}
-
 
 
 // $(document).ready(function(){

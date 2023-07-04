@@ -1357,7 +1357,24 @@ label.custom-checkbox {
 //dropdown_menu
 // Выпадающая менюшка для настройки 
 ul.dropdown_menu {
-    display: flex;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    // Адаптив
+    // Small devices (sm)
+    @media (min-width: $sm) {
+        display: flex;}
+    // Medium devices (md)
+    @media (min-width: $md) {}
+    // Large devices (lg)
+    @media (min-width: $lg) {
+        width: auto;
+    }
+    // X-Large devices (xl)
+    @media (min-width: $xl) {}
+    // XX-Large devices (xxl)
+    @media (min-width: $xxl) {}
 
     a.filter_name {
         display: flex;
@@ -1373,8 +1390,31 @@ ul.dropdown_menu {
         list-style-type: none;
         background: #f2f3f7;
         position: relative;
-        margin: 0 10px;
-        font-size: 14px;
+        margin: 5px 0;
+        font-size: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        // Адаптив
+        // Small devices (sm)
+        @media (min-width: $sm) {
+            font-size: 10px;
+            margin: 0 3px;
+        }
+        // Medium devices (md)
+        @media (min-width: $md) {
+            font-size: 14px;
+        }
+        // Large devices (lg)
+        @media (min-width: $lg) {
+            display: block;
+            width: auto;
+        }
+        // X-Large devices (xl)
+        @media (min-width: $xl) {}
+        // XX-Large devices (xxl)
+        @media (min-width: $xxl) {}
+
         &:hover .dropdown,
         &:hover .dropdown_input 
          {

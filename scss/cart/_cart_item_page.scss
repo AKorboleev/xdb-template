@@ -152,6 +152,118 @@
                         &::after {
                             display: contents;
                         }
+
+                                                
+                        // Вперед и назад
+                        .next,
+                        .prev {
+                            background: none;
+                            border: none;
+                            box-shadow: none;
+                            padding: 0;
+                            align-items: center;
+                            background-color: #fff;
+                            border-radius: 50%;
+                            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+                            box-sizing: border-box;
+                            color: #2d2f43;
+                            cursor: pointer;
+                            display: -ms-flexbox;
+                            display: flex;
+                            height: 40px;
+                            justify-content: center;
+                            position: absolute;
+                            top: calc(50% - 20px);
+                            transform-origin: center;
+                            transition: 0.2s ease;
+                            user-select: none;
+                            width: 40px;
+                        }
+                        .next:after,
+                        .prev:after {
+                            border-right: 2px solid;
+                            border-top: 2px solid;
+                            box-sizing: border-box;
+                            content: "";
+                            display: block;
+                            height: 12px;
+                            transform-origin: center;
+                            width: 12px;
+                            margin-left: 10px;
+                            margin-top: 14px;
+                        }
+                        .next:hover,
+                        .prev:hover {
+                            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+                            color: #ff6262;
+                            transform: scale(1.15);
+                        }
+
+                        // Вперед
+                        .prev {
+                            left: 10px;
+                            padding-left: 6px;
+                        }
+                        .prev:after {
+                            transform: rotate(-135deg);
+                        }
+                        //****
+
+                        // Назад
+                        .next {
+                            padding-right: 6px;
+                            right: 10px;
+                        }
+                        .next:after {
+                            transform: rotate(45deg);
+                        }
+                        //****
+
+                        // Вперед
+                        .prev {
+                            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAyNiI+PHBhdGggZD0iTS4zIDEyLjNsMTItMTJhMSAxIDAgMDExLjQgMCAxIDEgMCAwMTAgMS40TDIuNCAxM2wxMS4zIDExLjNhMSAxIDAgMDEtMS40IDEuNGwtMTItMTJhMSAxIDAgMDEwLTEuNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
+                            background-position: 45% 50%;
+                            left: 16px;
+                            display: none;
+
+                            // Адаптив
+                            // Small devices (sm)
+                            @media (min-width: $sm) {}
+                            // Medium devices (md)
+                            @media (min-width: $md) {
+                                display: block;
+                            }
+                            // Large devices (lg)
+                            @media (min-width: $lg) {}
+                            // X-Large devices (xl)
+                            @media (min-width: $xl) {}
+                            // XX-Large devices (xxl)
+                            @media (min-width: $xxl) {}
+                        }
+                        //****
+
+                        // Назад
+                        .next {
+                            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAyNiI+PHBhdGggZD0iTTEzLjcgMTMuN2wtMTIgMTJhLjkxLjkxIDAgMDEtLjcuMy45MS45MSAwIDAxLS43LS4zIDEgMSAwIDAxMC0xLjRMMTEuNiAxMyAuMyAxLjdBMSAxIDAgMDEuMy4zYTEgMSAwIDAxMS40IDBsMTIgMTJhMSAxIDAgMDEwIDEuNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
+                            background-position: 55% 50%;
+                            right: 16px;
+                            display: none;
+
+                            // Адаптив
+                            // Small devices (sm)
+                            @media (min-width: $sm) {}
+                            // Medium devices (md)
+                            @media (min-width: $md) {
+                                display: block;
+                            }
+                            // Large devices (lg)
+                            @media (min-width: $lg) {}
+                            // X-Large devices (xl)
+                            @media (min-width: $xl) {}
+                            // XX-Large devices (xxl)
+                            @media (min-width: $xxl) {}
+                        }
+                        // ****
                     }
                 }
             }

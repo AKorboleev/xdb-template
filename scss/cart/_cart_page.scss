@@ -111,7 +111,9 @@
 
                 // Адпаптив
                 // Small devices (sm)
-                @media (min-width: $sm) {}
+                @media (min-width: $sm) {
+                    max-width: 100%;
+                }
                 // Medium devices (md)
                 @media (min-width: $md) {}
                 // Large devices (lg)
@@ -119,7 +121,9 @@
                 // X-Large devices (xl)
                 @media (min-width: $xl) {}
                 // XX-Large devices (xxl)
-                @media (min-width: $xxl) {}
+                @media (min-width: $xxl) {
+                    max-width: 35%;
+                }
 
                 .apply {
                     font-size: 16px;

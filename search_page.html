@@ -109,7 +109,7 @@
 <!-- search_page-->
 <div class="search_page">
     <div class="mt-4">
-        <div class="bread_crumbs">
+        <div class=" bread_crumbs">
             <span class="ListItem" typeof="ListItem" property="itemListElement">
                 <a property="item" typeof="WebPage" lang="ru" class="link" href="/">
                     <span property="name">Главная</span>
@@ -117,7 +117,7 @@
                 <meta property="position" content="1">
             </span>
             <span class="ListItem" typeof="ListItem" property="itemListElement">
-                <a property="item" typeof="WebPage" lang="ru" class="link" href="/category/">
+                <a property="item" typeof="WebPage" lang="ru" class="link" href="/">
                     <span property="name">Каталог</span>
                 </a>
                 <meta property="position" content="2">
@@ -128,9 +128,9 @@
         </div>
         <button type="button" class="categoriesButton">Все категории</button>
         <div class="m-auto mt-3">
-            <div class="d-flex">
-                <div class="col-md-3">
-                    <div class=" d-none d-md-block normal">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class=" d-none d-lg-block normal">
                         <div class="element_wrap">
                             <a class="link_element" href="//kittykat.ru/?search=1&text=%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0&type=2865">
                                 <img class="image_icon_contain" alt="" src="https://resources.joomcdn.net/categories/bag/icn_bag_mdpi.png" sizes="1.5em" srcset="https://resources.joomcdn.net/categories/bag/icn_bag_mdpi.png 34w, https://resources.joomcdn.net/categories/bag/icn_bag_hdpi.png 51w, https://resources.joomcdn.net/categories/bag/icn_bag_xhdpi.png 68w, https://resources.joomcdn.net/categories/bag/icn_bag_xxhdpi.png 102w, https://resources.joomcdn.net/categories/bag/icn_bag_xxxhdpi.png 136w">
@@ -153,186 +153,142 @@
                     <!-- Не знаю что это -->
                     <div class="leftColBottom">
                     </div>
+                    <div class="resizeTriggers">
+                        <div class="contractTrigger"></div>
+                    </div>
                 </div>
 
-                <div class="col-md-9">
-                    <div class=" flex-column">
-                        <div class="filter-container" id="items">
-                            <div class="ms-3 mt-3 mb-3">
-                                <div class="d-flex d-md-none me-2">
-                                    <button class="btn btn-primary me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#sort" aria-controls="sort">
-                                        По умолчанию
+                <div class="col-lg-9">
+                    <div class="filter-container" id="items">
+                        <div class="ms-3 mt-3 mb-3">
+                            <div class="d-flex d-md-none me-2">
+                                <button class="btn grey me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#sort" aria-controls="sort">
+                                    По умолчанию
+                                    <svg width="12" height="12" fill="none">
+                                        <path d="M5.333.667V8.78L1.607 5.053.667 6 6 11.333 11.333 6l-.94-.94-3.726 3.72V.667H5.333z" fill="#2D2F43"></path>
+                                    </svg>
+                                </button>
+                                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="sort" aria-labelledby="offcanvasExampleLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Сортировка</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="d-flex flex-wrap flex-column gap-2">
+                                            <div class="input-group-text">
+                                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+
+                                                <a class="dropdown-item" href="#">По умолчанию</a>
+                                            </div>
+                                            <div class="input-group-text">
+                                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+
+                                                <a class="dropdown-item" href="#">По цене</a>
+                                            </div>
+                                            <div class="input-group-text">
+                                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                                <a class="dropdown-item" href="#">По дате</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <button class="btn grey" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                                         <svg width="12" height="12" fill="none">
-                                            <path d="M5.333.667V8.78L1.607 5.053.667 6 6 11.333 11.333 6l-.94-.94-3.726 3.72V.667H5.333z" fill="#2D2F43"></path>
+                                            <path d="M11.275 1.646A1 1 0 0010.511 0H1.49a1 1 0 00-.764 1.646l3.942 4.66v3.743a1 1 0 00.552.894l.667.333a1 1 0 001.447-.894V6.307l3.942-4.661z" fill="#2D2F43"></path>
                                         </svg>
+                                        Фильтры
                                     </button>
-                                    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="sort" aria-labelledby="offcanvasExampleLabel">
+
+                                    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                                         <div class="offcanvas-header">
-                                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Сортировка</h5>
+                                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Фильтры</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                         </div>
                                         <div class="offcanvas-body">
                                             <div class="d-flex flex-wrap flex-column gap-2">
-                                                <div class="input-group-text">
-                                                    <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-
-                                                    <a class="dropdown-item" href="#">По умолчанию</a>
-                                                </div>
-                                                <div class="input-group-text">
-                                                    <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-
-                                                    <a class="dropdown-item" href="#">По цене</a>
-                                                </div>
-                                                <div class="input-group-text">
-                                                    <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-                                                    <a class="dropdown-item" href="#">По дате</a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="">
-                                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                                            <svg width="12" height="12" fill="none">
-                                                <path d="M11.275 1.646A1 1 0 0010.511 0H1.49a1 1 0 00-.764 1.646l3.942 4.66v3.743a1 1 0 00.552.894l.667.333a1 1 0 001.447-.894V6.307l3.942-4.661z" fill="#2D2F43"></path>
-                                            </svg>
-                                            Фильтры
-                                        </button>
-
-                                        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                                            <div class="offcanvas-header">
-                                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Фильтры</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                            </div>
-                                            <div class="offcanvas-body">
-                                                <div class="d-flex flex-wrap flex-column gap-2">
-                                                    <div class="">
-                                                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <span class="filter-label-name">Cортировка</span>
-                                                            <span class="filter-label-value">По умолчанию</span>
-                                                        </button>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item active" href="#">по умолчанию</a></li>
-                                                            <li><a class="dropdown-item" href="#">по дате</a></li>
-                                                            <li><a class="dropdown-item" href="#">по стоимости</a></li>
-                                                            <li><a class="dropdown-item" href="#">как-то ещё</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="">
-                                                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <span class="filter-label-name">Цена</span>
-                                                            <span class="filter-label-value">Любая</span>
-                                                        </button>
-                                                        <div class="dropdown-menu mt-2">
-                                                            <span>
-                                                                <input type="text" class="form-control mb-2 ms-2" placeholder="от" aria-label="Username" aria-describedby="basic-addon1">
-                                                            </span>
-                                                            <span>
-                                                                <input type="text" class="form-control mb-2 ms-2" placeholder="до" aria-label="Username" aria-describedby="basic-addon1">
-                                                            </span>
-                                                            <button type="button" class="btn btn-primary ms-5">подтвердить</button>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="">
-                                                        <button class="btn btn-secondary dropdown-toggle" data-bs-auto-close="false" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <span class="filter-label-name">Бренд</span>
-                                                            <span class="filter-label-value">Все</span>
-                                                        </button>
-                                                        <ul class="dropdown-menu">
-                                                            <li>
-                                                                <div class="input-group-text">
-                                                                    <input class="form-check-input mt-0" name="Gucci" id="Gucci" type="checkbox" value="" aria-label="Checkbox for following text input">
-                                                                    <label class="ms-2" for="Gucci">Gucci</label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="input-group-text">
-                                                                    <input class="form-check-input mt-0" name="Addidas" id="Addidas" type="checkbox" value="" aria-label="Checkbox for following text input">
-                                                                    <label class="ms-2" for="Addidas">Addidas</label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="input-group-text">
-                                                                    <input class="form-check-input mt-0" name="Nike" id="Nike" type="checkbox" value="" aria-label="Checkbox for following text input">
-                                                                    <label class="ms-2" for="Nike">Nike</label>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-none d-md-flex flex-wrap gap-2">
-                                <ul class="dropdown_menu">
-                                    <li class="menu">
-                                        <a class="filter_name" href="">Сортировка:<span class="filter_value" href=""> По умолчанию</span></a>
-                                        <ul class="dropdown">
-                                            <li><a href="#">по умолчанию</a></li>
-                                            <li><a href="#">по дате</a></li>
-                                            <li><a href="#">по стоимости</a></li>
-                                            <li><a class="" href="#">как-то ещё</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu">
-                                        <a class="filter_name" href="">Цена:<span class="filter_value" href=""> Любая</span></a>
-                                        <ul class="dropdown_input">
-                                            <li>
-                                                <form name="formPriceFiltrs">
+                        </div>
+                        <div class="d-none d-md-flex flex-wrap gap-2">
+                        <ul class="dropdown_menu">
+                                <li class="menu">
+                                    <a class="filter_name" href="">Сортировка:<span class="filter_value" href=""> По умолчанию</span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">по умолчанию</a></li>
+                                        <li><a href="#">по дате</a></li>
+                                        <li><a href="#">по стоимости</a></li>
+                                        <li><a class="" href="#">как-то ещё</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu">
+                                    <a class="filter_name" href="">Цена:<span class="filter_value" href=""> Любая</span></a>
+                                    <ul class="dropdown_input">
+                                        <li>
+                                             <form name="formPriceFiltrs">
                                                     <span class="input_block">
                                                         <label class="custom-checkbox">
                                                             <input class="input_all cart_item_radio">
                                                             <span class="checkbox_text"></span>
                                                         </label>
-                                                        <input type="text" name="От" id="minPrice" class="mt-1">
+                                                        <input type="text" class="mt-1"  placeholder="от" id="minPrice">
                                                     </span>
                                                     <span class="input_block">
                                                         <label class="custom-checkbox">
-                                                            <input class="input_all cart_item_radio" id="cartitem-[Item_ID]">
+                                                            <input class="input_all cart_item_radio">
                                                             <span class="checkbox_text"></span>
                                                         </label>
-                                                        <input type="text" name="ДО" id="maxPrice" class="mt-1">
+                                                        <input type="text" class="mt-1" placeholder="до"  id="maxPrice">
                                                     </span>
-                                                    <button type="button" id="formPriceFiltrsButton" class="btn-main mt-1">подтвердить</button>
+                                                    <button type="button" id="formPriceFiltrsButton" onclick="formfiltres()" class=" btn-main mt-1">подтвердить</button>
                                                 </form>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu">
-                                        <a class="filter_name" href="">Бренд:<span class="filter_value"> Все</span></a>
-                                        <ul class="dropdown">
-                                            <li><a href="#" id="Nike">Nike</a></li>
-                                            <li><a href="#" id="Addidas">Addidas</a></li>
-                                            <li><a href="#" id="Gucci">Gucci</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="block_filter">
-                            [Items]
-                        </div>
-                        <div class="controls">
-                            <form id="more">
-                                <input type="hidden" name="action" value="1">
-                                <input type="hidden" name="promo" value="0">
-                                <input type="hidden" name="trader" value="0">
-                                <input type="hidden" name="producer" value="0">
-                                <input type="hidden" name="category" value="6">
-                                <input type="hidden" name="asis" value="">
-                                <input type="hidden" name="text" value="одежда">
-                                <input type="hidden" name="pricefrom" value="0">
-                                <input type="hidden" name="priceto" value="0">
-                                <input type="hidden" name="sort" value="">
-                                <input type="hidden" name="page" value="1">
-                            </form>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu">
+                                    <a class="filter_name" href="">Бренд:<span class="filter_value"> Все</span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="#" id="Nike">Nike</a></li>
+                                        <li><a href="#"  id="Addidas">Addidas</a></li>
+                                        <li><a href="#" id="Gucci">Gucci</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
+                    <div class="container">
+                        <div class="row">
+                            [Items]
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <form id="more">
+                            <input type="hidden" name="action" value="1">
+                            <input type="hidden" name="promo" value="0">
+                            <input type="hidden" name="trader" value="0">
+                            <input type="hidden" name="producer" value="0">
+                            <input type="hidden" name="category" value="6">
+                            <input type="hidden" name="asis" value="">
+                            <input type="hidden" name="text" value="одежда">
+                            <input type="hidden" name="pricefrom" value="0">
+                            <input type="hidden" name="priceto" value="0">
+                            <input type="hidden" name="sort" value="">
+                            <input type="hidden" name="page" value="1">
+                        </form>
+                    </div>
+					[SearchMore]
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="reducer">
+        <div class="inner">
+            <div class="bottom_trending_links"></div>
         </div>
     </div>
 </div>

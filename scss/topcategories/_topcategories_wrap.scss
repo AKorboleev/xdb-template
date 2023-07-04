@@ -1,7 +1,7 @@
-.topcategories {
+.top_categories {
     
     // Обертка для title
-    .header_topcategories {
+    .header_top_categories {
         display: flex;
         align-items: baseline;
         color: #2d2f43;
@@ -48,6 +48,7 @@
         overflow-y: hidden;
         margin-left: -12px;
         margin-right: -12px;
+        display: block;
 
         // Адаптив
         
@@ -67,13 +68,9 @@
         
         // контент
         .content {
-        
-            margin-bottom: -100px;
-            overflow-x: hidden;
-            padding-bottom: 100px;
-            scrollbar-width: none;
-            flex-direction: row;
-            flex-direction: column;
+            align-items: stretch;
+            display: none;
+            flex-wrap: nowrap;
 
             // Адаптив
             // Small devices (sm)
@@ -81,6 +78,7 @@
             // Medium devices (md)
             @media (min-width: $md) {
                 flex-direction: column;
+                display: flex;
             }
             // Large devices (lg)
             @media (min-width: $lg) {}
@@ -120,11 +118,11 @@
                 a.cell_block {
                     flex-basis: 160px;
                     width: 100px;
+                    width: 90%;
                     padding: 0 12px;
                     overflow: hidden;
                     position: relative;
-                    height: 37px;
-                    width: 90%;
+                    margin-top: 20px;
 
                     // Адаптив
 
@@ -132,7 +130,6 @@
                     // Small devices (sm)
                     @media (min-width: $sm) {
                         width: 100px;
-                        height: 100%;
                     }
                     // Medium devices (md)
                     @media (min-width: $md) {
@@ -160,11 +157,9 @@
                         .image_wrap {
                             border-radius: 50%;
                             box-sizing: border-box;
-                            overflow: hidden;
-                            padding-top: 100%;
-                            position: relative;
                             transform: translateZ(0);
                             width: 100%;
+                            height: 130px;
                             background-color: #fff;
                             border: 1px solid #eff0f4;
 
@@ -178,6 +173,156 @@
                                     left: 0;
                                     position: absolute;
                                     top: 0;
+                                    transition: transform .15s ease-in-out;
+                                    transform-origin: center;
+                                    width: 100%;
+                                    @include contain;
+
+                                    // Адаптив
+                                    // Small devices (sm)
+                                    @media (min-width: $sm) {}
+                                    // Medium devices (md)
+                                    @media (min-width: $md) {}
+                                    // Large devices (lg)
+                                    @media (min-width: $lg) {
+                                        margin-top: 25%;
+                                    }
+                                    // X-Large devices (xl)
+                                    @media (min-width: $xl) {}
+                                    // XX-Large devices (xxl)
+                                    @media (min-width: $xxl) {}
+                                }
+                        }
+
+                        // Заголовок
+                        .title {
+                            display: block;
+                            position: relative;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            max-height: 32px;
+                            text-align: center;
+                            font-size: 12px;
+                            line-height: 14px;
+                            margin-top: 12px;
+
+                            // Адаптив
+                            // Small devices (sm)
+                            @media (min-width: $sm) {}
+                            // Medium devices (md)
+                            @media (min-width: $md) {
+                                font-size: $textItem;
+                                line-height: 16px;
+                                margin-top: 16px;
+                            }
+                            // Large devices (lg)
+                            @media (min-width: $lg) {}
+                            // X-Large devices (xl)
+                            @media (min-width: $xl) {}
+                            // XX-Large devices (xxl)
+                            @media (min-width: $xxl) {}
+                            
+                        }
+                    }
+                }
+
+
+                // Может занести в нуть дива?
+                .clickable {
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .mobile_content {
+            height: 200px;
+            align-items: stretch;
+            flex-wrap: nowrap;
+            display: block;
+
+            // Адаптив
+            
+            // Small devices (sm)
+            @media (min-width: $sm) {}
+            // Medium devices (md)
+            @media (min-width: $md) {
+                display: none;
+            }
+            // Large devices (lg)
+            @media (min-width: $lg) {}
+            // X-Large devices (xl)
+            @media (min-width: $xl) {}
+            // XX-Large devices (xxl)
+            @media (min-width: $xxl) {}
+
+            // Деление на несколько блоков
+            .block {
+                align-items: stretch;
+                display: flex;
+                flex-wrap: nowrap;
+                display:flex;
+                margin-top: 32px;
+                // Адаптив
+                // Small devices (sm)
+                @media (min-width: $sm) {}
+                // Medium devices (md)
+                @media (min-width: $md) {
+                }
+                // Large devices (lg)
+                @media (min-width: $lg) {}
+                // X-Large devices (xl)
+                @media (min-width: $xl) {}
+                // XX-Large devices (xxl)
+                @media (min-width: $xxl) {}
+                
+
+                // Подгружаемый одъект
+                a.cell_block {
+                    flex-basis: 160px;
+                    padding: 0 12px;
+                    position: relative;
+                    height: 100%;
+                    width: 100%;
+                    // Адаптив
+
+                    // Small devices (sm)
+                    @media (min-width: $sm) {}
+                    // Medium devices (md)
+                    @media (min-width: $md) {}
+                    // Large devices (lg)
+                    @media (min-width: $lg) {}
+                    // X-Large devices (xl)
+                    @media (min-width: $xl) {}
+                    // XX-Large devices (xxl)
+                    @media (min-width: $xxl) {}
+
+                    // Элемент
+                    .item {
+                        color: #2d2f43;
+                        pointer-events: auto;
+                        width: 100%;
+                        height: 100px;
+                        &:hover .image {
+                            transform: scale(1.05);
+                            transition: transform .3s ease-in-out
+                        }
+
+                        // Контейнер иззображения 
+                        .image_wrap {
+                            border-radius: 50%;
+                            width: 100%;
+                            height: 100%;
+                            background-color: #fff;
+                            border: 1px solid #eff0f4;
+
+                                // Изображение
+                                .image {
+                                    margin-top: 10%;
+                                    background-repeat: no-repeat;
+                                    display: inline-block;
+                                    margin-top: 25%;
+                                    height:50%;
                                     transition: transform .15s ease-in-out;
                                     transform-origin: center;
                                     width: 100%;

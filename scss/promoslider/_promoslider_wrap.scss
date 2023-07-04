@@ -23,9 +23,10 @@
     // Три элементка
     .three_in_row {
         position: relative;
-        
         margin:0 -12px;
+
         // Адаптив
+        
         // Small devices (sm)
         @media (min-width: $sm) {}
         // Medium devices (md)
