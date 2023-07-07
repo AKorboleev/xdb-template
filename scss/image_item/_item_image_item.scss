@@ -1,40 +1,32 @@
 // обеертка для картинки
-.image__item {
+.image_item {
     max-height: 100%;
     position: relative;
-    float: left;
     transition-property: transform;
     width: 100%;
     min-width: 100%;
-    height: 100%;
+    height: 350px;
     background-color: #fff;
     // Квадрат
-    .square {
-        padding-top: 100%;
-        position: relative;
+    .block_content {
         border-radius: inherit;
-        overflow: hidden;
-        // хз как назвать
-        .block_content {
-            border-radius: inherit;
-            bottom: 0;
-            left: 0;
-            position: absolute;
-            right: 0;
-            top: 0;
-            // Обертка для картинки
-            .image_wrap {
-                background-color: #f5f5f5;
-                height: 100%;
-                position: relative;
-                width: 100%;
-                // Картинка
-                .image {
-                    background-repeat: no-repeat;
-                    display: inline-block;
-                    border-radius: inherit;
-                    @include contain;
-                }
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        // Обертка для картинки
+        .image_wrap {
+            background-color: #f5f5f5;
+            height: 100%;
+            position: relative;
+            width: 100%;
+            // Картинка
+            .image {
+                background-repeat: no-repeat;
+                display: inline-block;
+                border-radius: inherit;
+                @include contain;
             }
         }
     }

@@ -241,6 +241,10 @@
             flex-wrap: nowrap;
             display: block;
 
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
             // Адаптив
             
             // Small devices (sm)
@@ -261,8 +265,8 @@
                 align-items: stretch;
                 display: flex;
                 flex-wrap: nowrap;
-                display:flex;
                 margin-top: 32px;
+
                 // Адаптив
                 // Small devices (sm)
                 @media (min-width: $sm) {}
@@ -301,7 +305,7 @@
                     .item {
                         color: #2d2f43;
                         pointer-events: auto;
-                        width: 100%;
+                        width: 100px;
                         height: 100px;
                         &:hover .image {
                             transform: scale(1.05);

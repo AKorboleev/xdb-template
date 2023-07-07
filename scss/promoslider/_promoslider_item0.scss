@@ -2,10 +2,8 @@
 .promoslider_item_one {
     box-sizing: content-box;
     width: 100%;
-    flex-basis: calc(33.33333% - 8.1px);
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: calc(33.33333% - 8.1px);
     margin-left: 12px;
     pointer-events: none;
     scroll-snap-align: start;
@@ -13,17 +11,31 @@
     &:first-child {
         margin-left: 0;
     }
+
     // Адаптив
     
     // Small devices (sm)
     @media (min-width: $sm) {
         box-sizing: content-box;
         width: 100%;
-        flex-basis: calc(33.33333% - 8.1px);
         flex-grow: 0;
         flex-shrink: 0;
-        max-width: calc(33.33333% - 8.1px);
+        max-width: 48%;
         margin-left: 12px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    // Small devices (sm)
+    @media (min-width: $sm) {
+        box-sizing: content-box;
+        width: 100%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        max-width: 96%;
+        margin-left: -12px;
+        padding: 0 12px;
 
         &:first-child {
             margin-left: 0;
@@ -33,26 +45,10 @@
     @media (min-width: $md) {
         box-sizing: content-box;
         width: 100%;
-        flex-basis: calc(33.33333% - 10.76667px);
         flex-grow: 0;
         flex-shrink: 0;
-        max-width: calc(33.33333% - 10.76667px);
+        max-width: 46%;
         margin-left: 16px;
-
-        &:first-child {
-            margin-left: 0;
-        }
-    }
-    // Small devices (sm)
-    @media (min-width: $sm) {
-        box-sizing: content-box;
-        width: 100%;
-        flex-basis: calc(50% - 24.1px);
-        flex-grow: 0;
-        flex-shrink: 0;
-        max-width: calc(50% - 24.1px);
-        margin-left: -12px;
-        padding: 0 12px;
 
         &:first-child {
             margin-left: 0;
@@ -62,10 +58,9 @@
     @media (min-width: $lg) {
         box-sizing: content-box;
         width: 100%;
-        flex-basis: calc(33.33333% - 10.76667px);
         flex-grow: 0;
         flex-shrink: 0;
-        max-width: calc(33.33333% - 10.76667px);
+        max-width: 33%;
         margin-left: 16px;
 
         &:first-child {
@@ -76,10 +71,9 @@
     @media (min-width: $xl) {
         box-sizing: content-box;
         width: 100%;
-        flex-basis: calc(33.33333% - 10.76667px);
         flex-grow: 0;
         flex-shrink: 0;
-        max-width: calc(33.33333% - 10.76667px);
+        max-width: 33%;
         margin-left: 16px;
 
         &:first-child {

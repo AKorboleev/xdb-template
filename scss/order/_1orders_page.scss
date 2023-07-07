@@ -5,6 +5,7 @@
     font-size: 0.7222rem;
     line-height: 0.8333rem;
     margin-bottom: 0;
+    margin: 0;
     padding: 0;
 
     // Адаптив
@@ -14,7 +15,7 @@
         padding: 0.4444rem 0;
     }
     // Medium devices (md)
-    @media (min-width: $md) {}
+    @media (min-width: $md) {margin-left: 10px;}
     // Large devices (lg)
     @media (min-width: $lg) {}
     // X-Large devices (xl)
@@ -47,8 +48,7 @@
     background: #fff;
     margin-top: 20px;
     border-radius: 0;
-    margin-left: -12px;
-    margin-right: -12px;
+    margin: 0 10px;
 
     // Адаптив
 
@@ -58,7 +58,7 @@
         margin: 0;
     }
     // Medium devices (md)
-    @media (min-width: $md) {}
+    @media (min-width: $md) {margin-left: 10px;}
     // Large devices (lg)
     @media (min-width: $lg) {}
     // X-Large devices (xl)

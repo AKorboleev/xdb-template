@@ -719,6 +719,25 @@ $.ajax({
 		let popover = new bootstrap.Popover(document.querySelector('.example-popover'), {
 			container: 'body'
 		})
+
+    let c0 = document.querySelectorAll('.c0');
+    let c0c4 = document.querySelectorAll('.c0.c4')
+    let table = document.getElementById('my-table');
+    let body = document.body
+
+
+    for (let key in c0) {
+        let html = "";
+        let tds = "";
+
+            tds += "<td class='data_base'>" + c0[key].innerText + "</td>"
+            html += "<tr class='main_content'>" + tds + "</tr>";
+            table.innerHTML = html;
+            console.log('good')
+    }
+    //
+    // c0.removeChild;
+    // c0c4.removeChild;
 });
 
 

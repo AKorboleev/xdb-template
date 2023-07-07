@@ -3,7 +3,9 @@
     margin-top: 12px;
     padding: 10px 10px;
     padding-bottom: 10px;
+
     // Адаптив
+    
     @media (min-width: $md) {
         margin-top: 16px;
     }
@@ -12,7 +14,9 @@
         max-width: 100%;
         margin: 16px auto;
         padding: 0;
+
         // Аддаптив
+
         // Small devices (sm)
         @media (min-width: $sm) {
             padding: 0 6px;
@@ -28,40 +32,19 @@
         @media (min-width: $xl) {}
         // XX-Large devices (xxl)
         @media (min-width: $xxl) {}
+
         // Ссылка
         .inner {
-            -ms-flex-align: stretch;
             align-items: stretch;
             box-sizing: border-box;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-direction: column;
+            display: flex;;
             flex-direction: column;
-            
             margin-bottom: 16px;
-            // Адаптив
-            // Small devices (sm)
-            @media (min-width: $sm) {
-                padding: 0 6px;
-            }
-            // Medium devices (md)
-            @media (min-width: $md) {
-                margin-bottom: 12px;
-            }
-            // Large devices (lg)
-            @media (min-width: $lg) {}
-            // X-Large devices (xl)
-            @media (min-width: $xl) {}
-            // XX-Large devices (xxl)
-            @media (min-width: $xxl) {}
-            // Лист с картинками
+
             .list_image {
                 position: relative;
                 align-items: center;
                 color: #2d2f43;
-                // Изменил display:flex; на display:inline-block; и все заработало.
-
-                -ms-flex-direction: row;
                 flex-direction: row;
                 position: relative;
                 text-decoration: none;
@@ -92,32 +75,19 @@
                     .thumbs {
                         display: grid;
                         flex-direction: row;
-                        width: 100%;
+                        width: 80%;
                     }
                 }
-                // Квадрат
-                .square {
-                    padding-top: 100%;
-                    position: relative;
-                    // блок для свайпа
-                    .block_swipe {
-                        border-radius: inherit;
-                        bottom: 0;
-                        left: 0;
-                        position: absolute;
-                        right: 0;
-                        top: 0;
-                        // Свайп
-                        .swipe {
-                            visibility: hidden;
-                            border-radius: 4px;
-                            transform: translateZ(0);
-                            box-sizing: border-box;
-                            height: 100%;
-                            width: 100%;
-                        }
-                    }
+                // Свайп
+                .swipe {
+                    visibility: hidden;
+                    border-radius: 4px;
+                    transform: translateZ(0);
+                    box-sizing: border-box;
+                    height: 100%;
+                    width: 100%;
                 }
+                
                 //Блок для счета
                 .block_counter {
                     // счет
@@ -143,7 +113,7 @@
                     .wrap_counter_next {
                         position: absolute;
                         top: 50%;
-                        width: 82%;
+                        width: 73%;
                         display: block;
                         &:hover {
                             display: block;
@@ -223,7 +193,6 @@
                         .prev {
                             background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAyNiI+PHBhdGggZD0iTS4zIDEyLjNsMTItMTJhMSAxIDAgMDExLjQgMCAxIDEgMCAwMTAgMS40TDIuNCAxM2wxMS4zIDExLjNhMSAxIDAgMDEtMS40IDEuNGwtMTItMTJhMSAxIDAgMDEwLTEuNHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
                             background-position: 45% 50%;
-                            left: 16px;
                             display: none;
 
                             // Адаптив
@@ -287,7 +256,7 @@
                 @media (min-width: $xxl) {}
                 //Основная информация продукта
                 .item {
-
+                    
                     // Оценка
                     .container_grade {
                         display: flex;
@@ -789,6 +758,7 @@
                 align-items: stretch;
                 justify-content: center;
                 flex-wrap: wrap;
+                display: flex;
             }
         }
     }
