@@ -5,7 +5,7 @@ $fontFamaly: "Kurale", serif;
 $os: "Open Sans", sans-serif;
 // ****
 
-//Используемые цвета
+// Используемые цвета
 $whiteGrey:#f2f2f2;
 $mainColor: #5cc500;
 $whiteRight:#ff7676;
@@ -17,11 +17,11 @@ $grey: #9697a1;
 // ****   stroke: dashoffset 12px; ;
 
 
-//Используемы цвет в ховеер
+// Используемый цвет в ховер
 $hoverColor: #2f1cd5;
 // ****
 
-// часто испльзуемые значения
+// Часто используемые значения
 $text: 18px;
 $textItem: 14px;
 $mc: 0 auto;
@@ -52,16 +52,16 @@ $xxl: 1400px;
 @media (min-width: $xxl) {}
 
 
-//icon_image цвет иконки в cart_item_page.scss
+// icon_image цвет иконки в cart_item_page.scss
 $icon_image: $mainColor;
 // ****
 
-// catalog цвет зоголовка шрифта , который  находится в catalog.scss
+// catalog цвет зоголовка шрифта, который находится в catalog.scss
 $catalog: $mainColor;
 // ****
 
-//  В микисы вынесенны классы которые часто повторяются
-// Для центрирвоание flex элемента
+// В микисы вынесенны классы которые часто повторяются
+// Для центрирования flex элемента
 @mixin flex($jc, $ai) {
     display: flex;
     flex-wrap: wrap;
@@ -70,14 +70,14 @@ $catalog: $mainColor;
 }
 // ****
 
-// элемент и его содержимое,независимы от остальной части документа
+// Элемент и его содержимое, независимы от остальной части документа
 @mixin contain {
     background-size: contain;
     object-fit: contain;
 }
 // ****
 
-// Масштабирование картинки под максимально закрытие блока , картинка не обрезается , а вписывается с сохранением пропорций
+// Масштабирование картинки под максимальное закрытие блока, картинка не обрезается, а вписывается с сохранением пропорций
 @mixin cover {
     background-size: cover;
     object-fit: cover;
@@ -93,7 +93,7 @@ $catalog: $mainColor;
 }
 //****
 
-// Анимации
+// Анимация
 @keyframes resizeAnimation {
     0% {
         opacity: 0;
@@ -126,7 +126,7 @@ $catalog: $mainColor;
 }
 //****
 
-// изменить размер анимации
+// Изменить размер анимации
 @keyframes resizeAnimation {
     0% {
         opacity: 0;
@@ -554,7 +554,7 @@ $catalog: $mainColor;
 }
 //****
 
-// Лис с гарантией
+// Лист с гарантией
 .list {
     font-size: 12px;
     flex-direction: column;
@@ -792,9 +792,11 @@ label.custom-checkbox {
     vertical-align: middle;
     width: 100%;
     display: none;
+
     // Форма поиска
     form {
         position: relative;
+
         //Внутренняя настройка
         .inner {
             display: -ms-flexbox;
@@ -819,6 +821,7 @@ label.custom-checkbox {
             &:focus {
                 background: #dedede;
             }
+
             // Строка поиска
             .label {
                 flex-grow: 1;
