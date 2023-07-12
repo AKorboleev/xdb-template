@@ -229,7 +229,7 @@ $catalog: $mainColor;
     transform: translateZ(0)
 }
 
-// Нужно удалить , если не найду где используется 
+// Нужно удалить, если не найду где используется 
 .item_cell {
     background: #fff;
     border-radius: 6px;
@@ -288,7 +288,7 @@ $catalog: $mainColor;
 }
 //****
 
-//Нужно для скрола карусели
+// Нужно для скрола карусели
 .nativeScroll {
     overflow-x: auto;
     overflow-y: hidden;
@@ -296,7 +296,7 @@ $catalog: $mainColor;
 }
 //****
 
-// Кнопка в изранное
+// Кнопка в изранном
 .button_favorite {
     align-self: center;
     height: 1.8rem;
@@ -305,7 +305,7 @@ $catalog: $mainColor;
 }
 // ****
 
-//удалить
+// удалить
 // Промоакция 
 .cell_promo {
     box-sizing: content-box;
@@ -603,7 +603,7 @@ $catalog: $mainColor;
 //****
 
 
-//  checkbox
+// checkbox
 label.custom-checkbox {
     display: flex;
     justify-content: space-between;
@@ -657,8 +657,8 @@ label.custom-checkbox {
 }
 // ****
 
-// баннер сообщает о положительном оформлении доставке
-//  checkout_sucess
+// Баннер сообщает об успешном оформлении доставки
+// checkout_sucess
 .background_successMessage {
     background: linear-gradient(96deg, #43e695, #27c278);
     height: 136px;
@@ -666,7 +666,7 @@ label.custom-checkbox {
     width: 100%;
 
     &:after {
-        //Картинка о положительном заказе
+        // Картинка о положительном заказе
         background: no-repeat
             url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxODYiIGhlaWdodD0iMTg2Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSIwJSIgeTE9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQzRTY5NSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzI3QzI3OCIvPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0iYiIgd2lkdGg9IjI1MCUiIGhlaWdodD0iMjUwJSIgeD0iLTc1JSIgeT0iLTc1JSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94Ij48ZmVHYXVzc2lhbkJsdXIgaW49IlNvdXJjZUdyYXBoaWMiIHN0ZERldmlhdGlvbj0iMjEiLz48L2ZpbHRlcj48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTQ0IDk2YTQyIDQyIDAgMTEwLTg0IDQyIDQyIDAgMDEwIDg0eiIgZmlsdGVyPSJ1cmwoI2IpIiBvcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDkgMzkpIi8+PHBhdGggZmlsbD0idXJsKCNhKSIgc3Ryb2tlPSIjRkZGIiBzdHJva2Utd2lkdGg9IjYiIGQ9Ik00NCA5MWE0NyA0NyAwIDExLjEtOTQuMUE0NyA0NyAwIDAxNDQgOTF6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0OSAzOSkiLz48cGF0aCBmaWxsPSIjRkZGIiBkPSJNODYuOCA5OS42TDcwIDgyLjhsNC40LTQuNEw4Ni44IDkxbDI0LjktMjUgNC40IDQuNHoiLz48L3N2Zz4=)
             50% / contain;
@@ -763,7 +763,7 @@ label.custom-checkbox {
 }
 
 // Переделать
-// находится в search_empty
+// Находится в search_empty
 .btn-mobile {
     align-items: center;
     box-sizing: border-box;
@@ -868,7 +868,7 @@ label.custom-checkbox {
 }
 //****
 
-// внутренняя часть
+// Внутренняя часть
 .bread_crumbs {
     padding-left: 6px;
     padding-right: 6px;
@@ -931,10 +931,10 @@ label.custom-checkbox {
 }
 //****
 
-//d-none если добавить его , то анимации не будет , но если его убрать будте анимация , все делается через js
-// Загрузка, вращение кружочков  во круг оси
+// d-none если добавить его , то анимации не будет , но если его убрать будте анимация , все делается через js
+// Загрузка, вращение кружочков вокруг оси
 
-// Загрузка в карзину
+// Загрузка в корзину
 .load_to_cart {
     align-items: center;
     bottom: 0;
@@ -1197,7 +1197,7 @@ label.custom-checkbox {
                         line-height: $text;
                         padding: 10px;
                         
-                        //Текст фильтра
+                        // Текст фильтра
                         .text__filtereses {
                             overflow: hidden;
                             text-overflow: ellipsis;
@@ -1216,7 +1216,7 @@ label.custom-checkbox {
         }
     }
 
-    // обертка родительской части
+    // Обертка родительской части
     .parent__narrow_wrap {
         background-color: #fff;
         border-radius: 0.3333rem;
@@ -1278,7 +1278,7 @@ label.custom-checkbox {
                     flex-grow: 1;
                     overflow: hidden;
 
-                    // Имя Ярлыка
+                    // Имя ярлыка
                     .labelName {
                         color: #000000;
                         padding-right: 8px;
@@ -1357,7 +1357,7 @@ label.custom-checkbox {
     width: 80vw;
 }
 
-//dropdown_menu
+// dropdown_menu
 // Выпадающая менюшка для настройки 
 ul.dropdown_menu {
     display: block;
